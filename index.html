@@ -3,23 +3,97 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+  <!-- ★ PRIMARY SEO ★ -->
   <title>NyvoraAI — Latest AI News, Tools &amp; Expert Insights</title>
-  <meta name="description" content="Get original, fact-checked AI news, machine learning trends, and expert insights. Your daily source for clear, hype-free artificial intelligence updates."/>
-  <meta name="robots" content="index, follow"/>
+  <meta name="description" content="Get original, fact-checked AI news, machine learning trends, and expert insights. Your daily source for clear, hype-free artificial intelligence updates. Free forever."/>
+  <meta name="keywords" content="AI news, artificial intelligence, machine learning, LLM, ChatGPT, Claude, Gemini, AI tools, deep learning, AI safety, generative AI"/>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
   <link rel="canonical" href="https://nyvoraai.github.io/"/>
-  <!-- Google Search Console — replace YOUR_CODE below -->
-  <meta name="google-site-verification" content="YOUR_CODE_HERE"/>
+
+  <!-- ★ OPEN GRAPH ★ -->
   <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="NyvoraAI"/>
   <meta property="og:title" content="NyvoraAI — Latest AI News, Tools &amp; Expert Insights"/>
-  <meta property="og:description" content="Original, fact-checked AI news. No hype. Just clarity."/>
+  <meta property="og:description" content="Original, fact-checked AI news. No hype. Just clarity. Updated every day."/>
   <meta property="og:url" content="https://nyvoraai.github.io/"/>
   <meta property="og:image" content="https://nyvoraai.github.io/og-image.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!-- ★ TWITTER CARD ★ -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@NyvoraAI"/>
+  <meta name="twitter:title" content="NyvoraAI — Latest AI News, Tools &amp; Expert Insights"/>
+  <meta name="twitter:description" content="Original, fact-checked AI news. No hype. Just clarity."/>
+  <meta name="twitter:image" content="https://nyvoraai.github.io/og-image.jpg"/>
+
+  <!-- ★ SCHEMA.ORG — WebSite + SearchAction ★ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://nyvoraai.github.io/#website",
+        "url": "https://nyvoraai.github.io/",
+        "name": "NyvoraAI",
+        "description": "Original, fact-checked AI news and insights — free, daily, jargon-free.",
+        "publisher": { "@id": "https://nyvoraai.github.io/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": { "@type": "EntryPoint", "urlTemplate": "https://nyvoraai.github.io/ai-news.html?q={search_term_string}" },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://nyvoraai.github.io/#organization",
+        "name": "NyvoraAI",
+        "url": "https://nyvoraai.github.io/",
+        "logo": { "@type": "ImageObject", "url": "https://nyvoraai.github.io/logo.svg" },
+        "sameAs": ["https://twitter.com/NyvoraAI","https://instagram.com/NyvoraAI"],
+        "contactPoint": { "@type": "ContactPoint", "email": "lalwanivarun526@gmail.com", "contactType": "editorial" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is NyvoraAI?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI is a daily AI news platform delivering original, fact-checked coverage of artificial intelligence, machine learning, and emerging tech — written in plain English, without the hype." } },
+          { "@type": "Question", "name": "Is NyvoraAI free to read?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. All AI news, blog posts, and insights on NyvoraAI are 100% free to read. No paywalls, no subscriptions required." } },
+          { "@type": "Question", "name": "How often does NyvoraAI publish new articles?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI publishes fresh, fact-checked AI articles every day to keep you up to date with the latest trends, tools, and research in artificial intelligence." } },
+          { "@type": "Question", "name": "Can I write for NyvoraAI?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! NyvoraAI welcomes contributors who are passionate about AI. Visit the Contact page and select 'Write for Us' to get started. No experience required." } }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ★ AI VISIBILITY META ★ -->
+  <meta name="author" content="NyvoraAI Team"/>
+  <meta name="publisher" content="NyvoraAI"/>
+  <meta name="category" content="Technology, Artificial Intelligence"/>
+  <meta name="revisit-after" content="1 day"/>
+  <meta name="language" content="English"/>
+  <meta name="coverage" content="Worldwide"/>
+  <meta name="distribution" content="Global"/>
+  <meta name="rating" content="General"/>
+  <meta name="google-site-verification" content="YOUR_CODE_HERE"/>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
+<!-- PAGE LOADER -->
+<div id="page-loader"><div class="loader-logo">NyvoraAI</div></div>
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress" role="progressbar" aria-label="Reading progress"></div>
+<!-- BACK TO TOP -->
+<button id="back-top" aria-label="Back to top">↑</button>
 
 <div class="mesh" aria-hidden="true">
   <div class="mesh-orb m1"></div>
@@ -29,7 +103,10 @@
 
 <!-- NAV -->
 <nav role="navigation" aria-label="Main navigation">
-  <a href="index.html" class="logo">NyvoraAI</a>
+  <a href="index.html" class="logo" aria-label="NyvoraAI Home">
+    <img src="logo.svg" alt="NyvoraAI" class="logo-svg" onerror="this.style.display='none';this.nextSibling.style.display='block'"/>
+    <span style="display:none">NyvoraAI</span>
+  </a>
   <ul class="nav-links">
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="blog.html">Blog</a></li>
@@ -42,7 +119,7 @@
     <span></span><span></span><span></span>
   </button>
 </nav>
-<div class="mob-menu" id="mob">
+<div class="mob-menu" id="mob" role="navigation" aria-label="Mobile menu">
   <a href="index.html">Home</a>
   <a href="blog.html">Blog</a>
   <a href="ai-news.html">AI News</a>
@@ -52,7 +129,8 @@
 
 <!-- HERO -->
 <header class="hero" role="banner">
-  <div>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div style="position:relative;z-index:1">
     <div class="hero-badge"><span class="badge-dot"></span>AI News &amp; Insights — Updated Daily</div>
     <h1>The future of AI,<br/><span class="grad">explained clearly.</span></h1>
     <p>NyvoraAI delivers original, fact-checked coverage of artificial intelligence — from groundbreaking research to everyday tools. No hype. Just clarity.</p>
@@ -65,7 +143,7 @@
 
 <!-- TICKER -->
 <div class="ticker" aria-label="Latest AI headlines">
-  <div class="ticker-track">
+  <div class="ticker-track" aria-hidden="true">
     <div class="tick-item"><span class="tick-sep"></span>Google DeepMind breaks reasoning benchmarks</div>
     <div class="tick-item"><span class="tick-sep"></span>AI agents are reshaping software development</div>
     <div class="tick-item"><span class="tick-sep"></span>Meta open-sources Llama 4</div>
@@ -86,18 +164,18 @@
   </div>
 </div>
 
-<main>
+<main id="main-content">
 
   <!-- WHAT IS NYVORAAI -->
-  <section class="sec">
+  <section class="sec" aria-labelledby="about-heading">
     <div class="wrap">
       <span class="label">What is NyvoraAI</span>
-      <h2 class="title reveal" style="max-width:580px">AI news that actually makes sense.</h2>
+      <h2 class="title reveal" id="about-heading" style="max-width:580px">AI news that actually makes sense.</h2>
 
       <div class="feat-block reveal" style="margin-top:3.5rem">
         <div class="feat-txt">
           <span class="label">Our Mission</span>
-          <h2>We cover AI so you never have to guess what is real.</h2>
+          <h3 style="font-family:'Syne',sans-serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:800;letter-spacing:-1px;margin-bottom:16px;line-height:1.15">We cover AI so you never have to guess what is real.</h3>
           <p>Every story on NyvoraAI is original, written in plain English, and verified before it goes live. No clickbait. No filler. Just the stories that actually matter to you.</p>
           <a href="about.html" class="btn-s" style="width:fit-content;padding:.7rem 1.4rem;font-size:.875rem">About us →</a>
         </div>
@@ -107,17 +185,17 @@
       <div class="feat-block rev reveal" style="margin-top:2rem">
         <div class="feat-txt">
           <span class="label">Coverage</span>
-          <h2>From LLMs to robotics — we cover all of AI.</h2>
+          <h3 style="font-family:'Syne',sans-serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:800;letter-spacing:-1px;margin-bottom:16px;line-height:1.15">From LLMs to robotics — we cover all of AI.</h3>
           <p>Machine learning, generative AI, safety, tools, research, startups — NyvoraAI is your single destination for everything happening in artificial intelligence right now.</p>
           <a href="ai-news.html" class="btn-s" style="width:fit-content;padding:.7rem 1.4rem;font-size:.875rem">Browse AI News →</a>
         </div>
         <div class="feat-vis">
           <div class="vis-lines">
-            <div class="vis-line" style="width:100%"></div>
-            <div class="vis-line" style="width:75%"></div>
-            <div class="vis-line" style="width:88%"></div>
-            <div class="vis-line" style="width:55%"></div>
-            <div class="vis-line" style="width:70%"></div>
+            <div class="vis-line"></div>
+            <div class="vis-line"></div>
+            <div class="vis-line"></div>
+            <div class="vis-line"></div>
+            <div class="vis-line"></div>
           </div>
         </div>
       </div>
@@ -125,7 +203,7 @@
   </section>
 
   <!-- STATS -->
-  <div class="stats-row">
+  <div class="stats-row" role="region" aria-label="NyvoraAI statistics">
     <div class="stat reveal"><div class="stat-n">100%</div><div class="stat-l">Original content<br/>Zero fake news</div></div>
     <div class="stat reveal"><div class="stat-n">Daily</div><div class="stat-l">Fresh AI articles<br/>every single day</div></div>
     <div class="stat reveal"><div class="stat-n">8+</div><div class="stat-l">AI topic categories<br/>covered in depth</div></div>
@@ -133,15 +211,14 @@
   </div>
 
   <!-- LATEST ARTICLES -->
-  <section class="sec">
+  <section class="sec" aria-labelledby="latest-heading">
     <div class="wrap">
       <div class="sec-head reveal">
-        <div><span class="label">Latest</span><h2 class="title">Fresh From the AI World</h2></div>
+        <div><span class="label">Latest</span><h2 class="title" id="latest-heading">Fresh From the AI World</h2></div>
         <a href="ai-news.html" class="see-all">View all AI news →</a>
       </div>
 
-      <!-- Featured article — update this when you publish a real one -->
-      <a href="ai-news.html" class="big-card reveal">
+      <a href="ai-news.html" class="big-card reveal" aria-label="Featured: How Large Language Models Are Rewriting the Rules of Search">
         <div class="big-card-vis"><div class="bva"></div></div>
         <div class="big-card-body">
           <span class="tag t-purple">Featured</span>
@@ -151,8 +228,8 @@
         </div>
       </a>
 
-      <div class="grid3">
-        <article class="acard reveal">
+      <div class="grid3 reveal-stagger">
+        <article class="acard">
           <a href="ai-news.html">
             <div class="acard-thumb"><div class="acard-thumb-inner thumb-b"></div></div>
             <div class="acard-body">
@@ -163,7 +240,7 @@
             </div>
           </a>
         </article>
-        <article class="acard reveal">
+        <article class="acard">
           <a href="ai-news.html">
             <div class="acard-thumb"><div class="acard-thumb-inner thumb-c"></div></div>
             <div class="acard-body">
@@ -174,7 +251,7 @@
             </div>
           </a>
         </article>
-        <article class="acard reveal">
+        <article class="acard">
           <a href="ai-news.html">
             <div class="acard-thumb"><div class="acard-thumb-inner thumb-a"></div></div>
             <div class="acard-body">
@@ -187,17 +264,17 @@
         </article>
       </div>
 
-      <div style="text-align:center;margin-top:40px">
+      <div style="text-align:center;margin-top:40px" class="reveal">
         <a href="ai-news.html" class="btn-s">View all articles →</a>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="sec" style="padding-top:0">
+  <section class="sec" style="padding-top:0" aria-labelledby="faq-heading">
     <div class="wrap">
       <div class="sec-head reveal">
-        <div><span class="label">FAQ</span><h2 class="title">Frequently Asked Questions</h2></div>
+        <div><span class="label">FAQ</span><h2 class="title" id="faq-heading">Frequently Asked Questions</h2></div>
       </div>
       <div class="reveal" style="max-width:740px;margin:0 auto">
         <details class="faq-item" open>
@@ -216,19 +293,23 @@
           <summary>Can I write for NyvoraAI?</summary>
           <p>Yes! We welcome contributors who are passionate about AI. Visit our <a href="contact.html" style="color:var(--accent)">Contact page</a> and select "Write for Us" to get started.</p>
         </details>
+        <details class="faq-item">
+          <summary>Who funds NyvoraAI?</summary>
+          <p>NyvoraAI is independently operated and not funded by any AI company. We do not accept payment in exchange for editorial coverage. Our opinions are our own.</p>
+        </details>
       </div>
     </div>
   </section>
 
   <!-- NEWSLETTER -->
-  <section class="nl">
+  <section class="nl" aria-labelledby="nl-heading">
     <div class="wrap">
       <div class="nl-box reveal">
         <span class="label" style="display:block;text-align:center">Newsletter</span>
-        <h2>Stay ahead of AI. Get it free.</h2>
+        <h2 id="nl-heading">Stay ahead of AI. Get it free.</h2>
         <p>Top AI stories every week. No spam. No noise. Just signal.</p>
-        <form class="nl-form" onsubmit="return false">
-          <input type="email" placeholder="Your email address" required aria-label="Email address"/>
+        <form class="nl-form" onsubmit="return false" aria-label="Newsletter signup">
+          <input type="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email"/>
           <button type="submit">Subscribe Free</button>
         </form>
         <p class="nl-note">No spam · Unsubscribe anytime · 100% free</p>
@@ -238,7 +319,6 @@
 
 </main>
 
-<!-- FOOTER -->
 <footer role="contentinfo">
   <div class="wrap">
     <div class="footer-grid">
@@ -246,10 +326,10 @@
         <span class="f-logo">NyvoraAI</span>
         <p>Your trusted source for original AI news, deep dives, and practical insights on artificial intelligence.</p>
         <div class="socials">
-          <a class="soc" href="https://twitter.com/NyvoraAI" aria-label="Twitter/X" target="_blank" rel="noopener">
+          <a class="soc" href="https://twitter.com/NyvoraAI" aria-label="Follow NyvoraAI on Twitter/X" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="var(--muted)"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
-          <a class="soc" href="https://instagram.com/NyvoraAI" aria-label="Instagram" target="_blank" rel="noopener">
+          <a class="soc" href="https://instagram.com/NyvoraAI" aria-label="Follow NyvoraAI on Instagram" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
         </div>
@@ -278,6 +358,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>
