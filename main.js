@@ -1,81 +1,81 @@
-/* NyvoraAI — Shared Scripts */
+// NyvoraAI — main.js (shared across all pages)
 
-// NAV SCROLL
-window.addEventListener('scroll',()=>{
-  const nav=document.querySelector('nav');
-  if(nav)nav.style.background=window.scrollY>60?'rgba(5,5,10,.97)':'rgba(5,5,10,.8)';
-},{passive:true});
+// === MOBILE MENU ===
+const ham = document.getElementById('ham');
+const mob = document.getElementById('mob');
+if (ham && mob) {
+  ham.addEventListener('click', () => {
+    const open = mob.classList.toggle('open');
+    ham.setAttribute('aria-expanded', open);
+  });
+}
 
-// HAMBURGER
-document.addEventListener('DOMContentLoaded',()=>{
-  const ham=document.getElementById('ham');
-  const mob=document.getElementById('mob');
-  if(ham&&mob){
-    ham.addEventListener('click',()=>{
-      const o=mob.classList.toggle('open');
-      ham.setAttribute('aria-expanded',String(o));
+// === SCROLL REVEAL ===
+const revealEls = document.querySelectorAll('.reveal');
+if (revealEls.length) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
     });
-    mob.querySelectorAll('a').forEach(a=>{
-      a.addEventListener('click',()=>{mob.classList.remove('open');ham.setAttribute('aria-expanded','false')});
-    });
-  }
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => observer.observe(el));
+}
 
-  // REVEAL
-  function initReveal(){
-    const els=document.querySelectorAll('.reveal');
-    const obs=new IntersectionObserver((entries)=>{
-      entries.forEach((e,i)=>{
-        if(e.isIntersecting){
-          setTimeout(()=>e.target.classList.add('vis'),i*70);
-          obs.unobserve(e.target);
-        }
-      });
-    },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
-    els.forEach(el=>obs.observe(el));
+// === ACTIVE NAV LINK ===
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a, .mob-menu a').forEach(link => {
+  const href = link.getAttribute('href');
+  if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    link.classList.add('active');
   }
-  initReveal();
+});
 
-  // CATEGORY PILLS
-  document.querySelectorAll('.pill').forEach(pill=>{
-    pill.addEventListener('click',()=>{
-      pill.closest('.cats').querySelectorAll('.pill').forEach(p=>p.classList.remove('act'));
-      pill.classList.add('act');
+// === FILTER PILLS (blog/news pages) ===
+const pills = document.querySelectorAll('.pill');
+const cards = document.querySelectorAll('.acard[data-cat]');
+pills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    pills.forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    const cat = pill.dataset.cat;
+    cards.forEach(card => {
+      if (cat === 'all' || card.dataset.cat === cat) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
     });
   });
+});
 
-  // NEWSLETTER
-  document.querySelectorAll('.nl-form').forEach(form=>{
-    form.addEventListener('submit',e=>{
-      e.preventDefault();
-      const btn=form.querySelector('button');
-      const inp=form.querySelector('input');
-      const orig=btn.textContent;
-      btn.textContent='Subscribed!';
-      btn.style.background='#00b894';
-      btn.style.boxShadow='0 6px 30px rgba(0,184,148,.35)';
-      inp.value='';
-      setTimeout(()=>{btn.textContent=orig;btn.style.background='';btn.style.boxShadow=''},3500);
-    });
+// === CONTACT FORM ===
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const success = document.getElementById('formSuccess');
+    if (success) {
+      contactForm.style.display = 'none';
+      success.style.display = 'block';
+    }
   });
+}
 
-  // CONTACT FORM
-  const cf=document.getElementById('contactForm');
-  if(cf){
-    cf.addEventListener('submit',e=>{
-      e.preventDefault();
-      const btn=cf.querySelector('button[type="submit"]');
-      const orig=btn.textContent;
-      btn.textContent='Message Sent!';
-      btn.style.background='#00b894';
-      btn.style.boxShadow='0 6px 30px rgba(0,184,148,.35)';
-      setTimeout(()=>{btn.textContent=orig;btn.style.background='';btn.style.boxShadow='';cf.reset()},3500);
-    });
-  }
-
-  // REDUCED MOTION
-  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){
-    document.querySelectorAll('.mesh-orb,.vis-shape,.vis-line,.badge-dot,.bva,.acard-thumb-inner').forEach(el=>el.style.animation='none');
-    const t=document.querySelector('.ticker-track');
-    if(t)t.style.animation='none';
-  }
+// === NEWSLETTER FORM ===
+document.querySelectorAll('.nl-form').forEach(form => {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('button');
+    if (btn) {
+      btn.textContent = '✓ Subscribed!';
+      btn.style.background = '#4fd9a0';
+      setTimeout(() => {
+        btn.textContent = 'Subscribe Free';
+        btn.style.background = '';
+        form.reset();
+      }, 3000);
+    }
+  });
 });
