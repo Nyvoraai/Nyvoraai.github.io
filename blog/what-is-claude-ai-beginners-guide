@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>What Is Claude AI and How Does It Work? A Beginner's Guide (2026) | NyvoraAI</title>
+<meta name="description" content="New to Claude AI? This beginner's guide explains what Claude AI is, how it works, and what you can use it for in 2026 — in simple, clear language. Read now!"/>
+<meta name="keywords" content="what is Claude AI, how does Claude AI work, Claude AI for beginners, Claude AI guide 2026, Anthropic Claude explained"/>
+<meta name="author" content="NyvoraAI Team"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://nyvoraai.github.io/blog/what-is-claude-ai-beginners-guide"/>
+
+<meta property="og:title" content="What Is Claude AI and How Does It Work? A Beginner's Guide (2026)"/>
+<meta property="og:description" content="New to Claude AI? This beginner's guide explains everything in simple terms with real examples. Read now on NyvoraAI!"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://nyvoraai.github.io/blog/what-is-claude-ai-beginners-guide"/>
+<meta property="og:image" content="https://nyvoraai.github.io/og-image.jpg"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="What Is Claude AI and How Does It Work? A Beginner's Guide (2026)"/>
+<meta name="twitter:description" content="New to Claude AI? This beginner's guide explains everything in simple terms. Read now on NyvoraAI!"/>
+<meta name="twitter:site" content="@NyvoraAI"/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/og-image.jpg"/>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"What Is Claude AI and How Does It Work? A Beginner's Guide (2026)","description":"New to Claude AI? This beginner's guide explains what Claude AI is, how it works, and what you can use it for in 2026 — in simple, clear language.","author":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/logo.svg"}},"datePublished":"2026-06-20","dateModified":"2026-06-20","mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/blog/what-is-claude-ai-beginners-guide"},"keywords":"Claude AI, what is Claude AI, Claude AI for beginners, Anthropic, AI guide 2026","articleSection":"Explainers","url":"https://nyvoraai.github.io/blog/what-is-claude-ai-beginners-guide"}
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Claude AI?","acceptedAnswer":{"@type":"Answer","text":"Claude AI is an AI assistant made by Anthropic. It can write, explain, summarise, answer questions, analyse documents, and help with coding — all through a simple chat interface."}},{"@type":"Question","name":"How does Claude AI work for beginners?","acceptedAnswer":{"@type":"Answer","text":"Claude works like a smart chat partner. You type a message or question, Claude reads it, thinks about the best response, and replies in plain language. No technical knowledge needed to get started."}},{"@type":"Question","name":"Is Claude AI free to use?","acceptedAnswer":{"@type":"Answer","text":"Yes. Claude has a free tier at claude.ai that lets anyone get started without a credit card. A paid Claude Pro plan unlocks higher usage limits and priority access."}},{"@type":"Question","name":"What is the difference between Claude AI and ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Both are powerful AI assistants, but Claude is known for longer context windows (it can read very long documents), more nuanced reasoning, and a safer, more careful tone. ChatGPT has a larger plugin ecosystem. Both are excellent — try both for free."}},{"@type":"Question","name":"What can beginners use Claude AI for?","acceptedAnswer":{"@type":"Answer","text":"Beginners can use Claude for writing essays, summarising PDFs, answering study questions, drafting emails, explaining complex topics simply, helping with coding, and brainstorming ideas."}},{"@type":"Question","name":"Who made Claude AI?","acceptedAnswer":{"@type":"Answer","text":"Claude was created by Anthropic, an AI safety company founded in 2021 by former OpenAI researchers including Dario Amodei and Daniela Amodei."}}]}
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://nyvoraai.github.io/blog.html"},{"@type":"ListItem","position":3,"name":"What Is Claude AI? A Beginner's Guide","item":"https://nyvoraai.github.io/blog/what-is-claude-ai-beginners-guide"}]}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+/* ===========================
+   NYVORA AI — DESIGN TOKENS
+   =========================== */
+:root{
+  --bg:#0a0a0f;--bg2:#111118;--bg3:#16161f;
+  --surface:#1c1c28;--surface2:#23232f;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.12);
+  --text:#e8e8f0;--text2:#9999b0;
+  --accent:#6c63ff;--accent2:#a78bfa;--accent-glow:rgba(108,99,255,0.25);
+  --green:#22c55e;--yellow:#f59e0b;--red:#ef4444;--blue:#3b82f6;
+  --tag-bg:rgba(108,99,255,0.12);
+  --radius:12px;--radius-lg:18px;--max-w:760px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:16px;overflow-x:hidden}
+
+/* BACKGROUND */
+#bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
+.bg-gradient{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 20% 10%,rgba(108,99,255,0.08) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 80% 80%,rgba(108,99,255,0.05) 0%,transparent 60%)}
+
+/* PROGRESS BAR */
+#progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#6c63ff,#a78bfa);z-index:9999;width:0%;transition:width 0.1s linear;box-shadow:0 0 12px rgba(108,99,255,0.6)}
+
+/* NAVBAR */
+nav.main-nav{position:sticky;top:0;z-index:1000;background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-mark{width:32px;height:32px;background:linear-gradient(135deg,#6c63ff,#a78bfa);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:0.9rem;color:#fff;font-weight:800}
+.nav-logo-text{font-size:1.15rem;font-weight:800;color:#fff;letter-spacing:-0.3px}
+.nav-links{display:flex;align-items:center;gap:6px;list-style:none}
+.nav-links a{color:var(--text2);text-decoration:none;font-size:0.88rem;font-weight:500;padding:6px 14px;border-radius:8px;transition:color 0.2s,background 0.2s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,0.05)}
+.nav-links a.active{color:#fff}
+.nav-cta{background:var(--accent) !important;color:#fff !important;font-weight:600 !important;padding:8px 18px !important;border-radius:8px !important;transition:opacity 0.2s,transform 0.2s !important}
+.nav-cta:hover{opacity:0.9 !important;transform:translateY(-1px) !important}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nav-hamburger span{width:22px;height:2px;background:var(--text2);border-radius:2px;transition:0.3s}
+
+/* MOBILE MENU */
+#mobile-menu{display:none;position:fixed;inset:0;z-index:999;background:rgba(10,10,15,0.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:28px}
+#mobile-menu.open{display:flex}
+#mobile-menu a{color:var(--text);text-decoration:none;font-size:1.4rem;font-weight:700;transition:color 0.2s}
+#mobile-menu a:hover{color:var(--accent2)}
+.mm-close{position:absolute;top:20px;right:20px;background:var(--surface);border:1px solid var(--border2);color:var(--text);width:40px;height:40px;border-radius:10px;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+
+/* HERO */
+.hero{position:relative;z-index:1;padding:60px 24px 48px;max-width:var(--max-w);margin:0 auto}
+.breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:28px;font-size:0.82rem;color:var(--text2)}
+.breadcrumb a{color:var(--text2);text-decoration:none;transition:color 0.2s}
+.breadcrumb a:hover{color:var(--accent2)}
+.breadcrumb .sep{color:var(--border2)}
+.breadcrumb .current{color:var(--text)}
+.post-label{display:inline-flex;align-items:center;gap:6px;background:var(--tag-bg);border:1px solid rgba(108,99,255,0.25);color:var(--accent2);font-size:0.78rem;font-weight:600;letter-spacing:0.6px;text-transform:uppercase;padding:5px 14px;border-radius:50px;margin-bottom:22px}
+.post-label .dot{width:6px;height:6px;border-radius:50%;background:var(--accent2);animation:blink 1.8s ease infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero h1{font-size:clamp(1.9rem,4.5vw,2.9rem);font-weight:800;line-height:1.2;letter-spacing:-0.5px;color:#fff;margin-bottom:20px}
+.hero h1 .accent-word{background:linear-gradient(135deg,#6c63ff 0%,#a78bfa 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-meta{display:flex;flex-wrap:wrap;align-items:center;gap:18px;color:var(--text2);font-size:0.83rem;margin-bottom:32px}
+.hero-meta .meta-item{display:flex;align-items:center;gap:6px}
+.hero-meta .meta-item i{color:var(--accent2);font-size:0.78rem}
+
+/* HERO VISUAL */
+.hero-visual{border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border2);background:var(--surface);position:relative;margin-bottom:12px;height:300px;display:flex;align-items:center;justify-content:center}
+.hero-visual-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 30% 40%,rgba(108,99,255,0.18) 0%,transparent 70%),radial-gradient(ellipse 50% 50% at 75% 60%,rgba(167,139,250,0.1) 0%,transparent 60%)}
+.claude-diagram{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:20px}
+.claude-logo-wrap{position:relative}
+.claude-logo{width:90px;height:90px;border-radius:22px;background:linear-gradient(135deg,#6c63ff,#a78bfa);display:flex;align-items:center;justify-content:center;font-size:2.8rem;box-shadow:0 0 40px rgba(108,99,255,0.6);animation:glow-pulse 2.5s ease-in-out infinite}
+@keyframes glow-pulse{0%,100%{box-shadow:0 0 32px rgba(108,99,255,0.5)}50%{box-shadow:0 0 60px rgba(108,99,255,0.9)}}
+.claude-rings{position:absolute;inset:-16px;border-radius:38px;border:1px solid rgba(108,99,255,0.2);animation:ring-expand 3s ease-in-out infinite}
+.claude-rings2{position:absolute;inset:-30px;border-radius:50px;border:1px solid rgba(108,99,255,0.1);animation:ring-expand 3s ease-in-out 0.5s infinite}
+@keyframes ring-expand{0%,100%{transform:scale(1);opacity:0.6}50%{transform:scale(1.05);opacity:1}}
+.claude-label{font-size:0.9rem;font-weight:700;color:var(--text);background:var(--surface2);padding:8px 22px;border-radius:50px;border:1px solid var(--border2);letter-spacing:0.3px}
+.claude-chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.chip{font-size:0.72rem;font-weight:600;padding:5px 12px;border-radius:50px;background:var(--surface2);border:1px solid var(--border2);color:var(--text2);animation:floatChip 4s ease-in-out infinite}
+.chip:nth-child(1){animation-delay:0s}.chip:nth-child(2){animation-delay:0.6s}.chip:nth-child(3){animation-delay:1.2s}.chip:nth-child(4){animation-delay:1.8s}
+@keyframes floatChip{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.img-caption{font-size:0.78rem;color:var(--text2);text-align:center;margin-top:8px;margin-bottom:32px}
+
+/* LAYOUT */
+.page-wrapper{position:relative;z-index:1;max-width:var(--max-w);margin:0 auto;padding:0 24px 80px}
+
+/* TOC */
+.toc{background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:44px}
+.toc-header{display:flex;align-items:center;gap:8px;color:var(--text);font-weight:700;font-size:0.9rem;margin-bottom:16px}
+.toc-header i{color:var(--accent2)}
+.toc ol{padding-left:18px}
+.toc ol li{margin-bottom:10px}
+.toc ol li a{color:var(--text2);text-decoration:none;font-size:0.88rem;line-height:1.5;transition:color 0.2s;display:flex;align-items:flex-start;gap:6px}
+.toc ol li a:hover{color:var(--accent2)}
+
+/* ARTICLE */
+.article-content p{color:var(--text2);margin-bottom:22px;font-size:1rem;line-height:1.85}
+.article-content strong{color:var(--text);font-weight:600}
+.article-content em{color:var(--accent2);font-style:italic}
+.article-content a{color:var(--accent2);text-decoration:none;font-weight:500;border-bottom:1px solid rgba(167,139,250,0.3);transition:border-color 0.2s,color 0.2s}
+.article-content a:hover{color:#fff;border-color:var(--accent2)}
+.article-content h2{font-size:1.55rem;font-weight:800;color:#fff;margin:52px 0 18px;letter-spacing:-0.3px;padding-top:8px;border-top:1px solid var(--border)}
+.article-content h2:first-of-type{border-top:none;margin-top:0}
+.article-content h3{font-size:1.1rem;font-weight:700;color:var(--text);margin:32px 0 12px}
+.article-content ul,.article-content ol{padding-left:22px;margin-bottom:22px}
+.article-content ul li,.article-content ol li{color:var(--text2);margin-bottom:10px;line-height:1.75;font-size:1rem}
+.article-content ul li strong,.article-content ol li strong{color:var(--text)}
+
+/* CALLOUTS */
+.callout{border-radius:var(--radius);padding:20px 24px;margin:28px 0;border-left:3px solid;background:var(--surface)}
+.callout-icon-row{display:flex;align-items:flex-start;gap:14px}
+.callout-icon-wrap{font-size:1.25rem;margin-top:2px;flex-shrink:0}
+.callout-body strong{display:block;font-size:0.9rem;font-weight:700;margin-bottom:6px}
+.callout-body p{margin:0;font-size:0.92rem;color:var(--text2);line-height:1.65}
+.callout-purple{border-color:var(--accent);background:rgba(108,99,255,0.07)}
+.callout-purple .callout-body strong{color:var(--accent2)}
+.callout-green{border-color:var(--green);background:rgba(34,197,94,0.07)}
+.callout-green .callout-body strong{color:var(--green)}
+.callout-yellow{border-color:var(--yellow);background:rgba(245,158,11,0.07)}
+.callout-yellow .callout-body strong{color:var(--yellow)}
+.callout-blue{border-color:var(--blue);background:rgba(59,130,246,0.07)}
+.callout-blue .callout-body strong{color:#93c5fd}
+
+/* STEP CARDS */
+.steps-grid{display:flex;flex-direction:column;gap:14px;margin:28px 0}
+.step-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;display:flex;gap:18px;align-items:flex-start;transition:border-color 0.25s,transform 0.25s}
+.step-card:hover{border-color:var(--border2);transform:translateX(4px)}
+.step-num{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#6c63ff,#a78bfa);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.9rem;color:#fff;flex-shrink:0}
+.step-body h4{color:var(--text);font-weight:700;margin-bottom:5px;font-size:0.97rem}
+.step-body p{color:var(--text2);font-size:0.88rem;margin:0;line-height:1.65}
+
+/* CARD GRID */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:28px 0}
+.card-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:border-color 0.25s,transform 0.25s}
+.card-item:hover{border-color:rgba(108,99,255,0.4);transform:translateY(-3px)}
+.card-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;margin-bottom:12px}
+.ci-purple{background:rgba(108,99,255,0.15)}.ci-green{background:rgba(34,197,94,0.12)}.ci-blue{background:rgba(59,130,246,0.12)}.ci-yellow{background:rgba(245,158,11,0.12)}.ci-pink{background:rgba(236,72,153,0.12)}.ci-lavender{background:rgba(167,139,250,0.15)}
+.card-item h4{color:var(--text);font-weight:700;margin-bottom:6px;font-size:0.92rem}
+.card-item p{color:var(--text2);font-size:0.84rem;line-height:1.6;margin:0}
+
+/* HIGHLIGHT BOX */
+.highlight-box{background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius-lg);padding:28px;margin:32px 0;position:relative;overflow:hidden}
+.highlight-box::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#6c63ff,#a78bfa,transparent)}
+.highlight-box h3{color:#fff;font-size:1rem;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.highlight-box ul{padding-left:18px}
+.highlight-box ul li{color:var(--text2);font-size:0.9rem;margin-bottom:8px;line-height:1.65}
+.highlight-box ul li strong{color:var(--text)}
+
+/* COMPARISON TABLE */
+.table-wrap{overflow-x:auto;margin:28px 0;border-radius:var(--radius);border:1px solid var(--border2)}
+table{width:100%;border-collapse:collapse;background:var(--surface)}
+thead{background:rgba(108,99,255,0.15)}
+th{padding:14px 18px;text-align:left;font-size:0.82rem;font-weight:700;color:var(--accent2);letter-spacing:0.4px;text-transform:uppercase}
+td{padding:13px 18px;font-size:0.88rem;border-bottom:1px solid var(--border);color:var(--text2)}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:rgba(255,255,255,0.02)}
+td strong{color:var(--text)}
+.check{color:var(--green);font-weight:700}.cross{color:var(--red);font-weight:700}
+
+/* IMG BLOCK */
+.img-block{margin:36px 0 8px;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border2)}
+.img-placeholder{height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font-size:0.88rem;font-weight:600;color:var(--text2);background:var(--surface2);position:relative;overflow:hidden}
+.img-placeholder::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 50%,rgba(108,99,255,0.1) 0%,transparent 70%)}
+.img-placeholder .ip-icon{font-size:2.5rem;position:relative;z-index:1}
+.img-placeholder span{position:relative;z-index:1}
+
+/* DIVIDER */
+.divider{border:none;border-top:1px solid var(--border);margin:40px 0}
+
+/* TAGS */
+.tags-row{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}
+.tag{background:var(--surface);border:1px solid var(--border2);color:var(--text2);font-size:0.78rem;font-weight:600;padding:5px 14px;border-radius:50px;text-decoration:none;transition:border-color 0.2s,color 0.2s,background 0.2s}
+.tag:hover{border-color:var(--accent);color:var(--accent2);background:var(--tag-bg)}
+
+/* FAQ */
+.faq-list{margin:24px 0}
+.faq-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;transition:border-color 0.2s}
+.faq-item:hover{border-color:var(--border2)}
+.faq-item.open{border-color:rgba(108,99,255,0.35)}
+.faq-q{padding:18px 22px;font-weight:600;font-size:0.93rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--text);user-select:none;transition:background 0.2s}
+.faq-q:hover{background:rgba(255,255,255,0.02)}
+.faq-q .faq-icon{color:var(--accent2);font-size:1rem;transition:transform 0.3s;flex-shrink:0;margin-left:12px}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;padding:0 22px;color:var(--text2);font-size:0.9rem;line-height:1.75;transition:max-height 0.35s ease,padding 0.35s ease}
+.faq-item.open .faq-a{max-height:300px;padding:0 22px 18px}
+
+/* AUTHOR */
+.author-box{background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius-lg);padding:24px;display:flex;gap:18px;align-items:center;margin:36px 0}
+.author-avatar{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,#6c63ff,#a78bfa);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.author-info h4{color:var(--text);font-weight:700;margin-bottom:4px;font-size:0.92rem}
+.author-info p{font-size:0.83rem;color:var(--text2);margin:0;line-height:1.6}
+
+/* SHARE */
+.share-box{background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius-lg);padding:28px;text-align:center;margin:36px 0}
+.share-box h3{color:var(--text);font-size:0.95rem;font-weight:700;margin-bottom:18px}
+.share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.share-btn{padding:9px 20px;border-radius:8px;font-weight:600;font-size:0.82rem;text-decoration:none;color:#fff;display:flex;align-items:center;gap:7px;transition:opacity 0.2s,transform 0.2s}
+.share-btn:hover{opacity:0.88;transform:translateY(-2px)}
+.sb-tw{background:#1da1f2}.sb-fb{background:#1877f2}.sb-wa{background:#25d366}.sb-li{background:#0a66c2}
+
+/* NEWSLETTER */
+.newsletter-box{background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius-lg);padding:40px 36px;text-align:center;margin:44px 0;position:relative;overflow:hidden}
+.newsletter-box::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#6c63ff,#a78bfa,transparent)}
+.newsletter-box::after{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:radial-gradient(circle,rgba(108,99,255,0.1) 0%,transparent 70%);pointer-events:none}
+.nl-label{display:inline-block;background:var(--tag-bg);border:1px solid rgba(108,99,255,0.25);color:var(--accent2);font-size:0.75rem;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;padding:4px 12px;border-radius:50px;margin-bottom:16px}
+.newsletter-box h3{color:#fff;font-size:1.45rem;font-weight:800;margin-bottom:10px;letter-spacing:-0.3px}
+.newsletter-box p{color:var(--text2);font-size:0.9rem;margin-bottom:26px}
+.nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap}
+.nl-form input{flex:1;padding:12px 18px;border-radius:8px;border:1px solid var(--border2);background:var(--bg2);color:var(--text);font-size:0.9rem;outline:none;min-width:180px;transition:border-color 0.2s}
+.nl-form input::placeholder{color:var(--text2)}
+.nl-form input:focus{border-color:var(--accent)}
+.nl-form button{padding:12px 24px;border-radius:8px;background:var(--accent);color:#fff;border:none;font-weight:700;cursor:pointer;font-size:0.9rem;transition:opacity 0.2s,transform 0.2s;white-space:nowrap}
+.nl-form button:hover{opacity:0.9;transform:translateY(-1px)}
+.nl-note{font-size:0.78rem;color:var(--text2);margin-top:12px;margin-bottom:0 !important}
+
+/* SIDE POPUP */
+#side-popup{position:fixed;bottom:80px;right:20px;z-index:9000;width:278px;background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius-lg);box-shadow:0 20px 60px rgba(0,0,0,0.5),0 0 0 1px rgba(108,99,255,0.1);overflow:hidden;animation:popupIn 0.5s cubic-bezier(.34,1.56,.64,1) 3.5s both}
+@keyframes popupIn{from{transform:translateY(20px) scale(0.9);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
+.popup-top{background:linear-gradient(135deg,rgba(108,99,255,0.2),rgba(167,139,250,0.1));border-bottom:1px solid var(--border);padding:14px 18px;display:flex;align-items:center;justify-content:space-between}
+.popup-top-label{display:flex;align-items:center;gap:7px;font-size:0.82rem;font-weight:700;color:var(--text)}
+.popup-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:blink 1.5s ease infinite}
+.popup-x{background:rgba(255,255,255,0.07);border:1px solid var(--border2);color:var(--text2);width:24px;height:24px;border-radius:6px;cursor:pointer;font-size:0.8rem;display:flex;align-items:center;justify-content:center;transition:background 0.2s}
+.popup-x:hover{background:rgba(255,255,255,0.12);color:var(--text)}
+.popup-body{padding:18px}
+.popup-body p{font-size:0.84rem;color:var(--text2);margin-bottom:12px;line-height:1.55}
+.popup-input{width:100%;padding:10px 14px;border:1px solid var(--border2);border-radius:8px;background:var(--bg2);color:var(--text);font-size:0.84rem;outline:none;margin-bottom:10px;transition:border-color 0.2s}
+.popup-input:focus{border-color:var(--accent)}
+.popup-submit{width:100%;padding:10px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-weight:700;font-size:0.86rem;cursor:pointer;transition:opacity 0.2s}
+.popup-submit:hover{opacity:0.9}
+
+/* BACK TO TOP */
+#btt{position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:var(--accent);color:#fff;border:none;border-radius:10px;cursor:pointer;font-size:1rem;z-index:999;opacity:0;transform:translateY(6px);transition:opacity 0.3s,transform 0.3s;box-shadow:0 4px 20px rgba(108,99,255,0.4);display:flex;align-items:center;justify-content:center}
+#btt.show{opacity:1;transform:translateY(0)}
+#btt:hover{opacity:0.9}
+
+/* ===========================
+   ANIMATED FOOTER
+   =========================== */
+footer{
+  position:relative;z-index:1;
+  background:var(--bg2);
+  border-top:1px solid var(--border);
+  overflow:hidden;
+}
+
+/* Moving gradient top border */
+.footer-glow-border{
+  height:2px;
+  background:linear-gradient(90deg,transparent 0%,#6c63ff 25%,#a78bfa 50%,#6c63ff 75%,transparent 100%);
+  background-size:300% 100%;
+  animation:borderSlide 3s linear infinite;
+}
+@keyframes borderSlide{0%{background-position:100% 0%}100%{background-position:-100% 0%}}
+
+/* Floating orbs */
+.footer-orbs{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:0.07;animation:orbDrift linear infinite}
+.orb1{width:320px;height:320px;background:radial-gradient(circle,#6c63ff,transparent);left:-100px;top:-80px;animation-duration:22s}
+.orb2{width:220px;height:220px;background:radial-gradient(circle,#a78bfa,transparent);right:5%;bottom:5%;animation-duration:28s;animation-delay:-10s}
+.orb3{width:180px;height:180px;background:radial-gradient(circle,#6c63ff,transparent);left:45%;top:35%;animation-duration:19s;animation-delay:-6s}
+@keyframes orbDrift{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(15px,-15px) scale(1.04)}50%{transform:translate(-10px,20px) scale(0.97)}75%{transform:translate(20px,5px) scale(1.02)}}
+
+/* Animated particle dots in footer */
+.footer-particles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.fparticle{position:absolute;width:2px;height:2px;border-radius:50%;background:var(--accent2);opacity:0;animation:fparticleFloat linear infinite}
+@keyframes fparticleFloat{0%{transform:translateY(0) translateX(0);opacity:0}20%{opacity:0.4}80%{opacity:0.2}100%{transform:translateY(-120px) translateX(20px);opacity:0}}
+
+/* Footer main grid */
+.footer-main{
+  max-width:1100px;margin:0 auto;padding:56px 24px 44px;
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;
+  position:relative;z-index:1;
+}
+
+/* Brand column */
+.footer-brand-logo{display:flex;align-items:center;gap:10px;margin-bottom:16px;text-decoration:none}
+.fbrand-mark{
+  width:34px;height:34px;
+  background:linear-gradient(135deg,#6c63ff,#a78bfa);
+  border-radius:9px;display:flex;align-items:center;justify-content:center;
+  font-size:0.9rem;color:#fff;font-weight:800;
+  box-shadow:0 0 20px rgba(108,99,255,0.4);
+  transition:box-shadow 0.3s,transform 0.3s;
+}
+.footer-brand-logo:hover .fbrand-mark{box-shadow:0 0 30px rgba(108,99,255,0.7);transform:scale(1.05)}
+.fbrand-text{font-size:1.15rem;font-weight:800;color:#fff;letter-spacing:-0.2px}
+.footer-brand p{color:var(--text2);font-size:0.86rem;line-height:1.75;margin-bottom:22px}
+
+/* Social icons — ANIMATED */
+.footer-socials{display:flex;gap:10px;flex-wrap:wrap}
+.fsocial{
+  width:42px;height:42px;border-radius:10px;
+  background:var(--surface);border:1px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--text2);text-decoration:none;font-size:1rem;
+  position:relative;overflow:hidden;
+  transition:color 0.3s,border-color 0.3s,transform 0.3s,box-shadow 0.3s;
+}
+.fsocial::before{
+  content:'';position:absolute;inset:0;
+  background:var(--social-color,var(--accent));
+  transform:translateY(100%);
+  transition:transform 0.3s cubic-bezier(.34,1.56,.64,1);
+  z-index:0;
+}
+.fsocial:hover::before{transform:translateY(0)}
+.fsocial:hover{color:#fff;border-color:transparent;transform:translateY(-4px);box-shadow:0 8px 24px var(--social-shadow,rgba(108,99,255,0.4))}
+.fsocial i{position:relative;z-index:1}
+/* Per-platform brand colors */
+.fsocial-ig{--social-color:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);--social-shadow:rgba(220,39,67,0.4)}
+.fsocial-fb{--social-color:#1877f2;--social-shadow:rgba(24,119,242,0.4)}
+.fsocial-tw{--social-color:#1da1f2;--social-shadow:rgba(29,161,242,0.4)}
+.fsocial-yt{--social-color:#ff0000;--social-shadow:rgba(255,0,0,0.4)}
+/* Instagram needs gradient — override */
+.fsocial-ig:hover::before{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+
+/* Footer nav columns */
+.footer-col h5{color:var(--text);font-size:0.86rem;font-weight:700;margin-bottom:18px;letter-spacing:0.2px;position:relative;display:inline-block}
+.footer-col h5::after{content:'';position:absolute;bottom:-6px;left:0;width:24px;height:2px;background:linear-gradient(90deg,#6c63ff,#a78bfa);border-radius:2px}
+.footer-col ul{list-style:none;margin-top:14px}
+.footer-col ul li{margin-bottom:12px}
+.footer-col ul li a{
+  color:var(--text2);text-decoration:none;font-size:0.85rem;
+  transition:color 0.2s,padding-left 0.2s;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.footer-col ul li a::before{content:'›';color:var(--accent);opacity:0;transform:translateX(-4px);transition:opacity 0.2s,transform 0.2s;font-weight:700}
+.footer-col ul li a:hover{color:var(--accent2);padding-left:6px}
+.footer-col ul li a:hover::before{opacity:1;transform:translateX(0)}
+
+/* Footer stats bar */
+.footer-stats{
+  position:relative;z-index:1;
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;gap:0;
+  overflow:hidden;
+}
+.fstat{
+  flex:1;padding:18px 12px;text-align:center;
+  border-right:1px solid var(--border);
+  transition:background 0.3s;
+}
+.fstat:last-child{border-right:none}
+.fstat:hover{background:rgba(108,99,255,0.04)}
+.fstat-num{font-size:1.25rem;font-weight:800;color:#fff;letter-spacing:-0.5px;background:linear-gradient(135deg,#6c63ff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:block}
+.fstat-label{font-size:0.75rem;color:var(--text2);font-weight:500;margin-top:2px;display:block}
+
+/* Footer bottom */
+.footer-bottom{
+  border-top:1px solid var(--border);padding:20px 24px;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:12px;
+  position:relative;z-index:1;
+}
+.footer-bottom p{color:var(--text2);font-size:0.8rem}
+.footer-bottom a{color:var(--accent2);text-decoration:none;transition:color 0.2s}
+.footer-bottom a:hover{color:#fff}
+.heart{color:#ef4444;animation:heartbeat 1.5s ease-in-out infinite;display:inline-block}
+@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.3)}}
+.footer-bottom-links{display:flex;gap:20px}
+.footer-bottom-links a{color:var(--text2);text-decoration:none;font-size:0.78rem;transition:color 0.2s}
+.footer-bottom-links a:hover{color:var(--accent2)}
+
+/* RESPONSIVE */
+@media(max-width:900px){.footer-main{grid-template-columns:1fr 1fr;gap:32px}.footer-brand{grid-column:1/-1}.footer-stats{gap:0}}
+@media(max-width:640px){
+  .nav-links{display:none}.nav-hamburger{display:flex}
+  .hero{padding:36px 20px 36px}.hero h1{font-size:1.75rem}
+  .page-wrapper{padding:0 20px 60px}
+  .card-grid{grid-template-columns:1fr}
+  .footer-main{grid-template-columns:1fr;gap:28px}
+  .footer-stats{flex-wrap:wrap}.fstat{flex:1 1 50%;border-right:none;border-bottom:1px solid var(--border)}
+  .footer-bottom{flex-direction:column;text-align:center}
+  #side-popup{display:none}.nl-form{flex-direction:column}
+  .claude-chips{gap:6px}
+}
+</style>
+</head>
+<body>
+
+<div class="bg-gradient"></div>
+<canvas id="bg-canvas"></canvas>
+<div id="progress-bar"></div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu">
+  <button class="mm-close" onclick="closeMobileMenu()">✕</button>
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+  <a href="https://nyvoraai.github.io/contact.html" style="background:var(--accent);color:#fff;padding:12px 30px;border-radius:10px;font-size:1rem;">Write for Us</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="main-nav">
+  <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+    <div class="nav-logo-mark">N</div>
+    <span class="nav-logo-text">NyvoraAI</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+    <li><a href="https://nyvoraai.github.io/blog.html" class="active">Blog</a></li>
+    <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+    <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+    <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    <li><a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="openMobileMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="https://nyvoraai.github.io/index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+    <span class="sep">/</span>
+    <span class="current">What Is Claude AI?</span>
+  </nav>
+
+  <div class="post-label"><span class="dot"></span> Beginner's Guide</div>
+
+  <h1>What Is <span class="accent-word">Claude AI</span> and How Does It Work? A Beginner's Guide (2026)</h1>
+
+  <div class="hero-meta">
+    <span class="meta-item"><i class="fas fa-user"></i> NyvoraAI Team</span>
+    <span class="meta-item"><i class="fas fa-calendar"></i> June 20, 2026</span>
+    <span class="meta-item"><i class="fas fa-clock"></i> 11 min read</span>
+    <span class="meta-item"><i class="fas fa-tag"></i> Explainers · For Beginners</span>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-visual-bg"></div>
+    <div class="claude-diagram">
+      <div class="claude-logo-wrap">
+        <div class="claude-rings"></div>
+        <div class="claude-rings2"></div>
+        <div class="claude-logo">🤖</div>
+      </div>
+      <div class="claude-label">Claude AI by Anthropic</div>
+      <div class="claude-chips">
+        <span class="chip">✍️ Writing</span>
+        <span class="chip">📄 Summarise PDFs</span>
+        <span class="chip">💻 Code Help</span>
+        <span class="chip">🎓 Study Assistant</span>
+      </div>
+    </div>
+  </div>
+  <p class="img-caption">Claude AI — your beginner-friendly AI assistant made by Anthropic | NyvoraAI Guide 2026</p>
+</section>
+
+<!-- MAIN CONTENT -->
+<main class="page-wrapper">
+<article class="article-content">
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="Table of Contents">
+    <div class="toc-header"><i class="fas fa-list"></i> Table of Contents</div>
+    <ol>
+      <li><a href="#what-is-claude">What Is Claude AI?</a></li>
+      <li><a href="#who-made-claude">Who Made Claude AI? (Anthropic Explained)</a></li>
+      <li><a href="#how-it-works">How Does Claude AI Work for Beginners?</a></li>
+      <li><a href="#what-can-it-do">What Can Claude AI Do? 6 Real Uses</a></li>
+      <li><a href="#vs-chatgpt">Claude AI vs ChatGPT — What's the Difference?</a></li>
+      <li><a href="#how-to-start">How to Start Using Claude AI for Free</a></li>
+      <li><a href="#tips">5 Beginner Tips to Get the Best Results</a></li>
+      <li><a href="#faq">Frequently Asked Questions</a></li>
+    </ol>
+  </nav>
+
+  <!-- INTRO -->
+  <p>You've probably heard a lot about ChatGPT. But lately, a new name keeps coming up everywhere — <strong>Claude AI</strong>. Tech journalists are calling it one of the smartest AI assistants available today. But if you're a complete beginner, you're probably wondering: what even is Claude AI, and should I be using it?</p>
+
+  <p>That's exactly what this guide answers. We'll explain Claude AI in plain, simple language — no jargon, no hype — and show you exactly what it can do for you as a student, professional, or curious person in 2026. By the end, you'll know what Claude is, how it works, and how to start using it today for free.</p>
+
+  <div class="callout callout-purple">
+    <div class="callout-icon-row">
+      <div class="callout-icon-wrap">💡</div>
+      <div class="callout-body">
+        <strong>Quick Answer</strong>
+        <p>Claude AI is an AI assistant made by Anthropic. You talk to it like a person — type a question or task — and it responds with detailed, helpful answers. It can write, explain, summarise, help with code, and much more. And it's free to start.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2 id="what-is-claude">What Is Claude AI?</h2>
+
+  <p>Claude AI is an <strong>AI assistant</strong> — a smart software program you can have a real conversation with. You type a message, and Claude reads it, thinks about the best response, and writes back in natural, clear language. It feels a lot like texting a very knowledgeable friend who can help you with almost anything.</p>
+
+  <p>Claude is built on a <strong>large language model (LLM)</strong> — the same kind of technology behind ChatGPT and Google Gemini. But Claude has its own personality, its own strengths, and its own unique approach. It's particularly known for being thoughtful, careful, and genuinely helpful — especially on complex topics that require nuance.</p>
+
+  <p>Think of Claude as your personal AI assistant that can help you:</p>
+
+  <ul>
+    <li><strong>Write better</strong> — essays, emails, blog posts, cover letters, captions</li>
+    <li><strong>Learn faster</strong> — explain any topic in simple terms, act as a tutor</li>
+    <li><strong>Work smarter</strong> — summarise long documents, analyse data, plan projects</li>
+    <li><strong>Code easier</strong> — write, debug, and explain code in any language</li>
+    <li><strong>Think clearer</strong> — brainstorm ideas, get feedback, weigh pros and cons</li>
+  </ul>
+
+  <p>The name "Claude" comes from the Claude Shannon, the mathematician who founded information theory. Fitting for an AI that lives and breathes information.</p>
+
+  <!-- SECTION 2 -->
+  <h2 id="who-made-claude">Who Made Claude AI? Anthropic Explained</h2>
+
+  <p>Claude was created by <strong>Anthropic</strong>, an AI safety company founded in 2021 and based in San Francisco. Anthropic was co-founded by <strong>Dario Amodei</strong> (CEO) and <strong>Daniela Amodei</strong> (President), along with several other researchers who previously worked at OpenAI — the company behind ChatGPT.</p>
+
+  <div class="callout callout-blue">
+    <div class="callout-icon-row">
+      <div class="callout-icon-wrap">🏢</div>
+      <div class="callout-body">
+        <strong>About Anthropic</strong>
+        <p>Anthropic was founded with a specific focus on AI safety — building AI systems that are helpful, harmless, and honest. This mission directly shapes how Claude is trained and how it behaves. Claude is designed to be straightforward, to admit uncertainty, and to avoid harmful outputs.</p>
+      </div>
+    </div>
+  </div>
+
+  <p>Anthropic has raised billions of dollars from investors including Google and Amazon, making it one of the most well-funded AI companies in the world. Claude is their flagship product — and it has gone through several generations of improvements, with each version getting significantly smarter and more capable.</p>
+
+  <p>In 2026, the Claude family includes Claude Haiku (fast and lightweight), Claude Sonnet (balanced), and Claude Opus (most powerful). As a beginner, the free tier gives you access to Claude Sonnet — which is already remarkably capable for everyday use.</p>
+
+  <!-- SECTION 3 -->
+  <h2 id="how-it-works">How Does Claude AI Work for Beginners?</h2>
+
+  <p>You don't need to understand the technical details to use Claude. But a simple mental model helps you get much better results. Here's how it works in plain English:</p>
+
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h4>You Type a Message</h4>
+        <p>Open Claude at claude.ai, type your question, task, or request in the chat box — exactly like sending a WhatsApp message. You can ask in English, Hindi, or most other languages.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h4>Claude Reads and Understands</h4>
+        <p>Claude processes everything you wrote — the words, the context, the intent. It understands not just what you said but what you actually mean, including nuance and tone. This is what makes it feel so human.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h4>Claude Thinks and Generates</h4>
+        <p>Using its training on vast amounts of text, Claude reasons through the best possible response — checking for accuracy, weighing options, and structuring the answer clearly before it starts writing.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h4>You Get a Clear, Helpful Reply</h4>
+        <p>Claude writes back in natural language, structured for readability. You can then follow up, ask for changes, dig deeper, or start a completely new topic — all in the same conversation.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">5</div>
+      <div class="step-body">
+        <h4>You Can Upload Files Too</h4>
+        <p>On paid plans (and some free access), you can upload PDFs, Word documents, spreadsheets, and images. Claude reads them and answers your questions about the content — a game-changer for students and researchers.</p>
+      </div>
+    </div>
+  </div>
+
+  <p>One thing that makes Claude special is its <strong>very long context window</strong>. This means Claude can hold an enormous amount of information in a single conversation — reading entire books, long research papers, or huge chunks of code without forgetting the beginning. Most AI assistants struggle with long documents; Claude handles them naturally.</p>
+
+  <div class="img-block">
+    <div class="img-placeholder">
+      <div class="ip-icon">💬</div>
+      <span>How Claude AI processes your message — simple conversation flow | NyvoraAI</span>
+    </div>
+  </div>
+  <p class="img-caption">Image: How Claude AI works — from your message to a helpful response | NyvoraAI Guide</p>
+
+  <!-- SECTION 4 -->
+  <h2 id="what-can-it-do">What Can Claude AI Do? 6 Real Uses for Beginners</h2>
+
+  <p>Here are six practical ways beginners are using Claude AI right now — with real examples you can try immediately.</p>
+
+  <div class="card-grid">
+    <div class="card-item">
+      <div class="card-icon ci-purple">✍️</div>
+      <h4>Writing Assistant</h4>
+      <p>Draft emails, essays, blog posts, cover letters, and social captions. Tell Claude your topic and tone — it writes a solid first draft you can edit and personalise.</p>
+    </div>
+    <div class="card-item">
+      <div class="card-icon ci-green">📄</div>
+      <h4>Summarise Long Documents</h4>
+      <p>Upload a 50-page PDF report or paste a long article. Ask Claude to summarise it in 5 bullet points. What takes 2 hours to read gets condensed in 30 seconds.</p>
+    </div>
+    <div class="card-item">
+      <div class="card-icon ci-blue">💻</div>
+      <h4>Coding Help</h4>
+      <p>Paste broken code and ask Claude what's wrong. Or describe what you want to build and ask it to write the code for you. Works for Python, JavaScript, HTML, and more.</p>
+    </div>
+    <div class="card-item">
+      <div class="card-icon ci-yellow">🎓</div>
+      <h4>Study & Learning Tutor</h4>
+      <p>Ask Claude to explain any concept as if you're a complete beginner. It adjusts its language to your level, gives examples, and quizzes you to check your understanding.</p>
+    </div>
+    <div class="card-item">
+      <div class="card-icon ci-pink">🧠</div>
+      <h4>Brainstorming Partner</h4>
+      <p>Stuck on ideas for a project, business, or creative work? Give Claude context and ask for 10 ideas. It generates creative options you'd never think of alone.</p>
+    </div>
+    <div class="card-item">
+      <div class="card-icon ci-lavender">📊</div>
+      <h4>Research & Analysis</h4>
+      <p>Ask Claude to compare two topics, explain pros and cons, or break down a complex issue. It presents balanced information with nuance — not just a one-sided answer.</p>
+    </div>
+  </div>
+
+  <p>These are just the starting points. The more you use Claude, the more creative uses you'll discover. Many students in India are already using it for competitive exam prep, internship applications, and learning programming from scratch. If you're curious about using AI for your studies, check our related guide: <a href="https://nyvoraai.github.io/blog/what-is-an-ai-agent">What Is an AI Agent? A Beginner's Guide →</a></p>
+
+  <!-- SECTION 5 -->
+  <h2 id="vs-chatgpt">Claude AI vs ChatGPT — What's the Difference?</h2>
+
+  <p>This is the most common question beginners ask. You've already heard of ChatGPT — so why should you also try Claude? Here's an honest, straightforward comparison.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Claude AI</th>
+          <th>ChatGPT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Made by</strong></td><td>Anthropic</td><td>OpenAI</td></tr>
+        <tr><td><strong>Free tier available</strong></td><td class="check">✓ Yes — claude.ai</td><td class="check">✓ Yes — chatgpt.com</td></tr>
+        <tr><td><strong>Context window (memory)</strong></td><td class="check">✓ Very long — great for big docs</td><td>Shorter on free tier</td></tr>
+        <tr><td><strong>Document upload</strong></td><td class="check">✓ PDFs, docs, images</td><td class="check">✓ Available on paid plan</td></tr>
+        <tr><td><strong>Coding ability</strong></td><td class="check">✓ Excellent</td><td class="check">✓ Excellent</td></tr>
+        <tr><td><strong>Tone & personality</strong></td><td>Thoughtful, careful, nuanced</td><td>Confident, direct, versatile</td></tr>
+        <tr><td><strong>Plugin/tool ecosystem</strong></td><td>Growing</td><td class="check">✓ Very large</td></tr>
+        <tr><td><strong>Best for beginners?</strong></td><td class="check">✓ Very easy to use</td><td class="check">✓ Very easy to use</td></tr>
+        <tr><td><strong>Safety focus</strong></td><td class="check">✓ Core to Anthropic's mission</td><td>Good but different approach</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout callout-green">
+    <div class="callout-icon-row">
+      <div class="callout-icon-wrap">✅</div>
+      <div class="callout-body">
+        <strong>Honest Bottom Line</strong>
+        <p>Both Claude and ChatGPT are excellent for beginners. Claude tends to shine on long documents, nuanced reasoning, and careful analysis. ChatGPT has a larger plugin ecosystem and image generation built in. <strong>Try both for free</strong> — they complement each other perfectly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <h2 id="how-to-start">How to Start Using Claude AI for Free — Step by Step</h2>
+
+  <p>Getting started with Claude takes less than 2 minutes. Here's exactly how to do it:</p>
+
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h4>Go to claude.ai</h4>
+        <p>Open your browser and visit <strong>claude.ai</strong>. You'll see a clean, simple chat interface — no confusing settings or complicated setup required.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h4>Create a Free Account</h4>
+        <p>Click "Sign up" and create an account with your email or Google account. No credit card needed for the free tier. The whole signup takes about 60 seconds.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h4>Type Your First Message</h4>
+        <p>Click the chat box and type anything you want to try. A great first message: <em>"Explain what you can help me with as a beginner."</em> Claude will walk you through its capabilities.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h4>Explore and Experiment</h4>
+        <p>The more specific your messages, the better Claude's responses. Start simple, then try uploading a document, asking it to write something, or explaining a topic you're studying right now.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout callout-yellow">
+    <div class="callout-icon-row">
+      <div class="callout-icon-wrap">💰</div>
+      <div class="callout-body">
+        <strong>Free vs Paid — What's the Difference?</strong>
+        <p>The free tier of Claude is genuinely useful for most beginners. Claude Pro (paid) gives you higher usage limits, priority access during busy periods, and early access to new features. Start free — upgrade only if you find yourself hitting limits regularly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 7 -->
+  <h2 id="tips">5 Beginner Tips to Get the Best Results from Claude AI</h2>
+
+  <p>Most beginners use AI wrong. They ask vague questions and get vague answers. Here's how to actually get great results from Claude every time.</p>
+
+  <div class="highlight-box">
+    <h3>🚀 5 Tips That Make a Huge Difference</h3>
+    <ul>
+      <li><strong>Be specific about what you want.</strong> Instead of "help me write an email," say "write a professional email to my professor asking for a 3-day extension on my assignment, polite but confident tone."</li>
+      <li><strong>Give Claude context.</strong> Tell it who you are and why you need the help. "I'm a 2nd year engineering student preparing for placement interviews" gets you much better answers than a bare question.</li>
+      <li><strong>Ask for a specific format.</strong> "Give me 5 bullet points", "write this as a table", "explain this like I'm 15 years old" — Claude follows formatting instructions very well.</li>
+      <li><strong>Tell Claude when you don't like the answer.</strong> Simply say "that's too long, make it shorter" or "that's too formal, make it casual." Claude adapts immediately without taking offence.</li>
+      <li><strong>Use follow-up questions.</strong> You don't have to ask everything at once. Ask one thing, get the answer, then say "now go deeper on point 3." Claude remembers the whole conversation.</li>
+    </ul>
+  </div>
+
+  <hr class="divider"/>
+
+  <!-- TAGS -->
+  <div class="tags-row">
+    <a href="https://nyvoraai.github.io/blog.html" class="tag">#ClaudeAI</a>
+    <a href="https://nyvoraai.github.io/blog.html" class="tag">#Anthropic</a>
+    <a href="https://nyvoraai.github.io/blog.html" class="tag">#AIForBeginners</a>
+    <a href="https://nyvoraai.github.io/blog.html" class="tag">#AITools2026</a>
+    <a href="https://nyvoraai.github.io/blog.html" class="tag">#WhatIsClaudeAI</a>
+    <a href="https://nyvoraai.github.io/blog.html" class="tag">#AIExplainer</a>
+    <a href="https://nyvoraai.github.io/blog.html" class="tag">#NyvoraAI</a>
+  </div>
+
+  <hr class="divider"/>
+
+  <!-- FAQ -->
+  <h2 id="faq">Frequently Asked Questions About Claude AI</h2>
+  <p>Here are the most common questions beginners ask about Claude — answered simply and directly.</p>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">What is Claude AI in simple words? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Claude AI is a smart AI assistant you can chat with — like a very knowledgeable helper available 24/7. You type what you need, and Claude writes back with helpful, detailed responses. It can write, explain, summarise, code, and much more.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is Claude AI free to use? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Yes — Claude has a free tier at claude.ai that you can start using immediately with no credit card required. A paid Claude Pro plan is available for users who need higher usage limits and priority access, but the free tier is genuinely useful for most beginners.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What is the difference between Claude AI and ChatGPT? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Both are powerful AI assistants, but they have different strengths. Claude excels at handling very long documents, nuanced reasoning, and careful analysis. ChatGPT has a larger plugin ecosystem and image generation. Both are excellent — most power users use both depending on the task.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Who made Claude AI? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Claude was made by Anthropic, an AI safety company founded in 2021 by Dario Amodei, Daniela Amodei, and other former OpenAI researchers. Anthropic is backed by major investors including Google and Amazon, and is one of the leading AI companies in the world.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I use Claude AI for studying and exams? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Absolutely. Claude is an excellent study tool — it can explain difficult concepts in simple language, quiz you on topics, summarise your textbook chapters, help you understand past papers, and even create custom practice questions. Many students use it as a personal tutor available at any hour.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is Claude AI safe to use? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Yes. Anthropic was specifically founded with an AI safety mission. Claude is trained to be helpful, harmless, and honest. It avoids generating harmful content, admits when it's uncertain, and declines requests that could cause real-world harm. It is one of the safest AI assistants currently available.</div>
+    </div>
+  </div>
+
+  <hr class="divider"/>
+
+  <!-- AUTHOR -->
+  <div class="author-box">
+    <div class="author-avatar">🤖</div>
+    <div class="author-info">
+      <h4>NyvoraAI Editorial Team</h4>
+      <p>We make AI simple, useful, and accessible for everyone. Follow us on <a href="https://www.instagram.com/nyvora_ai/">Instagram</a> and <a href="https://x.com/nyvoraai_co">X (Twitter)</a> for daily AI tips and updates. Want to write for us? <a href="https://nyvoraai.github.io/contact.html">Get in touch →</a></p>
+    </div>
+  </div>
+
+  <!-- SHARE -->
+  <div class="share-box">
+    <h3>Found this helpful? Share it with someone who needs it 👇</h3>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=What+Is+Claude+AI%3F+A+Beginner%27s+Guide+by+%40NyvoraAI&url=https://nyvoraai.github.io/blog/what-is-claude-ai-beginners-guide" target="_blank" rel="noopener" class="share-btn sb-tw"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/blog/what-is-claude-ai-beginners-guide" target="_blank" rel="noopener" class="share-btn sb-fb"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://wa.me/?text=Great+beginner+guide+to+Claude+AI+by+NyvoraAI!+https://nyvoraai.github.io/blog/what-is-claude-ai-beginners-guide" target="_blank" rel="noopener" class="share-btn sb-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nyvoraai.github.io/blog/what-is-claude-ai-beginners-guide" target="_blank" rel="noopener" class="share-btn sb-li"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter-box" id="newsletter">
+    <div class="nl-label">Newsletter</div>
+    <h3>AI knowledge, delivered free.</h3>
+    <p>Get the best AI blog posts and news every week. No spam, ever.</p>
+    <form class="nl-form" action="https://formspree.io/f/xwvjgdpw" method="POST">
+      <input type="email" name="email" placeholder="Enter your email address" required/>
+      <button type="submit">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · 100% free</p>
+  </div>
+
+</article>
+</main>
+
+<!-- SIDE POPUP -->
+<div id="side-popup">
+  <div class="popup-top">
+    <div class="popup-top-label"><span class="popup-dot"></span> Free AI Newsletter</div>
+    <button class="popup-x" onclick="document.getElementById('side-popup').style.display='none'" aria-label="Close">✕</button>
+  </div>
+  <div class="popup-body">
+    <p>Get the <strong>best AI guides &amp; news</strong> delivered to your inbox every week — completely free.</p>
+    <form action="https://formspree.io/f/xwvjgdpw" method="POST">
+      <input type="email" name="email" class="popup-input" placeholder="Your email address" required/>
+      <button type="submit" class="popup-submit">Subscribe Free →</button>
+    </form>
+  </div>
+</div>
+
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<!-- ===========================
+     ANIMATED FOOTER
+     =========================== -->
+<footer>
+  <!-- Animated glowing top border -->
+  <div class="footer-glow-border"></div>
+
+  <!-- Ambient floating orbs -->
+  <div class="footer-orbs">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <!-- Rising particle dots -->
+  <div class="footer-particles" id="footer-particles"></div>
+
+  <!-- Stats bar -->
+  <div class="footer-stats">
+    <div class="fstat">
+      <span class="fstat-num">50K+</span>
+      <span class="fstat-label">Monthly Readers</span>
+    </div>
+    <div class="fstat">
+      <span class="fstat-num">100+</span>
+      <span class="fstat-label">AI Guides</span>
+    </div>
+    <div class="fstat">
+      <span class="fstat-num">Free</span>
+      <span class="fstat-label">Always & Forever</span>
+    </div>
+    <div class="fstat">
+      <span class="fstat-num">2026</span>
+      <span class="fstat-label">Up to Date</span>
+    </div>
+  </div>
+
+  <!-- Main footer grid -->
+  <div class="footer-main">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <a href="https://nyvoraai.github.io/index.html" class="footer-brand-logo">
+        <div class="fbrand-mark">N</div>
+        <span class="fbrand-text">NyvoraAI</span>
+      </a>
+      <p>Your trusted source for original AI news, deep dives, and practical guides on artificial intelligence — written clearly for everyone, from beginners to builders.</p>
+
+      <!-- Animated social icons with brand colors -->
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fsocial fsocial-ig" aria-label="NyvoraAI Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fsocial fsocial-fb" aria-label="NyvoraAI Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fsocial fsocial-tw" aria-label="NyvoraAI Twitter/X">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fsocial fsocial-yt" aria-label="NyvoraAI YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Topics -->
+    <div class="footer-col">
+      <h5>Topics</h5>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Blog</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">Machine Learning</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">Generative AI</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">AI Tools</a></li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="mailto:lalwanivarun526@gmail.com">lalwanivarun526@gmail.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+        <li><a href="https://www.instagram.com/nyvora_ai/">Instagram DMs</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Footer bottom bar -->
+  <div class="footer-bottom">
+    <p>© 2026 NyvoraAI. All rights reserved. Built with <span class="heart">♥</span> for the AI generation.</p>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/">Privacy Policy</a>
+      <a href="https://nyvoraai.github.io/">Terms of Use</a>
+      <a href="https://nyvoraai.github.io/blog.html">Sitemap</a>
+    </div>
+  </div>
+
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+/* Animated canvas background */
+(function(){
+  const canvas=document.getElementById('bg-canvas');
+  const ctx=canvas.getContext('2d');
+  let W,H,particles=[];
+  function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight}
+  resize();window.addEventListener('resize',resize);
+  for(let i=0;i<55;i++){
+    particles.push({x:Math.random()*window.innerWidth,y:Math.random()*window.innerHeight,r:Math.random()*1.5+0.3,vx:(Math.random()-0.5)*0.3,vy:(Math.random()-0.5)*0.3,o:Math.random()*0.4+0.1});
+  }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    for(let i=0;i<particles.length;i++){
+      for(let j=i+1;j<particles.length;j++){
+        const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
+        const dist=Math.sqrt(dx*dx+dy*dy);
+        if(dist<140){ctx.beginPath();ctx.strokeStyle=`rgba(108,99,255,${0.06*(1-dist/140)})`;ctx.lineWidth=0.8;ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.stroke()}
+      }
+    }
+    particles.forEach(p=>{
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(167,139,250,${p.o})`;ctx.fill();
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* Footer rising particles */
+(function(){
+  const container=document.getElementById('footer-particles');
+  if(!container)return;
+  for(let i=0;i<18;i++){
+    const dot=document.createElement('div');
+    dot.className='fparticle';
+    dot.style.cssText=`
+      left:${Math.random()*100}%;
+      bottom:${Math.random()*30}%;
+      width:${Math.random()*2+1}px;
+      height:${Math.random()*2+1}px;
+      animation-duration:${Math.random()*4+3}s;
+      animation-delay:${Math.random()*4}s;
+    `;
+    container.appendChild(dot);
+  }
+})();
+
+/* Progress bar + back to top */
+window.addEventListener('scroll',function(){
+  const st=window.scrollY,dh=document.body.scrollHeight-window.innerHeight;
+  document.getElementById('progress-bar').style.width=(st/dh*100)+'%';
+  const btt=document.getElementById('btt');
+  st>400?btt.classList.add('show'):btt.classList.remove('show');
+});
+
+/* FAQ accordion */
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',function(){
+    const item=this.parentElement;
+    const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!open)item.classList.add('open');
+  });
+});
+
+/* Side popup auto-hide */
+setTimeout(function(){
+  const p=document.getElementById('side-popup');
+  if(p){setTimeout(function(){p.style.transition='opacity 0.4s,transform 0.4s';p.style.opacity='0';p.style.transform='translateY(20px) scale(0.95)';setTimeout(function(){p.style.display='none'},400)},14000)}
+},3500);
+
+/* Mobile menu */
+function openMobileMenu(){document.getElementById('mobile-menu').classList.add('open')}
+function closeMobileMenu(){document.getElementById('mobile-menu').classList.remove('open')}
+</script>
+
+</body>
+</html>
