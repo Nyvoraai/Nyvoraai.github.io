@@ -1,301 +1,863 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NT677BPF');</script>
-<!-- End Google Tag Manager -->
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>AI Blog — Guides, Explainers &amp; Tool Reviews | NyvoraAI</title>
+<meta name="description" content="In-depth AI blog posts: guides, explainers, tool reviews, and opinions on artificial intelligence. Written clearly for everyone, from beginners to professionals."/>
+<meta name="keywords" content="AI blog, artificial intelligence guide, AI for beginners, ChatGPT vs Claude, prompt engineering, LLM explainer, AI tools review"/>
+<meta name="author" content="NyvoraAI Team"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+<meta name="theme-color" content="#080A0F"/>
+<link rel="canonical" href="https://nyvoraai.github.io/blog.html"/>
+<link rel="icon" type="image/svg+xml" href="https://nyvoraai.github.io/logo.svg"/>
 
-  <title>AI Blog — Guides, Explainers &amp; Tool Reviews | NyvoraAI</title>
-  <meta name="description" content="In-depth AI blog posts: guides, explainers, tool reviews, and opinions on artificial intelligence. Written clearly for everyone, from beginners to professionals. Updated regularly."/>
-  <meta name="keywords" content="AI blog, artificial intelligence guide, AI for beginners, ChatGPT vs Claude, prompt engineering, LLM explainer, AI tools review, machine learning explainer, AI jobs 2026"/>
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
-  <link rel="canonical" href="https://nyvoraai.github.io/blog.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="AI Blog — Guides, Explainers &amp; Tool Reviews | NyvoraAI"/>
+<meta property="og:description" content="Deep dives into the world of AI. Guides, explainers, tool reviews, and opinions — written clearly for everyone."/>
+<meta property="og:url" content="https://nyvoraai.github.io/blog.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/og-image.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="AI Blog — Guides, Explainers &amp; Tool Reviews | NyvoraAI"/>
+<meta name="twitter:description" content="Deep dives into the world of AI — guides, explainers, reviews."/>
 
-  <meta property="og:type" content="website"/>
-  <meta property="og:site_name" content="NyvoraAI"/>
-  <meta property="og:title" content="AI Blog — Guides, Explainers &amp; Tool Reviews | NyvoraAI"/>
-  <meta property="og:description" content="Deep dives into the world of AI. Guides, explainers, tool reviews, and opinions — written clearly for everyone."/>
-  <meta property="og:url" content="https://nyvoraai.github.io/blog.html"/>
-  <meta property="og:image" content="https://nyvoraai.github.io/og-image.jpg"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:site" content="@NyvoraAI"/>
-  <meta name="twitter:title" content="AI Blog — Guides, Explainers &amp; Tool Reviews | NyvoraAI"/>
-  <meta name="twitter:description" content="Deep dives into the world of AI — guides, explainers, reviews."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "@id": "https://nyvoraai.github.io/blog.html",
-    "url": "https://nyvoraai.github.io/blog.html",
-    "name": "NyvoraAI Blog",
-    "description": "In-depth AI guides, explainers, tool reviews, and opinions — written clearly for everyone.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "NyvoraAI",
-      "url": "https://nyvoraai.github.io/",
-      "logo": { "@type": "ImageObject", "url": "https://nyvoraai.github.io/logo.svg" }
-    },
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nyvoraai.github.io/" },
-        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nyvoraai.github.io/blog.html" }
-      ]
-    },
-    "blogPost": [
-      { "@type": "BlogPosting", "headline": "What is an AI Agent? A Simple Explanation", "datePublished": "2026-06-19", "author": { "@type": "Organization", "name": "NyvoraAI" } },
-      { "@type": "BlogPosting", "headline": "AI for Beginners: A Complete 2026 Guide", "datePublished": "2026-06-17", "author": { "@type": "Organization", "name": "NyvoraAI" } },
-      { "@type": "BlogPosting", "headline": "ChatGPT vs Claude: Honest Comparison 2026", "datePublished": "2026-06-15", "author": { "@type": "Organization", "name": "NyvoraAI" } }
-    ]
-  }
-  </script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-  <meta name="author" content="NyvoraAI Team"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+:root{
+  --bg:#080A0F;
+  --bg-2:#0D1117;
+  --bg-3:#111827;
+  --bg-card:#141B26;
+  --bg-card-2:#1A2235;
+  --border:#1E2D40;
+  --border-bright:#2A3F5C;
+  --border-hover:#3A5580;
+
+  --cyan:#00D4FF;
+  --cyan-dim:#0099BB;
+  --cyan-glow:rgba(0,212,255,0.15);
+  --violet:#7B5EA7;
+  --violet-bright:#9B7EC8;
+  --green:#00E5A0;
+  --green-dim:#00B07A;
+  --amber:#FFB347;
+  --red:#FF6B6B;
+
+  --text:#E8EDF5;
+  --text-2:#9BA8BC;
+  --text-3:#5C6B80;
+  --text-inv:#080A0F;
+
+  --radius:16px;
+  --radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+  --shadow-card:0 4px 28px rgba(0,0,0,0.45),0 1px 4px rgba(0,0,0,0.3);
+  --glow-cyan:0 0 30px rgba(0,212,255,0.18),0 0 60px rgba(0,212,255,0.06);
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--cyan);text-decoration:none;transition:color .2s}
+a:hover{color:var(--cyan-dim)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+
+/* ── ANIMATED BACKGROUND ── */
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.stars{position:absolute;inset:0}
+.star{position:absolute;background:#fff;border-radius:50%;animation:starTwinkle ease-in-out infinite}
+@keyframes starTwinkle{0%,100%{opacity:.12;transform:scale(1)}50%{opacity:.75;transform:scale(1.5)}}
+
+.aura{position:absolute;border-radius:50%;filter:blur(110px);will-change:transform;animation:auraFloat ease-in-out infinite}
+.aura-1{width:800px;height:800px;background:radial-gradient(circle,rgba(0,212,255,.14),transparent 65%);top:-250px;left:-200px;animation-duration:22s}
+.aura-2{width:650px;height:650px;background:radial-gradient(circle,rgba(123,94,167,.18),transparent 65%);bottom:-180px;right:-150px;animation-duration:28s;animation-delay:-9s}
+.aura-3{width:500px;height:500px;background:radial-gradient(circle,rgba(0,229,160,.10),transparent 65%);top:35%;left:60%;animation-duration:19s;animation-delay:-5s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(55px,-45px) scale(1.08)}66%{transform:translate(-38px,32px) scale(.93)}}
+
+.grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.022) 1px,transparent 1px);background-size:56px 56px;animation:gridShift 50s linear infinite}
+@keyframes gridShift{0%{background-position:0 0}100%{background-position:56px 56px}}
+
+.scanline{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(0,212,255,.12),transparent);opacity:.5;animation:scanDown 10s linear infinite;pointer-events:none;z-index:1}
+@keyframes scanDown{0%{top:-2px}100%{top:100vh}}
+
+.orb{position:absolute;border-radius:50%;animation:orbFloat ease-in-out infinite;opacity:0}
+@keyframes orbFloat{0%{transform:translateY(105vh) scale(.5);opacity:0}10%{opacity:.7}90%{opacity:.25}100%{transform:translateY(-5vh) scale(1.2);opacity:0}}
+
+@media(prefers-reduced-motion:reduce){.star,.aura,.orb,.grid-lines,.scanline{animation:none;display:none}}
+
+/* ── PROGRESS BAR ── */
+#progress{position:fixed;top:0;left:0;width:0;height:2px;z-index:400;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green));box-shadow:0 0 10px var(--cyan)}
+
+/* ── NAV ── */
+nav.site-nav{position:sticky;top:0;z-index:300;background:rgba(8,10,15,.88);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:62px}
+.nav-logo{font-family:var(--font-display);font-size:20px;font-weight:700;letter-spacing:-.02em;color:var(--text);display:flex;align-items:center;gap:9px}
+.nav-logo .accent{color:var(--cyan)}
+.logo-img{height:27px;width:27px;border-radius:7px;object-fit:cover}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{color:var(--text-2);font-size:13.5px;font-weight:500;transition:color .2s;letter-spacing:.01em}
+.nav-links a:hover,.nav-links a.active{color:var(--text)}
+.nav-cta{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:8px 17px;border-radius:8px;font-size:13px;font-weight:700;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 18px rgba(0,212,255,.22)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 28px rgba(0,212,255,.38);color:var(--text-inv)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--text-2);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:62px;left:0;right:0;background:rgba(13,17,23,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:20px 24px;flex-direction:column;gap:16px;z-index:299}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--text);font-size:16px;font-weight:500}
+
+.page-wrap{position:relative;z-index:1}
+
+/* ── BREADCRUMB ── */
+.breadcrumb{max-width:1140px;margin:22px auto 0;padding:0 24px;font-size:12px;color:var(--text-3);display:flex;gap:8px;align-items:center;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--text-3);transition:color .2s}
+.breadcrumb a:hover{color:var(--cyan)}
+.bc-sep{color:var(--border-bright)}
+
+/* ── HERO ── */
+.hero{max-width:1140px;margin:0 auto;padding:64px 24px 52px;text-align:center;position:relative}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.18);color:var(--cyan);font-size:11px;font-weight:700;letter-spacing:.1em;padding:6px 14px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono);margin-bottom:24px}
+.hero-eyebrow-dot{width:6px;height:6px;border-radius:50%;background:var(--cyan);animation:pulseDot 2s ease-in-out infinite;box-shadow:0 0 6px var(--cyan)}
+@keyframes pulseDot{0%,100%{box-shadow:0 0 0 0 rgba(0,212,255,.5)}50%{box-shadow:0 0 0 6px rgba(0,212,255,0)}}
+.hero h1{font-family:var(--font-display);font-size:clamp(34px,6vw,60px);font-weight:700;line-height:1.12;letter-spacing:-.03em;color:var(--text);margin-bottom:18px}
+.hero h1 .grad{background:linear-gradient(135deg,var(--cyan),var(--violet-bright),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:17px;color:var(--text-2);max-width:560px;margin:0 auto 38px;line-height:1.65}
+.hero-stats{display:flex;justify-content:center;gap:32px;flex-wrap:wrap}
+.hero-stat{text-align:center}
+.stat-num{font-family:var(--font-display);font-size:26px;font-weight:700;color:var(--text);display:block;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-label{font-size:12px;color:var(--text-3);font-family:var(--font-mono);letter-spacing:.05em}
+
+/* ── FILTER TABS ── */
+.filter-wrap{max-width:1140px;margin:0 auto;padding:0 24px 36px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.filter-label{font-size:11.5px;font-weight:700;color:var(--text-3);font-family:var(--font-mono);letter-spacing:.06em;text-transform:uppercase;margin-right:4px}
+.filter-btn{background:var(--bg-card);border:1px solid var(--border);color:var(--text-2);font-size:12.5px;font-weight:600;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .22s;font-family:var(--font-body);letter-spacing:.01em;position:relative;overflow:hidden}
+.filter-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));opacity:0;transition:opacity .22s}
+.filter-btn span{position:relative;z-index:1}
+.filter-btn:hover{border-color:var(--border-bright);color:var(--text);transform:translateY(-1px)}
+.filter-btn.active{border-color:var(--cyan);color:var(--text-inv);background:var(--cyan)}
+.filter-btn.active::before{opacity:1}
+.filter-btn.active span{color:var(--text-inv)}
+
+/* ── FEATURED CARD (large hero card) ── */
+.featured-wrap{max-width:1140px;margin:0 auto;padding:0 24px 28px}
+.featured-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:36px 40px;position:relative;overflow:hidden;cursor:pointer;transition:border-color .3s,transform .3s,box-shadow .3s;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.featured-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green))}
+.featured-card::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(0,212,255,.04),transparent 60%);pointer-events:none;transition:opacity .3s}
+.featured-card:hover{border-color:var(--border-bright);transform:translateY(-4px);box-shadow:var(--shadow-card),var(--glow-cyan)}
+.featured-card:hover::after{opacity:2}
+.fc-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.25);color:var(--cyan);font-size:10.5px;font-weight:700;letter-spacing:.08em;padding:5px 12px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono);margin-bottom:18px}
+.fc-badge-dot{width:5px;height:5px;border-radius:50%;background:var(--cyan);animation:pulseDot 2s ease-in-out infinite}
+.featured-card h2{font-family:var(--font-display);font-size:clamp(22px,3vw,30px);font-weight:700;color:var(--text);line-height:1.22;margin-bottom:14px;letter-spacing:-.02em}
+.featured-card p{font-size:15.5px;color:var(--text-2);line-height:1.65;margin-bottom:24px}
+.fc-meta{display:flex;align-items:center;gap:14px;font-size:12px;color:var(--text-3);font-family:var(--font-mono)}
+.fc-meta-sep{color:var(--border-bright)}
+.fc-read-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:11px 22px;border-radius:10px;font-size:13.5px;font-weight:700;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 20px rgba(0,212,255,.25);margin-top:4px}
+.fc-read-btn:hover{opacity:.9;transform:translateY(-2px);box-shadow:0 0 32px rgba(0,212,255,.4);color:var(--text-inv)}
+.fc-arrow{transition:transform .2s}
+.fc-read-btn:hover .fc-arrow{transform:translateX(4px)}
+.fc-visual{background:var(--bg-3);border:1px solid var(--border);border-radius:14px;height:220px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.fc-visual-inner{text-align:center}
+.fc-visual-label{font-family:var(--font-mono);font-size:11px;color:var(--text-3);letter-spacing:.08em;text-transform:uppercase;margin-top:10px}
+.fc-glyph{font-family:var(--font-mono);font-size:48px;font-weight:700;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;animation:glyphPulse 3s ease-in-out infinite}
+@keyframes glyphPulse{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.05)}}
+
+/* ── SECTION TITLE ── */
+.section-head{max-width:1140px;margin:0 auto;padding:0 24px 20px;display:flex;align-items:center;justify-content:space-between}
+.section-title{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text);display:flex;align-items:center;gap:10px}
+.section-title-bar{width:3px;height:20px;background:linear-gradient(180deg,var(--cyan),var(--violet-bright));border-radius:2px}
+.section-count{font-family:var(--font-mono);font-size:11px;color:var(--text-3);background:var(--bg-card);border:1px solid var(--border);padding:4px 10px;border-radius:6px}
+
+/* ── BLOG GRID ── */
+.blog-grid-wrap{max-width:1140px;margin:0 auto;padding:0 24px 60px}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+
+/* ── BLOG CARD ── */
+.blog-card{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  transition:border-color .3s,transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s;
+  animation:cardEntrance .6s cubic-bezier(.22,1,.36,1) both;
+  text-decoration:none;
+  color:inherit;
+}
+.blog-card:hover{
+  border-color:var(--border-hover);
+  transform:translateY(-6px) scale(1.015);
+  box-shadow:0 12px 40px rgba(0,0,0,.5),0 0 0 1px rgba(0,212,255,.08);
+  text-decoration:none;
+}
+@keyframes cardEntrance{
+  from{opacity:0;transform:translateY(28px) scale(.97)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+.blog-card.hidden{display:none}
+
+/* Card top glow line (color varies by category) */
+.blog-card::before{
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;
+  height:2px;
+  opacity:0;
+  transition:opacity .3s;
+}
+.blog-card:hover::before{opacity:1}
+.blog-card[data-cat="Explainer"]::before{background:linear-gradient(90deg,var(--cyan),transparent)}
+.blog-card[data-cat="Guide"]::before{background:linear-gradient(90deg,var(--green),transparent)}
+.blog-card[data-cat="Tool Review"]::before{background:linear-gradient(90deg,var(--amber),transparent)}
+.blog-card[data-cat="Opinion"]::before{background:linear-gradient(90deg,var(--red),transparent)}
+.blog-card[data-cat="For Beginners"]::before{background:linear-gradient(90deg,var(--violet-bright),transparent)}
+
+/* Shimmer hover overlay */
+.blog-card::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,rgba(0,212,255,.03),transparent 60%);
+  opacity:0;
+  transition:opacity .3s;
+  pointer-events:none;
+}
+.blog-card:hover::after{opacity:1}
+
+/* Card visual banner */
+.card-visual{
+  height:148px;
+  background:var(--bg-3);
+  border-bottom:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+  flex-shrink:0;
+}
+.card-visual-bg{
+  position:absolute;
+  inset:0;
+  opacity:.5;
+  transition:opacity .3s;
+}
+.blog-card:hover .card-visual-bg{opacity:.8}
+.card-visual-glyph{
+  font-family:var(--font-mono);
+  font-size:32px;
+  font-weight:700;
+  position:relative;
+  z-index:1;
+  line-height:1;
+  transition:transform .3s;
+}
+.blog-card:hover .card-visual-glyph{transform:scale(1.12)}
+.card-visual-dots{
+  position:absolute;
+  bottom:10px;right:12px;
+  display:flex;gap:4px;
+  z-index:1;
+}
+.card-visual-dots span{
+  width:5px;height:5px;border-radius:50%;
+  background:rgba(255,255,255,.2);
+}
+
+/* Card content */
+.card-body{padding:20px 22px 22px;flex:1;display:flex;flex-direction:column}
+.card-cat{
+  display:inline-flex;align-items:center;gap:5px;
+  font-family:var(--font-mono);font-size:10px;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;
+  padding:4px 10px;border-radius:12px;
+  margin-bottom:12px;align-self:flex-start;
+  transition:transform .2s;
+}
+.blog-card:hover .card-cat{transform:translateX(2px)}
+
+/* Category colors */
+.cat-explainer{background:rgba(0,212,255,.1);color:var(--cyan);border:1px solid rgba(0,212,255,.2)}
+.cat-guide{background:rgba(0,229,160,.1);color:var(--green);border:1px solid rgba(0,229,160,.2)}
+.cat-toolreview{background:rgba(255,179,71,.1);color:var(--amber);border:1px solid rgba(255,179,71,.2)}
+.cat-opinion{background:rgba(255,107,107,.1);color:var(--red);border:1px solid rgba(255,107,107,.2)}
+.cat-forbeginners{background:rgba(155,126,200,.1);color:var(--violet-bright);border:1px solid rgba(155,126,200,.2)}
+
+.card-title{
+  font-family:var(--font-display);
+  font-size:16px;
+  font-weight:700;
+  color:var(--text);
+  line-height:1.38;
+  margin-bottom:10px;
+  flex:1;
+  transition:color .2s;
+}
+.blog-card:hover .card-title{color:var(--cyan)}
+.card-excerpt{font-size:13px;color:var(--text-3);line-height:1.6;margin-bottom:16px}
+
+.card-footer{
+  display:flex;align-items:center;justify-content:space-between;
+  padding-top:14px;
+  border-top:1px solid var(--border);
+  margin-top:auto;
+}
+.card-meta{font-family:var(--font-mono);font-size:10.5px;color:var(--text-3)}
+.card-read{
+  display:flex;align-items:center;gap:5px;
+  font-size:11.5px;font-weight:600;color:var(--text-3);
+  font-family:var(--font-mono);
+  transition:color .2s;
+}
+.blog-card:hover .card-read{color:var(--cyan)}
+.card-read-arrow{transition:transform .2s}
+.blog-card:hover .card-read-arrow{transform:translateX(4px)}
+
+/* ── LOAD MORE ── */
+.load-more-wrap{text-align:center;padding:0 0 64px}
+.load-more-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--bg-card);border:1px solid var(--border);
+  color:var(--text-2);padding:13px 28px;border-radius:12px;
+  font-size:14px;font-weight:600;cursor:pointer;
+  transition:all .25s;font-family:var(--font-body);
+}
+.load-more-btn:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px);box-shadow:0 0 20px rgba(0,212,255,.12)}
+
+/* ── NEWSLETTER ── */
+.nl-section{max-width:1140px;margin:0 auto;padding:0 24px 80px}
+.nl-card{
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:20px;padding:48px 40px;text-align:center;
+  position:relative;overflow:hidden;box-shadow:var(--shadow-card);
+}
+.nl-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green))}
+.nl-card::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(0,212,255,.05),transparent 55%);pointer-events:none}
+.nl-card h2{font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--text);margin-bottom:10px;letter-spacing:-.02em}
+.nl-card p{color:var(--text-2);margin-bottom:26px;font-size:15.5px}
+.nl-form{display:flex;gap:10px;max-width:420px;margin:0 auto;position:relative;z-index:1}
+.nl-input{flex:1;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:10px;padding:13px 16px;color:var(--text);font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--text-3)}
+.nl-input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,212,255,.1)}
+.nl-btn{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:13px 22px;border-radius:10px;border:none;cursor:pointer;font-size:14px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 22px rgba(0,212,255,.28)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 32px rgba(0,212,255,.42)}
+.nl-note{font-size:11.5px;color:var(--text-3);margin-top:11px;position:relative;z-index:1}
+
+/* ── FOOTER ── */
+footer{background:var(--bg-2);border-top:1px solid var(--border);padding:56px 24px 28px}
+.footer-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:44px}
+.footer-logo-wrap{font-size:19px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:9px;color:var(--text);font-family:var(--font-display)}
+.footer-logo-wrap .accent{color:var(--cyan)}
+.footer-brand p{color:var(--text-3);font-size:13.5px;line-height:1.7;margin-bottom:18px}
+.footer-social{display:flex;gap:8px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:8px;border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text-2);transition:all .2s;background:var(--bg-3)}
+.fs-btn:hover{transform:translateY(-2px);border-color:var(--cyan);color:var(--cyan)}
+.footer-col h4{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text);margin-bottom:14px;font-family:var(--font-mono)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:9px}
+.footer-col a{color:var(--text-3);font-size:13.5px;transition:color .2s}
+.footer-col a:hover{color:var(--cyan)}
+.footer-bottom{max-width:1140px;margin:36px auto 0;padding-top:20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--text-3);flex-wrap:wrap;gap:10px}
+.footer-bottom-links{display:flex;gap:18px}
+.footer-bottom-links a{color:var(--text-3);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--cyan)}
+
+/* ── BACK TO TOP ── */
+#back-top{position:fixed;bottom:26px;right:26px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:0 0 20px rgba(0,212,255,.3);z-index:200}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.1) translateY(-2px);box-shadow:0 0 30px rgba(0,212,255,.5)}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .blog-grid{grid-template-columns:repeat(2,1fr)}
+  .featured-card{grid-template-columns:1fr}
+  .fc-visual{height:160px}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+}
+@media(max-width:620px){
+  .blog-grid{grid-template-columns:1fr}
+  .hero h1{font-size:34px}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .hero-stats{gap:20px}
+}
+</style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT677BPF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
-<div id="page-loader"><div class="loader-logo">NyvoraAI</div></div>
-<div id="scroll-progress"></div>
-<button id="back-top" aria-label="Back to top">↑</button>
-
-<div class="mesh" aria-hidden="true">
-  <div class="mesh-orb m1"></div>
-  <div class="mesh-orb m2"></div>
-  <div class="mesh-orb m3"></div>
+<!-- BACKGROUND -->
+<div class="bg-canvas" aria-hidden="true">
+  <div class="aura aura-1"></div>
+  <div class="aura aura-2"></div>
+  <div class="aura aura-3"></div>
+  <div class="stars" id="starField"></div>
+  <div class="grid-lines"></div>
+  <div id="orbField"></div>
 </div>
+<div class="scanline" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
 
-<nav role="navigation" aria-label="Main navigation">
-  <a href="index.html" class="logo" aria-label="NyvoraAI Home">NyvoraAI</a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="blog.html" class="active">Blog</a></li>
-    <li><a href="ai-news.html">AI News</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <a href="contact.html" class="nav-btn">Write for Us</a>
-  <button class="hamburger" id="ham" aria-label="Toggle menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-<div class="mob-menu" id="mob">
-  <a href="index.html">Home</a>
-  <a href="blog.html">Blog</a>
-  <a href="ai-news.html">AI News</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</div>
-
-<main id="main-content">
-  <div class="page-hero">
-    <div class="wrap">
-      <nav aria-label="Breadcrumb">
-        <ol style="display:flex;gap:8px;font-size:13px;color:var(--muted);list-style:none;margin-bottom:16px">
-          <li><a href="index.html" style="color:var(--accent)">Home</a></li>
-          <li style="opacity:0.4">/</li>
-          <li>Blog</li>
-        </ol>
-      </nav>
-      <span class="label">Blog</span>
-      <h1>Deep dives into<br/><span class="grad">the world of AI.</span></h1>
-      <p>Guides, explainers, tool reviews, and opinions — written clearly for everyone, from beginners to professionals.</p>
+<!-- NAV -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/logo.svg" alt="NyvoraAI" class="logo-img" onerror="this.style.display='none'"/>
+      Nyvora<span class="accent">AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html" class="active">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
     </div>
   </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+</div>
 
-  <section class="sec" style="padding-top:0" aria-labelledby="blog-heading">
-    <div class="wrap">
-      <h2 id="blog-heading" class="sr-only">Blog Posts</h2>
+<div class="page-wrap">
 
-      <div class="filter-bar" role="group" aria-label="Filter posts by type">
-        <button class="pill active" data-cat="all">All</button>
-        <button class="pill" data-cat="explainer">Explainers</button>
-        <button class="pill" data-cat="guide">Guides</button>
-        <button class="pill" data-cat="review">Tool Reviews</button>
-        <button class="pill" data-cat="opinion">Opinion</button>
-        <button class="pill" data-cat="beginner">For Beginners</button>
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <span class="bc-sep">/</span>
+  <span>Blog</span>
+</nav>
+
+<!-- HERO -->
+<section class="hero reveal">
+  <div class="hero-eyebrow">
+    <span class="hero-eyebrow-dot"></span>
+    AI Blog — Updated Weekly
+  </div>
+  <h1>Deep dives into<br/><span class="grad">the world of AI.</span></h1>
+  <p class="hero-sub">Guides, explainers, tool reviews, and opinions — written clearly for everyone, from beginners to professionals.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><span class="stat-num">9+</span><span class="stat-label">Articles</span></div>
+    <div class="hero-stat"><span class="stat-num">5</span><span class="stat-label">Categories</span></div>
+    <div class="hero-stat"><span class="stat-num">Free</span><span class="stat-label">Always</span></div>
+  </div>
+</section>
+
+<!-- FEATURED CARD -->
+<div class="featured-wrap reveal">
+  <a href="#" class="featured-card" style="display:grid">
+    <div>
+      <div class="fc-badge"><span class="fc-badge-dot"></span>Featured Post</div>
+      <h2>What is an AI Agent? A Simple Explanation</h2>
+      <p>AI agents are everywhere in 2026. But what actually are they? We explain from scratch — no technical background needed.</p>
+      <div class="fc-meta">
+        <span>Jun 19, 2026</span>
+        <span class="fc-meta-sep">·</span>
+        <span>5 min read</span>
+        <span class="fc-meta-sep">·</span>
+        <span>Explainer</span>
       </div>
-
-      <div class="article-grid">
-
-        <article class="acard reveal" data-cat="explainer" itemscope itemtype="https://schema.org/BlogPosting">
-          <a href="#" aria-label="Read: What is an AI Agent? A Simple Explanation">
-            <div class="acard-thumb"><div class="acard-thumb-inner thumb-a"></div></div>
-            <div class="acard-body">
-              <span class="tag t-purple">Explainer</span>
-              <h2 class="acard-title" itemprop="headline">What is an AI Agent? A Simple Explanation</h2>
-              <p class="acard-desc" itemprop="description">AI agents are everywhere in 2026. But what actually are they? We explain from scratch — no technical background needed.</p>
-              <div class="acard-meta"><time datetime="2026-06-19" itemprop="datePublished">Jun 19, 2026</time><span class="s">·</span><span>5 min read</span></div>
-            </div>
-          </a>
-        </article>
-
-        <article class="acard reveal" data-cat="beginner" itemscope itemtype="https://schema.org/BlogPosting">
-          <a href="#" aria-label="Read: AI for Beginners: A Complete 2026 Guide">
-            <div class="acard-thumb"><div class="acard-thumb-inner thumb-b"></div></div>
-            <div class="acard-body">
-              <span class="tag t-teal">For Beginners</span>
-              <h2 class="acard-title" itemprop="headline">AI for Beginners: A Complete 2026 Guide</h2>
-              <p class="acard-desc" itemprop="description">Never understood AI? This guide starts from zero and walks you through everything you need to know in 2026.</p>
-              <div class="acard-meta"><time datetime="2026-06-17" itemprop="datePublished">Jun 17, 2026</time><span class="s">·</span><span>10 min read</span></div>
-            </div>
-          </a>
-        </article>
-
-        <article class="acard reveal" data-cat="review" itemscope itemtype="https://schema.org/Review">
-          <a href="#" aria-label="Read: ChatGPT vs Claude: Honest Comparison 2026">
-            <div class="acard-thumb"><div class="acard-thumb-inner thumb-c"></div></div>
-            <div class="acard-body">
-              <span class="tag t-green">Tool Review</span>
-              <h2 class="acard-title" itemprop="headline">ChatGPT vs Claude: Honest Comparison 2026</h2>
-              <p class="acard-desc" itemprop="description">We used both AI assistants for a week on real tasks. Here is what we found — the good, the bad, and the surprising.</p>
-              <div class="acard-meta"><time datetime="2026-06-15" itemprop="datePublished">Jun 15, 2026</time><span class="s">·</span><span>8 min read</span></div>
-            </div>
-          </a>
-        </article>
-
-        <article class="acard reveal" data-cat="guide" itemscope itemtype="https://schema.org/HowTo">
-          <a href="#" aria-label="Read: How to Use AI to Get a Job in 2026">
-            <div class="acard-thumb"><div class="acard-thumb-inner thumb-d"></div></div>
-            <div class="acard-body">
-              <span class="tag t-pink">Guide</span>
-              <h2 class="acard-title" itemprop="headline">How to Use AI to Get a Job in 2026</h2>
-              <p class="acard-desc" itemprop="description">From writing your resume with AI to preparing for interviews — a practical guide to using AI tools in your job search.</p>
-              <div class="acard-meta"><time datetime="2026-06-13" itemprop="datePublished">Jun 13, 2026</time><span class="s">·</span><span>7 min read</span></div>
-            </div>
-          </a>
-        </article>
-
-        <article class="acard reveal" data-cat="explainer" itemscope itemtype="https://schema.org/BlogPosting">
-          <a href="#" aria-label="Read: What is a Large Language Model (LLM)?">
-            <div class="acard-thumb"><div class="acard-thumb-inner thumb-a"></div></div>
-            <div class="acard-body">
-              <span class="tag t-purple">Explainer</span>
-              <h2 class="acard-title" itemprop="headline">What is a Large Language Model (LLM)?</h2>
-              <p class="acard-desc" itemprop="description">LLMs power ChatGPT, Claude, and Gemini. But how do they actually work? We explain it in plain English.</p>
-              <div class="acard-meta"><time datetime="2026-06-11" itemprop="datePublished">Jun 11, 2026</time><span class="s">·</span><span>6 min read</span></div>
-            </div>
-          </a>
-        </article>
-
-        <article class="acard reveal" data-cat="opinion" itemscope itemtype="https://schema.org/OpinionNewsArticle">
-          <a href="#" aria-label="Read: Will AI Replace Programmers? The Honest Answer">
-            <div class="acard-thumb"><div class="acard-thumb-inner thumb-b"></div></div>
-            <div class="acard-body">
-              <span class="tag t-yellow">Opinion</span>
-              <h2 class="acard-title" itemprop="headline">Will AI Replace Programmers? The Honest Answer</h2>
-              <p class="acard-desc" itemprop="description">Everyone is asking this question. We cut through the hype and give you an honest, balanced take on what AI means for developers.</p>
-              <div class="acard-meta"><time datetime="2026-06-09" itemprop="datePublished">Jun 9, 2026</time><span class="s">·</span><span>6 min read</span></div>
-            </div>
-          </a>
-        </article>
-
-        <article class="acard reveal" data-cat="guide" itemscope itemtype="https://schema.org/HowTo">
-          <a href="#" aria-label="Read: Best Free AI Tools for Students in India 2026">
-            <div class="acard-thumb"><div class="acard-thumb-inner thumb-c"></div></div>
-            <div class="acard-body">
-              <span class="tag t-pink">Guide</span>
-              <h2 class="acard-title" itemprop="headline">Best Free AI Tools for Students in India 2026</h2>
-              <p class="acard-desc" itemprop="description">Study smarter, not harder. These free AI tools can help Indian students with assignments, research, and exam prep.</p>
-              <div class="acard-meta"><time datetime="2026-06-07" itemprop="datePublished">Jun 7, 2026</time><span class="s">·</span><span>5 min read</span></div>
-            </div>
-          </a>
-        </article>
-
-        <article class="acard reveal" data-cat="review" itemscope itemtype="https://schema.org/Review">
-          <a href="#" aria-label="Read: Perplexity AI Review: Is It Better Than Google?">
-            <div class="acard-thumb"><div class="acard-thumb-inner thumb-d"></div></div>
-            <div class="acard-body">
-              <span class="tag t-green">Tool Review</span>
-              <h2 class="acard-title" itemprop="headline">Perplexity AI Review: Is It Better Than Google?</h2>
-              <p class="acard-desc" itemprop="description">Perplexity is the AI search engine everyone is talking about. We tested it against Google for a month. Here is our verdict.</p>
-              <div class="acard-meta"><time datetime="2026-06-05" itemprop="datePublished">Jun 5, 2026</time><span class="s">·</span><span>7 min read</span></div>
-            </div>
-          </a>
-        </article>
-
-        <article class="acard reveal" data-cat="beginner" itemscope itemtype="https://schema.org/HowTo">
-          <a href="#" aria-label="Read: Prompt Engineering: How to Talk to AI Better">
-            <div class="acard-thumb"><div class="acard-thumb-inner thumb-a"></div></div>
-            <div class="acard-body">
-              <span class="tag t-teal">For Beginners</span>
-              <h2 class="acard-title" itemprop="headline">Prompt Engineering: How to Talk to AI Better</h2>
-              <p class="acard-desc" itemprop="description">Getting better answers from ChatGPT or Claude is a skill. Here are simple techniques that anyone can learn in 10 minutes.</p>
-              <div class="acard-meta"><time datetime="2026-06-03" itemprop="datePublished">Jun 3, 2026</time><span class="s">·</span><span>5 min read</span></div>
-            </div>
-          </a>
-        </article>
-
+      <div class="fc-read-btn" style="margin-top:22px;display:inline-flex">
+        Read article <span class="fc-arrow">--&gt;</span>
       </div>
     </div>
-  </section>
-
-  <section class="nl">
-    <div class="wrap">
-      <div class="nl-box reveal">
-        <span class="label" style="display:block;text-align:center">Newsletter</span>
-        <h2>AI knowledge, delivered free.</h2>
-        <p>Get the best AI blog posts and news every week. No spam, ever.</p>
-        <form class="nl-form" onsubmit="return false" aria-label="Newsletter signup">
-          <input type="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email"/>
-          <button type="submit">Subscribe Free</button>
-        </form>
-        <p class="nl-note">No spam · Unsubscribe anytime · 100% free</p>
+    <div class="fc-visual">
+      <div class="fc-visual-inner">
+        <div class="fc-glyph">AI</div>
+        <div class="fc-visual-label">Agent Systems · 2026</div>
       </div>
+      <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(0,212,255,.08),transparent 65%);pointer-events:none"></div>
     </div>
-  </section>
-</main>
+  </a>
+</div>
 
-<footer role="contentinfo">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="f-brand">
-        <span class="f-logo">NyvoraAI</span>
-        <p>Your trusted source for original AI news, deep dives, and practical insights on artificial intelligence.</p>
-        <div class="socials">
-          <a class="soc" href="https://twitter.com/NyvoraAI" aria-label="Twitter/X" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="var(--muted)"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a class="soc" href="https://instagram.com/NyvoraAI" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
+<!-- FILTER TABS -->
+<div class="filter-wrap reveal">
+  <div class="filters">
+    <span class="filter-label">Filter:</span>
+    <button class="filter-btn active" data-filter="all" onclick="filterCards('all',this)"><span>All</span></button>
+    <button class="filter-btn" data-filter="Explainer" onclick="filterCards('Explainer',this)"><span>Explainers</span></button>
+    <button class="filter-btn" data-filter="Guide" onclick="filterCards('Guide',this)"><span>Guides</span></button>
+    <button class="filter-btn" data-filter="Tool Review" onclick="filterCards('Tool Review',this)"><span>Tool Reviews</span></button>
+    <button class="filter-btn" data-filter="Opinion" onclick="filterCards('Opinion',this)"><span>Opinion</span></button>
+    <button class="filter-btn" data-filter="For Beginners" onclick="filterCards('For Beginners',this)"><span>For Beginners</span></button>
+  </div>
+</div>
+
+<!-- SECTION HEADING -->
+<div class="section-head reveal">
+  <div class="section-title">
+    <div class="section-title-bar"></div>
+    Blog Posts
+  </div>
+  <div class="section-count" id="post-count">9 posts</div>
+</div>
+
+<!-- BLOG GRID -->
+<div class="blog-grid-wrap">
+  <div class="blog-grid" id="blogGrid">
+
+    <!-- Card: For Beginners -->
+    <a href="https://nyvoraai.github.io/blog/how-to-start-using-ai-not-technical.html" class="blog-card" data-cat="For Beginners" style="animation-delay:.05s">
+      <div class="card-visual">
+        <div class="card-visual-bg" style="background:radial-gradient(circle at 40% 40%,rgba(155,126,200,.15),transparent 65%)"></div>
+        <div class="card-visual-glyph" style="background:linear-gradient(135deg,var(--violet-bright),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">BEGIN</div>
+        <div class="card-visual-dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat cat-forbeginners">For Beginners</span>
+        <div class="card-title">How to Start Using AI If You Are Not Technical</div>
+        <div class="card-excerpt">Never used AI before? This step-by-step guide gets you up and running in under 10 minutes — no technical knowledge needed.</div>
+        <div class="card-footer">
+          <span class="card-meta">Jun 21, 2026</span>
+          <span class="card-read">8 min <span class="card-read-arrow">--&gt;</span></span>
         </div>
       </div>
-      <div class="f-col"><h4>Topics</h4><ul>
-        <li><a href="ai-news.html">AI News</a></li><li><a href="blog.html">Blog</a></li>
-        <li><a href="ai-news.html">Machine Learning</a></li><li><a href="ai-news.html">Generative AI</a></li>
-        <li><a href="ai-news.html">AI Tools</a></li>
-      </ul></div>
-      <div class="f-col"><h4>Company</h4><ul>
-        <li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html">Write for Us</a></li>
-      </ul></div>
-      <div class="f-col"><h4>Contact</h4><ul>
-        <li><a href="mailto:lalwanivarun526@gmail.com">lalwanivarun526@gmail.com</a></li>
-        <li><a href="contact.html">Send a message</a></li>
-      </ul></div>
+    </a>
+
+    <!-- Card: For Beginners -->
+    <a href="#" class="blog-card" data-cat="For Beginners" style="animation-delay:.10s">
+      <div class="card-visual">
+        <div class="card-visual-bg" style="background:radial-gradient(circle at 40% 40%,rgba(155,126,200,.12),transparent 65%)"></div>
+        <div class="card-visual-glyph" style="background:linear-gradient(135deg,var(--violet-bright),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">2026</div>
+        <div class="card-visual-dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat cat-forbeginners">For Beginners</span>
+        <div class="card-title">AI for Beginners: A Complete 2026 Guide</div>
+        <div class="card-excerpt">Never understood AI? This guide starts from zero and walks you through everything you need to know in 2026.</div>
+        <div class="card-footer">
+          <span class="card-meta">Jun 17, 2026</span>
+          <span class="card-read">10 min <span class="card-read-arrow">--&gt;</span></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card: Tool Review -->
+    <a href="#" class="blog-card" data-cat="Tool Review" style="animation-delay:.15s">
+      <div class="card-visual">
+        <div class="card-visual-bg" style="background:radial-gradient(circle at 40% 40%,rgba(255,179,71,.12),transparent 65%)"></div>
+        <div class="card-visual-glyph" style="background:linear-gradient(135deg,var(--amber),var(--red));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">VS</div>
+        <div class="card-visual-dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat cat-toolreview">Tool Review</span>
+        <div class="card-title">ChatGPT vs Claude: Honest Comparison 2026</div>
+        <div class="card-excerpt">We used both AI assistants for a week on real tasks. Here is what we found — the good, the bad, and the surprising.</div>
+        <div class="card-footer">
+          <span class="card-meta">Jun 15, 2026</span>
+          <span class="card-read">8 min <span class="card-read-arrow">--&gt;</span></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card: Guide -->
+    <a href="#" class="blog-card" data-cat="Guide" style="animation-delay:.20s">
+      <div class="card-visual">
+        <div class="card-visual-bg" style="background:radial-gradient(circle at 40% 40%,rgba(0,229,160,.12),transparent 65%)"></div>
+        <div class="card-visual-glyph" style="background:linear-gradient(135deg,var(--green),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">JOBS</div>
+        <div class="card-visual-dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat cat-guide">Guide</span>
+        <div class="card-title">How to Use AI to Get a Job in 2026</div>
+        <div class="card-excerpt">From writing your resume with AI to preparing for interviews — a practical guide to using AI tools in your job search.</div>
+        <div class="card-footer">
+          <span class="card-meta">Jun 13, 2026</span>
+          <span class="card-read">7 min <span class="card-read-arrow">--&gt;</span></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card: Explainer -->
+    <a href="#" class="blog-card" data-cat="Explainer" style="animation-delay:.25s">
+      <div class="card-visual">
+        <div class="card-visual-bg" style="background:radial-gradient(circle at 40% 40%,rgba(0,212,255,.12),transparent 65%)"></div>
+        <div class="card-visual-glyph" style="background:linear-gradient(135deg,var(--cyan),var(--violet-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">LLM</div>
+        <div class="card-visual-dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat cat-explainer">Explainer</span>
+        <div class="card-title">What is a Large Language Model (LLM)?</div>
+        <div class="card-excerpt">LLMs power ChatGPT, Claude, and Gemini. But how do they actually work? We explain it in plain English.</div>
+        <div class="card-footer">
+          <span class="card-meta">Jun 11, 2026</span>
+          <span class="card-read">6 min <span class="card-read-arrow">--&gt;</span></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card: Opinion -->
+    <a href="#" class="blog-card" data-cat="Opinion" style="animation-delay:.30s">
+      <div class="card-visual">
+        <div class="card-visual-bg" style="background:radial-gradient(circle at 40% 40%,rgba(255,107,107,.12),transparent 65%)"></div>
+        <div class="card-visual-glyph" style="background:linear-gradient(135deg,var(--red),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">DEV?</div>
+        <div class="card-visual-dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat cat-opinion">Opinion</span>
+        <div class="card-title">Will AI Replace Programmers? The Honest Answer</div>
+        <div class="card-excerpt">Everyone is asking this question. We cut through the hype and give you an honest, balanced take on what AI means for developers.</div>
+        <div class="card-footer">
+          <span class="card-meta">Jun 9, 2026</span>
+          <span class="card-read">6 min <span class="card-read-arrow">--&gt;</span></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card: Guide -->
+    <a href="#" class="blog-card" data-cat="Guide" style="animation-delay:.35s">
+      <div class="card-visual">
+        <div class="card-visual-bg" style="background:radial-gradient(circle at 40% 40%,rgba(0,229,160,.12),transparent 65%)"></div>
+        <div class="card-visual-glyph" style="background:linear-gradient(135deg,var(--green),var(--violet-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">EDU</div>
+        <div class="card-visual-dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat cat-guide">Guide</span>
+        <div class="card-title">Best Free AI Tools for Students in India 2026</div>
+        <div class="card-excerpt">Study smarter, not harder. These free AI tools can help Indian students with assignments, research, and exam prep.</div>
+        <div class="card-footer">
+          <span class="card-meta">Jun 7, 2026</span>
+          <span class="card-read">5 min <span class="card-read-arrow">--&gt;</span></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card: Tool Review -->
+    <a href="#" class="blog-card" data-cat="Tool Review" style="animation-delay:.40s">
+      <div class="card-visual">
+        <div class="card-visual-bg" style="background:radial-gradient(circle at 40% 40%,rgba(255,179,71,.12),transparent 65%)"></div>
+        <div class="card-visual-glyph" style="background:linear-gradient(135deg,var(--amber),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">SRCH</div>
+        <div class="card-visual-dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat cat-toolreview">Tool Review</span>
+        <div class="card-title">Perplexity AI Review: Is It Better Than Google?</div>
+        <div class="card-excerpt">Perplexity is the AI search engine everyone is talking about. We tested it against Google for a month. Here is our verdict.</div>
+        <div class="card-footer">
+          <span class="card-meta">Jun 5, 2026</span>
+          <span class="card-read">7 min <span class="card-read-arrow">--&gt;</span></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card: For Beginners -->
+    <a href="#" class="blog-card" data-cat="For Beginners" style="animation-delay:.45s">
+      <div class="card-visual">
+        <div class="card-visual-bg" style="background:radial-gradient(circle at 40% 40%,rgba(155,126,200,.12),transparent 65%)"></div>
+        <div class="card-visual-glyph" style="background:linear-gradient(135deg,var(--violet-bright),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">PRMT</div>
+        <div class="card-visual-dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat cat-forbeginners">For Beginners</span>
+        <div class="card-title">Prompt Engineering: How to Talk to AI Better</div>
+        <div class="card-excerpt">Getting better answers from ChatGPT or Claude is a skill. Here are simple techniques that anyone can learn in 10 minutes.</div>
+        <div class="card-footer">
+          <span class="card-meta">Jun 3, 2026</span>
+          <span class="card-read">5 min <span class="card-read-arrow">--&gt;</span></span>
+        </div>
+      </div>
+    </a>
+
+  </div><!-- /blog-grid -->
+
+  <!-- No results message -->
+  <div id="no-results" style="display:none;text-align:center;padding:48px 24px;color:var(--text-3);font-family:var(--font-mono);font-size:14px">
+    No posts found in this category yet.
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="nl-section reveal">
+  <div class="nl-card">
+    <h2>AI knowledge, delivered free.</h2>
+    <p>Get the best AI blog posts and news every week. No spam, ever.</p>
+    <form class="nl-form" action="https://formspree.io/f/xwvjgdpw" method="POST" onsubmit="handleNL(event,this)">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required/>
+      <button class="nl-btn" type="submit">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · 100% free</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="https://nyvoraai.github.io/logo.svg" alt="" class="logo-img" onerror="this.style.display='none'"/>
+        Nyvora<span class="accent">AI</span>
+      </div>
+      <p>Your trusted source for original AI news, deep dives, and practical insights on artificial intelligence.</p>
+      <div class="footer-social">
+        <a href="https://twitter.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn">X / Twitter</a>
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn">Facebook</a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn">YouTube</a>
+      </div>
     </div>
-    <div class="f-bottom">
-      <span>© 2026 NyvoraAI. All rights reserved.</span>
-      <span>Built for the AI generation</span>
+    <div class="footer-col">
+      <h4>Topics</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Blog</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">Machine Learning</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">Generative AI</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">AI Tools</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:lalwanivarun526@gmail.com">lalwanivarun526@gmail.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>2026 NyvoraAI. All rights reserved. Built for the AI generation.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
     </div>
   </div>
 </footer>
 
-<script src="main.js" defer></script>
+</div><!-- /page-wrap -->
+
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">^</button>
+
+<script>
+// ── STAR FIELD ──
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  const f=document.getElementById('starField');
+  for(let i=0;i<140;i++){
+    const s=document.createElement('div');
+    s.className='star';
+    const sz=Math.random()*1.9+0.3;
+    s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${2+Math.random()*5}s;animation-delay:${-Math.random()*5}s;opacity:${.08+Math.random()*.5}`;
+    f.appendChild(s);
+  }
+})();
+
+// ── FLOATING ORBS ──
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  const w=document.getElementById('orbField');
+  const colors=['rgba(0,212,255,0.55)','rgba(123,94,167,0.55)','rgba(0,229,160,0.45)'];
+  for(let i=0;i<14;i++){
+    const o=document.createElement('div');
+    o.className='orb';
+    const sz=3+Math.random()*7;
+    const dur=14+Math.random()*18;
+    o.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;background:${colors[i%3]};filter:blur(1.5px);animation-duration:${dur}s;animation-delay:${-Math.random()*dur}s;box-shadow:0 0 ${sz*2}px ${colors[i%3]}`;
+    w.appendChild(o);
+  }
+})();
+
+// ── PROGRESS + BACK TO TOP ──
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const pct=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  document.getElementById('progress').style.width=pct+'%';
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>380);
+});
+
+// ── REVEAL ──
+const reveals=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});
+},{threshold:.08});
+reveals.forEach(r=>io.observe(r));
+
+// ── MOBILE MENU ──
+function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open')}
+
+// ── FILTER CARDS ──
+function filterCards(cat, btn){
+  // Update active button
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const cards=document.querySelectorAll('.blog-card');
+  let visible=0;
+
+  cards.forEach((c,i)=>{
+    const match=cat==='all' || c.dataset.cat===cat;
+    if(match){
+      c.classList.remove('hidden');
+      c.style.animationDelay=(i*0.06)+'s';
+      c.style.animation='none';
+      // Trigger reflow for re-animation
+      void c.offsetWidth;
+      c.style.animation='cardEntrance .55s cubic-bezier(.22,1,.36,1) both';
+      visible++;
+    } else {
+      c.classList.add('hidden');
+    }
+  });
+
+  document.getElementById('post-count').textContent=visible+' post'+(visible!==1?'s':'');
+  const nr=document.getElementById('no-results');
+  nr.style.display=visible===0?'block':'none';
+}
+
+// ── NEWSLETTER (Formspree) ──
+function handleNL(e,form){
+  e.preventDefault();
+  const btn=form.querySelector('.nl-btn');
+  btn.textContent='Sending...';
+  btn.style.opacity='.7';
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{
+      if(r.ok){
+        btn.textContent='Subscribed!';
+        btn.style.background='var(--green)';
+        btn.style.opacity='1';
+        form.reset();
+      } else {
+        btn.textContent='Try again';
+        btn.style.opacity='1';
+      }
+    })
+    .catch(()=>{btn.textContent='Try again';btn.style.opacity='1';});
+}
+</script>
 </body>
 </html>
