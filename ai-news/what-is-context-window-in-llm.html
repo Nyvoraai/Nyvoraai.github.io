@@ -123,7 +123,7 @@
 
     /* ===== FIX NAVIGATION OVERLAP ===== */
     main {
-      padding-top: calc(68px + 40px);
+      padding-top: calc(68px + 60px);
       position: relative;
       z-index: 2;
     }
@@ -287,13 +287,12 @@
       100% { background-position: 200%; } 
     }
 
-    /* ===== TOC ===== */
+    /* ===== TOC - CORRECTED ===== */
     .art-toc {
       background: var(--card); 
       border: 1px solid var(--border); 
       border-radius: 18px;
       padding: 22px 26px; 
-      margin-bottom: 38px; 
       position: relative; 
       overflow: hidden;
     }
@@ -320,25 +319,16 @@
     .art-toc-title span { 
       font-size: 1.1rem; 
     }
-    .art-toc ol { 
-      margin: 0; 
-      padding-left: 20px; 
-      color: var(--light);
-      position: relative;
-      z-index: 1;
-    }
-    .art-toc li { 
-      margin-bottom: 5px; 
-      position: relative;
-      z-index: 1;
-    }
-    .art-toc a { 
+    .art-toc ol li a {
       color: var(--light); 
       text-decoration: none; 
-      transition: color .2s; 
+      transition: all .2s; 
     }
-    .art-toc a:hover { 
-      color: var(--cyan); 
+    .art-toc ol li a:hover {
+      color: var(--cyan);
+      border-left-color: var(--cyan) !important;
+      background: rgba(45,212,224,.05);
+      border-radius: 6px;
     }
 
     /* ===== QUICK ANSWER ===== */
@@ -403,6 +393,9 @@
       color: var(--light); 
       font-size: 1.06rem; 
       line-height: 1.88; 
+      position: relative;
+      z-index: 5;
+      margin-top: 20px;
     }
     .art-body h2 {
       font-family: 'Syne',sans-serif; 
@@ -1210,19 +1203,19 @@
         <span class="badge">Updated 2026</span>
       </div>
 
-      <!-- TOC -->
-      <nav class="art-toc" aria-label="Table of contents">
-        <h2 class="art-toc-title"><span>📋</span> Jump to a Section</h2>
-        <ol>
-          <li><a href="#definition">What is a context window?</a></li>
-          <li><a href="#how-it-works">How context windows work</a></li>
-          <li><a href="#tokens">Understanding tokens</a></li>
-          <li><a href="#comparison">Model comparison 2026</a></li>
-          <li><a href="#why-matters">Why size matters</a></li>
-          <li><a href="#limitations">Limitations & challenges</a></li>
-          <li><a href="#optimization">Optimization strategies</a></li>
-          <li><a href="#future">The future of context</a></li>
-          <li><a href="#faq">FAQ</a></li>
+      <!-- TOC (FIXED) -->
+      <nav class="art-toc" aria-label="Table of contents" style="margin-top: 40px; margin-bottom: 50px; position: relative; z-index: 10;">
+        <h2 class="art-toc-title" style="margin-bottom: 20px;"><span>📋</span> Jump to a Section</h2>
+        <ol style="margin: 0; padding-left: 0; list-style: none;">
+          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#definition" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">1. What is a context window?</a></li>
+          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#how-it-works" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">2. How context windows work</a></li>
+          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#tokens" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">3. Understanding tokens</a></li>
+          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#comparison" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">4. Model comparison 2026</a></li>
+          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#why-matters" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">5. Why size matters</a></li>
+          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#limitations" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">6. Limitations & challenges</a></li>
+          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#optimization" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">7. Optimization strategies</a></li>
+          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#future" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">8. The future of context</a></li>
+          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#faq" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">9. FAQ</a></li>
         </ol>
       </nav>
 
@@ -1230,14 +1223,14 @@
 
         <p>You're deep in a conversation with ChatGPT or Claude, and suddenly it seems to forget what you discussed ten messages ago. Or maybe you're trying to analyze a 200-page document, and the AI keeps losing track of crucial details. What's going on? The answer lies in understanding <strong>what is the context window in an LLM</strong> — one of the most important yet overlooked aspects of working with AI.</p>
 
-        <p>The context window is essentially the AI's working memory. It determines how much information the model can hold, process, and remember at any given moment. In 2026, context windows range from a modest 8,000 tokens to a staggering 2 million tokens — enough to process entire libraries of text [[4]]. But size isn't everything. Understanding how context windows actually work will transform how you use AI tools.</p>
+        <p>The context window is essentially the AI's working memory. It determines how much information the model can hold, process, and remember at any given moment. In 2026, context windows range from a modest 8,000 tokens to a staggering 2 million tokens — enough to process entire libraries of text. But size isn't everything. Understanding how context windows actually work will transform how you use AI tools.</p>
 
         <p>This guide breaks down everything you need to know about context windows: what they are, why they matter, how different models compare, and practical strategies to work within (or around) their limitations. Whether you're a developer building AI applications or just someone trying to get better results from ChatGPT, this knowledge is essential.</p>
 
         <!-- QUICK ANSWER -->
         <div class="art-quick">
           <div class="quick-label"><span class="pulse-dot"></span> Quick Answer</div>
-          <p><strong>What is the context window in an LLM?</strong> The context window (or context length) is the maximum amount of text, measured in tokens, that a large language model can process and "remember" at one time [[1]]. Think of it as the AI's working memory — it includes your prompt, any previous conversation, and the model's response. When you exceed the context window, the model literally cannot see or remember the earlier information. In 2026, leading models like Gemini 1.5 Pro offer context windows of 1-2 million tokens, while GPT-4o provides 128K tokens [[7]].</p>
+          <p><strong>What is the context window in an LLM?</strong> The context window (or context length) is the maximum amount of text, measured in tokens, that a large language model can process and "remember" at one time. Think of it as the AI's working memory — it includes your prompt, any previous conversation, and the model's response. When you exceed the context window, the model literally cannot see or remember the earlier information. In 2026, leading models like Gemini 1.5 Pro offer context windows of 1-2 million tokens, while GPT-4o provides 128K tokens.</p>
         </div>
 
         <!-- STAT ROW -->
@@ -1263,7 +1256,7 @@
         <!-- SECTION 1 -->
         <h2 id="definition"><span class="h2-txt">What Is a Context Window, Exactly?</span></h2>
 
-        <p>The context window (or "context length") of a large language model (LLM) is the amount of text, in tokens, that the model can consider or "remember" at any one time [[1]]. It's one of the most fundamental constraints — and capabilities — of any AI system.</p>
+        <p>The context window (or "context length") of a large language model (LLM) is the amount of text, in tokens, that the model can consider or "remember" at any one time. It's one of the most fundamental constraints — and capabilities — of any AI system.</p>
 
         <p>Think of it like this: if an LLM were a person reading a book, the context window would be how many pages they can keep open and actively reference at once. They might have access to the entire library (the model's training data), but they can only work with what's currently in front of them.</p>
 
@@ -1317,10 +1310,10 @@
           <text x="660" y="200" font-family="Arial" font-size="9" fill="#F59E0B" text-anchor="middle">⚠️ Total must fit in window</text>
         </svg>
 
-        <p>The context window includes both <strong>input tokens</strong> (your prompt, conversation history, uploaded documents) and <strong>output tokens</strong> (the model's response) [[15]]. This is crucial: if you're using a model with a 128K context window and your input is 100K tokens, the model can only generate up to 28K tokens in response.</p>
+        <p>The context window includes both <strong>input tokens</strong> (your prompt, conversation history, uploaded documents) and <strong>output tokens</strong> (the model's response). This is crucial: if you're using a model with a 128K context window and your input is 100K tokens, the model can only generate up to 28K tokens in response.</p>
 
         <div class="art-pull">
-          The context window is the AI's working memory, not long-term storage. Every new request re-processes the entire context from scratch — which is why longer contexts cost more and take more time [[5]].
+          The context window is the AI's working memory, not long-term storage. Every new request re-processes the entire context from scratch — which is why longer contexts cost more and take more time.
         </div>
 
         <!-- SECTION 2 -->
@@ -1332,7 +1325,7 @@
           <div class="concept-card cc1">
             <div class="concept-icon">📥</div>
             <h3>Tokenization</h3>
-            <p>Your text gets broken into tokens (roughly 3-4 characters each). A 1,000-word document becomes ~1,300 tokens [[7]].</p>
+            <p>Your text gets broken into tokens (roughly 3-4 characters each). A 1,000-word document becomes ~1,300 tokens.</p>
           </div>
           <div class="concept-card cc2">
             <div class="concept-icon">🧮</div>
@@ -1351,12 +1344,12 @@
           </div>
         </div>
 
-        <p>This is why context window is often compared to RAM (random access memory) rather than hard drive storage [[5]]. It's temporary, active working memory that gets wiped clean after each interaction.</p>
+        <p>This is why context window is often compared to RAM (random access memory) rather than hard drive storage. It's temporary, active working memory that gets wiped clean after each interaction.</p>
 
         <!-- SECTION 3 -->
         <h2 id="tokens"><span class="h2-txt">Understanding Tokens: The Currency of Context</span></h2>
 
-        <p>To truly grasp context windows, you need to understand tokens. A token is the basic unit of text that LLMs process — typically about 3-4 characters or roughly ¾ of a word [[7]].</p>
+        <p>To truly grasp context windows, you need to understand tokens. A token is the basic unit of text that LLMs process — typically about 3-4 characters or roughly ¾ of a word.</p>
 
         <p>Here's how tokens break down in practice:</p>
 
@@ -1421,27 +1414,27 @@
             <tr>
               <td class="model-name">Gemini 1.5 Pro / 2.5</td>
               <td>1M - 2M tokens</td>
-              <td>Massive documents, entire codebases, book-length analysis [[4]]</td>
+              <td>Massive documents, entire codebases, book-length analysis</td>
             </tr>
             <tr>
               <td class="model-name">Claude 3.5/3.7/Opus 4.1</td>
               <td>200K tokens</td>
-              <td>Long conversations, detailed documents [[18]]</td>
+              <td>Long conversations, detailed documents</td>
             </tr>
             <tr>
               <td class="model-name">GPT-5</td>
               <td>200K tokens</td>
-              <td>Research, long-form content, complex reasoning [[17]]</td>
+              <td>Research, long-form content, complex reasoning</td>
             </tr>
             <tr>
               <td class="model-name">GPT-4o</td>
               <td>128K tokens</td>
-              <td>General use, moderate-length documents [[7]]</td>
+              <td>General use, moderate-length documents</td>
             </tr>
             <tr>
               <td class="model-name">Llama 3.1</td>
               <td>128K tokens</td>
-              <td>Open-source applications [[20]]</td>
+              <td>Open-source applications</td>
             </tr>
             <tr>
               <td class="model-name">Claude 3 Haiku</td>
@@ -1451,7 +1444,7 @@
             <tr>
               <td class="model-name">ChatGPT (Free)</td>
               <td>8K - 16K tokens</td>
-              <td>Basic conversations [[22]]</td>
+              <td>Basic conversations</td>
             </tr>
           </tbody>
         </table>
@@ -1459,13 +1452,13 @@
         <p>Want to see how these models perform in real-world tasks? Read our comparison of <a href="https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html">GPT vs Claude differences</a> to understand which might be best for your needs.</p>
 
         <div class="art-pull">
-          Gemini offers unmatched long-document capacity with its 1-2 million token window, while GPT‑5 delivers the highest scores and reduced hallucinations but has a smaller context window [[21]].
+          Gemini offers unmatched long-document capacity with its 1-2 million token window, while GPT‑5 delivers the highest scores and reduced hallucinations but has a smaller context window.
         </div>
 
         <!-- SECTION 5 -->
         <h2 id="why-matters"><span class="h2-txt">Why Context Window Size Actually Matters</span></h2>
 
-        <p>A larger context window enables an AI model to process longer inputs and incorporate a greater amount of information into each output [[9]]. But the benefits go beyond just "more text":</p>
+        <p>A larger context window enables an AI model to process longer inputs and incorporate a greater amount of information into each output. But the benefits go beyond just "more text":</p>
 
         <div class="concept-grid">
           <div class="concept-card cc5">
@@ -1490,7 +1483,7 @@
           </div>
         </div>
 
-        <p>However, there's a catch: <strong>bigger isn't always better</strong>. The context window is a design constraint, not a problem to wish away [[14]]. Teams building the most reliable AI agents treat context as a resource to manage carefully, not just maximize.</p>
+        <p>However, there's a catch: <strong>bigger isn't always better</strong>. The context window is a design constraint, not a problem to wish away. Teams building the most reliable AI agents treat context as a resource to manage carefully, not just maximize.</p>
 
         <!-- SECTION 6 -->
         <h2 id="limitations"><span class="h2-txt">The Hidden Limitations & Challenges</span></h2>
@@ -1498,10 +1491,10 @@
         <p>Here's what most people don't realize about context windows:</p>
 
         <h3>1. Effective Context ≠ Total Context</h3>
-        <p>Just because a model <em>can</em> process 1 million tokens doesn't mean it <em>effectively uses</em> all of them. Research shows that models often struggle to recall information from the middle of very long contexts — a phenomenon called the "lost in the middle" problem. The maximum effective context window (MECW) is often significantly smaller than the advertised limit [[6]].</p>
+        <p>Just because a model <em>can</em> process 1 million tokens doesn't mean it <em>effectively uses</em> all of them. Research shows that models often struggle to recall information from the middle of very long contexts — a phenomenon called the "lost in the middle" problem. The maximum effective context window (MECW) is often significantly smaller than the advertised limit.</p>
 
         <h3>2. Cost Scales with Context</h3>
-        <p>Every LLM call re-processes the entire context window, meaning a 50,000-token context does not cost less than a 10,000-token context just because you're using less of the available space [[5]]. You pay for what you include, not what you could include.</p>
+        <p>Every LLM call re-processes the entire context window, meaning a 50,000-token context does not cost less than a 10,000-token context just because you're using less of the available space. You pay for what you include, not what you could include.</p>
 
         <h3>3. Speed Decreases</h3>
         <p>Larger contexts take longer to process. A 1 million token context might take 30-60 seconds just to analyze before the model generates its first token.</p>
@@ -1510,7 +1503,7 @@
         <p>With more tokens to attend to, the model's attention gets spread thinner. Critical details might get lost in the noise of irrelevant information.</p>
 
         <div class="art-pull">
-          Context windows are working memory, not long-term storage. The model has no persistent memory between requests — each interaction starts from scratch [[10]].
+          Context windows are working memory, not long-term storage. The model has no persistent memory between requests — each interaction starts from scratch.
         </div>
 
         <!-- SECTION 7 -->
@@ -1570,27 +1563,27 @@
 
         <details class="faq-item" open>
           <summary>What is the context window in an LLM?</summary>
-          <p>The context window (or context length) of a large language model is the maximum amount of text, measured in tokens, that the model can process and remember at one time [[1]]. Think of it as the AI's working memory — it determines how much information from your conversation or input the model can retain while generating a response. The context window includes both your input (prompt, history, documents) and the model's output.</p>
+          <p>The context window (or context length) of a large language model is the maximum amount of text, measured in tokens, that the model can process and remember at one time. Think of it as the AI's working memory — it determines how much information from your conversation or input the model can retain while generating a response. The context window includes both your input (prompt, history, documents) and the model's output.</p>
         </details>
 
         <details class="faq-item">
           <summary>Which LLM has the largest context window in 2026?</summary>
-          <p>Gemini 1.5 Pro and newer versions currently lead with context windows of 1-2 million tokens, enough to process entire books or hundreds of thousands of words [[4]]. Claude 3.5/3.7 and Opus 4.1 offer 200K tokens, while GPT-4o and GPT-5 provide 128K-200K tokens [[7]][[17]]. However, having the largest window doesn't always mean the best performance — effective context usage matters more than raw size.</p>
+          <p>Gemini 1.5 Pro and newer versions currently lead with context windows of 1-2 million tokens, enough to process entire books or hundreds of thousands of words. Claude 3.5/3.7 and Opus 4.1 offer 200K tokens, while GPT-4o and GPT-5 provide 128K-200K tokens. However, having the largest window doesn't always mean the best performance — effective context usage matters more than raw size.</p>
         </details>
 
         <details class="faq-item">
           <summary>Why does context window size matter?</summary>
-          <p>A larger context window enables an AI model to process longer documents, maintain coherence across extended conversations, analyze entire codebases, and incorporate more information into each output [[9]]. This is crucial for tasks like analyzing legal contracts, debugging complex software, or having multi-hour conversations where the AI needs to remember earlier details. However, bigger contexts also cost more, take longer to process, and can sometimes dilute the model's attention.</p>
+          <p>A larger context window enables an AI model to process longer documents, maintain coherence across extended conversations, analyze entire codebases, and incorporate more information into each output. This is crucial for tasks like analyzing legal contracts, debugging complex software, or having multi-hour conversations where the AI needs to remember earlier details. However, bigger contexts also cost more, take longer to process, and can sometimes dilute the model's attention.</p>
         </details>
 
         <details class="faq-item">
           <summary>What's the difference between context window and memory?</summary>
-          <p>The context window is temporary working memory that resets with each new request — the model re-processes the entire context every time [[5]]. True memory persists across conversations. Think of context window as RAM (volatile, fast, temporary) and memory as long-term storage (persistent, slower). Most production LLMs don't have true memory by default; each conversation starts from scratch unless the application explicitly stores and re-provides context.</p>
+          <p>The context window is temporary working memory that resets with each new request — the model re-processes the entire context every time. True memory persists across conversations. Think of context window as RAM (volatile, fast, temporary) and memory as long-term storage (persistent, slower). Most production LLMs don't have true memory by default; each conversation starts from scratch unless the application explicitly stores and re-provides context.</p>
         </details>
 
         <details class="faq-item">
           <summary>How many words is 100,000 tokens?</summary>
-          <p>Roughly 75,000 words, or about the length of a typical novel. As a rule of thumb, 1 token equals about ¾ of a word, or 3-4 characters [[7]]. So 100,000 tokens would be approximately 130-150 pages of single-spaced text. This is why context windows measured in tokens can seem abstract — they represent significantly more text than most people realize.</p>
+          <p>Roughly 75,000 words, or about the length of a typical novel. As a rule of thumb, 1 token equals about ¾ of a word, or 3-4 characters. So 100,000 tokens would be approximately 130-150 pages of single-spaced text. This is why context windows measured in tokens can seem abstract — they represent significantly more text than most people realize.</p>
         </details>
 
         <details class="faq-item">
@@ -1600,7 +1593,7 @@
 
         <details class="faq-item">
           <summary>Does context window affect response quality?</summary>
-          <p>Yes, but not in a simple "bigger is better" way. More context can improve quality by providing more information for the model to reference. However, too much context can dilute attention and make it harder for the model to focus on what's important. Research shows models often struggle to recall information from the middle of very long contexts [[6]]. The key is providing <em>relevant</em> context, not just <em>more</em> context.</p>
+          <p>Yes, but not in a simple "bigger is better" way. More context can improve quality by providing more information for the model to reference. However, too much context can dilute attention and make it harder for the model to focus on what's important. Research shows models often struggle to recall information from the middle of very long contexts. The key is providing <em>relevant</em> context, not just <em>more</em> context.</p>
         </details>
 
         <!-- REACTION BAR -->
