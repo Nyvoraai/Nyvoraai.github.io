@@ -251,7 +251,7 @@
       100% { background-position: 200%; } 
     }
 
-    /* ===== TOC ===== */
+    /* ===== TOC - FIXED TO SHOW ALL ITEMS ===== */
     .art-toc {
       background: var(--card); 
       border: 1px solid var(--border); 
@@ -259,7 +259,8 @@
       padding: 22px 26px; 
       margin-bottom: 38px; 
       position: relative; 
-      overflow: hidden;
+      overflow: visible; /* Changed from hidden to visible */
+      max-height: none; /* Remove any height restriction */
     }
     .art-toc::before {
       content: ""; 
@@ -290,16 +291,21 @@
       color: var(--light);
       position: relative;
       z-index: 1;
+      list-style: decimal;
+      display: block; /* Ensure it's displayed as block */
     }
     .art-toc li { 
-      margin-bottom: 5px; 
+      margin-bottom: 8px; /* Increased spacing */
       position: relative;
       z-index: 1;
+      display: list-item; /* Ensure list items display properly */
     }
     .art-toc a { 
       color: var(--light); 
       text-decoration: none; 
       transition: color .2s; 
+      display: block;
+      padding: 2px 0;
     }
     .art-toc a:hover { 
       color: var(--cyan); 
@@ -1396,6 +1402,9 @@
       .stat-row { 
         grid-template-columns: 1fr 1fr; 
       }
+      .art-toc ol {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
@@ -1491,7 +1500,7 @@
         <span class="badge">Updated 2026</span>
       </div>
 
-      <!-- TOC -->
+      <!-- TOC - FIXED VERSION -->
       <nav class="art-toc" aria-label="Table of contents">
         <h2 class="art-toc-title"><span>📋</span> What's Inside</h2>
         <ol>
@@ -1570,7 +1579,7 @@
 
         <!-- SVG diagram: GPT-3 architecture -->
         <svg class="art-diagram" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" role="img"
-          aria-label="How many parameters does ChatGPT have - GPT-3 architecture diagram showing 175 billion parameters across 96 layers">
+          alt="How many parameters does ChatGPT have - GPT-3 architecture diagram showing 175 billion parameters across 96 layers">
           <title>How many parameters does ChatGPT have — GPT-3 architecture with 175 billion parameters</title>
           <defs>
             <linearGradient id="gpt3bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0F1C38"/><stop offset="100%" stop-color="#1B2A4A"/></linearGradient>
@@ -1634,7 +1643,7 @@
 
         <div class="concept-grid">
           <div class="concept-card cc1">
-            <div class="concept-icon"></div>
+            <div class="concept-icon">📊</div>
             <h3>Conservative Estimate</h3>
             <p>Most experts believe GPT-4 has at least <strong>1.5 trillion parameters</strong> — roughly 10 times larger than GPT-3. This aligns with the computational resources required to run it.</p>
           </div>
@@ -1778,7 +1787,7 @@
 
         <!-- Comparison table as SVG -->
         <svg class="art-diagram" viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg" role="img"
-          aria-label="How many parameters does ChatGPT have - comparison chart showing parameter counts of GPT-4, Claude 3, Gemini, Llama, and other major AI models">
+          alt="How many parameters does ChatGPT have - comparison chart showing parameter counts of GPT-4, Claude 3, Gemini, Llama, and other major AI models">
           <title>How many parameters does ChatGPT have — comparison with other major AI models</title>
           <defs>
             <linearGradient id="compbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0F1C38"/><stop offset="100%" stop-color="#1B2A4A"/></linearGradient>
