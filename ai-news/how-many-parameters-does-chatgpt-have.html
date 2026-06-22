@@ -142,6 +142,7 @@
 
     .art-main {
       max-width: 800px;
+      min-width: 0;
     }
 
     /* ===== SIDEBAR TOC ===== */
@@ -149,6 +150,7 @@
       position: sticky;
       top: 120px;
       align-self: start;
+      height: fit-content;
     }
 
     .sidebar-toc {
@@ -213,6 +215,7 @@
       position: relative;
       z-index: 1;
       list-style: none;
+      counter-reset: toc-counter;
     }
 
     .sidebar-toc li {
@@ -382,7 +385,7 @@
       margin-bottom: 38px; 
       position: relative; 
       overflow: visible;
-      display: none; /* Hidden on desktop, shown on mobile */
+      display: none;
     }
     .art-toc::before {
       content: ""; 
@@ -1186,7 +1189,7 @@
       line-height: 1.35; 
     }
 
-    /* ===== PREV/NEXT NAVIGATION ===== */
+    /* ===== PREV/NEXT NAVIGATION - FIXED POSITIONING ===== */
     .post-navigation {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1194,6 +1197,8 @@
       margin: 60px 0 40px;
       padding: 30px 0;
       border-top: 1px solid var(--border);
+      position: relative;
+      z-index: 1;
     }
 
     .post-nav-item {
@@ -1206,6 +1211,7 @@
       border-radius: 16px;
       text-decoration: none;
       transition: all .25s;
+      position: relative;
     }
 
     .post-nav-item:hover {
@@ -2089,7 +2095,7 @@
           <h2 id="myths"><span class="h2-txt">Common Myths About AI Parameters, Debunked</span></h2>
 
           <div class="myth-grid">
-            <div class="myth-card myth"><div class="myth-tag">✗ Myth</div><p>More parameters always means a smarter AI.</p></div>
+            <div class="myth-card myth"><div class="myth-tag"> Myth</div><p>More parameters always means a smarter AI.</p></div>
             <div class="myth-card fact"><div class="myth-tag">✓ Fact</div><p>Parameter count is just one factor. Training data quality, architecture efficiency, and fine-tuning matter just as much. A smaller, well-trained model can outperform a larger, poorly-trained one.</p></div>
 
             <div class="myth-card myth"><div class="myth-tag">✗ Myth</div><p>ChatGPT's parameters keep growing with every update.</p></div>
@@ -2163,7 +2169,7 @@
             <span>Was this breakdown helpful?</span>
             <button class="react-btn" onclick="react(this,'')" aria-label="Mark as helpful"> <span class="react-count" id="rc1">32</span></button>
             <button class="react-btn" onclick="react(this,'')" aria-label="Mark as great">🔥 <span class="react-count" id="rc2">15</span></button>
-            <button class="react-btn" onclick="react(this,'🤔')" aria-label="Needs more detail">🤔 Needs more</button>
+            <button class="react-btn" onclick="react(this,'🤔')" aria-label="Needs more detail"> Needs more</button>
           </div>
 
           <p>If you found this guide useful, you might also enjoy our deep dive into <a href="how-do-large-language-models-learn-from-data.html">how large language models learn from data</a>, or check out our comparison of <a href="gpt-vs-claude-differences.html">GPT vs Claude</a> to see how different models stack up.</p>
@@ -2175,19 +2181,19 @@
             <a href="why-are-llms-getting-cheaper-2026.html"><span class="rtag">AI Trends</span><div class="rttl">Why Are LLMs Getting Cheaper? →</div></a>
           </div>
 
-          <!-- PREV/NEXT NAVIGATION -->
-          <nav class="post-navigation" aria-label="Blog navigation">
-            <a href="which-llm-is-best-for-beginners-2026.html" class="post-nav-item prev">
-              <div class="post-nav-label">← Previous</div>
-              <div class="post-nav-title">Which LLM Is Best for Beginners? (2026)</div>
-            </a>
-            <a href="why-are-llms-getting-cheaper-2026.html" class="post-nav-item next">
-              <div class="post-nav-label">Next →</div>
-              <div class="post-nav-title">Why Are LLMs Getting Cheaper in 2026?</div>
-            </a>
-          </nav>
-
         </article>
+
+        <!-- PREV/NEXT NAVIGATION - NOW CORRECTLY PLACED AFTER ARTICLE -->
+        <nav class="post-navigation" aria-label="Blog navigation">
+          <a href="which-llm-is-best-for-beginners-2026.html" class="post-nav-item prev">
+            <div class="post-nav-label">← Previous</div>
+            <div class="post-nav-title">Which LLM Is Best for Beginners? (2026)</div>
+          </a>
+          <a href="why-are-llms-getting-cheaper-2026.html" class="post-nav-item next">
+            <div class="post-nav-label">Next →</div>
+            <div class="post-nav-title">Why Are LLMs Getting Cheaper in 2026?</div>
+          </a>
+        </nav>
 
         <!-- NEWSLETTER SECTION -->
         <section aria-labelledby="nl-heading" style="margin:0 0 60px">
