@@ -252,7 +252,7 @@
       100% { background-position: 200%; } 
     }
 
-    /* ===== TOC - FIXED VERSION ===== */
+    /* ===== TOC - CORRECTED (all 12 items show inside box) ===== */
     .art-toc {
       background: var(--card); 
       border: 1px solid var(--border); 
@@ -260,8 +260,7 @@
       padding: 22px 26px; 
       margin-bottom: 38px; 
       position: relative; 
-      overflow: visible; /* Changed from hidden to visible */
-      max-height: none; /* Remove any height restriction */
+      overflow: hidden;
     }
     .art-toc::before {
       content: ""; 
@@ -270,6 +269,7 @@
       border-radius: 18px; 
       pointer-events: none;
       background: linear-gradient(135deg,rgba(45,212,224,.06),rgba(139,92,246,.06));
+      z-index: 0;
     }
     .art-toc-title {
       font-family: 'Syne',sans-serif; 
@@ -291,20 +291,16 @@
       color: var(--light);
       position: relative;
       z-index: 1;
-      list-style: decimal;
-      display: block; /* Ensure it's displayed as a block */
     }
     .art-toc li { 
-      margin-bottom: 8px; 
-      display: list-item; /* Ensure list items display properly */
+      margin-bottom: 5px; 
       position: relative;
       z-index: 1;
     }
     .art-toc a { 
       color: var(--light); 
       text-decoration: none; 
-      transition: color .2s;
-      display: inline-block;
+      transition: color .2s; 
     }
     .art-toc a:hover { 
       color: var(--cyan); 
@@ -1472,22 +1468,21 @@
         <span>How Do Large Language Models Learn From Data?</span>
       </nav>
 
-      <span class="art-eyebrow">🧠 AI Deep Dive · Beginner Guide</span>
+      <span class="art-eyebrow"> AI Deep Dive · Beginner Guide</span>
 
       <h1 class="art-h1">How Do Large Language Models Learn From Data?</h1>
 
+      <!-- HERO META: word count removed -->
       <div class="art-meta">
         <span>NyvoraAI Team</span>
         <span class="dot"></span>
         <time datetime="2026-06-22">June 22, 2026</time>
         <span class="dot"></span>
         <span>14 min read</span>
-        <span class="dot"></span>
-        <span>~2,850 words</span>
         <span class="badge">Updated 2026</span>
       </div>
 
-      <!-- TOC - NOW SHOWING ALL 12 ITEMS -->
+      <!-- TOC -->
       <nav class="art-toc" aria-label="Table of contents">
         <h2 class="art-toc-title"><span>📋</span> Jump to a Section</h2>
         <ol>
@@ -1936,8 +1931,8 @@
         <!-- REACTION BAR -->
         <div class="art-react">
           <span>Was this guide helpful?</span>
-          <button class="react-btn" onclick="react(this,'👍')" aria-label="Mark as helpful">👍 <span class="react-count" id="rc1">24</span></button>
-          <button class="react-btn" onclick="react(this,'🔥')" aria-label="Mark as great">🔥 <span class="react-count" id="rc2">11</span></button>
+          <button class="react-btn" onclick="react(this,'')" aria-label="Mark as helpful"> <span class="react-count" id="rc1">24</span></button>
+          <button class="react-btn" onclick="react(this,'')" aria-label="Mark as great">🔥 <span class="react-count" id="rc2">11</span></button>
           <button class="react-btn" onclick="react(this,'🤔')" aria-label="Needs more detail">🤔 Needs more</button>
         </div>
 
@@ -2117,7 +2112,6 @@
         result.className = 'quiz-result show ok';
       } else {
         btn.classList.add('wrong');
-        // highlight correct
         opts.forEach(o => { if (o.getAttribute('onclick').includes('true')) o.classList.add('correct'); });
         result.textContent = '❌ Not quite. The core learning signal is the prediction error — the difference between what the model guessed and the actual next token in the training data.';
         result.className = 'quiz-result show no';
