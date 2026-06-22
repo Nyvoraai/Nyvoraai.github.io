@@ -252,7 +252,7 @@
       align-items: center; 
       color: var(--muted); 
       font-size: .9rem; 
-      margin-bottom: 32px; 
+      margin-bottom: 40px; 
     }
     .art-meta .dot { 
       width: 4px; 
@@ -287,14 +287,16 @@
       100% { background-position: 200%; } 
     }
 
-    /* ===== TOC - CORRECTED ===== */
+    /* ===== TOC - FIXED WITH SIDEBAR STYLE ===== */
     .art-toc {
       background: var(--card); 
       border: 1px solid var(--border); 
       border-radius: 18px;
-      padding: 22px 26px; 
+      padding: 26px 30px; 
+      margin: 50px 0 50px 0;
       position: relative; 
       overflow: hidden;
+      z-index: 10;
     }
     .art-toc::before {
       content: ""; 
@@ -307,28 +309,48 @@
     }
     .art-toc-title {
       font-family: 'Syne',sans-serif; 
-      font-size: 1rem; 
+      font-size: 1.1rem; 
       color: #fff;
-      margin: 0 0 14px; 
+      margin: 0 0 20px; 
       display: flex; 
       align-items: center; 
-      gap: 8px;
+      gap: 10px;
+      position: relative;
+      z-index: 1;
+      font-weight: 700;
+    }
+    .art-toc-title span { 
+      font-size: 1.2rem; 
+    }
+    .art-toc ol { 
+      margin: 0; 
+      padding: 0; 
+      list-style: none;
       position: relative;
       z-index: 1;
     }
-    .art-toc-title span { 
-      font-size: 1.1rem; 
+    .art-toc li { 
+      margin-bottom: 10px; 
+      position: relative;
     }
-    .art-toc ol li a {
+    .art-toc li:last-child {
+      margin-bottom: 0;
+    }
+    .art-toc a { 
       color: var(--light); 
       text-decoration: none; 
-      transition: all .2s; 
+      display: block;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border-left: 3px solid transparent;
+      transition: all .2s;
+      font-size: 0.95rem;
     }
-    .art-toc ol li a:hover {
+    .art-toc a:hover {
       color: var(--cyan);
-      border-left-color: var(--cyan) !important;
-      background: rgba(45,212,224,.05);
-      border-radius: 6px;
+      border-left-color: var(--cyan);
+      background: rgba(45,212,224,.08);
+      padding-left: 18px;
     }
 
     /* ===== QUICK ANSWER ===== */
@@ -336,7 +358,7 @@
       background: linear-gradient(135deg,rgba(45,212,224,.1),rgba(139,92,246,.1));
       border-radius: 20px; 
       padding: 26px 28px; 
-      margin: 32px 0; 
+      margin: 40px 0; 
       position: relative; 
       overflow: hidden;
       border: 1px solid rgba(45,212,224,.25);
@@ -395,7 +417,6 @@
       line-height: 1.88; 
       position: relative;
       z-index: 5;
-      margin-top: 20px;
     }
     .art-body h2 {
       font-family: 'Syne',sans-serif; 
@@ -1203,19 +1224,19 @@
         <span class="badge">Updated 2026</span>
       </div>
 
-      <!-- TOC (FIXED) -->
-      <nav class="art-toc" aria-label="Table of contents" style="margin-top: 40px; margin-bottom: 50px; position: relative; z-index: 10;">
-        <h2 class="art-toc-title" style="margin-bottom: 20px;"><span>📋</span> Jump to a Section</h2>
-        <ol style="margin: 0; padding-left: 0; list-style: none;">
-          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#definition" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">1. What is a context window?</a></li>
-          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#how-it-works" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">2. How context windows work</a></li>
-          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#tokens" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">3. Understanding tokens</a></li>
-          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#comparison" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">4. Model comparison 2026</a></li>
-          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#why-matters" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">5. Why size matters</a></li>
-          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#limitations" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">6. Limitations & challenges</a></li>
-          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#optimization" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">7. Optimization strategies</a></li>
-          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#future" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">8. The future of context</a></li>
-          <li style="margin-bottom: 12px; padding-left: 0;"><a href="#faq" style="color: var(--light); text-decoration: none; display: block; padding: 8px 0; transition: color .2s; border-left: 3px solid transparent; padding-left: 15px;">9. FAQ</a></li>
+      <!-- TOC (FIXED - SIDEBAR STYLE) -->
+      <nav class="art-toc" aria-label="Table of contents">
+        <h2 class="art-toc-title"><span>📋</span> Jump to a Section</h2>
+        <ol>
+          <li><a href="#definition">1. What is a context window?</a></li>
+          <li><a href="#how-it-works">2. How context windows work</a></li>
+          <li><a href="#tokens">3. Understanding tokens</a></li>
+          <li><a href="#comparison">4. Model comparison 2026</a></li>
+          <li><a href="#why-matters">5. Why size matters</a></li>
+          <li><a href="#limitations">6. Limitations & challenges</a></li>
+          <li><a href="#optimization">7. Optimization strategies</a></li>
+          <li><a href="#future">8. The future of context</a></li>
+          <li><a href="#faq">9. FAQ</a></li>
         </ol>
       </nav>
 
