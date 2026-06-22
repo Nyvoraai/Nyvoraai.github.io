@@ -125,7 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .art-quick strong{color:#fff}
     .art-quick p{color:#E7ECFA;margin:8px 0 0;line-height:1.7}
     
-    /* ── BODY PROSE ── */
+    /* ─ BODY PROSE ── */
     .art-body{color:#C6D1EE;font-size:1.1rem;line-height:1.9}
     .art-body h2{font-family:'Syne',sans-serif;font-weight:800;color:#fff;font-size:clamp(1.6rem,3vw,2rem);margin:56px 0 20px;letter-spacing:-.5px}
     .art-body h3{font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:1.3rem;margin:32px 0 12px}
@@ -170,6 +170,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .sp-title{font-family:'Syne';color:#fff;font-size:1.1rem;margin-bottom:10px}
     .sp-form input{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,0.2);color:#fff;margin-bottom:10px}
     .sp-form button{width:100%;padding:10px;background:linear-gradient(90deg,#2DD4E0,#8B5CF6);border:none;border-radius:8px;color:#fff;font-weight:700;cursor:pointer}
+
+    /* ── REACTION BAR ── */
+    .art-react{display:flex;align-items:center;gap:14px;margin:44px 0;padding:18px 22px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:rgba(255,255,255,.02)}
+    .art-react span{color:#9FB0D6;font-size:.9rem}
+    .art-react button{cursor:pointer;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);color:#E7ECFA;border-radius:999px;padding:8px 16px;font-size:.9rem;transition:.2s}
+    .art-react button:hover,.art-react button.active{background:#2DD4E0;color:#0F1C38;border-color:#2DD4E0}
+
+    /* ── FAQ ── */
+    .faq-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:14px;margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+    .faq-item[open]{border-color:rgba(45,212,224,.4)}
+    .faq-item summary{padding:18px 22px;cursor:pointer;font-weight:600;font-size:1rem;color:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:'Syne',sans-serif}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary::after{content:'+';color:#2DD4E0;font-size:22px;font-weight:300;flex-shrink:0}
+    .faq-item[open] summary::after{content:'−'}
+    .faq-item p{padding:0 22px 18px;color:#9FB0D6;font-size:.95rem;line-height:1.7;margin:0}
 
     /* ── ANIMATED FOOTER ── */
     footer{position:relative;overflow:hidden;margin-top:80px}
@@ -419,10 +434,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <summary>Is Claude smarter than GPT-4?</summary>
         <p>"Smarter" is subjective. In benchmark tests for coding and logical reasoning, Claude 3.5/4 often edges out GPT-4o. However, GPT-4o is generally better at multimodal tasks like understanding complex charts or voice interactions. It depends on the task.</p>
       </details>
+      
       <details class="faq-item">
         <summary>Can I use both GPT and Claude for free?</summary>
         <p>Yes. Both OpenAI and Anthropic offer free tiers that allow you to use their models with certain usage limits. These are great for testing which interface you prefer before paying.</p>
       </details>
+      
       <details class="faq-item">
         <summary>Which AI is safer for sensitive data?</summary>
         <p>Both companies have strict privacy policies. However, Anthropic’s "Constitutional AI" framework is specifically designed to prevent the model from being jailbroken or manipulated into producing harmful content, giving it a slight edge in safety perception for enterprise users.</p>
