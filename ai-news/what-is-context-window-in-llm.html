@@ -184,24 +184,38 @@
       66% { transform: translate(-20px, 20px) scale(0.9); }
     }
 
-    /* ===== BREADCRUMB ===== */
+    /* ===== BREADCRUMB NAVIGATION ===== */
     .art-crumb { 
-      font-size: .85rem; 
+      font-size: .9rem; 
       color: var(--muted); 
-      margin: 0 0 18px;
+      margin: 0 0 24px;
       display: flex; 
-      gap: 8px; 
+      align-items: center;
+      gap: 12px; 
       flex-wrap: wrap;
-      padding-top: 20px;
+      padding-top: 10px;
     }
     .art-crumb a { 
-      color: var(--muted); 
+      color: var(--cyan); 
       text-decoration: none; 
-      border-bottom: 1px dotted rgba(159,176,214,.5); 
-      transition: color .2s; 
+      border-bottom: 1px dotted rgba(45,212,224,.4);
+      transition: all .2s;
+      font-weight: 500;
     }
     .art-crumb a:hover { 
-      color: var(--cyan); 
+      color: var(--white);
+      border-bottom-color: var(--white);
+    }
+    .art-crumb span {
+      color: var(--muted);
+    }
+    .art-crumb .separator {
+      color: var(--muted);
+      opacity: 0.6;
+    }
+    .art-crumb .current {
+      color: var(--white);
+      font-weight: 600;
     }
 
     /* ===== EYEBROW ===== */
@@ -287,13 +301,13 @@
       100% { background-position: 200%; } 
     }
 
-    /* ===== TOC - FIXED WITH SIDEBAR STYLE ===== */
+    /* ===== TOC - SIDEBAR STYLE ===== */
     .art-toc {
       background: var(--card); 
       border: 1px solid var(--border); 
       border-radius: 18px;
       padding: 26px 30px; 
-      margin: 50px 0 50px 0;
+      margin: 0 0 50px 0;
       position: relative; 
       overflow: hidden;
       z-index: 10;
@@ -1203,11 +1217,13 @@
   <main id="main-content">
     <div class="art-wrap">
 
-      <!-- Breadcrumb -->
+      <!-- BREADCRUMB NAVIGATION -->
       <nav class="art-crumb" aria-label="Breadcrumb">
-        <a href="../index.html">Home</a> /
-        <a href="../ai-news.html">AI News</a> /
-        <span>What Is the Context Window in an LLM?</span>
+        <a href="../index.html">Home</a>
+        <span class="separator">/</span>
+        <a href="../ai-news.html">AI News</a>
+        <span class="separator">/</span>
+        <span class="current">What Is the Context Window in an LLM?</span>
       </nav>
 
       <span class="art-eyebrow">AI Explainer · Technical Deep Dive</span>
@@ -1224,7 +1240,7 @@
         <span class="badge">Updated 2026</span>
       </div>
 
-      <!-- TOC (FIXED - SIDEBAR STYLE) -->
+      <!-- TOC (SIDEBAR STYLE) -->
       <nav class="art-toc" aria-label="Table of contents">
         <h2 class="art-toc-title"><span>📋</span> Jump to a Section</h2>
         <ol>
