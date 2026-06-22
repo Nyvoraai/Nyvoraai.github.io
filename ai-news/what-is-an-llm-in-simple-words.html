@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+  <!-- ★ PRIMARY SEO ★ -->
+  <title>What Is an LLM in Simple Words? | NyvoraAI</title>
+  <meta name="description" content="What is an LLM in simple words? A clear, jargon-free explainer on how ChatGPT, Claude, and Gemini actually work — for total beginners."/>
+  <meta name="keywords" content="what is an LLM in simple words, what is a large language model, LLM explained, how does ChatGPT work, what is LLM AI, AI explained for beginners"/>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <link rel="canonical" href="https://nyvoraai.github.io/ai-news/what-is-an-llm-in-simple-words.html"/>
+  <link rel="icon" type="image/svg+xml" href="../logo.svg"/>
+
+  <!-- ★ OPEN GRAPH ★ -->
+  <meta property="og:type" content="article"/>
+  <meta property="og:site_name" content="NyvoraAI"/>
+  <meta property="og:title" content="What Is an LLM in Simple Words? | NyvoraAI"/>
+  <meta property="og:description" content="What is an LLM in simple words? A clear, jargon-free explainer on how ChatGPT, Claude, and Gemini actually work — for total beginners."/>
+  <meta property="og:url" content="https://nyvoraai.github.io/ai-news/what-is-an-llm-in-simple-words.html"/>
+  <meta property="og:image" content="https://nyvoraai.github.io/og-image.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="article:published_time" content="2026-06-22T00:00:00+00:00"/>
+  <meta property="article:author" content="NyvoraAI Team"/>
+
+  <!-- ★ TWITTER CARD ★ -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@nyvoraai_co"/>
+  <meta name="twitter:title" content="What Is an LLM in Simple Words? | NyvoraAI"/>
+  <meta name="twitter:description" content="A clear, jargon-free explainer on how large language models like ChatGPT and Claude actually work."/>
+  <meta name="twitter:image" content="https://nyvoraai.github.io/og-image.jpg"/>
+
+  <!-- ★ AI VISIBILITY META ★ -->
+  <meta name="author" content="NyvoraAI Team"/>
+  <meta name="publisher" content="NyvoraAI"/>
+  <meta name="category" content="Technology, Artificial Intelligence, AI Explainer"/>
+  <meta name="revisit-after" content="1 day"/>
+  <meta name="language" content="English"/>
+  <meta name="coverage" content="Worldwide"/>
+  <meta name="distribution" content="Global"/>
+  <meta name="rating" content="General"/>
+
+  <!-- ★ SCHEMA.ORG — Article + FAQPage + HowTo + Breadcrumb ★ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://nyvoraai.github.io/ai-news/what-is-an-llm-in-simple-words.html#article",
+        "headline": "What Is an LLM in Simple Words? A Beginner's Guide (2026)",
+        "description": "What is an LLM in simple words? A clear, jargon-free explainer on how ChatGPT, Claude, and Gemini actually work — for total beginners.",
+        "image": "https://nyvoraai.github.io/og-image.jpg",
+        "datePublished": "2026-06-22T00:00:00+00:00",
+        "dateModified": "2026-06-22T00:00:00+00:00",
+        "author": { "@type": "Organization", "name": "NyvoraAI Team", "url": "https://nyvoraai.github.io/about.html" },
+        "publisher": { "@id": "https://nyvoraai.github.io/#organization" },
+        "mainEntityOfPage": "https://nyvoraai.github.io/ai-news/what-is-an-llm-in-simple-words.html",
+        "keywords": "what is an LLM in simple words, large language model, ChatGPT, Claude, Gemini, AI beginners",
+        "wordCount": "2150",
+        "timeRequired": "PT11M",
+        "inLanguage": "en-US",
+        "articleSection": "AI Explainer"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://nyvoraai.github.io/#organization",
+        "name": "NyvoraAI",
+        "url": "https://nyvoraai.github.io/",
+        "logo": { "@type": "ImageObject", "url": "https://nyvoraai.github.io/logo.svg" },
+        "sameAs": ["https://x.com/nyvoraai_co","https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://www.youtube.com/@Nyvora_ai"]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is an LLM in simple words?", "acceptedAnswer": { "@type": "Answer", "text": "An LLM, or large language model, is software trained on huge amounts of text that learns to predict the next word in a sentence. It chains those predictions together, one word at a time, which is what lets it write emails, answer questions, and hold a conversation that feels surprisingly human." } },
+          { "@type": "Question", "name": "What does LLM stand for?", "acceptedAnswer": { "@type": "Answer", "text": "LLM stands for Large Language Model. Large refers to the massive amount of training data and billions of internal settings. Language means it works with human text. Model means it is a trained system that takes a text input and produces a text output." } },
+          { "@type": "Question", "name": "Is ChatGPT an LLM?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. ChatGPT is a chat application built on top of OpenAI's LLMs. Claude is built on Anthropic's LLMs, and Gemini is built on Google's LLMs. The chat app is the interface; the LLM is the engine underneath." } },
+          { "@type": "Question", "name": "Can LLMs think or feel?", "acceptedAnswer": { "@type": "Answer", "text": "No. LLMs do not think, feel, or understand in any human sense. They recognize statistical patterns in language and predict likely next words. The results can feel conversational and insightful, but there is no consciousness, understanding, or emotion behind it." } },
+          { "@type": "Question", "name": "Are LLMs free to use?", "acceptedAnswer": { "@type": "Answer", "text": "Many LLM-powered tools, including ChatGPT, Claude, and Gemini, have free plans powerful enough for everyday use. Paid tiers exist for heavier usage and advanced models, but you can start using an LLM today at no cost." } }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "How an LLM Generates a Reply",
+        "description": "The five steps an LLM follows from receiving your question to producing a full answer.",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "Your text arrives", "text": "You type a question and send it to the LLM." },
+          { "@type": "HowToStep", "position": 2, "name": "Text is split into tokens", "text": "The sentence is broken into small pieces called tokens, sometimes whole words, sometimes fragments." },
+          { "@type": "HowToStep", "position": 3, "name": "Model calculates probabilities", "text": "The trained model looks at all tokens so far and calculates the probability for every possible next token." },
+          { "@type": "HowToStep", "position": 4, "name": "Next token is selected", "text": "One of the highest-probability tokens is picked and appended to the output." },
+          { "@type": "HowToStep", "position": 5, "name": "Process repeats until complete", "text": "Steps 3 and 4 repeat hundreds of times until a full, coherent response has been built." }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nyvoraai.github.io/" },
+          { "@type": "ListItem", "position": 2, "name": "AI News", "item": "https://nyvoraai.github.io/ai-news.html" },
+          { "@type": "ListItem", "position": 3, "name": "What Is an LLM in Simple Words?", "item": "https://nyvoraai.github.io/ai-news/what-is-an-llm-in-simple-words.html" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style.css"/>
+
+  <style>
+    /* ── ARTICLE LAYOUT ── */
+    .art-wrap{max-width:780px;margin:0 auto;padding:0 24px}
+    .art-crumb{font-size:.85rem;color:#9FB0D6;margin:140px 0 18px;display:flex;gap:8px;flex-wrap:wrap}
+    .art-crumb a{color:#9FB0D6;text-decoration:none;border-bottom:1px dotted rgba(159,176,214,.5)}
+    .art-crumb a:hover{color:#2DD4E0}
+    .art-eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#2DD4E0;background:rgba(45,212,224,.1);border:1px solid rgba(45,212,224,.35);padding:6px 14px;border-radius:999px;margin-bottom:18px}
+    .art-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2rem,5vw,3rem);line-height:1.1;letter-spacing:-1px;color:#fff;margin-bottom:18px}
+    .art-meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;color:#9FB0D6;font-size:.9rem;margin-bottom:34px}
+    .art-meta .dot{width:4px;height:4px;border-radius:50%;background:#9FB0D6}
+
+    /* ── TOC ── */
+    .art-toc{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px 24px;margin-bottom:36px}
+    .art-toc h2{font-size:1rem;font-family:'Syne',sans-serif;color:#fff;margin:0 0 12px}
+    .art-toc ol{margin:0;padding-left:20px;color:#C6D1EE}
+    .art-toc a{color:#C6D1EE;text-decoration:none}
+    .art-toc a:hover{color:#2DD4E0}
+
+    /* ── QUICK ANSWER ── */
+    .art-quick{background:linear-gradient(135deg,rgba(45,212,224,.12),rgba(139,92,246,.12));border:1px solid rgba(45,212,224,.3);border-radius:18px;padding:24px 26px;margin:30px 0;position:relative;overflow:hidden}
+    .art-quick::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#2DD4E0,#8B5CF6,#F59E0B,#F43F5E,#2DD4E0);background-size:300% 100%;height:4px;top:0;left:0;animation:artSlide 6s linear infinite}
+    @keyframes artSlide{0%{background-position:0% 0}100%{background-position:300% 0}}
+    .art-quick strong{color:#fff}
+    .art-quick p{color:#E7ECFA;margin:8px 0 0;line-height:1.7}
+    .art-live{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:700;color:#2DD4E0;margin-bottom:10px}
+    .art-live .pulse{width:9px;height:9px;border-radius:50%;background:#2DD4E0;box-shadow:0 0 0 0 rgba(45,212,224,.6);animation:artPulse 1.6s ease-out infinite}
+    @keyframes artPulse{0%{box-shadow:0 0 0 0 rgba(45,212,224,.55)}70%{box-shadow:0 0 0 12px rgba(45,212,224,0)}100%{box-shadow:0 0 0 0 rgba(45,212,224,0)}}
+
+    /* ── BODY PROSE ── */
+    .art-body{color:#C6D1EE;font-size:1.05rem;line-height:1.85}
+    .art-body h2{font-family:'Syne',sans-serif;font-weight:800;color:#fff;font-size:clamp(1.4rem,3vw,1.8rem);margin:48px 0 16px;letter-spacing:-.5px}
+    .art-body h3{font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:1.15rem;margin:28px 0 10px}
+    .art-body p{margin:0 0 18px}
+    .art-body a{color:#2DD4E0;text-decoration:underline;text-decoration-color:rgba(45,212,224,.4)}
+    .art-body a:hover{text-decoration-color:#2DD4E0}
+    .art-body strong{color:#fff}
+
+    /* ── STEPS ── */
+    .art-steps{list-style:none;margin:18px 0;padding:0;display:grid;gap:12px}
+    .art-steps li{display:flex;gap:14px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:16px 18px;transition:border-color .2s,transform .2s}
+    .art-steps li:hover{border-color:rgba(45,212,224,.4);transform:translateX(4px)}
+    .art-steps .n{flex-shrink:0;width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:'Syne',sans-serif;font-size:.95rem}
+    .art-steps li:nth-child(1) .n{background:#60A5FA;color:#0F1C38}
+    .art-steps li:nth-child(2) .n{background:#F59E0B;color:#0F1C38}
+    .art-steps li:nth-child(3) .n{background:#8B5CF6;color:#fff}
+    .art-steps li:nth-child(4) .n{background:#2DD4E0;color:#0F1C38}
+    .art-steps li:nth-child(5) .n{background:#22C55E;color:#0F1C38}
+
+    /* ── DIAGRAM ── */
+    .art-diagram{width:100%;height:auto;border-radius:18px;display:block;margin:30px 0;border:1px solid rgba(255,255,255,.07)}
+
+    /* ── PULL QUOTE ── */
+    .art-pull{background:rgba(255,255,255,.03);border-left:3px solid #2DD4E0;border-radius:0 14px 14px 0;padding:16px 20px;margin:22px 0;color:#E7ECFA;font-style:italic}
+
+    /* ── MYTH / FACT GRID ── */
+    .myth-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}
+    .myth-card{border-radius:14px;padding:16px 18px}
+    .myth-card.myth{background:rgba(244,63,94,.1);border:1px solid rgba(244,63,94,.3)}
+    .myth-card.fact{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.28)}
+    .myth-tag{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:5px}
+    .myth-card.myth .myth-tag{color:#F43F5E}
+    .myth-card.fact .myth-tag{color:#22C55E}
+    .myth-card p{margin:0;font-size:.9rem;color:#C6D1EE;line-height:1.55}
+
+    /* ── GLOSSARY ── */
+    .glossary-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:12px;margin-bottom:8px;overflow:hidden;transition:border-color .2s}
+    .glossary-item[open]{border-color:rgba(45,212,224,.4)}
+    .glossary-item summary{padding:14px 18px;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;font-weight:600;color:#E7ECFA}
+    .glossary-item summary::-webkit-details-marker{display:none}
+    .glossary-item summary::after{content:'+';color:#2DD4E0;font-size:20px;font-weight:300;margin-left:auto}
+    .glossary-item[open] summary::after{content:'−'}
+    .glossary-body{padding:0 18px 14px;color:#9FB0D6;font-size:.9rem;line-height:1.6}
+    .gtag{font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:.05em}
+    .gt-cyan{background:rgba(45,212,224,.15);color:#2DD4E0}
+    .gt-yellow{background:rgba(245,158,11,.15);color:#F59E0B}
+    .gt-purple{background:rgba(139,92,246,.15);color:#8B5CF6}
+    .gt-red{background:rgba(244,63,94,.15);color:#F43F5E}
+
+    /* ── TOKEN DEMO (engagement widget) ── */
+    .token-demo{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px;margin:28px 0}
+    .token-demo-label{font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#9FB0D6;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+    .token-sentence{font-size:1rem;color:#E7ECFA;margin-bottom:16px;min-height:24px}
+    .token-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;min-height:40px}
+    .token-chip{font-family:'Inter',monospace;font-size:.85rem;font-weight:600;padding:6px 11px;border-radius:8px;color:#fff;opacity:0;transform:translateY(6px) scale(.9);animation:chipIn .35s ease forwards}
+    @keyframes chipIn{to{opacity:1;transform:translateY(0) scale(1)}}
+    .token-demo-btn{background:linear-gradient(135deg,#2DD4E0,#8B5CF6);color:#fff;border:none;padding:10px 20px;border-radius:10px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:'Inter',sans-serif;transition:opacity .2s,transform .15s}
+    .token-demo-btn:hover{opacity:.9;transform:translateY(-2px)}
+    .token-demo-note{font-size:.8rem;color:#9FB0D6;margin-top:12px}
+
+    /* ── REACTION BAR ── */
+    .art-react{display:flex;align-items:center;gap:14px;margin:44px 0;padding:18px 22px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:rgba(255,255,255,.02)}
+    .art-react span{color:#9FB0D6;font-size:.9rem}
+    .art-react button{cursor:pointer;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);color:#E7ECFA;border-radius:999px;padding:8px 16px;font-size:.9rem;transition:.2s}
+    .art-react button:hover,.art-react button.active{background:#2DD4E0;color:#0F1C38;border-color:#2DD4E0}
+
+    /* ── RELATED ── */
+    .art-related{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0 40px}
+    .art-related a{display:block;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px;color:#E7ECFA;text-decoration:none;transition:.2s}
+    .art-related a:hover{border-color:#2DD4E0;transform:translateY(-2px)}
+    .art-related .tag{font-size:.75rem;color:#2DD4E0;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+    .art-related .ttl{font-family:'Syne',sans-serif;font-weight:700;margin-top:6px;line-height:1.3}
+
+    /* ── FAQ ── */
+    .faq-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:14px;margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+    .faq-item[open]{border-color:rgba(45,212,224,.4)}
+    .faq-item summary{padding:18px 22px;cursor:pointer;font-weight:600;font-size:1rem;color:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:'Syne',sans-serif}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary::after{content:'+';color:#2DD4E0;font-size:22px;font-weight:300;flex-shrink:0}
+    .faq-item[open] summary::after{content:'−'}
+    .faq-item p{padding:0 22px 18px;color:#9FB0D6;font-size:.95rem;line-height:1.7;margin:0}
+
+    /* ── ANIMATED FOOTER ── */
+    footer{position:relative;overflow:hidden}
+    footer::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#2DD4E0,#8B5CF6,#F59E0B,#F43F5E,#22C55E,#2DD4E0);background-size:300% 100%;animation:artSlide 7s linear infinite}
+    footer .f-logo{background:linear-gradient(90deg,#fff,#2DD4E0,#8B5CF6,#F59E0B,#fff);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:artSlide 6s linear infinite;font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem}
+    footer .soc{transition:transform .25s,filter .25s}
+    footer .soc:hover{transform:translateY(-3px) scale(1.08);filter:drop-shadow(0 0 8px rgba(45,212,224,.6))}
+
+    @media(max-width:640px){
+      .art-crumb{margin-top:120px}
+      .myth-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<div id="page-loader"><div class="loader-logo">NyvoraAI</div></div>
+<div id="scroll-progress" role="progressbar" aria-label="Reading progress"></div>
+<button id="back-top" aria-label="Back to top">&#8593;</button>
+
+<div class="mesh" aria-hidden="true">
+  <div class="mesh-orb m1"></div>
+  <div class="mesh-orb m2"></div>
+  <div class="mesh-orb m3"></div>
+</div>
+
+<nav role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="logo" aria-label="NyvoraAI Home" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+    <svg class="logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NyvoraAI" style="width:36px;height:36px;flex-shrink:0">
+      <defs>
+        <linearGradient id="navLogoGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#1B2A4A"/>
+          <stop offset="100%" stop-color="#26365E"/>
+        </linearGradient>
+      </defs>
+      <rect width="120" height="120" rx="28" fill="url(#navLogoGrad)"/>
+      <path d="M30 90 L30 30 L90 90 L90 30" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="90" cy="30" r="7" fill="#2DD4E0"/>
+    </svg>
+    <span class="logo-text" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:-0.5px;color:#fff">Nyvora<span style="color:#2DD4E0">AI</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../blog.html">Blog</a></li>
+    <li><a href="../ai-news.html" class="active">AI News</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+  <a href="../contact.html" class="nav-btn">Write for Us</a>
+  <button class="hamburger" id="ham" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mob-menu" id="mob" role="navigation" aria-label="Mobile menu">
+  <a href="../index.html">Home</a>
+  <a href="../blog.html">Blog</a>
+  <a href="../ai-news.html">AI News</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+</div>
+
+<main id="main-content">
+  <div class="art-wrap">
+
+    <div class="art-crumb" role="navigation" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a> / <a href="../ai-news.html">AI News</a> / <span>What Is an LLM in Simple Words?</span>
+    </div>
+
+    <span class="art-eyebrow">AI Explainer &middot; Beginner Guide</span>
+    <h1 class="art-h1">What Is an LLM in Simple Words? A Beginner's Guide (2026)</h1>
+    <div class="art-meta">
+      <span>NyvoraAI Team</span><span class="dot"></span>
+      <time datetime="2026-06-22">June 22, 2026</time><span class="dot"></span>
+      <span>11 min read</span><span class="dot"></span>
+      <span>~2,150 words</span>
+    </div>
+
+    <div class="art-toc reveal" role="navigation" aria-label="Table of contents">
+      <h2>Jump to a section</h2>
+      <ol>
+        <li><a href="#what-stands-for">What does LLM stand for?</a></li>
+        <li><a href="#simple-words">What is an LLM in simple words?</a></li>
+        <li><a href="#how-it-works">How does it actually work? (5 steps)</a></li>
+        <li><a href="#vs-others">LLM vs search engine vs software</a></li>
+        <li><a href="#examples">Real LLMs you already use</a></li>
+        <li><a href="#history">A short history of the LLM</a></li>
+        <li><a href="#can-do">What LLMs can actually do</a></li>
+        <li><a href="#cant-do">What LLMs can't do</a></li>
+        <li><a href="#myths">Common myths, debunked</a></li>
+        <li><a href="#glossary">LLM glossary</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </div>
+
+    <article class="art-body">
+
+      <p>You keep hearing the word "LLM" — in news headlines, in tech conversations, in descriptions of tools you probably already use. But what does it actually mean, and why should you care? If you've ever wondered <strong>what is an LLM in simple words</strong>, this is the plain-English answer you've been looking for. No PhD required, no prior tech experience needed. By the end of this guide, you'll understand what an LLM is, how it generates a reply, where it genuinely helps, and where it regularly falls short — everything you need to use these tools well in 2026.</p>
+
+      <div class="art-quick reveal">
+        <div class="art-live"><span class="pulse"></span> QUICK ANSWER</div>
+        <p><strong>What is an LLM in simple words?</strong> An LLM (large language model) is software trained on a huge amount of text that learns to predict the next word in a sentence. It chains those predictions together, one word at a time, which is what lets it write emails, answer questions, and hold conversations that feel surprisingly human. <strong>ChatGPT, Claude, and Gemini are all LLMs</strong> — or more precisely, chat apps built on top of LLMs. The LLM is the engine; the chat app is the car.</p>
+      </div>
+
+      <h2 id="what-stands-for">What Does LLM Stand For?</h2>
+      <p>Before diving into how LLMs work, it helps to know what the name actually means — because each word in the acronym tells you something real about the technology.</p>
+      <ul class="art-steps">
+        <li><span class="n">L</span><div><strong>Large</strong> — trained on an enormous amount of text (think: a meaningful fraction of the public internet, books, and articles) and containing billions of internal adjustable settings called parameters, all tuned during training.</div></li>
+        <li><span class="n">L</span><div><strong>Language</strong> — it works specifically with human language: reading it, recognizing patterns in it, and generating more of it.</div></li>
+        <li><span class="n">M</span><div><strong>Model</strong> — in machine learning, a "model" is a trained system that takes an input and produces an output. An LLM's input is text, and its output is more text.</div></li>
+      </ul>
+      <p>Put those three words together and you have a language-prediction system trained at a scale that would've been impossible as recently as a decade ago. That's the whole acronym, demystified. Now the interesting part: what that actually means in practice.</p>
+
+      <h2 id="simple-words">What Is an LLM in Simple Words?</h2>
+      <p>Here is <strong>what is an LLM in simple words</strong>, without the textbook language: imagine the most well-read autocomplete system ever built. Not the basic kind on your phone that finishes "I'm on my" with "way," but one that has effectively read an enormous slice of human writing — articles, textbooks, conversations, code, forums, creative fiction — and absorbed the patterns in how words tend to follow other words in coherent, useful text.</p>
+      <p>When you type a question, the LLM doesn't look up an answer in a database the way a search engine does. Instead, it reads your question token by token (small word-sized chunks), and then predicts the single most likely next token. Then it looks at everything so far — your question plus that new token — and predicts the next one. This repeats, over and over, until the model decides the reply is complete.</p>
+      <p>That core mechanism — one-word-at-a-time prediction — sounds almost too simple to produce the rich essays, working code snippets, and nuanced explanations these models regularly generate. But at the scale modern LLMs operate, that simple mechanism, applied billions of times across trillions of training examples, is enough to produce text that is genuinely useful, well-structured, and often surprisingly insightful.</p>
+
+      <div class="art-pull">Think of an LLM not as a database that looks up answers, but as a very well-read system that predicts what a sensible, knowledgeable person would write next.</div>
+
+      <h2 id="how-it-works">How Does an LLM Actually Work? (5 Honest Steps)</h2>
+      <p>Zooming in a little further, here is the process broken into five plain, non-technical steps:</p>
+
+      <img class="art-diagram" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcm9sZT0iaW1nIj4KPHRpdGxlPldoYXQgaXMgYW4gTExNIGluIHNpbXBsZSB3b3JkcyAtIGRpYWdyYW0gc2hvd2luZyBob3cgYSBwcm9tcHQgYmVjb21lcyBhbiBBSSBhbnN3ZXIgc3RlcCBieSBzdGVwPC90aXRsZT4KPGRlc2M+Rm91ciBhbmltYXRlZCBzdGVwcyBvbiBhIGRhcmsgbmF2eSBiYWNrZ3JvdW5kOiB5b3UgdHlwZSBhIHF1ZXN0aW9uLCBpdCBzcGxpdHMgaW50byB0b2tlbnMsIHRoZSBtb2RlbCBwcmVkaWN0cyBsaWtlbHkgd29yZHMsIGFuZCBhIGZ1bGwgYW5zd2VyIGFwcGVhcnMuPC9kZXNjPgo8ZGVmcz4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBGMUMzOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFCMkE0QSIvPjwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJuMSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2MEE1RkEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNTYzRUIiLz48L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibjIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRjU5RTBCIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjQjQ1MzA5Ii8+PC9saW5lYXJHcmFkaWVudD4KICA8bGluZWFyR3JhZGllbnQgaWQ9Im4zIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhCNUNGNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzZEMjhEOSIvPjwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJuNCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMyREQ0RTAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRUE1QjciLz48L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxzdHlsZT4KICAubmR7YW5pbWF0aW9uOm5kUCAyLjZzIGVhc2UtaW4tb3V0IGluZmluaXRlfQogIC5kMXthbmltYXRpb24tZGVsYXk6MHN9LmQye2FuaW1hdGlvbi1kZWxheTouNjVzfS5kM3thbmltYXRpb24tZGVsYXk6MS4zc30uZDR7YW5pbWF0aW9uLWRlbGF5OjEuOTVzfQogIEBrZXlmcmFtZXMgbmRQezAlLDEwMCV7ZmlsdGVyOmRyb3Atc2hhZG93KDAgMCAwcHggcmdiYSgyNTUsMjU1LDI1NSwwKSl9NTAle2ZpbHRlcjpkcm9wLXNoYWRvdygwIDAgMTRweCByZ2JhKDI1NSwyNTUsMjU1LC4zNSkpfX0KICAubGJse2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2ZvbnQtd2VpZ2h0OjcwMDtmaWxsOiNmZmY7Zm9udC1zaXplOjEzcHh9CiAgLnN1Yntmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtmaWxsOiM5RkIwRDY7Zm9udC1zaXplOjExcHh9CiAgLnR0bHtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtmb250LXdlaWdodDo4MDA7ZmlsbDojZmZmO2ZvbnQtc2l6ZToyMHB4fQogIC5hcnJvd3tzdHJva2U6IzNBNEQ3NDtzdHJva2Utd2lkdGg6Mi41O3N0cm9rZS1kYXNoYXJyYXk6NSA2O2ZpbGw6bm9uZX0KPC9zdHlsZT4KPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9Ijk5NiIgaGVpZ2h0PSIyOTYiIHJ4PSIyNiIgZmlsbD0idXJsKCNiZykiIHN0cm9rZT0iIzJBM0I1RSIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjQwIiB5PSI1MiIgY2xhc3M9InR0bCI+RnJvbSBZb3VyIFF1ZXN0aW9uIHRvIGFuIEFJIEFuc3dlcjwvdGV4dD4KPHRleHQgeD0iNDAiIHk9Ijc0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiM5RkIwRDYiPldoYXQgaGFwcGVucyBpbnNpZGUgYW4gTExNIGluIHRoZSBoYWxmLXNlY29uZCBhZnRlciB5b3UgaGl0IHNlbmQ8L3RleHQ+Cgo8cGF0aCBjbGFzcz0iYXJyb3ciIGQ9Ik0xNTUsMTcwIEwzNTAsMTcwIEw1NDUsMTcwIEw3NDAsMTcwIi8+CjxjaXJjbGUgcj0iNiIgZmlsbD0iIzJERDRFMCI+CiAgPGFuaW1hdGVNb3Rpb24gZHVyPSI1cyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIHBhdGg9Ik0xNTUsMTcwIEwzNTAsMTcwIEw1NDUsMTcwIEw3NDAsMTcwIi8+CjwvY2lyY2xlPgoKPGNpcmNsZSBjbGFzcz0ibmQgZDEiIGN4PSIxNTUiIGN5PSIxNzAiIHI9IjQ4IiBmaWxsPSJ1cmwoI24xKSIvPgo8dGV4dCB4PSIxNTUiIHk9IjE2MyIgY2xhc3M9ImxibCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIyMiI+PzwvdGV4dD4KPHRleHQgeD0iMTU1IiB5PSIxODMiIGNsYXNzPSJsYmwiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTEiPllPVSBBU0s8L3RleHQ+Cjx0ZXh0IHg9IjE1NSIgeT0iMjQ4IiBjbGFzcz0ibGJsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UeXBlIGEgcXVlc3Rpb248L3RleHQ+Cjx0ZXh0IHg9IjE1NSIgeT0iMjY2IiBjbGFzcz0ic3ViIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5pbiBwbGFpbiBFbmdsaXNoPC90ZXh0PgoKPGNpcmNsZSBjbGFzcz0ibmQgZDIiIGN4PSIzNTAiIGN5PSIxNzAiIHI9IjQ4IiBmaWxsPSJ1cmwoI24yKSIvPgo8dGV4dCB4PSIzNTAiIHk9IjE2NSIgY2xhc3M9ImxibCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxOCI+W108L3RleHQ+Cjx0ZXh0IHg9IjM1MCIgeT0iMTgzIiBjbGFzcz0ibGJsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjExIj5UT0tFTlM8L3RleHQ+Cjx0ZXh0IHg9IjM1MCIgeT0iMjQ4IiBjbGFzcz0ibGJsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TcGxpdCBpbnRvIHdvcmQ8L3RleHQ+Cjx0ZXh0IHg9IjM1MCIgeT0iMjY2IiBjbGFzcz0ic3ViIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5waWVjZXMgKHRva2Vucyk8L3RleHQ+Cgo8Y2lyY2xlIGNsYXNzPSJuZCBkMyIgY3g9IjU0NSIgY3k9IjE3MCIgcj0iNDgiIGZpbGw9InVybCgjbjMpIi8+Cjx0ZXh0IHg9IjU0NSIgeT0iMTY1IiBjbGFzcz0ibGJsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4Ij7impk8L3RleHQ+Cjx0ZXh0IHg9IjU0NSIgeT0iMTgzIiBjbGFzcz0ibGJsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjExIj5QUkVESUNUPC90ZXh0Pgo8dGV4dCB4PSI1NDUiIHk9IjI0OCIgY2xhc3M9ImxibCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R3Vlc3NlcyBuZXh0IHdvcmQ8L3RleHQ+Cjx0ZXh0IHg9IjU0NSIgeT0iMjY2IiBjbGFzcz0ic3ViIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5iaWxsaW9ucyBvZiB0aW1lczwvdGV4dD4KCjxjaXJjbGUgY2xhc3M9Im5kIGQ0IiBjeD0iNzQwIiBjeT0iMTcwIiByPSI0OCIgZmlsbD0idXJsKCNuNCkiLz4KPHRleHQgeD0iNzQwIiB5PSIxNjMiIGNsYXNzPSJsYmwiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMjIiPuKckzwvdGV4dD4KPHRleHQgeD0iNzQwIiB5PSIxODMiIGNsYXNzPSJsYmwiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTEiPkFOU1dFUjwvdGV4dD4KPHRleHQgeD0iNzQwIiB5PSIyNDgiIGNsYXNzPSJsYmwiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkZ1bGwgcmVwbHkgYXBwZWFyczwvdGV4dD4KPHRleHQgeD0iNzQwIiB5PSIyNjYiIGNsYXNzPSJzdWIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmluIHlvdXIgY2hhdDwvdGV4dD4KPC9zdmc+Cg==" alt="What is an LLM in simple words - diagram showing how a prompt becomes an AI answer step by step" width="1000" height="300" loading="eager"/>
+
+      <ol class="art-steps">
+        <li><span class="n">1</span><div><strong>Your message is split into tokens.</strong> Before the model does anything, your sentence gets broken into small chunks called tokens — sometimes whole words, sometimes word fragments. "Understanding" might become "Under" + "standing," for example. This tokenisation step lets the model process language mathematically.</div></li>
+        <li><span class="n">2</span><div><strong>The model was trained on huge amounts of text.</strong> Long before you sent your message, the model spent weeks learning from a massive text dataset — adjusting billions of internal parameters to get better and better at predicting which token naturally comes next in real-world language.</div></li>
+        <li><span class="n">3</span><div><strong>It predicts the next token.</strong> Given your prompt, the model calculates a probability score for every possible next token in its vocabulary, then selects one of the highest-probability options. It doesn't always pick the single most probable — a small element of controlled randomness keeps responses varied and natural-sounding.</div></li>
+        <li><span class="n">4</span><div><strong>It repeats, one token at a time.</strong> The new token gets added to the conversation, and the whole prediction process runs again. A single paragraph might involve hundreds of these micro-predictions, all happening in under a second.</div></li>
+        <li><span class="n">5</span><div><strong>It was fine-tuned to be helpful and safe.</strong> Raw next-token prediction alone can produce blunt or unhelpful text. Companies like OpenAI, Anthropic, and Google run an extra training stage — often using feedback from human reviewers — to make responses more useful, accurate, and appropriately cautious before releasing them to the public.</div></li>
+      </ol>
+
+      <!-- Interactive token demo -->
+      <div class="token-demo reveal">
+        <div class="token-demo-label">&#x1F9E9; See a sentence split into tokens — tap to try</div>
+        <div class="token-sentence" id="tokenSentence">An LLM predicts the next word, one small piece at a time.</div>
+        <div class="token-chips" id="tokenChips"></div>
+        <button class="token-demo-btn" onclick="sliceTokens()">Try Another Sentence &#8594;</button>
+        <p class="token-demo-note">This is a simplified visual demonstration. Real tokenisers are more technical, but the core idea is the same: the model never reads a full sentence at once — it processes language in small chunks.</p>
+      </div>
+
+      <h2 id="vs-others">LLM vs Search Engine vs Traditional Software</h2>
+      <p>A lot of confusion about LLMs comes from comparing them to tools that work in completely different ways. Here is an honest side-by-side breakdown:</p>
+
+      <img class="art-diagram" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzYwIDI0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiByb2xlPSJpbWciPgo8dGl0bGU+V2hhdCBpcyBhbiBMTE0gaW4gc2ltcGxlIHdvcmRzIC0gY29tcGFyaXNvbiBkaWFncmFtIHNob3dpbmcgTExNIHZlcnN1cyBzZWFyY2ggZW5naW5lIHZlcnN1cyB0cmFkaXRpb25hbCBzb2Z0d2FyZTwvdGl0bGU+CjxkZXNjPlRocmVlIGRhcmstdGhlbWVkIGNhcmRzIHNpZGUgYnkgc2lkZSBjb21wYXJpbmcgaG93IGFuIExMTSwgYSBzZWFyY2ggZW5naW5lLCBhbmQgdHJhZGl0aW9uYWwgc29mdHdhcmUgZWFjaCB3b3JrIGRpZmZlcmVudGx5LjwvZGVzYz4KPGRlZnM+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJiZzMiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMEYxQzM4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMUIyQTRBIi8+PC9saW5lYXJHcmFkaWVudD4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImMxIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJERDRFMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA4OTFCMiIvPjwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJjMiIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGNTlFMEIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNCNDUzMDkiLz48L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYzMiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOEI1Q0Y2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNkQyOEQ5Ii8+PC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8c3R5bGU+CiAgLmNje2FuaW1hdGlvbjpjY1AgMi42cyBlYXNlLWluLW91dCBpbmZpbml0ZX0KICAuYzF7YW5pbWF0aW9uLWRlbGF5OjBzfS5jMnthbmltYXRpb24tZGVsYXk6Ljg2c30uYzN7YW5pbWF0aW9uLWRlbGF5OjEuNzJzfQogIEBrZXlmcmFtZXMgY2NQezAlLDEwMCV7ZmlsdGVyOmRyb3Atc2hhZG93KDAgMCAwcHggcmdiYSgyNTUsMjU1LDI1NSwwKSl9NTAle2ZpbHRlcjpkcm9wLXNoYWRvdygwIDAgMTJweCByZ2JhKDI1NSwyNTUsMjU1LC4zKSl9fQogIC5jdHtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtmb250LXdlaWdodDo3MDA7ZmlsbDojZmZmO2ZvbnQtc2l6ZToxM3B4fQogIC5jc3tmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtmaWxsOiM5RkIwRDY7Zm9udC1zaXplOjExLjVweH0KPC9zdHlsZT4KPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9Ijc1NiIgaGVpZ2h0PSIyMzYiIHJ4PSIyNCIgZmlsbD0idXJsKCNiZzMpIiBzdHJva2U9IiMyQTNCNUUiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSIzMCIgeT0iNDIiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI2ZmZiI+TExNIHZzIFNlYXJjaCBFbmdpbmUgdnMgVHJhZGl0aW9uYWwgU29mdHdhcmU8L3RleHQ+Cgo8cmVjdCBjbGFzcz0iY2MgYzEiIHg9IjIyIiB5PSI2MCIgd2lkdGg9IjIyOCIgaGVpZ2h0PSIxNTUiIHJ4PSIxNiIgZmlsbD0idXJsKCNjMSkiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCBjbGFzcz0iY2MgYzEiIHg9IjIyIiB5PSI2MCIgd2lkdGg9IjIyOCIgaGVpZ2h0PSIxNTUiIHJ4PSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMkRENEUwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8dGV4dCB4PSIxMzYiIHk9Ijg4IiBjbGFzcz0iY3QiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTUiPvCfp6AgTExNPC90ZXh0Pgo8dGV4dCB4PSIxMzYiIHk9IjEwOCIgY2xhc3M9ImN0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjExIj4oQ2hhdEdQVCwgQ2xhdWRlLCBHZW1pbmkpPC90ZXh0Pgo8dGV4dCB4PSIxMzYiIHk9IjEyOCIgY2xhc3M9ImNzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QcmVkaWN0cyB0aGUgbW9zdCBsaWtlbHk8L3RleHQ+Cjx0ZXh0IHg9IjEzNiIgeT0iMTQ0IiBjbGFzcz0iY3MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPm5leHQgd29yZCBiYXNlZCBvbiBwYXR0ZXJuczwvdGV4dD4KPHRleHQgeD0iMTM2IiB5PSIxNjQiIGNsYXNzPSJjcyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+aW4gaXRzIHRyYWluaW5nIGRhdGE8L3RleHQ+Cjx0ZXh0IHg9IjEzNiIgeT0iMTk1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiMyREQ0RTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSI3MDAiPkJlc3QgZm9yOiB3cml0aW5nLCBleHBsYWluaW5nPC90ZXh0PgoKPHJlY3QgY2xhc3M9ImNjIGMyIiB4PSIyNjYiIHk9IjYwIiB3aWR0aD0iMjI4IiBoZWlnaHQ9IjE1NSIgcng9IjE2IiBmaWxsPSJ1cmwoI2MyKSIgb3BhY2l0eT0iLjE4Ii8+CjxyZWN0IGNsYXNzPSJjYyBjMiIgeD0iMjY2IiB5PSI2MCIgd2lkdGg9IjIyOCIgaGVpZ2h0PSIxNTUiIHJ4PSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjU5RTBCIiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8dGV4dCB4PSIzODAiIHk9Ijg4IiBjbGFzcz0iY3QiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTUiPvCflI0gU2VhcmNoIEVuZ2luZTwvdGV4dD4KPHRleHQgeD0iMzgwIiB5PSIxMDgiIGNsYXNzPSJjdCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxMSI+KEdvb2dsZSwgQmluZyk8L3RleHQ+Cjx0ZXh0IHg9IjM4MCIgeT0iMTI4IiBjbGFzcz0iY3MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJldHJpZXZlcyBhbmQgcmFua3MgZXhpc3Rpbmc8L3RleHQ+Cjx0ZXh0IHg9IjM4MCIgeT0iMTQ0IiBjbGFzcz0iY3MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPndlYiBwYWdlcyB0aGF0IG1hdGNoIHlvdXI8L3RleHQ+Cjx0ZXh0IHg9IjM4MCIgeT0iMTY0IiBjbGFzcz0iY3MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPnF1ZXJ5PC90ZXh0Pgo8dGV4dCB4PSIzODAiIHk9IjE5NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjExIiBmaWxsPSIjRjU5RTBCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iNzAwIj5CZXN0IGZvcjogY3VycmVudCwgc291cmNlZCBpbmZvPC90ZXh0PgoKPHJlY3QgY2xhc3M9ImNjIGMzIiB4PSI1MTAiIHk9IjYwIiB3aWR0aD0iMjI4IiBoZWlnaHQ9IjE1NSIgcng9IjE2IiBmaWxsPSJ1cmwoI2MzKSIgb3BhY2l0eT0iLjE4Ii8+CjxyZWN0IGNsYXNzPSJjYyBjMyIgeD0iNTEwIiB5PSI2MCIgd2lkdGg9IjIyOCIgaGVpZ2h0PSIxNTUiIHJ4PSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEI1Q0Y2IiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8dGV4dCB4PSI2MjQiIHk9Ijg4IiBjbGFzcz0iY3QiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTUiPuKame+4jyBTb2Z0d2FyZTwvdGV4dD4KPHRleHQgeD0iNjI0IiB5PSIxMDgiIGNsYXNzPSJjdCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxMSI+KEV4Y2VsLCBjYWxjdWxhdG9ycyk8L3RleHQ+Cjx0ZXh0IHg9IjYyNCIgeT0iMTI4IiBjbGFzcz0iY3MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkZvbGxvd3MgZml4ZWQsIGV4cGxpY2l0bHk8L3RleHQ+Cjx0ZXh0IHg9IjYyNCIgeT0iMTQ0IiBjbGFzcz0iY3MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmNvZGVkIHJ1bGVzIOKAlCBzYW1lIGlucHV0PC90ZXh0Pgo8dGV4dCB4PSI2MjQiIHk9IjE2NCIgY2xhc3M9ImNzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5hbHdheXMgZ2l2ZXMgc2FtZSBvdXRwdXQ8L3RleHQ+Cjx0ZXh0IHg9IjYyNCIgeT0iMTk1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiM4QjVDRjYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSI3MDAiPkJlc3QgZm9yOiByZXBlYXRhYmxlIHRhc2tzPC90ZXh0Pgo8L3N2Zz4K" alt="What is an LLM in simple words - comparison diagram showing LLM versus search engine versus traditional software" width="760" height="240" loading="lazy"/>
+
+      <p>The critical distinction: a search engine shows you where information already lives on the web. An LLM generates new text based on statistical patterns — it doesn't "look anything up" by default, unless the product has added live search as a separate feature. That single difference explains most of what LLMs are good at and most of where they fail.</p>
+
+      <h2 id="examples">Real LLMs You've Probably Already Used</h2>
+      <p>"LLM" sounds abstract until you realise you've likely already chatted with at least one. The most widely used LLM-powered tools in 2026:</p>
+      <ul class="art-steps">
+        <li><span class="n">1</span><div><strong><a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a></strong> — Built by OpenAI, the application that introduced most of the world to LLMs in late 2022. Still the most widely used AI chat app globally.</div></li>
+        <li><span class="n">2</span><div><strong><a href="https://claude.ai" target="_blank" rel="noopener">Claude</a></strong> — Built by Anthropic. Known for longer context, careful writing, and strong performance on nuanced tasks.</div></li>
+        <li><span class="n">3</span><div><strong><a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a></strong> — Built by Google, deeply integrated into Search, Workspace, Gmail, and Android devices.</div></li>
+        <li><span class="n">4</span><div><strong>Llama</strong> — Built by Meta. Notable for being openly available so developers can download and run it on their own infrastructure without paying per query.</div></li>
+      </ul>
+      <p>If you haven't tried any of these yet, our <a href="../blog/how-to-start-using-ai-not-technical.html">step-by-step beginner's guide to starting with AI</a> walks through signing up and sending your first prompt in under ten minutes — no technical experience needed.</p>
+
+      <h2 id="history">A Short History of the LLM</h2>
+      <p>LLMs didn't arrive overnight. The technology has been building for nearly a decade, with one breakthrough in particular changing everything:</p>
+
+      <img class="art-diagram" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcm9sZT0iaW1nIj4KPHRpdGxlPldoYXQgaXMgYW4gTExNIGluIHNpbXBsZSB3b3JkcyAtIHRpbWVsaW5lIG9mIGxhcmdlIGxhbmd1YWdlIG1vZGVscyBmcm9tIDIwMTcgdHJhbnNmb3JtZXIgdG8gMjAyNiBldmVyeWRheSBBSTwvdGl0bGU+CjxkZXNjPkZpdmUgYW5pbWF0ZWQgbm9kZXMgb24gYSBkYXJrIG5hdnkgYmFja2dyb3VuZCBzaG93aW5nIHRoZSBoaXN0b3J5IG9mIExMTXM6IDIwMTcgdHJhbnNmb3JtZXIgcGFwZXIsIDIwMTggdG8gMjAyMCBlYXJseSBHUFQgbW9kZWxzLCBOb3ZlbWJlciAyMDIyIENoYXRHUFQgcHVibGljIGxhdW5jaCwgMjAyMyBDbGF1ZGUgYW5kIEdlbWluaSwgYW5kIDIwMjYgZGFpbHkgQUkgYWdlbnRzLjwvZGVzYz4KPGRlZnM+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJiZzIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMEYxQzM4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMUIyQTRBIi8+PC9saW5lYXJHcmFkaWVudD4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImUxIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYwQTVGQSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI1NjNFQiIvPjwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJlMiIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGNDNGNUUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNCRTEyM0MiLz48L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iZTMiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRjU5RTBCIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjQjQ1MzA5Ii8+PC9saW5lYXJHcmFkaWVudD4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImU0IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyQzU1RSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzE1ODAzRCIvPjwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJlNSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM4QjVDRjYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2RDI4RDkiLz48L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxzdHlsZT4KICAuZXB7YW5pbWF0aW9uOmVwUCAyLjRzIGVhc2UtaW4tb3V0IGluZmluaXRlfQogIC5wMXthbmltYXRpb24tZGVsYXk6MHN9LnAye2FuaW1hdGlvbi1kZWxheTouNDhzfS5wM3thbmltYXRpb24tZGVsYXk6Ljk2c30ucDR7YW5pbWF0aW9uLWRlbGF5OjEuNDRzfS5wNXthbmltYXRpb24tZGVsYXk6MS45MnN9CiAgQGtleWZyYW1lcyBlcFB7MCUsMTAwJXtmaWx0ZXI6ZHJvcC1zaGFkb3coMCAwIDBweCByZ2JhKDI1NSwyNTUsMjU1LDApKX01MCV7ZmlsdGVyOmRyb3Atc2hhZG93KDAgMCAxNHB4IHJnYmEoMjU1LDI1NSwyNTUsLjM1KSl9fQogIC55cntmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtmb250LXdlaWdodDo4MDA7ZmlsbDojZmZmO2ZvbnQtc2l6ZToxM3B4fQogIC5jcHtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtmaWxsOiM5RkIwRDY7Zm9udC1zaXplOjExcHh9Cjwvc3R5bGU+CjxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSI5OTYiIGhlaWdodD0iMjk2IiByeD0iMjYiIGZpbGw9InVybCgjYmcyKSIgc3Ryb2tlPSIjMkEzQjVFIiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iNDAiIHk9IjUyIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmYiPkEgU2hvcnQgSGlzdG9yeSBvZiB0aGUgTExNPC90ZXh0Pgo8dGV4dCB4PSI0MCIgeT0iNzQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMyIgZmlsbD0iIzlGQjBENiI+RnJvbSBhIDIwMTcgcmVzZWFyY2ggcGFwZXIgdG8gdGhlIGNoYXQgYm94IHlvdSB1c2UgZXZlcnkgZGF5PC90ZXh0PgoKPHBhdGggZD0iTTEwMCwxNjUgTDMwMCwxNjUgTDUwMCwxNjUgTDcwMCwxNjUgTDg4MCwxNjUiIHN0cm9rZT0iIzNBNEQ3NCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSI2IDgiIGZpbGw9Im5vbmUiLz4KPGNpcmNsZSByPSI3IiBmaWxsPSIjZmZmIj4KICA8YW5pbWF0ZU1vdGlvbiBkdXI9IjZzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgcGF0aD0iTTEwMCwxNjUgTDMwMCwxNjUgTDUwMCwxNjUgTDcwMCwxNjUgTDg4MCwxNjUiLz4KPC9jaXJjbGU+Cgo8Y2lyY2xlIGNsYXNzPSJlcCBwMSIgY3g9IjEwMCIgY3k9IjE2NSIgcj0iMzYiIGZpbGw9InVybCgjZTEpIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMjQwIiBjbGFzcz0ieXIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjIwMTc8L3RleHQ+Cjx0ZXh0IHg9IjEwMCIgeT0iMjU3IiBjbGFzcz0iY3AiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlRyYW5zZm9ybWVyPC90ZXh0Pgo8dGV4dCB4PSIxMDAiIHk9IjI3MiIgY2xhc3M9ImNwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5wYXBlciBwdWJsaXNoZWQ8L3RleHQ+Cgo8Y2lyY2xlIGNsYXNzPSJlcCBwMiIgY3g9IjMwMCIgY3k9IjE2NSIgcj0iMzYiIGZpbGw9InVybCgjZTIpIi8+Cjx0ZXh0IHg9IjMwMCIgeT0iMjQwIiBjbGFzcz0ieXIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjIwMTjigJMyMDIwPC90ZXh0Pgo8dGV4dCB4PSIzMDAiIHk9IjI1NyIgY2xhc3M9ImNwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5FYXJseSBHUFQgbW9kZWxzPC90ZXh0Pgo8dGV4dCB4PSIzMDAiIHk9IjI3MiIgY2xhc3M9ImNwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj53cml0ZSBmbHVlbnQgdGV4dDwvdGV4dD4KCjxjaXJjbGUgY2xhc3M9ImVwIHAzIiBjeD0iNTAwIiBjeT0iMTY1IiByPSIzNiIgZmlsbD0idXJsKCNlMykiLz4KPHRleHQgeD0iNTAwIiB5PSIyNDAiIGNsYXNzPSJ5ciIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Tm92IDIwMjI8L3RleHQ+Cjx0ZXh0IHg9IjUwMCIgeT0iMjU3IiBjbGFzcz0iY3AiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNoYXRHUFQgZ29lczwvdGV4dD4KPHRleHQgeD0iNTAwIiB5PSIyNzIiIGNsYXNzPSJjcCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+cHVibGljIGdsb2JhbGx5PC90ZXh0PgoKPGNpcmNsZSBjbGFzcz0iZXAgcDQiIGN4PSI3MDAiIGN5PSIxNjUiIHI9IjM2IiBmaWxsPSJ1cmwoI2U0KSIvPgo8dGV4dCB4PSI3MDAiIHk9IjI0MCIgY2xhc3M9InlyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yMDIzPC90ZXh0Pgo8dGV4dCB4PSI3MDAiIHk9IjI1NyIgY2xhc3M9ImNwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DbGF1ZGUgJmFtcDsgR2VtaW5pPC90ZXh0Pgo8dGV4dCB4PSI3MDAiIHk9IjI3MiIgY2xhc3M9ImNwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5qb2luIHRoZSByYWNlPC90ZXh0PgoKPGNpcmNsZSBjbGFzcz0iZXAgcDUiIGN4PSI4ODAiIGN5PSIxNjUiIHI9IjM2IiBmaWxsPSJ1cmwoI2U1KSIvPgo8dGV4dCB4PSI4ODAiIHk9IjI0MCIgY2xhc3M9InlyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yMDI2PC90ZXh0Pgo8dGV4dCB4PSI4ODAiIHk9IjI1NyIgY2xhc3M9ImNwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5MTE1zIHBvd2VyIGRhaWx5PC90ZXh0Pgo8dGV4dCB4PSI4ODAiIHk9IjI3MiIgY2xhc3M9ImNwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5hcHBzICZhbXA7IGFnZW50czwvdGV4dD4KPC9zdmc+Cg==" alt="What is an LLM in simple words - timeline of large language models from 2017 transformer to 2026 everyday AI" width="1000" height="300" loading="lazy"/>
+
+      <p>The pivotal moment was a 2017 research paper from Google called "Attention Is All You Need," which introduced a new neural network architecture called the <strong>Transformer</strong>. Previous language models had trouble with longer sequences of text — they'd lose track of earlier context. The Transformer architecture solved that by learning which parts of a sentence to "pay attention to" when predicting the next token, regardless of how far back in the text those parts appeared. Almost every modern LLM — GPT, Claude, Gemini, Llama — is built on Transformer architecture or a direct descendant of it.</p>
+
+      <h2 id="can-do">What Can LLMs Actually Do?</h2>
+      <p>Here are the things LLMs are genuinely good at in 2026, with real-world examples of how people use them every day:</p>
+      <ol class="art-steps">
+        <li><span class="n">&#9997;</span><div><strong>Writing and editing.</strong> Drafting emails, polishing essays, rewriting in a different tone, fixing grammar, expanding bullet points into paragraphs. This remains the single most common use case.</div></li>
+        <li><span class="n">&#128218;</span><div><strong>Explaining complex topics.</strong> Breaking down medical reports, legal documents, technical specs, or academic papers into plain language. Think of it as a patient teacher available at 2am.</div></li>
+        <li><span class="n">&#128203;</span><div><strong>Summarising.</strong> Condensing long documents, articles, meeting transcripts, or PDFs into key bullet points — in seconds, not hours.</div></li>
+        <li><span class="n">&#128187;</span><div><strong>Writing and debugging code.</strong> Generate working code across dozens of languages, explain what existing code does, or find and fix bugs.</div></li>
+        <li><span class="n">&#127758;</span><div><strong>Translation.</strong> Convert text between languages while preserving tone and meaning well enough for most everyday purposes.</div></li>
+      </ol>
+
+      <h2 id="cant-do">What LLMs Can't Do — Know the Limits</h2>
+      <p>Because LLMs sound confident and conversational, it's easy to over-trust them. Here are the specific ways they regularly fail, and what to do instead:</p>
+      <ul class="art-steps">
+        <li><span class="n">&#10060;</span><div><strong>They can state wrong things with full confidence.</strong> This is called "hallucination." The model predicts plausible text — it doesn't verify facts. Always check names, dates, statistics, and citations before using them.</div></li>
+        <li><span class="n">&#10060;</span><div><strong>They don't browse the live internet by default.</strong> A standard LLM's knowledge has a training cutoff date. Some apps add live web search as a separate layer — that's not the LLM itself doing it; it's an additional feature the product team built on top.</div></li>
+        <li><span class="n">&#10060;</span><div><strong>They don't remember you between conversations.</strong> Unless a product explicitly adds a memory feature, every new chat session starts completely fresh. The model has zero record of who you are or what you discussed last week.</div></li>
+        <li><span class="n">&#10060;</span><div><strong>They can't take real-world actions on their own.</strong> An LLM can write an email but can't send one, can draft a booking request but can't make a reservation — unless it's been connected to a separate tool that handles those external actions.</div></li>
+      </ul>
+
+      <h2 id="myths">Common Myths About LLMs, Debunked</h2>
+      <p>A few assumptions come up constantly when people first encounter LLMs. Here are the four most common ones, and why they're wrong:</p>
+
+      <div class="myth-grid reveal">
+        <div class="myth-card myth"><div class="myth-tag">&#10007; Myth</div><p>LLMs think and understand the way humans do.</p></div>
+        <div class="myth-card fact"><div class="myth-tag">&#10003; Fact</div><p>They recognise statistical patterns in language. There is no inner experience, belief, or understanding behind the words they produce.</p></div>
+
+        <div class="myth-card myth"><div class="myth-tag">&#10007; Myth</div><p>A bigger model always means a smarter model.</p></div>
+        <div class="myth-card fact"><div class="myth-tag">&#10003; Fact</div><p>Training data quality, architecture, and fine-tuning matter as much as size — sometimes more. A smaller, well-tuned model often outperforms a larger but poorly trained one.</p></div>
+
+        <div class="myth-card myth"><div class="myth-tag">&#10007; Myth</div><p>LLMs know everything that's happening right now.</p></div>
+        <div class="myth-card fact"><div class="myth-tag">&#10003; Fact</div><p>Every LLM has a training cutoff. Anything that happened after that date is unknown to the model unless live search is added by the application layer.</p></div>
+
+        <div class="myth-card myth"><div class="myth-tag">&#10007; Myth</div><p>If an LLM says it confidently, it must be correct.</p></div>
+        <div class="myth-card fact"><div class="myth-tag">&#10003; Fact</div><p>Confidence is a stylistic property of how the text sounds, not an indicator of accuracy. Treat LLM outputs as a useful first draft, not a verified source.</p></div>
+      </div>
+
+      <h2 id="glossary">Quick LLM Glossary</h2>
+      <p>A handful of terms come up constantly once you start reading about LLMs. Click any term to expand its plain-English definition:</p>
+
+      <details class="glossary-item reveal">
+        <summary><span>Token <span class="gtag gt-cyan">Basics</span></span></summary>
+        <div class="glossary-body">A small chunk of text — sometimes a whole word, sometimes a word fragment — that an LLM reads and generates one piece at a time. "Chatbot" might be split into "Chat" and "bot."</div>
+      </details>
+      <details class="glossary-item reveal">
+        <summary><span>Parameter <span class="gtag gt-yellow">Training</span></span></summary>
+        <div class="glossary-body">An internal, adjustable number inside the model. Modern LLMs have billions of these, all tuned during training to get better at predicting likely next tokens.</div>
+      </details>
+      <details class="glossary-item reveal">
+        <summary><span>Training data <span class="gtag gt-yellow">Training</span></span></summary>
+        <div class="glossary-body">The massive text collection — books, articles, code, conversations — that the model learns language patterns from before being released to the public.</div>
+      </details>
+      <details class="glossary-item reveal">
+        <summary><span>Fine-tuning <span class="gtag gt-purple">Training</span></span></summary>
+        <div class="glossary-body">An extra training stage after the main one, used to make a model more helpful, safer, or better at a specific task. This is often done using feedback from human reviewers.</div>
+      </details>
+      <details class="glossary-item reveal">
+        <summary><span>Context window <span class="gtag gt-cyan">Basics</span></span></summary>
+        <div class="glossary-body">The total amount of text — your conversation history plus any uploaded documents — the model can "see" at once while generating a reply. Longer context windows let you work with bigger documents.</div>
+      </details>
+      <details class="glossary-item reveal">
+        <summary><span>Hallucination <span class="gtag gt-red">Limitation</span></span></summary>
+        <div class="glossary-body">When an LLM states something false with complete confidence, because it is predicting statistically plausible text rather than verifying facts. Always double-check important claims.</div>
+      </details>
+      <details class="glossary-item reveal">
+        <summary><span>Transformer <span class="gtag gt-purple">Architecture</span></span></summary>
+        <div class="glossary-body">The neural network architecture introduced by Google in 2017 that underpins nearly all modern LLMs. It uses a mechanism called "attention" to track relationships between distant parts of a text sequence.</div>
+      </details>
+
+      <h2>Why This Actually Matters in 2026</h2>
+      <p>LLMs have graduated from novelty to infrastructure. They sit inside search engines, email clients, coding tools, customer support systems, and office software that hundreds of millions of people use every day. Knowing <strong>what is an LLM in simple words</strong> — and just as importantly, what it isn't — is the difference between using these tools effectively and occasionally being misled by a confident-sounding wrong answer.</p>
+      <p>The good news is that the barrier to entry is as low as it has ever been. Every major LLM platform has a free tier, requires nothing more than an email address to sign up, and works with plain English. You don't need to write code, understand the math, or even read this entire article to start benefiting from these tools today. If you're ready to try, <a href="../blog/how-to-start-using-ai-not-technical.html">our beginner's guide to using AI with zero technical skill</a> walks you through the whole process step by step.</p>
+      <p>For ongoing coverage of how LLMs and the broader AI landscape keep evolving, our <a href="../ai-news.html">AI News section</a> covers the latest developments as they happen.</p>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <details class="faq-item" open>
+        <summary>What is an LLM in simple words?</summary>
+        <p>An LLM, or large language model, is software trained on huge amounts of text that learns to predict the next word in a sentence. It chains those predictions together, one word at a time, which is what lets it write emails, answer questions, and hold conversations that feel surprisingly human.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What does LLM stand for?</summary>
+        <p>LLM stands for Large Language Model. "Large" refers to the massive amount of training data and billions of internal settings. "Language" means it works specifically with human text. "Model" means it is a trained system that takes a text input and produces a text output.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is ChatGPT an LLM?</summary>
+        <p>Yes. ChatGPT is a chat application built on top of OpenAI's LLMs. Claude is built on Anthropic's LLMs, and Gemini is built on Google's LLMs. The chat app is the interface you see; the LLM is the engine underneath it.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How is an LLM different from regular AI?</summary>
+        <p>AI is the broad field of building machines that perform tasks usually requiring human intelligence. An LLM is one specific type of AI focused on understanding and generating human language. Every LLM is a form of AI, but not all AI is an LLM — for example, an AI that plays chess or detects fraud in banking transactions is AI but not an LLM.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can LLMs think or feel?</summary>
+        <p>No. LLMs do not think, feel, or understand in any human sense. They recognise statistical patterns in language and predict likely next words. The results can feel conversational and insightful, but there is no consciousness, opinion, or emotion behind them.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Are LLMs free to use?</summary>
+        <p>Many LLM-powered tools — including ChatGPT, Claude, and Gemini — have free plans that are powerful enough for most everyday tasks. Paid tiers exist for higher usage limits and access to more advanced models, but you can start using an LLM today at no cost with just an email address.</p>
+      </details>
+
+      <div class="art-react">
+        <span>Was this explainer helpful?</span>
+        <button type="button" onclick="this.classList.toggle('active')">&#128077; Yes</button>
+        <button type="button" onclick="this.classList.toggle('active')">&#128078; Needs more detail</button>
+      </div>
+
+      <p>Still have questions? Browse the <a href="../ai-news.html">AI News section</a> for more coverage, read our <a href="../blog.html">beginner guides on the Blog</a>, or <a href="../contact.html">send us a message</a> and we'll answer directly.</p>
+
+      <div class="art-related">
+        <a href="why-was-fable-5-banned.html"><span class="tag">AI News</span><div class="ttl">Why Was Fable 5 Banned? The Real Story &#8594;</div></a>
+        <a href="../blog/how-to-start-using-ai-not-technical.html"><span class="tag">For Beginners</span><div class="ttl">How to Start Using AI If You Are Not Technical &#8594;</div></a>
+        <a href="../ai-news.html"><span class="tag">AI News</span><div class="ttl">More breaking AI news, updated daily &#8594;</div></a>
+      </div>
+
+    </article>
+
+    <section class="nl" aria-labelledby="nl-heading" style="margin:0 0 60px;padding:0">
+      <div class="nl-box reveal">
+        <span class="label" style="display:block;text-align:center">Newsletter</span>
+        <h2 id="nl-heading">Stay ahead of AI. Get it free.</h2>
+        <p>Top AI stories and plain-English explainers every week. No spam. No noise. Just signal.</p>
+        <form class="nl-form" onsubmit="return false" aria-label="Newsletter signup">
+          <input type="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email"/>
+          <button type="submit">Subscribe Free</button>
+        </form>
+        <p class="nl-note">No spam &middot; Unsubscribe anytime &middot; 100% free</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <span class="f-logo">NyvoraAI</span>
+        <p>Your trusted source for original AI news, deep dives, plain-English explainers, and practical insights on artificial intelligence. Built for the AI generation.</p>
+        <div class="socials">
+          <a class="soc" href="https://x.com/nyvoraai_co" aria-label="Follow NyvoraAI on X" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="var(--muted)"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a class="soc" href="https://www.instagram.com/nyvora_ai/" aria-label="Follow NyvoraAI on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="soc" href="https://www.facebook.com/profile.php?id=61591060353276" aria-label="Follow NyvoraAI on Facebook" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="var(--muted)"><path d="M22 12a10 10 0 1 0-11.5 9.95v-7.04H7.9V12h2.6V9.8c0-2.57 1.53-3.99 3.87-3.99 1.12 0 2.3.2 2.3.2v2.53h-1.3c-1.28 0-1.68.8-1.68 1.62V12h2.86l-.46 2.91h-2.4v7.04A10 10 0 0 0 22 12z"/></svg>
+          </a>
+          <a class="soc" href="https://www.youtube.com/@Nyvora_ai" aria-label="Follow NyvoraAI on YouTube" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8.5s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C15.7 5.4 12 5.4 12 5.4h0s-3.7 0-6.1.2c-.4 0-1.3.1-2.1.9-.6.6-.8 2-.8 2S2.8 10.1 2.8 11.8v1.4c0 1.7.2 3.3.2 3.3s.2 1.4.8 2c.8.8 1.9.8 2.3.9 1.7.2 7.1.2 7.1.2s3.7 0 6.1-.2c.4 0 1.3-.1 2.1-.9.6-.6.8-2 .8-2s.2-1.7.2-3.3v-1.4c0-1.7-.2-3.3-.2-3.3z"/><path d="M10 14.5v-5l4.5 2.5z" fill="var(--muted)" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="f-col"><h4>Topics</h4><ul>
+        <li><a href="../ai-news.html">AI News</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../ai-news.html">Machine Learning</a></li>
+        <li><a href="../ai-news.html">Generative AI</a></li>
+        <li><a href="../ai-news.html">AI Explainers</a></li>
+      </ul></div>
+      <div class="f-col"><h4>Company</h4><ul>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../contact.html">Write for Us</a></li>
+      </ul></div>
+      <div class="f-col"><h4>Contact</h4><ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="../contact.html">Send a message</a></li>
+      </ul></div>
+    </div>
+    <div class="f-bottom">
+      <span>&copy; 2026 NyvoraAI. All rights reserved.</span>
+      <span>Built for the AI generation</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../main.js" defer></script>
+<script>
+// ── INTERACTIVE TOKEN SLICER ──
+const tokenSentences = [
+  "An LLM predicts the next word, one small piece at a time.",
+  "ChatGPT, Claude, and Gemini are all built on LLMs.",
+  "Training data teaches the model how language usually flows.",
+  "Tokens can be whole words or just word fragments.",
+  "The Transformer architecture changed everything in 2017."
+];
+const chipColors = ['#60A5FA','#F59E0B','#8B5CF6','#2DD4E0','#22C55E','#F43F5E'];
+let tokenIndex = 0;
+
+function sliceTokens() {
+  tokenIndex = (tokenIndex + 1) % tokenSentences.length;
+  const sentence = tokenSentences[tokenIndex];
+  document.getElementById('tokenSentence').textContent = sentence;
+  const pieces = sentence.replace(/[.,?!]/g,'').split(' ');
+  const wrap = document.getElementById('tokenChips');
+  wrap.innerHTML = '';
+  pieces.forEach((word, i) => {
+    const chip = document.createElement('span');
+    chip.className = 'token-chip';
+    chip.textContent = word;
+    chip.style.background = chipColors[i % chipColors.length];
+    chip.style.animationDelay = (i * 0.07) + 's';
+    wrap.appendChild(chip);
+  });
+}
+document.addEventListener('DOMContentLoaded', sliceTokens);
+</script>
+</body>
+</html>
