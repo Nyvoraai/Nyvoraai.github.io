@@ -3,12 +3,9 @@
 <head>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
-  <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-
-  <!-- PRIMARY SEO — title ≤60 chars, desc ≤160 chars -->
   <title>How Do Large Language Models Learn From Data?</title>
   <meta name="description" content="How do large language models learn from data? Discover training, tokenisation, RLHF & more in this plain-English beginner guide. Updated 2026."/>
   <meta name="keywords" content="how do large language models learn from data, LLM training explained, how LLMs work, transformer training, RLHF, AI training data"/>
@@ -16,7 +13,6 @@
   <link rel="canonical" href="https://nyvoraai.github.io/ai-news/how-do-large-language-models-learn-from-data.html"/>
   <link rel="icon" type="image/svg+xml" href="../logo.svg"/>
 
-  <!-- OPEN GRAPH -->
   <meta property="og:type" content="article"/>
   <meta property="og:site_name" content="NyvoraAI"/>
   <meta property="og:title" content="How Do Large Language Models Learn From Data?"/>
@@ -29,14 +25,12 @@
   <meta property="article:published_time" content="2026-06-22T00:00:00+00:00"/>
   <meta property="article:author" content="NyvoraAI Team"/>
 
-  <!-- TWITTER CARD -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:site" content="@nyvoraai_co"/>
   <meta name="twitter:title" content="How Do Large Language Models Learn From Data?"/>
   <meta name="twitter:description" content="Plain-English guide to how LLMs train on massive data — tokenisation, pre-training, fine-tuning & RLHF explained simply."/>
   <meta name="twitter:image" content="https://nyvoraai.github.io/og-image.jpg"/>
 
-  <!-- AI VISIBILITY META -->
   <meta name="author" content="NyvoraAI Team"/>
   <meta name="publisher" content="NyvoraAI"/>
   <meta name="category" content="Technology, Artificial Intelligence, AI Explainer"/>
@@ -46,7 +40,6 @@
   <meta name="distribution" content="Global"/>
   <meta name="rating" content="General"/>
 
-  <!-- SCHEMA.ORG -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -80,10 +73,10 @@
         "@type": "FAQPage",
         "mainEntity": [
           {"@type": "Question","name": "How do large language models learn from data?","acceptedAnswer": {"@type": "Answer","text": "LLMs learn by reading billions of text examples and adjusting billions of internal numerical settings called parameters. Each time the model predicts the wrong next word, a process called backpropagation nudges those parameters slightly closer to the correct answer. Repeat this trillions of times and the model becomes very good at predicting natural, coherent language."}},
-          {"@type": "Question","name": "What kind of data do LLMs train on?","acceptedAnswer": {"@type": "Answer","text": "LLMs train on enormous collections of text scraped from the public internet, digitised books, academic papers, code repositories, Wikipedia, and more. The exact mix varies by model, but it typically amounts to hundreds of billions to trillions of individual word-sized chunks called tokens."}},
-          {"@type": "Question","name": "What is RLHF in LLM training?","acceptedAnswer": {"@type": "Answer","text": "RLHF stands for Reinforcement Learning from Human Feedback. After the main pre-training phase, human reviewers rate the model's responses and that feedback is used to train a separate reward model, which then teaches the LLM to produce responses humans prefer — more helpful, honest, and appropriate."}},
-          {"@type": "Question","name": "How long does it take to train an LLM?","acceptedAnswer": {"@type": "Answer","text": "Training a frontier LLM takes weeks to months on tens of thousands of specialised chips running in parallel. The cost can reach hundreds of millions of dollars for the largest models. Fine-tuning a pre-trained model on a specific task is much cheaper and can take hours or days."}},
-          {"@type": "Question","name": "Can LLMs keep learning after they are released?","acceptedAnswer": {"@type": "Answer","text": "Standard released LLMs have a fixed training cutoff and do not update their weights from conversations. Some research explores continual learning, but most production models are static snapshots updated only when the company releases a new version."}}
+          {"@type": "Question","name": "What kind of data do LLMs train on?","acceptedAnswer": {"@type": "Answer","text": "LLMs train on enormous collections of text scraped from the public internet, digitised books, academic papers, code repositories, Wikipedia, and more."}},
+          {"@type": "Question","name": "What is RLHF in LLM training?","acceptedAnswer": {"@type": "Answer","text": "RLHF stands for Reinforcement Learning from Human Feedback. After the main pre-training phase, human reviewers rate the model's responses and that feedback is used to train a separate reward model."}},
+          {"@type": "Question","name": "How long does it take to train an LLM?","acceptedAnswer": {"@type": "Answer","text": "Training a frontier LLM takes weeks to months on tens of thousands of specialised chips running in parallel."}},
+          {"@type": "Question","name": "Can LLMs keep learning after they are released?","acceptedAnswer": {"@type": "Answer","text": "Standard released LLMs have a fixed training cutoff and do not update their weights from conversations."}}
         ]
       },
       {
@@ -98,14 +91,12 @@
   }
   </script>
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="../style.css"/>
 
   <style>
-    /* ===== CSS VARIABLES ===== */
     :root {
       --cyan:   #2DD4E0;
       --purple: #8B5CF6;
@@ -122,472 +113,549 @@
       --white:  #E7ECFA;
     }
 
-    /* ===== LAYOUT ===== */
-    .art-wrap { max-width:800px; margin:0 auto; padding:0 24px; }
+    main {
+      padding-top: calc(68px + 40px);
+      position: relative;
+      z-index: 2;
+    }
 
-    /* ===== BREADCRUMB ===== */
-    .art-crumb { font-size:.85rem; color:var(--muted); margin:140px 0 18px; display:flex; gap:8px; flex-wrap:wrap; }
-    .art-crumb a { color:var(--muted); text-decoration:none; border-bottom:1px dotted rgba(159,176,214,.5); transition:color .2s; }
-    .art-crumb a:hover { color:var(--cyan); }
+    .art-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 2;
+    }
 
-    /* ===== EYEBROW ===== */
+    .mesh {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .art-crumb {
+      font-size: .85rem;
+      color: var(--muted);
+      margin: 0 0 18px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding-top: 20px;
+      /* CRITICAL FIX: ensure breadcrumb is always in flow */
+      position: static !important;
+      float: none !important;
+    }
+    .art-crumb a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(159,176,214,.5);
+      transition: color .2s;
+    }
+    .art-crumb a:hover { color: var(--cyan); }
+
     .art-eyebrow {
-      display:inline-block; font-size:.8rem; font-weight:700; letter-spacing:.06em;
-      text-transform:uppercase; padding:6px 16px; border-radius:999px; margin-bottom:18px;
-      background:linear-gradient(135deg,rgba(45,212,224,.15),rgba(139,92,246,.15));
-      border:1px solid rgba(45,212,224,.4); color:var(--cyan);
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+      background: linear-gradient(135deg,rgba(45,212,224,.15),rgba(139,92,246,.15));
+      border: 1px solid rgba(45,212,224,.4);
+      color: var(--cyan);
       animation: eyebrowGlow 3s ease-in-out infinite;
     }
     @keyframes eyebrowGlow {
-      0%,100% { box-shadow:0 0 8px rgba(45,212,224,.2); }
-      50% { box-shadow:0 0 20px rgba(45,212,224,.5); }
+      0%,100% { box-shadow: 0 0 8px rgba(45,212,224,.2); }
+      50% { box-shadow: 0 0 20px rgba(45,212,224,.5); }
     }
 
-    /* ===== H1 ===== */
     .art-h1 {
-      font-family:'Syne',sans-serif; font-weight:800;
-      font-size:clamp(1.8rem,4.5vw,3rem); line-height:1.1;
-      letter-spacing:-1.5px; margin-bottom:20px;
-      background:linear-gradient(135deg,#fff 0%,var(--cyan) 40%,var(--purple) 80%,var(--amber) 100%);
-      -webkit-background-clip:text; background-clip:text; color:transparent;
-      background-size:300% 100%; animation:titleSlide 8s ease-in-out infinite;
+      font-family: 'Syne',sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem,5vw,3.1rem);
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg,#fff 0%,var(--cyan) 40%,var(--purple) 80%,var(--amber) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 300% 100%;
+      animation: titleSlide 8s ease-in-out infinite;
     }
-    @keyframes titleSlide { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+    @keyframes titleSlide {
+      0%,100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
 
-    /* ===== META ===== */
-    .art-meta { display:flex; flex-wrap:wrap; gap:10px; align-items:center; color:var(--muted); font-size:.9rem; margin-bottom:32px; }
-    .art-meta .dot { width:4px; height:4px; border-radius:50%; background:var(--muted); }
+    .art-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      color: var(--muted);
+      font-size: .9rem;
+      margin-bottom: 32px;
+    }
+    .art-meta .dot {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--muted);
+    }
     .art-meta .badge {
-      font-size:.72rem; font-weight:700; padding:3px 10px; border-radius:999px;
-      background:linear-gradient(135deg,var(--cyan),var(--purple)); color:#fff;
+      font-size: .72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: linear-gradient(135deg,var(--cyan),var(--purple));
+      color: #fff;
     }
 
-    /* ===== READING PROGRESS ===== */
     #read-prog {
-      position:fixed; top:0; left:0; height:3px; width:0%; z-index:9999;
-      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose));
-      background-size:200% 100%; animation:progAnim 3s linear infinite;
-      transition:width .1s linear;
+      position: fixed;
+      top: 0; left: 0;
+      height: 3px;
+      width: 0%;
+      z-index: 9999;
+      background: linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose));
+      background-size: 200% 100%;
+      animation: progAnim 3s linear infinite;
+      transition: width .1s linear;
     }
-    @keyframes progAnim { 0%{background-position:0%} 100%{background-position:200%} }
+    @keyframes progAnim {
+      0% { background-position: 0%; }
+      100% { background-position: 200%; }
+    }
 
-    /* ===== TOC ===== */
+    /* ===== TOC FIX: force inline block, no sticky/fixed/absolute ===== */
     .art-toc {
-      display:block;
-      background:linear-gradient(135deg,rgba(45,212,224,.07),rgba(139,92,246,.07));
-      border:1px solid rgba(45,212,224,.28);
-      border-radius:18px;
-      padding:22px 26px;
-      margin-bottom:38px;
-      width:100%;
-      box-sizing:border-box;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px 26px;
+      margin-bottom: 38px;
+      /* KEY FIXES */
+      position: static !important;
+      float: none !important;
+      width: auto !important;
+      left: auto !important;
+      top: auto !important;
+      transform: none !important;
+      display: block !important;
+      overflow: visible;
+    }
+    .art-toc::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 18px;
+      pointer-events: none;
+      background: linear-gradient(135deg,rgba(45,212,224,.06),rgba(139,92,246,.06));
+      z-index: 0;
+    }
+    /* Override any JS-injected sticky TOC styles */
+    .art-toc[style] {
+      position: static !important;
+      top: auto !important;
+      left: auto !important;
+      width: auto !important;
+      transform: none !important;
     }
     .art-toc-title {
-      font-family:'Syne',sans-serif; font-size:1rem; color:#fff;
-      margin:0 0 16px; padding:0 0 12px 0;
-      border-bottom:1px solid rgba(45,212,224,.2);
-      background:none; display:flex; align-items:center; gap:8px;
-      font-weight:700; letter-spacing:0; line-height:1.4;
+      font-family: 'Syne',sans-serif;
+      font-size: 1rem;
+      color: #fff;
+      margin: 0 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      z-index: 1;
     }
-    .art-toc-title span { font-size:1.1rem; }
+    .art-toc-title span { font-size: 1.1rem; }
     .art-toc ol {
-      margin:0; padding-left:22px; color:var(--light);
+      margin: 0;
+      padding-left: 20px;
+      color: var(--light);
+      position: relative;
+      z-index: 1;
     }
-    .art-toc li { margin-bottom:8px; line-height:1.5; }
+    .art-toc li { margin-bottom: 5px; }
     .art-toc a {
-      color:var(--light); text-decoration:none; transition:color .2s;
-      font-size:.93rem;
+      color: var(--light);
+      text-decoration: none;
+      transition: color .2s;
     }
-    .art-toc a:hover { color:var(--cyan); }
+    .art-toc a:hover { color: var(--cyan); }
 
-    /* ===== QUICK ANSWER ===== */
     .art-quick {
-      background:linear-gradient(135deg,rgba(45,212,224,.1),rgba(139,92,246,.1));
-      border-radius:20px; padding:26px 28px; margin:32px 0; position:relative; overflow:hidden;
-      border:1px solid rgba(45,212,224,.25);
+      background: linear-gradient(135deg,rgba(45,212,224,.1),rgba(139,92,246,.1));
+      border-radius: 20px;
+      padding: 26px 28px;
+      margin: 32px 0;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(45,212,224,.25);
     }
     .art-quick::before {
-      content:""; position:absolute; top:0; left:0; right:0; height:3px;
-      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose),var(--cyan));
-      background-size:300% 100%; animation:rainbowSlide 5s linear infinite;
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose),var(--cyan));
+      background-size: 300% 100%;
+      animation: rainbowSlide 5s linear infinite;
     }
-    @keyframes rainbowSlide { 0%{background-position:0%} 100%{background-position:300%} }
+    @keyframes rainbowSlide {
+      0% { background-position: 0%; }
+      100% { background-position: 300%; }
+    }
     .quick-label {
-      display:inline-flex; align-items:center; gap:8px; font-size:.78rem;
-      font-weight:800; text-transform:uppercase; letter-spacing:.08em;
-      color:var(--cyan); margin-bottom:10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--cyan);
+      margin-bottom: 10px;
     }
     .pulse-dot {
-      width:9px; height:9px; border-radius:50%; background:var(--cyan);
-      animation:pulseAnim 1.6s ease-out infinite;
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      background: var(--cyan);
+      animation: pulseAnim 1.6s ease-out infinite;
     }
     @keyframes pulseAnim {
-      0%{box-shadow:0 0 0 0 rgba(45,212,224,.6)}
-      70%{box-shadow:0 0 0 12px rgba(45,212,224,0)}
-      100%{box-shadow:0 0 0 0 rgba(45,212,224,0)}
+      0% { box-shadow: 0 0 0 0 rgba(45,212,224,.6); }
+      70% { box-shadow: 0 0 0 12px rgba(45,212,224,0); }
+      100% { box-shadow: 0 0 0 0 rgba(45,212,224,0); }
     }
-    .art-quick p { color:var(--white); margin:0; line-height:1.75; }
-    .art-quick strong { color:#fff; }
+    .art-quick p { color: var(--white); margin: 0; line-height: 1.75; }
+    .art-quick strong { color: #fff; }
 
-    /* ===== BODY PROSE ===== */
-    .art-body { color:var(--light); font-size:1.06rem; line-height:1.88; }
+    .art-body { color: var(--light); font-size: 1.06rem; line-height: 1.88; }
     .art-body h2 {
-      font-family:'Syne',sans-serif; font-weight:800;
-      font-size:clamp(1.45rem,3vw,1.9rem); margin:52px 0 18px;
-      letter-spacing:-.5px; position:relative; padding-left:16px;
+      font-family: 'Syne',sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.45rem,3vw,1.9rem);
+      margin: 52px 0 18px;
+      letter-spacing: -.5px;
+      position: relative;
+      padding-left: 16px;
     }
     .art-body h2::before {
-      content:""; position:absolute; left:0; top:50%; transform:translateY(-50%);
-      width:4px; height:70%; border-radius:4px;
-      background:linear-gradient(180deg,var(--cyan),var(--purple));
+      content: "";
+      position: absolute;
+      left: 0; top: 50%;
+      transform: translateY(-50%);
+      width: 4px; height: 70%;
+      border-radius: 4px;
+      background: linear-gradient(180deg,var(--cyan),var(--purple));
     }
-    .art-body h2 .h2-txt { color:#fff; }
-    .art-body h3 { font-family:'Syne',sans-serif; font-weight:700; color:#fff; font-size:1.18rem; margin:30px 0 10px; }
-    .art-body p { margin:0 0 20px; }
-    .art-body a { color:var(--cyan); text-decoration:underline; text-decoration-color:rgba(45,212,224,.4); transition:text-decoration-color .2s; }
-    .art-body a:hover { text-decoration-color:var(--cyan); }
-    .art-body strong { color:#fff; }
+    .art-body h2 .h2-txt { color: #fff; }
+    .art-body h3 {
+      font-family: 'Syne',sans-serif;
+      font-weight: 700;
+      color: #fff;
+      font-size: 1.18rem;
+      margin: 30px 0 10px;
+    }
+    .art-body p { margin: 0 0 20px; }
+    .art-body a {
+      color: var(--cyan);
+      text-decoration: underline;
+      text-decoration-color: rgba(45,212,224,.4);
+      transition: text-decoration-color .2s;
+    }
+    .art-body a:hover { text-decoration-color: var(--cyan); }
+    .art-body strong { color: #fff; }
 
-    /* ===== COLOUR STAT ROW ===== */
     .stat-row {
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-      gap:14px; margin:28px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+      gap: 14px;
+      margin: 28px 0;
     }
     .stat-card {
-      border-radius:16px; padding:18px 16px; text-align:center;
-      border:1px solid rgba(255,255,255,.1); position:relative; overflow:hidden;
-      transition:transform .25s, box-shadow .25s;
+      border-radius: 16px;
+      padding: 18px 16px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,.1);
+      position: relative;
+      overflow: hidden;
+      transition: transform .25s, box-shadow .25s;
     }
-    .stat-card:hover { transform:translateY(-4px); }
-    .stat-card.s1 { background:linear-gradient(135deg,rgba(45,212,224,.15),rgba(45,212,224,.05)); border-color:rgba(45,212,224,.3); }
-    .stat-card.s2 { background:linear-gradient(135deg,rgba(245,158,11,.15),rgba(245,158,11,.05)); border-color:rgba(245,158,11,.3); }
-    .stat-card.s3 { background:linear-gradient(135deg,rgba(139,92,246,.15),rgba(139,92,246,.05)); border-color:rgba(139,92,246,.3); }
-    .stat-card.s4 { background:linear-gradient(135deg,rgba(34,197,94,.15),rgba(34,197,94,.05)); border-color:rgba(34,197,94,.3); }
-    .stat-num { font-family:'Syne',sans-serif; font-weight:800; font-size:1.8rem; color:#fff; line-height:1; }
-    .stat-card.s1 .stat-num { color:var(--cyan); }
-    .stat-card.s2 .stat-num { color:var(--amber); }
-    .stat-card.s3 .stat-num { color:var(--purple); }
-    .stat-card.s4 .stat-num { color:var(--green); }
-    .stat-lbl { font-size:.78rem; color:var(--muted); margin-top:6px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; }
+    .stat-card:hover { transform: translateY(-4px); }
+    .stat-card.s1 { background: linear-gradient(135deg,rgba(45,212,224,.15),rgba(45,212,224,.05)); border-color: rgba(45,212,224,.3); }
+    .stat-card.s2 { background: linear-gradient(135deg,rgba(245,158,11,.15),rgba(245,158,11,.05)); border-color: rgba(245,158,11,.3); }
+    .stat-card.s3 { background: linear-gradient(135deg,rgba(139,92,246,.15),rgba(139,92,246,.05)); border-color: rgba(139,92,246,.3); }
+    .stat-card.s4 { background: linear-gradient(135deg,rgba(34,197,94,.15),rgba(34,197,94,.05)); border-color: rgba(34,197,94,.3); }
+    .stat-num { font-family: 'Syne',sans-serif; font-weight: 800; font-size: 1.8rem; color: #fff; line-height: 1; }
+    .stat-card.s1 .stat-num { color: var(--cyan); }
+    .stat-card.s2 .stat-num { color: var(--amber); }
+    .stat-card.s3 .stat-num { color: var(--purple); }
+    .stat-card.s4 .stat-num { color: var(--green); }
+    .stat-lbl { font-size: .78rem; color: var(--muted); margin-top: 6px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
 
-    /* ===== PHASE STEPS ===== */
-    .phase-list { list-style:none; margin:22px 0; padding:0; display:grid; gap:14px; }
+    .phase-list { list-style: none; margin: 22px 0; padding: 0; display: grid; gap: 14px; }
     .phase-item {
-      display:flex; gap:16px; background:var(--card); border:1px solid var(--border);
-      border-radius:16px; padding:20px; transition:border-color .25s,transform .25s;
-      position:relative; overflow:hidden;
+      display: flex; gap: 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      transition: border-color .25s, transform .25s;
+      position: relative;
+      overflow: hidden;
     }
     .phase-item::before {
-      content:""; position:absolute; left:0; top:0; bottom:0; width:3px; border-radius:3px;
+      content: "";
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      border-radius: 3px;
     }
-    .phase-item:nth-child(1)::before { background:var(--blue); }
-    .phase-item:nth-child(2)::before { background:var(--amber); }
-    .phase-item:nth-child(3)::before { background:var(--purple); }
-    .phase-item:nth-child(4)::before { background:var(--cyan); }
-    .phase-item:nth-child(5)::before { background:var(--green); }
-    .phase-item:hover { border-color:rgba(45,212,224,.35); transform:translateX(5px); }
+    .phase-item:nth-child(1)::before { background: var(--blue); }
+    .phase-item:nth-child(2)::before { background: var(--amber); }
+    .phase-item:nth-child(3)::before { background: var(--purple); }
+    .phase-item:nth-child(4)::before { background: var(--cyan); }
+    .phase-item:nth-child(5)::before { background: var(--green); }
+    .phase-item:hover { border-color: rgba(45,212,224,.35); transform: translateX(5px); }
     .phase-num {
-      flex-shrink:0; width:36px; height:36px; border-radius:10px; display:flex;
-      align-items:center; justify-content:center; font-weight:800;
-      font-family:'Syne',sans-serif; font-size:1rem; color:#fff;
+      flex-shrink: 0; width: 36px; height: 36px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-family: 'Syne',sans-serif; font-size: 1rem; color: #fff;
     }
-    .phase-item:nth-child(1) .phase-num { background:var(--blue); }
-    .phase-item:nth-child(2) .phase-num { background:var(--amber); color:var(--navy); }
-    .phase-item:nth-child(3) .phase-num { background:var(--purple); }
-    .phase-item:nth-child(4) .phase-num { background:var(--cyan); color:var(--navy); }
-    .phase-item:nth-child(5) .phase-num { background:var(--green); color:var(--navy); }
-    .phase-body strong { color:#fff; }
-    .phase-body { color:var(--light); line-height:1.65; }
+    .phase-item:nth-child(1) .phase-num { background: var(--blue); }
+    .phase-item:nth-child(2) .phase-num { background: var(--amber); color: var(--navy); }
+    .phase-item:nth-child(3) .phase-num { background: var(--purple); }
+    .phase-item:nth-child(4) .phase-num { background: var(--cyan); color: var(--navy); }
+    .phase-item:nth-child(5) .phase-num { background: var(--green); color: var(--navy); }
+    .phase-body strong { color: #fff; }
+    .phase-body { color: var(--light); line-height: 1.65; }
 
-    /* ===== DIAGRAM SVG ===== */
     .art-diagram {
-      width:100%; height:auto; border-radius:18px; display:block; margin:28px 0;
-      border:1px solid var(--border);
+      width: 100%; height: auto;
+      border-radius: 18px;
+      display: block;
+      margin: 28px 0;
+      border: 1px solid var(--border);
     }
 
-    /* ===== PULL QUOTE ===== */
     .art-pull {
-      border-left:3px solid var(--cyan); border-radius:0 16px 16px 0;
-      background:rgba(45,212,224,.07); padding:18px 22px; margin:26px 0;
-      color:var(--white); font-style:italic; font-size:1.05rem; line-height:1.7;
-      position:relative;
+      border-left: 3px solid var(--cyan);
+      border-radius: 0 16px 16px 0;
+      background: rgba(45,212,224,.07);
+      padding: 18px 22px;
+      margin: 26px 0;
+      color: var(--white);
+      font-style: italic;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      position: relative;
     }
-    .art-pull::before { content:'"'; font-size:3rem; color:var(--cyan); opacity:.4; position:absolute; top:-6px; left:12px; font-style:normal; line-height:1; }
+    .art-pull::before {
+      content: '"';
+      font-size: 3rem; color: var(--cyan); opacity: .4;
+      position: absolute; top: -6px; left: 12px;
+      font-style: normal; line-height: 1;
+    }
 
-    /* ===== COLOUR CONCEPT CARDS ===== */
-    .concept-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; margin:24px 0; }
+    .concept-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(230px,1fr)); gap: 16px; margin: 24px 0; }
     .concept-card {
-      border-radius:16px; padding:20px; border:1px solid var(--border);
-      transition:transform .25s, border-color .25s; position:relative; overflow:hidden;
+      border-radius: 16px; padding: 20px;
+      border: 1px solid var(--border);
+      transition: transform .25s, border-color .25s;
+      position: relative; overflow: hidden;
     }
-    .concept-card:hover { transform:translateY(-4px); }
-    .concept-card.cc1 { background:linear-gradient(135deg,rgba(96,165,250,.12),rgba(96,165,250,.03)); border-color:rgba(96,165,250,.3); }
-    .concept-card.cc2 { background:linear-gradient(135deg,rgba(245,158,11,.12),rgba(245,158,11,.03)); border-color:rgba(245,158,11,.3); }
-    .concept-card.cc3 { background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(139,92,246,.03)); border-color:rgba(139,92,246,.3); }
-    .concept-card.cc4 { background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(34,197,94,.03)); border-color:rgba(34,197,94,.3); }
-    .concept-card.cc5 { background:linear-gradient(135deg,rgba(244,63,94,.12),rgba(244,63,94,.03)); border-color:rgba(244,63,94,.3); }
-    .concept-card.cc6 { background:linear-gradient(135deg,rgba(45,212,224,.12),rgba(45,212,224,.03)); border-color:rgba(45,212,224,.3); }
-    .concept-icon { font-size:1.8rem; margin-bottom:10px; }
-    .concept-card h3 { font-family:'Syne',sans-serif; font-size:1rem; margin:0 0 8px; }
-    .cc1 h3 { color:var(--blue); }
-    .cc2 h3 { color:var(--amber); }
-    .cc3 h3 { color:var(--purple); }
-    .cc4 h3 { color:var(--green); }
-    .cc5 h3 { color:var(--rose); }
-    .cc6 h3 { color:var(--cyan); }
-    .concept-card p { color:var(--light); font-size:.9rem; line-height:1.6; margin:0; }
+    .concept-card:hover { transform: translateY(-4px); }
+    .concept-card.cc1 { background: linear-gradient(135deg,rgba(96,165,250,.12),rgba(96,165,250,.03)); border-color: rgba(96,165,250,.3); }
+    .concept-card.cc2 { background: linear-gradient(135deg,rgba(245,158,11,.12),rgba(245,158,11,.03)); border-color: rgba(245,158,11,.3); }
+    .concept-card.cc3 { background: linear-gradient(135deg,rgba(139,92,246,.12),rgba(139,92,246,.03)); border-color: rgba(139,92,246,.3); }
+    .concept-card.cc4 { background: linear-gradient(135deg,rgba(34,197,94,.12),rgba(34,197,94,.03)); border-color: rgba(34,197,94,.3); }
+    .concept-card.cc5 { background: linear-gradient(135deg,rgba(244,63,94,.12),rgba(244,63,94,.03)); border-color: rgba(244,63,94,.3); }
+    .concept-card.cc6 { background: linear-gradient(135deg,rgba(45,212,224,.12),rgba(45,212,224,.03)); border-color: rgba(45,212,224,.3); }
+    .concept-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .concept-card h3 { font-family: 'Syne',sans-serif; font-size: 1rem; margin: 0 0 8px; }
+    .cc1 h3 { color: var(--blue); } .cc2 h3 { color: var(--amber); } .cc3 h3 { color: var(--purple); }
+    .cc4 h3 { color: var(--green); } .cc5 h3 { color: var(--rose); } .cc6 h3 { color: var(--cyan); }
+    .concept-card p { color: var(--light); font-size: .9rem; line-height: 1.6; margin: 0; }
 
-    /* ===== MYTH/FACT ===== */
-    .myth-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:22px 0; }
-    .myth-card { border-radius:14px; padding:18px 20px; }
-    .myth-card.myth { background:rgba(244,63,94,.08); border:1px solid rgba(244,63,94,.28); }
-    .myth-card.fact { background:rgba(34,197,94,.07); border:1px solid rgba(34,197,94,.25); }
-    .myth-tag { font-size:.75rem; font-weight:800; letter-spacing:.07em; text-transform:uppercase; margin-bottom:9px; display:flex; align-items:center; gap:6px; }
-    .myth-card.myth .myth-tag { color:var(--rose); }
-    .myth-card.fact .myth-tag { color:var(--green); }
-    .myth-card p { margin:0; font-size:.92rem; color:var(--light); line-height:1.6; }
+    .myth-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 22px 0; }
+    .myth-card { border-radius: 14px; padding: 18px 20px; }
+    .myth-card.myth { background: rgba(244,63,94,.08); border: 1px solid rgba(244,63,94,.28); }
+    .myth-card.fact { background: rgba(34,197,94,.07); border: 1px solid rgba(34,197,94,.25); }
+    .myth-tag { font-size: .75rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; margin-bottom: 9px; display: flex; align-items: center; gap: 6px; }
+    .myth-card.myth .myth-tag { color: var(--rose); }
+    .myth-card.fact .myth-tag { color: var(--green); }
+    .myth-card p { margin: 0; font-size: .92rem; color: var(--light); line-height: 1.6; }
 
-    /* ===== INTERACTIVE QUIZ ===== */
     .quiz-box {
-      background:var(--card); border:1px solid var(--border); border-radius:20px;
-      padding:26px 28px; margin:32px 0; position:relative; overflow:hidden;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 26px 28px;
+      margin: 32px 0;
+      position: relative;
+      overflow: hidden;
     }
     .quiz-box::after {
-      content:""; position:absolute; inset:0; border-radius:20px; pointer-events:none;
-      background:linear-gradient(135deg,rgba(139,92,246,.07),rgba(45,212,224,.07));
+      content: "";
+      position: absolute; inset: 0;
+      border-radius: 20px;
+      pointer-events: none;
+      background: linear-gradient(135deg,rgba(139,92,246,.07),rgba(45,212,224,.07));
     }
-    .quiz-label { font-size:.78rem; font-weight:800; text-transform:uppercase; letter-spacing:.07em; color:var(--purple); margin-bottom:14px; display:flex; align-items:center; gap:7px; }
-    .quiz-q { font-family:'Syne',sans-serif; font-weight:700; font-size:1.05rem; color:#fff; margin-bottom:14px; }
-    .quiz-opts { display:flex; flex-direction:column; gap:9px; }
+    .quiz-label { font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .07em; color: var(--purple); margin-bottom: 14px; display: flex; align-items: center; gap: 7px; }
+    .quiz-q { font-family: 'Syne',sans-serif; font-weight: 700; font-size: 1.05rem; color: #fff; margin-bottom: 14px; }
+    .quiz-opts { display: flex; flex-direction: column; gap: 9px; }
     .quiz-opt {
-      background:rgba(255,255,255,.04); border:1px solid var(--border); border-radius:10px;
-      padding:12px 16px; color:var(--light); cursor:pointer; font-size:.95rem;
-      transition:all .2s; text-align:left; font-family:'Inter',sans-serif;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: var(--light);
+      cursor: pointer;
+      font-size: .95rem;
+      transition: all .2s;
+      text-align: left;
+      font-family: 'Inter',sans-serif;
     }
-    .quiz-opt:hover { border-color:var(--purple); color:#fff; background:rgba(139,92,246,.1); }
-    .quiz-opt.correct { border-color:var(--green) !important; background:rgba(34,197,94,.12) !important; color:#fff !important; }
-    .quiz-opt.wrong { border-color:var(--rose) !important; background:rgba(244,63,94,.12) !important; color:#fff !important; }
-    .quiz-result { display:none; margin-top:14px; padding:12px 16px; border-radius:10px; font-size:.95rem; font-weight:600; }
-    .quiz-result.show { display:block; }
-    .quiz-result.ok { background:rgba(34,197,94,.15); border:1px solid rgba(34,197,94,.3); color:var(--green); }
-    .quiz-result.no { background:rgba(244,63,94,.12); border:1px solid rgba(244,63,94,.28); color:var(--rose); }
-    .quiz-reset { margin-top:12px; background:var(--purple); border:none; color:#fff; padding:9px 20px; border-radius:8px; cursor:pointer; font-family:'Inter',sans-serif; font-size:.88rem; font-weight:700; display:none; transition:.2s; }
-    .quiz-reset:hover { opacity:.85; }
-    .quiz-reset.show { display:inline-block; }
+    .quiz-opt:hover { border-color: var(--purple); color: #fff; background: rgba(139,92,246,.1); }
+    .quiz-opt.correct { border-color: var(--green) !important; background: rgba(34,197,94,.12) !important; color: #fff !important; }
+    .quiz-opt.wrong { border-color: var(--rose) !important; background: rgba(244,63,94,.12) !important; color: #fff !important; }
+    .quiz-result { display: none; margin-top: 14px; padding: 12px 16px; border-radius: 10px; font-size: .95rem; font-weight: 600; }
+    .quiz-result.show { display: block; }
+    .quiz-result.ok { background: rgba(34,197,94,.15); border: 1px solid rgba(34,197,94,.3); color: var(--green); }
+    .quiz-result.no { background: rgba(244,63,94,.12); border: 1px solid rgba(244,63,94,.28); color: var(--rose); }
+    .quiz-reset { margin-top: 12px; background: var(--purple); border: none; color: #fff; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-family: 'Inter',sans-serif; font-size: .88rem; font-weight: 700; display: none; transition: .2s; }
+    .quiz-reset:hover { opacity: .85; }
+    .quiz-reset.show { display: inline-block; }
 
-    /* ===== GLOSSARY ===== */
-    .glossary-item {
-      background:var(--card); border:1px solid var(--border); border-radius:13px;
-      margin-bottom:9px; overflow:hidden; transition:border-color .2s;
-    }
-    .glossary-item[open] { border-color:rgba(45,212,224,.4); }
-    .glossary-item summary {
-      padding:14px 18px; cursor:pointer; display:flex; align-items:center;
-      gap:10px; list-style:none; user-select:none; font-weight:600; color:var(--white);
-    }
-    .glossary-item summary::-webkit-details-marker { display:none; }
-    .glossary-item summary::after { content:'+'; color:var(--cyan); font-size:20px; font-weight:300; margin-left:auto; }
-    .glossary-item[open] summary::after { content:'−'; }
-    .glossary-body { padding:0 18px 14px; color:var(--muted); font-size:.92rem; line-height:1.65; }
-    .gtag { font-size:.7rem; font-weight:700; padding:2px 9px; border-radius:999px; font-family:'Inter',sans-serif; letter-spacing:.05em; }
-    .gt-c{background:rgba(45,212,224,.15);color:var(--cyan)}
-    .gt-y{background:rgba(245,158,11,.15);color:var(--amber)}
-    .gt-p{background:rgba(139,92,246,.15);color:var(--purple)}
-    .gt-r{background:rgba(244,63,94,.15);color:var(--rose)}
-    .gt-g{background:rgba(34,197,94,.15);color:var(--green)}
+    .glossary-item { background: var(--card); border: 1px solid var(--border); border-radius: 13px; margin-bottom: 9px; overflow: hidden; transition: border-color .2s; }
+    .glossary-item[open] { border-color: rgba(45,212,224,.4); }
+    .glossary-item summary { padding: 14px 18px; cursor: pointer; display: flex; align-items: center; gap: 10px; list-style: none; user-select: none; font-weight: 600; color: var(--white); }
+    .glossary-item summary::-webkit-details-marker { display: none; }
+    .glossary-item summary::after { content: '+'; color: var(--cyan); font-size: 20px; font-weight: 300; margin-left: auto; }
+    .glossary-item[open] summary::after { content: '−'; }
+    .glossary-body { padding: 0 18px 14px; color: var(--muted); font-size: .92rem; line-height: 1.65; }
+    .gtag { font-size: .7rem; font-weight: 700; padding: 2px 9px; border-radius: 999px; font-family: 'Inter',sans-serif; letter-spacing: .05em; }
+    .gt-c { background: rgba(45,212,224,.15); color: var(--cyan); }
+    .gt-y { background: rgba(245,158,11,.15); color: var(--amber); }
+    .gt-p { background: rgba(139,92,246,.15); color: var(--purple); }
+    .gt-r { background: rgba(244,63,94,.15); color: var(--rose); }
+    .gt-g { background: rgba(34,197,94,.15); color: var(--green); }
 
-    /* ===== PROGRESS BAR WIDGET ===== */
-    .timeline-widget { margin:28px 0; }
-    .tl-row { display:flex; gap:12px; align-items:flex-start; margin-bottom:18px; }
-    .tl-dot {
-      flex-shrink:0; width:14px; height:14px; border-radius:50%; margin-top:4px;
-      position:relative;
-    }
-    .tl-dot::after {
-      content:""; position:absolute; left:50%; top:100%; transform:translateX(-50%);
-      width:2px; height:calc(100% + 14px); background:var(--border);
-    }
-    .tl-row:last-child .tl-dot::after { display:none; }
-    .tl-dot.d1{background:var(--blue)} .tl-dot.d2{background:var(--amber)}
-    .tl-dot.d3{background:var(--purple)} .tl-dot.d4{background:var(--cyan)}
-    .tl-dot.d5{background:var(--green)}
-    .tl-content strong { color:#fff; display:block; margin-bottom:3px; font-size:.98rem; }
-    .tl-content span { color:var(--muted); font-size:.9rem; }
+    .timeline-widget { margin: 28px 0; }
+    .tl-row { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 18px; }
+    .tl-dot { flex-shrink: 0; width: 14px; height: 14px; border-radius: 50%; margin-top: 4px; position: relative; }
+    .tl-dot::after { content: ""; position: absolute; left: 50%; top: 100%; transform: translateX(-50%); width: 2px; height: calc(100% + 14px); background: var(--border); }
+    .tl-row:last-child .tl-dot::after { display: none; }
+    .tl-dot.d1 { background: var(--blue); } .tl-dot.d2 { background: var(--amber); }
+    .tl-dot.d3 { background: var(--purple); } .tl-dot.d4 { background: var(--cyan); }
+    .tl-dot.d5 { background: var(--green); }
+    .tl-content strong { color: #fff; display: block; margin-bottom: 3px; font-size: .98rem; }
+    .tl-content span { color: var(--muted); font-size: .9rem; }
 
-    /* ===== FAQ ===== */
-    .faq-item {
-      background:var(--card); border:1px solid var(--border); border-radius:16px;
-      margin-bottom:10px; overflow:hidden; transition:border-color .2s;
-    }
-    .faq-item[open] { border-color:rgba(45,212,224,.35); }
-    .faq-item summary {
-      padding:18px 22px; cursor:pointer; font-weight:700; font-size:.98rem;
-      color:#fff; list-style:none; display:flex; justify-content:space-between;
-      align-items:center; gap:12px; user-select:none; font-family:'Syne',sans-serif;
-    }
-    .faq-item summary::-webkit-details-marker { display:none; }
-    .faq-item summary::after { content:'+'; color:var(--cyan); font-size:22px; font-weight:300; flex-shrink:0; }
-    .faq-item[open] summary::after { content:'−'; }
-    .faq-item p { padding:0 22px 18px; color:var(--muted); font-size:.95rem; line-height:1.72; margin:0; }
+    .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 16px; margin-bottom: 10px; overflow: hidden; transition: border-color .2s; }
+    .faq-item[open] { border-color: rgba(45,212,224,.35); }
+    .faq-item summary { padding: 18px 22px; cursor: pointer; font-weight: 700; font-size: .98rem; color: #fff; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; user-select: none; font-family: 'Syne',sans-serif; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; color: var(--cyan); font-size: 22px; font-weight: 300; flex-shrink: 0; }
+    .faq-item[open] summary::after { content: '−'; }
+    .faq-item p { padding: 0 22px 18px; color: var(--muted); font-size: .95rem; line-height: 1.72; margin: 0; }
 
-    /* ===== REACTION BAR ===== */
-    .art-react {
-      display:flex; align-items:center; gap:12px; margin:46px 0;
-      padding:18px 22px; border:1px solid var(--border); border-radius:16px;
-      background:var(--card); flex-wrap:wrap;
-    }
-    .art-react span { color:var(--muted); font-size:.9rem; }
-    .react-btn {
-      cursor:pointer; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.04);
-      color:var(--white); border-radius:999px; padding:9px 18px; font-size:.9rem;
-      font-family:'Inter',sans-serif; transition:.2s;
-    }
-    .react-btn:hover { background:var(--cyan); color:var(--navy); border-color:var(--cyan); }
-    .react-btn.active { background:var(--cyan); color:var(--navy); border-color:var(--cyan); }
-    .react-count { font-weight:700; font-size:.85rem; }
+    .art-react { display: flex; align-items: center; gap: 12px; margin: 46px 0; padding: 18px 22px; border: 1px solid var(--border); border-radius: 16px; background: var(--card); flex-wrap: wrap; }
+    .art-react span { color: var(--muted); font-size: .9rem; }
+    .react-btn { cursor: pointer; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.04); color: var(--white); border-radius: 999px; padding: 9px 18px; font-size: .9rem; font-family: 'Inter',sans-serif; transition: .2s; }
+    .react-btn:hover { background: var(--cyan); color: var(--navy); border-color: var(--cyan); }
+    .react-btn.active { background: var(--cyan); color: var(--navy); border-color: var(--cyan); }
+    .react-count { font-weight: 700; font-size: .85rem; }
 
-    /* ===== RELATED ===== */
-    .art-related { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin:20px 0 44px; }
-    .art-related a {
-      display:block; background:var(--card); border:1px solid var(--border); border-radius:16px;
-      padding:20px; color:var(--white); text-decoration:none; transition:.25s;
-    }
-    .art-related a:hover { border-color:var(--cyan); transform:translateY(-3px); }
-    .art-related .rtag { font-size:.75rem; color:var(--cyan); font-weight:700; text-transform:uppercase; letter-spacing:.05em; }
-    .art-related .rttl { font-family:'Syne',sans-serif; font-weight:700; margin-top:7px; line-height:1.35; }
+    .art-related { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 16px; margin: 20px 0 44px; }
+    .art-related a { display: block; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; color: var(--white); text-decoration: none; transition: .25s; }
+    .art-related a:hover { border-color: var(--cyan); transform: translateY(-3px); }
+    .art-related .rtag { font-size: .75rem; color: var(--cyan); font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+    .art-related .rttl { font-family: 'Syne',sans-serif; font-weight: 700; margin-top: 7px; line-height: 1.35; }
 
-    /* ===== SIDE POPUP ===== */
     #side-popup {
-      position:fixed; bottom:24px; right:24px; z-index:9990;
-      width:min(320px,calc(100vw - 40px));
-      background:linear-gradient(135deg,#1B2A4A,#0F1C38);
-      border:1px solid rgba(45,212,224,.35); border-radius:20px;
-      padding:22px 22px 20px; box-shadow:0 20px 60px rgba(0,0,0,.6);
-      transform:translateY(120%); opacity:0; transition:transform .5s cubic-bezier(.34,1.56,.64,1), opacity .4s ease;
+      position: fixed; bottom: 24px; right: 24px; z-index: 9990;
+      width: min(320px,calc(100vw - 40px));
+      background: linear-gradient(135deg,#1B2A4A,#0F1C38);
+      border: 1px solid rgba(45,212,224,.35); border-radius: 20px;
+      padding: 22px 22px 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.6);
+      transform: translateY(120%); opacity: 0;
+      transition: transform .5s cubic-bezier(.34,1.56,.64,1), opacity .4s ease;
     }
-    #side-popup.show { transform:translateY(0); opacity:1; }
-    #side-popup::before {
-      content:""; position:absolute; top:0; left:0; right:0; height:3px; border-radius:20px 20px 0 0;
-      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber));
-      background-size:200% 100%; animation:rainbowSlide 3s linear infinite;
-    }
-    .popup-close {
-      position:absolute; top:10px; right:14px; background:none; border:none;
-      color:var(--muted); cursor:pointer; font-size:1.2rem; line-height:1; padding:4px;
-      transition:color .2s;
-    }
-    .popup-close:hover { color:#fff; }
-    .popup-icon { font-size:1.6rem; margin-bottom:8px; }
-    .popup-title { font-family:'Syne',sans-serif; font-weight:800; font-size:1rem; color:#fff; margin-bottom:6px; }
-    .popup-sub { font-size:.85rem; color:var(--muted); margin-bottom:14px; line-height:1.5; }
-    .popup-form { display:flex; gap:8px; flex-wrap:wrap; }
-    .popup-input {
-      flex:1; min-width:0; background:rgba(255,255,255,.06); border:1px solid var(--border);
-      border-radius:10px; padding:10px 14px; color:#fff; font-family:'Inter',sans-serif;
-      font-size:.88rem; outline:none; transition:border-color .2s;
-    }
-    .popup-input::placeholder { color:var(--muted); }
-    .popup-input:focus { border-color:var(--cyan); }
-    .popup-btn {
-      background:linear-gradient(135deg,var(--cyan),var(--purple)); border:none; color:#fff;
-      padding:10px 16px; border-radius:10px; font-family:'Inter',sans-serif; font-size:.88rem;
-      font-weight:700; cursor:pointer; white-space:nowrap; transition:opacity .2s, transform .15s;
-    }
-    .popup-btn:hover { opacity:.9; transform:translateY(-1px); }
-    .popup-success { display:none; text-align:center; padding:8px 0; }
-    .popup-success.show { display:block; }
-    .popup-success span { font-size:1.5rem; display:block; margin-bottom:6px; }
-    .popup-success p { color:var(--green); font-weight:600; font-size:.92rem; margin:0; }
-    .popup-note { font-size:.75rem; color:var(--muted); margin-top:9px; }
+    #side-popup.show { transform: translateY(0); opacity: 1; }
+    #side-popup::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; border-radius: 20px 20px 0 0; background: linear-gradient(90deg,var(--cyan),var(--purple),var(--amber)); background-size: 200% 100%; animation: rainbowSlide 3s linear infinite; }
+    .popup-close { position: absolute; top: 10px; right: 14px; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 1.2rem; line-height: 1; padding: 4px; transition: color .2s; }
+    .popup-close:hover { color: #fff; }
+    .popup-icon { font-size: 1.6rem; margin-bottom: 8px; }
+    .popup-title { font-family: 'Syne',sans-serif; font-weight: 800; font-size: 1rem; color: #fff; margin-bottom: 6px; }
+    .popup-sub { font-size: .85rem; color: var(--muted); margin-bottom: 14px; line-height: 1.5; }
+    .popup-form { display: flex; gap: 8px; flex-wrap: wrap; }
+    .popup-input { flex: 1; min-width: 0; background: rgba(255,255,255,.06); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; color: #fff; font-family: 'Inter',sans-serif; font-size: .88rem; outline: none; transition: border-color .2s; }
+    .popup-input::placeholder { color: var(--muted); }
+    .popup-input:focus { border-color: var(--cyan); }
+    .popup-btn { background: linear-gradient(135deg,var(--cyan),var(--purple)); border: none; color: #fff; padding: 10px 16px; border-radius: 10px; font-family: 'Inter',sans-serif; font-size: .88rem; font-weight: 700; cursor: pointer; white-space: nowrap; transition: opacity .2s, transform .15s; }
+    .popup-btn:hover { opacity: .9; transform: translateY(-1px); }
+    .popup-success { display: none; text-align: center; padding: 8px 0; }
+    .popup-success.show { display: block; }
+    .popup-success span { font-size: 1.5rem; display: block; margin-bottom: 6px; }
+    .popup-success p { color: var(--green); font-weight: 600; font-size: .92rem; margin: 0; }
+    .popup-note { font-size: .75rem; color: var(--muted); margin-top: 9px; }
 
-    /* ===== ANIMATED FOOTER ===== */
-    footer { position:relative; overflow:hidden; }
-    footer::before {
-      content:""; position:absolute; top:0; left:0; right:0; height:4px;
-      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose),var(--green),var(--cyan));
-      background-size:300% 100%; animation:rainbowSlide 7s linear infinite;
-    }
-    footer .f-logo {
-      background:linear-gradient(90deg,#fff,var(--cyan),var(--purple),var(--amber),#fff);
-      background-size:300% 100%; -webkit-background-clip:text; background-clip:text;
-      color:transparent; animation:rainbowSlide 6s linear infinite;
-      font-family:'Syne',sans-serif; font-weight:800; font-size:1.45rem;
-    }
-    .f-col h4 { position:relative; display:inline-block; }
-    .f-col h4::after {
-      content:""; position:absolute; bottom:-4px; left:0; width:100%; height:2px;
-      background:linear-gradient(90deg,var(--cyan),var(--purple));
-      border-radius:2px;
-    }
-    footer .f-social-link {
-      display:inline-flex; align-items:center; justify-content:center;
-      width:38px; height:38px; border-radius:10px; border:1px solid var(--border);
-      background:var(--card); transition:all .25s; color:var(--muted);
-    }
-    footer .f-social-link:hover {
-      border-color:var(--cyan); background:rgba(45,212,224,.12);
-      transform:translateY(-3px); box-shadow:0 8px 20px rgba(45,212,224,.25);
-    }
-    .f-social-link svg { width:18px; height:18px; }
-    .f-bottom-bar {
-      display:flex; align-items:center; justify-content:space-between;
-      flex-wrap:wrap; gap:12px; padding-top:28px; border-top:1px solid var(--border);
-      margin-top:36px; font-size:.85rem; color:var(--muted);
-    }
-    .f-bottom-bar a { color:var(--muted); text-decoration:none; transition:color .2s; }
-    .f-bottom-bar a:hover { color:var(--cyan); }
-    .f-made { display:flex; align-items:center; gap:6px; }
-    .f-heart { animation:heartBeat 1.4s ease infinite; display:inline-block; }
-    @keyframes heartBeat { 0%,100%{transform:scale(1)} 50%{transform:scale(1.25)} }
-    .f-links { display:flex; gap:18px; }
+    footer { position: relative; overflow: hidden; }
+    footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose),var(--green),var(--cyan)); background-size: 300% 100%; animation: rainbowSlide 7s linear infinite; }
+    footer .f-logo { background: linear-gradient(90deg,#fff,var(--cyan),var(--purple),var(--amber),#fff); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: rainbowSlide 6s linear infinite; font-family: 'Syne',sans-serif; font-weight: 800; font-size: 1.45rem; }
+    .f-col h4 { position: relative; display: inline-block; }
+    .f-col h4::after { content: ""; position: absolute; bottom: -4px; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg,var(--cyan),var(--purple)); border-radius: 2px; }
+    footer .f-social-link { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); transition: all .25s; color: var(--muted); }
+    footer .f-social-link:hover { border-color: var(--cyan); background: rgba(45,212,224,.12); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(45,212,224,.25); }
+    .f-social-link svg { width: 18px; height: 18px; }
+    .f-bottom-bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 28px; border-top: 1px solid var(--border); margin-top: 36px; font-size: .85rem; color: var(--muted); }
+    .f-bottom-bar a { color: var(--muted); text-decoration: none; transition: color .2s; }
+    .f-bottom-bar a:hover { color: var(--cyan); }
+    .f-made { display: flex; align-items: center; gap: 6px; }
+    .f-heart { animation: heartBeat 1.4s ease infinite; display: inline-block; }
+    @keyframes heartBeat { 0%,100% { transform: scale(1); } 50% { transform: scale(1.25); } }
+    .f-links { display: flex; gap: 18px; }
 
-    /* ===== NEWSLETTER SECTION ===== */
-    .nl-box {
-      background:linear-gradient(135deg,rgba(45,212,224,.08),rgba(139,92,246,.08));
-      border:1px solid rgba(45,212,224,.2); border-radius:22px; padding:36px;
-      text-align:center; position:relative; overflow:hidden; margin-bottom:60px;
-    }
-    .nl-box::before {
-      content:""; position:absolute; top:0; left:0; right:0; height:3px;
-      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber));
-      background-size:200% 100%; animation:rainbowSlide 4s linear infinite;
-    }
-    .nl-box h2 { font-family:'Syne',sans-serif; font-weight:800; color:#fff; font-size:1.6rem; margin:12px 0 8px; }
-    .nl-box p { color:var(--muted); margin-bottom:20px; }
-    .nl-form { display:flex; gap:10px; max-width:460px; margin:0 auto; flex-wrap:wrap; }
-    .nl-input {
-      flex:1; min-width:0; background:rgba(255,255,255,.06); border:1px solid var(--border);
-      border-radius:12px; padding:12px 18px; color:#fff; font-family:'Inter',sans-serif;
-      font-size:.95rem; outline:none; transition:border-color .2s;
-    }
-    .nl-input::placeholder { color:var(--muted); }
-    .nl-input:focus { border-color:var(--cyan); }
-    .nl-btn {
-      background:linear-gradient(135deg,var(--cyan),var(--purple)); border:none; color:#fff;
-      padding:12px 24px; border-radius:12px; font-family:'Inter',sans-serif; font-size:.95rem;
-      font-weight:700; cursor:pointer; transition:.2s; white-space:nowrap;
-    }
-    .nl-btn:hover { opacity:.9; transform:translateY(-2px); }
-    .nl-note { font-size:.8rem; color:var(--muted); margin-top:10px; }
+    .nl-box { background: linear-gradient(135deg,rgba(45,212,224,.08),rgba(139,92,246,.08)); border: 1px solid rgba(45,212,224,.2); border-radius: 22px; padding: 36px; text-align: center; position: relative; overflow: hidden; margin-bottom: 60px; }
+    .nl-box::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg,var(--cyan),var(--purple),var(--amber)); background-size: 200% 100%; animation: rainbowSlide 4s linear infinite; }
+    .nl-box h2 { font-family: 'Syne',sans-serif; font-weight: 800; color: #fff; font-size: 1.6rem; margin: 12px 0 8px; }
+    .nl-box p { color: var(--muted); margin-bottom: 20px; }
+    .nl-form { display: flex; gap: 10px; max-width: 460px; margin: 0 auto; flex-wrap: wrap; }
+    .nl-input { flex: 1; min-width: 0; background: rgba(255,255,255,.06); border: 1px solid var(--border); border-radius: 12px; padding: 12px 18px; color: #fff; font-family: 'Inter',sans-serif; font-size: .95rem; outline: none; transition: border-color .2s; }
+    .nl-input::placeholder { color: var(--muted); }
+    .nl-input:focus { border-color: var(--cyan); }
+    .nl-btn { background: linear-gradient(135deg,var(--cyan),var(--purple)); border: none; color: #fff; padding: 12px 24px; border-radius: 12px; font-family: 'Inter',sans-serif; font-size: .95rem; font-weight: 700; cursor: pointer; transition: .2s; white-space: nowrap; }
+    .nl-btn:hover { opacity: .9; transform: translateY(-2px); }
+    .nl-note { font-size: .8rem; color: var(--muted); margin-top: 10px; }
 
-    /* ===== RESPONSIVE ===== */
     @media(max-width:640px){
-      .art-crumb { margin-top:110px; }
-      .myth-grid { grid-template-columns:1fr; }
-      .quiz-opts button { font-size:.88rem; }
-      #side-popup { bottom:16px; right:16px; }
-      .stat-row { grid-template-columns:1fr 1fr; }
+      .art-crumb { margin-top: 0; padding-top: 10px; }
+      .myth-grid { grid-template-columns: 1fr; }
+      .quiz-opts button { font-size: .88rem; }
+      #side-popup { bottom: 16px; right: 16px; }
+      .stat-row { grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- Reading progress bar -->
   <div id="read-prog" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-  <!-- ===== SIDE POPUP (Newsletter) ===== -->
   <div id="side-popup" role="complementary" aria-label="Newsletter signup">
     <button class="popup-close" id="popupClose" aria-label="Close newsletter popup">✕</button>
     <div class="popup-icon">🧠</div>
@@ -604,14 +672,12 @@
     <p class="popup-note">No spam · Unsubscribe anytime · 100% free</p>
   </div>
 
-  <!-- Mesh background -->
   <div class="mesh" aria-hidden="true">
     <div class="mesh-orb m1"></div>
     <div class="mesh-orb m2"></div>
     <div class="mesh-orb m3"></div>
   </div>
 
-  <!-- ===== NAV ===== -->
   <nav role="navigation" aria-label="Main navigation">
     <a href="../index.html" class="logo" aria-label="NyvoraAI Home" style="display:flex;align-items:center;gap:10px;text-decoration:none">
       <svg class="logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NyvoraAI logo" style="width:36px;height:36px;flex-shrink:0">
@@ -647,18 +713,16 @@
     <a href="../contact.html">Contact</a>
   </div>
 
-  <!-- ===== MAIN CONTENT ===== -->
   <main id="main-content">
     <div class="art-wrap">
 
-      <!-- Breadcrumb -->
       <nav class="art-crumb" aria-label="Breadcrumb">
         <a href="../index.html">Home</a> /
         <a href="../ai-news.html">AI News</a> /
         <span>How Do Large Language Models Learn From Data?</span>
       </nav>
 
-      <span class="art-eyebrow">🧠 AI Deep Dive · Beginner Guide</span>
+      <span class="art-eyebrow"> AI Deep Dive · Beginner Guide</span>
 
       <h1 class="art-h1">How Do Large Language Models Learn From Data?</h1>
 
@@ -671,24 +735,26 @@
         <span class="badge">Updated 2026</span>
       </div>
 
-      <!-- TOC -->
-      <nav class="art-toc" aria-label="Table of contents">
-        <p class="art-toc-title"><span>📋</span> Jump to a Section</p>
-        <ol>
-          <li><a href="#what-is-training">What is LLM training, really?</a></li>
-          <li><a href="#data-sources">Where does the training data come from?</a></li>
-          <li><a href="#tokenisation">Step 1 — Tokenisation</a></li>
-          <li><a href="#pre-training">Step 2 — Pre-training (the big one)</a></li>
-          <li><a href="#fine-tuning">Step 3 — Fine-tuning for helpfulness</a></li>
-          <li><a href="#rlhf">Step 4 — RLHF: learning from humans</a></li>
-          <li><a href="#transformer">The Transformer: the engine underneath</a></li>
-          <li><a href="#scale">Why scale matters so much</a></li>
-          <li><a href="#limits">What training cannot fix</a></li>
-          <li><a href="#myths">Common myths, debunked</a></li>
-          <li><a href="#glossary">Glossary of key terms</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ol>
-      </nav>
+      <!-- TOC: wrapped in a regular div to prevent any JS sticky behaviour -->
+      <div style="position:static;float:none;width:auto;">
+        <nav class="art-toc" aria-label="Table of contents">
+          <h2 class="art-toc-title"><span>📋</span> Jump to a Section</h2>
+          <ol>
+            <li><a href="#what-is-training">What is LLM training, really?</a></li>
+            <li><a href="#data-sources">Where does the training data come from?</a></li>
+            <li><a href="#tokenisation">Step 1 — Tokenisation</a></li>
+            <li><a href="#pre-training">Step 2 — Pre-training (the big one)</a></li>
+            <li><a href="#fine-tuning">Step 3 — Fine-tuning for helpfulness</a></li>
+            <li><a href="#rlhf">Step 4 — RLHF: learning from humans</a></li>
+            <li><a href="#transformer">The Transformer: the engine underneath</a></li>
+            <li><a href="#scale">Why scale matters so much</a></li>
+            <li><a href="#limits">What training cannot fix</a></li>
+            <li><a href="#myths">Common myths, debunked</a></li>
+            <li><a href="#glossary">Glossary of key terms</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ol>
+        </nav>
+      </div>
 
       <article class="art-body">
 
@@ -696,33 +762,18 @@
 
         <p>This guide answers all of that in plain, honest English. No maths degree required. By the end, you'll understand the full journey from raw text scraped off the internet to the polished, conversational AI you interact with today — including where the process is genuinely impressive, and where it has real, honest limitations nobody should ignore.</p>
 
-        <!-- QUICK ANSWER -->
         <div class="art-quick">
           <div class="quick-label"><span class="pulse-dot"></span> Quick Answer</div>
           <p><strong>How do large language models learn from data?</strong> An LLM learns by reading billions of sentences and repeatedly trying to predict the next word. Every time it gets it wrong, a mathematical process called <em>backpropagation</em> nudges billions of internal numbers — called parameters — very slightly in the right direction. Do this trillions of times, and those numbers stabilise into a model that understands language patterns well enough to write, explain, translate, and reason. The process has three main stages: <strong>pre-training</strong> on raw text, <strong>fine-tuning</strong> on curated examples, and <strong>RLHF</strong> (reinforcement learning from human feedback) to make responses genuinely useful.</p>
         </div>
 
-        <!-- STAT ROW -->
         <div class="stat-row">
-          <div class="stat-card s1">
-            <div class="stat-num">1T+</div>
-            <div class="stat-lbl">Tokens in training data</div>
-          </div>
-          <div class="stat-card s2">
-            <div class="stat-num">100B+</div>
-            <div class="stat-lbl">Parameters in frontier models</div>
-          </div>
-          <div class="stat-card s3">
-            <div class="stat-num">3</div>
-            <div class="stat-lbl">Core training stages</div>
-          </div>
-          <div class="stat-card s4">
-            <div class="stat-num">Weeks</div>
-            <div class="stat-lbl">Time to pre-train one model</div>
-          </div>
+          <div class="stat-card s1"><div class="stat-num">1T+</div><div class="stat-lbl">Tokens in training data</div></div>
+          <div class="stat-card s2"><div class="stat-num">100B+</div><div class="stat-lbl">Parameters in frontier models</div></div>
+          <div class="stat-card s3"><div class="stat-num">3</div><div class="stat-lbl">Core training stages</div></div>
+          <div class="stat-card s4"><div class="stat-num">Weeks</div><div class="stat-lbl">Time to pre-train one model</div></div>
         </div>
 
-        <!-- SECTION 1 -->
         <h2 id="what-is-training"><span class="h2-txt">What Is LLM Training, Really?</span></h2>
 
         <p>When people hear "the AI was trained on data," they often imagine something like a student reading textbooks and memorising facts. That's a reasonable intuition but it's not quite right — and understanding the difference matters a lot for knowing what these models can and can't do.</p>
@@ -735,21 +786,18 @@
           Training an LLM is not about memorising facts. It's about learning the deep statistical patterns of human language — which ideas connect, which words follow which, how context shifts meaning.
         </div>
 
-        <!-- SECTION 2 -->
         <h2 id="data-sources"><span class="h2-txt">Where Does the Training Data Come From?</span></h2>
 
         <p>Before an LLM can learn anything, its creators need data — a lot of it. Here's what that actually looks like in practice:</p>
 
-        <!-- SVG diagram: data sources -->
         <svg class="art-diagram" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" role="img"
-          aria-label="How do large language models learn from data - diagram showing the six main sources of LLM training data including web text, books, code, Wikipedia, papers, and conversations">
-          <title>How do large language models learn from data — six main sources of LLM training data</title>
+          aria-label="Six main sources of LLM training data: web text, books, code, Wikipedia, research papers, and dialogue">
+          <title>Where LLM Training Data Comes From — six main sources</title>
           <defs>
             <linearGradient id="dbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0F1C38"/><stop offset="100%" stop-color="#1B2A4A"/></linearGradient>
           </defs>
           <rect x="1" y="1" width="798" height="198" rx="22" fill="url(#dbg)" stroke="#2A3B5E" stroke-width="1.5"/>
           <text x="400" y="30" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="15" fill="#fff" text-anchor="middle">Where LLM Training Data Comes From</text>
-          <!-- 6 source cards -->
           <g transform="translate(30,50)">
             <rect width="108" height="108" rx="14" fill="rgba(96,165,250,.15)" stroke="rgba(96,165,250,.4)" stroke-width="1.2"/>
             <text x="54" y="40" font-size="24" text-anchor="middle">🌐</text>
@@ -798,24 +846,21 @@
 
         <p>Data quality turns out to matter as much as quantity. A smaller dataset of clean, well-sourced text often produces a better model than a massive dump of noisy, repetitive web pages. This is an active area of research — the "data curation problem" — and it's one of the things that separates leading labs from each other.</p>
 
-        <!-- SECTION 3 -->
         <h2 id="tokenisation"><span class="h2-txt">Step 1 — Tokenisation: Breaking Language Into Pieces</span></h2>
 
         <p>Before a model can process text mathematically, that text needs to be converted into numbers. The first step is <strong>tokenisation</strong> — breaking every sentence into small chunks called tokens.</p>
 
         <p>A token is typically a word, part of a word, or a punctuation mark. The word "unbelievable," for instance, might split into three tokens: "un," "believ," and "able." Common short words like "the" or "is" often map to a single token. A modern LLM's vocabulary contains between 32,000 and 100,000+ unique tokens, each assigned its own numerical ID.</p>
 
-        <!-- Tokenisation visual -->
         <svg class="art-diagram" viewBox="0 0 760 130" xmlns="http://www.w3.org/2000/svg" role="img"
-          aria-label="How do large language models learn from data - tokenisation diagram showing the sentence 'Large language models are fascinating' split into colour-coded tokens">
-          <title>How do large language models learn from data — tokenisation example splitting a sentence into tokens</title>
+          aria-label="Tokenisation example: the sentence 'Large language models are fascinating' split into colour-coded tokens">
+          <title>Tokenisation example — a sentence split into individual tokens</title>
           <defs>
             <linearGradient id="tbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0F1C38"/><stop offset="100%" stop-color="#1B2A4A"/></linearGradient>
           </defs>
           <rect x="1" y="1" width="758" height="128" rx="20" fill="url(#tbg)" stroke="#2A3B5E" stroke-width="1.5"/>
           <text x="380" y="28" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="13" fill="#9FB0D6" text-anchor="middle">Sentence → Tokens → Numbers</text>
           <text x="380" y="52" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="14" fill="#fff" text-anchor="middle">"Large language models are fascinating"</text>
-          <!-- token chips -->
           <rect x="30" y="68" width="90" height="34" rx="9" fill="rgba(96,165,250,.25)" stroke="rgba(96,165,250,.5)" stroke-width="1.2"/>
           <text x="75" y="90" font-family="Arial" font-weight="700" font-size="12" fill="#60A5FA" text-anchor="middle">Large</text>
           <rect x="132" y="68" width="108" height="34" rx="9" fill="rgba(245,158,11,.25)" stroke="rgba(245,158,11,.5)" stroke-width="1.2"/>
@@ -835,7 +880,6 @@
 
         <p>Why not just use whole words? Because subword tokenisation handles new words, typos, and rare terms far better. It also keeps the vocabulary manageable — you don't need a separate entry for every inflected form of every word in every language. The tokeniser is trained separately before any language model training begins.</p>
 
-        <!-- SECTION 4 -->
         <h2 id="pre-training"><span class="h2-txt">Step 2 — Pre-Training: The Big, Expensive Part</span></h2>
 
         <p>Pre-training is where the real learning happens — and where almost all of the cost and compute goes. Here's what takes place, broken into its essential mechanics:</p>
@@ -865,7 +909,6 @@
 
         <p>Pre-training a frontier LLM takes weeks or months running on tens of thousands of specialised chips called GPUs or TPUs, operating in parallel 24 hours a day. The cost for the largest models can reach hundreds of millions of dollars — which is why only a handful of organisations can afford to do it.</p>
 
-        <!-- SECTION 5 -->
         <h2 id="fine-tuning"><span class="h2-txt">Step 3 — Fine-Tuning: Teaching the Model to Be Helpful</span></h2>
 
         <p>A freshly pre-trained model is powerful but raw. Ask it a question and it might respond by generating more questions, or by continuing the text in a way that feels more like a document than a reply. That's because it learned to <em>complete text</em>, not to <em>answer questions helpfully</em>.</p>
@@ -873,31 +916,14 @@
         <p>Fine-tuning is the second training stage that fixes this. Instead of raw web text, the model now trains on a much smaller, carefully curated dataset of high-quality question-answer pairs, conversations, and task completions — written or approved by human experts. This teaches the model the specific format and tone expected of a helpful assistant.</p>
 
         <div class="concept-grid">
-          <div class="concept-card cc1">
-            <div class="concept-icon">📝</div>
-            <h3>Instruction Following</h3>
-            <p>Curated examples of helpful prompt-response pairs that teach the model to follow instructions accurately.</p>
-          </div>
-          <div class="concept-card cc2">
-            <div class="concept-icon">🗣️</div>
-            <h3>Conversational Format</h3>
-            <p>Multi-turn dialogues that show the model how to hold a coherent, contextual conversation across many exchanges.</p>
-          </div>
-          <div class="concept-card cc3">
-            <div class="concept-icon">⚖️</div>
-            <h3>Safety Tuning</h3>
-            <p>Examples where the model learns to decline harmful requests and handle sensitive topics with appropriate care.</p>
-          </div>
-          <div class="concept-card cc4">
-            <div class="concept-icon">🎯</div>
-            <h3>Task Specialisation</h3>
-            <p>Targeted examples for coding, translation, summarisation, and other specific capabilities the product needs.</p>
-          </div>
+          <div class="concept-card cc1"><div class="concept-icon">📝</div><h3>Instruction Following</h3><p>Curated examples of helpful prompt-response pairs that teach the model to follow instructions accurately.</p></div>
+          <div class="concept-card cc2"><div class="concept-icon">🗣️</div><h3>Conversational Format</h3><p>Multi-turn dialogues that show the model how to hold a coherent, contextual conversation across many exchanges.</p></div>
+          <div class="concept-card cc3"><div class="concept-icon">⚖️</div><h3>Safety Tuning</h3><p>Examples where the model learns to decline harmful requests and handle sensitive topics with appropriate care.</p></div>
+          <div class="concept-card cc4"><div class="concept-icon">🎯</div><h3>Task Specialisation</h3><p>Targeted examples for coding, translation, summarisation, and other specific capabilities the product needs.</p></div>
         </div>
 
         <p>Fine-tuning is dramatically cheaper than pre-training — it uses orders of magnitude less data and compute. But the quality of the fine-tuning data has an outsized impact on the final product. A messy, inconsistent fine-tuning dataset can undermine months of expensive pre-training work.</p>
 
-        <!-- INTERACTIVE QUIZ -->
         <div class="quiz-box">
           <div class="quiz-label">🎯 Quick Knowledge Check</div>
           <div class="quiz-q">During pre-training, what signal does the model use to improve its predictions?</div>
@@ -911,15 +937,13 @@
           <button class="quiz-reset" id="quizReset" onclick="resetQuiz()">Try Again ↺</button>
         </div>
 
-        <!-- SECTION 6 -->
         <h2 id="rlhf"><span class="h2-txt">Step 4 — RLHF: Learning Directly from Human Judgment</span></h2>
 
         <p>Even after fine-tuning, a model might give answers that are technically correct but oddly phrased, unnecessarily long, or tone-deaf to the user's actual intent. Reinforcement Learning from Human Feedback — almost always shortened to <strong>RLHF</strong> — is the training stage designed to fix exactly that.</p>
 
-        <!-- RLHF pipeline diagram -->
         <svg class="art-diagram" viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg" role="img"
-          aria-label="How do large language models learn from data - RLHF pipeline diagram showing the four stages from LLM output to human ranking to reward model to improved LLM">
-          <title>How do large language models learn from data — RLHF four-stage pipeline diagram</title>
+          aria-label="RLHF pipeline: LLM generates responses, humans rank them, a reward model learns to score quality, then the LLM is trained to maximise reward">
+          <title>RLHF four-stage pipeline diagram</title>
           <defs>
             <linearGradient id="rbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0F1C38"/><stop offset="100%" stop-color="#1B2A4A"/></linearGradient>
             <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
@@ -928,7 +952,6 @@
           </defs>
           <rect x="1" y="1" width="798" height="178" rx="22" fill="url(#rbg)" stroke="#2A3B5E" stroke-width="1.5"/>
           <text x="400" y="26" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="14" fill="#fff" text-anchor="middle">RLHF Pipeline — How Human Feedback Shapes AI</text>
-          <!-- boxes -->
           <rect x="22" y="48" width="148" height="90" rx="14" fill="rgba(96,165,250,.15)" stroke="rgba(96,165,250,.35)" stroke-width="1.2"/>
           <text x="96" y="80" font-size="22" text-anchor="middle">🤖</text>
           <text x="96" y="100" font-family="Arial" font-weight="700" font-size="11" fill="#60A5FA" text-anchor="middle">LLM generates</text>
@@ -954,7 +977,6 @@
 
         <p>RLHF is why ChatGPT felt so different from earlier AI chatbots. It's also why different companies' models have noticeably different personalities — OpenAI, Anthropic, and Google each make their own choices about what "good" responses look like during the RLHF stage. More recently, some teams have replaced human reviewers with AI-generated preference data (a technique called RLAIF), which is faster and cheaper — though it introduces its own biases.</p>
 
-        <!-- SECTION 7 -->
         <h2 id="transformer"><span class="h2-txt">The Transformer: The Engine Underneath It All</span></h2>
 
         <p>You can't fully understand how LLMs learn without at least a passing introduction to the Transformer architecture — the specific mathematical design that makes modern language models work.</p>
@@ -967,93 +989,46 @@
 
         <p>The practical result: a Transformer can handle long documents, maintain context across a conversation, and understand complex sentence structures that would have completely defeated earlier architectures. Nearly every modern LLM — GPT, Claude, Gemini, Llama — is built on Transformer architecture or a close descendant of it.</p>
 
-        <!-- SECTION 8 -->
         <h2 id="scale"><span class="h2-txt">Why Scale Changes Everything</span></h2>
 
         <p>One of the strangest and most important discoveries in modern AI is that bigger models trained on more data don't just get linearly better — they get <em>qualitatively</em> better in ways that are hard to predict. Researchers call these jumps <strong>emergent capabilities</strong>.</p>
 
-        <!-- Timeline widget -->
         <div class="timeline-widget">
-          <div class="tl-row">
-            <div class="tl-dot d1"></div>
-            <div class="tl-content"><strong>GPT-2 (2019) — 1.5B parameters:</strong> <span>Surprisingly good at writing coherent paragraphs. OpenAI initially feared releasing it.</span></div>
-          </div>
-          <div class="tl-row">
-            <div class="tl-dot d2"></div>
-            <div class="tl-content"><strong>GPT-3 (2020) — 175B parameters:</strong> <span>Could write code, translate languages, and answer questions it had never been explicitly trained to answer.</span></div>
-          </div>
-          <div class="tl-row">
-            <div class="tl-dot d3"></div>
-            <div class="tl-content"><strong>PaLM (2022) — 540B parameters:</strong> <span>Demonstrated multi-step reasoning abilities that didn't exist at smaller scales — a clear emergence jump.</span></div>
-          </div>
-          <div class="tl-row">
-            <div class="tl-dot d4"></div>
-            <div class="tl-content"><strong>GPT-4 / Claude 3 (2023) — undisclosed size:</strong> <span>Near-expert performance on professional exams in law, medicine, and coding. Contextual reasoning significantly improved.</span></div>
-          </div>
-          <div class="tl-row">
-            <div class="tl-dot d5"></div>
-            <div class="tl-content"><strong>Frontier models (2025–2026):</strong> <span>Multimodal (text + image + audio), long-context reasoning, and autonomous agentic behaviour across extended tasks.</span></div>
-          </div>
+          <div class="tl-row"><div class="tl-dot d1"></div><div class="tl-content"><strong>GPT-2 (2019) — 1.5B parameters:</strong> <span>Surprisingly good at writing coherent paragraphs. OpenAI initially feared releasing it.</span></div></div>
+          <div class="tl-row"><div class="tl-dot d2"></div><div class="tl-content"><strong>GPT-3 (2020) — 175B parameters:</strong> <span>Could write code, translate languages, and answer questions it had never been explicitly trained to answer.</span></div></div>
+          <div class="tl-row"><div class="tl-dot d3"></div><div class="tl-content"><strong>PaLM (2022) — 540B parameters:</strong> <span>Demonstrated multi-step reasoning abilities that didn't exist at smaller scales — a clear emergence jump.</span></div></div>
+          <div class="tl-row"><div class="tl-dot d4"></div><div class="tl-content"><strong>GPT-4 / Claude 3 (2023) — undisclosed size:</strong> <span>Near-expert performance on professional exams in law, medicine, and coding.</span></div></div>
+          <div class="tl-row"><div class="tl-dot d5"></div><div class="tl-content"><strong>Frontier models (2025–2026):</strong> <span>Multimodal (text + image + audio), long-context reasoning, and autonomous agentic behaviour across extended tasks.</span></div></div>
         </div>
 
         <p>Scaling "laws" — mathematical relationships between model size, data volume, and performance — allow researchers to predict roughly how good a model will be before spending months training it. But even those laws don't fully explain every emergent capability that appears. This remains one of the most active and debated areas in AI research today.</p>
 
-        <!-- SECTION 9 -->
         <h2 id="limits"><span class="h2-txt">What Training Cannot Fix: Honest Limitations</span></h2>
 
         <p>Understanding how LLMs train also means understanding why certain problems are fundamental — not bugs that will be patched in the next update, but structural consequences of how the learning process works.</p>
 
         <div class="concept-grid">
-          <div class="concept-card cc5">
-            <div class="concept-icon">🎭</div>
-            <h3>Hallucination</h3>
-            <p>The model predicts plausible text — not verified facts. It can state something confidently and be completely wrong. Always verify important claims.</p>
-          </div>
-          <div class="concept-card cc6">
-            <div class="concept-icon">📅</div>
-            <h3>Training Cutoff</h3>
-            <p>The model's knowledge stops at the date its training data was collected. It genuinely doesn't know what happened after that unless the app adds live search.</p>
-          </div>
-          <div class="concept-card cc1">
-            <div class="concept-icon">🔄</div>
-            <h3>No Memory by Default</h3>
-            <p>Each conversation starts from scratch. The model has no memory of previous chats unless the application explicitly stores and re-provides that context.</p>
-          </div>
-          <div class="concept-card cc2">
-            <div class="concept-icon">📊</div>
-            <h3>Training Bias</h3>
-            <p>If certain views are overrepresented in the training data, the model absorbs that imbalance. It reflects the biases of its source text, not objective truth.</p>
-          </div>
-          <div class="concept-card cc3">
-            <div class="concept-icon">🔢</div>
-            <h3>Maths Limitations</h3>
-            <p>LLMs predict tokens, not calculate. Multi-step arithmetic can still trip them up — they predict plausible-looking answers, which are not always correct ones.</p>
-          </div>
-          <div class="concept-card cc4">
-            <div class="concept-icon">🌍</div>
-            <h3>Language Imbalance</h3>
-            <p>Training data is dominated by English. Performance in many other languages, especially lower-resource ones, is noticeably weaker even in the best models.</p>
-          </div>
+          <div class="concept-card cc5"><div class="concept-icon">🎭</div><h3>Hallucination</h3><p>The model predicts plausible text — not verified facts. It can state something confidently and be completely wrong. Always verify important claims.</p></div>
+          <div class="concept-card cc6"><div class="concept-icon">📅</div><h3>Training Cutoff</h3><p>The model's knowledge stops at the date its training data was collected. It genuinely doesn't know what happened after that unless the app adds live search.</p></div>
+          <div class="concept-card cc1"><div class="concept-icon">🔄</div><h3>No Memory by Default</h3><p>Each conversation starts from scratch. The model has no memory of previous chats unless the application explicitly stores and re-provides that context.</p></div>
+          <div class="concept-card cc2"><div class="concept-icon">📊</div><h3>Training Bias</h3><p>If certain views are overrepresented in the training data, the model absorbs that imbalance. It reflects the biases of its source text, not objective truth.</p></div>
+          <div class="concept-card cc3"><div class="concept-icon">🔢</div><h3>Maths Limitations</h3><p>LLMs predict tokens, not calculate. Multi-step arithmetic can still trip them up — they predict plausible-looking answers, which are not always correct ones.</p></div>
+          <div class="concept-card cc4"><div class="concept-icon">🌍</div><h3>Language Imbalance</h3><p>Training data is dominated by English. Performance in many other languages, especially lower-resource ones, is noticeably weaker even in the best models.</p></div>
         </div>
 
-        <!-- SECTION 10 -->
         <h2 id="myths"><span class="h2-txt">Common Myths About LLM Training, Debunked</span></h2>
 
         <div class="myth-grid">
           <div class="myth-card myth"><div class="myth-tag">✗ Myth</div><p>LLMs memorise the internet and look up answers when you ask.</p></div>
           <div class="myth-card fact"><div class="myth-tag">✓ Fact</div><p>They learn statistical patterns from text. There is no lookup happening — only pattern-based prediction at inference time.</p></div>
-
           <div class="myth-card myth"><div class="myth-tag">✗ Myth</div><p>More data always means a smarter model.</p></div>
           <div class="myth-card fact"><div class="myth-tag">✓ Fact</div><p>Data quality matters as much as quantity. Clean, diverse, well-filtered data consistently outperforms raw volume of noisy text.</p></div>
-
           <div class="myth-card myth"><div class="myth-tag">✗ Myth</div><p>The model keeps learning from your conversations.</p></div>
           <div class="myth-card fact"><div class="myth-tag">✓ Fact</div><p>Standard production models have fixed weights. Your chat does not update the model. New learning only happens in formal, intentional retraining runs.</p></div>
-
           <div class="myth-card myth"><div class="myth-tag">✗ Myth</div><p>Training an LLM is mainly about writing clever code.</p></div>
           <div class="myth-card fact"><div class="myth-tag">✓ Fact</div><p>The bulk of the work is data curation, compute infrastructure, and evaluation — not model architecture, which is now relatively standardised.</p></div>
         </div>
 
-        <!-- GLOSSARY -->
         <h2 id="glossary"><span class="h2-txt">Glossary: Key Training Terms Explained</span></h2>
 
         <details class="glossary-item">
@@ -1082,14 +1057,13 @@
         </details>
         <details class="glossary-item">
           <summary><span>Emergence <span class="gtag gt-g">Scaling</span></span></summary>
-          <div class="glossary-body">The surprising appearance of new capabilities in LLMs as they grow larger — capabilities that weren't present at smaller scales and weren't explicitly trained. One of the most studied phenomena in modern AI.</div>
+          <div class="glossary-body">The surprising appearance of new capabilities in LLMs as they grow larger — capabilities that weren't present at smaller scales and weren't explicitly trained.</div>
         </details>
         <details class="glossary-item">
           <summary><span>Context Window <span class="gtag gt-c">Architecture</span></span></summary>
           <div class="glossary-body">The maximum amount of text — in tokens — that the model can consider at once when generating a reply. Longer context windows allow the model to work with longer documents and maintain longer conversations.</div>
         </details>
 
-        <!-- FAQ -->
         <h2 id="faq"><span class="h2-txt">Frequently Asked Questions</span></h2>
 
         <details class="faq-item" open>
@@ -1102,7 +1076,7 @@
         </details>
         <details class="faq-item">
           <summary>What is RLHF and why does it matter?</summary>
-          <p>RLHF stands for Reinforcement Learning from Human Feedback. After basic pre-training and fine-tuning, human reviewers rank the model's responses and that data trains a separate "reward model." The LLM is then further trained to maximise that reward — the result is responses that feel more helpful, natural, and appropriately cautious. RLHF is the key reason modern chat AI feels so much more useful than earlier language models.</p>
+          <p>RLHF stands for Reinforcement Learning from Human Feedback. After basic pre-training and fine-tuning, human reviewers rank the model's responses and that data trains a separate "reward model." The LLM is then further trained to maximise that reward — the result is responses that feel more helpful, natural, and appropriately cautious.</p>
         </details>
         <details class="faq-item">
           <summary>How long does it take to train an LLM?</summary>
@@ -1110,14 +1084,13 @@
         </details>
         <details class="faq-item">
           <summary>Can LLMs keep learning after they are released to the public?</summary>
-          <p>No — standard production models have fixed parameters after training. Your conversations do not update the model. New capabilities only appear when the company runs a formal new training run and releases a new version. Some research explores continual learning, but it's not how any major deployed model currently works.</p>
+          <p>No — standard production models have fixed parameters after training. Your conversations do not update the model. New capabilities only appear when the company runs a formal new training run and releases a new version.</p>
         </details>
         <details class="faq-item">
           <summary>Why do LLMs sometimes give wrong answers confidently?</summary>
-          <p>Because the model predicts statistically plausible text — not verified facts. Confidence is a feature of the <em>language patterns</em> it has learned, not an indicator of accuracy. A statement that sounds confident in human writing tends to get predicted confidently by the model, regardless of whether it's true. Always verify important claims from LLM outputs.</p>
+          <p>Because the model predicts statistically plausible text — not verified facts. Confidence is a feature of the <em>language patterns</em> it has learned, not an indicator of accuracy. Always verify important claims from LLM outputs.</p>
         </details>
 
-        <!-- REACTION BAR -->
         <div class="art-react">
           <span>Was this guide helpful?</span>
           <button class="react-btn" onclick="react(this,'👍')" aria-label="Mark as helpful">👍 <span class="react-count" id="rc1">24</span></button>
@@ -1135,7 +1108,6 @@
 
       </article>
 
-      <!-- NEWSLETTER SECTION -->
       <section aria-labelledby="nl-heading" style="margin:0 0 60px">
         <div class="nl-box">
           <div style="font-size:1.8rem">📬</div>
@@ -1150,19 +1122,15 @@
         </div>
       </section>
 
-    </div><!-- /art-wrap -->
+    </div>
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer role="contentinfo">
     <div class="wrap">
       <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding:52px 0 0;flex-wrap:wrap" class="footer-grid">
-
-        <!-- Brand -->
         <div>
           <div class="f-logo" style="margin-bottom:14px;">NyvoraAI</div>
           <p style="color:#9FB0D6;font-size:.9rem;line-height:1.7;max-width:280px;">Your trusted source for original AI news, plain-English explainers, and practical insights on artificial intelligence. Built for the AI generation.</p>
-          <!-- Social icons -->
           <div style="display:flex;gap:10px;margin-top:18px;">
             <a class="f-social-link" href="https://x.com/nyvoraai_co" aria-label="Follow NyvoraAI on X" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -1178,40 +1146,32 @@
             </a>
           </div>
         </div>
-
-        <!-- Topics -->
         <div class="f-col">
           <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:18px;font-size:.95rem;">Topics</h4>
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">AI News</a></li>
-            <li><a href="../blog.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">Blog</a></li>
-            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">Machine Learning</a></li>
-            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">Generative AI</a></li>
-            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">AI Explainers</a></li>
+            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">AI News</a></li>
+            <li><a href="../blog.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Blog</a></li>
+            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Machine Learning</a></li>
+            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Generative AI</a></li>
+            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">AI Explainers</a></li>
           </ul>
         </div>
-
-        <!-- Company -->
         <div class="f-col">
           <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:18px;font-size:.95rem;">Company</h4>
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-            <li><a href="../about.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">About Us</a></li>
-            <li><a href="../contact.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">Contact</a></li>
-            <li><a href="../contact.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">Write for Us</a></li>
+            <li><a href="../about.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">About Us</a></li>
+            <li><a href="../contact.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Contact</a></li>
+            <li><a href="../contact.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Write for Us</a></li>
           </ul>
         </div>
-
-        <!-- Contact -->
         <div class="f-col">
           <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:18px;font-size:.95rem;">Contact</h4>
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-            <li><a href="mailto:nyvora.ai@outlook.com" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">nyvora.ai@outlook.com</a></li>
-            <li><a href="../contact.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">Send a message</a></li>
+            <li><a href="mailto:nyvora.ai@outlook.com" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">nyvora.ai@outlook.com</a></li>
+            <li><a href="../contact.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Send a message</a></li>
           </ul>
         </div>
-
-      </div><!-- /footer-grid -->
-
+      </div>
       <div class="f-bottom-bar">
         <span>© 2026 NyvoraAI. All rights reserved.</span>
         <div class="f-made">Made with <span class="f-heart">❤️</span> for the AI generation</div>
@@ -1235,12 +1195,24 @@
       prog.setAttribute('aria-valuenow', Math.round(pct));
     }, { passive: true });
 
+    /* ===== NEUTRALISE any sticky TOC from main.js ===== */
+    (function() {
+      const toc = document.querySelector('.art-toc');
+      if (!toc) return;
+      // Remove any inline styles main.js may set that make the TOC sticky/fixed
+      const observer = new MutationObserver(() => {
+        if (toc.style.position && toc.style.position !== 'static') {
+          toc.style.cssText = '';
+        }
+      });
+      observer.observe(toc, { attributes: true, attributeFilter: ['style', 'class'] });
+    })();
+
     /* ===== SIDE POPUP ===== */
     const popup = document.getElementById('side-popup');
     const popupClose = document.getElementById('popupClose');
     const popupForm = document.getElementById('popupForm');
     const popupSuccess = document.getElementById('popupSuccess');
-
     let popupShown = false;
     window.addEventListener('scroll', () => {
       if (!popupShown && window.scrollY > 600) {
@@ -1248,51 +1220,31 @@
         setTimeout(() => popup.classList.add('show'), 400);
       }
     }, { passive: true });
-
     popupClose.addEventListener('click', () => {
       popup.style.transform = 'translateY(120%)';
       popup.style.opacity = '0';
     });
-
     popupForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      try {
-        const data = new FormData(popupForm);
-        await fetch(popupForm.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-      } catch(err) {}
+      try { await fetch(popupForm.action, { method: 'POST', body: new FormData(popupForm), headers: { 'Accept': 'application/json' } }); } catch(err) {}
       popupForm.style.display = 'none';
       popupSuccess.classList.add('show');
-      setTimeout(() => {
-        popup.style.transform = 'translateY(120%)';
-        popup.style.opacity = '0';
-      }, 3000);
+      setTimeout(() => { popup.style.transform = 'translateY(120%)'; popup.style.opacity = '0'; }, 3000);
     });
 
-    /* ===== NEWSLETTER FORM ===== */
+    /* ===== NEWSLETTER ===== */
     const nlForm = document.getElementById('nlForm');
     const nlSuccess = document.getElementById('nlSuccess');
     nlForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      try {
-        const data = new FormData(nlForm);
-        await fetch(nlForm.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-      } catch(err) {}
+      try { await fetch(nlForm.action, { method: 'POST', body: new FormData(nlForm), headers: { 'Accept': 'application/json' } }); } catch(err) {}
       nlForm.style.display = 'none';
       nlSuccess.style.display = 'block';
     });
 
-    /* ===== INTERACTIVE QUIZ ===== */
+    /* ===== QUIZ ===== */
     function checkQuiz(btn, isCorrect) {
-      const opts = document.querySelectorAll('.quiz-opt');
-      opts.forEach(o => o.disabled = true);
+      document.querySelectorAll('.quiz-opt').forEach(o => o.disabled = true);
       const result = document.getElementById('quizResult');
       const reset = document.getElementById('quizReset');
       if (isCorrect) {
@@ -1301,32 +1253,24 @@
         result.className = 'quiz-result show ok';
       } else {
         btn.classList.add('wrong');
-        // highlight correct
-        opts.forEach(o => { if (o.getAttribute('onclick').includes('true')) o.classList.add('correct'); });
+        document.querySelectorAll('.quiz-opt').forEach(o => { if (o.getAttribute('onclick').includes('true')) o.classList.add('correct'); });
         result.textContent = '❌ Not quite. The core learning signal is the prediction error — the difference between what the model guessed and the actual next token in the training data.';
         result.className = 'quiz-result show no';
       }
       reset.classList.add('show');
     }
-
     function resetQuiz() {
-      const opts = document.querySelectorAll('.quiz-opt');
-      opts.forEach(o => { o.disabled = false; o.className = 'quiz-opt'; });
+      document.querySelectorAll('.quiz-opt').forEach(o => { o.disabled = false; o.className = 'quiz-opt'; });
       document.getElementById('quizResult').className = 'quiz-result';
       document.getElementById('quizReset').classList.remove('show');
     }
 
-    /* ===== REACTION BAR ===== */
+    /* ===== REACTIONS ===== */
     function react(btn, emoji) {
       document.querySelectorAll('.react-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      if (emoji === '👍') {
-        const rc = document.getElementById('rc1');
-        rc.textContent = parseInt(rc.textContent) + 1;
-      } else if (emoji === '🔥') {
-        const rc = document.getElementById('rc2');
-        rc.textContent = parseInt(rc.textContent) + 1;
-      }
+      if (emoji === '👍') { const rc = document.getElementById('rc1'); rc.textContent = parseInt(rc.textContent) + 1; }
+      else if (emoji === '🔥') { const rc = document.getElementById('rc2'); rc.textContent = parseInt(rc.textContent) + 1; }
     }
   </script>
 </body>
