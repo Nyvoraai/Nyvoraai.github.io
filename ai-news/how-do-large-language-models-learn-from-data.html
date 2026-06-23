@@ -128,21 +128,26 @@
     /* ===== PAGE LAYOUT WITH SIDEBAR ===== */
     .page-layout {
       display:grid;
-      grid-template-columns:1fr 260px;
-      gap:40px;
-      max-width:1140px;
-      margin:0 auto;
+      grid-template-columns:1fr 240px;
+      gap:36px;
+      max-width:1100px;
+      margin:40px auto 0;
       padding:0 24px;
       align-items:start;
     }
-    .page-main { min-width:0; }
+    .page-main { min-width:0; max-width:800px; }
 
     /* ===== STICKY SIDEBAR TOC ===== */
     .sidebar-toc {
       position:sticky;
-      top:90px;
+      top:80px;
       display:block;
+      max-height:calc(100vh - 100px);
+      overflow-y:auto;
     }
+    .sidebar-toc::-webkit-scrollbar { width:4px; }
+    .sidebar-toc::-webkit-scrollbar-track { background:transparent; }
+    .sidebar-toc::-webkit-scrollbar-thumb { background:rgba(45,212,224,.3); border-radius:4px; }
     .sidebar-toc-inner {
       background:linear-gradient(135deg,rgba(45,212,224,.08),rgba(139,92,246,.08));
       border:1px solid rgba(45,212,224,.25);
@@ -214,15 +219,15 @@
 
     /* ===== HERO SECTION ===== */
     .art-hero {
-      padding: 120px 0 48px;
+      padding: 90px 0 36px;
       background: linear-gradient(180deg, rgba(15,28,56,0) 0%, rgba(15,28,56,0.6) 100%);
       position: relative;
     }
 
     /* ===== BREADCRUMB ===== */
     .art-crumb {
-      font-size:.85rem; color:var(--muted);
-      margin:0 0 18px;
+      font-size:.82rem; color:var(--muted);
+      margin:0 0 14px;
       display:flex; gap:6px; flex-wrap:wrap; align-items:center;
     }
     .art-crumb a { color:var(--muted); text-decoration:none; transition:color .2s; }
@@ -245,8 +250,8 @@
     /* ===== H1 ===== */
     .art-h1 {
       font-family:'Syne',sans-serif; font-weight:800;
-      font-size:clamp(1.8rem,4.5vw,3rem); line-height:1.1;
-      letter-spacing:-1.5px; margin-bottom:20px;
+      font-size:clamp(1.6rem,3vw,2.2rem); line-height:1.2;
+      letter-spacing:-.5px; margin-bottom:16px;
       background:linear-gradient(135deg,#fff 0%,var(--cyan) 40%,var(--purple) 80%,var(--amber) 100%);
       -webkit-background-clip:text; background-clip:text; color:transparent;
       background-size:300% 100%; animation:titleSlide 8s ease-in-out infinite;
@@ -769,7 +774,7 @@
 
   <!-- ===== HERO SECTION ===== -->
   <section class="art-hero" aria-label="Article header">
-    <div class="art-wrap">
+    <div style="max-width:1100px;margin:0 auto;padding:0 24px;">
       <nav class="art-crumb" aria-label="Breadcrumb">
         <a href="../index.html">Home</a>
         <span class="crumb-sep">/</span>
@@ -787,7 +792,7 @@
         <span>14 min read</span>
         <span class="badge">Updated 2026</span>
       </div>
-    </div>
+    </div><!-- /hero container -->
   </section>
 
   <!-- ===== MAIN CONTENT ===== -->
