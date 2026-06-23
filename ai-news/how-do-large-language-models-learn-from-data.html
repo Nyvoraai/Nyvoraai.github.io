@@ -125,10 +125,22 @@
     /* ===== LAYOUT ===== */
     .art-wrap { max-width:800px; margin:0 auto; padding:0 24px; }
 
+    /* ===== HERO SECTION ===== */
+    .art-hero {
+      padding: 120px 0 48px;
+      background: linear-gradient(180deg, rgba(15,28,56,0) 0%, rgba(15,28,56,0.6) 100%);
+      position: relative;
+    }
+
     /* ===== BREADCRUMB ===== */
-    .art-crumb { font-size:.85rem; color:var(--muted); margin:100px 0 14px; display:flex; gap:8px; flex-wrap:wrap; }
-    .art-crumb a { color:var(--muted); text-decoration:none; border-bottom:1px dotted rgba(159,176,214,.5); transition:color .2s; }
+    .art-crumb {
+      font-size:.85rem; color:var(--muted);
+      margin:0 0 18px;
+      display:flex; gap:6px; flex-wrap:wrap; align-items:center;
+    }
+    .art-crumb a { color:var(--muted); text-decoration:none; transition:color .2s; }
     .art-crumb a:hover { color:var(--cyan); }
+    .crumb-sep { color:rgba(159,176,214,.4); }
 
     /* ===== EYEBROW ===== */
     .art-eyebrow {
@@ -590,7 +602,7 @@
 
     /* ===== RESPONSIVE ===== */
     @media(max-width:640px){
-      .art-crumb { margin-top:110px; }
+      .art-crumb { margin-top:0; }
       .myth-grid { grid-template-columns:1fr; }
       .quiz-opts button { font-size:.88rem; }
       #side-popup { bottom:16px; right:16px; }
@@ -665,21 +677,18 @@
     <a href="../contact.html">Contact</a>
   </div>
 
-  <!-- ===== MAIN CONTENT ===== -->
-  <main id="main-content">
+  <!-- ===== HERO SECTION ===== -->
+  <section class="art-hero" aria-label="Article header">
     <div class="art-wrap">
-
-      <!-- Breadcrumb -->
       <nav class="art-crumb" aria-label="Breadcrumb">
-        <a href="../index.html">Home</a> /
-        <a href="../ai-news.html">AI News</a> /
+        <a href="../index.html">Home</a>
+        <span class="crumb-sep">/</span>
+        <a href="../ai-news.html">AI News</a>
+        <span class="crumb-sep">/</span>
         <span>How Do Large Language Models Learn From Data?</span>
       </nav>
-
       <span class="art-eyebrow">🧠 AI Deep Dive · Beginner Guide</span>
-
       <h1 class="art-h1">How Do Large Language Models Learn From Data?</h1>
-
       <div class="art-meta">
         <span>NyvoraAI Team</span>
         <span class="dot"></span>
@@ -688,10 +697,20 @@
         <span>14 min read</span>
         <span class="badge">Updated 2026</span>
       </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+    <div class="art-wrap">
 
       <article class="art-body">
 
-        <!-- TOC inside article -->
+        <p>You've probably used ChatGPT, Claude, or Gemini at least once. Maybe you were impressed — maybe even a little unsettled — by how fluently they write. But here's the question most people never stop to ask: <strong>how do large language models learn from data</strong> in the first place? What actually happens during training? What is the model doing with all that text?</p>
+
+        <p>This guide answers all of that in plain, honest English. No maths degree required. By the end, you'll understand the full journey from raw text scraped off the internet to the polished, conversational AI you interact with today — including where the process is genuinely impressive, and where it has real, honest limitations nobody should ignore.</p>
+
+        <!-- TOC — inside article, after intro -->
         <div class="toc-wrapper" role="navigation" aria-label="Table of contents">
           <div class="toc-heading"><span>📋</span> Jump to a Section</div>
           <ol class="toc-list">
@@ -709,10 +728,6 @@
             <li><a href="#faq">FAQ</a></li>
           </ol>
         </div>
-
-        <p>You've probably used ChatGPT, Claude, or Gemini at least once. Maybe you were impressed — maybe even a little unsettled — by how fluently they write. But here's the question most people never stop to ask: <strong>how do large language models learn from data</strong> in the first place? What actually happens during training? What is the model doing with all that text?</p>
-
-        <p>This guide answers all of that in plain, honest English. No maths degree required. By the end, you'll understand the full journey from raw text scraped off the internet to the polished, conversational AI you interact with today — including where the process is genuinely impressive, and where it has real, honest limitations nobody should ignore.</p>
 
         <!-- QUICK ANSWER -->
         <div class="art-quick">
