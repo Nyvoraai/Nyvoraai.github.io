@@ -126,7 +126,7 @@
     .art-wrap { max-width:800px; margin:0 auto; padding:0 24px; }
 
     /* ===== BREADCRUMB ===== */
-    .art-crumb { font-size:.85rem; color:var(--muted); margin:140px 0 18px; display:flex; gap:8px; flex-wrap:wrap; }
+    .art-crumb { font-size:.85rem; color:var(--muted); margin:100px 0 14px; display:flex; gap:8px; flex-wrap:wrap; }
     .art-crumb a { color:var(--muted); text-decoration:none; border-bottom:1px dotted rgba(159,176,214,.5); transition:color .2s; }
     .art-crumb a:hover { color:var(--cyan); }
 
@@ -178,7 +178,7 @@
       border:1px solid rgba(45,212,224,.28) !important;
       border-radius:18px !important;
       padding:22px 26px !important;
-      margin-bottom:38px !important;
+      margin:0 0 38px 0 !important;
       width:100% !important;
       box-sizing:border-box !important;
     }
@@ -689,26 +689,26 @@
         <span class="badge">Updated 2026</span>
       </div>
 
-      <!-- TOC -->
-      <div class="toc-wrapper" role="navigation" aria-label="Table of contents">
-        <div class="toc-heading"><span>📋</span> Jump to a Section</div>
-        <ol class="toc-list">
-          <li><a href="#what-is-training">What is LLM training, really?</a></li>
-          <li><a href="#data-sources">Where does the training data come from?</a></li>
-          <li><a href="#tokenisation">Step 1 — Tokenisation</a></li>
-          <li><a href="#pre-training">Step 2 — Pre-training (the big one)</a></li>
-          <li><a href="#fine-tuning">Step 3 — Fine-tuning for helpfulness</a></li>
-          <li><a href="#rlhf">Step 4 — RLHF: learning from humans</a></li>
-          <li><a href="#transformer">The Transformer: the engine underneath</a></li>
-          <li><a href="#scale">Why scale matters so much</a></li>
-          <li><a href="#limits">What training cannot fix</a></li>
-          <li><a href="#myths">Common myths, debunked</a></li>
-          <li><a href="#glossary">Glossary of key terms</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ol>
-      </div>
-
       <article class="art-body">
+
+        <!-- TOC inside article -->
+        <div class="toc-wrapper" role="navigation" aria-label="Table of contents">
+          <div class="toc-heading"><span>📋</span> Jump to a Section</div>
+          <ol class="toc-list">
+            <li><a href="#what-is-training">What is LLM training, really?</a></li>
+            <li><a href="#data-sources">Where does the training data come from?</a></li>
+            <li><a href="#tokenisation">Step 1 — Tokenisation</a></li>
+            <li><a href="#pre-training">Step 2 — Pre-training (the big one)</a></li>
+            <li><a href="#fine-tuning">Step 3 — Fine-tuning for helpfulness</a></li>
+            <li><a href="#rlhf">Step 4 — RLHF: learning from humans</a></li>
+            <li><a href="#transformer">The Transformer: the engine underneath</a></li>
+            <li><a href="#scale">Why scale matters so much</a></li>
+            <li><a href="#limits">What training cannot fix</a></li>
+            <li><a href="#myths">Common myths, debunked</a></li>
+            <li><a href="#glossary">Glossary of key terms</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ol>
+        </div>
 
         <p>You've probably used ChatGPT, Claude, or Gemini at least once. Maybe you were impressed — maybe even a little unsettled — by how fluently they write. But here's the question most people never stop to ask: <strong>how do large language models learn from data</strong> in the first place? What actually happens during training? What is the model doing with all that text?</p>
 
