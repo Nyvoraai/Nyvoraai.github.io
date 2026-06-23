@@ -171,112 +171,22 @@
     #read-prog{position:fixed;top:0;left:0;height:3px;width:0%;z-index:9999;background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose));background-size:200% 100%;animation:progAnim 3s linear infinite;transition:width .1s linear;}
     @keyframes progAnim{0%{background-position:0%;}100%{background-position:200%;}}
 
-    /* ===== INLINE TOC ===== */
-    .art-toc{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:26px 30px;
-      margin:0 0 50px;
-      position:relative;
-      overflow:hidden;
-      z-index:10;
-    }
-    .art-toc::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      border-radius:18px;
-      pointer-events:none;
-      background:linear-gradient(135deg,rgba(45,212,224,.06),rgba(139,92,246,.06));
-      z-index:0;
-    }
-    .art-toc-title{
-      font-family:'Syne',sans-serif;
-      font-size:1.1rem;
-      color:#fff;
-      margin:0 0 20px;
-      display: flex !important;
-      align-items: center;
-      gap: 10px;
-      position: relative;
-      z-index: 1;
-      font-weight: 700;
-    }
+    /* HIDE INLINE TOC - Now using side TOC only */
+    .art-toc { display: none !important; }
 
-    /* Force vertical stacking, override any global nav/ul flex */
-    .art-toc ol {
-      margin:0 !important; 
-      padding:0 !important; 
-      list-style:none !important;
-      display:flex !important; 
-      flex-direction:column !important; 
-      gap:4px !important;
-      position:relative; 
-      z-index:1;
-    }
-    .art-toc ol li {
-      display:block !important; 
-      width:100% !important;
-      margin:0 !important; 
-      padding:0 !important; 
-      float:none !important;
-    }
-    /* Each TOC link is a full-width row with number badge + label */
-    .art-toc ol li a {
-      color:var(--light) !important;
-      text-decoration:none !important;
-      display:flex !important;
-      align-items:center !important;
-      gap:10px !important;
-      width:100% !important;
-      box-sizing:border-box;
-      padding:11px 16px !important;
-      border-radius:10px;
-      border:1px solid transparent !important;
-      transition:all .2s;
-      font-size:.97rem !important;
-      font-weight:500;
-      line-height:1.35;
-      white-space:normal;
-    }
-    .art-toc ol li a:hover {
-      color:var(--cyan) !important;
-      border-color:rgba(45,212,224,.2) !important;
-      background:rgba(45,212,224,.07) !important;
-      padding-left:20px !important;
-    }
-    /* Numbered badge */
-    .art-toc ol li a .toc-num {
-      display:inline-flex; 
-      align-items:center; 
-      justify-content:center;
-      width:24px; 
-      height:24px; 
-      min-width:24px;
-      border-radius:6px;
-      background:rgba(45,212,224,.12);
-      border:1px solid rgba(45,212,224,.25);
-      color:var(--cyan); 
-      font-size:.74rem; 
-      font-weight:800;
-      font-family:'Syne',sans-serif; 
-      flex-shrink:0;
-    }
-
-    /* STICKY SIDE TOC */
+    /* STICKY SIDE TOC - Enhanced */
     .side-toc{
       position:fixed;
       top:50%;
       right:24px;
       transform:translateY(-50%);
-      width:190px;
+      width:220px;
       max-height:80vh;
       overflow-y:auto;
       background:rgba(11,20,44,.96);
       border:1px solid rgba(45,212,224,.22);
       border-radius:16px;
-      padding:16px 14px;
+      padding:20px 16px;
       z-index:200;
       backdrop-filter:blur(14px);
       -webkit-backdrop-filter:blur(14px);
@@ -288,22 +198,22 @@
     .side-toc.visible{opacity:1;pointer-events:all;}
     .side-toc-title{
       font-family:'Syne',sans-serif;
-      font-weight:700;
-      font-size:.72rem;
+      font-weight:800;
+      font-size:.85rem;
       color:var(--cyan);
       text-transform:uppercase;
       letter-spacing:.08em;
-      margin-bottom:12px;
+      margin-bottom:16px;
       display:flex !important;
       align-items:center;
-      gap:6px;
-      padding-bottom:10px;
-      border-bottom:1px solid rgba(45,212,224,.15);
+      gap:8px;
+      padding-bottom:12px;
+      border-bottom:2px solid rgba(45,212,224,.2);
     }
     .side-toc nav{
       display:flex !important;
       flex-direction:column !important;
-      gap:2px;
+      gap:4px;
     }
     .side-toc-link{
       display:block !important;
@@ -311,24 +221,28 @@
       box-sizing:border-box;
       color:var(--muted);
       text-decoration:none;
-      font-size:.75rem;
-      padding:6px 10px 6px 12px;
-      border-left:2px solid transparent;
-      border-radius:0 6px 6px 0;
-      transition:all .2s;
+      font-size:.8rem;
+      padding:8px 12px;
+      border-left:3px solid transparent;
+      border-radius:0 8px 8px 0;
+      transition:all .25s;
       line-height:1.4;
       white-space:normal;
       word-break:break-word;
+      font-weight:500;
     }
     .side-toc-link:hover,.side-toc-link.active{
       color:var(--cyan) !important;
       border-left-color:var(--cyan) !important;
-      background:rgba(45,212,224,.08) !important;
+      background:rgba(45,212,224,.1) !important;
     }
-    .side-toc-link.active{font-weight:600;}
-    .side-toc::-webkit-scrollbar{width:3px;}
+    .side-toc-link.active{
+      font-weight:700;
+      background:rgba(45,212,224,.15) !important;
+    }
+    .side-toc::-webkit-scrollbar{width:4px;}
     .side-toc::-webkit-scrollbar-track{background:transparent;}
-    .side-toc::-webkit-scrollbar-thumb{background:rgba(45,212,224,.3);border-radius:3px;}
+    .side-toc::-webkit-scrollbar-thumb{background:rgba(45,212,224,.4);border-radius:4px;}
     @media(max-width:1200px){.side-toc{display:none !important;}}
 
     /* QUICK ANSWER */
@@ -950,7 +864,6 @@
       .comparison-table{font-size:.85rem;}
       .comparison-table th,.comparison-table td{padding:10px;}
       .ai-facts{grid-template-columns:1fr 1fr;}
-      .art-toc ol li a{font-size:.9rem !important;padding:10px 12px !important;}
     }
   </style>
 </head>
@@ -1014,7 +927,7 @@
 
   <!-- STICKY SIDE TOC -->
   <aside class="side-toc" id="sideToc" aria-label="Sticky section navigation">
-    <div class="side-toc-title">&#x1F4CB; Sections</div>
+    <div class="side-toc-title">&#x1F4CB; Jump to a Section</div>
     <nav>
       <a href="#definition"   class="side-toc-link">What is a context window?</a>
       <a href="#how-it-works" class="side-toc-link">How context windows work</a>
@@ -1090,21 +1003,7 @@
         </div>
       </div>
 
-      <!-- INLINE TOC -->
-      <nav class="art-toc" aria-label="Table of contents">
-        <h2 class="art-toc-title"><span>&#x1F4CB;</span> Jump to a Section</h2>
-        <ol>
-          <li><a href="#definition"><span class="toc-num">1</span>What is a context window?</a></li>
-          <li><a href="#how-it-works"><span class="toc-num">2</span>How context windows work</a></li>
-          <li><a href="#tokens"><span class="toc-num">3</span>Understanding tokens</a></li>
-          <li><a href="#comparison"><span class="toc-num">4</span>Model comparison 2026</a></li>
-          <li><a href="#why-matters"><span class="toc-num">5</span>Why size matters</a></li>
-          <li><a href="#limitations"><span class="toc-num">6</span>Limitations &amp; challenges</a></li>
-          <li><a href="#optimization"><span class="toc-num">7</span>Optimization strategies</a></li>
-          <li><a href="#future"><span class="toc-num">8</span>The future of context</a></li>
-          <li><a href="#faq"><span class="toc-num">9</span>FAQ</a></li>
-        </ol>
-      </nav>
+      <!-- INLINE TOC - REMOVED (now using side TOC only) -->
 
       <article class="art-body">
 
