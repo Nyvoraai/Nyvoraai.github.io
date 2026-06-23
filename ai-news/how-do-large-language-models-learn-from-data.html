@@ -125,6 +125,93 @@
     /* ===== LAYOUT ===== */
     .art-wrap { max-width:800px; margin:0 auto; padding:0 24px; }
 
+    /* ===== PAGE LAYOUT WITH SIDEBAR ===== */
+    .page-layout {
+      display:grid;
+      grid-template-columns:1fr 260px;
+      gap:40px;
+      max-width:1140px;
+      margin:0 auto;
+      padding:0 24px;
+      align-items:start;
+    }
+    .page-main { min-width:0; }
+
+    /* ===== STICKY SIDEBAR TOC ===== */
+    .sidebar-toc {
+      position:sticky;
+      top:90px;
+      display:block;
+    }
+    .sidebar-toc-inner {
+      background:linear-gradient(135deg,rgba(45,212,224,.08),rgba(139,92,246,.08));
+      border:1px solid rgba(45,212,224,.25);
+      border-radius:18px;
+      padding:20px 20px 22px;
+      overflow:hidden;
+      position:relative;
+    }
+    .sidebar-toc-inner::before {
+      content:"";
+      position:absolute;
+      top:0; left:0; right:0; height:3px;
+      background:linear-gradient(90deg,#2DD4E0,#8B5CF6,#F59E0B,#2DD4E0);
+      background-size:200% 100%;
+      animation:rainbowSlide 4s linear infinite;
+    }
+    @keyframes rainbowSlide { 0%{background-position:0%} 100%{background-position:200%} }
+    .sidebar-toc-title {
+      font-family:'Syne',sans-serif;
+      font-weight:800;
+      font-size:.88rem;
+      color:#fff;
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      margin:0 0 14px;
+      padding:8px 0 12px;
+      border-bottom:1px solid rgba(45,212,224,.2);
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .sidebar-toc-list {
+      list-style:none;
+      margin:0;
+      padding:0;
+    }
+    .sidebar-toc-list li {
+      margin-bottom:2px;
+    }
+    .sidebar-toc-list a {
+      display:block;
+      padding:7px 10px;
+      border-radius:8px;
+      color:#9FB0D6;
+      text-decoration:none;
+      font-size:.82rem;
+      line-height:1.4;
+      transition:all .2s;
+      border-left:2px solid transparent;
+    }
+    .sidebar-toc-list a:hover,
+    .sidebar-toc-list a.active {
+      color:#fff;
+      background:rgba(45,212,224,.1);
+      border-left-color:#2DD4E0;
+      padding-left:14px;
+    }
+    .sidebar-toc-list a.active {
+      color:#2DD4E0;
+      font-weight:600;
+    }
+
+    @media(max-width:900px){
+      .page-layout {
+        grid-template-columns:1fr;
+      }
+      .sidebar-toc { display:none; }
+    }
+
     /* ===== HERO SECTION ===== */
     .art-hero {
       padding: 120px 0 48px;
@@ -173,6 +260,9 @@
       font-size:.72rem; font-weight:700; padding:3px 10px; border-radius:999px;
       background:linear-gradient(135deg,var(--cyan),var(--purple)); color:#fff;
     }
+
+    /* ===== SIDEBAR ACTIVE HIGHLIGHT ===== */
+    /* handled in JS below */
 
     /* ===== READING PROGRESS ===== */
     #read-prog {
@@ -702,34 +792,17 @@
 
   <!-- ===== MAIN CONTENT ===== -->
   <main id="main-content">
-    <div class="art-wrap">
+    <div class="page-layout">
 
-      <article class="art-body">
+      <!-- LEFT: Article content -->
+      <div class="page-main">
+        <article class="art-body">
 
-        <p>You've probably used ChatGPT, Claude, or Gemini at least once. Maybe you were impressed — maybe even a little unsettled — by how fluently they write. But here's the question most people never stop to ask: <strong>how do large language models learn from data</strong> in the first place? What actually happens during training? What is the model doing with all that text?</p>
+          <p>You've probably used ChatGPT, Claude, or Gemini at least once. Maybe you were impressed — maybe even a little unsettled — by how fluently they write. But here's the question most people never stop to ask: <strong>how do large language models learn from data</strong> in the first place? What actually happens during training? What is the model doing with all that text?</p>
 
-        <p>This guide answers all of that in plain, honest English. No maths degree required. By the end, you'll understand the full journey from raw text scraped off the internet to the polished, conversational AI you interact with today — including where the process is genuinely impressive, and where it has real, honest limitations nobody should ignore.</p>
+          <p>This guide answers all of that in plain, honest English. No maths degree required. By the end, you'll understand the full journey from raw text scraped off the internet to the polished, conversational AI you interact with today — including where the process is genuinely impressive, and where it has real, honest limitations nobody should ignore.</p>
 
-        <!-- TOC — inside article, after intro -->
-        <div class="toc-wrapper" role="navigation" aria-label="Table of contents">
-          <div class="toc-heading"><span>📋</span> Jump to a Section</div>
-          <ol class="toc-list">
-            <li><a href="#what-is-training">What is LLM training, really?</a></li>
-            <li><a href="#data-sources">Where does the training data come from?</a></li>
-            <li><a href="#tokenisation">Step 1 — Tokenisation</a></li>
-            <li><a href="#pre-training">Step 2 — Pre-training (the big one)</a></li>
-            <li><a href="#fine-tuning">Step 3 — Fine-tuning for helpfulness</a></li>
-            <li><a href="#rlhf">Step 4 — RLHF: learning from humans</a></li>
-            <li><a href="#transformer">The Transformer: the engine underneath</a></li>
-            <li><a href="#scale">Why scale matters so much</a></li>
-            <li><a href="#limits">What training cannot fix</a></li>
-            <li><a href="#myths">Common myths, debunked</a></li>
-            <li><a href="#glossary">Glossary of key terms</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ol>
-        </div>
-
-        <!-- QUICK ANSWER -->
+          <!-- QUICK ANSWER -->
         <div class="art-quick">
           <div class="quick-label"><span class="pulse-dot"></span> Quick Answer</div>
           <p><strong>How do large language models learn from data?</strong> An LLM learns by reading billions of sentences and repeatedly trying to predict the next word. Every time it gets it wrong, a mathematical process called <em>backpropagation</em> nudges billions of internal numbers — called parameters — very slightly in the right direction. Do this trillions of times, and those numbers stabilise into a model that understands language patterns well enough to write, explain, translate, and reason. The process has three main stages: <strong>pre-training</strong> on raw text, <strong>fine-tuning</strong> on curated examples, and <strong>RLHF</strong> (reinforcement learning from human feedback) to make responses genuinely useful.</p>
@@ -1166,8 +1239,35 @@
           <a href="../ai-news.html"><span class="rtag">AI News</span><div class="rttl">More AI Stories, Updated Daily →</div></a>
         </div>
 
-      </article>
+        </article>
+      </div><!-- /page-main -->
 
+      <!-- RIGHT: Sticky sidebar TOC -->
+      <aside class="sidebar-toc" aria-label="Article navigation">
+        <div class="sidebar-toc-inner">
+          <div class="sidebar-toc-title">
+            <span>📋</span> Jump to a Section
+          </div>
+          <ol class="sidebar-toc-list" id="sideTocList">
+            <li><a href="#what-is-training">What is LLM training?</a></li>
+            <li><a href="#data-sources">Where does data come from?</a></li>
+            <li><a href="#tokenisation">Step 1 — Tokenisation</a></li>
+            <li><a href="#pre-training">Step 2 — Pre-training</a></li>
+            <li><a href="#fine-tuning">Step 3 — Fine-tuning</a></li>
+            <li><a href="#rlhf">Step 4 — RLHF</a></li>
+            <li><a href="#transformer">The Transformer</a></li>
+            <li><a href="#scale">Why scale matters</a></li>
+            <li><a href="#limits">What training can't fix</a></li>
+            <li><a href="#myths">Common myths</a></li>
+            <li><a href="#glossary">Glossary</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ol>
+        </div>
+      </aside>
+
+    </div><!-- /page-layout -->
+
+    <div class="art-wrap">
       <!-- NEWSLETTER SECTION -->
       <section aria-labelledby="nl-heading" style="margin:0 0 60px">
         <div class="nl-box">
@@ -1183,7 +1283,7 @@
         </div>
       </section>
 
-    </div><!-- /art-wrap -->
+    </div><!-- /art-wrap (newsletter) -->
   </main>
 
   <!-- ===== FOOTER ===== -->
@@ -1348,6 +1448,23 @@
       document.getElementById('quizResult').className = 'quiz-result';
       document.getElementById('quizReset').classList.remove('show');
     }
+
+    /* ===== SIDEBAR ACTIVE SECTION HIGHLIGHT ===== */
+    (function(){
+      const links = document.querySelectorAll('.sidebar-toc-list a');
+      const headings = Array.from(document.querySelectorAll('h2[id]'));
+      function onScroll(){
+        let current = '';
+        headings.forEach(h => {
+          if(window.scrollY >= h.offsetTop - 120) current = h.id;
+        });
+        links.forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#'+current);
+        });
+      }
+      window.addEventListener('scroll', onScroll, {passive:true});
+      onScroll();
+    })();
 
     /* ===== REACTION BAR ===== */
     function react(btn, emoji) {
