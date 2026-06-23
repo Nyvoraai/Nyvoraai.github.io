@@ -358,18 +358,45 @@
     }
     .art-toc-title {
       font-family:'Syne',sans-serif;font-size:1.1rem;color:#fff;
-      margin:0 0 20px;display:flex;align-items:center;gap:10px;
+      margin:0 0 20px;display:flex !important;align-items:center;gap:10px;
       position:relative;z-index:1;font-weight:700;
     }
-    .art-toc ol{margin:0;padding:0;list-style:none;position:relative;z-index:1;}
-    .art-toc li{margin-bottom:10px;position:relative;}
-    .art-toc li:last-child{margin-bottom:0;}
-    .art-toc a {
-      color:var(--light);text-decoration:none;display:block;
-      padding:10px 15px;border-radius:8px;border-left:3px solid transparent;
-      transition:all .2s;font-size:.95rem;
+    /* Force vertical stacked list — override any flex/inline from style.css */
+    .art-toc ol {
+      margin:0 !important;
+      padding:0 !important;
+      list-style:none !important;
+      display:block !important;
+      position:relative;
+      z-index:1;
     }
-    .art-toc a:hover{color:var(--cyan);border-left-color:var(--cyan);background:rgba(45,212,224,.08);padding-left:18px;}
+    .art-toc ol li {
+      display:block !important;
+      width:100% !important;
+      margin:0 0 6px 0 !important;
+      padding:0 !important;
+      float:none !important;
+    }
+    .art-toc ol li:last-child { margin-bottom:0 !important; }
+    .art-toc ol li a {
+      color:var(--light) !important;
+      text-decoration:none !important;
+      display:block !important;
+      width:100% !important;
+      box-sizing:border-box;
+      padding:10px 15px !important;
+      border-radius:8px;
+      border-left:3px solid transparent !important;
+      transition:all .2s;
+      font-size:.95rem;
+      white-space:normal;
+    }
+    .art-toc ol li a:hover {
+      color:var(--cyan) !important;
+      border-left-color:var(--cyan) !important;
+      background:rgba(45,212,224,.08) !important;
+      padding-left:18px !important;
+    }
 
     /* ===== STICKY SIDE TOC ===== */
     .side-toc {
@@ -377,9 +404,11 @@
       top:50%;
       right:24px;
       transform:translateY(-50%);
-      width:192px;
-      background:rgba(11,20,44,.94);
-      border:1px solid rgba(45,212,224,.2);
+      width:190px;
+      max-height:80vh;
+      overflow-y:auto;
+      background:rgba(11,20,44,.96);
+      border:1px solid rgba(45,212,224,.22);
       border-radius:16px;
       padding:16px 14px;
       z-index:200;
@@ -387,8 +416,8 @@
       -webkit-backdrop-filter:blur(14px);
       opacity:0;
       pointer-events:none;
-      transition:opacity .4s ease, transform .4s ease;
-      box-shadow:0 12px 40px rgba(0,0,0,.5);
+      transition:opacity .4s ease;
+      box-shadow:0 12px 40px rgba(0,0,0,.55);
     }
     .side-toc.visible {
       opacity:1;
@@ -397,25 +426,44 @@
     .side-toc-title {
       font-family:'Syne',sans-serif;font-weight:700;font-size:.72rem;
       color:var(--cyan);text-transform:uppercase;letter-spacing:.08em;
-      margin-bottom:12px;display:flex;align-items:center;gap:6px;
+      margin-bottom:12px;
+      display:flex !important;
+      align-items:center;gap:6px;
       padding-bottom:10px;border-bottom:1px solid rgba(45,212,224,.15);
     }
+    /* Force side TOC nav links to stack vertically */
+    .side-toc nav {
+      display:block !important;
+    }
     .side-toc-link {
-      display:block;color:var(--muted);text-decoration:none;
-      font-size:.75rem;padding:5px 8px 5px 10px;
-      border-left:2px solid transparent;border-radius:0 6px 6px 0;
-      transition:all .2s;line-height:1.4;margin-bottom:1px;
+      display:block !important;
+      width:100% !important;
+      box-sizing:border-box;
+      color:var(--muted);
+      text-decoration:none;
+      font-size:.75rem;
+      padding:5px 8px 5px 10px;
+      border-left:2px solid transparent;
+      border-radius:0 6px 6px 0;
+      transition:all .2s;
+      line-height:1.4;
+      margin-bottom:2px;
+      white-space:normal;
+      word-break:break-word;
     }
     .side-toc-link:hover,
     .side-toc-link.active {
-      color:var(--cyan);border-left-color:var(--cyan);
-      background:rgba(45,212,224,.08);
+      color:var(--cyan) !important;
+      border-left-color:var(--cyan) !important;
+      background:rgba(45,212,224,.08) !important;
     }
-    .side-toc-link.active {
-      font-weight:600;
-    }
+    .side-toc-link.active { font-weight:600; }
+    /* Scrollbar styling for side TOC */
+    .side-toc::-webkit-scrollbar { width:3px; }
+    .side-toc::-webkit-scrollbar-track { background:transparent; }
+    .side-toc::-webkit-scrollbar-thumb { background:rgba(45,212,224,.3);border-radius:3px; }
     @media(max-width:1200px){
-      .side-toc{display:none;}
+      .side-toc { display:none !important; }
     }
 
     /* ===== QUICK ANSWER ===== */
