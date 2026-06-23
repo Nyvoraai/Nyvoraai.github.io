@@ -8,7 +8,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 
-  <!-- PRIMARY SEO — title ≤60 chars, desc ≤160 chars -->
+  <!-- PRIMARY SEO -->
   <title>What Is the Context Window in an LLM? (2026 Guide)</title>
   <meta name="description" content="What is the context window in an LLM? Learn how context length works, compare GPT vs Claude vs Gemini windows & master token limits. Updated 2026."/>
   <meta name="keywords" content="what is the context window in an LLM, LLM context window, context length AI, token limit, GPT context window, Claude context window"/>
@@ -27,7 +27,12 @@
   <meta property="og:image:height" content="630"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="article:published_time" content="2026-06-22T00:00:00+00:00"/>
+  <meta property="article:modified_time" content="2026-06-24T00:00:00+00:00"/>
   <meta property="article:author" content="NyvoraAI Team"/>
+  <meta property="article:section" content="AI Explainer"/>
+  <meta property="article:tag" content="LLM context window"/>
+  <meta property="article:tag" content="AI working memory"/>
+  <meta property="article:tag" content="token limit"/>
 
   <!-- TWITTER CARD -->
   <meta name="twitter:card" content="summary_large_image"/>
@@ -36,7 +41,10 @@
   <meta name="twitter:description" content="Master LLM context windows: Learn token limits, compare models & understand working memory of AI. Plain-English guide for 2026."/>
   <meta name="twitter:image" content="https://nyvoraai.github.io/og-image.jpg"/>
 
-  <!-- AI VISIBILITY META -->
+  <!-- ============================================================
+       AI VISIBILITY META — helps AI assistants (ChatGPT, Perplexity,
+       Google SGE, Bing Copilot) understand, index, and cite this page
+  ============================================================ -->
   <meta name="author" content="NyvoraAI Team"/>
   <meta name="publisher" content="NyvoraAI"/>
   <meta name="category" content="Technology, Artificial Intelligence, AI Explainer"/>
@@ -45,6 +53,16 @@
   <meta name="coverage" content="Worldwide"/>
   <meta name="distribution" content="Global"/>
   <meta name="rating" content="General"/>
+  <!-- AI crawlers & LLM indexing signals -->
+  <meta name="ai-content-type" content="explainer, educational, technical"/>
+  <meta name="ai-topic" content="LLM context window, token limits, AI working memory, large language models"/>
+  <meta name="ai-audience" content="developers, AI enthusiasts, students, business users"/>
+  <meta name="ai-reading-level" content="intermediate"/>
+  <meta name="ai-facts" content="Gemini 1.5 Pro: 2M tokens; Claude 3.7: 200K tokens; GPT-4o: 128K tokens; 1 token ≈ 0.75 words"/>
+  <meta name="ai-updated" content="2026-06-24"/>
+  <meta name="ai-summary" content="The context window in an LLM is the maximum number of tokens the model can process at once — its working memory. In 2026, leading models range from 8K (ChatGPT free) to 2M tokens (Gemini 1.5 Pro). This guide explains how context windows work, token counting, model comparisons, and optimization strategies."/>
+  <!-- llms.txt signal for AI crawlers -->
+  <link rel="alternate" type="text/plain" href="https://nyvoraai.github.io/llms.txt" title="AI/LLM site summary"/>
 
   <!-- SCHEMA.ORG -->
   <script type="application/ld+json">
@@ -56,17 +74,33 @@
         "@id": "https://nyvoraai.github.io/ai-news/what-is-context-window-in-llm.html#article",
         "headline": "What Is the Context Window in an LLM? (2026 Guide)",
         "description": "What is the context window in an LLM? Complete guide to context length, token limits & model comparisons including GPT, Claude & Gemini.",
-        "image": "https://nyvoraai.github.io/og-image.jpg",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://nyvoraai.github.io/og-image.jpg",
+          "width": 1200,
+          "height": 630
+        },
         "datePublished": "2026-06-22T00:00:00+00:00",
-        "dateModified": "2026-06-22T00:00:00+00:00",
+        "dateModified": "2026-06-24T00:00:00+00:00",
         "author": {"@type": "Organization","name": "NyvoraAI Team","url": "https://nyvoraai.github.io/about.html"},
         "publisher": {"@id": "https://nyvoraai.github.io/#organization"},
         "mainEntityOfPage": "https://nyvoraai.github.io/ai-news/what-is-context-window-in-llm.html",
         "keywords": "what is the context window in an LLM, context length, token limit, LLM memory, AI working memory",
-        "wordCount": "2850",
+        "wordCount": "2950",
         "timeRequired": "PT14M",
         "inLanguage": "en-US",
-        "articleSection": "AI Explainer"
+        "articleSection": "AI Explainer",
+        "about": [
+          {"@type": "Thing", "name": "Large Language Models"},
+          {"@type": "Thing", "name": "Context Window"},
+          {"@type": "Thing", "name": "Tokenization"},
+          {"@type": "Thing", "name": "Artificial Intelligence"}
+        ],
+        "mentions": [
+          {"@type": "SoftwareApplication", "name": "GPT-4o", "applicationCategory": "AI Language Model"},
+          {"@type": "SoftwareApplication", "name": "Claude 3.7", "applicationCategory": "AI Language Model"},
+          {"@type": "SoftwareApplication", "name": "Gemini 1.5 Pro", "applicationCategory": "AI Language Model"}
+        ]
       },
       {
         "@type": "Organization",
@@ -80,9 +114,22 @@
         "@type": "FAQPage",
         "mainEntity": [
           {"@type": "Question","name":"What is the context window in an LLM?","acceptedAnswer": {"@type": "Answer","text":"The context window (or context length) of a large language model is the maximum amount of text, measured in tokens, that the model can process and remember at one time. Think of it as the AI's working memory — it determines how much information from your conversation or input the model can retain while generating a response."}},
-          {"@type": "Question","name":"Which LLM has the largest context window in 2026?","acceptedAnswer": {"@type": "Answer","text":"Gemini 1.5 Pro and newer versions lead with context windows of 1-2 million tokens, enough to process entire books or hundreds of thousands of words. Claude 3.5/3.7 offers 200K tokens, while GPT-4o and GPT-5 provide 128K-200K tokens."}},
+          {"@type": "Question","name":"Which LLM has the largest context window in 2026?","acceptedAnswer": {"@type": "Answer","text":"Gemini 1.5 Pro and newer versions lead with context windows of 1–2 million tokens, enough to process entire books or hundreds of thousands of words. Claude 3.5/3.7 offers 200K tokens, while GPT-4o and GPT-5 provide 128K–200K tokens."}},
           {"@type": "Question","name":"Why does context window size matter?","acceptedAnswer": {"@type": "Answer","text":"A larger context window enables an AI model to process longer documents, maintain coherence across extended conversations, analyze entire codebases, and incorporate more information into each output. However, bigger isn't always better — effective context usage matters more than raw size."}},
-          {"@type": "Question","name":"What's the difference between context window and memory?","acceptedAnswer": {"@type": "Answer","text":"The context window is temporary working memory that resets with each new request — the model re-processes the entire context every time. True memory persists across conversations. Context window is like RAM, while memory is like long-term storage."}}
+          {"@type": "Question","name":"What's the difference between context window and memory?","acceptedAnswer": {"@type": "Answer","text":"The context window is temporary working memory that resets with each new request — the model re-processes the entire context every time. True memory persists across conversations. Context window is like RAM, while memory is like long-term storage."}},
+          {"@type": "Question","name":"How many words is 100,000 tokens?","acceptedAnswer": {"@type": "Answer","text":"Roughly 75,000 words, or about the length of a typical novel. As a rule of thumb, 1 token equals about ¾ of a word, or 3–4 characters."}},
+          {"@type": "Question","name":"Can I increase the context window of an LLM?","acceptedAnswer": {"@type": "Answer","text":"No, the context window is a fixed architectural limitation of each model. You can work around it by choosing a model with a larger window, using RAG (Retrieval-Augmented Generation), chunking large documents, or using external memory systems."}}
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to Optimize LLM Context Window Usage",
+        "step": [
+          {"@type": "HowToStep", "name": "Be Selective with History", "text": "Summarize earlier exchanges instead of including the full conversation history."},
+          {"@type": "HowToStep", "name": "Keep System Prompts Concise", "text": "System prompts count toward your context limit — keep them focused on essential instructions."},
+          {"@type": "HowToStep", "name": "Chunk Large Documents", "text": "Break documents exceeding your context window into logical sections and process them separately."},
+          {"@type": "HowToStep", "name": "Prioritize Recent Information", "text": "Place the most important information closer to your question for better model attention."},
+          {"@type": "HowToStep", "name": "Use RAG", "text": "Use Retrieval-Augmented Generation to fetch only the most relevant information for each query."}
         ]
       },
       {
@@ -128,10 +175,15 @@
       z-index: 2;
     }
 
+    /* ===== SCROLL MARGIN FIX — jump-to-section clears fixed nav ===== */
+    h2[id] {
+      scroll-margin-top: 100px;
+    }
+
     /* ===== LAYOUT ===== */
-    .art-wrap { 
-      max-width: 800px; 
-      margin: 0 auto; 
+    .art-wrap {
+      max-width: 800px;
+      margin: 0 auto;
       padding: 0 24px;
       position: relative;
       z-index: 2;
@@ -140,10 +192,7 @@
     /* ===== MESH BACKGROUND ===== */
     .mesh {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      top: 0; left: 0; right: 0; bottom: 0;
       z-index: 0;
       pointer-events: none;
     }
@@ -154,995 +203,388 @@
       opacity: 0.4;
       animation: float 20s infinite ease-in-out;
     }
-    .m1 {
-      width: 400px;
-      height: 400px;
-      background: var(--cyan);
-      top: -100px;
-      left: -100px;
-      animation-delay: 0s;
-    }
-    .m2 {
-      width: 300px;
-      height: 300px;
-      background: var(--purple);
-      bottom: -50px;
-      right: -50px;
-      animation-delay: -7s;
-    }
-    .m3 {
-      width: 350px;
-      height: 350px;
-      background: var(--amber);
-      top: 50%;
-      left: 50%;
-      animation-delay: -14s;
-    }
+    .m1 { width:400px;height:400px;background:var(--cyan);top:-100px;left:-100px;animation-delay:0s; }
+    .m2 { width:300px;height:300px;background:var(--purple);bottom:-50px;right:-50px;animation-delay:-7s; }
+    .m3 { width:350px;height:350px;background:var(--amber);top:50%;left:50%;animation-delay:-14s; }
     @keyframes float {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      33% { transform: translate(30px, -50px) scale(1.1); }
-      66% { transform: translate(-20px, 20px) scale(0.9); }
+      0%,100%{transform:translate(0,0) scale(1);}
+      33%{transform:translate(30px,-50px) scale(1.1);}
+      66%{transform:translate(-20px,20px) scale(0.9);}
     }
 
-    /* ===== BREADCRUMB NAVIGATION ===== */
-    .art-crumb { 
-      font-size: .9rem; 
-      color: var(--muted); 
-      margin: 0 0 24px;
-      display: flex; 
-      align-items: center;
-      gap: 12px; 
-      flex-wrap: wrap;
-      padding-top: 10px;
+    /* ===== BREADCRUMB ===== */
+    .art-crumb {
+      font-size:.9rem; color:var(--muted); margin:0 0 24px;
+      display:flex; align-items:center; gap:12px; flex-wrap:wrap; padding-top:10px;
     }
-    .art-crumb a { 
-      color: var(--cyan); 
-      text-decoration: none; 
-      border-bottom: 1px dotted rgba(45,212,224,.4);
-      transition: all .2s;
-      font-weight: 500;
-    }
-    .art-crumb a:hover { 
-      color: var(--white);
-      border-bottom-color: var(--white);
-    }
-    .art-crumb span {
-      color: var(--muted);
-    }
-    .art-crumb .separator {
-      color: var(--muted);
-      opacity: 0.6;
-    }
-    .art-crumb .current {
-      color: var(--white);
-      font-weight: 600;
-    }
+    .art-crumb a { color:var(--cyan);text-decoration:none;border-bottom:1px dotted rgba(45,212,224,.4);transition:all .2s;font-weight:500; }
+    .art-crumb a:hover { color:var(--white);border-bottom-color:var(--white); }
+    .art-crumb .separator { color:var(--muted);opacity:.6; }
+    .art-crumb .current { color:var(--white);font-weight:600; }
 
     /* ===== EYEBROW ===== */
     .art-eyebrow {
-      display: inline-block; 
-      font-size: .8rem; 
-      font-weight: 700; 
-      letter-spacing: .06em;
-      text-transform: uppercase; 
-      padding: 6px 16px; 
-      border-radius: 999px; 
-      margin-bottom: 18px;
-      background: linear-gradient(135deg,rgba(45,212,224,.15),rgba(139,92,246,.15));
-      border: 1px solid rgba(45,212,224,.4); 
-      color: var(--cyan);
-      animation: eyebrowGlow 3s ease-in-out infinite;
+      display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.06em;
+      text-transform:uppercase;padding:6px 16px;border-radius:999px;margin-bottom:18px;
+      background:linear-gradient(135deg,rgba(45,212,224,.15),rgba(139,92,246,.15));
+      border:1px solid rgba(45,212,224,.4);color:var(--cyan);
+      animation:eyebrowGlow 3s ease-in-out infinite;
     }
     @keyframes eyebrowGlow {
-      0%,100% { box-shadow: 0 0 8px rgba(45,212,224,.2); }
-      50% { box-shadow: 0 0 20px rgba(45,212,224,.5); }
+      0%,100%{box-shadow:0 0 8px rgba(45,212,224,.2);}
+      50%{box-shadow:0 0 20px rgba(45,212,224,.5);}
     }
 
     /* ===== H1 ===== */
     .art-h1 {
-      font-family: 'Syne',sans-serif; 
-      font-weight: 800;
-      font-size: clamp(2rem,5vw,3.1rem); 
-      line-height: 1.08;
-      letter-spacing: -1.5px; 
-      margin-bottom: 20px;
-      background: linear-gradient(135deg,#fff 0%,var(--cyan) 40%,var(--purple) 80%,var(--amber) 100%);
-      -webkit-background-clip: text; 
-      background-clip: text; 
-      color: transparent;
-      background-size: 300% 100%; 
-      animation: titleSlide 8s ease-in-out infinite;
+      font-family:'Syne',sans-serif;font-weight:800;
+      font-size:clamp(2rem,5vw,3.1rem);line-height:1.08;
+      letter-spacing:-1.5px;margin-bottom:20px;
+      background:linear-gradient(135deg,#fff 0%,var(--cyan) 40%,var(--purple) 80%,var(--amber) 100%);
+      -webkit-background-clip:text;background-clip:text;color:transparent;
+      background-size:300% 100%;animation:titleSlide 8s ease-in-out infinite;
     }
-    @keyframes titleSlide { 
-      0%,100% { background-position: 0% 50%; } 
-      50% { background-position: 100% 50%; } 
-    }
+    @keyframes titleSlide{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
 
     /* ===== META ===== */
-    .art-meta { 
-      display: flex; 
-      flex-wrap: wrap; 
-      gap: 10px; 
-      align-items: center; 
-      color: var(--muted); 
-      font-size: .9rem; 
-      margin-bottom: 40px; 
+    .art-meta {
+      display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+      color:var(--muted);font-size:.9rem;margin-bottom:28px;
     }
-    .art-meta .dot { 
-      width: 4px; 
-      height: 4px; 
-      border-radius: 50%; 
-      background: var(--muted); 
+    .art-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--muted);}
+    .art-meta .badge{font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:999px;background:linear-gradient(135deg,var(--cyan),var(--purple));color:#fff;}
+
+    /* ===== HERO THUMBNAIL ===== */
+    .art-thumb {
+      width:100%;
+      aspect-ratio:16/9;
+      border-radius:20px;
+      border:2px dashed rgba(45,212,224,.35);
+      background:linear-gradient(135deg,rgba(45,212,224,.06),rgba(139,92,246,.06));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:40px;
+      overflow:hidden;
+      position:relative;
+      transition:border-color .3s;
     }
-    .art-meta .badge {
-      font-size: .72rem; 
-      font-weight: 700; 
-      padding: 3px 10px; 
-      border-radius: 999px;
-      background: linear-gradient(135deg,var(--cyan),var(--purple)); 
-      color: #fff;
+    .art-thumb:hover { border-color:rgba(45,212,224,.6); }
+    .art-thumb img {
+      width:100%;height:100%;object-fit:cover;border-radius:18px;display:block;
+    }
+    .art-thumb-inner {
+      display:flex;flex-direction:column;align-items:center;gap:10px;
+      pointer-events:none;
+    }
+    .art-thumb-icon { font-size:2.4rem; }
+    .art-thumb-label {
+      font-size:.82rem;font-weight:700;letter-spacing:.08em;
+      text-transform:uppercase;color:var(--muted);
+    }
+    .art-thumb-hint {
+      font-size:.75rem;color:rgba(159,176,214,.5);margin-top:4px;
+    }
+
+    /* ===== AI OVERVIEW BOX ===== */
+    .ai-overview {
+      background:linear-gradient(135deg,rgba(45,212,224,.08),rgba(139,92,246,.08));
+      border:1px solid rgba(45,212,224,.3);
+      border-radius:20px;
+      padding:24px 28px;
+      margin-bottom:40px;
+      position:relative;
+      overflow:hidden;
+    }
+    .ai-overview::before {
+      content:"";position:absolute;top:0;left:0;right:0;height:3px;border-radius:20px 20px 0 0;
+      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--cyan));
+      background-size:300% 100%;animation:rainbowSlide 4s linear infinite;
+    }
+    .ai-overview-header {
+      display:flex;align-items:center;gap:10px;margin-bottom:16px;
+    }
+    .ai-overview-icon {
+      width:34px;height:34px;border-radius:10px;
+      background:linear-gradient(135deg,var(--cyan),var(--purple));
+      display:flex;align-items:center;justify-content:center;
+      font-size:1rem;flex-shrink:0;
+    }
+    .ai-overview-title {
+      font-family:'Syne',sans-serif;font-weight:800;color:#fff;font-size:1rem;
+    }
+    .ai-overview-sub {
+      font-size:.75rem;color:var(--muted);margin-top:1px;
+    }
+    .ai-overview-body {
+      color:var(--light);font-size:.95rem;line-height:1.75;margin:0 0 16px;
+    }
+    .ai-overview-body strong { color:#fff; }
+    .ai-facts {
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;
+    }
+    .ai-fact {
+      background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);
+      border-radius:12px;padding:12px 14px;
+    }
+    .ai-fact-label {
+      font-size:.72rem;font-weight:700;text-transform:uppercase;
+      letter-spacing:.06em;color:var(--muted);margin-bottom:4px;
+    }
+    .ai-fact-value {
+      font-family:'Syne',sans-serif;font-weight:800;color:var(--cyan);font-size:1rem;
+    }
+    .ai-fact-note {
+      font-size:.78rem;color:var(--muted);margin-top:2px;line-height:1.4;
     }
 
     /* ===== READING PROGRESS ===== */
     #read-prog {
-      position: fixed; 
-      top: 0; 
-      left: 0; 
-      height: 3px; 
-      width: 0%; 
-      z-index: 9999;
-      background: linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose));
-      background-size: 200% 100%; 
-      animation: progAnim 3s linear infinite;
-      transition: width .1s linear;
+      position:fixed;top:0;left:0;height:3px;width:0%;z-index:9999;
+      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose));
+      background-size:200% 100%;animation:progAnim 3s linear infinite;
+      transition:width .1s linear;
     }
-    @keyframes progAnim { 
-      0% { background-position: 0%; } 
-      100% { background-position: 200%; } 
-    }
+    @keyframes progAnim{0%{background-position:0%;}100%{background-position:200%;}}
 
-    /* ===== TOC - SIDEBAR STYLE ===== */
+    /* ===== INLINE TOC ===== */
     .art-toc {
-      background: var(--card); 
-      border: 1px solid var(--border); 
-      border-radius: 18px;
-      padding: 26px 30px; 
-      margin: 0 0 50px 0;
-      position: relative; 
-      overflow: hidden;
-      z-index: 10;
+      background:var(--card);border:1px solid var(--border);border-radius:18px;
+      padding:26px 30px;margin:0 0 50px 0;position:relative;overflow:hidden;z-index:10;
     }
     .art-toc::before {
-      content: ""; 
-      position: absolute; 
-      inset: 0; 
-      border-radius: 18px; 
-      pointer-events: none;
-      background: linear-gradient(135deg,rgba(45,212,224,.06),rgba(139,92,246,.06));
-      z-index: 0;
+      content:"";position:absolute;inset:0;border-radius:18px;pointer-events:none;
+      background:linear-gradient(135deg,rgba(45,212,224,.06),rgba(139,92,246,.06));z-index:0;
     }
     .art-toc-title {
-      font-family: 'Syne',sans-serif; 
-      font-size: 1.1rem; 
-      color: #fff;
-      margin: 0 0 20px; 
-      display: flex; 
-      align-items: center; 
-      gap: 10px;
-      position: relative;
-      z-index: 1;
-      font-weight: 700;
+      font-family:'Syne',sans-serif;font-size:1.1rem;color:#fff;
+      margin:0 0 20px;display:flex;align-items:center;gap:10px;
+      position:relative;z-index:1;font-weight:700;
     }
-    .art-toc-title span { 
-      font-size: 1.2rem; 
+    .art-toc ol{margin:0;padding:0;list-style:none;position:relative;z-index:1;}
+    .art-toc li{margin-bottom:10px;position:relative;}
+    .art-toc li:last-child{margin-bottom:0;}
+    .art-toc a {
+      color:var(--light);text-decoration:none;display:block;
+      padding:10px 15px;border-radius:8px;border-left:3px solid transparent;
+      transition:all .2s;font-size:.95rem;
     }
-    .art-toc ol { 
-      margin: 0; 
-      padding: 0; 
-      list-style: none;
-      position: relative;
-      z-index: 1;
+    .art-toc a:hover{color:var(--cyan);border-left-color:var(--cyan);background:rgba(45,212,224,.08);padding-left:18px;}
+
+    /* ===== STICKY SIDE TOC ===== */
+    .side-toc {
+      position:fixed;
+      top:50%;
+      right:24px;
+      transform:translateY(-50%);
+      width:192px;
+      background:rgba(11,20,44,.94);
+      border:1px solid rgba(45,212,224,.2);
+      border-radius:16px;
+      padding:16px 14px;
+      z-index:200;
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+      opacity:0;
+      pointer-events:none;
+      transition:opacity .4s ease, transform .4s ease;
+      box-shadow:0 12px 40px rgba(0,0,0,.5);
     }
-    .art-toc li { 
-      margin-bottom: 10px; 
-      position: relative;
+    .side-toc.visible {
+      opacity:1;
+      pointer-events:all;
     }
-    .art-toc li:last-child {
-      margin-bottom: 0;
+    .side-toc-title {
+      font-family:'Syne',sans-serif;font-weight:700;font-size:.72rem;
+      color:var(--cyan);text-transform:uppercase;letter-spacing:.08em;
+      margin-bottom:12px;display:flex;align-items:center;gap:6px;
+      padding-bottom:10px;border-bottom:1px solid rgba(45,212,224,.15);
     }
-    .art-toc a { 
-      color: var(--light); 
-      text-decoration: none; 
-      display: block;
-      padding: 10px 15px;
-      border-radius: 8px;
-      border-left: 3px solid transparent;
-      transition: all .2s;
-      font-size: 0.95rem;
+    .side-toc-link {
+      display:block;color:var(--muted);text-decoration:none;
+      font-size:.75rem;padding:5px 8px 5px 10px;
+      border-left:2px solid transparent;border-radius:0 6px 6px 0;
+      transition:all .2s;line-height:1.4;margin-bottom:1px;
     }
-    .art-toc a:hover {
-      color: var(--cyan);
-      border-left-color: var(--cyan);
-      background: rgba(45,212,224,.08);
-      padding-left: 18px;
+    .side-toc-link:hover,
+    .side-toc-link.active {
+      color:var(--cyan);border-left-color:var(--cyan);
+      background:rgba(45,212,224,.08);
+    }
+    .side-toc-link.active {
+      font-weight:600;
+    }
+    @media(max-width:1200px){
+      .side-toc{display:none;}
     }
 
     /* ===== QUICK ANSWER ===== */
     .art-quick {
-      background: linear-gradient(135deg,rgba(45,212,224,.1),rgba(139,92,246,.1));
-      border-radius: 20px; 
-      padding: 26px 28px; 
-      margin: 40px 0; 
-      position: relative; 
-      overflow: hidden;
-      border: 1px solid rgba(45,212,224,.25);
+      background:linear-gradient(135deg,rgba(45,212,224,.1),rgba(139,92,246,.1));
+      border-radius:20px;padding:26px 28px;margin:40px 0;position:relative;overflow:hidden;
+      border:1px solid rgba(45,212,224,.25);
     }
     .art-quick::before {
-      content: ""; 
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      right: 0; 
-      height: 3px;
-      background: linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose),var(--cyan));
-      background-size: 300% 100%; 
-      animation: rainbowSlide 5s linear infinite;
+      content:"";position:absolute;top:0;left:0;right:0;height:3px;
+      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose),var(--cyan));
+      background-size:300% 100%;animation:rainbowSlide 5s linear infinite;
     }
-    @keyframes rainbowSlide { 
-      0% { background-position: 0%; } 
-      100% { background-position: 300%; } 
-    }
+    @keyframes rainbowSlide{0%{background-position:0%;}100%{background-position:300%;}}
     .quick-label {
-      display: inline-flex; 
-      align-items: center; 
-      gap: 8px; 
-      font-size: .78rem;
-      font-weight: 800; 
-      text-transform: uppercase; 
-      letter-spacing: .08em;
-      color: var(--cyan); 
-      margin-bottom: 10px;
+      display:inline-flex;align-items:center;gap:8px;font-size:.78rem;
+      font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--cyan);margin-bottom:10px;
     }
     .pulse-dot {
-      width: 9px; 
-      height: 9px; 
-      border-radius: 50%; 
-      background: var(--cyan);
-      animation: pulseAnim 1.6s ease-out infinite;
+      width:9px;height:9px;border-radius:50%;background:var(--cyan);
+      animation:pulseAnim 1.6s ease-out infinite;
     }
-    @keyframes pulseAnim {
-      0% { box-shadow: 0 0 0 0 rgba(45,212,224,.6); }
-      70% { box-shadow: 0 0 0 12px rgba(45,212,224,0); }
-      100% { box-shadow: 0 0 0 0 rgba(45,212,224,0); }
-    }
-    .art-quick p { 
-      color: var(--white); 
-      margin: 0; 
-      line-height: 1.75; 
-    }
-    .art-quick strong { 
-      color: #fff; 
-    }
-
-    /* ===== BODY PROSE ===== */
-    .art-body { 
-      color: var(--light); 
-      font-size: 1.06rem; 
-      line-height: 1.88; 
-      position: relative;
-      z-index: 5;
-    }
-    .art-body h2 {
-      font-family: 'Syne',sans-serif; 
-      font-weight: 800;
-      font-size: clamp(1.45rem,3vw,1.9rem); 
-      margin: 52px 0 18px;
-      letter-spacing: -.5px; 
-      position: relative; 
-      padding-left: 16px;
-    }
-    .art-body h2::before {
-      content: ""; 
-      position: absolute; 
-      left: 0; 
-      top: 50%; 
-      transform: translateY(-50%);
-      width: 4px; 
-      height: 70%; 
-      border-radius: 4px;
-      background: linear-gradient(180deg,var(--cyan),var(--purple));
-    }
-    .art-body h2 .h2-txt { 
-      color: #fff; 
-    }
-    .art-body h3 { 
-      font-family: 'Syne',sans-serif; 
-      font-weight: 700; 
-      color: #fff; 
-      font-size: 1.18rem; 
-      margin: 30px 0 10px; 
-    }
-    .art-body p { 
-      margin: 0 0 20px; 
-    }
-    .art-body a { 
-      color: var(--cyan); 
-      text-decoration: underline; 
-      text-decoration-color: rgba(45,212,224,.4); 
-      transition: text-decoration-color .2s; 
-    }
-    .art-body a:hover { 
-      text-decoration-color: var(--cyan); 
-    }
-    .art-body strong { 
-      color: #fff; 
-    }
+    @keyframes pulseAnim{0%{box-shadow:0 0 0 0 rgba(45,212,224,.6);}70%{box-shadow:0 0 0 12px rgba(45,212,224,0);}100%{box-shadow:0 0 0 0 rgba(45,212,224,0);}}
+    .art-quick p{color:var(--white);margin:0;line-height:1.75;}
+    .art-quick strong{color:#fff;}
 
     /* ===== STAT ROW ===== */
-    .stat-row {
-      display: grid; 
-      grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-      gap: 14px; 
-      margin: 28px 0;
-    }
-    .stat-card {
-      border-radius: 16px; 
-      padding: 18px 16px; 
-      text-align: center;
-      border: 1px solid rgba(255,255,255,.1); 
-      position: relative; 
-      overflow: hidden;
-      transition: transform .25s, box-shadow .25s;
-    }
-    .stat-card:hover { 
-      transform: translateY(-4px); 
-    }
-    .stat-card.s1 { 
-      background: linear-gradient(135deg,rgba(45,212,224,.15),rgba(45,212,224,.05)); 
-      border-color: rgba(45,212,224,.3); 
-    }
-    .stat-card.s2 { 
-      background: linear-gradient(135deg,rgba(245,158,11,.15),rgba(245,158,11,.05)); 
-      border-color: rgba(245,158,11,.3); 
-    }
-    .stat-card.s3 { 
-      background: linear-gradient(135deg,rgba(139,92,246,.15),rgba(139,92,246,.05)); 
-      border-color: rgba(139,92,246,.3); 
-    }
-    .stat-card.s4 { 
-      background: linear-gradient(135deg,rgba(34,197,94,.15),rgba(34,197,94,.05)); 
-      border-color: rgba(34,197,94,.3); 
-    }
-    .stat-num { 
-      font-family: 'Syne',sans-serif; 
-      font-weight: 800; 
-      font-size: 1.8rem; 
-      color: #fff; 
-      line-height: 1; 
-    }
-    .stat-card.s1 .stat-num { 
-      color: var(--cyan); 
-    }
-    .stat-card.s2 .stat-num { 
-      color: var(--amber); 
-    }
-    .stat-card.s3 .stat-num { 
-      color: var(--purple); 
-    }
-    .stat-card.s4 .stat-num { 
-      color: var(--green); 
-    }
-    .stat-lbl { 
-      font-size: .78rem; 
-      color: var(--muted); 
-      margin-top: 6px; 
-      font-weight: 600; 
-      text-transform: uppercase; 
-      letter-spacing: .05em; 
-    }
+    .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:28px 0;}
+    .stat-card{border-radius:16px;padding:18px 16px;text-align:center;border:1px solid rgba(255,255,255,.1);position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s;}
+    .stat-card:hover{transform:translateY(-4px);}
+    .stat-card.s1{background:linear-gradient(135deg,rgba(45,212,224,.15),rgba(45,212,224,.05));border-color:rgba(45,212,224,.3);}
+    .stat-card.s2{background:linear-gradient(135deg,rgba(245,158,11,.15),rgba(245,158,11,.05));border-color:rgba(245,158,11,.3);}
+    .stat-card.s3{background:linear-gradient(135deg,rgba(139,92,246,.15),rgba(139,92,246,.05));border-color:rgba(139,92,246,.3);}
+    .stat-card.s4{background:linear-gradient(135deg,rgba(34,197,94,.15),rgba(34,197,94,.05));border-color:rgba(34,197,94,.3);}
+    .stat-num{font-family:'Syne',sans-serif;font-weight:800;font-size:1.8rem;color:#fff;line-height:1;}
+    .stat-card.s1 .stat-num{color:var(--cyan);}
+    .stat-card.s2 .stat-num{color:var(--amber);}
+    .stat-card.s3 .stat-num{color:var(--purple);}
+    .stat-card.s4 .stat-num{color:var(--green);}
+    .stat-lbl{font-size:.78rem;color:var(--muted);margin-top:6px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;}
 
-    /* ===== DIAGRAM SVG ===== */
-    .art-diagram {
-      width: 100%; 
-      height: auto; 
-      border-radius: 18px; 
-      display: block; 
-      margin: 28px 0;
-      border: 1px solid var(--border);
-    }
+    /* ===== DIAGRAM ===== */
+    .art-diagram{width:100%;height:auto;border-radius:18px;display:block;margin:28px 0;border:1px solid var(--border);}
 
     /* ===== PULL QUOTE ===== */
-    .art-pull {
-      border-left: 3px solid var(--cyan); 
-      border-radius: 0 16px 16px 0;
-      background: rgba(45,212,224,.07); 
-      padding: 18px 22px; 
-      margin: 26px 0;
-      color: var(--white); 
-      font-style: italic; 
-      font-size: 1.05rem; 
-      line-height: 1.7;
-      position: relative;
-    }
-    .art-pull::before { 
-      content: '"'; 
-      font-size: 3rem; 
-      color: var(--cyan); 
-      opacity: .4; 
-      position: absolute; 
-      top: -6px; 
-      left: 12px; 
-      font-style: normal; 
-      line-height: 1; 
-    }
+    .art-pull{border-left:3px solid var(--cyan);border-radius:0 16px 16px 0;background:rgba(45,212,224,.07);padding:18px 22px;margin:26px 0;color:var(--white);font-style:italic;font-size:1.05rem;line-height:1.7;position:relative;}
+    .art-pull::before{content:'"';font-size:3rem;color:var(--cyan);opacity:.4;position:absolute;top:-6px;left:12px;font-style:normal;line-height:1;}
 
     /* ===== COMPARISON TABLE ===== */
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 28px 0;
-      border-radius: 16px;
-      overflow: hidden;
-      background: var(--card);
-      border: 1px solid var(--border);
-    }
-    .comparison-table th {
-      background: linear-gradient(135deg, rgba(45,212,224,.15), rgba(139,92,246,.15));
-      color: #fff;
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      padding: 16px;
-      text-align: left;
-      font-size: .9rem;
-    }
-    .comparison-table td {
-      padding: 14px 16px;
-      color: var(--light);
-      border-top: 1px solid var(--border);
-      font-size: .95rem;
-    }
-    .comparison-table tr:hover {
-      background: rgba(255,255,255,.02);
-    }
-    .comparison-table .model-name {
-      color: var(--cyan);
-      font-weight: 600;
-    }
+    .comparison-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:16px;overflow:hidden;background:var(--card);border:1px solid var(--border);}
+    .comparison-table th{background:linear-gradient(135deg,rgba(45,212,224,.15),rgba(139,92,246,.15));color:#fff;font-family:'Syne',sans-serif;font-weight:700;padding:16px;text-align:left;font-size:.9rem;}
+    .comparison-table td{padding:14px 16px;color:var(--light);border-top:1px solid var(--border);font-size:.95rem;}
+    .comparison-table tr:hover{background:rgba(255,255,255,.02);}
+    .comparison-table .model-name{color:var(--cyan);font-weight:600;}
 
     /* ===== CONCEPT CARDS ===== */
-    .concept-grid { 
-      display: grid; 
-      grid-template-columns: repeat(auto-fit,minmax(230px,1fr)); 
-      gap: 16px; 
-      margin: 24px 0; 
-    }
-    .concept-card {
-      border-radius: 16px; 
-      padding: 20px; 
-      border: 1px solid var(--border);
-      transition: transform .25s, border-color .25s; 
-      position: relative; 
-      overflow: hidden;
-    }
-    .concept-card:hover { 
-      transform: translateY(-4px); 
-    }
-    .concept-card.cc1 { 
-      background: linear-gradient(135deg,rgba(96,165,250,.12),rgba(96,165,250,.03)); 
-      border-color: rgba(96,165,250,.3); 
-    }
-    .concept-card.cc2 { 
-      background: linear-gradient(135deg,rgba(245,158,11,.12),rgba(245,158,11,.03)); 
-      border-color: rgba(245,158,11,.3); 
-    }
-    .concept-card.cc3 { 
-      background: linear-gradient(135deg,rgba(139,92,246,.12),rgba(139,92,246,.03)); 
-      border-color: rgba(139,92,246,.3); 
-    }
-    .concept-card.cc4 { 
-      background: linear-gradient(135deg,rgba(34,197,94,.12),rgba(34,197,94,.03)); 
-      border-color: rgba(34,197,94,.3); 
-    }
-    .concept-card.cc5 { 
-      background: linear-gradient(135deg,rgba(244,63,94,.12),rgba(244,63,94,.03)); 
-      border-color: rgba(244,63,94,.3); 
-    }
-    .concept-card.cc6 { 
-      background: linear-gradient(135deg,rgba(45,212,224,.12),rgba(45,212,224,.03)); 
-      border-color: rgba(45,212,224,.3); 
-    }
-    .concept-icon { 
-      font-size: 1.8rem; 
-      margin-bottom: 10px; 
-    }
-    .concept-card h3 { 
-      font-family: 'Syne',sans-serif; 
-      font-size: 1rem; 
-      margin: 0 0 8px; 
-    }
-    .cc1 h3 { 
-      color: var(--blue); 
-    }
-    .cc2 h3 { 
-      color: var(--amber); 
-    }
-    .cc3 h3 { 
-      color: var(--purple); 
-    }
-    .cc4 h3 { 
-      color: var(--green); 
-    }
-    .cc5 h3 { 
-      color: var(--rose); 
-    }
-    .cc6 h3 { 
-      color: var(--cyan); 
-    }
-    .concept-card p { 
-      color: var(--light); 
-      font-size: .9rem; 
-      line-height: 1.6; 
-      margin: 0; 
-    }
+    .concept-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:24px 0;}
+    .concept-card{border-radius:16px;padding:20px;border:1px solid var(--border);transition:transform .25s,border-color .25s;position:relative;overflow:hidden;}
+    .concept-card:hover{transform:translateY(-4px);}
+    .concept-card.cc1{background:linear-gradient(135deg,rgba(96,165,250,.12),rgba(96,165,250,.03));border-color:rgba(96,165,250,.3);}
+    .concept-card.cc2{background:linear-gradient(135deg,rgba(245,158,11,.12),rgba(245,158,11,.03));border-color:rgba(245,158,11,.3);}
+    .concept-card.cc3{background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(139,92,246,.03));border-color:rgba(139,92,246,.3);}
+    .concept-card.cc4{background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(34,197,94,.03));border-color:rgba(34,197,94,.3);}
+    .concept-card.cc5{background:linear-gradient(135deg,rgba(244,63,94,.12),rgba(244,63,94,.03));border-color:rgba(244,63,94,.3);}
+    .concept-card.cc6{background:linear-gradient(135deg,rgba(45,212,224,.12),rgba(45,212,224,.03));border-color:rgba(45,212,224,.3);}
+    .concept-icon{font-size:1.8rem;margin-bottom:10px;}
+    .concept-card h3{font-family:'Syne',sans-serif;font-size:1rem;margin:0 0 8px;}
+    .cc1 h3{color:var(--blue);}
+    .cc2 h3{color:var(--amber);}
+    .cc3 h3{color:var(--purple);}
+    .cc4 h3{color:var(--green);}
+    .cc5 h3{color:var(--rose);}
+    .cc6 h3{color:var(--cyan);}
+    .concept-card p{color:var(--light);font-size:.9rem;line-height:1.6;margin:0;}
 
     /* ===== FAQ ===== */
-    .faq-item {
-      background: var(--card); 
-      border: 1px solid var(--border); 
-      border-radius: 16px;
-      margin-bottom: 10px; 
-      overflow: hidden; 
-      transition: border-color .2s;
-    }
-    .faq-item[open] { 
-      border-color: rgba(45,212,224,.35); 
-    }
-    .faq-item summary {
-      padding: 18px 22px; 
-      cursor: pointer; 
-      font-weight: 700; 
-      font-size: .98rem;
-      color: #fff; 
-      list-style: none; 
-      display: flex; 
-      justify-content: space-between;
-      align-items: center; 
-      gap: 12px; 
-      user-select: none; 
-      font-family: 'Syne',sans-serif;
-    }
-    .faq-item summary::-webkit-details-marker { 
-      display: none; 
-    }
-    .faq-item summary::after { 
-      content: '+'; 
-      color: var(--cyan); 
-      font-size: 22px; 
-      font-weight: 300; 
-      flex-shrink: 0; 
-    }
-    .faq-item[open] summary::after { 
-      content: '−'; 
-    }
-    .faq-item p { 
-      padding: 0 22px 18px; 
-      color: var(--muted); 
-      font-size: .95rem; 
-      line-height: 1.72; 
-      margin: 0; 
-    }
+    .faq-item{background:var(--card);border:1px solid var(--border);border-radius:16px;margin-bottom:10px;overflow:hidden;transition:border-color .2s;}
+    .faq-item[open]{border-color:rgba(45,212,224,.35);}
+    .faq-item summary{padding:18px 22px;cursor:pointer;font-weight:700;font-size:.98rem;color:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:'Syne',sans-serif;}
+    .faq-item summary::-webkit-details-marker{display:none;}
+    .faq-item summary::after{content:'+';color:var(--cyan);font-size:22px;font-weight:300;flex-shrink:0;}
+    .faq-item[open] summary::after{content:'−';}
+    .faq-item p{padding:0 22px 18px;color:var(--muted);font-size:.95rem;line-height:1.72;margin:0;}
 
     /* ===== REACTION BAR ===== */
-    .art-react {
-      display: flex; 
-      align-items: center; 
-      gap: 12px; 
-      margin: 46px 0;
-      padding: 18px 22px; 
-      border: 1px solid var(--border); 
-      border-radius: 16px;
-      background: var(--card); 
-      flex-wrap: wrap;
-    }
-    .art-react span { 
-      color: var(--muted); 
-      font-size: .9rem; 
-    }
-    .react-btn {
-      cursor: pointer; 
-      border: 1px solid rgba(255,255,255,.15); 
-      background: rgba(255,255,255,.04);
-      color: var(--white); 
-      border-radius: 999px; 
-      padding: 9px 18px; 
-      font-size: .9rem;
-      font-family: 'Inter',sans-serif; 
-      transition: .2s;
-    }
-    .react-btn:hover { 
-      background: var(--cyan); 
-      color: var(--navy); 
-      border-color: var(--cyan); 
-    }
-    .react-btn.active { 
-      background: var(--cyan); 
-      color: var(--navy); 
-      border-color: var(--cyan); 
-    }
-    .react-count { 
-      font-weight: 700; 
-      font-size: .85rem; 
-    }
+    .art-react{display:flex;align-items:center;gap:12px;margin:46px 0;padding:18px 22px;border:1px solid var(--border);border-radius:16px;background:var(--card);flex-wrap:wrap;}
+    .art-react span{color:var(--muted);font-size:.9rem;}
+    .react-btn{cursor:pointer;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);color:var(--white);border-radius:999px;padding:9px 18px;font-size:.9rem;font-family:'Inter',sans-serif;transition:.2s;}
+    .react-btn:hover{background:var(--cyan);color:var(--navy);border-color:var(--cyan);}
+    .react-btn.active{background:var(--cyan);color:var(--navy);border-color:var(--cyan);}
+    .react-count{font-weight:700;font-size:.85rem;}
 
     /* ===== RELATED ===== */
-    .art-related { 
-      display: grid; 
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); 
-      gap: 16px; 
-      margin: 20px 0 44px; 
-    }
-    .art-related a {
-      display: block; 
-      background: var(--card); 
-      border: 1px solid var(--border); 
-      border-radius: 16px;
-      padding: 20px; 
-      color: var(--white); 
-      text-decoration: none; 
-      transition: .25s;
-    }
-    .art-related a:hover { 
-      border-color: var(--cyan); 
-      transform: translateY(-3px); 
-    }
-    .art-related .rtag { 
-      font-size: .75rem; 
-      color: var(--cyan); 
-      font-weight: 700; 
-      text-transform: uppercase; 
-      letter-spacing: .05em; 
-    }
-    .art-related .rttl { 
-      font-family: 'Syne',sans-serif; 
-      font-weight: 700; 
-      margin-top: 7px; 
-      line-height: 1.35; 
-    }
+    .art-related{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0 44px;}
+    .art-related a{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;color:var(--white);text-decoration:none;transition:.25s;}
+    .art-related a:hover{border-color:var(--cyan);transform:translateY(-3px);}
+    .art-related .rtag{font-size:.75rem;color:var(--cyan);font-weight:700;text-transform:uppercase;letter-spacing:.05em;}
+    .art-related .rttl{font-family:'Syne',sans-serif;font-weight:700;margin-top:7px;line-height:1.35;}
 
     /* ===== SIDE POPUP ===== */
-    #side-popup {
-      position: fixed; 
-      bottom: 24px; 
-      right: 24px; 
-      z-index: 9990;
-      width: min(320px,calc(100vw - 40px));
-      background: linear-gradient(135deg,#1B2A4A,#0F1C38);
-      border: 1px solid rgba(45,212,224,.35); 
-      border-radius: 20px;
-      padding: 22px 22px 20px; 
-      box-shadow: 0 20px 60px rgba(0,0,0,.6);
-      transform: translateY(120%); 
-      opacity: 0; 
-      transition: transform .5s cubic-bezier(.34,1.56,.64,1), opacity .4s ease;
-    }
-    #side-popup.show { 
-      transform: translateY(0); 
-      opacity: 1; 
-    }
-    #side-popup::before {
-      content: ""; 
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      right: 0; 
-      height: 3px; 
-      border-radius: 20px 20px 0 0;
-      background: linear-gradient(90deg,var(--cyan),var(--purple),var(--amber));
-      background-size: 200% 100%; 
-      animation: rainbowSlide 3s linear infinite;
-    }
-    .popup-close {
-      position: absolute; 
-      top: 10px; 
-      right: 14px; 
-      background: none; 
-      border: none;
-      color: var(--muted); 
-      cursor: pointer; 
-      font-size: 1.2rem; 
-      line-height: 1; 
-      padding: 4px;
-      transition: color .2s;
-    }
-    .popup-close:hover { 
-      color: #fff; 
-    }
-    .popup-icon { 
-      font-size: 1.6rem; 
-      margin-bottom: 8px; 
-    }
-    .popup-title { 
-      font-family: 'Syne',sans-serif; 
-      font-weight: 800; 
-      font-size: 1rem; 
-      color: #fff; 
-      margin-bottom: 6px; 
-    }
-    .popup-sub { 
-      font-size: .85rem; 
-      color: var(--muted); 
-      margin-bottom: 14px; 
-      line-height: 1.5; 
-    }
-    .popup-form { 
-      display: flex; 
-      gap: 8px; 
-      flex-wrap: wrap; 
-    }
-    .popup-input {
-      flex: 1; 
-      min-width: 0; 
-      background: rgba(255,255,255,.06); 
-      border: 1px solid var(--border);
-      border-radius: 10px; 
-      padding: 10px 14px; 
-      color: #fff; 
-      font-family: 'Inter',sans-serif;
-      font-size: .88rem; 
-      outline: none; 
-      transition: border-color .2s;
-    }
-    .popup-input::placeholder { 
-      color: var(--muted); 
-    }
-    .popup-input:focus { 
-      border-color: var(--cyan); 
-    }
-    .popup-btn {
-      background: linear-gradient(135deg,var(--cyan),var(--purple)); 
-      border: none; 
-      color: #fff;
-      padding: 10px 16px; 
-      border-radius: 10px; 
-      font-family: 'Inter',sans-serif; 
-      font-size: .88rem;
-      font-weight: 700; 
-      cursor: pointer; 
-      white-space: nowrap; 
-      transition: opacity .2s, transform .15s;
-    }
-    .popup-btn:hover { 
-      opacity: .9; 
-      transform: translateY(-1px); 
-    }
-    .popup-success { 
-      display: none; 
-      text-align: center; 
-      padding: 8px 0; 
-    }
-    .popup-success.show { 
-      display: block; 
-    }
-    .popup-success span { 
-      font-size: 1.5rem; 
-      display: block; 
-      margin-bottom: 6px; 
-    }
-    .popup-success p { 
-      color: var(--green); 
-      font-weight: 600; 
-      font-size: .92rem; 
-      margin: 0; 
-    }
-    .popup-note { 
-      font-size: .75rem; 
-      color: var(--muted); 
-      margin-top: 9px; 
-    }
+    #side-popup{position:fixed;bottom:24px;right:24px;z-index:9990;width:min(320px,calc(100vw - 40px));background:linear-gradient(135deg,#1B2A4A,#0F1C38);border:1px solid rgba(45,212,224,.35);border-radius:20px;padding:22px 22px 20px;box-shadow:0 20px 60px rgba(0,0,0,.6);transform:translateY(120%);opacity:0;transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .4s ease;}
+    #side-popup.show{transform:translateY(0);opacity:1;}
+    #side-popup::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;border-radius:20px 20px 0 0;background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber));background-size:200% 100%;animation:rainbowSlide 3s linear infinite;}
+    .popup-close{position:absolute;top:10px;right:14px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:1.2rem;line-height:1;padding:4px;transition:color .2s;}
+    .popup-close:hover{color:#fff;}
+    .popup-icon{font-size:1.6rem;margin-bottom:8px;}
+    .popup-title{font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:#fff;margin-bottom:6px;}
+    .popup-sub{font-size:.85rem;color:var(--muted);margin-bottom:14px;line-height:1.5;}
+    .popup-form{display:flex;gap:8px;flex-wrap:wrap;}
+    .popup-input{flex:1;min-width:0;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:10px;padding:10px 14px;color:#fff;font-family:'Inter',sans-serif;font-size:.88rem;outline:none;transition:border-color .2s;}
+    .popup-input::placeholder{color:var(--muted);}
+    .popup-input:focus{border-color:var(--cyan);}
+    .popup-btn{background:linear-gradient(135deg,var(--cyan),var(--purple));border:none;color:#fff;padding:10px 16px;border-radius:10px;font-family:'Inter',sans-serif;font-size:.88rem;font-weight:700;cursor:pointer;white-space:nowrap;transition:opacity .2s,transform .15s;}
+    .popup-btn:hover{opacity:.9;transform:translateY(-1px);}
+    .popup-success{display:none;text-align:center;padding:8px 0;}
+    .popup-success.show{display:block;}
+    .popup-success span{font-size:1.5rem;display:block;margin-bottom:6px;}
+    .popup-success p{color:var(--green);font-weight:600;font-size:.92rem;margin:0;}
+    .popup-note{font-size:.75rem;color:var(--muted);margin-top:9px;}
 
-    /* ===== ANIMATED FOOTER ===== */
-    footer { 
-      position: relative; 
-      overflow: hidden; 
-    }
-    footer::before {
-      content: ""; 
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      right: 0; 
-      height: 4px;
-      background: linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose),var(--green),var(--cyan));
-      background-size: 300% 100%; 
-      animation: rainbowSlide 7s linear infinite;
-    }
-    footer .f-logo {
-      background: linear-gradient(90deg,#fff,var(--cyan),var(--purple),var(--amber),#fff);
-      background-size: 300% 100%; 
-      -webkit-background-clip: text; 
-      background-clip: text;
-      color: transparent; 
-      animation: rainbowSlide 6s linear infinite;
-      font-family: 'Syne',sans-serif; 
-      font-weight: 800; 
-      font-size: 1.45rem;
-    }
-    .f-col h4 { 
-      position: relative; 
-      display: inline-block; 
-    }
-    .f-col h4::after {
-      content: ""; 
-      position: absolute; 
-      bottom: -4px; 
-      left: 0; 
-      width: 100%; 
-      height: 2px;
-      background: linear-gradient(90deg,var(--cyan),var(--purple));
-      border-radius: 2px;
-    }
-    footer .f-social-link {
-      display: inline-flex; 
-      align-items: center; 
-      justify-content: center;
-      width: 38px; 
-      height: 38px; 
-      border-radius: 10px; 
-      border: 1px solid var(--border);
-      background: var(--card); 
-      transition: all .25s; 
-      color: var(--muted);
-    }
-    footer .f-social-link:hover {
-      border-color: var(--cyan); 
-      background: rgba(45,212,224,.12);
-      transform: translateY(-3px); 
-      box-shadow: 0 8px 20px rgba(45,212,224,.25);
-    }
-    .f-social-link svg { 
-      width: 18px; 
-      height: 18px; 
-    }
-    .f-bottom-bar {
-      display: flex; 
-      align-items: center; 
-      justify-content: space-between;
-      flex-wrap: wrap; 
-      gap: 12px; 
-      padding-top: 28px; 
-      border-top: 1px solid var(--border);
-      margin-top: 36px; 
-      font-size: .85rem; 
-      color: var(--muted);
-    }
-    .f-bottom-bar a { 
-      color: var(--muted); 
-      text-decoration: none; 
-      transition: color .2s; 
-    }
-    .f-bottom-bar a:hover { 
-      color: var(--cyan); 
-    }
-    .f-made { 
-      display: flex; 
-      align-items: center; 
-      gap: 6px; 
-    }
-    .f-heart { 
-      animation: heartBeat 1.4s ease infinite; 
-      display: inline-block; 
-    }
-    @keyframes heartBeat { 
-      0%,100% { transform: scale(1); } 
-      50% { transform: scale(1.25); } 
-    }
-    .f-links { 
-      display: flex; 
-      gap: 18px; 
-    }
+    /* ===== FOOTER ===== */
+    footer{position:relative;overflow:hidden;}
+    footer::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose),var(--green),var(--cyan));background-size:300% 100%;animation:rainbowSlide 7s linear infinite;}
+    footer .f-logo{background:linear-gradient(90deg,#fff,var(--cyan),var(--purple),var(--amber),#fff);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rainbowSlide 6s linear infinite;font-family:'Syne',sans-serif;font-weight:800;font-size:1.45rem;}
+    .f-col h4{position:relative;display:inline-block;}
+    .f-col h4::after{content:"";position:absolute;bottom:-4px;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--cyan),var(--purple));border-radius:2px;}
+    footer .f-social-link{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;border:1px solid var(--border);background:var(--card);transition:all .25s;color:var(--muted);}
+    footer .f-social-link:hover{border-color:var(--cyan);background:rgba(45,212,224,.12);transform:translateY(-3px);box-shadow:0 8px 20px rgba(45,212,224,.25);}
+    .f-social-link svg{width:18px;height:18px;}
+    .f-bottom-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:28px;border-top:1px solid var(--border);margin-top:36px;font-size:.85rem;color:var(--muted);}
+    .f-bottom-bar a{color:var(--muted);text-decoration:none;transition:color .2s;}
+    .f-bottom-bar a:hover{color:var(--cyan);}
+    .f-made{display:flex;align-items:center;gap:6px;}
+    .f-heart{animation:heartBeat 1.4s ease infinite;display:inline-block;}
+    @keyframes heartBeat{0%,100%{transform:scale(1);}50%{transform:scale(1.25);}}
+    .f-links{display:flex;gap:18px;}
 
-    /* ===== NEWSLETTER SECTION ===== */
-    .nl-box {
-      background: linear-gradient(135deg,rgba(45,212,224,.08),rgba(139,92,246,.08));
-      border: 1px solid rgba(45,212,224,.2); 
-      border-radius: 22px; 
-      padding: 36px;
-      text-align: center; 
-      position: relative; 
-      overflow: hidden; 
-      margin-bottom: 60px;
-    }
-    .nl-box::before {
-      content: ""; 
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      right: 0; 
-      height: 3px;
-      background: linear-gradient(90deg,var(--cyan),var(--purple),var(--amber));
-      background-size: 200% 100%; 
-      animation: rainbowSlide 4s linear infinite;
-    }
-    .nl-box h2 { 
-      font-family: 'Syne',sans-serif; 
-      font-weight: 800; 
-      color: #fff; 
-      font-size: 1.6rem; 
-      margin: 12px 0 8px; 
-    }
-    .nl-box p { 
-      color: var(--muted); 
-      margin-bottom: 20px; 
-    }
-    .nl-form { 
-      display: flex; 
-      gap: 10px; 
-      max-width: 460px; 
-      margin: 0 auto; 
-      flex-wrap: wrap; 
-    }
-    .nl-input {
-      flex: 1; 
-      min-width: 0; 
-      background: rgba(255,255,255,.06); 
-      border: 1px solid var(--border);
-      border-radius: 12px; 
-      padding: 12px 18px; 
-      color: #fff; 
-      font-family: 'Inter',sans-serif;
-      font-size: .95rem; 
-      outline: none; 
-      transition: border-color .2s;
-    }
-    .nl-input::placeholder { 
-      color: var(--muted); 
-    }
-    .nl-input:focus { 
-      border-color: var(--cyan); 
-    }
-    .nl-btn {
-      background: linear-gradient(135deg,var(--cyan),var(--purple)); 
-      border: none; 
-      color: #fff;
-      padding: 12px 24px; 
-      border-radius: 12px; 
-      font-family: 'Inter',sans-serif; 
-      font-size: .95rem;
-      font-weight: 700; 
-      cursor: pointer; 
-      transition: .2s; 
-      white-space: nowrap;
-    }
-    .nl-btn:hover { 
-      opacity: .9; 
-      transform: translateY(-2px); 
-    }
-    .nl-note { 
-      font-size: .8rem; 
-      color: var(--muted); 
-      margin-top: 10px; 
-    }
+    /* ===== NEWSLETTER ===== */
+    .nl-box{background:linear-gradient(135deg,rgba(45,212,224,.08),rgba(139,92,246,.08));border:1px solid rgba(45,212,224,.2);border-radius:22px;padding:36px;text-align:center;position:relative;overflow:hidden;margin-bottom:60px;}
+    .nl-box::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber));background-size:200% 100%;animation:rainbowSlide 4s linear infinite;}
+    .nl-box h2{font-family:'Syne',sans-serif;font-weight:800;color:#fff;font-size:1.6rem;margin:12px 0 8px;}
+    .nl-box p{color:var(--muted);margin-bottom:20px;}
+    .nl-form{display:flex;gap:10px;max-width:460px;margin:0 auto;flex-wrap:wrap;}
+    .nl-input{flex:1;min-width:0;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:12px;padding:12px 18px;color:#fff;font-family:'Inter',sans-serif;font-size:.95rem;outline:none;transition:border-color .2s;}
+    .nl-input::placeholder{color:var(--muted);}
+    .nl-input:focus{border-color:var(--cyan);}
+    .nl-btn{background:linear-gradient(135deg,var(--cyan),var(--purple));border:none;color:#fff;padding:12px 24px;border-radius:12px;font-family:'Inter',sans-serif;font-size:.95rem;font-weight:700;cursor:pointer;transition:.2s;white-space:nowrap;}
+    .nl-btn:hover{opacity:.9;transform:translateY(-2px);}
+    .nl-note{font-size:.8rem;color:var(--muted);margin-top:10px;}
+
+    /* ===== BODY PROSE ===== */
+    .art-body{color:var(--light);font-size:1.06rem;line-height:1.88;position:relative;z-index:5;}
+    .art-body h2{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.45rem,3vw,1.9rem);margin:52px 0 18px;letter-spacing:-.5px;position:relative;padding-left:16px;}
+    .art-body h2::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:4px;height:70%;border-radius:4px;background:linear-gradient(180deg,var(--cyan),var(--purple));}
+    .art-body h2 .h2-txt{color:#fff;}
+    .art-body h3{font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:1.18rem;margin:30px 0 10px;}
+    .art-body p{margin:0 0 20px;}
+    .art-body a{color:var(--cyan);text-decoration:underline;text-decoration-color:rgba(45,212,224,.4);transition:text-decoration-color .2s;}
+    .art-body a:hover{text-decoration-color:var(--cyan);}
+    .art-body strong{color:#fff;}
 
     /* ===== RESPONSIVE ===== */
     @media(max-width:640px){
-      .art-crumb { 
-        margin-top: 0; 
-        padding-top: 10px;
-      }
-      #side-popup { 
-        bottom: 16px; 
-        right: 16px; 
-      }
-      .stat-row { 
-        grid-template-columns: 1fr 1fr; 
-      }
-      .comparison-table {
-        font-size: .85rem;
-      }
-      .comparison-table th,
-      .comparison-table td {
-        padding: 10px;
-      }
+      .art-crumb{margin-top:0;padding-top:10px;}
+      #side-popup{bottom:16px;right:16px;}
+      .stat-row{grid-template-columns:1fr 1fr;}
+      .comparison-table{font-size:.85rem;}
+      .comparison-table th,.comparison-table td{padding:10px;}
+      .ai-facts{grid-template-columns:1fr 1fr;}
     }
   </style>
 </head>
@@ -1213,11 +655,27 @@
     <a href="../contact.html">Contact</a>
   </div>
 
+  <!-- ===== STICKY SIDE TOC ===== -->
+  <aside class="side-toc" id="sideToc" aria-label="Sticky section navigation">
+    <div class="side-toc-title">📋 Sections</div>
+    <nav>
+      <a href="#definition"   class="side-toc-link">What is a context window?</a>
+      <a href="#how-it-works" class="side-toc-link">How context windows work</a>
+      <a href="#tokens"       class="side-toc-link">Understanding tokens</a>
+      <a href="#comparison"   class="side-toc-link">Model comparison 2026</a>
+      <a href="#why-matters"  class="side-toc-link">Why size matters</a>
+      <a href="#limitations"  class="side-toc-link">Limitations &amp; challenges</a>
+      <a href="#optimization" class="side-toc-link">Optimization strategies</a>
+      <a href="#future"       class="side-toc-link">The future of context</a>
+      <a href="#faq"          class="side-toc-link">FAQ</a>
+    </nav>
+  </aside>
+
   <!-- ===== MAIN CONTENT ===== -->
   <main id="main-content">
     <div class="art-wrap">
 
-      <!-- BREADCRUMB NAVIGATION -->
+      <!-- BREADCRUMB -->
       <nav class="art-crumb" aria-label="Breadcrumb">
         <a href="../index.html">Home</a>
         <span class="separator">/</span>
@@ -1240,7 +698,67 @@
         <span class="badge">Updated 2026</span>
       </div>
 
-      <!-- TOC (SIDEBAR STYLE) -->
+      <!-- ===== HERO THUMBNAIL — replace inner div with <img> when ready ===== -->
+      <div class="art-thumb" id="heroThumb">
+        <!-- TO ADD YOUR IMAGE: remove the div.art-thumb-inner below and paste:
+             <img src="your-image.jpg" alt="What is the context window in an LLM"> -->
+        <div class="art-thumb-inner">
+          <div class="art-thumb-icon">🖼️</div>
+          <div class="art-thumb-label">Thumbnail Image</div>
+          <div class="art-thumb-hint">Replace this block with your &lt;img&gt; tag</div>
+        </div>
+      </div>
+
+      <!-- ===== AI OVERVIEW BOX ===== -->
+      <div class="ai-overview" id="ai-overview" itemscope itemtype="https://schema.org/Article">
+        <div class="ai-overview-header">
+          <div class="ai-overview-icon">🤖</div>
+          <div>
+            <div class="ai-overview-title">AI Overview</div>
+            <div class="ai-overview-sub">Quick summary for AI assistants &amp; readers</div>
+          </div>
+        </div>
+        <p class="ai-overview-body">
+          <strong>What is the context window in an LLM?</strong> The context window is the maximum number of tokens (chunks of text) a large language model can process in a single request — its working memory. Every word you type, every conversation turn, and the model's own reply all count toward this limit. When the limit is exceeded, the model can no longer "see" earlier text.
+        </p>
+        <p class="ai-overview-body" style="margin:0 0 16px">
+          In 2026, <strong>Gemini 1.5 Pro</strong> leads with up to <strong>2 million tokens</strong>. <strong>Claude 3.7 / Opus 4</strong> offers <strong>200K tokens</strong>. <strong>GPT-4o</strong> supports <strong>128K tokens</strong>. One token ≈ 0.75 words; 100K tokens ≈ a full novel. Bigger windows help with long documents but cost more and can dilute model attention.
+        </p>
+        <div class="ai-facts">
+          <div class="ai-fact">
+            <div class="ai-fact-label">Largest window (2026)</div>
+            <div class="ai-fact-value">2M tokens</div>
+            <div class="ai-fact-note">Gemini 1.5 Pro / 2.5</div>
+          </div>
+          <div class="ai-fact">
+            <div class="ai-fact-label">Claude 3.7 / Opus 4</div>
+            <div class="ai-fact-value">200K tokens</div>
+            <div class="ai-fact-note">≈ 150,000 words</div>
+          </div>
+          <div class="ai-fact">
+            <div class="ai-fact-label">GPT-4o</div>
+            <div class="ai-fact-value">128K tokens</div>
+            <div class="ai-fact-note">≈ 96,000 words</div>
+          </div>
+          <div class="ai-fact">
+            <div class="ai-fact-label">Token ≈ words ratio</div>
+            <div class="ai-fact-value">0.75 words</div>
+            <div class="ai-fact-note">~3–4 characters per token</div>
+          </div>
+          <div class="ai-fact">
+            <div class="ai-fact-label">Effective recall</div>
+            <div class="ai-fact-value">~75%</div>
+            <div class="ai-fact-note">Middle-of-context degrades</div>
+          </div>
+          <div class="ai-fact">
+            <div class="ai-fact-label">Free ChatGPT window</div>
+            <div class="ai-fact-value">8–16K</div>
+            <div class="ai-fact-note">tokens (basic tier)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOC (INLINE) -->
       <nav class="art-toc" aria-label="Table of contents">
         <h2 class="art-toc-title"><span>📋</span> Jump to a Section</h2>
         <ol>
@@ -1249,7 +767,7 @@
           <li><a href="#tokens">3. Understanding tokens</a></li>
           <li><a href="#comparison">4. Model comparison 2026</a></li>
           <li><a href="#why-matters">5. Why size matters</a></li>
-          <li><a href="#limitations">6. Limitations & challenges</a></li>
+          <li><a href="#limitations">6. Limitations &amp; challenges</a></li>
           <li><a href="#optimization">7. Optimization strategies</a></li>
           <li><a href="#future">8. The future of context</a></li>
           <li><a href="#faq">9. FAQ</a></li>
@@ -1267,7 +785,7 @@
         <!-- QUICK ANSWER -->
         <div class="art-quick">
           <div class="quick-label"><span class="pulse-dot"></span> Quick Answer</div>
-          <p><strong>What is the context window in an LLM?</strong> The context window (or context length) is the maximum amount of text, measured in tokens, that a large language model can process and "remember" at one time. Think of it as the AI's working memory — it includes your prompt, any previous conversation, and the model's response. When you exceed the context window, the model literally cannot see or remember the earlier information. In 2026, leading models like Gemini 1.5 Pro offer context windows of 1-2 million tokens, while GPT-4o provides 128K tokens.</p>
+          <p><strong>What is the context window in an LLM?</strong> The context window (or context length) is the maximum amount of text, measured in tokens, that a large language model can process and "remember" at one time. Think of it as the AI's working memory — it includes your prompt, any previous conversation, and the model's response. When you exceed the context window, the model literally cannot see or remember the earlier information. In 2026, leading models like Gemini 1.5 Pro offer context windows of 1–2 million tokens, while GPT-4o provides 128K tokens.</p>
         </div>
 
         <!-- STAT ROW -->
@@ -1312,20 +830,14 @@
           </defs>
           <rect x="1" y="1" width="798" height="278" rx="22" fill="url(#cwb)" stroke="#2A3B5E" stroke-width="1.5"/>
           <text x="400" y="32" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="16" fill="#fff" text-anchor="middle">The Context Window: AI's Working Memory</text>
-          
-          <!-- Input Section -->
           <rect x="30" y="55" width="220" height="180" rx="14" fill="rgba(96,165,250,.12)" stroke="rgba(96,165,250,.35)" stroke-width="1.2"/>
           <text x="140" y="80" font-family="Arial" font-weight="700" font-size="13" fill="#60A5FA" text-anchor="middle">INPUT (Your Prompt)</text>
           <text x="140" y="105" font-family="Arial" font-size="11" fill="#9FB0D6" text-anchor="middle">System instructions</text>
           <text x="140" y="122" font-family="Arial" font-size="11" fill="#9FB0D6" text-anchor="middle">Conversation history</text>
           <text x="140" y="139" font-family="Arial" font-size="11" fill="#9FB0D6" text-anchor="middle">Current question</text>
-          <text x="140" y="165" font-family="Arial" font-size="10" fill="#9FB0D6" text-anchor="middle">~8,000-2,000,000 tokens</text>
+          <text x="140" y="165" font-family="Arial" font-size="10" fill="#9FB0D6" text-anchor="middle">~8,000–2,000,000 tokens</text>
           <text x="140" y="182" font-family="Arial" font-size="10" fill="#9FB0D6" text-anchor="middle">(varies by model)</text>
-          
-          <!-- Arrow -->
           <line x1="250" y1="145" x2="290" y2="145" stroke="#3A4D74" stroke-width="2.5" marker-end="url(#arrow)"/>
-          
-          <!-- Processing Section -->
           <rect x="290" y="55" width="220" height="180" rx="14" fill="rgba(139,92,246,.15)" stroke="rgba(139,92,246,.4)" stroke-width="1.2"/>
           <text x="400" y="80" font-family="Arial" font-weight="700" font-size="13" fill="#8B5CF6" text-anchor="middle">PROCESSING</text>
           <text x="400" y="110" font-family="Arial" font-size="11" fill="#9FB0D6" text-anchor="middle">Model analyzes ALL</text>
@@ -1333,11 +845,7 @@
           <text x="400" y="155" font-family="Arial" font-size="10" fill="#9FB0D6" text-anchor="middle">Self-attention mechanism</text>
           <text x="400" y="172" font-family="Arial" font-size="10" fill="#9FB0D6" text-anchor="middle">calculates relationships</text>
           <text x="400" y="189" font-family="Arial" font-size="10" fill="#9FB0D6" text-anchor="middle">between every token</text>
-          
-          <!-- Arrow -->
           <line x1="510" y1="145" x2="550" y2="145" stroke="#3A4D74" stroke-width="2.5" marker-end="url(#arrow)"/>
-          
-          <!-- Output Section -->
           <rect x="550" y="55" width="220" height="180" rx="14" fill="rgba(34,197,94,.12)" stroke="rgba(34,197,94,.35)" stroke-width="1.2"/>
           <text x="660" y="80" font-family="Arial" font-weight="700" font-size="13" fill="#22C55E" text-anchor="middle">OUTPUT (Response)</text>
           <text x="660" y="110" font-family="Arial" font-size="11" fill="#9FB0D6" text-anchor="middle">Generated answer</text>
@@ -1362,7 +870,7 @@
           <div class="concept-card cc1">
             <div class="concept-icon">📥</div>
             <h3>Tokenization</h3>
-            <p>Your text gets broken into tokens (roughly 3-4 characters each). A 1,000-word document becomes ~1,300 tokens.</p>
+            <p>Your text gets broken into tokens (roughly 3–4 characters each). A 1,000-word document becomes ~1,300 tokens.</p>
           </div>
           <div class="concept-card cc2">
             <div class="concept-icon">🧮</div>
@@ -1386,7 +894,7 @@
         <!-- SECTION 3 -->
         <h2 id="tokens"><span class="h2-txt">Understanding Tokens: The Currency of Context</span></h2>
 
-        <p>To truly grasp context windows, you need to understand tokens. A token is the basic unit of text that LLMs process — typically about 3-4 characters or roughly ¾ of a word.</p>
+        <p>To truly grasp context windows, you need to understand tokens. A token is the basic unit of text that LLMs process — typically about 3–4 characters or roughly ¾ of a word.</p>
 
         <p>Here's how tokens break down in practice:</p>
 
@@ -1399,36 +907,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="model-name">1 page (single-spaced)</td>
-              <td>~500 tokens</td>
-              <td>Standard document page</td>
-            </tr>
-            <tr>
-              <td class="model-name">Short email</td>
-              <td>~200 tokens</td>
-              <td>Quick professional message</td>
-            </tr>
-            <tr>
-              <td class="model-name">Blog article</td>
-              <td>~2,000 tokens</td>
-              <td>1,500-word post</td>
-            </tr>
-            <tr>
-              <td class="model-name">Chapter (book)</td>
-              <td>~5,000 tokens</td>
-              <td>4,000-word chapter</td>
-            </tr>
-            <tr>
-              <td class="model-name">Entire novel</td>
-              <td>~100,000 tokens</td>
-              <td>80,000-word book</td>
-            </tr>
-            <tr>
-              <td class="model-name">Code file</td>
-              <td>~3,000 tokens</td>
-              <td>Medium-sized script</td>
-            </tr>
+            <tr><td class="model-name">1 page (single-spaced)</td><td>~500 tokens</td><td>Standard document page</td></tr>
+            <tr><td class="model-name">Short email</td><td>~200 tokens</td><td>Quick professional message</td></tr>
+            <tr><td class="model-name">Blog article</td><td>~2,000 tokens</td><td>1,500-word post</td></tr>
+            <tr><td class="model-name">Chapter (book)</td><td>~5,000 tokens</td><td>4,000-word chapter</td></tr>
+            <tr><td class="model-name">Entire novel</td><td>~100,000 tokens</td><td>80,000-word book</td></tr>
+            <tr><td class="model-name">Code file</td><td>~3,000 tokens</td><td>Medium-sized script</td></tr>
           </tbody>
         </table>
 
@@ -1448,48 +932,20 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="model-name">Gemini 1.5 Pro / 2.5</td>
-              <td>1M - 2M tokens</td>
-              <td>Massive documents, entire codebases, book-length analysis</td>
-            </tr>
-            <tr>
-              <td class="model-name">Claude 3.5/3.7/Opus 4.1</td>
-              <td>200K tokens</td>
-              <td>Long conversations, detailed documents</td>
-            </tr>
-            <tr>
-              <td class="model-name">GPT-5</td>
-              <td>200K tokens</td>
-              <td>Research, long-form content, complex reasoning</td>
-            </tr>
-            <tr>
-              <td class="model-name">GPT-4o</td>
-              <td>128K tokens</td>
-              <td>General use, moderate-length documents</td>
-            </tr>
-            <tr>
-              <td class="model-name">Llama 3.1</td>
-              <td>128K tokens</td>
-              <td>Open-source applications</td>
-            </tr>
-            <tr>
-              <td class="model-name">Claude 3 Haiku</td>
-              <td>200K tokens</td>
-              <td>Fast processing of long texts</td>
-            </tr>
-            <tr>
-              <td class="model-name">ChatGPT (Free)</td>
-              <td>8K - 16K tokens</td>
-              <td>Basic conversations</td>
-            </tr>
+            <tr><td class="model-name">Gemini 1.5 Pro / 2.5</td><td>1M – 2M tokens</td><td>Massive documents, entire codebases, book-length analysis</td></tr>
+            <tr><td class="model-name">Claude 3.5 / 3.7 / Opus 4</td><td>200K tokens</td><td>Long conversations, detailed documents</td></tr>
+            <tr><td class="model-name">GPT-5</td><td>200K tokens</td><td>Research, long-form content, complex reasoning</td></tr>
+            <tr><td class="model-name">GPT-4o</td><td>128K tokens</td><td>General use, moderate-length documents</td></tr>
+            <tr><td class="model-name">Llama 3.1</td><td>128K tokens</td><td>Open-source applications</td></tr>
+            <tr><td class="model-name">Claude 3 Haiku</td><td>200K tokens</td><td>Fast processing of long texts</td></tr>
+            <tr><td class="model-name">ChatGPT (Free)</td><td>8K – 16K tokens</td><td>Basic conversations</td></tr>
           </tbody>
         </table>
 
         <p>Want to see how these models perform in real-world tasks? Read our comparison of <a href="https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html">GPT vs Claude differences</a> to understand which might be best for your needs.</p>
 
         <div class="art-pull">
-          Gemini offers unmatched long-document capacity with its 1-2 million token window, while GPT‑5 delivers the highest scores and reduced hallucinations but has a smaller context window.
+          Gemini offers unmatched long-document capacity with its 1–2 million token window, while GPT-5 delivers the highest scores and reduced hallucinations but has a smaller context window.
         </div>
 
         <!-- SECTION 5 -->
@@ -1523,7 +979,7 @@
         <p>However, there's a catch: <strong>bigger isn't always better</strong>. The context window is a design constraint, not a problem to wish away. Teams building the most reliable AI agents treat context as a resource to manage carefully, not just maximize.</p>
 
         <!-- SECTION 6 -->
-        <h2 id="limitations"><span class="h2-txt">The Hidden Limitations & Challenges</span></h2>
+        <h2 id="limitations"><span class="h2-txt">The Hidden Limitations &amp; Challenges</span></h2>
 
         <p>Here's what most people don't realize about context windows:</p>
 
@@ -1531,10 +987,10 @@
         <p>Just because a model <em>can</em> process 1 million tokens doesn't mean it <em>effectively uses</em> all of them. Research shows that models often struggle to recall information from the middle of very long contexts — a phenomenon called the "lost in the middle" problem. The maximum effective context window (MECW) is often significantly smaller than the advertised limit.</p>
 
         <h3>2. Cost Scales with Context</h3>
-        <p>Every LLM call re-processes the entire context window, meaning a 50,000-token context does not cost less than a 10,000-token context just because you're using less of the available space. You pay for what you include, not what you could include.</p>
+        <p>Every LLM call re-processes the entire context window, meaning a 50,000-token context costs proportionally more than a 10,000-token context. You pay for what you include, not what you could include.</p>
 
         <h3>3. Speed Decreases</h3>
-        <p>Larger contexts take longer to process. A 1 million token context might take 30-60 seconds just to analyze before the model generates its first token.</p>
+        <p>Larger contexts take longer to process. A 1 million token context might take 30–60 seconds just to analyze before the model generates its first token.</p>
 
         <h3>4. Attention Dilution</h3>
         <p>With more tokens to attend to, the model's attention gets spread thinner. Critical details might get lost in the noise of irrelevant information.</p>
@@ -1605,7 +1061,7 @@
 
         <details class="faq-item">
           <summary>Which LLM has the largest context window in 2026?</summary>
-          <p>Gemini 1.5 Pro and newer versions currently lead with context windows of 1-2 million tokens, enough to process entire books or hundreds of thousands of words. Claude 3.5/3.7 and Opus 4.1 offer 200K tokens, while GPT-4o and GPT-5 provide 128K-200K tokens. However, having the largest window doesn't always mean the best performance — effective context usage matters more than raw size.</p>
+          <p>Gemini 1.5 Pro and newer versions currently lead with context windows of 1–2 million tokens, enough to process entire books or hundreds of thousands of words. Claude 3.5/3.7 and Opus 4 offer 200K tokens, while GPT-4o and GPT-5 provide 128K–200K tokens. However, having the largest window doesn't always mean the best performance — effective context usage matters more than raw size.</p>
         </details>
 
         <details class="faq-item">
@@ -1620,7 +1076,7 @@
 
         <details class="faq-item">
           <summary>How many words is 100,000 tokens?</summary>
-          <p>Roughly 75,000 words, or about the length of a typical novel. As a rule of thumb, 1 token equals about ¾ of a word, or 3-4 characters. So 100,000 tokens would be approximately 130-150 pages of single-spaced text. This is why context windows measured in tokens can seem abstract — they represent significantly more text than most people realize.</p>
+          <p>Roughly 75,000 words, or about the length of a typical novel. As a rule of thumb, 1 token equals about ¾ of a word, or 3–4 characters. So 100,000 tokens would be approximately 130–150 pages of single-spaced text. This is why context windows measured in tokens can seem abstract — they represent significantly more text than most people realize.</p>
         </details>
 
         <details class="faq-item">
@@ -1673,12 +1129,9 @@
   <footer role="contentinfo">
     <div class="wrap">
       <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding:52px 0 0;flex-wrap:wrap" class="footer-grid">
-
-        <!-- Brand -->
         <div>
           <div class="f-logo" style="margin-bottom:14px;">NyvoraAI</div>
           <p style="color:#9FB0D6;font-size:.9rem;line-height:1.7;max-width:280px;">Your trusted source for original AI news, plain-English explainers, and practical insights on artificial intelligence. Built for the AI generation.</p>
-          <!-- Social icons -->
           <div style="display:flex;gap:10px;margin-top:18px;">
             <a class="f-social-link" href="https://x.com/nyvoraai_co" aria-label="Follow NyvoraAI on X" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -1694,8 +1147,6 @@
             </a>
           </div>
         </div>
-
-        <!-- Topics -->
         <div class="f-col">
           <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:18px;font-size:.95rem;">Topics</h4>
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
@@ -1706,8 +1157,6 @@
             <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">AI Explainers</a></li>
           </ul>
         </div>
-
-        <!-- Company -->
         <div class="f-col">
           <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:18px;font-size:.95rem;">Company</h4>
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
@@ -1716,8 +1165,6 @@
             <li><a href="../contact.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">Write for Us</a></li>
           </ul>
         </div>
-
-        <!-- Contact -->
         <div class="f-col">
           <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:18px;font-size:.95rem;">Contact</h4>
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
@@ -1725,9 +1172,7 @@
             <li><a href="../contact.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;transition:color .2s;" onmouseover="this.style.color='#2DD4E0'" onmouseout="this.style.color='#9FB0D6'">Send a message</a></li>
           </ul>
         </div>
-
-      </div><!-- /footer-grid -->
-
+      </div>
       <div class="f-bottom-bar">
         <span>© 2026 NyvoraAI. All rights reserved.</span>
         <div class="f-made">Made with <span class="f-heart">❤️</span> for the AI generation</div>
@@ -1756,7 +1201,6 @@
     const popupClose = document.getElementById('popupClose');
     const popupForm = document.getElementById('popupForm');
     const popupSuccess = document.getElementById('popupSuccess');
-
     let popupShown = false;
     window.addEventListener('scroll', () => {
       if (!popupShown && window.scrollY > 600) {
@@ -1764,28 +1208,18 @@
         setTimeout(() => popup.classList.add('show'), 400);
       }
     }, { passive: true });
-
     popupClose.addEventListener('click', () => {
       popup.style.transform = 'translateY(120%)';
       popup.style.opacity = '0';
     });
-
     popupForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       try {
-        const data = new FormData(popupForm);
-        await fetch(popupForm.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
+        await fetch(popupForm.action, { method:'POST', body:new FormData(popupForm), headers:{'Accept':'application/json'} });
       } catch(err) {}
       popupForm.style.display = 'none';
       popupSuccess.classList.add('show');
-      setTimeout(() => {
-        popup.style.transform = 'translateY(120%)';
-        popup.style.opacity = '0';
-      }, 3000);
+      setTimeout(() => { popup.style.transform = 'translateY(120%)'; popup.style.opacity = '0'; }, 3000);
     });
 
     /* ===== NEWSLETTER FORM ===== */
@@ -1794,12 +1228,7 @@
     nlForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       try {
-        const data = new FormData(nlForm);
-        await fetch(nlForm.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
+        await fetch(nlForm.action, { method:'POST', body:new FormData(nlForm), headers:{'Accept':'application/json'} });
       } catch(err) {}
       nlForm.style.display = 'none';
       nlSuccess.style.display = 'block';
@@ -1809,14 +1238,32 @@
     function react(btn, emoji) {
       document.querySelectorAll('.react-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      if (emoji === '👍') {
-        const rc = document.getElementById('rc1');
-        rc.textContent = parseInt(rc.textContent) + 1;
-      } else if (emoji === '🔥') {
-        const rc = document.getElementById('rc2');
-        rc.textContent = parseInt(rc.textContent) + 1;
-      }
+      if (emoji === '👍') { const rc = document.getElementById('rc1'); rc.textContent = parseInt(rc.textContent) + 1; }
+      else if (emoji === '🔥') { const rc = document.getElementById('rc2'); rc.textContent = parseInt(rc.textContent) + 1; }
     }
+
+    /* ===== STICKY SIDE TOC — show/hide + active section highlight ===== */
+    const sideToc = document.getElementById('sideToc');
+    const sideTocLinks = document.querySelectorAll('.side-toc-link');
+    const sections = document.querySelectorAll('h2[id]');
+
+    // Highlight active section on scroll
+    const tocObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          sideTocLinks.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`.side-toc-link[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+
+    sections.forEach(s => tocObserver.observe(s));
+
+    // Show side TOC after scrolling past the inline TOC block
+    window.addEventListener('scroll', () => {
+      sideToc.classList.toggle('visible', window.scrollY > 500);
+    }, { passive: true });
   </script>
 </body>
 </html>
