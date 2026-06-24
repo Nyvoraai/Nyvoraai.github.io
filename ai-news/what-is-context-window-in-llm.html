@@ -325,6 +325,8 @@
 
     /* SIDE POPUP */
     #side-popup{position:fixed;bottom:24px;right:24px;z-index:9990;width:min(320px,calc(100vw - 40px));background:linear-gradient(135deg,#1B2A4A,#0F1C38);border:1px solid rgba(45,212,224,.35);border-radius:20px;padding:22px 22px 20px;box-shadow:0 20px 60px rgba(0,0,0,.6);transform:translateY(120%);opacity:0;transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .4s ease;}
+    /* Hide popup on desktop when TOC is visible to prevent overlap */
+    @media(min-width:1321px){.side-toc.visible ~ #side-popup,.side-toc.visible + main #side-popup,#side-popup.toc-active{display:none !important;}}
     #side-popup.show{transform:translateY(0);opacity:1;}
     #side-popup::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;border-radius:20px 20px 0 0;background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber));background-size:200% 100%;animation:rainbowSlide 3s linear infinite;}
     .popup-close{position:absolute;top:10px;right:14px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:1.2rem;line-height:1;padding:4px;transition:color .2s;}
@@ -868,9 +870,18 @@
     const popupSuccess = document.getElementById('popupSuccess');
     let popupShown = false;
     window.addEventListener('scroll', () => {
+      const tocVisible = sideToc.classList.contains('visible');
+      const isMobile = window.innerWidth <= 1320;
       if (!popupShown && window.scrollY > 600) {
         popupShown = true;
-        setTimeout(() => popup.classList.add('show'), 400);
+        // Only show popup if TOC is not visible (mobile) or on mobile
+        if (!tocVisible || isMobile) {
+          setTimeout(() => popup.classList.add('show'), 400);
+        }
+      }
+      // Hide popup if TOC becomes visible on desktop
+      if (tocVisible && !isMobile && popup.classList.contains('show')) {
+        popup.classList.remove('show');
       }
     }, { passive: true });
     popupClose.addEventListener('click', () => {
