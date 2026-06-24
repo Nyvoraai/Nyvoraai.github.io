@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>How Does AI Learn From Human Feedback? 2026 Guide</title>
+<meta name="description" content="Discover how AI learns from human feedback via RLHF and DPO. Explore the complete guide to AI alignment, safety, and model training in 2026."/>
+<meta name="keywords" content="how does AI learn from human feedback, RLHF, AI alignment, Direct Preference Optimization, DPO, AI training, human feedback AI"/>
+<meta name="author" content="NyvoraAI Team"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#EFF1EA"/>
+<link rel="icon" type="image/svg+xml" href="https://nyvoraai.github.io/logo.svg"/>
+<link rel="canonical" href="https://nyvoraai.github.io/ai-news/how-does-ai-learn-from-human-feedback.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How Does AI Learn From Human Feedback? 2026 Guide"/>
+<meta property="og:description" content="Discover how AI learns from human feedback via RLHF and DPO. Explore the complete guide to AI alignment, safety, and model training in 2026."/>
+<meta property="og:url" content="https://nyvoraai.github.io/ai-news/how-does-ai-learn-from-human-feedback.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/ai-human-feedback-thumbnail.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-06-24T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-06-24T00:00:00Z"/>
+<meta property="article:section" content="AI News"/>
+<meta property="article:tag" content="AI Alignment, RLHF, DPO, AI Training, Human Feedback"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:creator" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="How Does AI Learn From Human Feedback? 2026 Guide"/>
+<meta name="twitter:description" content="Discover how AI learns from human feedback via RLHF and DPO. Explore the complete guide to AI alignment, safety, and model training in 2026."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/ai-human-feedback-thumbnail.jpg"/>
+
+<!-- Schema: Organization -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":"https://nyvoraai.github.io/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai"]}
+</script>
+
+<!-- Schema: WebSite -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"NyvoraAI","url":"https://nyvoraai.github.io","publisher":{"@type":"Organization","name":"NyvoraAI"}}
+</script>
+
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.github.io/ai-news.html"},{"@type":"ListItem","position":3,"name":"AI Human Feedback","item":"https://nyvoraai.github.io/ai-news/how-does-ai-learn-from-human-feedback.html"}]}
+</script>
+
+<!-- Schema: Article -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How Does AI Learn From Human Feedback? The Complete 2026 Guide","description":"Discover how AI learns from human feedback via RLHF and DPO. Explore the complete guide to AI alignment, safety, and model training in 2026.","image":"https://nyvoraai.github.io/assets/ai-human-feedback-thumbnail.jpg","datePublished":"2026-06-24","dateModified":"2026-06-24","inLanguage":"en-US","author":{"@type":"Organization","name":"NyvoraAI Team","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/ai-news/how-does-ai-learn-from-human-feedback.html"},"articleSection":"AI News","keywords":"how does AI learn from human feedback, RLHF, AI alignment, DPO","timeRequired":"PT15M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}
+</script>
+
+<!-- Schema: FAQ -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does AI learn from human feedback?","acceptedAnswer":{"@type":"Answer","text":"AI learns from human feedback primarily through a process called Reinforcement Learning from Human Feedback (RLHF). Humans rank different AI responses from best to worst. This data trains a 'Reward Model' that predicts human preferences. Finally, the AI uses reinforcement learning to optimize its outputs to maximize the reward score, effectively learning to mimic human preferences."}},{"@type":"Question","name":"What is the difference between RLHF and DPO?","acceptedAnswer":{"@type":"Answer","text":"RLHF (Reinforcement Learning from Human Feedback) requires training a separate Reward Model and using complex reinforcement learning algorithms like PPO to update the AI. DPO (Direct Preference Optimization) skips the Reward Model entirely, using the human preference data to directly update the AI's policy in a single, more stable training step."}},{"@type":"Question","name":"Why is human feedback necessary for AI?","acceptedAnswer":{"@type":"Answer","text":"Raw AI models are trained to predict the next word based on internet data, which means they can generate toxic, biased, or completely nonsensical content. Human feedback is necessary to 'align' the AI with human values, ensuring it is helpful, honest, and harmless (the 3 H's of AI alignment) before it is released to the public."}},{"@type":"Question","name":"Who provides the human feedback for AI training?","acceptedAnswer":{"@type":"Answer","text":"Human feedback is provided by specialized data annotators, contractors, and sometimes domain experts like programmers or scientists. These individuals follow strict guidelines to rank AI responses, and advanced models also use 'red teamers' who actively try to break the AI to identify safety flaws."}}]}
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#EFF1EA;--bg-deep:#E5E9DC;--paper:#FFFFFF;--paper-warm:#FBF8F1;--you-bg:#FFF3EE;
+  --ink:#1C2321;--ink-soft:#4B5650;--muted:#7C8579;--line:#DCE0D2;--line-soft:#E8EBE0;
+  --coral:#FF6B4A;--coral-dp:#B8431F;--coral-soft:#FFE1D6;
+  --teal:#146B5C;--teal-dp:#0E4F45;--teal-soft:#DCEEE8;
+  --gold:#E89B2D;--gold-soft:#FCEACB;
+  --danger:#DC2626;--danger-soft:#FEE2E2;
+  --warning:#F59E0B;--warning-soft:#FEF3C7;
+  --purple:#8B5CF6;--purple-soft:#EDE9FE;
+  --radius:18px;--radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,-apple-system,sans-serif;
+  --font-body:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+  --shadow:0 1px 2px rgba(28,35,33,.04),0 8px 24px rgba(28,35,33,.06);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:18px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--teal-dp);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,.font-display{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+/* AMBIENT BG */
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;background:var(--bg)}
+.aura{position:absolute;border-radius:50%;filter:blur(85px);will-change:transform;animation:auraFloat ease-in-out infinite}
+.aura-1{width:560px;height:560px;background:radial-gradient(circle,var(--coral),transparent 68%);top:-140px;left:-120px;opacity:.22;animation-duration:17s}
+.aura-2{width:500px;height:500px;background:radial-gradient(circle,var(--teal),transparent 68%);bottom:-130px;right:-100px;opacity:.20;animation-duration:21s;animation-delay:-6s}
+.aura-3{width:420px;height:420px;background:radial-gradient(circle,var(--gold),transparent 68%);top:30%;left:58%;opacity:.16;animation-duration:14s;animation-delay:-3s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.12)}66%{transform:translate(-35px,30px) scale(.92)}}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/></svg>")}
+.bubble-field{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fbubble{position:absolute;border:1.5px solid;opacity:0;border-radius:14px 14px 14px 3px;animation:bubbleDrift linear infinite}
+@keyframes bubbleDrift{0%{transform:translateY(10vh) rotate(-4deg) scale(.85)}10%{opacity:.24}50%{transform:translateY(-45vh) rotate(2deg) scale(1.04)}85%{opacity:.16}100%{transform:translateY(-100vh) rotate(5deg) scale(1.1);opacity:0}}
+@media(prefers-reduced-motion:reduce){.fbubble,.aura{animation:none;display:none}html{scroll-behavior:auto}}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:21px;font-weight:700;letter-spacing:-.02em;color:var(--ink);display:flex;align-items:center;gap:9px}
+.nav-logo span{color:var(--teal)}
+.logo-img{height:30px;width:30px;border-radius:8px;object-fit:cover;display:block}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{color:var(--ink-soft);font-size:14.5px;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-social{display:flex;gap:6px}
+.nav-soc{color:var(--ink-soft);width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:8px;transition:background .2s,color .2s}
+.nav-soc:hover{background:var(--line-soft);color:var(--ink);text-decoration:none}
+.icon{width:17px;height:17px;flex-shrink:0;display:block}
+.icon-sm{width:15px;height:15px}
+.nav-cta{background:var(--coral);color:#fff;padding:9px 18px;border-radius:9px;font-size:13.5px;font-weight:700;transition:opacity .2s,transform .15s;box-shadow:0 4px 14px rgba(255,107,74,.28)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);text-decoration:none}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--ink-soft);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:20px 24px;flex-direction:column;gap:16px;z-index:199}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--ink);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
+
+/* PROGRESS */
+#progress{position:fixed;top:64px;left:0;width:0;height:3px;z-index:300;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal));transition:width .1s;border-radius:0 3px 3px 0}
+
+/* BREADCRUMB */
+.breadcrumb{max-width:860px;margin:26px auto 0;padding:0 24px;font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--muted)}.breadcrumb a:hover{color:var(--teal-dp)}.bc-sep{color:var(--line)}
+
+/* ARTICLE HEADER */
+.article-hdr{max-width:860px;margin:22px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;background:var(--teal-soft);color:var(--teal-dp);border:1px solid rgba(20,107,92,.18);font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:5px 13px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-read{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.25)}
+.badge-date{background:var(--coral-soft);color:var(--coral-dp);border-color:rgba(255,107,74,.22)}
+.badge-align{background:var(--purple-soft);color:var(--purple);border-color:rgba(139,92,246,.25)}
+.article-title{font-size:clamp(30px,5.2vw,48px);font-weight:700;line-height:1.18;color:var(--ink);margin-bottom:18px;letter-spacing:-.025em;font-family:var(--font-display)}
+.title-underline{background:linear-gradient(120deg,transparent 0%,var(--purple-soft) 0%);background-size:100% 38%;background-repeat:no-repeat;background-position:0 88%;padding:0 2px}
+.article-intro{font-size:19.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:24px}
+.article-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);padding-bottom:24px;border-bottom:1px solid var(--line)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{position:relative;overflow:hidden;width:36px;height:36px;border-radius:50%;flex-shrink:0;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;font-family:var(--font-display)}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--ink-soft)}.meta-sep{color:var(--line)}
+
+/* HERO IMAGE */
+.hero-wrap{max-width:860px;margin:30px auto;padding:0 24px}
+.hero-img-box{width:100%;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:var(--shadow)}
+.hero-img-box img{display:block;width:100%;height:auto;object-fit:cover}
+
+/* TOC */
+.toc-box{max-width:860px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow)}
+.toc-title{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--ink-soft);font-size:14.5px;transition:color .2s;display:flex;gap:8px}
+.toc a::before{content:counter(tocnum);font-family:var(--font-mono);color:var(--purple);font-weight:700;font-size:12.5px;min-width:16px}
+.toc a:hover{color:var(--purple);text-decoration:none}
+
+/* LAYOUT */
+.layout{max-width:860px;margin:0 auto;padding:36px 24px 80px}
+
+/* PROSE */
+.prose h2{font-size:27px;font-weight:700;color:var(--ink);margin:54px 0 18px;letter-spacing:-.02em;scroll-margin-top:90px;display:flex;align-items:baseline;gap:10px}
+.prose h2 .h2-mark{font-family:var(--font-mono);font-size:14px;color:var(--purple);font-weight:700}
+.prose h3{font-size:18.5px;font-weight:700;color:var(--ink);margin:26px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--ink)}
+.prose strong{color:var(--ink);font-weight:700}
+.prose ul,.prose ol{margin:0 0 22px 22px}
+.prose li{margin-bottom:9px;color:var(--ink)}
+
+/* INLINE LINK STYLE */
+.prose a,.faq-body a{color:var(--teal-dp);border-bottom:1px solid rgba(14,79,69,.25);transition:border-color .2s,color .2s}
+.prose a:hover,.faq-body a:hover{color:var(--coral);border-color:var(--coral);text-decoration:none}
+
+/* KEY TAKEAWAYS */
+.key-takeaways{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--purple);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow)}
+.kt-title{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--purple);margin-bottom:12px}
+.key-takeaways ul{margin:0;list-style:none}
+.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15.5px;color:var(--ink-soft)}
+.key-takeaways li:last-child{margin-bottom:0}
+.key-takeaways li::before{content:'🧠';flex-shrink:0;font-weight:700}
+
+/* CHAT BUBBLES */
+.bubble{display:flex;gap:12px;margin:30px 0;align-items:flex-start}
+.bubble-avatar{width:36px;height:36px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:16px;margin-top:2px}
+.bubble-ai .bubble-avatar{background:var(--teal-soft)}
+.bubble-gold .bubble-avatar{background:var(--gold-soft)}
+.bubble-card{background:var(--paper-warm);border:1px solid var(--line);border-radius:4px 18px 18px 18px;padding:18px 22px;box-shadow:var(--shadow);flex:1}
+.bubble-label{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-dp);margin-bottom:7px;font-weight:700}
+.bubble-gold .bubble-label{color:#8A5A12}
+.bubble-card p{margin:0;font-size:15.5px;color:var(--ink)}
+.bubble-you{flex-direction:row-reverse}
+.bubble-you .bubble-avatar{background:var(--coral-soft)}
+.bubble-you .bubble-card{background:var(--you-bg);border-radius:18px 4px 18px 18px}
+.bubble-you .bubble-label{color:var(--coral-dp);text-align:right}
+
+/* RANKING UI */
+.rank-ui{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:30px 0;box-shadow:var(--shadow)}
+.rank-header{display:flex;align-items:center;gap:10px;margin-bottom:16px;font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase}
+.rank-prompt{background:var(--bg-deep);padding:14px 18px;border-radius:10px;margin-bottom:20px;font-size:15px;color:var(--ink)}
+.rank-responses{display:flex;flex-direction:column;gap:12px}
+.rank-opt{display:flex;align-items:center;gap:14px;padding:16px;background:var(--paper-warm);border:2px solid var(--line);border-radius:12px;cursor:pointer;transition:all .2s}
+.rank-opt:hover{border-color:var(--purple);background:var(--paper)}
+.rank-opt.selected{border-color:var(--purple);background:var(--purple-soft)}
+.rank-radio{width:20px;height:20px;border-radius:50%;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s}
+.rank-opt.selected .rank-radio{border-color:var(--purple);background:var(--purple)}
+.rank-opt.selected .rank-radio::after{content:'';width:8px;height:8px;background:#fff;border-radius:50%}
+.rank-text{flex:1;font-size:14.5px;color:var(--ink)}
+.rank-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;background:var(--teal-soft);color:var(--teal-dp);font-family:var(--font-mono)}
+
+/* DIAGRAM */
+.diagram-wrap{margin:36px 0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:var(--shadow)}
+.diagram-header{background:var(--bg-deep);padding:13px 20px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--line)}
+.diagram-clip{font-size:13px}
+.diagram-title{font-size:12px;font-weight:600;color:var(--ink-soft);letter-spacing:.02em;font-family:var(--font-mono)}
+.diagram-body{padding:34px 20px;min-height:200px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.flow-animated{display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center;position:relative}
+.flow-node-anim{display:flex;flex-direction:column;align-items:center;gap:8px;position:relative;z-index:2}
+.flow-circle-anim{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;background:var(--paper-warm);border:2px solid var(--line);transition:all .3s;position:relative;overflow:hidden}
+.flow-circle-anim::before{content:'';position:absolute;inset:0;border-radius:50%;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,.4) 100%)}
+.flow-circle-anim:hover{transform:scale(1.1);border-color:var(--purple);box-shadow:0 8px 24px rgba(139,92,246,.25)}
+.fc-purple{border-color:rgba(139,92,246,.5);animation:pulseBorder 3s ease-in-out infinite}
+.fc-teal{border-color:rgba(20,107,92,.5);animation:pulseBorder 3s ease-in-out infinite 0.5s}
+.fc-gold{border-color:rgba(232,155,45,.5);animation:pulseBorder 3s ease-in-out infinite 1s}
+@keyframes pulseBorder{0%,100%{box-shadow:0 0 0 0 rgba(139,92,246,0)}50%{box-shadow:0 0 0 12px rgba(139,92,246,0)}}
+.flow-label-anim{font-size:12px;color:var(--muted);text-align:center;font-weight:600;max-width:90px;font-family:var(--font-mono)}
+.flow-arrow-anim{font-size:20px;color:var(--line);padding:0 12px;margin-bottom:35px;animation:arrowMove 2s ease-in-out infinite}
+@keyframes arrowMove{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+
+/* STAT BOXES */
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}
+.stat-box{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-align:center;transition:all .3s}
+.stat-box:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--purple)}
+.stat-number{font-size:36px;font-weight:700;color:var(--purple);font-family:var(--font-display);line-height:1;margin-bottom:6px}
+.stat-label{font-size:13px;color:var(--muted);font-family:var(--font-mono)}
+.stat-source{font-size:11px;color:var(--muted);font-family:var(--font-mono);margin-top:6px;opacity:.8}
+
+/* TABLE */
+.tbl-wrap{overflow-x:auto;margin:24px 0;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow)}
+.comp-table{width:100%;border-collapse:collapse;font-size:15px;min-width:480px;background:var(--paper)}
+.comp-table thead tr{background:var(--bg-deep)}
+.comp-table th{text-align:left;padding:13px 18px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);border-bottom:1px solid var(--line);font-family:var(--font-mono)}
+.comp-table td{padding:14px 18px;border-bottom:1px solid var(--line-soft);vertical-align:middle}
+.comp-table tr:last-child td{border-bottom:none}
+.comp-table tr:hover td{background:var(--paper-warm)}
+.check{color:var(--teal);font-weight:700}.cross{color:var(--danger);font-weight:700}
+
+/* QUIZ */
+.quiz-box{background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);padding:28px;margin:32px 0}
+.quiz-title{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:20px;font-family:var(--font-display);display:flex;align-items:center;gap:10px}
+.quiz-question{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:16px}
+.quiz-options{display:flex;flex-direction:column;gap:10px}
+.quiz-option{display:flex;align-items:center;gap:12px;padding:14px 18px;background:var(--bg);border:2px solid var(--line);border-radius:10px;cursor:pointer;transition:all .2s}
+.quiz-option:hover{border-color:var(--purple);background:var(--paper)}
+.quiz-option input[type="radio"]{width:18px;height:18px;accent-color:var(--purple);cursor:pointer}
+.quiz-feedback{margin-top:16px;padding:14px;border-radius:10px;font-size:14px;display:none}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:var(--teal-soft);color:var(--teal-dp);border:1px solid var(--teal)}
+.quiz-feedback.incorrect{background:var(--danger-soft);color:var(--danger);border:1px solid var(--danger)}
+
+/* FAQ */
+.faq{margin:16px 0}
+details{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--purple)}
+summary{padding:18px 22px;cursor:pointer;font-weight:600;font-size:16px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--purple);font-size:22px;font-weight:300;transition:transform .3s;flex-shrink:0}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 22px 18px;color:var(--ink-soft);font-size:15px;line-height:1.7}
+
+/* AUTHOR BOX */
+.author-box{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin:48px 0 0}
+.author-box .meta-avatar{width:48px;height:48px;font-size:17px}
+.author-box h3{font-size:15px;font-family:var(--font-display);margin-bottom:4px;color:var(--ink)}
+.author-box p{font-size:14px;color:var(--muted);margin:0;line-height:1.6}
+
+/* SHARE */
+.share-section{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:32px 0 0;text-align:center}
+.share-title{font-size:15.5px;font-weight:700;color:var(--ink);margin-bottom:16px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--paper);color:var(--ink-soft)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--purple);color:var(--ink)}
+
+/* NEWSLETTER */
+.newsletter{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:44px;margin:56px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal))}
+.newsletter h2{font-size:25px;font-weight:700;color:var(--ink);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--muted);margin-bottom:24px;font-size:15.5px}
+.nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 16px;color:var(--ink);font-size:14px;outline:none;transition:border-color .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--muted)}.nl-input:focus{border-color:var(--purple)}
+.nl-btn{background:var(--purple);color:#fff;padding:13px 22px;border-radius:10px;border:none;cursor:pointer;font-size:14px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s;box-shadow:0 4px 16px rgba(139,92,246,.28)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px)}
+.nl-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+.nl-social{display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;padding:9px 16px;border-radius:10px;border:1px solid var(--line);color:var(--ink-soft);transition:all .2s}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--purple);color:var(--ink)}
+
+/* RELATED */
+.related{margin:48px 0 0}
+.related-title{font-size:19px;font-weight:700;color:var(--ink);margin-bottom:20px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rel-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px;transition:border-color .2s,transform .2s;cursor:pointer;display:block}
+.rel-card:hover{border-color:var(--purple);transform:translateY(-3px);text-decoration:none;box-shadow:var(--shadow)}
+.rel-tag{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--purple);margin-bottom:8px;font-family:var(--font-mono)}
+.rel-title{font-size:14px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:8px;font-family:var(--font-display)}
+.rel-read{font-size:12px;color:var(--muted)}
+
+/* POPUP — FIXED */
+.popup{position:fixed;bottom:30px;left:30px;background:var(--paper);border:2px solid var(--purple);border-radius:var(--radius);padding:22px;max-width:320px;box-shadow:0 10px 40px rgba(139,92,246,.2);z-index:1000;opacity:0;transform:translateX(-120%);transition:opacity .45s ease,transform .45s ease;pointer-events:none}
+.popup.show{opacity:1;transform:translateX(0);pointer-events:all}
+.popup.hide{opacity:0;transform:translateX(-120%);pointer-events:none}
+.popup-close{position:absolute;top:10px;right:12px;background:none;border:none;font-size:22px;cursor:pointer;color:var(--muted);transition:color .2s;line-height:1}
+.popup-close:hover{color:var(--purple)}
+.popup-icon{font-size:32px;margin-bottom:10px}
+.popup h4{font-family:var(--font-display);font-size:16px;color:var(--ink);margin-bottom:8px}
+.popup p{font-size:14px;color:var(--ink-soft);margin-bottom:12px;line-height:1.5}
+.popup-email-input{width:100%;padding:9px 10px;margin-bottom:8px;border:1px solid var(--line);border-radius:8px;font-family:var(--font-body);font-size:14px;outline:none;background:var(--bg);color:var(--ink);transition:border-color .2s}
+.popup-email-input:focus{border-color:var(--purple)}
+.popup-btn{background:var(--purple);color:#fff;padding:9px 18px;border:none;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;transition:opacity .2s;width:100%}
+.popup-btn:hover{opacity:.88}
+.popup-success{display:none;color:var(--teal-dp);font-size:13px;margin-top:10px;font-weight:600;text-align:center}
+@media(max-width:768px){
+  .popup{left:50%;transform:translateX(-50%) translateY(120%);bottom:20px;max-width:90%}
+  .popup.show{transform:translateX(-50%) translateY(0)}
+  .popup.hide{transform:translateX(-50%) translateY(120%)}
+}
+
+/* FOOTER */
+footer{background:var(--paper);border-top:1px solid var(--line);padding:60px 24px 32px;position:relative;z-index:1;overflow:hidden}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal),var(--purple),var(--danger));background-size:300% 100%;animation:footerGlow 5s ease-in-out infinite}
+@keyframes footerGlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.footer-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;position:relative;z-index:1}
+.footer-logo{font-size:21px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:9px;color:var(--ink);font-family:var(--font-display)}
+.footer-logo span{color:var(--teal)}
+.footer-brand p{color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:20px}
+.footer-social{display:flex;gap:10px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:7px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--ink-soft);transition:all .3s;position:relative;overflow:hidden}
+.fs-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--purple),var(--coral));transform:translateY(100%);transition:transform .3s;z-index:-1}
+.fs-btn:hover{color:#fff;border-color:var(--purple);transform:translateY(-3px);text-decoration:none}
+.fs-btn:hover::before{transform:translateY(0)}
+.footer-col h4{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);margin-bottom:16px;font-family:var(--font-mono)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:var(--muted);font-size:14px;transition:color .2s,transform .2s;display:inline-block}
+.footer-col a:hover{color:var(--purple);transform:translateX(4px);text-decoration:none}
+.footer-bottom{max-width:1160px;margin:44px auto 0;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);flex-wrap:wrap;gap:10px;position:relative;z-index:1}
+.footer-bottom-links{display:flex;gap:20px}
+.footer-bottom-links a{color:var(--muted);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--ink);text-decoration:none}
+
+/* BACK TO TOP */
+#back-top{position:fixed;bottom:28px;right:28px;background:var(--purple);color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:var(--shadow);z-index:200}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.08) translateY(-2px);background:var(--coral)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media(max-width:900px){
+  .stat-grid{grid-template-columns:1fr}
+  .related-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-social,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .related-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .flow-animated{gap:8px}
+  .flow-arrow-anim{padding:0 6px;font-size:16px;margin-bottom:25px}
+  .flow-circle-anim{width:56px;height:56px;font-size:20px}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .bubble-card,.bubble-you .bubble-card{max-width:100%}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- SVG ICON SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.15" fill="currentColor"/></symbol>
+<symbol id="icon-facebook" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 8.6h1.4V6h-1.9c-1.9 0-2.9 1.15-2.9 3v1.5H8.7V13h1.9v6.3h2.4V13h1.7l.3-2.5h-2V9.4c0-.5.2-.8.9-.8z" fill="currentColor"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5.2 4.8l14 14.4M19.2 4.8L5.2 19.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+<symbol id="icon-youtube" viewBox="0 0 24 24"><rect x="2.3" y="6" width="19.4" height="12" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.3 9.4l5.2 2.6-5.2 2.6z" fill="currentColor"/></symbol>
+</defs>
+</svg>
+
+<!-- AMBIENT BACKGROUND -->
+<div class="bg-canvas">
+  <div class="aura aura-1"></div>
+  <div class="aura aura-2"></div>
+  <div class="aura aura-3"></div>
+</div>
+<div class="grain"></div>
+<div class="bubble-field" id="bubbleField"></div>
+
+<!-- PROGRESS BAR -->
+<div id="progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- POPUP (FIXED) -->
+<div class="popup" id="safetyPopup" role="dialog" aria-modal="true" aria-label="AI Alignment Newsletter">
+  <button class="popup-close" id="popupClose" aria-label="Close popup">&times;</button>
+  <div class="popup-icon">🧠</div>
+  <h4>Master AI Alignment</h4>
+  <p>Get weekly deep dives into how AI is trained, aligned, and secured. Join thousands of tech enthusiasts.</p>
+  <form id="popupForm" action="https://formspree.io/f/xwvjgdpw" method="POST">
+    <input class="popup-email-input" type="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
+    <input type="hidden" name="_subject" value="Popup: AI Alignment Newsletter Request"/>
+    <button type="submit" class="popup-btn">Get Free Updates →</button>
+  </form>
+  <p class="popup-success" id="popupSuccess">✅ Subscribed! Check your inbox shortly.</p>
+</div>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/assets/logo.png" alt="" class="logo-img" onerror="this.remove()"/>
+      Nyvora<span>AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html" class="active">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nav-soc" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nav-soc" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"/></svg></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nav-soc" aria-label="X (Twitter)"><svg class="icon"><use href="#icon-x"/></svg></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nav-soc" aria-label="YouTube"><svg class="icon"><use href="#icon-youtube"/></svg></a>
+      </div>
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" aria-expanded="false" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+  <div style="display:flex;gap:16px;padding-top:8px">
+    <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" style="color:var(--muted);display:flex;align-items:center;gap:6px"><svg class="icon icon-sm"><use href="#icon-instagram"/></svg> Instagram</a>
+    <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" style="color:var(--muted);display:flex;align-items:center;gap:6px"><svg class="icon icon-sm"><use href="#icon-x"/></svg> X</a>
+  </div>
+</div>
+
+<div class="page-wrap">
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <span class="bc-sep">/</span>
+  <span aria-current="page">AI Human Feedback</span>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge badge-align">🧠 AI Alignment</span>
+    <span class="badge badge-read">⏱ 15 min read</span>
+    <span class="badge badge-date">📅 Updated June 2026</span>
+  </div>
+  <h1 class="article-title">How Does <span class="title-underline">AI Learn</span> From Human Feedback?</h1>
+  <p class="article-intro">From chaotic text predictors to helpful, harmless assistants. Discover the fascinating mechanics of RLHF, DPO, and the human workforce that teaches machines how to behave in 2026.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="How does AI learn from human feedback author NyvoraAI team" onerror="this.remove()"/></div>
+      <div><div class="meta-name">NyvoraAI Team</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-06-24">June 24, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Reviewed <time datetime="2026-06">June 2026</time></span>
+  </div>
+</header>
+
+<!-- HERO IMAGE -->
+<div class="hero-wrap reveal">
+  <div class="hero-img-box">
+    <img src="https://nyvoraai.github.io/assets/ai-human-feedback-hero.jpg" alt="How does AI learn from human feedback illustration of AI alignment process" onerror="this.parentElement.innerHTML='<div style=\'padding:80px 20px;text-align:center;color:var(--muted);font-family:var(--font-mono);font-size:14px;\'>🧠 AI Alignment & Human Feedback Visualization</div>'"/>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">📌 Pinned — jump to a section</div>
+    <ol>
+      <li><a href="#raw-ai">The raw AI problem</a></li>
+      <li><a href="#rlhf">RLHF: The gold standard</a></li>
+      <li><a href="#dpo">DPO: The modern challenger</a></li>
+      <li><a href="#humans">The human annotators</a></li>
+      <li><a href="#evaluation">Measuring success</a></li>
+      <li><a href="#future">The future of alignment</a></li>
+      <li><a href="#quiz">Test your knowledge</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<!-- ARTICLE BODY -->
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">When you ask a modern AI assistant to write a poem, debug complex code, or explain quantum physics, the response feels remarkably human. It is polite, structured, and helpful. But behind the scenes, the raw neural network that powers these models started out as a chaotic, unpredictable text predictor. Left to its own devices, it could just as easily have spewed toxic nonsense, biased rants, or complete gibberish. So, what bridges the gap between a raw, untamed algorithm and a helpful, harmless assistant? The answer lies in a fascinating process of AI alignment. But how exactly does this transformation happen? How does AI learn from human feedback?</p>
+
+  <p class="reveal">In 2026, understanding this process is no longer just for computer scientists and researchers. As AI integrates deeper into our daily lives, powering everything from customer service to medical diagnostics, knowing how these models are trained to align with human values is crucial. This comprehensive guide will demystify the mechanics of Reinforcement Learning from Human Feedback (RLHF), the newer Direct Preference Optimization (DPO), and the hidden human workforce that teaches machines how to behave.</p>
+
+  <div class="key-takeaways quick-answer reveal">
+    <div class="kt-title">🧠 Key Takeaways</div>
+    <ul>
+      <li>Raw AI models are trained to predict the next word, not to be helpful or safe; human feedback is required to align them with human values.</li>
+      <li>RLHF (Reinforcement Learning from Human Feedback) uses human rankings to train a "Reward Model," which then guides the AI via reinforcement learning.</li>
+      <li>DPO (Direct Preference Optimization) is a newer, more stable method that skips the Reward Model and directly updates the AI using human preference data.</li>
+      <li>The process relies heavily on human data annotators who follow strict guidelines to rank AI outputs, ensuring quality and safety.</li>
+      <li>AI alignment is an ongoing challenge, with researchers now exploring "Constitutional AI" where AI models critique and improve each other.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2 id="raw-ai"><span class="h2-mark">01</span> The Raw AI Problem: Why Pre-Training Isn't Enough</h2>
+  <p class="reveal">Before an AI can learn from human feedback, it has to learn the basics of language. This happens during the "pre-training" phase, where the model reads vast swathes of the internet—books, articles, code repositories, and forums. Its only objective during this phase is "next-token prediction." It learns that after "The sky is," the most statistically probable word is "blue."</p>
+
+  <p class="reveal">But this creates a fundamental problem. The internet is full of arguments, misinformation, toxic comments, and nonsensical text. Because the raw AI only cares about statistical probability, it has no inherent concept of "truth," "helpfulness," or "safety." If you ask a raw, pre-trained model "How do I bake a cake?", it might give you a perfect recipe. But it might also complete your prompt with a fictional story about a sentient cake, or worse, output harmful content it found on a dark web forum. While everyday users might try to guide an AI's output at inference time through <a href="https://nyvoraai.github.io/ai-news/what-is-prompt-engineering-does-it-work.html">prompt engineering</a>, developers must embed helpfulness and safety directly into the model's foundational weights before it is ever released to the public.</p>
+
+  <p class="reveal">To fix this, researchers developed a multi-stage training pipeline designed to take a chaotic text predictor and mold it into a helpful assistant. The most famous and widely adopted technique for this is RLHF.</p>
+
+  <!-- SECTION 2 -->
+  <h2 id="rlhf"><span class="h2-mark">02</span> RLHF: The Gold Standard of AI Alignment</h2>
+  <p class="reveal">Reinforcement Learning from Human Feedback (RLHF) is the breakthrough technique that made models like ChatGPT possible. It bridges the gap between raw statistical prediction and nuanced human values. The process is complex, but it can be broken down into three distinct, sequential steps.</p>
+
+  <h3>Step 1: Supervised Fine-Tuning (SFT)</h3>
+  <p class="reveal">First, the raw model is fine-tuned on a smaller, high-quality dataset of human-written prompts and ideal responses. Human contractors write out examples of what a "good" interaction looks like. This teaches the model the basic format of a conversation (User says X, Assistant says Y) and gives it a baseline level of competence. However, the model is still essentially just mimicking human writers; it doesn't truly understand the underlying preferences.</p>
+
+  <h3>Step 2: Training the Reward Model</h3>
+  <p class="reveal">This is where the actual "human feedback" comes in. Researchers give the SFT model a prompt and ask it to generate multiple different responses (e.g., four distinct answers to the same question). Human annotators then read these responses and rank them from best to worst based on criteria like helpfulness, honesty, and harmlessness.</p>
+
+  <div class="rank-ui reveal">
+    <div class="rank-header">📊 Interactive: Human Preference Ranking</div>
+    <div class="rank-prompt"><strong>User Prompt:</strong> "Explain why the sky is blue in simple terms."</div>
+    <div class="rank-responses">
+      <div class="rank-opt" onclick="selectRank(this)">
+        <div class="rank-radio"></div>
+        <div class="rank-text">"The sky is blue because molecules in the air scatter blue light from the sun more than they scatter red light. When you look at the sky, you see the scattered blue light." <span class="rank-badge">Rank 1 (Best)</span></div>
+      </div>
+      <div class="rank-opt" onclick="selectRank(this)">
+        <div class="rank-radio"></div>
+        <div class="rank-text">"Rayleigh scattering. The atmosphere. Photons. Blue wavelength. Look up." <span class="rank-badge">Rank 3</span></div>
+      </div>
+      <div class="rank-opt" onclick="selectRank(this)">
+        <div class="rank-radio"></div>
+        <div class="rank-text">"I cannot answer that question as it is a distraction from the real issues facing our society today." <span class="rank-badge">Rank 4 (Worst)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="reveal">These thousands of rankings are used to train an entirely new AI model called the "Reward Model." The Reward Model's sole job is to predict what a human would rate a given response. It learns to assign a high "reward score" to good answers and a low score to bad ones.</p>
+
+  <h3>Step 3: Reinforcement Learning (PPO)</h3>
+  <p class="reveal">Finally, the original SFT model is unleashed to generate responses again. But this time, instead of being graded by humans, it is graded by the Reward Model. To understand this final stage, it helps to first understand <a href="https://nyvoraai.github.io/ai-news/what-is-reinforcement-learning-simple-terms.html">reinforcement learning in simple terms</a>: the AI is like a dog learning a trick, receiving a "treat" (a high reward score) when it does what the Reward Model likes, and adjusting its internal parameters to maximize those treats. Using an algorithm called Proximal Policy Optimization (PPO), the AI gradually learns to generate responses that consistently score high with the Reward Model, effectively internalizing human preferences.</p>
+
+  <!-- SECTION 3 -->
+  <h2 id="dpo"><span class="h2-mark">03</span> The Modern Challenger: Direct Preference Optimization (DPO)</h2>
+  <p class="reveal">While RLHF revolutionized AI, it has a major flaw: it is incredibly difficult to stabilize. Training a separate Reward Model introduces a lot of complexity, and the PPO reinforcement learning phase is notoriously finicky. Small bugs can cause the AI to "hack" the reward model, generating bizarre, repetitive text that scores high mathematically but looks like garbage to humans.</p>
+
+  <p class="reveal">Enter Direct Preference Optimization (DPO), introduced in 2023 and now the standard for many cutting-edge models in 2026. DPO is a mathematical breakthrough that simplifies the entire process. Instead of training a separate Reward Model and using complex reinforcement learning, DPO uses a clever mathematical trick to directly update the AI's policy using the human preference data.</p>
+
+  <div class="tbl-wrap reveal">
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>RLHF (Traditional)</th>
+          <th>DPO (Modern)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Reward Model</strong></td><td><span class="cross">Required</span></td><td><span class="check">Not Required</span></td></tr>
+        <tr><td><strong>Reinforcement Learning</strong></td><td><span class="cross">Required (PPO)</span></td><td><span class="check">Not Required</span></td></tr>
+        <tr><td><strong>Training Stability</strong></td><td><span class="cross">Low (Prone to hacking)</span></td><td><span class="check">High (Standard supervised loss)</span></td></tr>
+        <tr><td><strong>Compute Cost</strong></td><td><span class="cross">Very High</span></td><td><span class="check">Moderate</span></td></tr>
+        <tr><td><strong>Human Data Needed</strong></td><td>Rankings</td><td>Rankings</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="reveal">By skipping the Reward Model, DPO is faster to train, much more stable, and less prone to reward hacking. It proves that you don't necessarily need a complex reinforcement learning loop to teach an AI human preferences; you just need the right mathematical formulation.</p>
+
+  <!-- SECTION 4 -->
+  <h2 id="humans"><span class="h2-mark">04</span> The Humans Behind the Machine: The Annotators</h2>
+  <p class="reveal">We often talk about AI as if it is magic, but both RLHF and DPO rely entirely on massive datasets of human labor. Who are the humans providing this feedback? They are data annotators, contractors, and increasingly, domain experts.</p>
+
+  <img src="https://nyvoraai.github.io/assets/ai-human-feedback-annotator.jpg" alt="How does AI learn from human feedback data annotator ranking AI responses" style="width:100%;border-radius:var(--radius);margin:20px 0;border:1px solid var(--line);" onerror="this.style.display='none'"/>
+
+  <p class="reveal">For general chatbots, annotators follow incredibly detailed rubrics. They must evaluate responses for factual accuracy, tone, safety, and even subtle biases. But as AI models have become more advanced, general annotators are no longer enough. If an AI is generating Python code, a human who doesn't know how to code cannot accurately rank which output is better. This is closely related to <a href="https://nyvoraai.github.io/ai-news/how-do-scientists-test-how-smart-ai-is.html">how scientists test how smart AI is</a> through rigorous red-teaming and adversarial testing. Today, companies hire expert annotators—PhD-level chemists, senior software engineers, and legal professionals—to provide high-level feedback on specialized models.</p>
+
+  <div class="bubble bubble-gold reveal">
+    <div class="bubble-avatar">💡</div>
+    <div class="bubble-card">
+      <div class="bubble-label">The Human Element</div>
+      <p>"An AI is only as good as the data it learns from. If the human annotators are tired, biased, or poorly instructed, the AI will inherit those flaws. The 'human' in human feedback is the most critical, and most vulnerable, part of the pipeline."</p>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <h2 id="evaluation"><span class="h2-mark">05</span> Measuring Success: How Do We Know It Worked?</h2>
+  <p class="reveal">Once a model has been trained using RLHF or DPO, how do developers know it actually learned the right lessons? You cannot simply ask the AI, "Are you helpful and safe now?" because it will always say yes. Instead, researchers rely on a combination of automated benchmarks and human evaluation.</p>
+
+  <p class="reveal">Developers run the model through comprehensive evaluations like the <a href="https://nyvoraai.github.io/ai-news/what-is-mmlu-benchmark-ai.html">MMLU benchmark</a> to ensure that the alignment process didn't degrade the model's core intelligence (a phenomenon known as "alignment tax"). They also use "red teaming," where ethical hackers and experts actively try to trick the AI into generating toxic content or revealing sensitive information. If the model refuses appropriately or handles the trick gracefully, it passes.</p>
+
+  <p class="reveal">This rigorous evaluation is essential because we are deploying these models in high-stakes environments. When we look at <a href="https://nyvoraai.github.io/ai-news/how-is-ai-used-in-scientific-research.html">how AI is used in scientific research</a>, we rely on these models being highly aligned, factual, and free of hallucinations. A misaligned AI in a lab setting could propose dangerous chemical combinations or misinterpret critical data.</p>
+
+  <!-- DIAGRAM -->
+  <div class="diagram-wrap reveal">
+    <div class="diagram-header">
+      <span class="diagram-clip">🔄</span>
+      <div class="diagram-title">The RLHF Pipeline: From Raw AI to Aligned Assistant</div>
+    </div>
+    <div class="diagram-body">
+      <div class="flow-animated">
+        <div class="flow-node-anim"><div class="flow-circle-anim fc-purple">🌐</div><div class="flow-label-anim">Pre-Training (Raw Data)</div></div>
+        <div class="flow-arrow-anim">→</div>
+        <div class="flow-node-anim"><div class="flow-circle-anim fc-teal">📝</div><div class="flow-label-anim">Supervised Fine-Tuning</div></div>
+        <div class="flow-arrow-anim">→</div>
+        <div class="flow-node-anim"><div class="flow-circle-anim fc-gold">👥</div><div class="flow-label-anim">Human Reward Model</div></div>
+        <div class="flow-arrow-anim">→</div>
+        <div class="flow-node-anim"><div class="flow-circle-anim fc-purple">🧠</div><div class="flow-label-anim">RL Optimization (PPO)</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <h2 id="future"><span class="h2-mark">06</span> The Future: AI Grading AI and Constitutional AI</h2>
+  <p class="reveal">The biggest bottleneck in AI alignment is human labor. Hiring thousands of experts to rank millions of AI responses is incredibly expensive and slow. As models scale to trillions of parameters, the RLHF pipeline is reaching its limits. The future of AI alignment is, ironically, using AI to solve the problems created by AI.</p>
+
+  <p class="reveal">Researchers are pioneering "Constitutional AI" and "AI-assisted feedback." In this paradigm, a highly capable AI model is given a set of core principles (a "constitution") and asked to critique and rewrite the outputs of a weaker, unaligned model. The advanced AI acts as the human annotator, providing scalable feedback based on its own understanding of safety and helpfulness. While this raises philosophical questions about letting AI define its own values, it is currently the only viable path to aligning the massive, next-generation models currently in development.</p>
+
+  <div class="stat-grid reveal">
+    <div class="stat-box">
+      <div class="stat-number">70%</div>
+      <div class="stat-label">Of top 2026 models use DPO or RLHF variants</div>
+      <div class="stat-source">Source: State of AI Report 2026</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number">10M+</div>
+      <div class="stat-label">Human preference rankings collected yearly</div>
+      <div class="stat-source">Source: Industry Estimates</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number">40%</div>
+      <div class="stat-label">Cost reduction using AI-assisted feedback</div>
+      <div class="stat-source">Source: Anthropic / OpenAI Research</div>
+    </div>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="quiz-box reveal" id="quiz">
+    <div class="quiz-title">🧠 Test Your AI Alignment Knowledge</div>
+    <div class="quiz-question">What is the primary purpose of the "Reward Model" in the RLHF process?</div>
+    <div class="quiz-options" role="radiogroup" aria-label="Quiz options">
+      <label class="quiz-option"><input type="radio" name="q1" value="a" onchange="checkAnswer(this.value,'b')"><span>To generate the final text responses for the user</span></label>
+      <label class="quiz-option"><input type="radio" name="q1" value="b" onchange="checkAnswer(this.value,'b')"><span>To predict human preferences and score the AI's responses</span></label>
+      <label class="quiz-option"><input type="radio" name="q1" value="c" onchange="checkAnswer(this.value,'b')"><span>To pre-train the AI on internet data</span></label>
+      <label class="quiz-option"><input type="radio" name="q1" value="d" onchange="checkAnswer(this.value,'b')"><span>To encrypt the user's prompts for privacy</span></label>
+    </div>
+    <div class="quiz-feedback correct" id="qCorrect" role="alert">✅ Correct! The Reward Model is trained on human rankings to act as a proxy for human judgment. It assigns a numerical score to the AI's responses, which the reinforcement learning algorithm then uses to optimize the main model.</div>
+    <div class="quiz-feedback incorrect" id="qIncorrect" role="alert">❌ Not quite. The Reward Model doesn't generate text or pre-train the AI. Its specific job is to learn from human rankings and predict how a human would score a given AI response.</div>
+  </div>
+
+  <!-- FAQ -->
+  <h2 id="faq"><span class="h2-mark">07</span> Frequently Asked Questions</h2>
+  <div class="faq reveal">
+    <details open>
+      <summary>How does AI learn from human feedback?</summary>
+      <div class="faq-body">AI learns from human feedback primarily through a process called Reinforcement Learning from Human Feedback (RLHF). Humans rank different AI responses from best to worst. This data trains a "Reward Model" that predicts human preferences. Finally, the AI uses reinforcement learning to optimize its outputs to maximize the reward score, effectively learning to mimic human preferences. Newer methods like DPO achieve this without the separate Reward Model.</div>
+    </details>
+    <details>
+      <summary>What is the difference between RLHF and DPO?</summary>
+      <div class="faq-body">RLHF (Reinforcement Learning from Human Feedback) requires training a separate Reward Model and using complex reinforcement learning algorithms like PPO to update the AI. DPO (Direct Preference Optimization) skips the Reward Model entirely, using the human preference data to directly update the AI's policy in a single, more stable, and computationally cheaper training step.</div>
+    </details>
+    <details>
+      <summary>Why is human feedback necessary for AI?</summary>
+      <div class="faq-body">Raw AI models are trained to predict the next word based on internet data, which means they can generate toxic, biased, or completely nonsensical content. Human feedback is necessary to "align" the AI with human values, ensuring it is helpful, honest, and harmless (the 3 H's of AI alignment) before it is released to the public.</div>
+    </details>
+    <details>
+      <summary>Who provides the human feedback for AI training?</summary>
+      <div class="faq-body">Human feedback is provided by specialized data annotators, contractors, and increasingly, domain experts like programmers, scientists, or lawyers. These individuals follow strict guidelines to rank AI responses. For advanced safety testing, "red teamers" actively try to break the AI to identify flaws before the public ever sees them.</div>
+    </details>
+    <details>
+      <summary>Can AI align itself without human feedback?</summary>
+      <div class="faq-body">Currently, no. AI lacks an inherent understanding of human morality, ethics, or societal norms. Concepts like "Constitutional AI" use a highly capable AI to critique a weaker AI based on a human-written set of rules, but the foundational values still originate from human designers. True self-alignment remains a theoretical concept.</div>
+    </details>
+    <details>
+      <summary>Does human feedback make AI less smart?</summary>
+      <div class="faq-body">Sometimes, yes. This is known in the industry as the "alignment tax." In the process of making an AI safe and polite, it may become more refusal-heavy or lose some of its raw creative or logical capabilities. Researchers constantly test models using benchmarks like MMLU to ensure the alignment process doesn't degrade the model's core intelligence.</div>
+    </details>
+  </div>
+
+  <!-- AUTHOR BOX -->
+  <div class="author-box reveal">
+    <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="How does AI learn from human feedback author NyvoraAI team" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by the NyvoraAI Team</h3>
+      <p>We investigate the mechanics of AI training, alignment, and safety. Reviewed for accuracy in June 2026. Have questions about how AI is built? <a href="https://nyvoraai.github.io/contact.html">Contact our team</a> or <a href="https://nyvoraai.github.io/about.html">learn more about our mission</a> to make complex tech accessible.</p>
+    </div>
+  </div>
+
+  <!-- SHARE -->
+  <div class="share-section reveal">
+    <div class="share-title">Help others understand AI — share this guide 👇</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=How+Does+AI+Learn+From+Human+Feedback%3F+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/ai-news/how-does-ai-learn-from-human-feedback.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-x"/></svg> Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/ai-news/how-does-ai-learn-from-human-feedback.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Share on Facebook</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nyvoraai.github.io/ai-news/how-does-ai-learn-from-human-feedback.html" target="_blank" rel="noopener" class="share-btn">💼 Share on LinkedIn</a>
+      <button class="share-btn" onclick="copyLink()">🔗 Copy Link</button>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter reveal">
+    <h2>Decode the AI Black Box</h2>
+    <p>Get weekly deep dives into how AI is trained, aligned, and secured. Join thousands of tech enthusiasts and researchers.</p>
+    <form action="https://formspree.io/f/xwvjgdpw" method="POST" class="nl-form" id="nlForm">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
+      <input type="hidden" name="_subject" value="Newsletter Signup — AI Human Feedback"/>
+      <button type="submit" class="nl-btn">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · Privacy-focused</p>
+    <div class="nl-social">
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-instagram"/></svg> Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-facebook"/></svg> Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-x"/></svg> X / Twitter</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</a>
+    </div>
+  </div>
+
+  <!-- RELATED POSTS -->
+  <div class="related reveal">
+    <div class="related-title">Read Next</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/ai-news/what-is-reinforcement-learning-simple-terms.html" class="rel-card">
+        <div class="rel-tag">AI Concepts</div>
+        <div class="rel-title">What Is Reinforcement Learning? (Simple Terms)</div>
+        <div class="rel-read">8 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/how-do-scientists-test-how-smart-ai-is.html" class="rel-card">
+        <div class="rel-tag">AI Evaluation</div>
+        <div class="rel-title">How Do Scientists Test How Smart AI Is?</div>
+        <div class="rel-read">10 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/what-is-mmlu-benchmark-ai.html" class="rel-card">
+        <div class="rel-tag">AI Benchmarks</div>
+        <div class="rel-title">What Is the MMLU Benchmark in AI?</div>
+        <div class="rel-read">7 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/what-is-prompt-engineering-does-it-work.html" class="rel-card">
+        <div class="rel-tag">User Guide</div>
+        <div class="rel-title">What Is Prompt Engineering? Does It Work?</div>
+        <div class="rel-read">9 min read →</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">
+        <img src="https://nyvoraai.github.io/assets/logo.png" alt="" class="logo-img" onerror="this.remove()"/>
+        Nyvora<span>AI</span>
+      </span>
+      <p>Your trusted source for AI news, safety guides, and practical insights. Empowering everyone to understand the AI revolution.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-instagram"/></svg> Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Facebook</a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-x"/></svg> X</a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Topics</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">For Beginners</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">AI Safety</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Guides</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Tool Reviews</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /page-wrap -->
+
+<!-- BACK TO TOP -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+// Floating bubbles
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const wrap=document.getElementById('bubbleField');
+  const colors=['#FF6B4A','#146B5C','#E89B2D','#8B5CF6'];
+  const count=window.innerWidth<700?8:14;
+  for(let i=0;i<count;i++){
+    const b=document.createElement('div');b.className='fbubble';
+    const size=26+Math.random()*64,left=Math.random()*100,dur=13+Math.random()*13,delay=-Math.random()*dur,color=colors[i%colors.length];
+    b.style.cssText='width:'+size+'px;height:'+(size*.7)+'px;left:'+left+'%;bottom:-10%;border-color:'+color+';animation-duration:'+dur+'s;animation-delay:'+delay+'s';
+    wrap.appendChild(b);
+  }
+})();
+
+// Progress bar + back to top
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const pct=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  const bar=document.getElementById('progress');
+  bar.style.width=pct+'%';
+  bar.setAttribute('aria-valuenow',Math.round(pct));
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+});
+
+// Reveal on scroll
+const io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
+  });
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(function(r){io.observe(r);});
+
+// Mobile menu
+function toggleMenu(){
+  const nav=document.getElementById('mobileNav');
+  const ham=document.getElementById('ham');
+  const isOpen=nav.classList.toggle('open');
+  ham.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+
+// Copy link
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(function(){
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;
+    const orig=btn.textContent;
+    btn.textContent='✅ Copied!';
+    setTimeout(function(){btn.textContent=orig;},2000);
+  });
+}
+
+// Rank UI interaction
+function selectRank(el){
+  document.querySelectorAll('.rank-opt').forEach(opt=>opt.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+// Quiz
+function checkAnswer(val, correct){
+  const cEl=document.getElementById('qCorrect');
+  const iEl=document.getElementById('qIncorrect');
+  cEl.classList.remove('show');
+  iEl.classList.remove('show');
+  if(val===correct){
+    cEl.classList.add('show');
+  } else {
+    iEl.classList.add('show');
+  }
+}
+
+// POPUP — localStorage (30-day dismissal)
+(function(){
+  const POPUP_KEY='nyv_alignment_popup_dismissed';
+  const dismissed=localStorage.getItem(POPUP_KEY);
+  if(dismissed){
+    const ts=parseInt(dismissed,10);
+    if(Date.now()-ts < 30*24*60*60*1000) return;
+  }
+  setTimeout(function(){
+    document.getElementById('safetyPopup').classList.add('show');
+  },3500);
+})();
+
+document.getElementById('popupClose').addEventListener('click',closePopup);
+
+function closePopup(){
+  const p=document.getElementById('safetyPopup');
+  p.classList.remove('show');
+  p.classList.add('hide');
+  localStorage.setItem('nyv_alignment_popup_dismissed', Date.now().toString());
+}
+
+document.getElementById('popupForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const form=this;
+  fetch(form.action,{
+    method:'POST',
+    body:new FormData(form),
+    headers:{'Accept':'application/json'}
+  }).then(function(r){
+    if(r.ok){
+      form.style.display='none';
+      document.getElementById('popupSuccess').style.display='block';
+      setTimeout(closePopup,2800);
+      localStorage.setItem('nyv_alignment_popup_dismissed', Date.now().toString());
+    }
+  }).catch(function(){
+    closePopup();
+  });
+});
+
+// Newsletter form
+document.getElementById('nlForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const btn=this.querySelector('.nl-btn');
+  btn.textContent='Sending...';
+  btn.disabled=true;
+  fetch(this.action,{method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(r.ok){btn.textContent='✅ Subscribed!';}
+      else{btn.textContent='Try again';btn.disabled=false;}
+    }).catch(function(){btn.textContent='Try again';btn.disabled=false;});
+});
+</script>
+</body>
+</html>
