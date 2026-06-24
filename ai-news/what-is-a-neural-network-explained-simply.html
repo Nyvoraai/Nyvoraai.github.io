@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>What Is a Neural Network? Explained Simply (2026)</title>
+<meta name="description" content="What is a neural network explained simply? Discover how artificial brains work, their layers, and how they power modern AI today."/>
+<meta name="keywords" content="what is a neural network explained simply, neural network basics, how neural networks work, artificial intelligence, deep learning, machine learning"/>
+<meta name="author" content="NyvoraAI Team"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#EFF1EA"/>
+<link rel="icon" type="image/svg+xml" href="https://nyvoraai.github.io/logo.svg"/>
+<link rel="canonical" href="https://nyvoraai.github.io/ai-news/what-is-a-neural-network-explained-simply.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="What Is a Neural Network? Explained Simply (2026)"/>
+<meta property="og:description" content="What is a neural network explained simply? Discover how artificial brains work, their layers, and how they power modern AI today."/>
+<meta property="og:url" content="https://nyvoraai.github.io/ai-news/what-is-a-neural-network-explained-simply.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/neural-network-thumbnail.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-06-24T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-06-24T00:00:00Z"/>
+<meta property="article:section" content="AI News"/>
+<meta property="article:tag" content="Neural Networks, AI Basics, Deep Learning, Machine Learning"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:creator" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="What Is a Neural Network? Explained Simply (2026)"/>
+<meta name="twitter:description" content="What is a neural network explained simply? Discover how artificial brains work and power modern AI."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/neural-network-thumbnail.jpg"/>
+
+<!-- Schema: Organization -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":"https://nyvoraai.github.io/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai"]}
+</script>
+
+<!-- Schema: WebSite -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"NyvoraAI","url":"https://nyvoraai.github.io","publisher":{"@type":"Organization","name":"NyvoraAI"}}
+</script>
+
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.github.io/ai-news.html"},{"@type":"ListItem","position":3,"name":"Neural Network Explained","item":"https://nyvoraai.github.io/ai-news/what-is-a-neural-network-explained-simply.html"}]}
+</script>
+
+<!-- Schema: Article -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"What Is a Neural Network Explained Simply? The Complete 2026 Guide","description":"What is a neural network explained simply? Discover how artificial brains work, their layers, and how they power modern AI today.","image":"https://nyvoraai.github.io/assets/neural-network-thumbnail.jpg","datePublished":"2026-06-24","dateModified":"2026-06-24","inLanguage":"en-US","author":{"@type":"Organization","name":"NyvoraAI Team","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/ai-news/what-is-a-neural-network-explained-simply.html"},"articleSection":"AI News","keywords":"what is a neural network explained simply, neural network basics","timeRequired":"PT20M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}
+</script>
+
+<!-- Schema: FAQ -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a neural network explained simply?","acceptedAnswer":{"@type":"Answer","text":"A neural network is a type of computer program inspired by the human brain. It consists of interconnected nodes (neurons) organized in layers that process information, learn patterns from data, and make decisions or predictions without being explicitly programmed for every specific rule."}},{"@type":"Question","name":"How does a neural network learn?","acceptedAnswer":{"@type":"Answer","text":"A neural network learns by adjusting the strength of the connections (weights) between its nodes. When it makes a mistake, it uses a process called backpropagation to calculate the error and tweak the weights to reduce that mistake in the future, gradually improving its accuracy over thousands of examples."}},{"@type":"Question","name":"What is the difference between a neural network and deep learning?","acceptedAnswer":{"@type":"Answer","text":"A neural network is the fundamental architecture or structure. Deep learning refers specifically to using neural networks with many layers (deep neural networks). All deep learning uses neural networks, but not all neural networks are considered deep learning if they only have a few layers."}},{"@type":"Question","name":"Why are neural networks so powerful?","acceptedAnswer":{"@type":"Answer","text":"Neural networks are powerful because they can automatically discover complex, hidden patterns in massive amounts of unstructured data like images, text, and audio. Unlike traditional software that follows strict rules, neural networks generalize from examples, allowing them to handle novel situations and perform tasks like language translation and image recognition."}}]}
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#EFF1EA;--bg-deep:#E5E9DC;--paper:#FFFFFF;--paper-warm:#FBF8F1;--you-bg:#FFF3EE;
+  --ink:#1C2321;--ink-soft:#4B5650;--muted:#7C8579;--line:#DCE0D2;--line-soft:#E8EBE0;
+  --coral:#FF6B4A;--coral-dp:#B8431F;--coral-soft:#FFE1D6;
+  --teal:#146B5C;--teal-dp:#0E4F45;--teal-soft:#DCEEE8;
+  --gold:#E89B2D;--gold-soft:#FCEACB;
+  --purple:#8B5CF6;--purple-soft:#EDE9FE;
+  --danger:#DC2626;--danger-soft:#FEE2E2;
+  --warning:#F59E0B;--warning-soft:#FEF3C7;
+  --radius:18px;--radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,-apple-system,sans-serif;
+  --font-body:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+  --shadow:0 1px 2px rgba(28,35,33,.04),0 8px 24px rgba(28,35,33,.06);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:18px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--teal-dp);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,.font-display{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+/* AMBIENT BG */
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;background:var(--bg)}
+.aura{position:absolute;border-radius:50%;filter:blur(85px);will-change:transform;animation:auraFloat ease-in-out infinite}
+.aura-1{width:560px;height:560px;background:radial-gradient(circle,var(--coral),transparent 68%);top:-140px;left:-120px;opacity:.22;animation-duration:17s}
+.aura-2{width:500px;height:500px;background:radial-gradient(circle,var(--teal),transparent 68%);bottom:-130px;right:-100px;opacity:.20;animation-duration:21s;animation-delay:-6s}
+.aura-3{width:420px;height:420px;background:radial-gradient(circle,var(--gold),transparent 68%);top:30%;left:58%;opacity:.16;animation-duration:14s;animation-delay:-3s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.12)}66%{transform:translate(-35px,30px) scale(.92)}}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/></svg>")}
+.bubble-field{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fbubble{position:absolute;border:1.5px solid;opacity:0;border-radius:14px 14px 14px 3px;animation:bubbleDrift linear infinite}
+@keyframes bubbleDrift{0%{transform:translateY(10vh) rotate(-4deg) scale(.85)}10%{opacity:.24}50%{transform:translateY(-45vh) rotate(2deg) scale(1.04)}85%{opacity:.16}100%{transform:translateY(-100vh) rotate(5deg) scale(1.1);opacity:0}}
+@media(prefers-reduced-motion:reduce){.fbubble,.aura{animation:none;display:none}html{scroll-behavior:auto}}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:21px;font-weight:700;letter-spacing:-.02em;color:var(--ink);display:flex;align-items:center;gap:9px}
+.nav-logo span{color:var(--teal)}
+.logo-img{height:30px;width:30px;border-radius:8px;object-fit:cover;display:block}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{color:var(--ink-soft);font-size:14.5px;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-social{display:flex;gap:6px}
+.nav-soc{color:var(--ink-soft);width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:8px;transition:background .2s,color .2s}
+.nav-soc:hover{background:var(--line-soft);color:var(--ink);text-decoration:none}
+.icon{width:17px;height:17px;flex-shrink:0;display:block}
+.icon-sm{width:15px;height:15px}
+.nav-cta{background:var(--coral);color:#fff;padding:9px 18px;border-radius:9px;font-size:13.5px;font-weight:700;transition:opacity .2s,transform .15s;box-shadow:0 4px 14px rgba(255,107,74,.28)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);text-decoration:none}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--ink-soft);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:20px 24px;flex-direction:column;gap:16px;z-index:199}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--ink);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
+
+/* PROGRESS */
+#progress{position:fixed;top:64px;left:0;width:0;height:3px;z-index:300;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal));transition:width .1s;border-radius:0 3px 3px 0}
+
+/* BREADCRUMB */
+.breadcrumb{max-width:860px;margin:26px auto 0;padding:0 24px;font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--muted)}.breadcrumb a:hover{color:var(--teal-dp)}.bc-sep{color:var(--line)}
+
+/* ARTICLE HEADER */
+.article-hdr{max-width:860px;margin:22px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;background:var(--teal-soft);color:var(--teal-dp);border:1px solid rgba(20,107,92,.18);font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:5px 13px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-read{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.25)}
+.badge-date{background:var(--coral-soft);color:var(--coral-dp);border-color:rgba(255,107,74,.22)}
+.article-title{font-size:clamp(30px,5.2vw,48px);font-weight:700;line-height:1.18;color:var(--ink);margin-bottom:18px;letter-spacing:-.025em;font-family:var(--font-display)}
+.title-underline{background:linear-gradient(120deg,transparent 0%,var(--teal-soft) 0%);background-size:100% 38%;background-repeat:no-repeat;background-position:0 88%;padding:0 2px}
+.article-intro{font-size:19.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:24px}
+.article-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);padding-bottom:24px;border-bottom:1px solid var(--line)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{position:relative;overflow:hidden;width:36px;height:36px;border-radius:50%;flex-shrink:0;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;font-family:var(--font-display)}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--ink-soft)}.meta-sep{color:var(--line)}
+
+/* HERO */
+.hero-wrap{max-width:860px;margin:30px auto;padding:0 24px}
+.hero-box{width:100%;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:var(--shadow)}
+.hero-box svg{display:block;width:100%;height:auto}
+
+/* TOC */
+.toc-box{max-width:860px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow)}
+.toc-title{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--ink-soft);font-size:14.5px;transition:color .2s;display:flex;gap:8px}
+.toc a::before{content:counter(tocnum);font-family:var(--font-mono);color:var(--teal);font-weight:700;font-size:12.5px;min-width:16px}
+.toc a:hover{color:var(--teal-dp);text-decoration:none}
+
+/* LAYOUT */
+.layout{max-width:860px;margin:0 auto;padding:36px 24px 80px}
+
+/* PROSE */
+.prose h2{font-size:27px;font-weight:700;color:var(--ink);margin:54px 0 18px;letter-spacing:-.02em;scroll-margin-top:90px;display:flex;align-items:baseline;gap:10px}
+.prose h2 .h2-mark{font-family:var(--font-mono);font-size:14px;color:var(--teal);font-weight:700}
+.prose h3{font-size:18.5px;font-weight:700;color:var(--ink);margin:26px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--ink)}
+.prose strong{color:var(--ink);font-weight:700}
+.prose ul,.prose ol{margin:0 0 22px 22px}
+.prose li{margin-bottom:9px;color:var(--ink)}
+
+/* INLINE LINK STYLE */
+.prose a,.faq-body a{color:var(--teal-dp);border-bottom:1px solid rgba(14,79,69,.25);transition:border-color .2s,color .2s}
+.prose a:hover,.faq-body a:hover{color:var(--coral);border-color:var(--coral);text-decoration:none}
+
+/* KEY TAKEAWAYS */
+.key-takeaways{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow)}
+.kt-title{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);margin-bottom:12px}
+.key-takeaways ul{margin:0;list-style:none}
+.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15.5px;color:var(--ink-soft)}
+.key-takeaways li:last-child{margin-bottom:0}
+.key-takeaways li::before{content:'✓';color:var(--teal);flex-shrink:0;font-weight:700}
+
+/* INFO BOX */
+.info-box{background:var(--paper-warm);border-left:4px solid var(--gold);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:22px 26px;margin:28px 0}
+.info-box.warning{border-left-color:var(--warning);background:var(--warning-soft)}
+.info-box.success{border-left-color:var(--teal);background:var(--teal-soft)}
+.info-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--ink);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.info-box p{margin:0;color:var(--ink-soft);font-size:15.5px;line-height:1.7}
+
+/* ANIMATED NEURAL NET DIAGRAM */
+.nn-diagram{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:30px;margin:32px 0;text-align:center;box-shadow:var(--shadow)}
+.nn-diagram svg{width:100%;max-width:600px;height:auto}
+.nn-node{fill:var(--teal-soft);stroke:var(--teal);stroke-width:2;transition:all .3s}
+.nn-node.active{fill:var(--gold);stroke:var(--gold);animation:pulseNode 1.5s infinite}
+.nn-line{stroke:var(--line);stroke-width:1.5;transition:all .3s}
+.nn-line.active{stroke:var(--coral);stroke-width:2.5;animation:flowLine 1.5s infinite}
+@keyframes pulseNode{0%{r:12;}50%{r:15;}100%{r:12;}}
+@keyframes flowLine{0%{stroke-dasharray:0,100;}50%{stroke-dasharray:50,50;}100%{stroke-dasharray:100,0;}}
+
+/* MYTH VS FACT */
+.myth-fact{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0}
+.mf-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;position:relative;overflow:hidden}
+.mf-card.myth::before{content:'MYTH';position:absolute;top:10px;right:-20px;background:var(--danger);color:#fff;font-size:10px;font-weight:700;padding:4px 25px;transform:rotate(45deg);font-family:var(--font-mono)}
+.mf-card.fact::before{content:'FACT';position:absolute;top:10px;right:-20px;background:var(--teal);color:#fff;font-size:10px;font-weight:700;padding:4px 25px;transform:rotate(45deg);font-family:var(--font-mono)}
+.mf-card h4{font-size:15px;font-weight:700;margin-bottom:8px;color:var(--ink);font-family:var(--font-display)}
+.mf-card p{font-size:14px;color:var(--ink-soft);margin:0;line-height:1.6}
+
+/* QUIZ */
+.quiz-box{background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);padding:28px;margin:32px 0}
+.quiz-title{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:20px;font-family:var(--font-display);display:flex;align-items:center;gap:10px}
+.quiz-question{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:16px}
+.quiz-options{display:flex;flex-direction:column;gap:10px}
+.quiz-option{display:flex;align-items:center;gap:12px;padding:14px 18px;background:var(--bg);border:2px solid var(--line);border-radius:10px;cursor:pointer;transition:all .2s}
+.quiz-option:hover{border-color:var(--teal);background:var(--paper)}
+.quiz-option input[type="radio"]{width:18px;height:18px;accent-color:var(--teal);cursor:pointer}
+.quiz-feedback{margin-top:16px;padding:14px;border-radius:10px;font-size:14px;display:none}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:var(--teal-soft);color:var(--teal-dp);border:1px solid var(--teal)}
+.quiz-feedback.incorrect{background:var(--danger-soft);color:var(--danger);border:1px solid var(--danger)}
+
+/* FAQ */
+.faq{margin:16px 0}
+details{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--teal)}
+summary{padding:18px 22px;cursor:pointer;font-weight:600;font-size:16px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--teal);font-size:22px;font-weight:300;transition:transform .3s;flex-shrink:0}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 22px 18px;color:var(--ink-soft);font-size:15px;line-height:1.7}
+
+/* AUTHOR BOX */
+.author-box{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin:48px 0 0}
+.author-box .meta-avatar{width:48px;height:48px;font-size:17px}
+.author-box h3{font-size:15px;font-family:var(--font-display);margin-bottom:4px;color:var(--ink)}
+.author-box p{font-size:14px;color:var(--muted);margin:0;line-height:1.6}
+
+/* SHARE */
+.share-section{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:32px 0 0;text-align:center}
+.share-title{font-size:15.5px;font-weight:700;color:var(--ink);margin-bottom:16px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--paper);color:var(--ink-soft)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--teal);color:var(--ink)}
+
+/* NEWSLETTER */
+.newsletter{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:44px;margin:56px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal))}
+.newsletter h2{font-size:25px;font-weight:700;color:var(--ink);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--muted);margin-bottom:24px;font-size:15.5px}
+.nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 16px;color:var(--ink);font-size:14px;outline:none;transition:border-color .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--muted)}.nl-input:focus{border-color:var(--teal)}
+.nl-btn{background:var(--teal);color:#fff;padding:13px 22px;border-radius:10px;border:none;cursor:pointer;font-size:14px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s;box-shadow:0 4px 16px rgba(20,107,92,.28)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px)}
+.nl-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+.nl-social{display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;padding:9px 16px;border-radius:10px;border:1px solid var(--line);color:var(--ink-soft);transition:all .2s}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--teal);color:var(--ink)}
+
+/* RELATED */
+.related{margin:48px 0 0}
+.related-title{font-size:19px;font-weight:700;color:var(--ink);margin-bottom:20px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rel-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px;transition:border-color .2s,transform .2s;cursor:pointer;display:block}
+.rel-card:hover{border-color:var(--teal);transform:translateY(-3px);text-decoration:none;box-shadow:var(--shadow)}
+.rel-tag{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--teal);margin-bottom:8px;font-family:var(--font-mono)}
+.rel-title{font-size:14px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:8px;font-family:var(--font-display)}
+.rel-read{font-size:12px;color:var(--muted)}
+
+/* FOOTER - ANIMATED */
+footer{background:var(--paper);border-top:1px solid var(--line);padding:60px 24px 32px;position:relative;z-index:1;overflow:hidden}
+.footer-animated-bg{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal),var(--purple),var(--danger));background-size:400% 100%;animation:footerGlow 6s ease-in-out infinite}
+@keyframes footerGlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.footer-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;position:relative;z-index:1}
+.footer-logo{font-size:21px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:9px;color:var(--ink);font-family:var(--font-display)}
+.footer-logo span{color:var(--teal)}
+.footer-brand p{color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:20px}
+.footer-social{display:flex;gap:10px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:7px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--ink-soft);transition:all .3s;position:relative;overflow:hidden}
+.fs-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--teal),var(--coral));transform:translateY(100%);transition:transform .3s;z-index:-1}
+.fs-btn:hover{color:#fff;border-color:var(--teal);transform:translateY(-3px);text-decoration:none}
+.fs-btn:hover::before{transform:translateY(0)}
+.footer-col h4{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);margin-bottom:16px;font-family:var(--font-mono)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:var(--muted);font-size:14px;transition:color .2s,transform .2s;display:inline-block}
+.footer-col a:hover{color:var(--teal);transform:translateX(4px);text-decoration:none}
+.footer-bottom{max-width:1160px;margin:44px auto 0;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);flex-wrap:wrap;gap:10px;position:relative;z-index:1}
+.footer-bottom-links{display:flex;gap:20px}
+.footer-bottom-links a{color:var(--muted);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--ink);text-decoration:none}
+
+/* BACK TO TOP */
+#back-top{position:fixed;bottom:28px;right:28px;background:var(--teal);color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:var(--shadow);z-index:200}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.08) translateY(-2px);background:var(--coral)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media(max-width:900px){
+  .myth-fact{grid-template-columns:1fr}
+  .related-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-social,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .related-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- SVG ICON SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.15" fill="currentColor"/></symbol>
+<symbol id="icon-facebook" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 8.6h1.4V6h-1.9c-1.9 0-2.9 1.15-2.9 3v1.5H8.7V13h1.9v6.3h2.4V13h1.7l.3-2.5h-2V9.4c0-.5.2-.8.9-.8z" fill="currentColor"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5.2 4.8l14 14.4M19.2 4.8L5.2 19.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+<symbol id="icon-youtube" viewBox="0 0 24 24"><rect x="2.3" y="6" width="19.4" height="12" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.3 9.4l5.2 2.6-5.2 2.6z" fill="currentColor"/></symbol>
+</defs>
+</svg>
+
+<!-- AMBIENT BACKGROUND -->
+<div class="bg-canvas">
+  <div class="aura aura-1"></div>
+  <div class="aura aura-2"></div>
+  <div class="aura aura-3"></div>
+</div>
+<div class="grain"></div>
+<div class="bubble-field" id="bubbleField"></div>
+
+<!-- PROGRESS BAR -->
+<div id="progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/assets/logo.png" alt="" class="logo-img" onerror="this.remove()"/>
+      Nyvora<span>AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html" class="active">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nav-soc" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nav-soc" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"/></svg></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nav-soc" aria-label="X (Twitter)"><svg class="icon"><use href="#icon-x"/></svg></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nav-soc" aria-label="YouTube"><svg class="icon"><use href="#icon-youtube"/></svg></a>
+      </div>
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" aria-expanded="false" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+  <div style="display:flex;gap:16px;padding-top:8px">
+    <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" style="color:var(--muted);display:flex;align-items:center;gap:6px"><svg class="icon icon-sm"><use href="#icon-instagram"/></svg> Instagram</a>
+    <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" style="color:var(--muted);display:flex;align-items:center;gap:6px"><svg class="icon icon-sm"><use href="#icon-x"/></svg> X</a>
+  </div>
+</div>
+
+<div class="page-wrap">
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <span class="bc-sep">/</span>
+  <span aria-current="page">Neural Network Explained</span>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge">🧠 AI Basics</span>
+    <span class="badge badge-read">⏱ 20 min read</span>
+    <span class="badge badge-date">📅 Updated June 2026</span>
+  </div>
+  <h1 class="article-title">What Is a <span class="title-underline">Neural Network</span> Explained Simply?</h1>
+  <p class="article-intro">Neural networks are the engine powering the AI revolution. But how do they actually work? We break down the complex math into simple, easy-to-understand concepts.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="" onerror="this.remove()"/></div>
+      <div><div class="meta-name">NyvoraAI Team</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-06-24">June 24, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Reviewed <time datetime="2026-06">June 2026</time></span>
+  </div>
+</header>
+
+<!-- HERO SVG -->
+<div class="hero-wrap reveal">
+  <div class="hero-box">
+    <svg viewBox="0 0 860 360" xmlns="http://www.w3.org/2000/svg" role="img" alt="What is a neural network explained simply - visualization of interconnected nodes forming an artificial brain" aria-labelledby="heroTitle heroDesc">
+      <title id="heroTitle">What is a neural network explained simply - visualization of interconnected nodes forming an artificial brain</title>
+      <desc id="heroDesc">Illustration showing what is a neural network explained simply, featuring interconnected nodes and layers representing an artificial brain processing information.</desc>
+      <rect width="860" height="360" fill="#FBF8F1"/>
+      <circle cx="150" cy="180" r="120" fill="#DCEEE8" opacity="0.4"/>
+      <circle cx="710" cy="180" r="120" fill="#FCEACB" opacity="0.4"/>
+      
+      <!-- Input Layer -->
+      <g transform="translate(200,180)">
+        <circle cx="0" cy="-60" r="16" fill="#FFFFFF" stroke="#146B5C" stroke-width="3"/>
+        <circle cx="0" cy="0" r="16" fill="#FFFFFF" stroke="#146B5C" stroke-width="3"/>
+        <circle cx="0" cy="60" r="16" fill="#FFFFFF" stroke="#146B5C" stroke-width="3"/>
+        <text x="0" y="110" text-anchor="middle" font-size="14" fill="#0E4F45" font-family="Space Grotesk, sans-serif" font-weight="700">Input</text>
+      </g>
+
+      <!-- Hidden Layer 1 -->
+      <g transform="translate(430,180)">
+        <circle cx="0" cy="-80" r="16" fill="#FFFFFF" stroke="#E89B2D" stroke-width="3"/>
+        <circle cx="0" cy="-26" r="16" fill="#FFFFFF" stroke="#E89B2D" stroke-width="3"/>
+        <circle cx="0" cy="26" r="16" fill="#FFFFFF" stroke="#E89B2D" stroke-width="3"/>
+        <circle cx="0" cy="80" r="16" fill="#FFFFFF" stroke="#E89B2D" stroke-width="3"/>
+        <text x="0" y="130" text-anchor="middle" font-size="14" fill="#8A5A12" font-family="Space Grotesk, sans-serif" font-weight="700">Hidden</text>
+      </g>
+
+      <!-- Output Layer -->
+      <g transform="translate(660,180)">
+        <circle cx="0" cy="-40" r="16" fill="#FFFFFF" stroke="#FF6B4A" stroke-width="3"/>
+        <circle cx="0" cy="40" r="16" fill="#FFFFFF" stroke="#FF6B4A" stroke-width="3"/>
+        <text x="0" y="100" text-anchor="middle" font-size="14" fill="#B8431F" font-family="Space Grotesk, sans-serif" font-weight="700">Output</text>
+      </g>
+
+      <!-- Connections -->
+      <g stroke="#DCE0D2" stroke-width="1.5" opacity="0.6">
+        <!-- Input to Hidden -->
+        <line x1="216" y1="120" x2="414" y2="100"/>
+        <line x1="216" y1="120" x2="414" y2="154"/>
+        <line x1="216" y1="120" x2="414" y2="206"/>
+        <line x1="216" y1="120" x2="414" y2="260"/>
+        <line x1="216" y1="180" x2="414" y2="100"/>
+        <line x1="216" y1="180" x2="414" y2="154"/>
+        <line x1="216" y1="180" x2="414" y2="206"/>
+        <line x1="216" y1="180" x2="414" y2="260"/>
+        <line x1="216" y1="240" x2="414" y2="100"/>
+        <line x1="216" y1="240" x2="414" y2="154"/>
+        <line x1="216" y1="240" x2="414" y2="206"/>
+        <line x1="216" y1="240" x2="414" y2="260"/>
+        <!-- Hidden to Output -->
+        <line x1="446" y1="100" x2="644" y2="140"/>
+        <line x1="446" y1="100" x2="644" y2="220"/>
+        <line x1="446" y1="154" x2="644" y2="140"/>
+        <line x1="446" y1="154" x2="644" y2="220"/>
+        <line x1="446" y1="206" x2="644" y2="140"/>
+        <line x1="446" y1="206" x2="644" y2="220"/>
+        <line x1="446" y1="260" x2="644" y2="140"/>
+        <line x1="446" y1="260" x2="644" y2="220"/>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">📌 Pinned — jump to a section</div>
+    <ol>
+      <li><a href="#quick-answer">The Quick Answer</a></li>
+      <li><a href="#brain-inspiration">The Brain Inspiration</a></li>
+      <li><a href="#anatomy">Anatomy of a Network</a></li>
+      <li><a href="#learning">How They Learn</a></li>
+      <li><a href="#types">Types of Networks</a></li>
+      <li><a href="#applications">Real-World Uses</a></li>
+      <li><a href="#myths">Myths vs. Facts</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<!-- ARTICLE BODY -->
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">If you have ever marveled at how an AI can recognize your face in a photo, translate a language in real-time, or write a convincing essay, you have witnessed the power of a neural network. But if you ask most people, "What is a neural network?" you will likely get a blank stare or a highly technical answer full of jargon like "backpropagation" and "gradient descent."</p>
+
+  <p class="reveal">It is time to demystify the engine powering the AI revolution. What is a neural network explained simply, without the PhD-level mathematics? At its core, a neural network is just a computer program designed to learn from examples, much like a child learning to recognize a dog by seeing hundreds of dogs. In this comprehensive guide, we will break down exactly how these "artificial brains" work, why they are so powerful, and how they are reshaping our world.</p>
+
+  <div class="key-takeaways quick-answer reveal">
+    <div class="kt-title">✓ Key Takeaways</div>
+    <ul>
+      <li>A neural network is a type of machine learning model inspired by the structure of the human brain.</li>
+      <li>It consists of interconnected nodes (neurons) organized into layers: input, hidden, and output.</li>
+      <li>Neural networks learn by adjusting the strength of connections (weights) based on errors they make.</li>
+      <li>They excel at finding complex patterns in massive amounts of unstructured data like images and text.</li>
+      <li>Deep learning is simply the use of neural networks with many hidden layers.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2 id="quick-answer"><span class="h2-mark">01</span> The Quick Answer: What Is a Neural Network?</h2>
+  
+  <p class="reveal">To answer the question "What is a neural network explained simply?" we need to look at the problem traditional software tries to solve. In traditional programming, a human writes explicit rules: "If the image has pointy ears and whiskers, it is a cat." But the real world is messy. What if the cat is sleeping? What if it is a rare breed? Writing rules for every possibility is impossible.</p>
+
+  <div class="info-box success">
+    <div class="info-title">🎯 Simple Definition</div>
+    <p>A <strong>neural network</strong> is a computer system modeled after the human brain. Instead of following a strict set of programmed rules, it is shown thousands of examples and learns to identify the underlying patterns on its own. It passes information through a web of interconnected "nodes," adjusting the importance of each connection until it can make highly accurate predictions or decisions.</p>
+  </div>
+
+  <p class="reveal">Think of a neural network like a massive committee of tiny, simple decision-makers. Each member of the committee only knows a little bit about the problem, but by passing their opinions to each other and voting on the final answer, the group as a whole becomes incredibly smart. This is the essence of how artificial intelligence processes information.</p>
+
+  <!-- SECTION 2 -->
+  <h2 id="brain-inspiration"><span class="h2-mark">02</span> The Biological Inspiration: Copying the Human Brain</h2>
+  
+  <p class="reveal">To truly understand artificial neural networks, we have to look at their namesake: the biological neural network inside your head. Your brain contains roughly 86 billion nerve cells called neurons. These neurons do not process information like a computer CPU; instead, they fire electrical signals to each other across tiny gaps called synapses.</p>
+
+  <p class="reveal">When you learn something new—like how to ride a bike or recognize a friend's face—your brain physically changes. The connections (synapses) between certain neurons become stronger, while others weaken. This is called neuroplasticity. Artificial neural networks attempt to mimic this exact process using mathematics.</p>
+
+  <h3>From Biology to Code</h3>
+  <ul class="reveal">
+    <li><strong>Biological Neuron:</strong> Receives electrical signals from dendrites, processes them in the cell body, and fires an output down the axon.</li>
+    <li><strong>Artificial Neuron (Node):</strong> Receives numerical inputs, multiplies them by a "weight" (importance), adds them together, and passes the result through an "activation function" to decide if it should fire.</li>
+    <li><strong>Synapse:</strong> The gap where chemical signals cross.</li>
+    <li><strong>Weight:</strong> A number in the code that determines how much influence one node has on another.</li>
+  </ul>
+
+  <p class="reveal">While modern AI has evolved far beyond strict biological mimicry, the core concept remains: learning is just the process of adjusting the strength of connections between a vast network of simple processing units.</p>
+
+  <!-- SECTION 3 -->
+  <h2 id="anatomy"><span class="h2-mark">03</span> The Anatomy of an Artificial Neural Network</h2>
+  
+  <p class="reveal">Let us look under the hood. A standard neural network is organized into three distinct types of layers. Imagine an assembly line in a factory, where raw materials enter at one end, get processed through various stations, and a finished product exits at the other.</p>
+
+  <div class="nn-diagram reveal">
+    <h3 style="text-align:left; margin-bottom:20px; font-size:16px;">🔍 Interactive Concept: The Flow of Information</h3>
+    <p style="text-align:left; font-size:14px; color:var(--ink-soft); margin-bottom:20px;">Data enters the input layer, is transformed by the hidden layers, and results in an output. Hover over the diagram to see the structure.</p>
+    <svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+      <!-- Lines -->
+      <line x1="100" y1="50" x2="300" y2="50" class="nn-line"/>
+      <line x1="100" y1="50" x2="300" y2="125" class="nn-line"/>
+      <line x1="100" y1="125" x2="300" y2="50" class="nn-line"/>
+      <line x1="100" y1="125" x2="300" y2="125" class="nn-line"/>
+      <line x1="100" y1="125" x2="300" y2="200" class="nn-line"/>
+      <line x1="100" y1="200" x2="300" y2="125" class="nn-line"/>
+      <line x1="100" y1="200" x2="300" y2="200" class="nn-line"/>
+      
+      <line x1="300" y1="50" x2="500" y2="90" class="nn-line"/>
+      <line x1="300" y1="50" x2="500" y2="160" class="nn-line"/>
+      <line x1="300" y1="125" x2="500" y2="90" class="nn-line"/>
+      <line x1="300" y1="125" x2="500" y2="160" class="nn-line"/>
+      <line x1="300" y1="200" x2="500" y2="90" class="nn-line"/>
+      <line x1="300" y1="200" x2="500" y2="160" class="nn-line"/>
+
+      <!-- Nodes -->
+      <circle cx="100" cy="50" r="14" class="nn-node"/>
+      <circle cx="100" cy="125" r="14" class="nn-node"/>
+      <circle cx="100" cy="200" r="14" class="nn-node"/>
+      
+      <circle cx="300" cy="50" r="14" class="nn-node"/>
+      <circle cx="300" cy="125" r="14" class="nn-node"/>
+      <circle cx="300" cy="200" r="14" class="nn-node"/>
+      
+      <circle cx="500" cy="90" r="14" class="nn-node"/>
+      <circle cx="500" cy="160" r="14" class="nn-node"/>
+
+      <!-- Labels -->
+      <text x="100" y="240" text-anchor="middle" font-size="12" fill="#7C8579" font-family="JetBrains Mono, monospace">Input Layer</text>
+      <text x="300" y="240" text-anchor="middle" font-size="12" fill="#7C8579" font-family="JetBrains Mono, monospace">Hidden Layer</text>
+      <text x="500" y="240" text-anchor="middle" font-size="12" fill="#7C8579" font-family="JetBrains Mono, monospace">Output Layer</text>
+    </svg>
+  </div>
+
+  <h3>1. The Input Layer (The Eyes and Ears)</h3>
+  <p class="reveal">This is where the raw data enters the network. If the network is looking at a digital image, the input layer consists of a node for every single pixel. If it is processing text, it might be a node for every word or character. The input layer does no processing; it simply receives the data and passes it forward.</p>
+
+  <h3>2. The Hidden Layers (The Brain Power)</h3>
+  <p class="reveal">This is where the magic happens. A neural network can have one hidden layer, or it can have hundreds. (When a network has many hidden layers, we call it a "deep" neural network, which is where the term <a href="https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html">the difference between AI and deep learning</a> comes from). Each node in a hidden layer receives signals from the previous layer, multiplies them by specific "weights," adds a "bias" (a threshold value), and passes the result through an activation function. Early hidden layers might detect simple features like edges or curves, while deeper layers combine those to recognize complex objects like faces or cars.</p>
+
+  <h3>3. The Output Layer (The Decision)</h3>
+  <p class="reveal">The final layer produces the network's answer. If the network is trying to classify an image as a "cat" or "dog," the output layer will have two nodes. The node with the highest value is the network's final prediction.</p>
+
+  <!-- SECTION 4 -->
+  <h2 id="learning"><span class="h2-mark">04</span> How Do Neural Networks Actually Learn?</h2>
+  
+  <p class="reveal">A neural network starts out completely ignorant. Its weights and biases are assigned randomly. If you ask it to identify a cat on day one, it will guess randomly. So how does it get smart? Through a process of trial, error, and adjustment.</p>
+
+  <h3>Step 1: Forward Propagation (Making a Guess)</h3>
+  <p class="reveal">The data flows from the input layer, through the hidden layers, to the output layer. This is called forward propagation. The network looks at a picture of a cat, processes the pixels, and outputs: "I am 90% sure this is a toaster."</p>
+
+  <h3>Step 2: The Loss Function (Measuring the Mistake)</h3>
+  <p class="reveal">The network compares its guess ("toaster") to the actual truth ("cat"). The mathematical difference between the guess and the truth is called the "loss" or "error." A high loss means the network is doing a terrible job.</p>
+
+  <h3>Step 3: Backpropagation (Learning from Mistakes)</h3>
+  <p class="reveal">This is the most crucial step. The network sends the error signal backward through the network. It asks: "Which connections contributed to this wrong answer?" Using calculus (specifically the chain rule), it calculates exactly how much each weight contributed to the error.</p>
+
+  <h3>Step 4: Gradient Descent (Adjusting the Weights)</h3>
+  <p class="reveal">Once the network knows which weights to blame, it adjusts them slightly in the opposite direction of the error. If a certain connection made it think a cat was a toaster, that connection is weakened. This process is repeated thousands of times with thousands of different images. Over time, the weights settle into a pattern that accurately distinguishes cats from toasters.</p>
+
+  <div class="info-box">
+    <div class="info-title">💡 Beyond Basic Training</div>
+    <p>While backpropagation is how networks learn patterns, modern AI also requires alignment to ensure it behaves safely and helpfully. To understand how we refine these models after their initial training, you can explore <a href="https://nyvoraai.github.io/ai-news/how-does-ai-learn-from-human-feedback.html">how AI learns from human feedback</a> and dive deeper into <a href="https://nyvoraai.github.io/ai-news/what-is-rlhf-ai.html">what RLHF is in artificial intelligence</a>.</p>
+  </div>
+
+  <!-- SECTION 5 -->
+  <h2 id="types"><span class="h2-mark">05</span> Types of Neural Networks: Not All Brains Are Equal</h2>
+  
+  <p class="reveal">Just as there are different tools in a toolbox, there are different architectures of neural networks designed for specific types of problems.</p>
+
+  <ul class="reveal">
+    <li><strong>Feedforward Neural Networks (FNN):</strong> The simplest type. Information moves in only one direction—from input to output. Good for basic classification tasks.</li>
+    <li><strong>Convolutional Neural Networks (CNN):</strong> Specifically designed for visual data. They use special filters to scan images for patterns, making them the backbone of facial recognition and medical image analysis.</li>
+    <li><strong>Recurrent Neural Networks (RNN):</strong> Designed for sequential data like text or time series. They have a "memory" of previous inputs, making them useful for language translation (though they are largely being replaced by Transformers).</li>
+    <li><strong>Transformers:</strong> The architecture behind modern Large Language Models (LLMs) like ChatGPT. They process entire sequences of data at once and use "attention mechanisms" to figure out which words are most relevant to each other, regardless of distance.</li>
+  </ul>
+
+  <!-- SECTION 6 -->
+  <h2 id="applications"><span class="h2-mark">06</span> Real-World Applications: Where Are Neural Networks Used?</h2>
+  
+  <p class="reveal">Neural networks are no longer just academic experiments; they are embedded in the fabric of modern life. Here is how they are being used across industries:</p>
+
+  <h3>Healthcare and Science</h3>
+  <p class="reveal">Neural networks are revolutionizing medicine. They can detect tumors in X-rays with greater accuracy than human radiologists. Beyond diagnostics, <a href="https://nyvoraai.github.io/ai-news/how-is-ai-used-in-scientific-research.html">how AI is used in scientific research</a> includes predicting protein structures (like AlphaFold), accelerating drug discovery, and modeling climate change patterns.</p>
+
+  <h3>Natural Language Processing (NLP)</h3>
+  <p class="reveal">Every time you use a virtual assistant, get an auto-complete suggestion in your email, or use a translation app, you are using a neural network. Transformer models have made it possible for machines to understand context, sarcasm, and nuance in human language.</p>
+
+  <h3>Creative AI and Generative Models</h3>
+  <p class="reveal">Generative Adversarial Networks (GANs) and Diffusion models can create stunning, photorealistic images, compose music, and write code. However, interacting with these creative tools effectively requires understanding <a href="https://nyvoraai.github.io/ai-news/what-is-prompt-engineering-does-it-work.html">what prompt engineering is and how it works</a> to guide the neural network toward the desired output.</p>
+
+  <h3>Autonomous Systems</h3>
+  <p class="reveal">Self-driving cars rely on a massive ensemble of neural networks working in real-time. CNNs process camera feeds to detect lanes and pedestrians, while other networks predict the behavior of other drivers and plan the vehicle's path.</p>
+
+  <!-- SECTION 7 -->
+  <h2 id="myths"><span class="h2-mark">07</span> Myths vs. Facts: Clearing Up the Confusion</h2>
+  
+  <p class="reveal">Because neural networks are so powerful, they are often misunderstood. Let us separate science fiction from reality.</p>
+
+  <div class="myth-fact reveal">
+    <div class="mf-card myth">
+      <h4>Neural networks actually "think" like humans.</h4>
+      <p>While inspired by the brain, artificial neural networks are just complex math functions. They do not possess consciousness, emotions, or true understanding. They are incredibly advanced pattern matchers, not sentient beings.</p>
+    </div>
+    <div class="mf-card fact">
+      <h4>They require massive amounts of data to learn.</h4>
+      <p>Unlike a human child who can learn what a cat is after seeing one or two, a neural network typically needs thousands or millions of examples to adjust its weights accurately. Data is the fuel of AI.</p>
+    </div>
+    <div class="mf-card myth">
+      <h4>Once trained, a neural network is perfect.</h4>
+      <p>Neural networks suffer from "drift." If the real world changes and the data they encounter differs from their training data, their accuracy will drop. They require continuous monitoring and updating.</p>
+    </div>
+    <div class="mf-card fact">
+      <h4>They can be "black boxes."</h4>
+      <p>Because a deep neural network has millions of weights, it is often impossible for humans to understand exactly <em>why</em> the network made a specific decision. This lack of interpretability is a major challenge in fields like law and medicine.</p>
+    </div>
+  </div>
+
+  <!-- QUIZ SECTION -->
+  <div class="quiz-box reveal" id="quiz">
+    <div class="quiz-title">🧠 Test Your Neural Network Knowledge</div>
+    <div class="quiz-question">In a neural network, what is the purpose of the "Hidden Layers"?</div>
+    <div class="quiz-options" role="radiogroup" aria-label="Quiz options">
+      <label class="quiz-option"><input type="radio" name="q1" value="a" onchange="checkAnswer(this.value,'b')"><span>To store the final answer or prediction.</span></label>
+      <label class="quiz-option"><input type="radio" name="q1" value="b" onchange="checkAnswer(this.value,'b')"><span>To process inputs, extract complex features, and transform data before it reaches the output.</span></label>
+      <label class="quiz-option"><input type="radio" name="q1" value="c" onchange="checkAnswer(this.value,'b')"><span>To receive raw data like pixels or text from the outside world.</span></label>
+      <label class="quiz-option"><input type="radio" name="q1" value="d" onchange="checkAnswer(this.value,'b')"><span>To prevent the network from learning too quickly.</span></label>
+    </div>
+    <div class="quiz-feedback correct" id="qCorrect" role="alert">✅ Correct! Hidden layers are the computational engine of the network. They take the raw input, apply weights and activation functions, and progressively extract higher-level features (like edges, then shapes, then objects) to make sense of the data.</div>
+    <div class="quiz-feedback incorrect" id="qIncorrect" role="alert">❌ Not quite. The input layer receives raw data, and the output layer stores the final prediction. The hidden layers sit in the middle, doing the heavy lifting of processing and transforming the data to find patterns.</div>
+  </div>
+
+  <!-- FAQ SECTION -->
+  <h2 id="faq"><span class="h2-mark">08</span> Frequently Asked Questions</h2>
+  
+  <div class="faq reveal">
+    <details open>
+      <summary>What is a neural network explained simply?</summary>
+      <div class="faq-body">A neural network is a type of computer program inspired by the human brain. It consists of interconnected nodes (neurons) organized in layers that process information, learn patterns from data, and make decisions or predictions without being explicitly programmed for every specific rule.</div>
+    </details>
+    
+    <details>
+      <summary>How is a neural network different from standard programming?</summary>
+      <div class="faq-body">In standard programming, a human writes explicit rules (e.g., "If X happens, do Y"). In a neural network, the programmer does not write the rules; instead, they provide the network with data and the correct answers. The network then figures out the rules itself by adjusting its internal mathematical connections (weights) to minimize errors.</div>
+    </details>
+    
+    <details>
+      <summary>Why do we need so many layers in "deep" learning?</summary>
+      <div class="faq-body">Each layer in a neural network learns to identify features at a different level of abstraction. The first layer might learn to detect simple edges or colors. The next layer combines those edges to detect shapes. Deeper layers combine shapes to detect complex objects like faces or cars. More layers allow the network to understand highly complex, abstract concepts.</div>
+    </details>
+    
+    <details>
+      <summary>Can a neural network learn on its own without human help?</summary>
+      <div class="faq-body">Generally, no. Most neural networks require "supervised learning," meaning humans must provide labeled data (e.g., thousands of images explicitly tagged as "cat" or "dog") to train the model. However, "unsupervised" and "reinforcement" learning methods allow networks to find patterns or learn through trial and error in simulated environments without explicit labels.</div>
+    </details>
+    
+    <details>
+      <summary>Are neural networks conscious?</summary>
+      <div class="faq-body">No. Despite the biological terminology like "neurons" and "brains," artificial neural networks are purely mathematical constructs. They do not have feelings, self-awareness, or consciousness. They are incredibly sophisticated statistical tools that map inputs to outputs based on patterns found in training data.</div>
+    </details>
+  </div>
+
+  <!-- AUTHOR BOX -->
+  <div class="author-box reveal">
+    <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by the NyvoraAI Team</h3>
+      <p>We break down complex AI architecture into simple, actionable insights. Reviewed for accuracy in June 2026. Have questions about how AI works? <a href="https://nyvoraai.github.io/contact.html">Contact our team</a> or <a href="https://nyvoraai.github.io/about.html">learn more about our mission</a> to make AI understandable for everyone.</p>
+    </div>
+  </div>
+
+  <!-- SHARE -->
+  <div class="share-section reveal">
+    <div class="share-title">Help others understand AI — share this guide 👇</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=What+Is+a+Neural+Network+Explained+Simply%3F+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/ai-news/what-is-a-neural-network-explained-simply.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-x"/></svg> Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/ai-news/what-is-a-neural-network-explained-simply.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Share on Facebook</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nyvoraai.github.io/ai-news/what-is-a-neural-network-explained-simply.html" target="_blank" rel="noopener" class="share-btn">💼 Share on LinkedIn</a>
+      <button class="share-btn" onclick="copyLink()">🔗 Copy Link</button>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter reveal">
+    <h2>Demystify AI with Weekly Updates</h2>
+    <p>Get simple, jargon-free explanations of AI concepts, neural networks, and the latest tech breakthroughs delivered straight to your inbox.</p>
+    <form action="https://formspree.io/f/xwvjgdpw" method="POST" class="nl-form" id="nlForm">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
+      <input type="hidden" name="_subject" value="Newsletter Signup — Neural Network Guide"/>
+      <button type="submit" class="nl-btn">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · Privacy-focused</p>
+    <div class="nl-social">
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-instagram"/></svg> Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-facebook"/></svg> Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-x"/></svg> X / Twitter</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</a>
+    </div>
+  </div>
+
+  <!-- RELATED POSTS -->
+  <div class="related reveal">
+    <div class="related-title">Read Next</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html" class="rel-card">
+        <div class="rel-tag">AI Basics</div>
+        <div class="rel-title">AI vs Deep Learning: Key Differences</div>
+        <div class="rel-read">16 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/how-is-ai-used-in-scientific-research.html" class="rel-card">
+        <div class="rel-tag">Science</div>
+        <div class="rel-title">How AI Is Used in Scientific Research</div>
+        <div class="rel-read">12 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/what-is-rlhf-ai.html" class="rel-card">
+        <div class="rel-tag">AI Training</div>
+        <div class="rel-title">What Is RLHF in Artificial Intelligence?</div>
+        <div class="rel-read">20 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/how-does-ai-learn-from-human-feedback.html" class="rel-card">
+        <div class="rel-tag">Machine Learning</div>
+        <div class="rel-title">How Does AI Learn from Human Feedback?</div>
+        <div class="rel-read">14 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/what-is-prompt-engineering-does-it-work.html" class="rel-card">
+        <div class="rel-tag">AI Tools</div>
+        <div class="rel-title">What Is Prompt Engineering?</div>
+        <div class="rel-read">11 min read →</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-animated-bg"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">
+        <img src="https://nyvoraai.github.io/assets/logo.png" alt="" class="logo-img" onerror="this.remove()"/>
+        Nyvora<span>AI</span>
+      </span>
+      <p>Your trusted source for AI education, simple guides, and safety insights. Empowering you to understand the future of technology.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-instagram"/></svg> Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Facebook</a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-x"/></svg> X</a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Topics</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">For Beginners</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">AI Safety</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Guides</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Tool Reviews</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /page-wrap -->
+
+<!-- BACK TO TOP -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+// Floating bubbles
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const wrap=document.getElementById('bubbleField');
+  const colors=['#FF6B4A','#146B5C','#E89B2D','#8B5CF6'];
+  const count=window.innerWidth<700?8:14;
+  for(let i=0;i<count;i++){
+    const b=document.createElement('div');b.className='fbubble';
+    const size=26+Math.random()*64,left=Math.random()*100,dur=13+Math.random()*13,delay=-Math.random()*dur,color=colors[i%colors.length];
+    b.style.cssText='width:'+size+'px;height:'+(size*.7)+'px;left:'+left+'%;bottom:-10%;border-color:'+color+';animation-duration:'+dur+'s;animation-delay:'+delay+'s';
+    wrap.appendChild(b);
+  }
+})();
+
+// Progress bar + back to top
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const pct=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  const bar=document.getElementById('progress');
+  bar.style.width=pct+'%';
+  bar.setAttribute('aria-valuenow',Math.round(pct));
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+});
+
+// Reveal on scroll
+const io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
+  });
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(function(r){io.observe(r);});
+
+// Mobile menu
+function toggleMenu(){
+  const nav=document.getElementById('mobileNav');
+  const ham=document.getElementById('ham');
+  const isOpen=nav.classList.toggle('open');
+  ham.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+
+// Copy link
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(function(){
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;
+    const orig=btn.textContent;
+    btn.textContent='✅ Copied!';
+    setTimeout(function(){btn.textContent=orig;},2000);
+  });
+}
+
+// Quiz
+function checkAnswer(val, correct){
+  const cEl=document.getElementById('qCorrect');
+  const iEl=document.getElementById('qIncorrect');
+  cEl.classList.remove('show');
+  iEl.classList.remove('show');
+  if(val===correct){
+    cEl.classList.add('show');
+  } else {
+    iEl.classList.add('show');
+  }
+}
+
+// Newsletter form
+document.getElementById('nlForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const btn=this.querySelector('.nl-btn');
+  btn.textContent='Sending...';
+  btn.disabled=true;
+  fetch(this.action,{method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(r.ok){btn.textContent='✅ Subscribed!';}
+      else{btn.textContent='Try again';btn.disabled=false;}
+    }).catch(function(){btn.textContent='Try again';btn.disabled=false;});
+});
+</script>
+</body>
+</html>
