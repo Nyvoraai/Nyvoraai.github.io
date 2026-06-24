@@ -98,7 +98,7 @@
 
     main { padding-top:calc(68px + 60px); position:relative; z-index:2; }
     h2[id] { scroll-margin-top:110px; }
-    .art-wrap { max-width:750px; margin:0 auto; padding:0 24px; position:relative; z-index:2; }
+    .art-wrap { max-width:800px; margin:0 auto; padding:0 24px; position:relative; z-index:2; }
 
     /* MESH */
     .mesh { position:fixed; top:0; left:0; right:0; bottom:0; z-index:0; pointer-events:none; }
@@ -159,138 +159,7 @@
     /* HIDE INLINE TOC */
     .art-toc { display:none !important; }
 
-    /* ===== STICKY SIDE TOC - FIXED ===== */
-    .side-toc {
-      position:fixed;
-      top:50%;
-      right:24px;
-      transform:translateY(-50%);
-      width:280px;
-      max-height:min(80vh, 580px);
-      overflow-y:auto;
-      overflow-x:hidden;
-      background:rgba(8,16,36,0.96);
-      border:1px solid rgba(45,212,224,0.22);
-      border-radius:20px;
-      padding:0;
-      z-index:200;
-      backdrop-filter:blur(20px);
-      -webkit-backdrop-filter:blur(20px);
-      opacity:0;
-      pointer-events:none;
-      transition:opacity .4s ease;
-      box-shadow:0 24px 60px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.04) inset;
-      box-sizing:border-box;
-    }
-    .side-toc.visible { opacity:1; pointer-events:all; }
-    .side-toc::before {
-      content:"";
-      position:absolute;
-      top:0; left:0; right:0;
-      height:3px;
-      border-radius:20px 20px 0 0;
-      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber));
-      background-size:200% 100%;
-      animation:rainbowSlide 4s linear infinite;
-    }
 
-    /* TOC Header */
-    .side-toc-header {
-      padding:16px 18px 12px;
-      border-bottom:1px solid rgba(255,255,255,.07);
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-    .side-toc-icon-wrap {
-      width:28px; height:28px;
-      border-radius:8px;
-      background:linear-gradient(135deg,var(--cyan),var(--purple));
-      display:flex; align-items:center; justify-content:center;
-      font-size:.8rem; flex-shrink:0;
-    }
-    .side-toc-heading {
-      font-family:'Syne',sans-serif;
-      font-weight:800; font-size:.8rem;
-      color:#fff; text-transform:uppercase;
-      letter-spacing:.08em; line-height:1; margin:0;
-    }
-    .side-toc-sub { font-size:.65rem; color:var(--muted); margin-top:3px; font-weight:500; }
-
-    /* Progress inside TOC */
-    .side-toc-progress-wrap { padding:10px 18px 6px; }
-    .side-toc-progress-track { height:3px; background:rgba(255,255,255,.07); border-radius:99px; overflow:hidden; }
-    .side-toc-progress-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--cyan),var(--purple)); border-radius:99px; transition:width .2s ease; }
-    .side-toc-progress-label { font-size:.65rem; color:var(--muted); text-align:right; margin-top:4px; font-weight:600; letter-spacing:.04em; }
-
-    /* Nav links - FIXED LAYOUT */
-    .side-toc nav { padding:8px 14px 14px; display:flex; flex-direction:column; gap:1px; }
-    .side-toc-link {
-      display:flex;
-      align-items:center;
-      gap:8px;
-      color:var(--muted);
-      text-decoration:none;
-      font-size:.78rem;
-      padding:8px 10px;
-      border-radius:10px;
-      transition:background .2s ease, color .2s ease;
-      line-height:1.35;
-      font-weight:500;
-      position:relative;
-    }
-    .side-toc-link:hover { color:#fff; background:rgba(255,255,255,.06); }
-    .side-toc-link.active { color:#fff; background:rgba(45,212,224,.12); font-weight:700; }
-
-    /* Number bubble - smaller to save space */
-    .toc-num {
-      flex-shrink:0;
-      width:18px;
-      height:18px;
-      border-radius:6px;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.05);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:.62rem;
-      font-weight:800;
-      color:var(--muted);
-      font-family:'Syne',sans-serif;
-      transition:all .2s;
-      line-height:1;
-    }
-    .side-toc-link:hover .toc-num { border-color:rgba(45,212,224,.4); color:var(--cyan); }
-    .side-toc-link.active .toc-num { background:linear-gradient(135deg,var(--cyan),var(--purple)); border-color:transparent; color:#fff; }
-
-    /* Text - allow wrapping but prevent overflow */
-    .toc-txt { flex:1; min-width:0; }
-
-    /* Active dot - FIXED: uses absolute positioning so it NEVER affects layout */
-    .toc-dot {
-      position:absolute;
-      right:10px;
-      top:50%;
-      transform:translateY(-50%);
-      width:6px;
-      height:6px;
-      border-radius:50%;
-      background:var(--cyan);
-      opacity:0;
-      transition:opacity .2s;
-      pointer-events:none;
-    }
-    .side-toc-link.active .toc-dot { opacity:1; }
-
-    /* Divider */
-    .side-toc-divider { height:1px; background:rgba(255,255,255,.06); margin:4px 14px; }
-
-    /* Scrollbar */
-    .side-toc::-webkit-scrollbar{width:3px;}
-    .side-toc::-webkit-scrollbar-track{background:transparent;}
-    .side-toc::-webkit-scrollbar-thumb{background:rgba(45,212,224,.35);border-radius:4px;}
-
-    @media(max-width:1350px){.side-toc{display:none !important;}}
 
     /* QUICK ANSWER */
     .art-quick{background:linear-gradient(135deg,rgba(45,212,224,.1),rgba(139,92,246,.1));border-radius:20px;padding:26px 28px;margin:40px 0;position:relative;overflow:hidden;border:1px solid rgba(45,212,224,.25);}
@@ -370,8 +239,7 @@
 
     /* SIDE POPUP */
     #side-popup{position:fixed;bottom:24px;right:24px;z-index:9990;width:min(320px,calc(100vw - 40px));background:linear-gradient(135deg,#1B2A4A,#0F1C38);border:1px solid rgba(45,212,224,.35);border-radius:20px;padding:22px 22px 20px;box-shadow:0 20px 60px rgba(0,0,0,.6);transform:translateY(120%);opacity:0;transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .4s ease;}
-    /* Hide popup when TOC is visible on desktop to prevent overlap */
-    @media(min-width:1351px){.side-toc.visible ~ #side-popup{display:none !important;}}
+
     #side-popup.show{transform:translateY(0);opacity:1;}
     #side-popup::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;border-radius:20px 20px 0 0;background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber));background-size:200% 100%;animation:rainbowSlide 3s linear infinite;}
     .popup-close{position:absolute;top:10px;right:14px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:1.2rem;line-height:1;padding:4px;transition:color .2s;}
@@ -444,6 +312,7 @@
     }
   </style>
 <base target="_blank">
+<base target="_blank">
 </head>
 <body>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -503,79 +372,7 @@
     <a href="../contact.html">Contact</a>
   </div>
 
-  <!-- IMPROVED STICKY SIDE TOC -->
-  <aside class="side-toc" id="sideToc" aria-label="Article navigation">
 
-    <div class="side-toc-header">
-      <div class="side-toc-icon-wrap">&#x1F4CB;</div>
-      <div>
-        <div class="side-toc-heading">In this article</div>
-        <div class="side-toc-sub">9 sections &middot; 14 min read</div>
-      </div>
-    </div>
-
-    <div class="side-toc-progress-wrap">
-      <div class="side-toc-progress-track">
-        <div class="side-toc-progress-fill" id="tocProgressFill"></div>
-      </div>
-      <div class="side-toc-progress-label" id="tocProgressLabel">0% read</div>
-    </div>
-
-    <nav aria-label="Jump to section">
-      <a href="#definition" class="side-toc-link">
-        <span class="toc-num">1</span>
-        <span class="toc-txt">What is a context window?</span>
-        <span class="toc-dot" aria-hidden="true"></span>
-      </a>
-      <a href="#how-it-works" class="side-toc-link">
-        <span class="toc-num">2</span>
-        <span class="toc-txt">How context windows work</span>
-        <span class="toc-dot" aria-hidden="true"></span>
-      </a>
-      <a href="#tokens" class="side-toc-link">
-        <span class="toc-num">3</span>
-        <span class="toc-txt">Understanding tokens</span>
-        <span class="toc-dot" aria-hidden="true"></span>
-      </a>
-
-      <div class="side-toc-divider"></div>
-
-      <a href="#comparison" class="side-toc-link">
-        <span class="toc-num">4</span>
-        <span class="toc-txt">Model comparison 2026</span>
-        <span class="toc-dot" aria-hidden="true"></span>
-      </a>
-      <a href="#why-matters" class="side-toc-link">
-        <span class="toc-num">5</span>
-        <span class="toc-txt">Why size matters</span>
-        <span class="toc-dot" aria-hidden="true"></span>
-      </a>
-      <a href="#limitations" class="side-toc-link">
-        <span class="toc-num">6</span>
-        <span class="toc-txt">Limitations &amp; challenges</span>
-        <span class="toc-dot" aria-hidden="true"></span>
-      </a>
-
-      <div class="side-toc-divider"></div>
-
-      <a href="#optimization" class="side-toc-link">
-        <span class="toc-num">7</span>
-        <span class="toc-txt">Optimization strategies</span>
-        <span class="toc-dot" aria-hidden="true"></span>
-      </a>
-      <a href="#future" class="side-toc-link">
-        <span class="toc-num">8</span>
-        <span class="toc-txt">The future of context</span>
-        <span class="toc-dot" aria-hidden="true"></span>
-      </a>
-      <a href="#faq" class="side-toc-link">
-        <span class="toc-num">9</span>
-        <span class="toc-txt">FAQ</span>
-        <span class="toc-dot" aria-hidden="true"></span>
-      </a>
-    </nav>
-
-  </aside>
 
   <main id="main-content">
     <div class="art-wrap">
@@ -892,7 +689,6 @@
     const prog             = document.getElementById('read-prog');
     const tocProgressFill  = document.getElementById('tocProgressFill');
     const tocProgressLabel = document.getElementById('tocProgressLabel');
-    const sideToc          = document.getElementById('sideToc');
 
     window.addEventListener('scroll', () => {
       const docH = document.documentElement.scrollHeight - window.innerHeight;
@@ -901,7 +697,6 @@
       prog.setAttribute('aria-valuenow', pct);
       tocProgressFill.style.width  = pct + '%';
       tocProgressLabel.textContent = pct + '% read';
-      sideToc.classList.toggle('visible', window.scrollY > 500);
     }, { passive: true });
 
     // Newsletter popup
@@ -911,18 +706,9 @@
     const popupSuccess = document.getElementById('popupSuccess');
     let popupShown = false;
     window.addEventListener('scroll', () => {
-      const tocVisible = sideToc.classList.contains('visible');
-      const isMobile = window.innerWidth <= 1350;
       if (!popupShown && window.scrollY > 600) {
         popupShown = true;
-        // Only show popup if TOC is hidden (mobile) or on small screens
-        if (!tocVisible || isMobile) {
-          setTimeout(() => popup.classList.add('show'), 400);
-        }
-      }
-      // Hide popup if TOC becomes visible on desktop while popup is showing
-      if (tocVisible && !isMobile && popup.classList.contains('show')) {
-        popup.classList.remove('show');
+        setTimeout(() => popup.classList.add('show'), 400);
       }
     }, { passive: true });
     popupClose.addEventListener('click', () => {
@@ -955,33 +741,7 @@
       else if (type === 'fire') { const rc = document.getElementById('rc2'); rc.textContent = parseInt(rc.textContent) + 1; }
     }
 
-    // Side TOC — active section highlight
-    const sideTocLinks = document.querySelectorAll('.side-toc-link');
-    const sections     = document.querySelectorAll('h2[id]');
 
-    const tocObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          sideTocLinks.forEach(l => l.classList.remove('active'));
-          const active = document.querySelector('.side-toc-link[href="#' + entry.target.id + '"]');
-          if (active) active.classList.add('active');
-        }
-      });
-    }, { rootMargin: '-20% 0px -70% 0px' });
-
-    sections.forEach(s => tocObserver.observe(s));
-
-    // Smooth scroll with fixed-nav offset
-    sideTocLinks.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) {
-          const top = target.getBoundingClientRect().top + window.scrollY - 120;
-          window.scrollTo({ top, behavior: 'smooth' });
-        }
-      });
-    });
   </script>
 </body>
 </html>
