@@ -135,7 +135,7 @@
   <!-- ═══════════════════════════════════════
        Favicons
   ════════════════════════════════════════ -->
-  <link rel="icon" type="image/svg+xml" href="https://nyvoraai.github.io/logo.svg"/>
+  <link rel="icon" type="image/png" href="https://nyvoraai.github.io/logo.png"/>
   <link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
   <link rel="icon" type="image/png" href="https://nyvoraai.github.io/favicon-32x32.png"/>
   <link rel="apple-touch-icon" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
@@ -312,7 +312,13 @@
   </div>
 
   <nav role="navigation" aria-label="Main navigation">
-    <a href="index.html" class="logo">NyvoraAI</a>
+    <a href="index.html" class="logo" aria-label="NyvoraAI Home" style="display:inline-flex;align-items:center;">
+      <img src="https://nyvoraai.github.io/logo.png" alt="Nyvora AI logo" height="38" width="auto" style="display:block;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"/>
+      <span style="display:none;align-items:center;gap:8px;font-family:'Syne',sans-serif;font-weight:800;font-size:1.2rem;">
+        <span style="background:#1a1a2e;border-radius:8px;padding:4px 8px;font-weight:900;color:#fff;">N</span>
+        Nyvora <span style="color:#a78bfa;">AI</span>
+      </span>
+    </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="blog.html">Blog</a></li>
@@ -598,7 +604,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="f-brand">
-          <span class="f-logo">NyvoraAI</span>
+          <a href="index.html" aria-label="NyvoraAI Home" style="display:inline-flex;align-items:center;margin-bottom:12px;text-decoration:none;"><img src="https://nyvoraai.github.io/logo.png" alt="Nyvora AI logo" height="40" width="auto" style="display:block;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"/><span style="display:none;align-items:center;gap:8px;font-family:'Syne',sans-serif;font-weight:800;font-size:1.2rem;color:#fff;"><span style="background:#1a1a2e;border-radius:8px;padding:4px 8px;font-weight:900;">N</span>Nyvora <span style="color:#a78bfa;">AI</span></span></a>
           <p>Your trusted source for original AI news, deep dives, and practical insights on artificial intelligence.</p>
           <div class="socials" aria-label="Social media links">
             <!-- X / Twitter -->
@@ -647,6 +653,7 @@
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="contact.html">Write for Us</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
         </ul></div>
         <div class="f-col"><h4>Contact</h4><ul>
           <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
