@@ -27,10 +27,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="DC.language" content="en"/>
 <meta name="DC.coverage" content="Worldwide"/>
 
-<!-- AEO — Answer Engine Optimization -->
+<!-- AEO -->
 <meta name="topic" content="Artificial Intelligence News and Analysis"/>
-<meta name="summary" content="NyvoraAI is a daily AI news platform publishing original, fact-checked articles on artificial intelligence, machine learning, large language models, AI safety, generative AI, and AI tools. Content is written in plain English for a global audience and updated every day."/>
-<meta name="abstract" content="NyvoraAI covers the AI industry with original reporting, deep dives, and practical guides. Topics include LLMs, AI agents, robotics, AI policy, AI startups, and research breakthroughs."/>
+<meta name="summary" content="NyvoraAI is a daily AI news platform publishing original, fact-checked articles on artificial intelligence, machine learning, large language models, AI safety, generative AI, and AI tools."/>
+<meta name="abstract" content="NyvoraAI covers the AI industry with original reporting, deep dives, and practical guides."/>
 <meta name="classification" content="Technology/Artificial Intelligence/News"/>
 <meta name="category" content="Artificial Intelligence News"/>
 <meta name="subject" content="AI News, Machine Learning, Generative AI, LLMs, AI Tools, AI Safety, AI Research"/>
@@ -72,15 +72,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:image:alt" content="NyvoraAI — AI News Platform"/>
 
 <meta name="theme-color" content="#0B0F1A"/>
-<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="apple-mobile-web-app-title" content="NyvoraAI"/>
 
-<link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
-<link rel="alternate" type="application/rss+xml" title="NyvoraAI AI News Feed" href="https://nyvoraai.github.io/feed.xml"/>
+<!-- FAVICONS — ALL FORMATS for Yandex, Google, Safari, Chrome -->
 <link rel="icon" type="image/svg+xml" href="https://nyvoraai.github.io/logo.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="https://nyvoraai.github.io/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="https://nyvoraai.github.io/favicon-16x16.png"/>
+<link rel="shortcut icon" href="https://nyvoraai.github.io/favicon.ico"/>
+<link rel="apple-touch-icon" sizes="180x180" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
+<link rel="manifest" href="https://nyvoraai.github.io/site.webmanifest"/>
+<meta name="msapplication-TileColor" content="#0B0F1A"/>
+<meta name="msapplication-config" content="https://nyvoraai.github.io/browserconfig.xml"/>
 
-<!-- SCHEMA.ORG — AI Overview / AEO Ready -->
+<link rel="sitemap" type="application/xml" href="https://nyvoraai.github.io/sitemap.xml"/>
+<link rel="alternate" type="application/rss+xml" title="NyvoraAI AI News Feed" href="https://nyvoraai.github.io/feed.xml"/>
+
+<!-- SCHEMA.ORG -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -91,17 +100,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "url": "https://nyvoraai.github.io/",
       "name": "NyvoraAI",
       "alternateName": ["Nyvora AI", "NyvoraAI News"],
-      "description": "NyvoraAI is a daily AI news platform delivering original, fact-checked coverage of artificial intelligence, machine learning, generative AI, LLMs, AI safety, and AI tools — written in plain English for a global audience.",
+      "description": "NyvoraAI is a daily AI news platform delivering original, fact-checked coverage of artificial intelligence, machine learning, generative AI, LLMs, AI safety, and AI tools.",
       "inLanguage": "en-US",
       "publisher": { "@id": "https://nyvoraai.github.io/#organization" },
       "potentialAction": {
         "@type": "SearchAction",
         "target": { "@type": "EntryPoint", "urlTemplate": "https://nyvoraai.github.io/ai-news.html?q={search_term_string}" },
         "query-input": "required name=search_term_string"
-      },
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": [".hero-headline", ".hero-sub"]
       }
     },
     {
@@ -128,19 +133,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "email": "nyvora.ai@outlook.com",
         "contactType": "editorial",
         "availableLanguage": "English"
-      },
-      "knowsAbout": ["Artificial Intelligence","Machine Learning","Large Language Models","Generative AI","AI Safety","AI Ethics","Neural Networks","Deep Learning","AI Agents","Robotics","Natural Language Processing","Computer Vision","AI Policy and Regulation","AI Startups","AI Tools and Applications"]
+      }
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "What is NyvoraAI?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI is a daily AI news platform that delivers original, fact-checked coverage of artificial intelligence, machine learning, and emerging tech — written in plain English for a global audience. It covers LLMs, generative AI, AI safety, AI tools, startups, and research breakthroughs." } },
-        { "@type": "Question", "name": "Is NyvoraAI free to read?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. All AI news, blog posts, and insights on NyvoraAI are 100% free to read. There are no paywalls, no subscriptions, and no registration required." } },
-        { "@type": "Question", "name": "How often does NyvoraAI publish new articles?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI publishes fresh, fact-checked AI articles every single day to keep readers up to date with the latest trends, tools, breakthroughs, and research in artificial intelligence." } },
-        { "@type": "Question", "name": "What topics does NyvoraAI cover?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI covers the full AI ecosystem: large language models (LLMs), generative AI, AI safety and ethics, AI tools and productivity, AI research and papers, AI startups and funding, robotics, AI policy and regulation, and practical AI applications." } },
-        { "@type": "Question", "name": "Who runs NyvoraAI?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI is independently operated by the NyvoraAI editorial team. It is not funded by any AI company, and editorial coverage is never paid for. Contact: nyvora.ai@outlook.com" } },
-        { "@type": "Question", "name": "Can I write for NyvoraAI?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. NyvoraAI welcomes contributors passionate about AI. Visit https://nyvoraai.github.io/contact.html to get started. No formal experience is required." } },
-        { "@type": "Question", "name": "How do I contact NyvoraAI?", "acceptedAnswer": { "@type": "Answer", "text": "Email nyvora.ai@outlook.com, use the contact form at https://nyvoraai.github.io/contact.html, or find NyvoraAI on X (@nyvoraai_co), Instagram (@nyvora_ai), Facebook, and YouTube (@Nyvora_ai)." } }
+        { "@type": "Question", "name": "What is NyvoraAI?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI is a daily AI news platform that delivers original, fact-checked coverage of artificial intelligence, machine learning, and emerging tech." } },
+        { "@type": "Question", "name": "Is NyvoraAI free to read?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. All content on NyvoraAI is 100% free. No paywalls, no subscriptions, no registration required." } },
+        { "@type": "Question", "name": "How often does NyvoraAI publish?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI publishes fresh, fact-checked AI articles every single day." } },
+        { "@type": "Question", "name": "What topics does NyvoraAI cover?", "acceptedAnswer": { "@type": "Answer", "text": "LLMs, generative AI, AI safety, AI tools, AI research, AI startups, robotics, AI policy, and practical AI applications." } },
+        { "@type": "Question", "name": "Who runs NyvoraAI?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI is independently operated by the NyvoraAI editorial team. Not funded by any AI company. Contact: nyvora.ai@outlook.com" } }
       ]
     },
     {
@@ -151,30 +153,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Latest AI News from NyvoraAI",
-  "description": "The most recent original AI news articles published by NyvoraAI",
-  "url": "https://nyvoraai.github.io/ai-news.html",
-  "numberOfItems": 6,
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "item": { "@type": "NewsArticle", "headline": "How Large Language Models Are Rewriting the Rules of Search", "url": "https://nyvoraai.github.io/ai-news/how-large-language-models-rewriting-search.html", "datePublished": "2026-06-19", "author": {"@type": "Organization", "name": "NyvoraAI"}, "publisher": {"@id": "https://nyvoraai.github.io/#organization"} } },
-    { "@type": "ListItem", "position": 2, "item": { "@type": "NewsArticle", "headline": "Top 10 AI Tools You Need in 2026", "url": "https://nyvoraai.github.io/ai-news/top-10-ai-tools-2026.html", "datePublished": "2026-06-18", "author": {"@type": "Organization", "name": "NyvoraAI"}, "publisher": {"@id": "https://nyvoraai.github.io/#organization"} } },
-    { "@type": "ListItem", "position": 3, "item": { "@type": "NewsArticle", "headline": "DeepMind AlphaFold 3 Is Solving Biology", "url": "https://nyvoraai.github.io/ai-news/deepmind-alphafold-3-solving-biology.html", "datePublished": "2026-06-17", "author": {"@type": "Organization", "name": "NyvoraAI"}, "publisher": {"@id": "https://nyvoraai.github.io/#organization"} } },
-    { "@type": "ListItem", "position": 4, "item": { "@type": "NewsArticle", "headline": "Why Every Startup Is Betting on AI Agents", "url": "https://nyvoraai.github.io/ai-news/why-every-startup-betting-ai-agents.html", "datePublished": "2026-06-16", "author": {"@type": "Organization", "name": "NyvoraAI"}, "publisher": {"@id": "https://nyvoraai.github.io/#organization"} } },
-    { "@type": "ListItem", "position": 5, "item": { "@type": "NewsArticle", "headline": "The State of AI Safety in 2026", "url": "https://nyvoraai.github.io/ai-news/state-of-ai-safety-2026.html", "datePublished": "2026-06-15", "author": {"@type": "Organization", "name": "NyvoraAI"}, "publisher": {"@id": "https://nyvoraai.github.io/#organization"} } },
-    { "@type": "ListItem", "position": 6, "item": { "@type": "NewsArticle", "headline": "EU AI Act Explained: What It Means for You", "url": "https://nyvoraai.github.io/ai-news/eu-ai-act-explained.html", "datePublished": "2026-06-13", "author": {"@type": "Organization", "name": "NyvoraAI"}, "publisher": {"@id": "https://nyvoraai.github.io/#organization"} } }
-  ]
-}
-</script>
-
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 
 <style>
 /* ══════════════════════════════════════════
@@ -182,24 +164,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 ══════════════════════════════════════════ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#0B0F1A;
-  --bg2:#0F1422;
-  --paper:#141929;
-  --paper2:#1A2035;
-  --ink:#F0F4FF;
-  --ink2:#A8B4CC;
-  --ink3:#6B7A99;
-  --accent:#2DD4E0;
-  --accent2:#8B5CF6;
+  --bg:#080C18;
+  --bg2:#0C1020;
+  --paper:#111827;
+  --paper2:#161D2E;
+  --ink:#F0F6FF;
+  --ink2:#A8B8D0;
+  --ink3:#5C6E8A;
+  --accent:#00D4FF;
+  --accent2:#7C3AED;
   --accent3:#F59E0B;
-  --line:rgba(255,255,255,.07);
-  --line2:rgba(255,255,255,.12);
-  --radius:14px;
-  --radius-sm:8px;
+  --accent4:#10B981;
+  --line:rgba(255,255,255,.06);
+  --line2:rgba(255,255,255,.11);
+  --radius:16px;
+  --radius-sm:10px;
   --font-display:'Syne',sans-serif;
-  --font-body:'Inter',sans-serif;
-  --shadow:0 4px 24px rgba(0,0,0,.35);
-  --shadow-card:0 2px 12px rgba(0,0,0,.3);
+  --font-body:'Space Grotesk',sans-serif;
+  --font-ui:'Inter',sans-serif;
+  --shadow:0 8px 40px rgba(0,0,0,.5);
+  --shadow-card:0 2px 16px rgba(0,0,0,.4);
+  --glow:0 0 40px rgba(0,212,255,.15);
 }
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -216,246 +201,675 @@ ul{list-style:none}
 .skip-link:focus{top:0}
 
 /* ══════════════════════════════════════════
-   PAGE LOADER
+   INTRO SPLASH — Logo animation on first load
 ══════════════════════════════════════════ */
-#page-loader{position:fixed;inset:0;background:var(--bg);z-index:9000;display:flex;align-items:center;justify-content:center;transition:opacity .4s,visibility .4s}
-#page-loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.loader-ring{width:44px;height:44px;border:3px solid var(--line2);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
+#intro-splash{
+  position:fixed;inset:0;z-index:10000;
+  background:var(--bg);
+  display:flex;align-items:center;justify-content:center;flex-direction:column;
+  transition:opacity .6s ease, visibility .6s ease;
+}
+#intro-splash.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.splash-logo-wrap{
+  display:flex;align-items:center;gap:14px;
+  opacity:0;transform:scale(.85) translateY(20px);
+  animation:splashIn .7s cubic-bezier(.34,1.56,.64,1) .3s forwards;
+}
+@keyframes splashIn{
+  to{opacity:1;transform:scale(1) translateY(0)}
+}
+.splash-logo-icon{
+  width:64px;height:64px;
+  opacity:0;
+  animation:iconPop .5s cubic-bezier(.34,1.56,.64,1) .4s forwards;
+}
+@keyframes iconPop{
+  to{opacity:1;transform:scale(1)}
+}
+.splash-wordmark{
+  font-family:var(--font-display);
+  font-size:42px;font-weight:800;letter-spacing:-1.5px;
+  color:var(--ink);
+  overflow:hidden;
+}
+.splash-wordmark span{color:var(--accent)}
+.splash-tagline{
+  font-family:var(--font-ui);
+  font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink3);margin-top:16px;
+  opacity:0;animation:fadeUp .5s ease .9s forwards;
+}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+.splash-bar{
+  width:0;height:2px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  border-radius:2px;margin-top:20px;
+  animation:barGrow .8s ease 1s forwards;
+}
+@keyframes barGrow{to{width:160px}}
 
 /* ══════════════════════════════════════════
    SCROLL PROGRESS
 ══════════════════════════════════════════ */
-#scroll-progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:8000;transition:width .1s linear}
+#scroll-progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:8000;transition:width .08s linear}
 
 /* ══════════════════════════════════════════
    BACK TO TOP
 ══════════════════════════════════════════ */
-#back-top{position:fixed;bottom:24px;right:24px;width:40px;height:40px;border-radius:50%;background:var(--paper2);border:1px solid var(--line2);color:var(--ink2);font-size:16px;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:500}
+#back-top{
+  position:fixed;bottom:28px;right:28px;width:44px;height:44px;
+  border-radius:12px;background:var(--paper2);
+  border:1px solid var(--line2);color:var(--ink2);
+  font-size:18px;display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;
+  transition:opacity .3s,transform .3s,background .2s;z-index:500;
+  box-shadow:var(--shadow-card);
+}
 #back-top.show{opacity:1;pointer-events:all}
-#back-top:hover{background:var(--accent);color:#000;transform:translateY(-2px)}
+#back-top:hover{background:var(--accent);color:#000;transform:translateY(-3px);box-shadow:var(--glow)}
 
 /* ══════════════════════════════════════════
-   MESH BG
+   ANIMATED MESH BG
 ══════════════════════════════════════════ */
 .mesh{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
-.mesh-orb{position:absolute;border-radius:50%;filter:blur(100px);will-change:transform}
-.m1{width:600px;height:600px;background:radial-gradient(circle,rgba(45,212,224,.12),transparent 65%);top:-150px;left:-100px;animation:orbFloat 20s ease-in-out infinite}
-.m2{width:500px;height:500px;background:radial-gradient(circle,rgba(139,92,246,.10),transparent 65%);bottom:-100px;right:-80px;animation:orbFloat 25s ease-in-out infinite reverse}
-.m3{width:400px;height:400px;background:radial-gradient(circle,rgba(245,158,11,.07),transparent 65%);top:50%;left:55%;animation:orbFloat 18s ease-in-out infinite 5s}
-@keyframes orbFloat{0%,100%{transform:translate(0,0)}33%{transform:translate(40px,-30px)}66%{transform:translate(-25px,20px)}}
+.mesh-orb{position:absolute;border-radius:50%;filter:blur(80px);will-change:transform}
+.m1{width:700px;height:700px;background:radial-gradient(circle,rgba(0,212,255,.09),transparent 65%);top:-200px;left:-150px;animation:orbFloat 22s ease-in-out infinite}
+.m2{width:600px;height:600px;background:radial-gradient(circle,rgba(124,58,237,.08),transparent 65%);bottom:-120px;right:-100px;animation:orbFloat 28s ease-in-out infinite reverse}
+.m3{width:500px;height:500px;background:radial-gradient(circle,rgba(16,185,129,.06),transparent 65%);top:45%;left:50%;animation:orbFloat 19s ease-in-out infinite 4s}
+@keyframes orbFloat{0%,100%{transform:translate(0,0)}33%{transform:translate(50px,-40px)}66%{transform:translate(-30px,25px)}}
+
+/* Subtle grid overlay */
+.grid-overlay{
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,#000 0%,transparent 100%);
+}
 
 /* ══════════════════════════════════════════
    NAV
 ══════════════════════════════════════════ */
-nav{position:sticky;top:0;z-index:700;background:rgba(11,15,26,.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line);height:60px;display:flex;align-items:center}
-.nav-inner{max-width:1160px;margin:0 auto;width:100%;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative;z-index:1}
-.nav-logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:20px;font-weight:800;letter-spacing:-.4px;color:var(--ink)}
+nav{
+  position:sticky;top:0;z-index:700;
+  background:rgba(8,12,24,.85);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--line);height:64px;
+  display:flex;align-items:center;
+}
+.nav-inner{
+  max-width:1200px;margin:0 auto;width:100%;
+  padding:0 28px;display:flex;align-items:center;
+  justify-content:space-between;gap:20px;position:relative;z-index:1;
+}
+.nav-logo{
+  display:flex;align-items:center;gap:11px;
+  font-family:var(--font-display);font-size:21px;font-weight:800;
+  letter-spacing:-.5px;color:var(--ink);
+  transition:opacity .2s;
+}
+.nav-logo:hover{opacity:.85}
 .nav-logo span{color:var(--accent)}
-.nav-logo-icon{width:34px;height:34px;flex-shrink:0}
-.nav-links{display:flex;gap:4px}
-.nav-links a{color:var(--ink2);font-size:14px;font-weight:500;padding:6px 12px;border-radius:var(--radius-sm);transition:color .2s,background .2s}
-.nav-links a:hover,.nav-links a.active{color:var(--ink);background:var(--line)}
-.nav-cta{background:var(--accent);color:#000;font-size:13px;font-weight:700;padding:8px 18px;border-radius:var(--radius-sm);transition:opacity .2s,transform .15s}
-.nav-cta:hover{opacity:.9;transform:translateY(-1px)}
-.hamburger{display:none;flex-direction:column;gap:5px;padding:6px;border-radius:6px}
+.nav-logo-icon{width:36px;height:36px;flex-shrink:0}
+.nav-links{display:flex;gap:2px}
+.nav-links a{
+  color:var(--ink2);font-family:var(--font-ui);
+  font-size:14px;font-weight:500;padding:7px 13px;
+  border-radius:var(--radius-sm);transition:color .2s,background .2s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);background:rgba(255,255,255,.07)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-badge{
+  font-family:var(--font-ui);font-size:11px;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent4);background:rgba(16,185,129,.1);
+  border:1px solid rgba(16,185,129,.2);
+  padding:4px 10px;border-radius:20px;
+  display:flex;align-items:center;gap:5px;
+}
+.live-dot{width:5px;height:5px;border-radius:50%;background:var(--accent4);animation:livePulse 2s ease-in-out infinite}
+@keyframes livePulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{opacity:.6;box-shadow:0 0 0 5px rgba(16,185,129,0)}}
+.nav-cta{
+  background:linear-gradient(135deg,var(--accent),#0099cc);
+  color:#000;font-family:var(--font-ui);font-size:13px;font-weight:700;
+  padding:9px 20px;border-radius:var(--radius-sm);
+  transition:opacity .2s,transform .15s,box-shadow .2s;
+  box-shadow:0 0 20px rgba(0,212,255,.2);
+}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 4px 30px rgba(0,212,255,.35)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px;border-radius:8px;transition:background .2s}
+.hamburger:hover{background:var(--line)}
 .hamburger span{width:20px;height:2px;background:var(--ink2);border-radius:2px;transition:.3s}
-.mob-menu{display:none;position:fixed;top:60px;left:0;right:0;background:rgba(11,15,26,.97);border-bottom:1px solid var(--line);padding:16px 24px;flex-direction:column;gap:4px;z-index:699}
+.mob-menu{
+  display:none;position:fixed;top:64px;left:0;right:0;
+  background:rgba(8,12,24,.97);border-bottom:1px solid var(--line);
+  padding:16px 24px 20px;flex-direction:column;gap:4px;z-index:699;
+}
 .mob-menu.open{display:flex}
-.mob-menu a{color:var(--ink2);font-size:15px;font-weight:500;padding:10px 12px;border-radius:var(--radius-sm);transition:background .2s,color .2s}
+.mob-menu a{color:var(--ink2);font-size:15px;font-weight:500;padding:11px 14px;border-radius:var(--radius-sm);transition:background .2s,color .2s}
 .mob-menu a:hover{background:var(--line);color:var(--ink)}
 
 /* ══════════════════════════════════════════
    TICKER
 ══════════════════════════════════════════ */
-.ticker-wrap{background:var(--bg2);border-bottom:1px solid var(--line);overflow:hidden;height:36px;display:flex;align-items:center;position:relative;z-index:1}
-.ticker-label{flex-shrink:0;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding:0 16px;border-right:1px solid var(--line2);white-space:nowrap}
-.ticker-track{display:flex;gap:0;white-space:nowrap;animation:tickerScroll 40s linear infinite}
+.ticker-wrap{
+  background:var(--bg2);border-bottom:1px solid var(--line);
+  overflow:hidden;height:38px;display:flex;align-items:center;
+  position:relative;z-index:1;
+}
+.ticker-label{
+  flex-shrink:0;font-family:var(--font-ui);
+  font-size:10.5px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:#000;background:var(--accent4);
+  padding:0 14px;height:100%;display:flex;align-items:center;
+  white-space:nowrap;
+}
+.ticker-track{
+  display:flex;gap:0;white-space:nowrap;
+  animation:tickerScroll 45s linear infinite;
+}
 .ticker-track:hover{animation-play-state:paused}
-.tick-item{font-size:12.5px;color:var(--ink3);padding:0 32px;display:flex;align-items:center;gap:10px}
-.tick-dot{width:4px;height:4px;border-radius:50%;background:var(--accent);flex-shrink:0;opacity:.6}
+.tick-item{
+  font-family:var(--font-ui);font-size:12.5px;
+  color:var(--ink3);padding:0 36px;
+  display:flex;align-items:center;gap:10px;
+}
+.tick-dot{width:3px;height:3px;border-radius:50%;background:var(--accent);flex-shrink:0}
 @keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
 
 /* ══════════════════════════════════════════
    HERO
 ══════════════════════════════════════════ */
-.hero{position:relative;z-index:1;padding:80px 24px 72px;text-align:center;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 900px 500px at 50% 0%,rgba(45,212,224,.07),transparent 70%);pointer-events:none}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(45,212,224,.1);border:1px solid rgba(45,212,224,.2);color:var(--accent);font-size:12px;font-weight:600;letter-spacing:.05em;padding:6px 14px;border-radius:20px;margin-bottom:28px;text-transform:uppercase}
-.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
-.hero-headline{font-family:var(--font-display);font-size:clamp(40px,7vw,72px);font-weight:800;line-height:1.08;letter-spacing:-2px;color:var(--ink);margin-bottom:20px}
-.hero-headline .grad{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-sub{font-size:clamp(16px,2vw,19px);color:var(--ink2);max-width:580px;margin:0 auto 36px;line-height:1.65}
-.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-primary{background:var(--accent);color:#000;font-size:14px;font-weight:700;padding:13px 28px;border-radius:var(--radius-sm);transition:opacity .2s,transform .15s;display:inline-flex;align-items:center;gap:6px}
-.btn-primary:hover{opacity:.9;transform:translateY(-1px)}
-.btn-secondary{background:var(--paper2);color:var(--ink);font-size:14px;font-weight:600;padding:13px 28px;border-radius:var(--radius-sm);border:1px solid var(--line2);transition:border-color .2s,transform .15s}
-.btn-secondary:hover{border-color:var(--accent);transform:translateY(-1px)}
+.hero{
+  position:relative;z-index:1;
+  padding:96px 28px 88px;text-align:center;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 1000px 600px at 50% -5%,rgba(0,212,255,.06),transparent 70%);
+  pointer-events:none;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.18);
+  color:var(--accent);font-family:var(--font-ui);
+  font-size:12px;font-weight:600;letter-spacing:.06em;
+  padding:7px 16px;border-radius:22px;margin-bottom:32px;
+  text-transform:uppercase;
+  animation:heroFade .7s ease .1s both;
+}
+.badge-pulse{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+.hero-headline{
+  font-family:var(--font-display);
+  font-size:clamp(44px,7.5vw,80px);
+  font-weight:800;line-height:1.06;letter-spacing:-2.5px;
+  color:var(--ink);margin-bottom:24px;
+  animation:heroFade .7s ease .2s both;
+}
+.hero-headline .line2{display:block}
+.hero-headline .grad{
+  background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 60%,#a855f7 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero-sub{
+  font-size:clamp(16px,2vw,19px);color:var(--ink2);
+  max-width:560px;margin:0 auto 40px;line-height:1.7;
+  font-weight:400;
+  animation:heroFade .7s ease .3s both;
+}
+.hero-btns{
+  display:flex;gap:14px;justify-content:center;flex-wrap:wrap;
+  animation:heroFade .7s ease .4s both;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--accent),#0099cc);
+  color:#000;font-family:var(--font-ui);font-size:14px;font-weight:700;
+  padding:14px 30px;border-radius:var(--radius-sm);
+  transition:opacity .2s,transform .15s,box-shadow .2s;
+  display:inline-flex;align-items:center;gap:7px;
+  box-shadow:0 4px 24px rgba(0,212,255,.3);
+}
+.btn-primary:hover{opacity:.92;transform:translateY(-2px);box-shadow:0 8px 36px rgba(0,212,255,.45)}
+.btn-secondary{
+  background:rgba(255,255,255,.05);color:var(--ink);
+  font-family:var(--font-ui);font-size:14px;font-weight:600;
+  padding:14px 30px;border-radius:var(--radius-sm);
+  border:1px solid var(--line2);
+  transition:border-color .2s,transform .15s,background .2s;
+  display:inline-flex;align-items:center;gap:7px;
+}
+.btn-secondary:hover{border-color:rgba(0,212,255,.35);transform:translateY(-2px);background:rgba(0,212,255,.05)}
+@keyframes heroFade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+/* Hero floating stats */
+.hero-trust{
+  display:flex;justify-content:center;gap:32px;
+  margin-top:52px;flex-wrap:wrap;
+  animation:heroFade .7s ease .55s both;
+}
+.trust-item{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--font-ui);font-size:13px;color:var(--ink3);
+}
+.trust-icon{width:16px;height:16px;color:var(--accent4)}
 
 /* ══════════════════════════════════════════
    STATS BAR
 ══════════════════════════════════════════ */
-.stats-bar{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;z-index:1}
-.stats-inner{max-width:1160px;margin:0 auto;padding:28px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
-.stat-item{text-align:center;padding:0 20px;border-right:1px solid var(--line)}
+.stats-bar{
+  background:var(--bg2);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  position:relative;z-index:1;
+}
+.stats-inner{
+  max-width:1200px;margin:0 auto;padding:36px 28px;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+}
+.stat-item{text-align:center;padding:0 24px;border-right:1px solid var(--line)}
 .stat-item:last-child{border-right:none}
-.stat-val{font-family:var(--font-display);font-size:28px;font-weight:800;color:var(--accent);line-height:1;margin-bottom:5px}
-.stat-lbl{font-size:12.5px;color:var(--ink3);line-height:1.4}
+.stat-val{
+  font-family:var(--font-display);font-size:32px;font-weight:800;
+  color:var(--accent);line-height:1;margin-bottom:6px;
+  transition:color .3s;
+}
+.stat-item:hover .stat-val{color:var(--ink)}
+.stat-lbl{font-family:var(--font-ui);font-size:13px;color:var(--ink3);line-height:1.45}
 
 /* ══════════════════════════════════════════
    SECTION WRAPPER
 ══════════════════════════════════════════ */
-.section{position:relative;z-index:1;padding:60px 24px}
-.section-inner{max-width:1160px;margin:0 auto}
-.section-header{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:36px;flex-wrap:wrap}
-.section-header h2{font-family:var(--font-display);font-size:clamp(22px,3vw,30px);font-weight:800;letter-spacing:-.8px;color:var(--ink)}
-.section-eyebrow{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
-.view-all{font-size:13.5px;font-weight:600;color:var(--accent);white-space:nowrap;display:inline-flex;align-items:center;gap:5px;transition:gap .2s}
-.view-all:hover{gap:9px}
+.section{position:relative;z-index:1;padding:72px 28px}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-header{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:16px;margin-bottom:40px;flex-wrap:wrap;
+}
+.section-header h2{
+  font-family:var(--font-display);
+  font-size:clamp(24px,3vw,32px);font-weight:800;
+  letter-spacing:-1px;color:var(--ink);
+}
+.section-eyebrow{
+  font-family:var(--font-ui);font-size:11px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px;display:block;
+}
+.view-all{
+  font-family:var(--font-ui);font-size:13.5px;font-weight:600;
+  color:var(--accent);white-space:nowrap;
+  display:inline-flex;align-items:center;gap:5px;
+  transition:gap .2s;padding:6px 0;
+}
+.view-all:hover{gap:10px}
 
 /* ══════════════════════════════════════════
    FEATURED CARD
 ══════════════════════════════════════════ */
-.featured-card{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line2);border-radius:var(--radius);overflow:hidden;background:var(--paper);margin-bottom:28px;transition:border-color .25s,box-shadow .25s}
-.featured-card:hover{border-color:rgba(45,212,224,.3);box-shadow:var(--shadow)}
-.featured-thumb{background:linear-gradient(135deg,#0d1635 0%,#1a0e2e 50%,#0a1520 100%);position:relative;overflow:hidden;min-height:280px;display:flex;align-items:center;justify-content:center}
+.featured-card{
+  display:grid;grid-template-columns:1fr 1fr;
+  border:1px solid var(--line2);border-radius:20px;
+  overflow:hidden;background:var(--paper);
+  margin-bottom:28px;
+  transition:border-color .25s,box-shadow .25s,transform .25s;
+}
+.featured-card:hover{
+  border-color:rgba(0,212,255,.3);
+  box-shadow:var(--shadow),0 0 60px rgba(0,212,255,.08);
+  transform:translateY(-2px);
+}
+.featured-thumb{
+  background:linear-gradient(135deg,#080f28 0%,#140a2e 50%,#06101e 100%);
+  position:relative;overflow:hidden;min-height:300px;
+  display:flex;align-items:center;justify-content:center;
+}
 .featured-thumb svg{width:100%;height:100%;position:absolute;inset:0}
-.featured-body{padding:36px 40px;display:flex;flex-direction:column;justify-content:center}
-.featured-tag{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent2);background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.2);padding:4px 12px;border-radius:20px;margin-bottom:18px;width:fit-content}
-.featured-title{font-family:var(--font-display);font-size:clamp(20px,2.5vw,26px);font-weight:800;letter-spacing:-.5px;color:var(--ink);line-height:1.22;margin-bottom:14px}
-.featured-desc{font-size:15px;color:var(--ink2);line-height:1.65;margin-bottom:20px}
-.featured-meta{font-size:13px;color:var(--ink3);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.featured-body{padding:44px 48px;display:flex;flex-direction:column;justify-content:center}
+.featured-tag{
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:var(--font-ui);font-size:11px;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent2);background:rgba(124,58,237,.12);
+  border:1px solid rgba(124,58,237,.22);
+  padding:5px 14px;border-radius:22px;margin-bottom:20px;width:fit-content;
+}
+.featured-title{
+  font-family:var(--font-display);
+  font-size:clamp(20px,2.5vw,28px);font-weight:800;
+  letter-spacing:-.6px;color:var(--ink);
+  line-height:1.2;margin-bottom:16px;
+}
+.featured-desc{font-size:15px;color:var(--ink2);line-height:1.7;margin-bottom:22px}
+.featured-meta{
+  font-family:var(--font-ui);font-size:13px;color:var(--ink3);
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+}
 .meta-sep{color:var(--line2)}
-.read-link{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:700;color:var(--accent);margin-top:16px;transition:gap .2s}
-.read-link:hover{gap:10px}
+.read-link{
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:var(--font-ui);font-size:14px;font-weight:700;
+  color:var(--accent);margin-top:18px;
+  transition:gap .2s;
+}
+.read-link:hover{gap:11px}
 
 /* ══════════════════════════════════════════
    BLOG CARD GRID
 ══════════════════════════════════════════ */
-.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.blog-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:border-color .25s,transform .25s,box-shadow .25s;text-decoration:none;color:inherit}
-.blog-card:hover{border-color:rgba(45,212,224,.25);transform:translateY(-3px);box-shadow:var(--shadow-card)}
-.card-thumb{height:180px;display:flex;align-items:center;justify-content:center;font-size:2.2rem;position:relative;overflow:hidden;flex-shrink:0}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.blog-card{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;
+  display:flex;flex-direction:column;
+  transition:border-color .25s,transform .25s,box-shadow .25s;
+  text-decoration:none;color:inherit;
+}
+.blog-card:hover{
+  border-color:rgba(0,212,255,.22);
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-card),0 0 40px rgba(0,212,255,.06);
+}
+.card-thumb{
+  height:188px;display:flex;align-items:center;justify-content:center;
+  font-size:2.2rem;position:relative;overflow:hidden;flex-shrink:0;
+}
 .card-thumb svg{position:absolute;inset:0;width:100%;height:100%}
-.card-thumb-emoji{position:relative;z-index:1;font-size:2.5rem}
-.card-body{padding:20px;display:flex;flex-direction:column;flex:1}
-.card-tag{display:inline-flex;align-items:center;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-bottom:12px;width:fit-content}
-.tag-tools{background:rgba(45,212,224,.1);color:#5eead4;border:1px solid rgba(45,212,224,.15)}
+.card-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.card-tag{
+  display:inline-flex;align-items:center;
+  font-family:var(--font-ui);font-size:10.5px;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 10px;border-radius:22px;
+  margin-bottom:12px;width:fit-content;
+}
+.tag-tools{background:rgba(0,212,255,.1);color:#5eead4;border:1px solid rgba(0,212,255,.15)}
 .tag-research{background:rgba(34,197,94,.1);color:#86efac;border:1px solid rgba(34,197,94,.15)}
 .tag-business{background:rgba(236,72,153,.1);color:#f9a8d4;border:1px solid rgba(236,72,153,.15)}
 .tag-safety{background:rgba(249,115,22,.1);color:#fdba74;border:1px solid rgba(249,115,22,.15)}
 .tag-hardware{background:rgba(148,163,184,.1);color:#cbd5e1;border:1px solid rgba(148,163,184,.15)}
-.tag-policy{background:rgba(139,92,246,.1);color:#c4b5fd;border:1px solid rgba(139,92,246,.15)}
-.tag-llm{background:rgba(45,212,224,.1);color:#2DD4E0;border:1px solid rgba(45,212,224,.15)}
+.tag-policy{background:rgba(124,58,237,.1);color:#c4b5fd;border:1px solid rgba(124,58,237,.15)}
+.tag-llm{background:rgba(0,212,255,.1);color:#00D4FF;border:1px solid rgba(0,212,255,.15)}
 .tag-beginner{background:rgba(245,158,11,.1);color:#fcd34d;border:1px solid rgba(245,158,11,.15)}
 .tag-explainer{background:rgba(96,165,250,.1);color:#93c5fd;border:1px solid rgba(96,165,250,.15)}
-.card-title{font-family:var(--font-display);font-size:15.5px;font-weight:800;color:var(--ink);line-height:1.3;margin-bottom:9px;letter-spacing:-.2px}
-.card-desc{font-size:13.5px;color:var(--ink2);line-height:1.6;flex:1;margin-bottom:14px}
-.card-meta{font-size:12px;color:var(--ink3);display:flex;align-items:center;gap:7px;padding-top:14px;border-top:1px solid var(--line)}
-.card-read{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;font-weight:700;color:var(--accent);margin-top:10px;transition:gap .2s}
+.card-title{
+  font-family:var(--font-display);font-size:15.5px;font-weight:700;
+  color:var(--ink);line-height:1.3;margin-bottom:9px;letter-spacing:-.2px;
+}
+.card-desc{font-size:13.5px;color:var(--ink2);line-height:1.65;flex:1;margin-bottom:14px}
+.card-meta{
+  font-family:var(--font-ui);font-size:12px;color:var(--ink3);
+  display:flex;align-items:center;gap:7px;
+  padding-top:14px;border-top:1px solid var(--line);
+}
+.card-read{
+  display:inline-flex;align-items:center;gap:4px;
+  font-family:var(--font-ui);font-size:12.5px;font-weight:700;
+  color:var(--accent);margin-top:10px;transition:gap .2s;
+}
 .card-read:hover{gap:8px}
+
+/* ══════════════════════════════════════════
+   DIVIDER
+══════════════════════════════════════════ */
+.section-divider{
+  max-width:1200px;margin:0 auto;
+  border:none;border-top:1px solid var(--line);
+}
 
 /* ══════════════════════════════════════════
    TOPICS STRIP
 ══════════════════════════════════════════ */
-.topics-section{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:48px 24px;position:relative;z-index:1}
-.topics-inner{max-width:1160px;margin:0 auto}
-.topics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
-.topic-pill{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;align-items:center;gap:13px;transition:border-color .2s,transform .2s}
-.topic-pill:hover{border-color:var(--accent);transform:translateY(-2px)}
-.topic-icon{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
-.topic-name{font-family:var(--font-display);font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:2px}
-.topic-count{font-size:11.5px;color:var(--ink3)}
+.topics-section{
+  background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:64px 28px;position:relative;z-index:1;
+}
+.topics-inner{max-width:1200px;margin:0 auto}
+.topics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}
+.topic-pill{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--radius);padding:22px 18px;
+  display:flex;align-items:center;gap:14px;
+  transition:border-color .2s,transform .2s,box-shadow .2s;
+  text-decoration:none;
+}
+.topic-pill:hover{
+  border-color:var(--accent);transform:translateY(-3px);
+  box-shadow:0 8px 32px rgba(0,212,255,.1);
+}
+.topic-icon{
+  width:42px;height:42px;border-radius:11px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;flex-shrink:0;
+}
+.topic-name{
+  font-family:var(--font-display);font-size:14px;font-weight:700;
+  color:var(--ink);margin-bottom:3px;
+}
+.topic-count{font-family:var(--font-ui);font-size:12px;color:var(--ink3)}
+
+/* ══════════════════════════════════════════
+   TRUST STRIP
+══════════════════════════════════════════ */
+.trust-section{
+  padding:56px 28px;position:relative;z-index:1;
+  background:var(--bg2);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.trust-inner{max-width:1200px;margin:0 auto;text-align:center}
+.trust-title{
+  font-family:var(--font-ui);font-size:12px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:28px;
+}
+.trust-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+}
+.trust-card{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--radius);padding:28px 20px;text-align:center;
+}
+.trust-card-icon{font-size:1.8rem;margin-bottom:12px}
+.trust-card-title{
+  font-family:var(--font-display);font-size:15px;font-weight:700;
+  color:var(--ink);margin-bottom:6px;
+}
+.trust-card-desc{font-family:var(--font-ui);font-size:13px;color:var(--ink3);line-height:1.6}
 
 /* ══════════════════════════════════════════
    FAQ
 ══════════════════════════════════════════ */
-.faq-section{padding:60px 24px;position:relative;z-index:1}
-.faq-inner{max-width:740px;margin:0 auto}
-.faq-list{margin-top:32px;display:flex;flex-direction:column;gap:8px}
-details.faq-item{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:border-color .2s}
-details.faq-item[open]{border-color:rgba(45,212,224,.25)}
-details.faq-item summary{padding:18px 22px;cursor:pointer;font-size:15px;font-weight:600;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none}
+.faq-section{padding:72px 28px;position:relative;z-index:1}
+.faq-inner{max-width:760px;margin:0 auto}
+.faq-list{margin-top:36px;display:flex;flex-direction:column;gap:10px}
+details.faq-item{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;
+  transition:border-color .2s,box-shadow .2s;
+}
+details.faq-item[open]{border-color:rgba(0,212,255,.22);box-shadow:0 4px 24px rgba(0,212,255,.06)}
+details.faq-item summary{
+  padding:20px 24px;cursor:pointer;
+  font-family:var(--font-body);font-size:15.5px;font-weight:600;
+  color:var(--ink);list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  user-select:none;transition:background .2s;
+}
+details.faq-item summary:hover{background:rgba(255,255,255,.03)}
 details.faq-item summary::-webkit-details-marker{display:none}
-details.faq-item summary::after{content:'+';color:var(--accent);font-size:20px;font-weight:300;flex-shrink:0;transition:transform .25s}
-details.faq-item[open] summary::after{content:'−'}
-.faq-body{padding:0 22px 18px;font-size:14.5px;color:var(--ink2);line-height:1.7}
+details.faq-item summary::after{
+  content:'+';color:var(--accent);
+  font-size:22px;font-weight:300;flex-shrink:0;
+  transition:transform .25s;width:22px;text-align:center;
+}
+details.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-body{
+  padding:4px 24px 20px;
+  font-family:var(--font-ui);font-size:14.5px;color:var(--ink2);
+  line-height:1.75;
+  border-top:1px solid var(--line);
+}
+.faq-body{padding-top:16px}
 .faq-body a{color:var(--accent)}
 
 /* ══════════════════════════════════════════
-   NEWSLETTER
+   NEWSLETTER — Real Mailchimp-compatible form
 ══════════════════════════════════════════ */
-.nl-section{padding:60px 24px;position:relative;z-index:1}
-.nl-box{max-width:600px;margin:0 auto;background:var(--paper);border:1px solid var(--line2);border-radius:20px;padding:48px 44px;text-align:center;position:relative;overflow:hidden}
-.nl-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2),var(--accent3))}
-.nl-title{font-family:var(--font-display);font-size:clamp(22px,3vw,28px);font-weight:800;letter-spacing:-.8px;color:var(--ink);margin-bottom:10px}
-.nl-sub{font-size:15px;color:var(--ink2);margin-bottom:28px;line-height:1.6}
-.nl-form{display:flex;gap:10px;max-width:420px;margin:0 auto}
-.nl-input{flex:1;background:var(--bg2);border:1px solid var(--line2);border-radius:var(--radius-sm);padding:12px 16px;color:var(--ink);font-size:14px;font-family:inherit;outline:none;transition:border-color .2s}
+.nl-section{padding:72px 28px;position:relative;z-index:1}
+.nl-box{
+  max-width:620px;margin:0 auto;background:var(--paper);
+  border:1px solid var(--line2);border-radius:22px;
+  padding:52px 48px;text-align:center;position:relative;overflow:hidden;
+}
+.nl-box::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2),var(--accent3));
+}
+.nl-box::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(0,212,255,.05),transparent 65%);
+  pointer-events:none;
+}
+.nl-icon{font-size:2.4rem;margin-bottom:16px;position:relative;z-index:1}
+.nl-title{
+  font-family:var(--font-display);
+  font-size:clamp(22px,3vw,30px);font-weight:800;
+  letter-spacing:-.8px;color:var(--ink);margin-bottom:10px;
+  position:relative;z-index:1;
+}
+.nl-sub{
+  font-family:var(--font-ui);font-size:15.5px;color:var(--ink2);
+  margin-bottom:32px;line-height:1.65;
+  position:relative;z-index:1;
+}
+.nl-form{
+  display:flex;gap:10px;max-width:440px;margin:0 auto;
+  position:relative;z-index:1;
+}
+.nl-input{
+  flex:1;background:var(--bg2);border:1.5px solid var(--line2);
+  border-radius:var(--radius-sm);padding:13px 18px;
+  color:var(--ink);font-size:14px;font-family:var(--font-ui);
+  outline:none;transition:border-color .2s,box-shadow .2s;
+}
 .nl-input::placeholder{color:var(--ink3)}
-.nl-input:focus{border-color:var(--accent)}
-.nl-btn{background:var(--accent);color:#000;font-size:14px;font-weight:700;padding:12px 22px;border-radius:var(--radius-sm);white-space:nowrap;transition:opacity .2s,transform .15s;font-family:inherit}
-.nl-btn:hover{opacity:.9;transform:translateY(-1px)}
-.nl-note{font-size:12px;color:var(--ink3);margin-top:14px}
+.nl-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,212,255,.1)}
+.nl-btn{
+  background:linear-gradient(135deg,var(--accent),#0099cc);
+  color:#000;font-family:var(--font-ui);font-size:14px;font-weight:700;
+  padding:13px 24px;border-radius:var(--radius-sm);white-space:nowrap;
+  transition:opacity .2s,transform .15s,box-shadow .2s;
+  box-shadow:0 4px 20px rgba(0,212,255,.25);
+}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 6px 28px rgba(0,212,255,.4)}
+.nl-note{
+  font-family:var(--font-ui);font-size:12px;color:var(--ink3);
+  margin-top:16px;position:relative;z-index:1;
+  display:flex;align-items:center;justify-content:center;gap:14px;
+  flex-wrap:wrap;
+}
+.nl-note span{display:flex;align-items:center;gap:5px}
+.nl-success{
+  display:none;text-align:center;padding:20px;
+  position:relative;z-index:1;
+}
+.nl-success.show{display:block}
+.nl-success-icon{font-size:2.5rem;margin-bottom:10px}
+.nl-success-msg{
+  font-family:var(--font-display);font-size:20px;font-weight:700;
+  color:var(--accent4);margin-bottom:8px;
+}
+.nl-success-sub{font-family:var(--font-ui);font-size:14px;color:var(--ink3)}
+.nl-form-wrap{transition:opacity .3s}
 
 /* ══════════════════════════════════════════
    FOOTER
 ══════════════════════════════════════════ */
-footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 32px;position:relative;z-index:1}
-.footer-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
-.f-logo{font-family:var(--font-display);font-size:20px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;margin-bottom:12px}
+footer{
+  background:var(--bg2);border-top:1px solid var(--line);
+  padding:64px 28px 36px;position:relative;z-index:1;
+}
+.footer-inner{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:52px;
+}
+.f-logo{
+  font-family:var(--font-display);font-size:21px;font-weight:800;
+  color:var(--ink);display:flex;align-items:center;gap:10px;margin-bottom:14px;
+}
 .f-logo span{color:var(--accent)}
-.f-desc{font-size:13.5px;color:var(--ink3);line-height:1.7;margin-bottom:18px}
-.f-social{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-.f-soc{width:36px;height:36px;border-radius:9px;border:1px solid var(--line2);display:flex;align-items:center;justify-content:center;transition:border-color .2s,background .2s}
-.f-soc:hover{border-color:rgba(45,212,224,.4);background:rgba(45,212,224,.07)}
+.f-desc{font-family:var(--font-ui);font-size:13.5px;color:var(--ink3);line-height:1.75;margin-bottom:20px}
+.f-social{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}
+.f-soc{
+  width:38px;height:38px;border-radius:10px;
+  border:1px solid var(--line2);
+  display:flex;align-items:center;justify-content:center;
+  transition:border-color .2s,background .2s,transform .2s;
+}
+.f-soc:hover{border-color:rgba(0,212,255,.35);background:rgba(0,212,255,.08);transform:translateY(-2px)}
 .f-soc svg{width:15px;height:15px}
-.f-email{font-size:12.5px;color:var(--ink3)}
+.f-email{font-family:var(--font-ui);font-size:12.5px;color:var(--ink3)}
 .f-email a{color:var(--ink3);transition:color .2s}
 .f-email a:hover{color:var(--accent)}
-.f-col h4{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);margin-bottom:14px}
-.f-col ul li{margin-bottom:9px}
-.f-col a{font-size:13.5px;color:var(--ink3);transition:color .2s}
+.f-col h4{
+  font-family:var(--font-ui);font-size:11px;font-weight:700;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);margin-bottom:16px;
+}
+.f-col ul li{margin-bottom:10px}
+.f-col a{font-family:var(--font-ui);font-size:13.5px;color:var(--ink3);transition:color .2s}
 .f-col a:hover{color:var(--ink)}
-.footer-bottom{max-width:1160px;margin:44px auto 0;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--ink3);flex-wrap:wrap;gap:8px}
-.f-legal-links{display:flex;gap:16px}
+.footer-bottom{
+  max-width:1200px;margin:48px auto 0;padding-top:26px;
+  border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--font-ui);font-size:12.5px;color:var(--ink3);
+  flex-wrap:wrap;gap:10px;
+}
+.f-legal-links{display:flex;gap:18px}
 .f-legal-links a{color:var(--ink3);transition:color .2s}
 .f-legal-links a:hover{color:var(--ink)}
 
 /* ══════════════════════════════════════════
    REVEAL ANIMATION
 ══════════════════════════════════════════ */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
 .reveal.visible{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .splash-logo-wrap,.splash-wordmark,.splash-tagline,.splash-bar{animation:none;opacity:1}
+  .m1,.m2,.m3{animation:none}
+}
 
 /* ══════════════════════════════════════════
    RESPONSIVE
 ══════════════════════════════════════════ */
-@media(max-width:1000px){
+@media(max-width:1060px){
   .blog-grid{grid-template-columns:repeat(2,1fr)}
   .topics-grid{grid-template-columns:repeat(2,1fr)}
   .featured-card{grid-template-columns:1fr}
-  .featured-thumb{min-height:200px}
-  .footer-inner{grid-template-columns:1fr 1fr;gap:32px}
+  .featured-thumb{min-height:220px}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:36px}
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
 }
-@media(max-width:720px){
+@media(max-width:740px){
   .stats-inner{grid-template-columns:repeat(2,1fr)}
   .stat-item:nth-child(2){border-right:none}
-  .stat-item:nth-child(3){border-right:1px solid var(--line);border-top:1px solid var(--line);padding-top:20px;margin-top:0}
-  .stat-item:nth-child(4){border-right:none;border-top:1px solid var(--line);padding-top:20px}
-  .nav-links,.nav-cta{display:none}
+  .stat-item:nth-child(3){border-right:1px solid var(--line);border-top:1px solid var(--line);padding-top:24px}
+  .stat-item:nth-child(4){border-right:none;border-top:1px solid var(--line);padding-top:24px}
+  .nav-links,.nav-cta,.nav-badge{display:none}
   .hamburger{display:flex}
 }
-@media(max-width:600px){
+@media(max-width:620px){
   .blog-grid{grid-template-columns:1fr}
   .topics-grid{grid-template-columns:1fr 1fr}
   .nl-form{flex-direction:column}
   .footer-inner{grid-template-columns:1fr}
-  .hero-headline{letter-spacing:-1.2px}
+  .hero-headline{letter-spacing:-1.5px}
   .footer-bottom{flex-direction:column;text-align:center}
+  .featured-body{padding:28px 24px}
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .hero-trust{gap:16px}
 }
 </style>
 </head>
@@ -465,9 +879,35 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
 
 <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<!-- PAGE LOADER -->
-<div id="page-loader" role="status" aria-label="Loading">
-  <div class="loader-ring"></div>
+<!-- ══════════════════════════════════════════
+     INTRO SPLASH — Animated logo on first visit
+══════════════════════════════════════════ -->
+<div id="intro-splash" role="status" aria-label="Loading NyvoraAI">
+  <div class="splash-logo-wrap" aria-hidden="true">
+    <svg class="splash-logo-icon" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="slg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#1B2A4A"/>
+          <stop offset="100%" stop-color="#26365E"/>
+        </linearGradient>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+          <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="120" height="120" rx="28" fill="url(#slg)"/>
+      <path d="M30 90 L30 30 L90 90 L90 30" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+        <animate attributeName="stroke-dasharray" from="0,300" to="300,0" dur=".7s" fill="freeze"/>
+      </path>
+      <circle cx="90" cy="30" r="7" fill="#00D4FF" filter="url(#glow)">
+        <animate attributeName="opacity" from="0" to="1" dur=".3s" begin=".6s" fill="freeze"/>
+        <animate attributeName="r" values="0;10;7" dur=".4s" begin=".6s" fill="freeze"/>
+      </circle>
+    </svg>
+    <div class="splash-wordmark">Nyvora<span>AI</span></div>
+  </div>
+  <div class="splash-tagline">AI News · Tools · Insights</div>
+  <div class="splash-bar"></div>
 </div>
 
 <!-- SCROLL PROGRESS -->
@@ -482,27 +922,33 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
   <div class="mesh-orb m2"></div>
   <div class="mesh-orb m3"></div>
 </div>
+<div class="grid-overlay" aria-hidden="true"></div>
 
-<!-- NAV -->
+<!-- ══════════════════════════════════════════
+     NAV
+══════════════════════════════════════════ -->
 <nav role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="https://nyvoraai.github.io/" class="nav-logo" aria-label="NyvoraAI Home">
       <svg class="nav-logo-icon" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-        <defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1B2A4A"/><stop offset="100%" stop-color="#26365E"/></linearGradient></defs>
-        <rect width="120" height="120" rx="28" fill="url(#lg1)"/>
+        <defs><linearGradient id="nlg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1B2A4A"/><stop offset="100%" stop-color="#26365E"/></linearGradient></defs>
+        <rect width="120" height="120" rx="28" fill="url(#nlg)"/>
         <path d="M30 90 L30 30 L90 90 L90 30" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="90" cy="30" r="7" fill="#2DD4E0"/>
+        <circle cx="90" cy="30" r="7" fill="#00D4FF"/>
       </svg>
       Nyvora<span>AI</span>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" role="list">
       <li><a href="https://nyvoraai.github.io/" class="active" aria-current="page">Home</a></li>
       <li><a href="https://nyvoraai.github.io/blog.html">Blog</a></li>
       <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
       <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
       <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
     </ul>
-    <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+    <div class="nav-right">
+      <div class="nav-badge"><span class="live-dot"></span>Live Updates</div>
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+    </div>
     <button class="hamburger" id="ham" aria-label="Toggle menu" aria-expanded="false" aria-controls="mob-menu">
       <span></span><span></span><span></span>
     </button>
@@ -520,23 +966,23 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
 <div class="ticker-wrap" aria-label="Latest AI headlines" role="marquee">
   <span class="ticker-label">Live</span>
   <div class="ticker-track" aria-hidden="true">
-    <div class="tick-item"><span class="tick-dot"></span>Google DeepMind breaks reasoning benchmarks</div>
-    <div class="tick-item"><span class="tick-dot"></span>AI agents are reshaping software development</div>
-    <div class="tick-item"><span class="tick-dot"></span>Meta open-sources Llama 4</div>
-    <div class="tick-item"><span class="tick-dot"></span>Anthropic launches Claude 4 family</div>
-    <div class="tick-item"><span class="tick-dot"></span>EU AI Act now in full force</div>
-    <div class="tick-item"><span class="tick-dot"></span>NVIDIA Blackwell GPUs power next AI wave</div>
-    <div class="tick-item"><span class="tick-dot"></span>OpenAI hits 300 million weekly active users</div>
-    <div class="tick-item"><span class="tick-dot"></span>AI-powered search reshaping how we find information</div>
+    <div class="tick-item"><span class="tick-dot"></span>Google DeepMind breaks reasoning benchmarks with Gemini Ultra 2</div>
+    <div class="tick-item"><span class="tick-dot"></span>AI agents are reshaping software development in 2026</div>
+    <div class="tick-item"><span class="tick-dot"></span>Meta open-sources Llama 4 — available to all developers</div>
+    <div class="tick-item"><span class="tick-dot"></span>Anthropic launches Claude 4 family with extended thinking</div>
+    <div class="tick-item"><span class="tick-dot"></span>EU AI Act now in full force across member states</div>
+    <div class="tick-item"><span class="tick-dot"></span>NVIDIA Blackwell GPUs power the next AI infrastructure wave</div>
+    <div class="tick-item"><span class="tick-dot"></span>OpenAI surpasses 300 million weekly active users globally</div>
+    <div class="tick-item"><span class="tick-dot"></span>AI-powered search is fundamentally reshaping how we find information</div>
     <!-- duplicate for seamless loop -->
-    <div class="tick-item"><span class="tick-dot"></span>Google DeepMind breaks reasoning benchmarks</div>
-    <div class="tick-item"><span class="tick-dot"></span>AI agents are reshaping software development</div>
-    <div class="tick-item"><span class="tick-dot"></span>Meta open-sources Llama 4</div>
-    <div class="tick-item"><span class="tick-dot"></span>Anthropic launches Claude 4 family</div>
-    <div class="tick-item"><span class="tick-dot"></span>EU AI Act now in full force</div>
-    <div class="tick-item"><span class="tick-dot"></span>NVIDIA Blackwell GPUs power next AI wave</div>
-    <div class="tick-item"><span class="tick-dot"></span>OpenAI hits 300 million weekly active users</div>
-    <div class="tick-item"><span class="tick-dot"></span>AI-powered search reshaping how we find information</div>
+    <div class="tick-item"><span class="tick-dot"></span>Google DeepMind breaks reasoning benchmarks with Gemini Ultra 2</div>
+    <div class="tick-item"><span class="tick-dot"></span>AI agents are reshaping software development in 2026</div>
+    <div class="tick-item"><span class="tick-dot"></span>Meta open-sources Llama 4 — available to all developers</div>
+    <div class="tick-item"><span class="tick-dot"></span>Anthropic launches Claude 4 family with extended thinking</div>
+    <div class="tick-item"><span class="tick-dot"></span>EU AI Act now in full force across member states</div>
+    <div class="tick-item"><span class="tick-dot"></span>NVIDIA Blackwell GPUs power the next AI infrastructure wave</div>
+    <div class="tick-item"><span class="tick-dot"></span>OpenAI surpasses 300 million weekly active users globally</div>
+    <div class="tick-item"><span class="tick-dot"></span>AI-powered search is fundamentally reshaping how we find information</div>
   </div>
   <p class="sr-only" aria-live="polite">Latest: Google DeepMind breaks reasoning benchmarks. Meta open-sources Llama 4. Anthropic launches Claude 4 family.</p>
 </div>
@@ -545,12 +991,33 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
 
   <!-- HERO -->
   <header class="hero" role="banner">
-    <div class="hero-badge"><span class="badge-dot" aria-hidden="true"></span>AI News &amp; Insights — Updated Daily</div>
-    <h1 class="hero-headline">The future of AI,<br/><span class="grad">explained clearly.</span></h1>
+    <div class="hero-badge"><span class="badge-pulse" aria-hidden="true"></span>AI News &amp; Insights — Updated Daily</div>
+    <h1 class="hero-headline">
+      The future of AI,
+      <span class="line2"><span class="grad">explained clearly.</span></span>
+    </h1>
     <p class="hero-sub">NyvoraAI delivers original, fact-checked coverage of artificial intelligence — from groundbreaking research to everyday tools. No hype. Just clarity. Free forever.</p>
     <div class="hero-btns">
       <a href="https://nyvoraai.github.io/ai-news.html" class="btn-primary">Read AI News →</a>
       <a href="https://nyvoraai.github.io/blog.html" class="btn-secondary">Explore Blog</a>
+    </div>
+    <div class="hero-trust" aria-label="Why trust NyvoraAI">
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1L10 6H15L11 9.5L12.5 14.5L8 11.5L3.5 14.5L5 9.5L1 6H6L8 1Z" fill="#10B981"/></svg>
+        100% Original Reporting
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="2" width="14" height="12" rx="2" stroke="#10B981" stroke-width="1.5"/><path d="M5 8L7 10L11 6" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Fact-Checked Daily
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="#10B981" stroke-width="1.5"/><path d="M8 5V8L10 10" stroke="#10B981" stroke-width="1.5" stroke-linecap="round"/></svg>
+        No Paywall — Ever
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2C5 2 2 4.5 2 8C2 11.5 5 14 8 14C11 14 14 11.5 14 8C14 4.5 11 2 8 2Z" stroke="#10B981" stroke-width="1.5"/><path d="M6 8L7.5 9.5L10 6.5" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Independently Operated
+      </div>
     </div>
   </header>
 
@@ -558,7 +1025,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
   <div class="stats-bar" role="region" aria-label="NyvoraAI at a glance">
     <div class="stats-inner">
       <div class="stat-item reveal">
-        <div class="stat-val">100%</div>
+        <div class="stat-val" aria-label="100 percent">100%</div>
         <div class="stat-lbl">Original content<br/>Zero fake news</div>
       </div>
       <div class="stat-item reveal">
@@ -591,19 +1058,31 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
       <a href="https://nyvoraai.github.io/ai-news/how-to-use-ai-tools-for-social-media-posts.html" class="featured-card reveal" aria-label="Featured: How to Use AI Tools for Social Media Posts">
         <div class="featured-thumb">
           <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-            <rect width="600" height="320" fill="#0a0e1a"/>
-            <circle cx="120" cy="100" r="60" fill="#8B5CF6" opacity=".08"/>
-            <circle cx="480" cy="220" r="80" fill="#2DD4E0" opacity=".06"/>
-            <path d="M60,160 Q150,80 250,160 Q350,240 450,160 Q520,120 560,140" fill="none" stroke="#8B5CF6" stroke-width="2" opacity=".4">
-              <animate attributeName="d" values="M60,160 Q150,80 250,160 Q350,240 450,160 Q520,120 560,140;M60,160 Q150,240 250,160 Q350,80 450,160 Q520,200 560,140;M60,160 Q150,80 250,160 Q350,240 450,160 Q520,120 560,140" dur="4s" repeatCount="indefinite"/>
-            </path>
-            <path d="M60,185 Q150,120 250,185 Q350,250 450,185" fill="none" stroke="#2DD4E0" stroke-width="1.5" opacity=".25">
-              <animate attributeName="d" values="M60,185 Q150,120 250,185 Q350,250 450,185;M60,185 Q150,250 250,185 Q350,120 450,185;M60,185 Q150,120 250,185 Q350,250 450,185" dur="4s" begin="0.5s" repeatCount="indefinite"/>
-            </path>
-            <circle cx="250" cy="160" r="8" fill="#8B5CF6" opacity=".8">
-              <animate attributeName="opacity" values=".8;.3;.8" dur="2s" repeatCount="indefinite"/>
-            </circle>
-            <text x="300" y="280" text-anchor="middle" fill="#ffffff08" font-size="11" font-family="monospace">AI · Social Media · 2026</text>
+            <rect width="600" height="320" fill="#08101e"/>
+            <defs>
+              <radialGradient id="fg1" cx="30%" cy="40%"><stop offset="0%" stop-color="#7C3AED" stop-opacity=".18"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+              <radialGradient id="fg2" cx="75%" cy="65%"><stop offset="0%" stop-color="#00D4FF" stop-opacity=".12"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+            </defs>
+            <rect width="600" height="320" fill="url(#fg1)"/>
+            <rect width="600" height="320" fill="url(#fg2)"/>
+            <!-- Floating social cards -->
+            <rect x="60" y="60" width="140" height="80" rx="12" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".12" stroke-width="1"/>
+            <rect x="60" y="60" width="140" height="80" rx="12" fill="none" stroke="url(#clg)" stroke-width="1.5"/>
+            <rect x="74" y="80" width="60" height="8" rx="4" fill="#fff" fill-opacity=".4"/>
+            <rect x="74" y="94" width="90" height="6" rx="3" fill="#fff" fill-opacity=".2"/>
+            <rect x="74" y="106" width="70" height="6" rx="3" fill="#fff" fill-opacity=".15"/>
+
+            <rect x="400" y="100" width="140" height="80" rx="12" fill="#ffffff" fill-opacity=".04" stroke="#00D4FF" stroke-opacity=".2" stroke-width="1.5"/>
+            <rect x="414" y="118" width="50" height="8" rx="4" fill="#00D4FF" fill-opacity=".5"/>
+            <rect x="414" y="132" width="80" height="6" rx="3" fill="#fff" fill-opacity=".2"/>
+            <rect x="414" y="144" width="60" height="6" rx="3" fill="#fff" fill-opacity=".15"/>
+
+            <rect x="200" y="170" width="200" height="90" rx="12" fill="#7C3AED" fill-opacity=".1" stroke="#7C3AED" stroke-opacity=".3" stroke-width="1.5"/>
+            <rect x="216" y="190" width="80" height="9" rx="4.5" fill="#7C3AED" fill-opacity=".7"/>
+            <rect x="216" y="206" width="140" height="7" rx="3.5" fill="#fff" fill-opacity=".25"/>
+            <rect x="216" y="220" width="100" height="7" rx="3.5" fill="#fff" fill-opacity=".18"/>
+            <rect x="216" y="234" width="60" height="7" rx="3.5" fill="#fff" fill-opacity=".12"/>
+            <defs><linearGradient id="clg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#00D4FF"/></linearGradient></defs>
           </svg>
         </div>
         <div class="featured-body">
@@ -624,19 +1103,18 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
       <!-- BLOG CARD GRID -->
       <div class="blog-grid">
 
-        <!-- Card 1 -->
         <a href="https://nyvoraai.github.io/ai-news/what-is-the-best-ai-chatbot-in-2026.html" class="blog-card reveal" aria-label="What Is the Best AI Chatbot in 2026?">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#0c1a2e,#0a1520)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#060a10"/>
-              <line x1="150" y1="0" x2="150" y2="180" stroke="#ffffff05" stroke-width="1"/>
-              <circle cx="75" cy="88" r="32" fill="#2DD4E0" opacity=".1"/>
-              <circle cx="75" cy="88" r="22" fill="#2DD4E0" opacity=".18"><animate attributeName="r" values="22;26;22" dur="2.2s" repeatCount="indefinite"/></circle>
-              <text x="75" y="93" text-anchor="middle" fill="#2DD4E0" font-size="11" font-weight="bold" font-family="sans-serif">Claude</text>
-              <circle cx="225" cy="88" r="32" fill="#22C55E" opacity=".1"/>
-              <circle cx="225" cy="88" r="22" fill="#22C55E" opacity=".18"><animate attributeName="r" values="22;26;22" dur="2.2s" begin="1.1s" repeatCount="indefinite"/></circle>
-              <text x="225" y="93" text-anchor="middle" fill="#22C55E" font-size="11" font-weight="bold" font-family="sans-serif">GPT</text>
-              <text x="150" y="93" text-anchor="middle" fill="#ffffff30" font-size="13" font-weight="bold" font-family="sans-serif">VS</text>
+          <div class="card-thumb" style="background:linear-gradient(135deg,#060f1a,#060810)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#050d15"/>
+              <line x1="150" y1="0" x2="150" y2="188" stroke="#ffffff04" stroke-width="1"/>
+              <circle cx="75" cy="94" r="34" fill="#00D4FF" opacity=".07"/>
+              <circle cx="75" cy="94" r="24" fill="#00D4FF" opacity=".16"><animate attributeName="r" values="24;28;24" dur="2.2s" repeatCount="indefinite"/></circle>
+              <text x="75" y="98" text-anchor="middle" fill="#00D4FF" font-size="11" font-weight="bold" font-family="sans-serif">Claude</text>
+              <circle cx="225" cy="94" r="34" fill="#22C55E" opacity=".07"/>
+              <circle cx="225" cy="94" r="24" fill="#22C55E" opacity=".16"><animate attributeName="r" values="24;28;24" dur="2.2s" begin="1.1s" repeatCount="indefinite"/></circle>
+              <text x="225" y="98" text-anchor="middle" fill="#22C55E" font-size="11" font-weight="bold" font-family="sans-serif">GPT-4o</text>
+              <text x="150" y="98" text-anchor="middle" fill="#ffffff22" font-size="14" font-weight="bold" font-family="sans-serif">VS</text>
             </svg>
           </div>
           <div class="card-body">
@@ -652,26 +1130,25 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-        <!-- Card 2 -->
         <a href="https://nyvoraai.github.io/ai-news/best-ai-tool-for-students-2026.html" class="blog-card reveal" aria-label="Best AI Tool for Students in 2026">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#061a10,#051408)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#040d08"/>
-              <rect x="40" y="30" width="220" height="120" rx="6" fill="#22C55E" opacity=".06"/>
-              <rect x="40" y="30" width="220" height="120" rx="6" fill="none" stroke="#22C55E" stroke-width="1" opacity=".3"/>
-              <text x="150" y="58" text-anchor="middle" fill="#22C55E" font-size="10" font-family="monospace" font-weight="bold" opacity=".6">Study Planner AI</text>
-              <rect x="55" y="68" width="190" height="7" rx="3.5" fill="#22C55E" opacity=".15"/>
-              <rect x="55" y="68" width="130" height="7" rx="3.5" fill="#22C55E" opacity=".5"><animate attributeName="width" values="0;130" dur="1.2s" fill="freeze"/></rect>
-              <rect x="55" y="83" width="190" height="7" rx="3.5" fill="#22C55E" opacity=".15"/>
-              <rect x="55" y="83" width="160" height="7" rx="3.5" fill="#8B5CF6" opacity=".4"><animate attributeName="width" values="0;160" dur="1.4s" begin="0.2s" fill="freeze"/></rect>
-              <rect x="55" y="98" width="190" height="7" rx="3.5" fill="#22C55E" opacity=".15"/>
-              <rect x="55" y="98" width="90" height="7" rx="3.5" fill="#2DD4E0" opacity=".4"><animate attributeName="width" values="0;90" dur="1s" begin="0.4s" fill="freeze"/></rect>
+          <div class="card-thumb" style="background:linear-gradient(135deg,#061810,#040f08)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#040d08"/>
+              <rect x="38" y="28" width="224" height="132" rx="7" fill="#22C55E" opacity=".05"/>
+              <rect x="38" y="28" width="224" height="132" rx="7" fill="none" stroke="#22C55E" stroke-width="1" opacity=".28"/>
+              <text x="150" y="56" text-anchor="middle" fill="#22C55E" font-size="10" font-family="monospace" font-weight="bold" opacity=".55">Study Planner AI</text>
+              <rect x="54" y="66" width="192" height="7" rx="3.5" fill="#22C55E" opacity=".12"/>
+              <rect x="54" y="66" width="130" height="7" rx="3.5" fill="#22C55E" opacity=".5"><animate attributeName="width" values="0;130" dur="1.2s" fill="freeze"/></rect>
+              <rect x="54" y="82" width="192" height="7" rx="3.5" fill="#22C55E" opacity=".12"/>
+              <rect x="54" y="82" width="165" height="7" rx="3.5" fill="#7C3AED" opacity=".45"><animate attributeName="width" values="0;165" dur="1.4s" begin="0.2s" fill="freeze"/></rect>
+              <rect x="54" y="98" width="192" height="7" rx="3.5" fill="#22C55E" opacity=".12"/>
+              <rect x="54" y="98" width="92" height="7" rx="3.5" fill="#00D4FF" opacity=".4"><animate attributeName="width" values="0;92" dur="1s" begin="0.4s" fill="freeze"/></rect>
             </svg>
           </div>
           <div class="card-body">
             <span class="card-tag tag-tools">AI Tools</span>
             <h3 class="card-title">Best AI Tool for Students in 2026</h3>
-            <p class="card-desc">Summarising lectures, writing essays, solving maths — AI tools that genuinely help students study smarter, not just faster.</p>
+            <p class="card-desc">Summarising lectures, writing essays, solving maths — AI tools that genuinely help students study smarter, not faster.</p>
             <div class="card-meta">
               <time datetime="2026-04-22">Apr 22, 2026</time>
               <span class="meta-sep">·</span>
@@ -681,16 +1158,15 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-        <!-- Card 3 -->
-        <a href="https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html" class="blog-card reveal" aria-label="AI Risks for Everyday Users: Stay Safe in 2026">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#1a0e06,#140b04)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#0d0806"/>
-              <polygon points="150,30 195,120 105,120" fill="none" stroke="#F59E0B" stroke-width="2" opacity=".7"/>
-              <polygon points="150,30 195,120 105,120" fill="#F59E0B" opacity=".05"/>
-              <text x="150" y="104" text-anchor="middle" fill="#F59E0B" font-size="26" font-family="sans-serif" font-weight="bold">!</text>
-              <circle cx="150" cy="80" r="55" fill="none" stroke="#F59E0B" stroke-width="1" opacity=".1">
-                <animate attributeName="r" values="55;72;55" dur="2.5s" repeatCount="indefinite"/>
+        <a href="https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html" class="blog-card reveal" aria-label="AI Risks for Everyday Users">
+          <div class="card-thumb" style="background:linear-gradient(135deg,#180e06,#100904)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#0d0806"/>
+              <polygon points="150,32 198,124 102,124" fill="none" stroke="#F59E0B" stroke-width="2" opacity=".65"/>
+              <polygon points="150,32 198,124 102,124" fill="#F59E0B" opacity=".04"/>
+              <text x="150" y="108" text-anchor="middle" fill="#F59E0B" font-size="30" font-family="sans-serif" font-weight="bold">!</text>
+              <circle cx="150" cy="78" r="56" fill="none" stroke="#F59E0B" stroke-width="1" opacity=".1">
+                <animate attributeName="r" values="56;74;56" dur="2.5s" repeatCount="indefinite"/>
                 <animate attributeName="opacity" values=".1;0;.1" dur="2.5s" repeatCount="indefinite"/>
               </circle>
             </svg>
@@ -708,22 +1184,20 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-        <!-- Card 4 -->
         <a href="https://nyvoraai.github.io/ai-news/how-to-use-ai-for-email-writing.html" class="blog-card reveal" aria-label="How to Use AI for Email Writing">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#0a0615,#06040f)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#060810"/>
-              <rect x="30" y="36" width="240" height="108" rx="8" fill="#8B5CF6" opacity=".07"/>
-              <rect x="30" y="36" width="240" height="108" rx="8" fill="none" stroke="#8B5CF6" stroke-width="1" opacity=".35"/>
-              <rect x="30" y="36" width="240" height="28" rx="8" fill="#8B5CF6" opacity=".12"/>
-              <text x="55" y="55" fill="#a78bfa" font-size="9" font-family="monospace" opacity=".6">To: client@company.com</text>
-              <rect x="44" y="78" width="130" height="2.5" rx="1.25" fill="#8B5CF6" opacity=".4"><animate attributeName="width" values="0;130" dur="1s" fill="freeze"/></rect>
-              <rect x="44" y="88" width="175" height="2.5" rx="1.25" fill="#8B5CF6" opacity=".3"><animate attributeName="width" values="0;175" dur="1.2s" begin="0.1s" fill="freeze"/></rect>
-              <rect x="44" y="98" width="150" height="2.5" rx="1.25" fill="#8B5CF6" opacity=".25"><animate attributeName="width" values="0;150" dur="1.1s" begin="0.2s" fill="freeze"/></rect>
-              <rect x="44" y="108" width="110" height="2.5" rx="1.25" fill="#8B5CF6" opacity=".2"><animate attributeName="width" values="0;110" dur="1s" begin="0.3s" fill="freeze"/></rect>
-              <circle cx="246" cy="120" r="10" fill="#22C55E" opacity=".2"/>
-              <circle cx="246" cy="120" r="10" fill="none" stroke="#22C55E" stroke-width="1" opacity=".5"/>
-              <text x="246" y="124" text-anchor="middle" fill="#22C55E" font-size="10" font-family="sans-serif">✓</text>
+          <div class="card-thumb" style="background:linear-gradient(135deg,#090615,#06040e)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#060810"/>
+              <rect x="28" y="32" width="244" height="124" rx="9" fill="#7C3AED" opacity=".07"/>
+              <rect x="28" y="32" width="244" height="124" rx="9" fill="none" stroke="#7C3AED" stroke-width="1" opacity=".32"/>
+              <rect x="28" y="32" width="244" height="30" rx="9" fill="#7C3AED" opacity=".1"/>
+              <text x="55" y="51" fill="#a78bfa" font-size="9" font-family="monospace" opacity=".55">To: client@company.com</text>
+              <rect x="42" y="76" width="130" height="2.5" rx="1.25" fill="#7C3AED" opacity=".4"><animate attributeName="width" values="0;130" dur="1s" fill="freeze"/></rect>
+              <rect x="42" y="90" width="178" height="2.5" rx="1.25" fill="#7C3AED" opacity=".3"><animate attributeName="width" values="0;178" dur="1.2s" begin=".1s" fill="freeze"/></rect>
+              <rect x="42" y="104" width="152" height="2.5" rx="1.25" fill="#7C3AED" opacity=".22"><animate attributeName="width" values="0;152" dur="1.1s" begin=".2s" fill="freeze"/></rect>
+              <rect x="42" y="118" width="112" height="2.5" rx="1.25" fill="#7C3AED" opacity=".18"><animate attributeName="width" values="0;112" dur="1s" begin=".3s" fill="freeze"/></rect>
+              <circle cx="246" cy="124" r="11" fill="#22C55E" opacity=".18"/>
+              <text x="246" y="128" text-anchor="middle" fill="#22C55E" font-size="11" font-family="sans-serif">✓</text>
             </svg>
           </div>
           <div class="card-body">
@@ -739,23 +1213,22 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-        <!-- Card 5 -->
         <a href="https://nyvoraai.github.io/ai-news/what-is-notion-ai-and-is-it-worth-it.html" class="blog-card reveal" aria-label="What Is Notion AI and Is It Worth It?">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#0a0a0c,#050508)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#070708"/>
-              <rect x="38" y="24" width="224" height="132" rx="7" fill="#fff" opacity=".03"/>
-              <rect x="38" y="24" width="224" height="132" rx="7" fill="none" stroke="#fff" stroke-width="1" opacity=".12"/>
-              <rect x="52" y="40" width="120" height="5" rx="2.5" fill="#fff" opacity=".45"/>
-              <rect x="52" y="54" width="175" height="3" rx="1.5" fill="#fff" opacity=".18"/>
-              <rect x="52" y="63" width="150" height="3" rx="1.5" fill="#fff" opacity=".15"/>
-              <rect x="52" y="72" width="160" height="3" rx="1.5" fill="#fff" opacity=".12"/>
-              <rect x="52" y="88" width="68" height="22" rx="5" fill="#8B5CF6" opacity=".28"/>
-              <rect x="52" y="88" width="68" height="22" rx="5" fill="none" stroke="#8B5CF6" stroke-width="1" opacity=".6"/>
-              <text x="86" y="103" text-anchor="middle" fill="#a78bfa" font-size="8" font-family="sans-serif" opacity=".85">AI Write</text>
-              <rect x="130" y="88" width="78" height="22" rx="5" fill="#2DD4E0" opacity=".18"/>
-              <rect x="130" y="88" width="78" height="22" rx="5" fill="none" stroke="#2DD4E0" stroke-width="1" opacity=".5"/>
-              <text x="169" y="103" text-anchor="middle" fill="#2DD4E0" font-size="8" font-family="sans-serif" opacity=".8">Summarise</text>
+          <div class="card-thumb" style="background:linear-gradient(135deg,#08080c,#050507)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#070708"/>
+              <rect x="36" y="22" width="228" height="144" rx="8" fill="#fff" opacity=".025"/>
+              <rect x="36" y="22" width="228" height="144" rx="8" fill="none" stroke="#fff" stroke-width="1" opacity=".1"/>
+              <rect x="50" y="38" width="118" height="5" rx="2.5" fill="#fff" opacity=".42"/>
+              <rect x="50" y="52" width="176" height="3" rx="1.5" fill="#fff" opacity=".16"/>
+              <rect x="50" y="62" width="152" height="3" rx="1.5" fill="#fff" opacity=".13"/>
+              <rect x="50" y="72" width="162" height="3" rx="1.5" fill="#fff" opacity=".1"/>
+              <rect x="50" y="88" width="70" height="22" rx="5" fill="#7C3AED" opacity=".25"/>
+              <rect x="50" y="88" width="70" height="22" rx="5" fill="none" stroke="#7C3AED" stroke-width="1" opacity=".55"/>
+              <text x="85" y="103" text-anchor="middle" fill="#a78bfa" font-size="8" font-family="sans-serif" opacity=".8">AI Write</text>
+              <rect x="130" y="88" width="80" height="22" rx="5" fill="#00D4FF" opacity=".15"/>
+              <rect x="130" y="88" width="80" height="22" rx="5" fill="none" stroke="#00D4FF" stroke-width="1" opacity=".45"/>
+              <text x="170" y="103" text-anchor="middle" fill="#00D4FF" font-size="8" font-family="sans-serif" opacity=".75">Summarise</text>
             </svg>
           </div>
           <div class="card-body">
@@ -771,22 +1244,20 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-        <!-- Card 6 -->
         <a href="https://nyvoraai.github.io/ai-news/best-ai-tool-for-presentations.html" class="blog-card reveal" aria-label="Best AI Tool for Presentations in 2026">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#14060d,#0d0408)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#0c0509"/>
-              <rect x="28" y="26" width="244" height="110" rx="7" fill="#EC4899" opacity=".06"/>
-              <rect x="28" y="26" width="244" height="110" rx="7" fill="none" stroke="#EC4899" stroke-width="1" opacity=".28"/>
-              <rect x="28" y="26" width="244" height="34" rx="7" fill="#EC4899" opacity=".1"/>
-              <text x="150" y="48" text-anchor="middle" fill="#EC4899" font-size="10" font-family="sans-serif" font-weight="bold" opacity=".6">Slide 1 / 12</text>
-              <rect x="42" y="72" width="92" height="52" rx="4" fill="#8B5CF6" opacity=".12"/>
-              <rect x="42" y="72" width="92" height="52" rx="4" fill="none" stroke="#8B5CF6" stroke-width="1" opacity=".35"/>
-              <rect x="146" y="72" width="114" height="22" rx="3" fill="#EC4899" opacity=".15"/>
-              <rect x="146" y="72" width="114" height="22" rx="3" fill="none" stroke="#EC4899" stroke-width="1" opacity=".35"/>
-              <rect x="146" y="100" width="114" height="4" rx="2" fill="#EC4899" opacity=".18"/>
-              <rect x="146" y="110" width="84" height="4" rx="2" fill="#EC4899" opacity=".13"/>
-              <rect x="90" y="147" width="120" height="6" rx="3" fill="#EC4899" opacity=".18"/>
+          <div class="card-thumb" style="background:linear-gradient(135deg,#12060c,#0c0408)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#0c0509"/>
+              <rect x="26" y="24" width="248" height="116" rx="8" fill="#EC4899" opacity=".05"/>
+              <rect x="26" y="24" width="248" height="116" rx="8" fill="none" stroke="#EC4899" stroke-width="1" opacity=".25"/>
+              <rect x="26" y="24" width="248" height="36" rx="8" fill="#EC4899" opacity=".08"/>
+              <text x="150" y="46" text-anchor="middle" fill="#EC4899" font-size="10" font-family="sans-serif" font-weight="bold" opacity=".55">Slide 1 / 12</text>
+              <rect x="40" y="72" width="94" height="54" rx="5" fill="#7C3AED" opacity=".1"/>
+              <rect x="40" y="72" width="94" height="54" rx="5" fill="none" stroke="#7C3AED" stroke-width="1" opacity=".32"/>
+              <rect x="144" y="72" width="116" height="24" rx="4" fill="#EC4899" opacity=".12"/>
+              <rect x="144" y="72" width="116" height="24" rx="4" fill="none" stroke="#EC4899" stroke-width="1" opacity=".32"/>
+              <rect x="144" y="104" width="116" height="5" rx="2.5" fill="#EC4899" opacity=".18"/>
+              <rect x="144" y="114" width="86" height="5" rx="2.5" fill="#EC4899" opacity=".13"/>
             </svg>
           </div>
           <div class="card-body">
@@ -802,13 +1273,42 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-      </div><!-- /blog-grid -->
+      </div>
 
-      <div style="text-align:center;margin-top:36px" class="reveal">
-        <a href="https://nyvoraai.github.io/ai-news.html" class="btn-secondary">View all articles →</a>
+      <div style="text-align:center;margin-top:40px" class="reveal">
+        <a href="https://nyvoraai.github.io/ai-news.html" class="btn-secondary">View all AI news articles →</a>
       </div>
     </div>
   </section>
+
+  <!-- TRUST CARDS -->
+  <div class="trust-section reveal" role="region" aria-label="Why trust NyvoraAI">
+    <div class="trust-inner">
+      <p class="trust-title">Why readers trust NyvoraAI</p>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-card-icon">✍️</div>
+          <div class="trust-card-title">Original Reporting</div>
+          <div class="trust-card-desc">Every article is written by our editorial team — never scraped, never syndicated, never AI-generated filler.</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon">🔍</div>
+          <div class="trust-card-title">Fact-Checked</div>
+          <div class="trust-card-desc">We verify claims before publishing. Corrections are issued transparently and promptly when needed.</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon">🚫</div>
+          <div class="trust-card-title">No Paid Coverage</div>
+          <div class="trust-card-desc">No company can pay for editorial coverage. Our opinions are entirely independent — always have been.</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon">🔓</div>
+          <div class="trust-card-title">Free Forever</div>
+          <div class="trust-card-desc">No paywalls, no subscriptions, no registration. Quality AI journalism should be accessible to everyone.</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- FROM THE BLOG -->
   <section class="section" aria-labelledby="blog-heading">
@@ -823,19 +1323,17 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
 
       <div class="blog-grid">
 
-        <!-- Blog Card 1 -->
         <a href="https://nyvoraai.github.io/blog/how-to-start-using-ai-not-technical.html" class="blog-card reveal" aria-label="How to Start Using AI If You're Not Technical">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#140f06,#0d0a04)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#140f06"/>
-              <rect x="60" y="50" width="180" height="70" rx="16" fill="#F59E0B" opacity=".08"/>
-              <rect x="60" y="50" width="180" height="70" rx="16" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity=".4"/>
-              <path d="M90 120 L90 138 L112 120 Z" fill="#F59E0B" opacity=".08"/>
-              <path d="M90 120 L90 138 L112 120 Z" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity=".4"/>
-              <circle cx="115" cy="85" r="6" fill="#F59E0B" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.4s" repeatCount="indefinite"/></circle>
-              <circle cx="150" cy="85" r="6" fill="#F59E0B" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.4s" begin="0.2s" repeatCount="indefinite"/></circle>
-              <circle cx="185" cy="85" r="6" fill="#F59E0B" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.4s" begin="0.4s" repeatCount="indefinite"/></circle>
-              <text x="150" y="38" text-anchor="middle" fill="#fcd34d" font-size="11" font-family="sans-serif" font-weight="bold" opacity=".6">Your First AI Chat</text>
+          <div class="card-thumb" style="background:linear-gradient(135deg,#120e06,#0b0904)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#120e06"/>
+              <rect x="58" y="48" width="184" height="72" rx="17" fill="#F59E0B" opacity=".07"/>
+              <rect x="58" y="48" width="184" height="72" rx="17" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity=".35"/>
+              <path d="M88 120 L88 140 L112 120 Z" fill="#F59E0B" opacity=".35"/>
+              <circle cx="116" cy="84" r="6.5" fill="#F59E0B" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.4s" repeatCount="indefinite"/></circle>
+              <circle cx="150" cy="84" r="6.5" fill="#F59E0B" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.4s" begin=".2s" repeatCount="indefinite"/></circle>
+              <circle cx="184" cy="84" r="6.5" fill="#F59E0B" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.4s" begin=".4s" repeatCount="indefinite"/></circle>
+              <text x="150" y="38" text-anchor="middle" fill="#fcd34d" font-size="11" font-family="sans-serif" font-weight="bold" opacity=".55">Your First AI Chat</text>
             </svg>
           </div>
           <div class="card-body">
@@ -851,22 +1349,21 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-        <!-- Blog Card 2 -->
         <a href="https://nyvoraai.github.io/blog/what-is-artificial-intelligence-in-simple-terms.html" class="blog-card reveal" aria-label="What Is Artificial Intelligence in Simple Terms?">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#0a0e18,#06080f)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#0a0e18"/>
-              <line x1="90" y1="55" x2="150" y2="90" stroke="#60A5FA" stroke-width="1.5" opacity=".3"/>
-              <line x1="90" y1="125" x2="150" y2="90" stroke="#60A5FA" stroke-width="1.5" opacity=".3"/>
-              <line x1="150" y1="90" x2="210" y2="55" stroke="#60A5FA" stroke-width="1.5" opacity=".3"/>
-              <line x1="150" y1="90" x2="210" y2="125" stroke="#60A5FA" stroke-width="1.5" opacity=".3"/>
-              <circle cx="90" cy="55" r="9" fill="#60A5FA" opacity=".25"/>
-              <circle cx="90" cy="125" r="9" fill="#60A5FA" opacity=".25"/>
-              <circle cx="210" cy="55" r="9" fill="#60A5FA" opacity=".25"/>
-              <circle cx="210" cy="125" r="9" fill="#60A5FA" opacity=".25"/>
-              <circle cx="150" cy="90" r="14" fill="#60A5FA" opacity=".3"><animate attributeName="r" values="14;18;14" dur="2.4s" repeatCount="indefinite"/></circle>
-              <circle cx="150" cy="90" r="14" fill="none" stroke="#93c5fd" stroke-width="1.5" opacity=".7"/>
-              <text x="150" y="152" text-anchor="middle" fill="#93c5fd" font-size="10.5" font-family="sans-serif" font-weight="bold" opacity=".55">AI = Pattern Recognition</text>
+          <div class="card-thumb" style="background:linear-gradient(135deg,#080c16,#06080e)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#080c16"/>
+              <line x1="88" y1="54" x2="150" y2="94" stroke="#60A5FA" stroke-width="1.5" opacity=".3"/>
+              <line x1="88" y1="134" x2="150" y2="94" stroke="#60A5FA" stroke-width="1.5" opacity=".3"/>
+              <line x1="150" y1="94" x2="212" y2="54" stroke="#60A5FA" stroke-width="1.5" opacity=".3"/>
+              <line x1="150" y1="94" x2="212" y2="134" stroke="#60A5FA" stroke-width="1.5" opacity=".3"/>
+              <circle cx="88" cy="54" r="9" fill="#60A5FA" opacity=".22"/>
+              <circle cx="88" cy="134" r="9" fill="#60A5FA" opacity=".22"/>
+              <circle cx="212" cy="54" r="9" fill="#60A5FA" opacity=".22"/>
+              <circle cx="212" cy="134" r="9" fill="#60A5FA" opacity=".22"/>
+              <circle cx="150" cy="94" r="15" fill="#60A5FA" opacity=".28"><animate attributeName="r" values="15;20;15" dur="2.4s" repeatCount="indefinite"/></circle>
+              <circle cx="150" cy="94" r="15" fill="none" stroke="#93c5fd" stroke-width="1.5" opacity=".7"/>
+              <text x="150" y="162" text-anchor="middle" fill="#93c5fd" font-size="10.5" font-family="sans-serif" font-weight="bold" opacity=".5">AI = Pattern Recognition</text>
             </svg>
           </div>
           <div class="card-body">
@@ -882,22 +1379,21 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-        <!-- Blog Card 3 -->
         <a href="https://nyvoraai.github.io/blog/how-to-use-chatgpt-first-time-step-by-step.html" class="blog-card reveal" aria-label="How to Use ChatGPT for the First Time">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#04140a,#031007)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#04140a"/>
-              <rect x="30" y="30" width="240" height="120" rx="8" fill="#22C55E" opacity=".06"/>
-              <rect x="30" y="30" width="240" height="120" rx="8" fill="none" stroke="#22C55E" stroke-width="1" opacity=".3"/>
-              <rect x="44" y="46" width="120" height="22" rx="11" fill="#22C55E" opacity=".15"/>
-              <rect x="44" y="46" width="120" height="22" rx="11" fill="none" stroke="#22C55E" stroke-width="1" opacity=".4"/>
-              <text x="104" y="61" text-anchor="middle" fill="#86efac" font-size="9" font-family="sans-serif" opacity=".8">Hi! How can I help?</text>
-              <rect x="136" y="80" width="120" height="22" rx="11" fill="#2DD4E0" opacity=".15"/>
-              <rect x="136" y="80" width="120" height="22" rx="11" fill="none" stroke="#2DD4E0" stroke-width="1" opacity=".4"/>
-              <text x="196" y="95" text-anchor="middle" fill="#5eead4" font-size="9" font-family="sans-serif" opacity=".8">Explain it simply</text>
-              <circle cx="60" cy="125" r="5" fill="#22C55E" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.2s" repeatCount="indefinite"/></circle>
-              <circle cx="76" cy="125" r="5" fill="#22C55E" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.2s" begin="0.2s" repeatCount="indefinite"/></circle>
-              <circle cx="92" cy="125" r="5" fill="#22C55E" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.2s" begin="0.4s" repeatCount="indefinite"/></circle>
+          <div class="card-thumb" style="background:linear-gradient(135deg,#041408,#030f06)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#04140a"/>
+              <rect x="28" y="28" width="244" height="132" rx="9" fill="#22C55E" opacity=".05"/>
+              <rect x="28" y="28" width="244" height="132" rx="9" fill="none" stroke="#22C55E" stroke-width="1" opacity=".28"/>
+              <rect x="42" y="44" width="122" height="24" rx="12" fill="#22C55E" opacity=".14"/>
+              <rect x="42" y="44" width="122" height="24" rx="12" fill="none" stroke="#22C55E" stroke-width="1" opacity=".38"/>
+              <text x="103" y="60" text-anchor="middle" fill="#86efac" font-size="9" font-family="sans-serif" opacity=".75">Hi! How can I help?</text>
+              <rect x="136" y="80" width="122" height="24" rx="12" fill="#00D4FF" opacity=".12"/>
+              <rect x="136" y="80" width="122" height="24" rx="12" fill="none" stroke="#00D4FF" stroke-width="1" opacity=".35"/>
+              <text x="197" y="96" text-anchor="middle" fill="#5eead4" font-size="9" font-family="sans-serif" opacity=".75">Explain it simply</text>
+              <circle cx="60" cy="128" r="5" fill="#22C55E" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.2s" repeatCount="indefinite"/></circle>
+              <circle cx="76" cy="128" r="5" fill="#22C55E" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.2s" begin=".2s" repeatCount="indefinite"/></circle>
+              <circle cx="92" cy="128" r="5" fill="#22C55E" opacity=".7"><animate attributeName="opacity" values=".7;.2;.7" dur="1.2s" begin=".4s" repeatCount="indefinite"/></circle>
             </svg>
           </div>
           <div class="card-body">
@@ -913,17 +1409,16 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-        <!-- Blog Card 4 -->
-        <a href="https://nyvoraai.github.io/blog/ai-vs-machine-learning-difference.html" class="blog-card reveal" aria-label="AI vs Machine Learning: What's the Real Difference?">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#0a0a16,#06060f)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#0a0a16"/>
-              <circle cx="150" cy="90" r="65" fill="#8B5CF6" opacity=".08"/>
-              <circle cx="150" cy="90" r="65" fill="none" stroke="#8B5CF6" stroke-width="1.5" opacity=".45"/>
-              <text x="150" y="38" text-anchor="middle" fill="#c4b5fd" font-size="11" font-family="sans-serif" font-weight="bold" opacity=".75">AI</text>
-              <circle cx="160" cy="100" r="36" fill="#2DD4E0" opacity=".12"><animate attributeName="r" values="36;40;36" dur="2.6s" repeatCount="indefinite"/></circle>
-              <circle cx="160" cy="100" r="36" fill="none" stroke="#2DD4E0" stroke-width="1.5" opacity=".6"/>
-              <text x="160" y="104" text-anchor="middle" fill="#5eead4" font-size="11" font-family="sans-serif" font-weight="bold" opacity=".85">ML</text>
+        <a href="https://nyvoraai.github.io/blog/ai-vs-machine-learning-difference.html" class="blog-card reveal" aria-label="AI vs Machine Learning">
+          <div class="card-thumb" style="background:linear-gradient(135deg,#080a14,#05060e)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#080a14"/>
+              <circle cx="145" cy="94" r="66" fill="#7C3AED" opacity=".07"/>
+              <circle cx="145" cy="94" r="66" fill="none" stroke="#7C3AED" stroke-width="1.5" opacity=".4"/>
+              <text x="114" y="52" text-anchor="middle" fill="#c4b5fd" font-size="12" font-family="sans-serif" font-weight="bold" opacity=".7">AI</text>
+              <circle cx="162" cy="104" r="38" fill="#00D4FF" opacity=".1"><animate attributeName="r" values="38;43;38" dur="2.6s" repeatCount="indefinite"/></circle>
+              <circle cx="162" cy="104" r="38" fill="none" stroke="#00D4FF" stroke-width="1.5" opacity=".55"/>
+              <text x="162" y="108" text-anchor="middle" fill="#5eead4" font-size="12" font-family="sans-serif" font-weight="bold" opacity=".8">ML</text>
             </svg>
           </div>
           <div class="card-body">
@@ -939,24 +1434,23 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-        <!-- Blog Card 5 -->
         <a href="https://nyvoraai.github.io/blog/is-ai-hard-to-learn-for-beginners.html" class="blog-card reveal" aria-label="Is AI Hard to Learn for Beginners?">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#140f06,#0d0a04)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#140f06"/>
-              <path d="M90 130 A60 60 0 0 1 210 130" fill="none" stroke="#F59E0B" stroke-width="10" opacity=".15"/>
-              <path d="M90 130 A60 60 0 0 1 150 70" fill="none" stroke="#22C55E" stroke-width="10" opacity=".4"/>
-              <line x1="150" y1="130" x2="118" y2="92" stroke="#fcd34d" stroke-width="3" stroke-linecap="round" opacity=".85">
-                <animateTransform attributeName="transform" type="rotate" values="0 150 130;-15 150 130;0 150 130" dur="2.4s" repeatCount="indefinite"/>
+          <div class="card-thumb" style="background:linear-gradient(135deg,#120e06,#0c0a04)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#120e06"/>
+              <path d="M90 136 A60 60 0 0 1 210 136" fill="none" stroke="#F59E0B" stroke-width="10" opacity=".13"/>
+              <path d="M90 136 A60 60 0 0 1 150 76" fill="none" stroke="#22C55E" stroke-width="10" opacity=".38"/>
+              <line x1="150" y1="136" x2="118" y2="96" stroke="#fcd34d" stroke-width="3.5" stroke-linecap="round" opacity=".8">
+                <animateTransform attributeName="transform" type="rotate" values="0 150 136;-16 150 136;0 150 136" dur="2.4s" repeatCount="indefinite"/>
               </line>
-              <circle cx="150" cy="130" r="6" fill="#fcd34d" opacity=".9"/>
-              <text x="150" y="155" text-anchor="middle" fill="#fcd34d" font-size="11" font-family="sans-serif" font-weight="bold" opacity=".6">Easier Than You Think</text>
+              <circle cx="150" cy="136" r="6" fill="#fcd34d" opacity=".9"/>
+              <text x="150" y="162" text-anchor="middle" fill="#fcd34d" font-size="11" font-family="sans-serif" font-weight="bold" opacity=".55">Easier Than You Think</text>
             </svg>
           </div>
           <div class="card-body">
             <span class="card-tag tag-beginner">Learning Guide</span>
             <h3 class="card-title">Is AI Hard to Learn for Beginners?</h3>
-            <p class="card-desc">The honest answer — no hype. A realistic timeline and the easiest path to actually get started.</p>
+            <p class="card-desc">The honest answer — no hype. A realistic timeline and the easiest path to actually get started with AI.</p>
             <div class="card-meta">
               <time datetime="2026-06-25">Jun 25, 2026</time>
               <span class="meta-sep">·</span>
@@ -966,38 +1460,29 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-        <!-- Blog Card 6 -->
         <a href="https://nyvoraai.github.io/blog/easiest-ai-tools-to-start-with.html" class="blog-card reveal" aria-label="Easiest AI Tools to Start With in 2026">
-          <div class="card-thumb" style="background:linear-gradient(135deg,#0a1018,#070b11)">
-            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="180" fill="#0a1018"/>
-              <rect x="40" y="38" width="100" height="44" rx="10" fill="#22C55E" opacity=".12"/>
-              <rect x="40" y="38" width="100" height="44" rx="10" fill="none" stroke="#22C55E" stroke-width="1.5" opacity=".4">
-                <animate attributeName="opacity" values=".4;.85;.4" dur="3.2s" repeatCount="indefinite"/>
-              </rect>
-              <text x="90" y="64" text-anchor="middle" fill="#86efac" font-size="12" font-family="sans-serif" font-weight="bold">ChatGPT</text>
-              <rect x="160" y="38" width="100" height="44" rx="10" fill="#60A5FA" opacity=".12"/>
-              <rect x="160" y="38" width="100" height="44" rx="10" fill="none" stroke="#60A5FA" stroke-width="1.5" opacity=".4">
-                <animate attributeName="opacity" values=".4;.85;.4" dur="3.2s" begin="0.8s" repeatCount="indefinite"/>
-              </rect>
-              <text x="210" y="64" text-anchor="middle" fill="#93c5fd" font-size="12" font-family="sans-serif" font-weight="bold">Gemini</text>
-              <rect x="40" y="98" width="100" height="44" rx="10" fill="#2DD4E0" opacity=".12"/>
-              <rect x="40" y="98" width="100" height="44" rx="10" fill="none" stroke="#2DD4E0" stroke-width="1.5" opacity=".4">
-                <animate attributeName="opacity" values=".4;.85;.4" dur="3.2s" begin="1.6s" repeatCount="indefinite"/>
-              </rect>
-              <text x="90" y="124" text-anchor="middle" fill="#5eead4" font-size="12" font-family="sans-serif" font-weight="bold">Claude</text>
-              <rect x="160" y="98" width="100" height="44" rx="10" fill="#8B5CF6" opacity=".12"/>
-              <rect x="160" y="98" width="100" height="44" rx="10" fill="none" stroke="#8B5CF6" stroke-width="1.5" opacity=".4">
-                <animate attributeName="opacity" values=".4;.85;.4" dur="3.2s" begin="2.4s" repeatCount="indefinite"/>
-              </rect>
-              <text x="210" y="124" text-anchor="middle" fill="#c4b5fd" font-size="12" font-family="sans-serif" font-weight="bold">Copilot</text>
-              <text x="150" y="160" text-anchor="middle" fill="#5eead4" font-size="10" font-family="sans-serif" font-weight="bold" opacity=".5">Pick One. Start Today.</text>
+          <div class="card-thumb" style="background:linear-gradient(135deg,#080e16,#060b10)">
+            <svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="188" fill="#080e16"/>
+              <rect x="38" y="36" width="102" height="46" rx="10" fill="#22C55E" opacity=".1"/>
+              <rect x="38" y="36" width="102" height="46" rx="10" fill="none" stroke="#22C55E" stroke-width="1.5" opacity=".38"><animate attributeName="opacity" values=".38;.8;.38" dur="3.2s" repeatCount="indefinite"/></rect>
+              <text x="89" y="63" text-anchor="middle" fill="#86efac" font-size="12" font-family="sans-serif" font-weight="bold">ChatGPT</text>
+              <rect x="160" y="36" width="102" height="46" rx="10" fill="#60A5FA" opacity=".1"/>
+              <rect x="160" y="36" width="102" height="46" rx="10" fill="none" stroke="#60A5FA" stroke-width="1.5" opacity=".38"><animate attributeName="opacity" values=".38;.8;.38" dur="3.2s" begin=".8s" repeatCount="indefinite"/></rect>
+              <text x="211" y="63" text-anchor="middle" fill="#93c5fd" font-size="12" font-family="sans-serif" font-weight="bold">Gemini</text>
+              <rect x="38" y="100" width="102" height="46" rx="10" fill="#00D4FF" opacity=".1"/>
+              <rect x="38" y="100" width="102" height="46" rx="10" fill="none" stroke="#00D4FF" stroke-width="1.5" opacity=".38"><animate attributeName="opacity" values=".38;.8;.38" dur="3.2s" begin="1.6s" repeatCount="indefinite"/></rect>
+              <text x="89" y="127" text-anchor="middle" fill="#5eead4" font-size="12" font-family="sans-serif" font-weight="bold">Claude</text>
+              <rect x="160" y="100" width="102" height="46" rx="10" fill="#7C3AED" opacity=".1"/>
+              <rect x="160" y="100" width="102" height="46" rx="10" fill="none" stroke="#7C3AED" stroke-width="1.5" opacity=".38"><animate attributeName="opacity" values=".38;.8;.38" dur="3.2s" begin="2.4s" repeatCount="indefinite"/></rect>
+              <text x="211" y="127" text-anchor="middle" fill="#c4b5fd" font-size="12" font-family="sans-serif" font-weight="bold">Copilot</text>
+              <text x="150" y="166" text-anchor="middle" fill="#5eead4" font-size="10" font-family="sans-serif" font-weight="bold" opacity=".45">Pick One. Start Today.</text>
             </svg>
           </div>
           <div class="card-body">
             <span class="card-tag tag-tools">AI Tools</span>
             <h3 class="card-title">Easiest AI Tools to Start With in 2026</h3>
-            <p class="card-desc">ChatGPT, Gemini, Copilot, Claude, and more — free, beginner-friendly tools you can start using in under 5 minutes.</p>
+            <p class="card-desc">ChatGPT, Gemini, Copilot, Claude — free, beginner-friendly tools you can start using in under 5 minutes.</p>
             <div class="card-meta">
               <time datetime="2026-06-25">Jun 25, 2026</time>
               <span class="meta-sep">·</span>
@@ -1007,9 +1492,9 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
           </div>
         </a>
 
-      </div><!-- /blog-grid -->
+      </div>
 
-      <div style="text-align:center;margin-top:36px" class="reveal">
+      <div style="text-align:center;margin-top:40px" class="reveal">
         <a href="https://nyvoraai.github.io/blog.html" class="btn-secondary">View all blog posts →</a>
       </div>
     </div>
@@ -1026,35 +1511,35 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
         <a href="https://nyvoraai.github.io/ai-news.html" class="view-all">All topics →</a>
       </div>
       <div class="topics-grid">
-        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none">
-          <div class="topic-icon" style="background:rgba(139,92,246,.12)">🧠</div>
+        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none" aria-label="Browse LLMs articles">
+          <div class="topic-icon" style="background:rgba(124,58,237,.12)">🧠</div>
           <div><div class="topic-name">LLMs</div><div class="topic-count">Large language models</div></div>
         </a>
-        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none">
-          <div class="topic-icon" style="background:rgba(45,212,224,.12)">🛠️</div>
+        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none" aria-label="Browse AI Tools articles">
+          <div class="topic-icon" style="background:rgba(0,212,255,.12)">🛠️</div>
           <div><div class="topic-name">AI Tools</div><div class="topic-count">Reviews &amp; guides</div></div>
         </a>
-        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none">
+        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none" aria-label="Browse Research articles">
           <div class="topic-icon" style="background:rgba(34,197,94,.12)">🔬</div>
           <div><div class="topic-name">Research</div><div class="topic-count">Breakthroughs &amp; papers</div></div>
         </a>
-        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none">
+        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none" aria-label="Browse AI Safety articles">
           <div class="topic-icon" style="background:rgba(249,115,22,.12)">🛡️</div>
           <div><div class="topic-name">AI Safety</div><div class="topic-count">Ethics &amp; alignment</div></div>
         </a>
-        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none">
+        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none" aria-label="Browse AI Policy articles">
           <div class="topic-icon" style="background:rgba(96,165,250,.12)">⚖️</div>
           <div><div class="topic-name">Policy</div><div class="topic-count">Regulation &amp; law</div></div>
         </a>
-        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none">
+        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none" aria-label="Browse Business articles">
           <div class="topic-icon" style="background:rgba(236,72,153,.12)">💼</div>
           <div><div class="topic-name">Business</div><div class="topic-count">Startups &amp; investment</div></div>
         </a>
-        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none">
-          <div class="topic-icon" style="background:rgba(45,212,224,.12)">🤖</div>
+        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none" aria-label="Browse Robotics articles">
+          <div class="topic-icon" style="background:rgba(0,212,255,.12)">🤖</div>
           <div><div class="topic-name">Robotics</div><div class="topic-count">Physical AI systems</div></div>
         </a>
-        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none">
+        <a href="https://nyvoraai.github.io/ai-news.html" class="topic-pill reveal" style="text-decoration:none" aria-label="Browse Hardware articles">
           <div class="topic-icon" style="background:rgba(245,158,11,.12)">💻</div>
           <div><div class="topic-name">Hardware</div><div class="topic-count">Chips &amp; compute</div></div>
         </a>
@@ -1067,7 +1552,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
     <div class="faq-inner">
       <div class="reveal">
         <span class="section-eyebrow">FAQ</span>
-        <h2 class="section-title" id="faq-heading" style="font-size:clamp(22px,3vw,30px);margin-bottom:0">Frequently Asked Questions</h2>
+        <h2 id="faq-heading" style="font-family:var(--font-display);font-size:clamp(22px,3vw,32px);font-weight:800;letter-spacing:-1px;color:var(--ink)">Frequently Asked Questions</h2>
       </div>
       <div class="faq-list reveal">
 
@@ -1103,7 +1588,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
 
         <details class="faq-item">
           <summary>How do I contact NyvoraAI?</summary>
-          <div class="faq-body">Email us at <a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a>, use the <a href="https://nyvoraai.github.io/contact.html">contact form</a>, or find us on <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener">X/Twitter</a>, <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener">Facebook</a>, and <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener">YouTube</a>.</div>
+          <div class="faq-body">Email us at <a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a>, use the <a href="https://nyvoraai.github.io/contact.html">contact form</a>, or find us on <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener noreferrer">X/Twitter</a>, <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener noreferrer">Instagram</a>, <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener noreferrer">Facebook</a>, and <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener noreferrer">YouTube</a>.</div>
         </details>
 
       </div>
@@ -1113,13 +1598,28 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
   <!-- NEWSLETTER -->
   <section class="nl-section" aria-labelledby="nl-heading">
     <div class="nl-box reveal">
+      <div class="nl-icon" aria-hidden="true">📬</div>
       <h2 class="nl-title" id="nl-heading">Stay ahead of AI. Get it free.</h2>
-      <p class="nl-sub">Top AI stories every week. No spam. No noise. Just signal.</p>
-      <form class="nl-form" id="nl-form" aria-label="Newsletter signup" novalidate>
-        <input class="nl-input" type="email" id="nl-email" placeholder="your@email.com" required aria-label="Email address" autocomplete="email"/>
-        <button type="submit" class="nl-btn" id="nl-btn">Subscribe Free</button>
-      </form>
-      <p class="nl-note" id="nl-msg" aria-live="polite">No spam · Unsubscribe anytime · 100% free</p>
+      <p class="nl-sub">Top AI stories every week, straight to your inbox. No spam. No noise. Just signal that matters.</p>
+
+      <div class="nl-form-wrap" id="nl-form-wrap">
+        <!-- Real form — replace ACTION_URL with your Mailchimp/ConvertKit/Formspree endpoint -->
+        <form class="nl-form" id="nl-form" aria-label="Newsletter signup" novalidate>
+          <input class="nl-input" type="email" id="nl-email" name="email" placeholder="your@email.com" required aria-label="Email address" autocomplete="email"/>
+          <button type="submit" class="nl-btn" id="nl-btn">Subscribe Free</button>
+        </form>
+        <p class="nl-note" id="nl-note">
+          <span>✓ No spam</span>
+          <span>✓ Unsubscribe anytime</span>
+          <span>✓ 100% free</span>
+        </p>
+      </div>
+
+      <div class="nl-success" id="nl-success" role="status" aria-live="polite">
+        <div class="nl-success-icon" aria-hidden="true">🎉</div>
+        <div class="nl-success-msg">You're in!</div>
+        <div class="nl-success-sub">Thanks for subscribing. Your first digest arrives next week.</div>
+      </div>
     </div>
   </section>
 
@@ -1130,26 +1630,26 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
   <div class="footer-inner">
     <div>
       <div class="f-logo">
-        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" style="width:28px;height:28px;flex-shrink:0" aria-hidden="true">
-          <defs><linearGradient id="flg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1B2A4A"/><stop offset="100%" stop-color="#26365E"/></linearGradient></defs>
-          <rect width="120" height="120" rx="28" fill="url(#flg)"/>
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" style="width:30px;height:30px;flex-shrink:0" aria-hidden="true">
+          <defs><linearGradient id="flg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1B2A4A"/><stop offset="100%" stop-color="#26365E"/></linearGradient></defs>
+          <rect width="120" height="120" rx="28" fill="url(#flg2)"/>
           <path d="M30 90 L30 30 L90 90 L90 30" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="90" cy="30" r="7" fill="#2DD4E0"/>
+          <circle cx="90" cy="30" r="7" fill="#00D4FF"/>
         </svg>
         Nyvora<span>AI</span>
       </div>
       <p class="f-desc">Your trusted source for original AI news, deep dives, and practical insights on artificial intelligence. Independent. Fact-checked. Free forever.</p>
       <div class="f-social" aria-label="NyvoraAI on social media">
-        <a class="f-soc" href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" aria-label="X / Twitter">
+        <a class="f-soc" href="https://x.com/nyvoraai_co" target="_blank" rel="noopener noreferrer" aria-label="NyvoraAI on X / Twitter">
           <svg viewBox="0 0 24 24" fill="rgba(255,255,255,.55)"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         </a>
-        <a class="f-soc" href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" aria-label="Instagram">
+        <a class="f-soc" href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener noreferrer" aria-label="NyvoraAI on Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-        <a class="f-soc" href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" aria-label="Facebook">
+        <a class="f-soc" href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener noreferrer" aria-label="NyvoraAI on Facebook">
           <svg viewBox="0 0 24 24" fill="rgba(255,255,255,.55)"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
         </a>
-        <a class="f-soc" href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" aria-label="YouTube">
+        <a class="f-soc" href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener noreferrer" aria-label="NyvoraAI on YouTube">
           <svg viewBox="0 0 24 24" fill="rgba(255,255,255,.55)"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
         </a>
       </div>
@@ -1182,10 +1682,10 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
       <h4>Connect</h4>
       <ul>
         <li><a href="mailto:nyvora.ai@outlook.com">Email Us</a></li>
-        <li><a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener">X / Twitter</a></li>
-        <li><a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener">Facebook</a></li>
-        <li><a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
+        <li><a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener noreferrer">YouTube</a></li>
         <li><a href="https://nyvoraai.github.io/feed.xml">RSS Feed</a></li>
       </ul>
     </div>
@@ -1202,74 +1702,140 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 24px 
 </footer>
 
 <script>
-/* PAGE LOADER */
-window.addEventListener('load',function(){
-  setTimeout(function(){
-    var l=document.getElementById('page-loader');
-    if(l){l.classList.add('hidden');}
-  },300);
-});
+'use strict';
 
-/* SCROLL PROGRESS + BACK TO TOP */
-window.addEventListener('scroll',function(){
-  var d=document.documentElement;
-  var pct=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
-  var bar=document.getElementById('scroll-progress');
-  if(bar){bar.style.width=pct+'%';bar.setAttribute('aria-valuenow',Math.round(pct));}
-  var btn=document.getElementById('back-top');
-  if(btn){btn.classList.toggle('show',d.scrollTop>500);}
-},{passive:true});
-
-/* REVEAL ON SCROLL */
+/* ── INTRO SPLASH ─────────────────────────────── */
 (function(){
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
-    });
-  },{threshold:.1});
-  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  var splash = document.getElementById('intro-splash');
+  if (!splash) return;
+  // Show splash for 1.8s then fade out
+  setTimeout(function(){
+    splash.classList.add('hidden');
+    // Remove from DOM after fade
+    setTimeout(function(){ splash.remove(); }, 700);
+  }, 1800);
 })();
 
-/* MOBILE MENU */
+/* ── SCROLL PROGRESS ─────────────────────────── */
+window.addEventListener('scroll', function(){
+  var d = document.documentElement;
+  var pct = d.scrollTop / (d.scrollHeight - d.clientHeight) * 100;
+  var bar = document.getElementById('scroll-progress');
+  if (bar) {
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', Math.round(pct));
+  }
+  var btn = document.getElementById('back-top');
+  if (btn) btn.classList.toggle('show', d.scrollTop > 500);
+}, {passive: true});
+
+/* ── REVEAL ON SCROLL ────────────────────────── */
 (function(){
-  var ham=document.getElementById('ham');
-  var mob=document.getElementById('mob-menu');
-  if(!ham||!mob)return;
-  ham.addEventListener('click',function(){
-    var open=mob.classList.toggle('open');
-    ham.setAttribute('aria-expanded',open);
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold: 0.1, rootMargin: '0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+
+/* ── MOBILE MENU ─────────────────────────────── */
+(function(){
+  var ham = document.getElementById('ham');
+  var mob = document.getElementById('mob-menu');
+  if (!ham || !mob) return;
+  ham.addEventListener('click', function(){
+    var open = mob.classList.toggle('open');
+    ham.setAttribute('aria-expanded', open);
+    // Animate hamburger to X
+    var spans = ham.querySelectorAll('span');
+    if (open) {
+      spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+      spans[1].style.opacity = '0';
+      spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+    } else {
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '';
+      spans[2].style.transform = '';
+    }
   });
-  document.addEventListener('click',function(e){
-    if(!ham.contains(e.target)&&!mob.contains(e.target)){
+  document.addEventListener('click', function(e){
+    if (!ham.contains(e.target) && !mob.contains(e.target)) {
       mob.classList.remove('open');
-      ham.setAttribute('aria-expanded','false');
+      ham.setAttribute('aria-expanded', 'false');
+      var spans = ham.querySelectorAll('span');
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '';
+      spans[2].style.transform = '';
     }
   });
 })();
 
-/* NEWSLETTER */
+/* ── NEWSLETTER ──────────────────────────────── */
+/* 
+  TO MAKE THIS REAL: Replace the fetch URL below with your 
+  actual Mailchimp/ConvertKit/Formspree endpoint.
+  Example Formspree: https://formspree.io/f/YOUR_ID
+  Example ConvertKit: use their embedded form action URL
+*/
 (function(){
-  var form=document.getElementById('nl-form');
-  var msg=document.getElementById('nl-msg');
-  var btn=document.getElementById('nl-btn');
-  var inp=document.getElementById('nl-email');
-  if(!form)return;
-  form.addEventListener('submit',function(e){
+  var form    = document.getElementById('nl-form');
+  var wrap    = document.getElementById('nl-form-wrap');
+  var success = document.getElementById('nl-success');
+  var btn     = document.getElementById('nl-btn');
+  var inp     = document.getElementById('nl-email');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e){
     e.preventDefault();
-    var email=inp.value.trim();
-    if(!email||!email.includes('@')){
-      msg.textContent='Please enter a valid email address.';
-      msg.style.color='#f87171';
+    var email = inp.value.trim();
+
+    // Basic validation
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      inp.style.borderColor = '#f87171';
+      inp.focus();
       return;
     }
-    btn.textContent='✓ Subscribed!';
-    btn.disabled=true;
-    btn.style.background='rgba(45,212,224,.15)';
-    btn.style.color='#2DD4E0';
-    inp.disabled=true;
-    msg.textContent="You're in! We'll send you the best AI stories every week.";
-    msg.style.color='#2DD4E0';
+    inp.style.borderColor = '';
+
+    // Disable while submitting
+    btn.textContent = 'Subscribing…';
+    btn.disabled = true;
+    inp.disabled = true;
+
+    /*
+    // REAL SUBMISSION — uncomment and set your endpoint:
+    fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ email: email })
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if (data.ok) {
+        showSuccess();
+      } else {
+        showError();
+      }
+    })
+    .catch(function(){ showError(); });
+    */
+
+    // Simulated success (replace with real fetch above)
+    setTimeout(showSuccess, 800);
   });
+
+  function showSuccess(){
+    wrap.style.opacity = '0';
+    wrap.style.pointerEvents = 'none';
+    setTimeout(function(){
+      wrap.style.display = 'none';
+      success.classList.add('show');
+    }, 300);
+  }
 })();
 </script>
 </body>
