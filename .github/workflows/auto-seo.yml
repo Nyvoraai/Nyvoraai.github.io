@@ -1,0 +1,53 @@
+name: Auto-update SEO files
+
+# Runs every time you push a change to blog/ or ai-news/ (i.e. whenever
+# you add or edit an article). Regenerates sitemap.xml, sitemap.html,
+# rss.xml, and llms.txt, then commits them back automatically.
+#
+# You don't need to do anything manually — just push your new article
+# like normal and this takes care of the rest.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "blog/**"
+      - "ai-news/**"
+      - "index.html"
+      - "about.html"
+      - "blog.html"
+      - "ai-news.html"
+      - "contact.html"
+      - "scripts/generate_seo_files.py"
+      - "scripts/sitemap_template.html"
+  workflow_dispatch:   # lets you trigger it manually from the Actions tab too
+
+permissions:
+  contents: write
+
+jobs:
+  update-seo-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate sitemap.xml, sitemap.html, rss.xml, llms.txt
+        run: python3 scripts/generate_seo_files.py
+
+      - name: Commit updated files (if anything changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml sitemap.html rss.xml llms.txt
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-update sitemap, rss, and llms.txt [skip ci]"
+            git push
+          fi
