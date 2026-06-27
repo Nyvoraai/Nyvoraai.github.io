@@ -87,7 +87,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="msapplication-config" content="https://nyvoraai.github.io/browserconfig.xml"/>
 
 <link rel="sitemap" type="application/xml" href="https://nyvoraai.github.io/sitemap.xml"/>
-<link rel="alternate" type="application/rss+xml" title="NyvoraAI AI News Feed" href="https://nyvoraai.github.io/feed.xml"/>
+<link rel="alternate" type="application/rss+xml" title="NyvoraAI AI News" href="https://nyvoraai.github.io/rss.xml"/>
 
 <!-- SCHEMA.ORG -->
 <script type="application/ld+json">
