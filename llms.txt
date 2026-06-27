@@ -97,7 +97,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Why Are LLMs Getting Cheaper in 2026?](https://nyvoraai.github.io/ai-news/why-are-llms-getting-cheaper-2026.html): Why are LLMs getting cheaper in 2026? Discover the tech breakthroughs, hardware shifts, and market forces driving AI costs down for everyone.
 - [Why Was Fable 5 Banned? The Real Story Explained](https://nyvoraai.github.io/ai-news/why-was-fable-5-banned.html): Why was Claude Fable 5 banned? The real story: a 'fix this code' prompt, a same-day export order, and 300+ security experts demanding it be reversed.
 
-## Blog (19 articles)
+## Blog (20 articles)
 
 - [AI vs Machine Learning: Key Differences Explained (2026)](https://nyvoraai.github.io/blog/ai-vs-machine-learning-difference.html): Confused about AI vs machine learning? Learn the real differences, how they work together, and which one powers your favorite apps. Simple guide for beginners.
 - [Best AI App for Phone Users in 2026 (Tested & Ranked)](https://nyvoraai.github.io/blog/best-ai-app-for-phone-users.html): Discover the best AI app for phone users in 2026. We tested ChatGPT, Gemini, Claude & more on mobile. Find which AI app fits your needs with our honest comparison.
@@ -117,6 +117,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [What Is Artificial Intelligence? Simple Guide (2026)](https://nyvoraai.github.io/blog/what-is-artificial-intelligence-in-simple-terms.html): Artificial intelligence explained in plain English: what AI is, how it works, real examples, and common myths busted. No tech background needed.
 - [What Is Claude AI and How Does It Work? A Beginner's Guide (2026)](https://nyvoraai.github.io/blog/what-is-claude-ai-beginners-guide.html): New to Claude AI? This beginner's guide explains what Claude AI is, how it works, and what you can use it for in 2026 — in simple, clear language. Read now!
 - [What Is Generative AI in Plain English? (2026 Guide)](https://nyvoraai.github.io/blog/what-is-generative-ai-plain-english.html): What is generative AI in plain English? Learn how it creates text, images, and code, plus real examples you use daily. No tech jargon, just clear answers.
+- [What Is the Context Window in AI Models? (2026 Guide)](https://nyvoraai.github.io/blog/what-is-the-context-window-in-ai-models.html): What is the context window in AI models? This guide explains memory limits, tokens, and why it matters, in plain English.
 - [Why Does AI Sometimes Give Wrong Answers? (2026 Guide)](https://nyvoraai.github.io/blog/why-does-ai-sometimes-give-wrong-answers.html): Why does AI confidently give wrong answers? This guide explains AI hallucinations, their causes, and how to spot them in plain English.
 
 ## Optional
