@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (84 articles)
+## AI News (85 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -53,6 +53,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [How to Use AI Tools for Social Media Posts? 2026 Guide](https://nyvoraai.github.io/ai-news/how-to-use-ai-tools-for-social-media-posts.html): Learn how to use AI tools for social media posts. Discover top tools, prompt formulas, and strategies to boost engagement and save time in 2026.
 - [How to Use AI Tools Without Coding: Complete 2026 Guide](https://nyvoraai.github.io/ai-news/how-to-use-ai-tools-without-coding.html): How to use AI tools without coding? Learn step-by-step methods to leverage AI for work, creativity, and productivity with zero programming skills.
 - [How to Use Perplexity AI for Research: Complete 2026 Guide](https://nyvoraai.github.io/ai-news/how-to-use-perplexity-ai-for-research.html): Master how to use Perplexity AI for research with expert tips, advanced techniques, and proven strategies for academic & professional work in 2026.
+- [Is AI Good for HR and Hiring? 2026 Guide](https://nyvoraai.github.io/ai-news/is-ai-good-for-hr-and-hiring.html): Discover if AI is good for HR and hiring. Learn the pros, cons, and how AI transforms recruitment, reduces bias, and improves hiring decisions.
 - [Is AI Replacing Jobs in Marketing? 2026 Reality](https://nyvoraai.github.io/ai-news/is-ai-replacing-jobs-in-marketing.html): Is AI replacing jobs in marketing? Discover the truth about AI automation, which roles are evolving, and how marketers can future-proof their careers.
 - [Is Claude AI Down Today? Live Status Check &amp; Fixes](https://nyvoraai.github.io/ai-news/is-claude-ai-down-today.html): Wondering if Claude AI is down today? Check real Anthropic status sources, see why outages happen, and get quick fixes — updated June 2026.
 - [Is Claude AI Free to Use? 2026 Pricing & Features Guide](https://nyvoraai.github.io/ai-news/is-claude-ai-free-to-use.html): Discover if Claude AI is free to use in 2026. Compare free vs paid plans, features, limits, and find the best Claude pricing for your needs.
