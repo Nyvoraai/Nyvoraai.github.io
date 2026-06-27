@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+<!-- SEO Title ≤60 chars -->
+<title>What Is Tokenization in AI? Plain English (2026)</title>
+
+<!-- SEO Description ≤160 chars -->
+<meta name="description" content="What is tokenization in AI? Learn how AI splits your text into tokens, why it matters, and how it affects every ChatGPT reply. No jargon, just clarity."/>
+
+<meta name="keywords" content="what is tokenization in AI, AI tokenization explained, what are tokens in AI, how AI processes text, NLP tokenization simple"/>
+<meta name="author" content="NyvoraAI Team"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="canonical" href="https://nyvoraai.github.io/blog/what-is-tokenization-in-ai.html"/>
+
+<!-- Favicons -->
+<link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
+<link rel="icon" type="image/png" href="https://nyvoraai.github.io/favicon-32x32.png"/>
+<link rel="apple-touch-icon" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="What Is Tokenization in AI? | NyvoraAI"/>
+<meta property="og:description" content="What is tokenization in AI? Learn how AI splits your text into tokens and why it shapes every response you get from ChatGPT or Claude."/>
+<meta property="og:url" content="https://nyvoraai.github.io/blog/what-is-tokenization-in-ai.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/blog/what-is-tokenization-in-ai-thumbnail.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-06-27T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-06-27T00:00:00Z"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="What Is Tokenization in AI? | NyvoraAI"/>
+<meta name="twitter:description" content="Tokens, BPE, context windows — explained simply. Learn what tokenization in AI actually means and why it matters for your chats."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/blog/what-is-tokenization-in-ai-thumbnail.png"/>
+
+<!-- Structured Data: Article -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"What Is Tokenization in AI?","description":"What is tokenization in AI? Learn how AI splits your text into tokens, why it matters, and how it affects every ChatGPT reply.","image":"https://nyvoraai.github.io/assets/blog/what-is-tokenization-in-ai-thumbnail.png","datePublished":"2026-06-27","dateModified":"2026-06-27","author":{"@type":"Organization","name":"NyvoraAI Team","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/blog/what-is-tokenization-in-ai.html"}}
+</script>
+
+<!-- Structured Data: BreadcrumbList -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://nyvoraai.github.io/blog.html"},{"@type":"ListItem","position":3,"name":"What Is Tokenization in AI?","item":"https://nyvoraai.github.io/blog/what-is-tokenization-in-ai.html"}]}
+</script>
+
+<!-- Structured Data: FAQPage (AEO) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is tokenization in AI?","acceptedAnswer":{"@type":"Answer","text":"Tokenization in AI is the process of breaking text into smaller pieces called tokens before the AI processes it. A token is typically a word or part of a word. For example, the word 'unbelievable' might become two tokens: 'un' and 'believable'. This step is essential because AI models cannot read raw text — they work entirely with numbers, and tokenization is the first step in converting language into a form the model can process."}},{"@type":"Question","name":"How big is a token in AI?","acceptedAnswer":{"@type":"Answer","text":"On average, one token is roughly 4 characters or about 0.75 words in English. So 100 tokens is approximately 75 words. A typical paragraph of text might be around 100–150 tokens. OpenAI, Anthropic, and Google all use similar but slightly different tokenization systems."}},{"@type":"Question","name":"Why does tokenization matter for users?","acceptedAnswer":{"@type":"Answer","text":"Tokenization matters because AI models have a token limit — called a context window — for how much text they can process at once. If your conversation or document exceeds this limit, the AI starts to lose track of earlier content. It also affects cost, since most AI APIs charge per token."}},{"@type":"Question","name":"What is BPE tokenization?","acceptedAnswer":{"@type":"Answer","text":"BPE stands for Byte Pair Encoding. It is the most common tokenization method used by large language models. It starts with individual characters and gradually merges the most common pairs into single tokens. This means common words get a single token, while rare or made-up words get split into smaller parts."}},{"@type":"Question","name":"Do different languages tokenize differently?","acceptedAnswer":{"@type":"Answer","text":"Yes — significantly. English is very efficient because it uses spaces between words, so tokenization is fairly predictable. Languages like Chinese, Japanese, or Arabic tokenize very differently, and often require more tokens to express the same idea. This means non-English AI use can be more expensive and slower."}},{"@type":"Question","name":"What happens after tokenization in AI?","acceptedAnswer":{"@type":"Answer","text":"After tokenization, each token is converted into a numerical vector called an embedding. These embeddings are then passed through a transformer model, which uses an attention mechanism to understand the relationships between all tokens. The model then predicts the most likely next token to generate a response."}}]}
+</script>
+
+<!-- GEO / AEO Speakable -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":["#quick-answer","#plain-english"]},"url":"https://nyvoraai.github.io/blog/what-is-tokenization-in-ai.html"}
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080A0F;--bg-2:#0D1117;--bg-3:#111827;--bg-card:#141B26;--bg-card-2:#1A2235;
+  --border:#1E2D40;--border-bright:#2A3F5C;
+  --cyan:#00D4FF;--cyan-dim:#0099BB;--cyan-glow:rgba(0,212,255,0.15);
+  --violet:#7B5EA7;--violet-bright:#9B7EC8;
+  --green:#00E5A0;--green-dim:#00B07A;
+  --amber:#FFB347;--red:#FF6B6B;
+  --text:#E8EDF5;--text-2:#9BA8BC;--text-3:#5C6B80;--text-inv:#080A0F;
+  --radius:16px;--radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+  --shadow-card:0 4px 24px rgba(0,0,0,0.4),0 1px 4px rgba(0,0,0,0.3);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.78;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--cyan);text-decoration:none;transition:color .2s}
+a:hover{color:var(--cyan-dim);text-decoration:underline}
+h1,h2,h3{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+
+/* BG CANVAS */
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.stars{position:absolute;inset:0}
+.star{position:absolute;background:#fff;border-radius:50%;animation:starTwinkle ease-in-out infinite}
+@keyframes starTwinkle{0%,100%{opacity:.15;transform:scale(1)}50%{opacity:.8;transform:scale(1.4)}}
+.aura{position:absolute;border-radius:50%;filter:blur(100px);animation:auraFloat ease-in-out infinite;pointer-events:none}
+.aura-1{width:700px;height:700px;background:radial-gradient(circle,rgba(0,212,255,.18),transparent 65%);top:-200px;left:-200px;animation-duration:20s}
+.aura-2{width:600px;height:600px;background:radial-gradient(circle,rgba(123,94,167,.22),transparent 65%);bottom:-150px;right:-150px;animation-duration:25s;animation-delay:-8s}
+.aura-3{width:500px;height:500px;background:radial-gradient(circle,rgba(0,229,160,.12),transparent 65%);top:40%;left:55%;animation-duration:18s;animation-delay:-4s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(60px,-50px) scale(1.1)}66%{transform:translate(-40px,35px) scale(.92)}}
+.grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.025) 1px,transparent 1px);background-size:60px 60px;animation:gridShift 40s linear infinite}
+@keyframes gridShift{0%{background-position:0 0}100%{background-position:60px 60px}}
+.orb{position:absolute;border-radius:50%;animation:orbFloat ease-in-out infinite;opacity:0}
+@keyframes orbFloat{0%{transform:translateY(110vh) scale(.5);opacity:0}10%{opacity:.6}90%{opacity:.3}100%{transform:translateY(-10vh) scale(1.2);opacity:0}}
+@media(prefers-reduced-motion:reduce){.star,.aura,.orb,.grid-lines{animation:none;display:none}html{scroll-behavior:auto}}
+
+.scanline{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.06;animation:scanDown 8s linear infinite;pointer-events:none;z-index:1}
+@keyframes scanDown{0%{top:-2px}100%{top:100vh}}
+
+#progress{position:fixed;top:0;left:0;width:0;height:2px;z-index:400;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green));transition:width .08s;box-shadow:0 0 12px var(--cyan)}
+
+/* NAV */
+nav.main-nav{position:sticky;top:0;z-index:300;background:rgba(8,10,15,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:62px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:20px;font-weight:700;letter-spacing:-.02em;color:var(--text);display:flex;align-items:center;gap:9px}
+.nav-logo .logo-accent{color:var(--cyan)}
+.logo-img{height:28px;width:28px;border-radius:7px;object-fit:cover}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--text-2);font-size:14px;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--text);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-cta{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:8px 18px;border-radius:8px;font-size:13px;font-weight:700;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 20px rgba(0,212,255,.25)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 30px rgba(0,212,255,.4);text-decoration:none;color:var(--text-inv)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--text-2);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:62px;left:0;right:0;background:rgba(13,17,23,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:20px 24px;flex-direction:column;gap:16px;z-index:299}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--text);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
+
+/* BREADCRUMB */
+.breadcrumb{max-width:840px;margin:24px auto 0;padding:0 24px;font-size:12.5px;color:var(--text-3);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--text-3);transition:color .2s}
+.breadcrumb a:hover{color:var(--cyan);text-decoration:none}
+.bc-sep{color:var(--border-bright)}
+
+/* ARTICLE HEADER */
+.article-hdr{max-width:840px;margin:20px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;background:rgba(0,212,255,.08);color:var(--cyan);border:1px solid rgba(0,212,255,.2);font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 12px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-read{background:rgba(0,229,160,.08);color:var(--green);border-color:rgba(0,229,160,.2)}
+.badge-date{background:rgba(255,179,71,.08);color:var(--amber);border-color:rgba(255,179,71,.2)}
+.article-title{font-size:clamp(28px,5vw,46px);font-weight:700;line-height:1.16;color:var(--text);margin-bottom:16px;letter-spacing:-.025em}
+.title-glow{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.article-intro{font-size:18.5px;color:var(--text-2);line-height:1.65;margin-bottom:22px}
+.article-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--text-3);padding-bottom:22px;border-bottom:1px solid var(--border)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{width:34px;height:34px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--text-inv);font-family:var(--font-display);position:relative;overflow:hidden}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--text-2)}
+.meta-sep{color:var(--border-bright)}
+
+/* HERO */
+.hero-wrap{max-width:840px;margin:28px auto;padding:0 24px}
+.hero-box{width:100%;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);background:var(--bg-card);box-shadow:var(--shadow-card),0 0 30px rgba(0,212,255,.2);line-height:0}
+.hero-box img{width:100%;height:auto;display:block}
+
+/* TOC */
+.toc-box{max-width:840px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow-card)}
+.toc-title{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc-title::before{content:'';width:3px;height:13px;background:var(--cyan);border-radius:2px;display:inline-block;box-shadow:0 0 8px var(--cyan)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:5px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--text-2);font-size:14px;transition:color .2s;display:flex;gap:8px;padding:3px 0}
+.toc a::before{content:counter(tocnum,'0'counter(tocnum));font-family:var(--font-mono);color:var(--cyan);font-weight:700;font-size:11.5px;min-width:18px;opacity:.7}
+.toc a:hover{color:var(--cyan);text-decoration:none}
+
+/* LAYOUT */
+.layout{max-width:840px;margin:0 auto;padding:36px 24px 80px}
+
+/* PROSE */
+.prose h2{font-size:25px;font-weight:700;color:var(--text);margin:52px 0 16px;letter-spacing:-.02em;scroll-margin-top:88px;display:flex;align-items:center;gap:12px}
+.prose h2 .h2-num{font-family:var(--font-mono);font-size:12px;color:var(--cyan);font-weight:700;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.2);padding:3px 9px;border-radius:6px;letter-spacing:.05em}
+.prose h3{font-size:18px;font-weight:600;color:var(--text);margin:28px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--text-2)}
+.prose strong{color:var(--text);font-weight:600}
+.prose ul,.prose ol{margin:0 0 20px 20px}
+.prose li{margin-bottom:9px;color:var(--text-2)}
+code.inline{background:rgba(0,212,255,.1);color:var(--cyan);padding:2px 8px;border-radius:5px;font-family:var(--font-mono);font-size:14px}
+
+/* QUICK ANSWER */
+.quick-answer{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--cyan);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow-card)}
+.qa-title{font-family:var(--font-mono);font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+.quick-answer ul{margin:0;list-style:none}
+.quick-answer li{display:flex;gap:10px;margin-bottom:9px;font-size:15px;color:var(--text-2)}
+.quick-answer li:last-child{margin-bottom:0}
+.quick-answer li::before{content:'//';color:var(--cyan);flex-shrink:0;font-weight:700;font-family:var(--font-mono);font-size:12px;opacity:.7}
+.quick-answer p{color:var(--text);font-size:16px;margin-bottom:10px}
+
+/* ANALOGY BOX */
+.analogy-box{background:linear-gradient(135deg,rgba(123,94,167,.08),rgba(0,212,255,.05));border:1px solid rgba(123,94,167,.25);border-radius:var(--radius);padding:28px;margin:32px 0;position:relative;overflow:hidden}
+.analogy-box::before{content:'💡';position:absolute;top:-10px;right:20px;font-size:60px;opacity:.1}
+.analogy-title{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--violet-bright);margin-bottom:12px}
+.analogy-box p{color:var(--text-2);font-size:15px;line-height:1.7;margin-bottom:12px}
+.analogy-box p:last-child{margin-bottom:0}
+
+/* TOKEN LIVE DEMO */
+.token-demo{background:var(--bg-card);border:1px solid var(--border-bright);border-radius:var(--radius);padding:28px;margin:32px 0;box-shadow:var(--shadow-card),0 0 30px rgba(0,212,255,.08)}
+.demo-title{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--text);margin-bottom:6px}
+.demo-desc{color:var(--text-2);font-size:14.5px;margin-bottom:20px}
+.token-input-row{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap}
+.token-input{flex:1;min-width:200px;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:9px;padding:11px 14px;color:var(--text);font-size:14px;outline:none;font-family:var(--font-body);transition:border-color .2s,box-shadow .2s}
+.token-input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,212,255,.1)}
+.token-btn{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:11px 22px;border-radius:9px;border:none;cursor:pointer;font-size:13.5px;font-weight:700;transition:opacity .2s,transform .15s;white-space:nowrap}
+.token-btn:hover{opacity:.9;transform:translateY(-1px)}
+.token-chips{display:flex;flex-wrap:wrap;gap:8px;min-height:44px;align-items:center}
+.chip{display:inline-flex;align-items:center;padding:6px 12px;border-radius:8px;font-family:var(--font-mono);font-size:13px;font-weight:600;border:1px solid;animation:chipPop .3s ease forwards;opacity:0}
+@keyframes chipPop{from{opacity:0;transform:scale(.8) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.chip-placeholder{color:var(--text-3);font-size:14px;font-style:italic}
+.token-stats{margin-top:12px;display:flex;gap:20px;flex-wrap:wrap}
+.t-stat{background:var(--bg-3);border:1px solid var(--border);border-radius:10px;padding:10px 16px;text-align:center;flex:1;min-width:80px}
+.t-stat-num{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--cyan)}
+.t-stat-label{font-family:var(--font-mono);font-size:10.5px;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+
+/* STEPS */
+.steps{display:flex;flex-direction:column;gap:16px;margin:28px 0}
+.step{display:flex;gap:18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;transition:border-color .2s,transform .2s}
+.step:hover{border-color:var(--border-bright);transform:translateX(4px)}
+.step-num{width:44px;height:44px;min-width:44px;border-radius:10px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-weight:700;font-size:16px;color:var(--text-inv);box-shadow:0 0 16px rgba(0,212,255,.25)}
+.step-body h3{font-size:17px;font-weight:700;color:var(--text);margin-bottom:7px;font-family:var(--font-display)}
+.step-body p{font-size:14.5px;color:var(--text-2);line-height:1.65;margin:0}
+
+/* COST CALCULATOR */
+.calc-box{background:var(--bg-card);border:1px solid var(--border-bright);border-radius:var(--radius);padding:28px;margin:32px 0;box-shadow:var(--shadow-card),0 0 30px rgba(0,229,160,.06)}
+.calc-title{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--text);margin-bottom:6px}
+.calc-desc{color:var(--text-2);font-size:14.5px;margin-bottom:20px}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+.calc-field label{display:block;font-family:var(--font-mono);font-size:11px;color:var(--text-3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.calc-select,.calc-num{width:100%;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:9px;padding:10px 14px;color:var(--text);font-size:14px;outline:none;font-family:var(--font-body);transition:border-color .2s}
+.calc-select:focus,.calc-num:focus{border-color:var(--cyan)}
+.calc-result{background:var(--bg-3);border:1px solid var(--border);border-radius:12px;padding:16px 20px;display:flex;gap:20px;flex-wrap:wrap}
+.calc-r-item{flex:1;min-width:100px;text-align:center}
+.calc-r-num{font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--green)}
+.calc-r-label{font-family:var(--font-mono);font-size:10.5px;color:var(--text-3);text-transform:uppercase;letter-spacing:.05em;margin-top:3px}
+
+/* TABLE */
+.tbl-wrap{overflow-x:auto;margin:22px 0;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow-card)}
+.tool-table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:460px;background:var(--bg-card)}
+.tool-table thead tr{background:var(--bg-3)}
+.tool-table th{text-align:left;padding:12px 16px;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-3);border-bottom:1px solid var(--border);font-family:var(--font-mono)}
+.tool-table td{padding:13px 16px;border-bottom:1px solid var(--border);vertical-align:middle;color:var(--text-2)}
+.tool-table tr:last-child td{border-bottom:none}
+.tool-table tr:hover td{background:rgba(0,212,255,.04)}
+.tool-table strong{color:var(--text)}
+
+/* MYTH GRID */
+.myth-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0}
+.myth-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.myth-card.myth{border-top:3px solid var(--red)}
+.myth-card.fact{border-top:3px solid var(--green)}
+.myth-label{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:6px;display:inline-block;margin-bottom:10px}
+.myth-card.myth .myth-label{background:rgba(255,107,107,.1);color:var(--red);border:1px solid rgba(255,107,107,.2)}
+.myth-card.fact .myth-label{background:rgba(0,229,160,.1);color:var(--green);border:1px solid rgba(0,229,160,.2)}
+.myth-card h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:7px;font-family:var(--font-display)}
+.myth-card p{font-size:13.5px;color:var(--text-2);line-height:1.6;margin:0}
+
+/* QUIZ */
+.quiz-box{background:var(--bg-card);border:1px solid var(--border-bright);border-radius:var(--radius);padding:28px;margin:32px 0;box-shadow:var(--shadow-card)}
+.quiz-title{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--text);margin-bottom:6px}
+.quiz-desc{color:var(--text-2);font-size:14.5px;margin-bottom:22px}
+.quiz-progress{font-family:var(--font-mono);font-size:11.5px;color:var(--text-3);margin-bottom:18px}
+.quiz-q{font-size:16px;font-weight:600;color:var(--text);margin-bottom:14px;font-family:var(--font-display)}
+.quiz-options{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.quiz-opt{background:var(--bg-3);border:2px solid var(--border);border-radius:10px;padding:12px 16px;cursor:pointer;font-size:14.5px;color:var(--text-2);transition:all .2s;text-align:left;font-family:var(--font-body)}
+.quiz-opt:hover{border-color:var(--border-bright);color:var(--text)}
+.quiz-opt.correct{border-color:var(--green);background:rgba(0,229,160,.1);color:var(--green)}
+.quiz-opt.wrong{border-color:var(--red);background:rgba(255,107,107,.1);color:var(--red)}
+.quiz-feedback{font-size:14px;color:var(--text-2);padding:12px 16px;background:var(--bg-3);border-radius:10px;display:none;line-height:1.6}
+.quiz-feedback.show{display:block}
+.quiz-next{margin-top:14px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);border:none;border-radius:9px;padding:10px 22px;font-size:13.5px;font-weight:700;cursor:pointer;display:none;transition:opacity .2s,transform .15s}
+.quiz-next.show{display:inline-block}
+.quiz-next:hover{opacity:.9;transform:translateY(-1px)}
+.quiz-score-final{text-align:center;padding:20px 0}
+.quiz-score-num{font-size:52px;font-weight:700;color:var(--cyan);font-family:var(--font-display)}
+.quiz-score-label{font-size:15px;color:var(--text-2);margin-top:8px}
+
+/* FAQ */
+.faq{margin:14px 0}
+details{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--border-bright)}
+summary{padding:16px 20px;cursor:pointer;font-weight:600;font-size:15.5px;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--cyan);font-size:20px;font-weight:300;transition:transform .3s;flex-shrink:0;font-family:var(--font-mono)}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 20px 16px;color:var(--text-2);font-size:14.5px;line-height:1.7}
+
+/* FIG */
+.fig-wrap{margin:28px 0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow-card)}
+.fig-wrap img{width:100%;height:auto;display:block}
+.fig-caption{background:var(--bg-card);padding:10px 16px;font-size:12.5px;color:var(--text-3);font-family:var(--font-mono);border-top:1px solid var(--border)}
+
+/* CHAT CARD */
+.chat-scene-card{max-width:840px;margin:22px auto 0;padding:0 24px}
+.chat-card-inner{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow-card)}
+.chat-icon{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(123,94,167,.15));border:1px solid rgba(0,212,255,.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;font-family:var(--font-mono);font-weight:700;color:var(--cyan)}
+.chat-name{font-family:var(--font-display);font-weight:700;font-size:14.5px;color:var(--text)}
+.chat-status{font-size:12px;color:var(--text-3);display:flex;align-items:center;gap:6px;margin-top:2px;font-family:var(--font-mono)}
+.status-dot{width:6px;height:6px;border-radius:50%;background:var(--green);display:inline-block;animation:pulseDot 2s ease-in-out infinite;box-shadow:0 0 6px var(--green)}
+@keyframes pulseDot{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,229,160,.4)}50%{opacity:.7;box-shadow:0 0 0 5px rgba(0,229,160,0)}}
+.chat-badge{font-family:var(--font-mono);font-size:10.5px;color:var(--text-3);background:var(--bg-3);padding:4px 10px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+
+/* AUTHOR */
+.author-box{display:flex;gap:14px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin:44px 0 0;box-shadow:var(--shadow-card)}
+.author-box h3{font-size:14.5px;font-family:var(--font-display);margin-bottom:4px;color:var(--text)}
+.author-box p{font-size:13.5px;color:var(--text-3);margin:0;line-height:1.6}
+
+/* SHARE */
+.share-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;margin:28px 0 0;text-align:center}
+.share-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:14px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:7px;padding:9px 16px;border-radius:8px;border:1px solid var(--border);font-size:12.5px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--bg-3);color:var(--text-2);font-family:var(--font-body)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 14px rgba(0,212,255,.15)}
+
+/* NEWSLETTER */
+.newsletter{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:40px;margin:52px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow-card)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green))}
+.newsletter::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(0,212,255,.06),transparent 60%);pointer-events:none}
+.newsletter h2{font-size:23px;font-weight:700;color:var(--text);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--text-2);margin-bottom:22px;font-size:15px}
+.nl-form{display:flex;gap:10px;max-width:420px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:9px;padding:12px 15px;color:var(--text);font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--text-3)}
+.nl-input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,212,255,.1)}
+.nl-btn{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:12px 20px;border-radius:9px;border:none;cursor:pointer;font-size:13.5px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 20px rgba(0,212,255,.25)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 30px rgba(0,212,255,.4)}
+.nl-note{font-size:11.5px;color:var(--text-3);margin:10px 0 0}
+.nl-social{display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:8px 14px;border-radius:8px;border:1px solid var(--border);color:var(--text-2);transition:all .2s;background:var(--bg-3)}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--cyan)}
+
+/* RELATED */
+.related{margin:44px 0 0}
+.related-title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:16px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.rel-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;transition:border-color .2s,transform .2s;display:block}
+.rel-card:hover{border-color:var(--border-bright);transform:translateY(-3px);text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.rel-tag{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan);margin-bottom:7px;font-family:var(--font-mono)}
+.rel-title{font-size:13.5px;font-weight:600;color:var(--text);line-height:1.4;margin-bottom:7px;font-family:var(--font-display)}
+.rel-read{font-size:11.5px;color:var(--text-3);font-family:var(--font-mono)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* POPUP */
+#side-popup{position:fixed;bottom:88px;right:26px;z-index:500;width:260px;background:var(--bg-card);border:1px solid var(--border-bright);border-radius:16px;padding:18px;box-shadow:var(--shadow-card),0 0 40px rgba(0,212,255,.15);transform:translateX(320px);opacity:0;transition:transform .45s cubic-bezier(.22,1,.36,1),opacity .35s ease;pointer-events:none;overflow:hidden}
+#side-popup.show{transform:translateX(0);opacity:1;pointer-events:all}
+#side-popup::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright))}
+.sp-close{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--text-3);cursor:pointer;font-size:16px;line-height:1;padding:2px;transition:color .2s;font-family:var(--font-mono)}
+.sp-close:hover{color:var(--text)}
+.sp-icon{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(123,94,167,.15));border:1px solid rgba(0,212,255,.2);display:flex;align-items:center;justify-content:center;margin-bottom:10px;font-family:var(--font-mono);font-weight:700;font-size:14px;color:var(--cyan)}
+.sp-title{font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--text);margin-bottom:5px}
+.sp-text{font-size:12.5px;color:var(--text-3);line-height:1.5;margin-bottom:12px}
+.sp-input{width:100%;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:8px;padding:9px 12px;color:var(--text);font-size:12.5px;outline:none;margin-bottom:8px;font-family:var(--font-body);transition:border-color .2s}
+.sp-input:focus{border-color:var(--cyan)}
+.sp-btn{width:100%;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);border:none;border-radius:8px;padding:9px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:var(--font-body);transition:opacity .2s}
+.sp-btn:hover{opacity:.9}
+.sp-note{font-size:10.5px;color:var(--text-3);text-align:center;margin-top:6px;font-family:var(--font-mono)}
+
+/* BACK TO TOP */
+#back-top{position:fixed;bottom:26px;right:26px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:0 0 20px rgba(0,212,255,.3);z-index:200;font-weight:700}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.1) translateY(-2px);box-shadow:0 0 30px rgba(0,212,255,.5)}
+
+/* ══ ANIMATED FOOTER ══ */
+footer{background:var(--bg-2);border-top:1px solid var(--border);padding:56px 24px 28px;position:relative;z-index:1;overflow:hidden}
+.footer-aura{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;animation:footerDrift ease-in-out infinite}
+.footer-aura-1{width:520px;height:520px;background:radial-gradient(circle,rgba(0,212,255,.16),transparent 65%);top:-230px;left:3%;animation-duration:17s}
+.footer-aura-2{width:460px;height:460px;background:radial-gradient(circle,rgba(123,94,167,.2),transparent 65%);top:-190px;right:5%;animation-duration:21s;animation-delay:-7s}
+.footer-aura-3{width:420px;height:420px;background:radial-gradient(circle,rgba(0,229,160,.13),transparent 65%);bottom:-170px;left:46%;animation-duration:19s;animation-delay:-4s}
+.footer-aura-4{width:360px;height:360px;background:radial-gradient(circle,rgba(255,179,71,.09),transparent 65%);bottom:-120px;left:18%;animation-duration:23s;animation-delay:-11s}
+.footer-aura-5{width:300px;height:300px;background:radial-gradient(circle,rgba(255,107,107,.07),transparent 65%);top:-100px;left:40%;animation-duration:26s;animation-delay:-5s}
+@keyframes footerDrift{0%,100%{transform:translate(0,0)}50%{transform:translate(44px,28px)}}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:44px;position:relative;z-index:1}
+.footer-logo{font-size:19px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:9px;color:var(--text);font-family:var(--font-display)}
+.footer-logo .accent{background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green),var(--amber),var(--red),var(--cyan));background-size:500% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:accentShift 5s linear infinite}
+@keyframes accentShift{0%{background-position:0% 0}100%{background-position:500% 0}}
+.footer-brand p{color:var(--text-3);font-size:13.5px;line-height:1.7;margin-bottom:18px}
+.footer-social{display:flex;gap:8px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:8px;border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text-2);transition:all .25s;background:var(--bg-3);position:relative;overflow:hidden}
+.fs-btn::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));opacity:0;transition:opacity .25s;z-index:0}
+.fs-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--text-inv);box-shadow:0 0 18px rgba(0,212,255,.3)}
+.fs-btn:hover::after{opacity:1}
+.fs-btn span{position:relative;z-index:1}
+.footer-col h4{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text);margin-bottom:16px;font-family:var(--font-mono);position:relative;display:inline-block}
+.footer-col h4::after{content:'';position:absolute;bottom:-5px;left:0;width:100%;height:1px;background:linear-gradient(90deg,var(--cyan),transparent)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:var(--text-3);font-size:13.5px;transition:color .2s,padding-left .2s}
+.footer-col a:hover{color:var(--cyan);text-decoration:none;padding-left:5px}
+.footer-bottom{max-width:1100px;margin:40px auto 0;padding-top:20px;position:relative;display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--text-3);flex-wrap:wrap;gap:10px;z-index:1}
+.footer-bottom::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green),var(--amber),var(--red),var(--cyan));background-size:400% 100%;animation:footerShimmer 5s linear infinite}
+@keyframes footerShimmer{0%{background-position:0% 0}100%{background-position:400% 0}}
+.footer-bottom-links{display:flex;gap:18px}
+.footer-bottom-links a{color:var(--text-3);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--cyan);text-decoration:none}
+.footer-pulse{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulseDot 2s ease-in-out infinite;display:inline-block;margin-right:6px;box-shadow:0 0 6px var(--green);vertical-align:middle}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .myth-grid{grid-template-columns:1fr}
+  .related-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+  .calc-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .related-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+  #side-popup{right:12px;bottom:80px;width:240px}
+  .article-intro{font-size:16.5px}
+  body{font-size:16px}
+  .token-input-row{flex-direction:column}
+  .token-stats{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- Animated BG -->
+<div class="bg-canvas" aria-hidden="true">
+  <div class="aura aura-1"></div>
+  <div class="aura aura-2"></div>
+  <div class="aura aura-3"></div>
+  <div class="stars" id="starField"></div>
+  <div class="grid-lines"></div>
+  <div id="orbField"></div>
+</div>
+<div class="scanline" aria-hidden="true"></div>
+<div id="progress" role="progressbar" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav class="main-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/logo.svg" alt="NyvoraAI logo" class="logo-img" onerror="this.style.display='none'"/>
+      Nyvora<span class="logo-accent">AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html" class="active">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+</div>
+
+<div class="page-wrap">
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <span class="bc-sep">/</span>
+  <span>What Is Tokenization in AI</span>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge">NLP Basics</span>
+    <span class="badge badge-read">15 min read</span>
+    <span class="badge badge-date">Updated June 2026</span>
+  </div>
+  <h1 class="article-title">What Is <span class="title-glow">Tokenization</span> in AI?</h1>
+  <p class="article-intro">Every time you type a message to an AI, the very first thing it does is chop your words into pieces. This process — called tokenization — is the hidden foundation of everything ChatGPT, Claude, and Gemini do. Here's what it actually means, why it matters, and what it changes about how you use AI.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team author avatar" onerror="this.remove()"/></div>
+      <div><div class="meta-name">NyvoraAI Team</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-06-27">June 27, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Reviewed June 2026</span>
+  </div>
+</header>
+
+<!-- CHAT CARD -->
+<div class="chat-scene-card reveal">
+  <div class="chat-card-inner">
+    <div class="chat-icon">AI</div>
+    <div>
+      <div class="chat-name">Tokenization explained — zero jargon</div>
+      <div class="chat-status"><span class="status-dot"></span> Includes live token counter &amp; cost calculator</div>
+    </div>
+    <div class="chat-badge">15 min</div>
+  </div>
+</div>
+
+<!-- HERO IMAGE -->
+<div class="hero-wrap reveal">
+  <div class="hero-box">
+    <img
+      src="https://nyvoraai.github.io/assets/blog/what-is-tokenization-in-ai-thumbnail.png"
+      width="1200" height="630"
+      loading="eager"
+      alt="What is tokenization in AI - diagram showing a sentence being split into coloured token chunks by an AI language model"
+    />
+  </div>
+</div>
+
+<!-- TOC -->
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">What we'll cover</div>
+    <ol>
+      <li><a href="#plain-english">Plain English definition</a></li>
+      <li><a href="#why-it-matters">Why tokenization matters</a></li>
+      <li><a href="#how-it-works">How tokenization works</a></li>
+      <li><a href="#live-demo">Live token counter</a></li>
+      <li><a href="#bpe">What is BPE?</a></li>
+      <li><a href="#languages">Different languages, different tokens</a></li>
+      <li><a href="#myths">Myths vs. reality</a></li>
+      <li><a href="#quiz">Knowledge quiz</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">You've probably noticed something strange about AI. Ask it to count the letters in a word and it sometimes gets it wrong. Ask it to reverse a sentence and it stumbles. These aren't signs of stupidity — they're direct consequences of something called <strong>tokenization</strong>. Once you understand what tokens are, the quirks of AI start making a lot more sense.</p>
+
+  <p class="reveal">Tokenization is one of those concepts that sits quietly under every single AI interaction you've ever had, and almost nobody talks about it in plain terms. That changes today. By the time you finish this guide, you'll understand exactly how your words get processed, why token limits affect your conversations, and how to use AI more effectively because of it.</p>
+
+  <!-- QUICK ANSWER -->
+  <div class="quick-answer reveal" id="quick-answer">
+    <div class="qa-title">Quick Answer (AEO-Optimised)</div>
+    <p><strong>Tokenization in AI is the process of breaking text into smaller pieces called tokens</strong> before the model processes it. Tokens are the basic unit of language that AI works with — computers can't process words directly, so everything must be converted into tokens first, then into numbers.</p>
+    <ul>
+      <li><strong>A token ≈ ¾ of a word.</strong> On average, 100 tokens is about 75 words of English text.</li>
+      <li><strong>Common words = 1 token.</strong> The word "the" is one token. "Unbelievable" might be two or three.</li>
+      <li><strong>Tokens affect cost &amp; limits.</strong> AI APIs charge per token, and every model has a max token limit (context window).</li>
+      <li><strong>Tokenization varies by language.</strong> Non-English text often uses significantly more tokens for the same content.</li>
+      <li><strong>It happens before anything else.</strong> Before the AI can understand or generate anything, it must tokenize your input.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2 id="plain-english"><span class="h2-num">01</span>The Plain English Definition</h2>
+
+  <p class="reveal">Let's start from the very beginning. <strong>Computers cannot read text the way humans do.</strong> When you see the word "hello," your brain processes it as a whole, familiar unit. A computer sees a string of characters: h, e, l, l, o. Before an AI model can do anything intelligent with language, it needs a way to convert human text into something it can work with mathematically — and that's exactly what tokenization does.</p>
+
+  <p class="reveal">Tokenization is simply the process of <strong>splitting text into chunks called tokens</strong>. Think of it as breaking a sentence into LEGO bricks. Each brick is a token. The AI picks up these bricks, examines them, figures out how they fit together, and uses that understanding to build a response — one token at a time.</p>
+
+  <div class="analogy-box reveal">
+    <div class="analogy-title">The Post Office Analogy</div>
+    <p>Imagine you want to send a very long letter, but the post office can only handle envelopes of a certain size. You'd need to split your letter across multiple envelopes — cutting it at sensible points (ideally between paragraphs or sentences) so each envelope contains a meaningful chunk.</p>
+    <p>Tokenization works similarly. Your text gets split into manageable, meaningful chunks that the AI's "sorting office" (the model architecture) can process individually. The AI then reassembles the meaning of all those chunks together to understand what you're saying and generate a useful reply.</p>
+    <p>The key difference: the AI is doing this at the speed of microseconds, with billions of parameters deciding how each token relates to every other token in your message.</p>
+  </div>
+
+  <p class="reveal">This is deeply connected to how AI models process language overall. If you want the full picture of what happens once tokens are created, our guide on <a href="https://nyvoraai.github.io/blog/how-does-ai-understand-human-language.html">how AI understands human language</a> walks through the complete pipeline from your first keystroke to the final response.</p>
+
+  <!-- SECTION 2 -->
+  <h2 id="why-it-matters"><span class="h2-num">02</span>Why Tokenization Actually Matters to You</h2>
+
+  <p class="reveal">You might be thinking: "Okay, but why should I care about how AI splits up my text internally?" The answer is that tokenization has three very practical, real-world consequences that directly affect your experience with AI tools every single day.</p>
+
+  <h3>1. Context Windows — Why AI "Forgets" Long Conversations</h3>
+  <p class="reveal">Every AI model has a maximum number of tokens it can process at once — this is called the <strong>context window</strong>. Think of it as the AI's working memory. If your conversation gets longer than the context window allows, the AI starts dropping earlier parts of the conversation to make room for the new content.</p>
+  <p class="reveal">This is why, in a very long chat, an AI might seem to "forget" something you said at the start. It hasn't actually forgotten — that content has been pushed out of the context window. You can learn exactly how this works in our detailed explainer on <a href="https://nyvoraai.github.io/blog/what-is-the-context-window-in-ai-models.html">what the context window in AI models really means</a>.</p>
+
+  <h3>2. API Costs — Tokens Are the Unit of Billing</h3>
+  <p class="reveal">If you use AI through an API (like developers do when building apps), you pay per token — both for the tokens you send in (your prompt) and the tokens the AI generates back (the response). Understanding token counts helps you write more efficient prompts and estimate costs accurately. We've included a token cost calculator further down this page to help with exactly that.</p>
+
+  <h3>3. Accuracy on Character-Level Tasks</h3>
+  <p class="reveal">Here's something that surprises most people: <strong>AI is surprisingly bad at counting letters in words.</strong> Ask ChatGPT "how many R's are in 'strawberry'?" and it might get it wrong. This happens directly because of tokenization. The AI doesn't see individual letters — it sees tokens. If "strawberry" is treated as a single token, the model has no way to inspect individual characters unless it's specifically designed to do so. Once you know this, these "silly" AI mistakes stop being surprising.</p>
+
+  <!-- SECTION 3 -->
+  <h2 id="how-it-works"><span class="h2-num">03</span>How Tokenization Actually Works</h2>
+
+  <p class="reveal">Here's the step-by-step process of what happens from the moment you hit send on a message to an AI:</p>
+
+  <div class="steps reveal">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h3>Pre-processing: Clean the text</h3>
+        <p>Before anything else, the text gets lightly cleaned — punctuation is handled, special characters are accounted for, and the text is normalised. This ensures consistent processing regardless of how you typed things.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h3>Splitting into tokens</h3>
+        <p>The tokenizer splits your text using a learned vocabulary — typically 50,000 to 100,000 possible tokens. Common words like "the," "is," and "you" each get their own single token. Rarer words and technical terms get split into sub-word pieces. The word "tokenization" itself might become two tokens: "token" and "ization."</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h3>Token IDs: Assigning numbers</h3>
+        <p>Each token gets replaced by a unique integer — its token ID. So "hello" might be token 15496. "World" might be token 995. The AI model never actually sees words; it only ever works with these numbers from this point onwards.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h3>Embeddings: Numbers become meaning</h3>
+        <p>Each token ID is then converted into a rich numerical vector called an embedding — a long list of numbers that encodes what the token means and how it relates to other tokens. These embeddings are what the transformer model actually processes. To go deeper on this step, read our piece on <a href="https://nyvoraai.github.io/blog/what-happens-inside-a-neural-network.html">what happens inside a neural network</a>.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-body">
+        <h3>Generation: One token at a time</h3>
+        <p>When the model generates a response, it doesn't write a whole sentence at once. It predicts the most likely next token, adds it to the context, then predicts the next one, and the next — until the response is complete. This is why there's a slight streaming effect when you watch AI type its reply.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="fig-wrap reveal">
+    <img
+      src="https://nyvoraai.github.io/assets/blog/what-is-tokenization-in-ai-process-diagram.png"
+      width="840" height="380"
+      loading="lazy"
+      alt="What is tokenization in AI - step by step process diagram showing text splitting into tokens then token IDs then embeddings"
+      onerror="this.parentElement.style.display='none'"
+    />
+    <div class="fig-caption">// Tokenization pipeline: raw text → tokens → token IDs → embeddings → model processing</div>
+  </div>
+
+  <!-- SECTION 4: LIVE DEMO -->
+  <h2 id="live-demo"><span class="h2-num">04</span>Try It: Live Token Counter</h2>
+  <p class="reveal">Type any sentence below and watch it get split into tokens in real time. This gives you an intuitive feel for how AI actually "sees" your words.</p>
+
+  <div class="token-demo reveal">
+    <div class="demo-title">Live Token Visualiser</div>
+    <p class="demo-desc">Each coloured block below represents a single token. Notice how common words get one token, while longer or rarer words get split into multiple pieces.</p>
+    <div class="token-input-row">
+      <input class="token-input" id="tokenInput" type="text" placeholder="Try: What is tokenization in AI?" maxlength="150"/>
+      <button class="token-btn" onclick="tokenise()">Tokenise →</button>
+    </div>
+    <div class="token-chips" id="tokenChips">
+      <span class="chip-placeholder">Your tokens will appear here — try typing something above!</span>
+    </div>
+    <div class="token-stats" id="tokenStats" style="display:none">
+      <div class="t-stat">
+        <div class="t-stat-num" id="statTokens">0</div>
+        <div class="t-stat-label">Tokens</div>
+      </div>
+      <div class="t-stat">
+        <div class="t-stat-num" id="statWords">0</div>
+        <div class="t-stat-label">Words</div>
+      </div>
+      <div class="t-stat">
+        <div class="t-stat-num" id="statChars">0</div>
+        <div class="t-stat-label">Characters</div>
+      </div>
+      <div class="t-stat">
+        <div class="t-stat-num" id="statCost">$0.00</div>
+        <div class="t-stat-label">Est. Cost (GPT-4o)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: BPE -->
+  <h2 id="bpe"><span class="h2-num">05</span>What Is BPE? The Algorithm Behind Modern Tokenization</h2>
+
+  <p class="reveal">Most major AI models — including GPT-4, Claude, and Gemini — use a tokenization method called <strong>Byte Pair Encoding (BPE)</strong>. It sounds complicated but the idea is elegantly simple.</p>
+
+  <p class="reveal">BPE starts with every individual character as a separate token — so "hello" would start as five tokens: h, e, l, l, o. Then it looks at the training data and finds the most common pair of tokens. If "t" and "h" appear together very often, they get merged into a single token "th." Then the next most common pair gets merged. And so on. This process continues thousands of times until the vocabulary has reached its target size — usually around 50,000 to 100,000 tokens.</p>
+
+  <p class="reveal">The result is a vocabulary where common English words each get their own single token, while rare words, technical jargon, or words in less common languages get split into smaller sub-word pieces. This is why:</p>
+
+  <div class="tbl-wrap reveal">
+    <table class="tool-table">
+      <thead>
+        <tr>
+          <th>Word / Phrase</th>
+          <th>Approx. Tokens</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>the</strong></td><td>1</td><td>Extremely common — gets its own token</td></tr>
+        <tr><td><strong>hello</strong></td><td>1</td><td>Very common English word</td></tr>
+        <tr><td><strong>tokenization</strong></td><td>2–3</td><td>Less common — split into sub-words</td></tr>
+        <tr><td><strong>unbelievable</strong></td><td>3–4</td><td>Long word with common prefixes/suffixes</td></tr>
+        <tr><td><strong>supercalifragilistic</strong></td><td>6–8</td><td>Rare word — split into many pieces</td></tr>
+        <tr><td><strong>😊</strong></td><td>1–3</td><td>Emoji — often multi-byte, may split</td></tr>
+        <tr><td><strong>100 words of English</strong></td><td>~133</td><td>Average ratio: 1 word ≈ 1.33 tokens</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="reveal">This also explains something counterintuitive: when you add spaces before words or use unusual capitalisation, you can sometimes get different token counts. The tokenizer is sensitive to these details in ways that often surprise people who are new to working with AI.</p>
+
+  <!-- SECTION 6: COST CALCULATOR -->
+  <h3>Token Cost Calculator</h3>
+  <p class="reveal">If you're using AI through an API, every token has a price. Use this calculator to estimate what your prompts cost across different models:</p>
+
+  <div class="calc-box reveal">
+    <div class="calc-title">Token Cost Estimator</div>
+    <p class="calc-desc">Enter your word count and select a model to see an estimated token cost.</p>
+    <div class="calc-grid">
+      <div class="calc-field">
+        <label>Word count</label>
+        <input class="calc-num" id="calcWords" type="number" value="100" min="1" max="100000" oninput="calcCost()"/>
+      </div>
+      <div class="calc-field">
+        <label>Model</label>
+        <select class="calc-select" id="calcModel" onchange="calcCost()">
+          <option value="0.005">GPT-4o ($5 / 1M tokens)</option>
+          <option value="0.003">Claude Sonnet ($3 / 1M tokens)</option>
+          <option value="0.00015">GPT-4o Mini ($0.15 / 1M tokens)</option>
+          <option value="0.001">Gemini 1.5 Pro ($1 / 1M tokens)</option>
+        </select>
+      </div>
+    </div>
+    <div class="calc-result">
+      <div class="calc-r-item">
+        <div class="calc-r-num" id="crTokens">133</div>
+        <div class="calc-r-label">Est. Tokens</div>
+      </div>
+      <div class="calc-r-item">
+        <div class="calc-r-num" id="crCost">$0.000665</div>
+        <div class="calc-r-label">Est. Cost</div>
+      </div>
+      <div class="calc-r-item">
+        <div class="calc-r-num" id="crContext">0.3%</div>
+        <div class="calc-r-label">of 128K context</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 7: LANGUAGES -->
+  <h2 id="languages"><span class="h2-num">06</span>Different Languages, Wildly Different Token Counts</h2>
+
+  <p class="reveal">One of the most important — and least discussed — aspects of tokenization is how dramatically it varies across languages. The vocabulary of most major AI models is heavily weighted towards English, because the majority of their training data was in English. This has significant real-world consequences.</p>
+
+  <p class="reveal">The same idea expressed in English might require 10 tokens, but in Arabic, Hindi, or Thai it might require 20–30 tokens to express the exact same thing. This happens because the tokenizer has fewer pre-built tokens for those languages, so it has to split words into smaller character-level pieces more frequently.</p>
+
+  <div class="tbl-wrap reveal">
+    <table class="tool-table">
+      <thead>
+        <tr>
+          <th>Language</th>
+          <th>Relative Token Efficiency</th>
+          <th>Practical Impact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>English</strong></td><td>Most efficient (baseline)</td><td>Lowest cost, most context capacity</td></tr>
+        <tr><td><strong>French / German / Spanish</strong></td><td>~1.1–1.3× more tokens</td><td>Slightly higher cost, minor difference</td></tr>
+        <tr><td><strong>Russian / Greek</strong></td><td>~1.5–2× more tokens</td><td>Noticeably more expensive, less context</td></tr>
+        <tr><td><strong>Arabic / Hindi</strong></td><td>~2–3× more tokens</td><td>Significantly more expensive per message</td></tr>
+        <tr><td><strong>Thai / Japanese / Chinese</strong></td><td>~2–4× more tokens</td><td>Much higher cost, context fills faster</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="reveal">This is an active area of improvement in the AI industry. Newer models are increasingly being trained with more multilingual data, which helps their tokenizers become more efficient across languages. But for now, if you're building AI applications for a non-English audience, token efficiency is an important cost and performance consideration.</p>
+
+  <!-- SECTION 8: MYTHS -->
+  <h2 id="myths"><span class="h2-num">07</span>Common Myths About AI Tokens — Debunked</h2>
+
+  <p class="reveal">There's a lot of confusion about tokens in the wild. Let's clear up the most common misunderstandings:</p>
+
+  <div class="myth-grid reveal">
+    <div class="myth-card myth">
+      <span class="myth-label">Myth</span>
+      <h3>1 token = 1 word</h3>
+      <p>This is the most common misconception. One word averages about 1.3 tokens, but can range from 1 token for very common words to 5+ tokens for complex technical terms.</p>
+    </div>
+    <div class="myth-card fact">
+      <span class="myth-label">Reality</span>
+      <h3>1 token ≈ 4 characters / ¾ of a word</h3>
+      <p>Use the rough rule: 100 tokens ≈ 75 words. For a more accurate estimate, use the token counter above or OpenAI's Tokenizer tool.</p>
+    </div>
+    <div class="myth-card myth">
+      <span class="myth-label">Myth</span>
+      <h3>AI reads your text letter by letter</h3>
+      <p>AI doesn't process individual characters at all (unless it's a character-level model, which is rare). It processes tokens — chunks that are much larger than single characters.</p>
+    </div>
+    <div class="myth-card fact">
+      <span class="myth-label">Reality</span>
+      <h3>AI processes sub-word chunks, not characters</h3>
+      <p>This is why AI sometimes struggles to count letters or spell backwards — it literally doesn't "see" individual characters the way humans do when reading.</p>
+    </div>
+    <div class="myth-card myth">
+      <span class="myth-label">Myth</span>
+      <h3>More tokens always means better understanding</h3>
+      <p>Simply throwing more tokens at the model doesn't guarantee better results. Quality and relevance of context matter far more than raw quantity.</p>
+    </div>
+    <div class="myth-card fact">
+      <span class="myth-label">Reality</span>
+      <h3>Focused, clear prompts often outperform long ones</h3>
+      <p>A well-crafted 50-token prompt can get better results than a vague 500-token one. Writing good prompts is a skill — and understanding tokens helps. AI errors often stem from this — more in our guide on <a href="https://nyvoraai.github.io/blog/why-does-ai-sometimes-give-wrong-answers.html">why AI sometimes gives wrong answers</a>.</p>
+    </div>
+    <div class="myth-card myth">
+      <span class="myth-label">Myth</span>
+      <h3>Tokenization is the same across all AI models</h3>
+      <p>OpenAI, Anthropic, Google — they all use different tokenizers with different vocabularies. The same sentence can have slightly different token counts on different platforms.</p>
+    </div>
+    <div class="myth-card fact">
+      <span class="myth-label">Reality</span>
+      <h3>Each model family has its own tokenizer</h3>
+      <p>GPT models use tiktoken. Claude uses its own Anthropic tokenizer. Gemini uses SentencePiece. Results are similar but not identical — always test with the specific model you're using.</p>
+    </div>
+  </div>
+
+  <p class="reveal">Understanding tokenization also helps explain why AI-generated images work so differently from text generation. Images aren't tokenized the same way words are — they use visual patches or latent space representations instead. If you're curious about that side of things, our article on <a href="https://nyvoraai.github.io/blog/how-does-ai-generate-images-from-text.html">how AI generates images from text</a> covers the full picture.</p>
+
+  <!-- SECTION 9: QUIZ -->
+  <h2 id="quiz"><span class="h2-num">08</span>Test Yourself: Token Knowledge Quiz</h2>
+  <p class="reveal">Ready to check what you've learned? Three questions, instant feedback.</p>
+
+  <div class="quiz-box reveal">
+    <div class="quiz-title">What Is Tokenization in AI? — Quick Quiz</div>
+    <p class="quiz-desc">No tricks — just checking your understanding of the key ideas.</p>
+    <div id="quizContainer"></div>
+  </div>
+
+  <!-- SECTION 10: FAQ -->
+  <h2 id="faq"><span class="h2-num">09</span>Frequently Asked Questions</h2>
+  <div class="faq reveal">
+    <details open>
+      <summary>What is tokenization in AI?</summary>
+      <div class="faq-body">Tokenization in AI is the process of splitting text into smaller pieces called tokens before the model processes it. A token is typically a word or part of a word. This step is essential because AI models cannot work with raw text — they convert everything into numerical tokens first, then into mathematical vectors called embeddings.</div>
+    </details>
+    <details>
+      <summary>How big is a token in AI?</summary>
+      <div class="faq-body">On average, one token is approximately 4 characters or about 0.75 words in English. So 100 tokens ≈ 75 words, and 1,000 tokens ≈ 750 words (roughly 3 pages of text). These are rough averages — common words like "the" are a single token, while complex words might be 3–5 tokens.</div>
+    </details>
+    <details>
+      <summary>Why does tokenization matter for users?</summary>
+      <div class="faq-body">Token counts directly affect three things: (1) context window limits — how much of a conversation the AI can "remember"; (2) API costs — you pay per token on most commercial AI APIs; and (3) accuracy on character-level tasks — AI struggles to count letters or spell backwards because it sees tokens, not individual characters.</div>
+    </details>
+    <details>
+      <summary>What is BPE tokenization?</summary>
+      <div class="faq-body">BPE stands for Byte Pair Encoding. It's the most common tokenization algorithm used by large language models. It starts by treating every character as a separate token, then iteratively merges the most frequent character pairs until the vocabulary reaches a target size. The result is a vocabulary where common words have single tokens, and rare words are split into sub-word pieces.</div>
+    </details>
+    <details>
+      <summary>Do different languages tokenize differently?</summary>
+      <div class="faq-body">Yes — significantly. English-trained models are most efficient with English text. Languages like Chinese, Arabic, or Hindi often require 2–4× more tokens to express the same idea. This is because the tokenizer vocabulary is weighted towards English, so non-English text gets split into smaller sub-word or character-level pieces more often.</div>
+    </details>
+    <details>
+      <summary>What happens after tokenization in AI?</summary>
+      <div class="faq-body">After tokenization, each token is assigned a numerical ID, then converted into a rich vector called an embedding. These embeddings are fed into the transformer model, which uses an attention mechanism to understand relationships between all tokens simultaneously. The model then predicts the next token in the response — one at a time — until the output is complete.</div>
+    </details>
+  </div>
+
+  <!-- AUTHOR BOX -->
+  <div class="author-box reveal">
+    <div class="meta-avatar" style="width:42px;height:42px;font-size:15px">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI author avatar" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by the NyvoraAI Team</h3>
+      <p>We make complex AI topics genuinely accessible — no PhD required. Got a question or a topic you'd love us to cover? <a href="https://nyvoraai.github.io/contact.html">Drop us a message</a> — we read everything.</p>
+    </div>
+  </div>
+
+  <!-- SHARE -->
+  <div class="share-section reveal">
+    <div class="share-title">Know someone confused by AI terms? Share this guide.</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=What+Is+Tokenization+in+AI%3F+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/blog/what-is-tokenization-in-ai.html" target="_blank" rel="noopener" class="share-btn">Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/blog/what-is-tokenization-in-ai.html" target="_blank" rel="noopener" class="share-btn">Share on Facebook</a>
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="share-btn">Follow on Instagram</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="share-btn">Watch on YouTube</a>
+      <button class="share-btn" onclick="copyLink()">Copy Link</button>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter reveal">
+    <h2>Weekly AI explained — in plain English</h2>
+    <p>Join thousands of curious readers getting jargon-free AI guides every week. 100% free, no spam, unsubscribe anytime.</p>
+    <form class="nl-form" action="https://formspree.io/f/xwvjgdpw" method="POST" onsubmit="handleNewsletter(event,this)">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required/>
+      <button class="nl-btn" type="submit">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · 100% free forever</p>
+    <div class="nl-social">
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc">Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc">X / Twitter</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc">YouTube</a>
+    </div>
+  </div>
+
+  <!-- RELATED -->
+  <div class="related reveal">
+    <div class="related-title">Keep Exploring</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/blog/how-does-ai-understand-human-language.html" class="rel-card">
+        <div class="rel-tag">NLP Basics</div>
+        <div class="rel-title">How Does AI Understand Human Language?</div>
+        <div class="rel-read">16 min read</div>
+      </a>
+      <a href="https://nyvoraai.github.io/blog/what-happens-inside-a-neural-network.html" class="rel-card">
+        <div class="rel-tag">Deep Dives</div>
+        <div class="rel-title">What Happens Inside a Neural Network?</div>
+        <div class="rel-read">15 min read</div>
+      </a>
+      <a href="https://nyvoraai.github.io/blog/what-is-the-context-window-in-ai-models.html" class="rel-card">
+        <div class="rel-tag">AI Concepts</div>
+        <div class="rel-title">What Is the Context Window in AI Models?</div>
+        <div class="rel-read">13 min read</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<!-- ANIMATED FOOTER -->
+<footer>
+  <div class="footer-aura footer-aura-1"></div>
+  <div class="footer-aura footer-aura-2"></div>
+  <div class="footer-aura footer-aura-3"></div>
+  <div class="footer-aura footer-aura-4"></div>
+  <div class="footer-aura footer-aura-5"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">
+        <img src="https://nyvoraai.github.io/logo.svg" alt="NyvoraAI logo" class="logo-img" onerror="this.style.display='none'"/>
+        Nyvora<span class="accent">AI</span>
+      </span>
+      <p>Your trusted source for original AI news, beginner guides, deep dives, and practical insights on artificial intelligence. Built for the AI generation.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn"><span>Instagram</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn"><span>Facebook</span></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn"><span>X</span></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn"><span>YouTube</span></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Topics</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">For Beginners</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">AI Tools</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Guides</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Tool Reviews</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span><span class="footer-pulse"></span>2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+      <a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /page-wrap -->
+
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<!-- SIDE POPUP -->
+<div id="side-popup" role="dialog" aria-label="Subscribe to NyvoraAI">
+  <button class="sp-close" onclick="closePopup()" aria-label="Close">×</button>
+  <div class="sp-icon">AI</div>
+  <div class="sp-title">Weekly AI explainers</div>
+  <div class="sp-text">Plain-English AI guides in your inbox every week. Free forever.</div>
+  <form id="sp-form" action="https://formspree.io/f/xwvjgdpw" method="POST" onsubmit="handlePopupSubmit(event,this)">
+    <input class="sp-input" type="email" name="email" placeholder="your@email.com" required/>
+    <button class="sp-btn" type="submit">Get free guides</button>
+  </form>
+  <div class="sp-note">No spam · Unsubscribe anytime</div>
+</div>
+
+<script>
+/* STARS */
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const f=document.getElementById('starField');
+  for(let i=0;i<120;i++){
+    const s=document.createElement('div');s.className='star';
+    const sz=Math.random()*1.8+0.4;
+    s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${2+Math.random()*4}s;animation-delay:${-Math.random()*4}s;opacity:${0.1+Math.random()*0.5}`;
+    f.appendChild(s);
+  }
+})();
+/* ORBS */
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const w=document.getElementById('orbField');
+  const colors=['rgba(0,212,255,0.5)','rgba(123,94,167,0.5)','rgba(0,229,160,0.4)','rgba(255,179,71,0.4)','rgba(255,107,107,0.35)'];
+  for(let i=0;i<14;i++){
+    const o=document.createElement('div');o.className='orb';
+    const sz=3+Math.random()*6;const dur=12+Math.random()*16;const delay=-Math.random()*dur;
+    o.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;background:${colors[i%5]};filter:blur(1px);animation-duration:${dur}s;animation-delay:${delay}s;box-shadow:0 0 ${sz*2}px ${colors[i%5]}`;
+    w.appendChild(o);
+  }
+})();
+
+/* SCROLL PROGRESS */
+let popupShown=false,popupClosed=false;
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const pct=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  document.getElementById('progress').style.width=pct+'%';
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+  if(pct>40&&!popupClosed&&!popupShown){popupShown=true;setTimeout(()=>document.getElementById('side-popup').classList.add('show'),500);}
+});
+
+/* REVEAL */
+const reveals=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.08});
+reveals.forEach(r=>io.observe(r));
+
+/* MOBILE NAV */
+function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open');}
+
+/* COPY LINK */
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(()=>{
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;const o=btn.textContent;
+    btn.textContent='Copied!';btn.style.color='var(--green)';
+    setTimeout(()=>{btn.textContent=o;btn.style.color='';},2000);
+  });
+}
+
+/* NEWSLETTER */
+function handleNewsletter(e,form){
+  e.preventDefault();const btn=form.querySelector('.nl-btn');
+  btn.textContent='Sending...';btn.style.opacity='.7';
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{if(r.ok){btn.textContent='Subscribed!';btn.style.background='var(--green)';form.reset();}else{btn.textContent='Try again';btn.style.opacity='1';}})
+    .catch(()=>{btn.textContent='Try again';btn.style.opacity='1';});
+}
+
+/* POPUP */
+function closePopup(){document.getElementById('side-popup').classList.remove('show');popupClosed=true;}
+function handlePopupSubmit(e,form){
+  e.preventDefault();const btn=form.querySelector('.sp-btn');btn.textContent='Sending...';
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{if(r.ok){document.getElementById('side-popup').innerHTML='<div style="padding:8px 0;text-align:center"><div style="font-family:var(--font-mono);font-size:12px;color:var(--green);font-weight:700;margin-bottom:6px">Subscribed!</div><div style="font-size:12px;color:var(--text-3)">Check your inbox soon.</div></div>';setTimeout(closePopup,2400);}else{btn.textContent='Try again';}})
+    .catch(()=>{btn.textContent='Try again';});
+}
+setTimeout(()=>{if(!popupShown&&!popupClosed){popupShown=true;document.getElementById('side-popup').classList.add('show');}},9000);
+
+/* TOKEN VISUALISER */
+const CHIP_COLORS=[
+  ['rgba(0,212,255,.15)','rgba(0,212,255,.45)','#00D4FF'],
+  ['rgba(123,94,167,.2)','rgba(123,94,167,.55)','#9B7EC8'],
+  ['rgba(0,229,160,.15)','rgba(0,229,160,.45)','#00E5A0'],
+  ['rgba(255,179,71,.15)','rgba(255,179,71,.45)','#FFB347'],
+  ['rgba(255,107,107,.15)','rgba(255,107,107,.45)','#FF6B6B'],
+  ['rgba(100,200,255,.15)','rgba(100,200,255,.45)','#64C8FF'],
+  ['rgba(180,130,255,.15)','rgba(180,130,255,.45)','#B482FF'],
+];
+function tokenise(){
+  const raw=document.getElementById('tokenInput').value.trim();
+  const chips=document.getElementById('tokenChips');
+  const stats=document.getElementById('tokenStats');
+  if(!raw){chips.innerHTML='<span class="chip-placeholder">Please type something first...</span>';stats.style.display='none';return;}
+  const words=raw.split(/\s+/).filter(Boolean);
+  const tokens=[];
+  words.forEach(w=>{
+    const clean=w.replace(/[.,!?;:'"()\-]/g,'');
+    const punct=w.match(/[.,!?;:'"()\-]/g)||[];
+    if(clean.length>9&&/^[a-zA-Z]+$/.test(clean)){
+      const mid=Math.ceil(clean.length/2);
+      tokens.push(clean.slice(0,mid));
+      tokens.push(clean.slice(mid));
+    } else if(clean){
+      tokens.push(clean);
+    }
+    punct.forEach(p=>tokens.push(p));
+  });
+  chips.innerHTML='';
+  tokens.forEach((t,i)=>{
+    const c=CHIP_COLORS[i%CHIP_COLORS.length];
+    const chip=document.createElement('span');
+    chip.className='chip';
+    chip.style.cssText=`background:${c[0]};border-color:${c[1]};color:${c[2]};animation-delay:${i*0.05}s`;
+    chip.textContent=t;
+    chips.appendChild(chip);
+  });
+  const charCount=raw.replace(/\s/g,'').length;
+  const wordCount=words.length;
+  const estCost=(tokens.length*0.005/1000).toFixed(6);
+  document.getElementById('statTokens').textContent=tokens.length;
+  document.getElementById('statWords').textContent=wordCount;
+  document.getElementById('statChars').textContent=charCount;
+  document.getElementById('statCost').textContent='$'+estCost;
+  stats.style.display='flex';
+}
+document.getElementById('tokenInput').addEventListener('keydown',e=>{if(e.key==='Enter')tokenise();});
+
+/* COST CALCULATOR */
+function calcCost(){
+  const words=parseInt(document.getElementById('calcWords').value)||100;
+  const rate=parseFloat(document.getElementById('calcModel').value);
+  const tokens=Math.round(words*1.33);
+  const cost=(tokens*rate/1000).toFixed(6);
+  const contextPct=((tokens/128000)*100).toFixed(1);
+  document.getElementById('crTokens').textContent=tokens.toLocaleString();
+  document.getElementById('crCost').textContent='$'+cost;
+  document.getElementById('crContext').textContent=contextPct+'%';
+}
+calcCost();
+
+/* QUIZ */
+const quizData=[
+  {
+    q:"On average, how many tokens is 100 words of English text?",
+    opts:["About 50 tokens","About 100 tokens","About 133 tokens","About 300 tokens"],
+    correct:2,
+    feedback:"Correct! The general rule is that 100 words ≈ 133 tokens, because 1 word averages about 1.33 tokens. Some words are a single token, while others split into multiple sub-word pieces."
+  },
+  {
+    q:"Why does AI sometimes struggle to count letters in a word — like the R's in 'strawberry'?",
+    opts:["The AI isn't smart enough","AI doesn't know the alphabet","AI processes tokens, not individual characters","AI has bad memory"],
+    correct:2,
+    feedback:"Exactly right! Because AI works with tokens (chunks of text), not individual characters, it can't easily inspect individual letters. 'Strawberry' might be a single token, making character-counting unreliable without special techniques."
+  },
+  {
+    q:"What does BPE stand for in AI tokenization?",
+    opts:["Basic Paragraph Encoding","Byte Pair Encoding","Binary Processing Engine","Bidirectional Parsing Engine"],
+    correct:1,
+    feedback:"BPE — Byte Pair Encoding — is the algorithm used by most major language models including GPT and Claude. It starts with individual characters and iteratively merges the most frequent pairs until the vocabulary is complete."
+  }
+];
+let currentQ=0,score=0,answered=false;
+function renderQuiz(){
+  const container=document.getElementById('quizContainer');
+  if(currentQ>=quizData.length){
+    container.innerHTML=`<div class="quiz-score-final"><div class="quiz-score-num">${score}/${quizData.length}</div><div class="quiz-score-label">${score===quizData.length?'Perfect! You really understand tokenization now.':score>=2?'Great work — you\'ve got the key concepts!':'No worries — re-read the article and try again!'}</div></div>`;
+    return;
+  }
+  const q=quizData[currentQ];
+  container.innerHTML=`
+    <div class="quiz-progress">Question ${currentQ+1} of ${quizData.length}</div>
+    <div class="quiz-q">${q.q}</div>
+    <div class="quiz-options">${q.opts.map((o,i)=>`<button class="quiz-opt" onclick="selectAnswer(${i})">${o}</button>`).join('')}</div>
+    <div class="quiz-feedback" id="qFeedback"></div>
+    <button class="quiz-next" id="qNext" onclick="nextQuestion()">${currentQ===quizData.length-1?'See My Score →':'Next Question →'}</button>
+  `;
+  answered=false;
+}
+function selectAnswer(idx){
+  if(answered)return;answered=true;
+  const q=quizData[currentQ];
+  const opts=document.querySelectorAll('.quiz-opt');
+  opts[q.correct].classList.add('correct');
+  if(idx!==q.correct)opts[idx].classList.add('wrong');else score++;
+  const fb=document.getElementById('qFeedback');
+  fb.textContent=q.feedback;fb.classList.add('show');
+  document.getElementById('qNext').classList.add('show');
+}
+function nextQuestion(){currentQ++;renderQuiz();}
+renderQuiz();
+</script>
+</body>
+</html>
