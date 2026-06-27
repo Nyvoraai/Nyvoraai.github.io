@@ -9,7 +9,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Home](https://nyvoraai.github.io/): NyvoraAI delivers original, fact-checked AI news, machine learning trends, and expert insights — updated daily. No hype, no paywalls, free forever.
 - [Blog](https://nyvoraai.github.io/blog.html): In-depth AI blog posts: guides, explainers, tool reviews, and opinions on artificial intelligence. Written clearly for everyone, from beginners to professionals.
 - [AI News](https://nyvoraai.github.io/ai-news.html): Latest AI news: fact-checked daily coverage of artificial intelligence, machine learning, LLMs, robotics, AI safety, and AI tools. Original articles published every day. No hype, no clickbait.
-- [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked coverage of artificial intelligence. Learn who we are and what we stand for.
+- [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
 ## AI News (82 articles)
