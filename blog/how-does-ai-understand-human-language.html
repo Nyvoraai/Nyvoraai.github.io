@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+<!-- SEO: Title ≤60 chars -->
+<title>How Does AI Understand Human Language? (2026)</title>
+
+<!-- SEO: Meta Description ≤160 chars -->
+<meta name="description" content="How does AI understand human language? Learn how NLP, tokens, and transformers work — explained simply, no tech degree needed. Real examples inside."/>
+
+<meta name="keywords" content="how does AI understand human language, AI natural language processing, how AI reads text, NLP explained simply, how does ChatGPT understand me"/>
+<meta name="author" content="NyvoraAI Team"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="canonical" href="https://nyvoraai.github.io/blog/how-does-ai-understand-human-language.html"/>
+
+<!-- Favicons -->
+<link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
+<link rel="icon" type="image/png" href="https://nyvoraai.github.io/favicon-32x32.png"/>
+<link rel="apple-touch-icon" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How Does AI Understand Human Language? | NyvoraAI"/>
+<meta property="og:description" content="How does AI understand human language? Learn how NLP, tokens, and transformers work — explained simply, no tech degree needed."/>
+<meta property="og:url" content="https://nyvoraai.github.io/blog/how-does-ai-understand-human-language.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/blog/how-does-ai-understand-human-language-thumbnail.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-06-27T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-06-27T00:00:00Z"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="How Does AI Understand Human Language? | NyvoraAI"/>
+<meta name="twitter:description" content="Tokens, embeddings, transformers — explained in plain English. Learn how AI actually reads what you type."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/blog/how-does-ai-understand-human-language-thumbnail.png"/>
+
+<!-- Structured Data: Article -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How Does AI Understand Human Language?","description":"How does AI understand human language? Learn how NLP, tokens, and transformers work — explained simply, no tech degree needed. Real examples inside.","image":"https://nyvoraai.github.io/assets/blog/how-does-ai-understand-human-language-thumbnail.png","datePublished":"2026-06-27","dateModified":"2026-06-27","author":{"@type":"Organization","name":"NyvoraAI Team","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/blog/how-does-ai-understand-human-language.html"}}</script>
+
+<!-- Structured Data: BreadcrumbList -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://nyvoraai.github.io/blog.html"},{"@type":"ListItem","position":3,"name":"How Does AI Understand Human Language?","item":"https://nyvoraai.github.io/blog/how-does-ai-understand-human-language.html"}]}</script>
+
+<!-- Structured Data: FAQPage (AEO) -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does AI understand human language?","acceptedAnswer":{"@type":"Answer","text":"AI understands human language through a process called Natural Language Processing (NLP). It breaks your text into small pieces called tokens, converts them into numbers, and uses a system called a transformer to figure out how all those pieces relate to each other. It doesn't understand language the way humans do — it recognizes patterns in how words are typically used together."}},{"@type":"Question","name":"What is a token in AI language models?","acceptedAnswer":{"@type":"Answer","text":"A token is a chunk of text — usually a word or part of a word. For example, the word 'understanding' might be split into 'under' and 'standing'. AI models process text as tokens, not whole sentences, which is why they sometimes struggle with very unusual words."}},{"@type":"Question","name":"Does AI actually understand meaning?","acceptedAnswer":{"@type":"Answer","text":"Not in the way humans do. AI language models don't have consciousness or feelings. They learn statistical relationships between words and predict what comes next based on patterns. It's incredibly sophisticated pattern matching, not genuine comprehension."}},{"@type":"Question","name":"What is NLP in simple terms?","acceptedAnswer":{"@type":"Answer","text":"NLP stands for Natural Language Processing. It's the branch of AI that handles human language — reading it, understanding its structure, and generating responses. When you type a question to ChatGPT, NLP is the engine running under the hood."}},{"@type":"Question","name":"Why does AI sometimes misunderstand sarcasm or jokes?","acceptedAnswer":{"@type":"Answer","text":"Because sarcasm and humour depend on tone, context, and real-world experience — things AI doesn't have. AI reads the literal words, not the vibe behind them. Without vocal cues or facial expressions, it often takes jokes at face value."}},{"@type":"Question","name":"What is a transformer in AI?","acceptedAnswer":{"@type":"Answer","text":"A transformer is the architecture (think: the internal structure) of most modern AI language models. It uses a mechanism called 'attention' to weigh how important each word is relative to every other word in your sentence, which is how it figures out context and meaning."}}]}</script>
+
+<!-- GEO / AEO: Speakable for voice assistants -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":["#quick-answer","#plain-english"]},"url":"https://nyvoraai.github.io/blog/how-does-ai-understand-human-language.html"}</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080A0F;--bg-2:#0D1117;--bg-3:#111827;--bg-card:#141B26;--bg-card-2:#1A2235;
+  --border:#1E2D40;--border-bright:#2A3F5C;
+  --cyan:#00D4FF;--cyan-dim:#0099BB;--cyan-glow:rgba(0,212,255,0.15);
+  --violet:#7B5EA7;--violet-bright:#9B7EC8;--violet-glow:rgba(123,94,167,0.18);
+  --green:#00E5A0;--green-dim:#00B07A;--green-glow:rgba(0,229,160,0.12);
+  --amber:#FFB347;--amber-glow:rgba(255,179,71,0.12);--red:#FF6B6B;
+  --text:#E8EDF5;--text-2:#9BA8BC;--text-3:#5C6B80;--text-inv:#080A0F;
+  --radius:16px;--radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+  --glow-cyan:0 0 30px rgba(0,212,255,0.2),0 0 60px rgba(0,212,255,0.08);
+  --shadow-card:0 4px 24px rgba(0,0,0,0.4),0 1px 4px rgba(0,0,0,0.3);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.78;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--cyan);text-decoration:none;transition:color .2s}
+a:hover{color:var(--cyan-dim);text-decoration:underline}
+h1,h2,h3,.font-display{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+
+/* BG CANVAS */
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.stars{position:absolute;inset:0}
+.star{position:absolute;background:#fff;border-radius:50%;animation:starTwinkle ease-in-out infinite}
+@keyframes starTwinkle{0%,100%{opacity:.15;transform:scale(1)}50%{opacity:.8;transform:scale(1.4)}}
+.aura{position:absolute;border-radius:50%;filter:blur(100px);will-change:transform;animation:auraFloat ease-in-out infinite;pointer-events:none}
+.aura-1{width:700px;height:700px;background:radial-gradient(circle,rgba(0,212,255,.18),transparent 65%);top:-200px;left:-200px;animation-duration:20s}
+.aura-2{width:600px;height:600px;background:radial-gradient(circle,rgba(123,94,167,.22),transparent 65%);bottom:-150px;right:-150px;animation-duration:25s;animation-delay:-8s}
+.aura-3{width:500px;height:500px;background:radial-gradient(circle,rgba(0,229,160,.12),transparent 65%);top:40%;left:55%;animation-duration:18s;animation-delay:-4s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(60px,-50px) scale(1.1)}66%{transform:translate(-40px,35px) scale(.92)}}
+.grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.025) 1px,transparent 1px);background-size:60px 60px;animation:gridShift 40s linear infinite}
+@keyframes gridShift{0%{background-position:0 0}100%{background-position:60px 60px}}
+.orb{position:absolute;border-radius:50%;animation:orbFloat ease-in-out infinite;opacity:0}
+@keyframes orbFloat{0%{transform:translateY(110vh) scale(0.5);opacity:0}10%{opacity:.6}90%{opacity:.3}100%{transform:translateY(-10vh) scale(1.2);opacity:0}}
+@media(prefers-reduced-motion:reduce){.star,.aura,.orb,.grid-lines{animation:none;display:none}html{scroll-behavior:auto}}
+
+/* SCAN LINE */
+.scanline{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.06;animation:scanDown 8s linear infinite;pointer-events:none;z-index:1}
+@keyframes scanDown{0%{top:-2px}100%{top:100vh}}
+
+/* PROGRESS */
+#progress{position:fixed;top:0;left:0;width:0;height:2px;z-index:400;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green));transition:width .08s;box-shadow:0 0 12px var(--cyan)}
+
+/* NAV */
+nav.main-nav{position:sticky;top:0;z-index:300;background:rgba(8,10,15,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:62px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:20px;font-weight:700;letter-spacing:-.02em;color:var(--text);display:flex;align-items:center;gap:9px}
+.nav-logo .logo-accent{color:var(--cyan)}
+.logo-img{height:28px;width:28px;border-radius:7px;object-fit:cover}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--text-2);font-size:14px;font-weight:500;transition:color .2s;letter-spacing:.01em}
+.nav-links a:hover,.nav-links a.active{color:var(--text);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-cta{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:8px 18px;border-radius:8px;font-size:13px;font-weight:700;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 20px rgba(0,212,255,.25)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 30px rgba(0,212,255,.4);text-decoration:none;color:var(--text-inv)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--text-2);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:62px;left:0;right:0;background:rgba(13,17,23,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:20px 24px;flex-direction:column;gap:16px;z-index:299}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--text);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
+
+/* BREADCRUMB */
+.breadcrumb{max-width:840px;margin:24px auto 0;padding:0 24px;font-size:12.5px;color:var(--text-3);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--text-3);transition:color .2s}
+.breadcrumb a:hover{color:var(--cyan);text-decoration:none}
+.bc-sep{color:var(--border-bright)}
+
+/* ARTICLE HEADER */
+.article-hdr{max-width:840px;margin:20px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;background:rgba(0,212,255,.08);color:var(--cyan);border:1px solid rgba(0,212,255,.2);font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 12px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-read{background:rgba(0,229,160,.08);color:var(--green);border-color:rgba(0,229,160,.2)}
+.badge-date{background:rgba(255,179,71,.08);color:var(--amber);border-color:rgba(255,179,71,.2)}
+.article-title{font-size:clamp(28px,5vw,46px);font-weight:700;line-height:1.16;color:var(--text);margin-bottom:16px;letter-spacing:-.025em}
+.title-glow{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.article-intro{font-size:18.5px;color:var(--text-2);line-height:1.65;margin-bottom:22px}
+.article-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--text-3);padding-bottom:22px;border-bottom:1px solid var(--border)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{width:34px;height:34px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--text-inv);font-family:var(--font-display);position:relative;overflow:hidden}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--text-2)}
+.meta-sep{color:var(--border-bright)}
+
+/* HERO IMAGE */
+.hero-wrap{max-width:840px;margin:28px auto;padding:0 24px}
+.hero-box{width:100%;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);background:var(--bg-card);box-shadow:var(--shadow-card),var(--glow-cyan);line-height:0}
+.hero-box img{width:100%;height:auto;display:block}
+
+/* TOC */
+.toc-box{max-width:840px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow-card)}
+.toc-title{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc-title::before{content:'';width:3px;height:13px;background:var(--cyan);border-radius:2px;display:inline-block;box-shadow:0 0 8px var(--cyan)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:5px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--text-2);font-size:14px;transition:color .2s;display:flex;gap:8px;padding:3px 0}
+.toc a::before{content:counter(tocnum,'0'counter(tocnum));font-family:var(--font-mono);color:var(--cyan);font-weight:700;font-size:11.5px;min-width:18px;opacity:.7}
+.toc a:hover{color:var(--cyan);text-decoration:none}
+
+/* LAYOUT */
+.layout{max-width:840px;margin:0 auto;padding:36px 24px 80px}
+
+/* PROSE */
+.prose h2{font-size:25px;font-weight:700;color:var(--text);margin:52px 0 16px;letter-spacing:-.02em;scroll-margin-top:88px;display:flex;align-items:center;gap:12px}
+.prose h2 .h2-num{font-family:var(--font-mono);font-size:12px;color:var(--cyan);font-weight:700;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.2);padding:3px 9px;border-radius:6px;letter-spacing:.05em}
+.prose h3{font-size:18px;font-weight:600;color:var(--text);margin:28px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--text-2)}
+.prose strong{color:var(--text);font-weight:600}
+.prose ul,.prose ol{margin:0 0 20px 20px}
+.prose li{margin-bottom:9px;color:var(--text-2)}
+
+/* QUICK ANSWER BOX */
+.quick-answer{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--cyan);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow-card),0 0 0 1px rgba(0,212,255,.06) inset}
+.qa-title{font-family:var(--font-mono);font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+.quick-answer ul{margin:0;list-style:none}
+.quick-answer li{display:flex;gap:10px;margin-bottom:9px;font-size:15px;color:var(--text-2)}
+.quick-answer li:last-child{margin-bottom:0}
+.quick-answer li::before{content:'//';color:var(--cyan);flex-shrink:0;font-weight:700;font-family:var(--font-mono);font-size:12px;opacity:.7}
+.quick-answer p{color:var(--text);font-size:16px;margin-bottom:10px}
+
+/* ANALOGY BOX */
+.analogy-box{background:linear-gradient(135deg,rgba(123,94,167,.08),rgba(0,212,255,.05));border:1px solid rgba(123,94,167,.25);border-radius:var(--radius);padding:28px;margin:32px 0;position:relative;overflow:hidden}
+.analogy-box::before{content:'💡';position:absolute;top:-10px;right:20px;font-size:60px;opacity:.1}
+.analogy-title{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--violet-bright);margin-bottom:12px}
+.analogy-box p{color:var(--text-2);font-size:15px;line-height:1.7;margin-bottom:12px}
+.analogy-box p:last-child{margin-bottom:0}
+
+/* STEP CARDS */
+.steps{display:flex;flex-direction:column;gap:16px;margin:28px 0}
+.step{display:flex;gap:18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;transition:border-color .2s,transform .2s}
+.step:hover{border-color:var(--border-bright);transform:translateX(4px)}
+.step-num{width:42px;height:42px;min-width:42px;border-radius:10px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-weight:700;font-size:16px;color:var(--text-inv);box-shadow:0 0 16px rgba(0,212,255,.25)}
+.step-body h3{font-size:17px;font-weight:700;color:var(--text);margin-bottom:7px;font-family:var(--font-display)}
+.step-body p{font-size:14.5px;color:var(--text-2);line-height:1.65;margin:0}
+
+/* TOKEN VISUALIZER */
+.token-demo{background:var(--bg-card);border:1px solid var(--border-bright);border-radius:var(--radius);padding:28px;margin:32px 0;box-shadow:var(--shadow-card),0 0 30px rgba(0,212,255,.08)}
+.demo-title{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--text);margin-bottom:6px}
+.demo-desc{color:var(--text-2);margin-bottom:20px;font-size:14.5px}
+.token-input-wrap{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap}
+.token-input{flex:1;min-width:200px;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:9px;padding:11px 14px;color:var(--text);font-size:14px;outline:none;font-family:var(--font-body);transition:border-color .2s,box-shadow .2s}
+.token-input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,212,255,.1)}
+.token-btn{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:11px 20px;border-radius:9px;border:none;cursor:pointer;font-size:13.5px;font-weight:700;transition:opacity .2s,transform .15s;white-space:nowrap}
+.token-btn:hover{opacity:.9;transform:translateY(-1px)}
+.token-output{display:flex;flex-wrap:wrap;gap:8px;min-height:44px;align-items:center}
+.token-chip{display:inline-flex;align-items:center;padding:6px 12px;border-radius:8px;font-family:var(--font-mono);font-size:13px;font-weight:600;border:1px solid;animation:chipPop .3s ease forwards;opacity:0}
+@keyframes chipPop{from{opacity:0;transform:scale(.8) translateY(6px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.token-count{margin-top:10px;font-family:var(--font-mono);font-size:12px;color:var(--text-3)}
+.token-placeholder{color:var(--text-3);font-size:14px;font-style:italic}
+
+/* ATTENTION MAP */
+.attention-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin:32px 0}
+.att-title{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--text);margin-bottom:14px}
+.att-sentence{font-size:17px;line-height:2;color:var(--text-2);margin-bottom:16px}
+.att-word{display:inline-block;padding:2px 6px;border-radius:6px;cursor:pointer;transition:all .2s;position:relative}
+.att-word:hover{transform:translateY(-2px)}
+.att-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--text-3);font-family:var(--font-mono)}
+.att-legend-item{display:flex;align-items:center;gap:6px}
+.att-dot{width:12px;height:12px;border-radius:3px;display:inline-block}
+
+/* COMPARISON TABLE */
+.tbl-wrap{overflow-x:auto;margin:22px 0;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow-card)}
+.tool-table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:460px;background:var(--bg-card)}
+.tool-table thead tr{background:var(--bg-3)}
+.tool-table th{text-align:left;padding:12px 16px;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-3);border-bottom:1px solid var(--border);font-family:var(--font-mono)}
+.tool-table td{padding:13px 16px;border-bottom:1px solid var(--border);vertical-align:middle;color:var(--text-2)}
+.tool-table tr:last-child td{border-bottom:none}
+.tool-table tr:hover td{background:rgba(0,212,255,.04)}
+.tool-table strong{color:var(--text)}
+
+/* QUIZ */
+.quiz-box{background:var(--bg-card);border:1px solid var(--border-bright);border-radius:var(--radius);padding:28px;margin:32px 0;box-shadow:var(--shadow-card)}
+.quiz-title{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--text);margin-bottom:6px}
+.quiz-desc{color:var(--text-2);font-size:14.5px;margin-bottom:22px}
+.quiz-q{font-size:16px;font-weight:600;color:var(--text);margin-bottom:12px;font-family:var(--font-display)}
+.quiz-options{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.quiz-opt{background:var(--bg-3);border:2px solid var(--border);border-radius:10px;padding:12px 16px;cursor:pointer;font-size:14.5px;color:var(--text-2);transition:all .2s;text-align:left;font-family:var(--font-body)}
+.quiz-opt:hover{border-color:var(--border-bright);color:var(--text)}
+.quiz-opt.correct{border-color:var(--green);background:rgba(0,229,160,.1);color:var(--green)}
+.quiz-opt.wrong{border-color:var(--red);background:rgba(255,107,107,.1);color:var(--red)}
+.quiz-feedback{font-size:14px;color:var(--text-2);padding:12px 16px;background:var(--bg-3);border-radius:10px;display:none;line-height:1.6}
+.quiz-feedback.show{display:block}
+.quiz-next{margin-top:14px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);border:none;border-radius:9px;padding:10px 22px;font-size:13.5px;font-weight:700;cursor:pointer;display:none;transition:opacity .2s,transform .15s}
+.quiz-next.show{display:inline-block}
+.quiz-next:hover{opacity:.9;transform:translateY(-1px)}
+.quiz-progress{font-family:var(--font-mono);font-size:11.5px;color:var(--text-3);margin-bottom:18px}
+.quiz-score-final{text-align:center;padding:20px 0}
+.quiz-score-num{font-size:48px;font-weight:700;color:var(--cyan);font-family:var(--font-display)}
+.quiz-score-label{font-size:15px;color:var(--text-2);margin-top:6px}
+
+/* MYTH BOX */
+.myth-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0}
+.myth-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;position:relative}
+.myth-card.myth{border-top:3px solid var(--red)}
+.myth-card.fact{border-top:3px solid var(--green)}
+.myth-label{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:6px;display:inline-block;margin-bottom:10px}
+.myth-card.myth .myth-label{background:rgba(255,107,107,.1);color:var(--red);border:1px solid rgba(255,107,107,.2)}
+.myth-card.fact .myth-label{background:rgba(0,229,160,.1);color:var(--green);border:1px solid rgba(0,229,160,.2)}
+.myth-card h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:7px;font-family:var(--font-display)}
+.myth-card p{font-size:13.5px;color:var(--text-2);line-height:1.6;margin:0}
+
+/* FAQ */
+.faq{margin:14px 0}
+details{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--border-bright)}
+summary{padding:16px 20px;cursor:pointer;font-weight:600;font-size:15.5px;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--cyan);font-size:20px;font-weight:300;transition:transform .3s;flex-shrink:0;font-family:var(--font-mono)}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 20px 16px;color:var(--text-2);font-size:14.5px;line-height:1.7}
+
+/* INLINE FIGURE */
+.fig-wrap{margin:28px 0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow-card)}
+.fig-wrap img{width:100%;height:auto;display:block}
+.fig-caption{background:var(--bg-card);padding:10px 16px;font-size:12.5px;color:var(--text-3);font-family:var(--font-mono);border-top:1px solid var(--border)}
+
+/* AUTHOR BOX */
+.author-box{display:flex;gap:14px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin:44px 0 0;box-shadow:var(--shadow-card)}
+.author-box h3{font-size:14.5px;font-family:var(--font-display);margin-bottom:4px;color:var(--text)}
+.author-box p{font-size:13.5px;color:var(--text-3);margin:0;line-height:1.6}
+
+/* SHARE */
+.share-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;margin:28px 0 0;text-align:center}
+.share-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:14px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:7px;padding:9px 16px;border-radius:8px;border:1px solid var(--border);font-size:12.5px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--bg-3);color:var(--text-2);font-family:var(--font-body)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 14px rgba(0,212,255,.15)}
+
+/* NEWSLETTER */
+.newsletter{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:40px;margin:52px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow-card)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green))}
+.newsletter::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(0,212,255,.06),transparent 60%);pointer-events:none}
+.newsletter h2{font-size:23px;font-weight:700;color:var(--text);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--text-2);margin-bottom:22px;font-size:15px}
+.nl-form{display:flex;gap:10px;max-width:420px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:9px;padding:12px 15px;color:var(--text);font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--text-3)}
+.nl-input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,212,255,.1)}
+.nl-btn{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:12px 20px;border-radius:9px;border:none;cursor:pointer;font-size:13.5px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 20px rgba(0,212,255,.25)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 30px rgba(0,212,255,.4)}
+.nl-note{font-size:11.5px;color:var(--text-3);margin:10px 0 0}
+.nl-social{display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:8px 14px;border-radius:8px;border:1px solid var(--border);color:var(--text-2);transition:all .2s;background:var(--bg-3)}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--cyan)}
+
+/* RELATED */
+.related{margin:44px 0 0}
+.related-title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:16px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.rel-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;transition:border-color .2s,transform .2s;cursor:pointer;display:block}
+.rel-card:hover{border-color:var(--border-bright);transform:translateY(-3px);text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.rel-tag{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan);margin-bottom:7px;font-family:var(--font-mono)}
+.rel-title{font-size:13.5px;font-weight:600;color:var(--text);line-height:1.4;margin-bottom:7px;font-family:var(--font-display)}
+.rel-read{font-size:11.5px;color:var(--text-3);font-family:var(--font-mono)}
+
+/* CHAT SCENE */
+.chat-scene-card{max-width:840px;margin:22px auto 0;padding:0 24px}
+.chat-card-inner{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow-card)}
+.chat-icon{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(123,94,167,.15));border:1px solid rgba(0,212,255,.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;font-family:var(--font-mono);font-weight:700;color:var(--cyan)}
+.chat-name{font-family:var(--font-display);font-weight:700;font-size:14.5px;color:var(--text)}
+.chat-status{font-size:12px;color:var(--text-3);display:flex;align-items:center;gap:6px;margin-top:2px;font-family:var(--font-mono)}
+.status-dot{width:6px;height:6px;border-radius:50%;background:var(--green);display:inline-block;animation:pulseDot 2s ease-in-out infinite;box-shadow:0 0 6px var(--green)}
+@keyframes pulseDot{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,229,160,.4)}50%{opacity:.7;box-shadow:0 0 0 5px rgba(0,229,160,0)}}
+.chat-badge{font-family:var(--font-mono);font-size:10.5px;color:var(--text-3);background:var(--bg-3);padding:4px 10px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+
+/* REVEAL ANIMATION */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* SIDE POPUP */
+#side-popup{position:fixed;bottom:88px;right:26px;z-index:500;width:260px;background:var(--bg-card);border:1px solid var(--border-bright);border-radius:16px;padding:18px;box-shadow:var(--shadow-card),0 0 40px rgba(0,212,255,.15);transform:translateX(320px);opacity:0;transition:transform .45s cubic-bezier(.22,1,.36,1),opacity .35s ease;pointer-events:none;overflow:hidden}
+#side-popup.show{transform:translateX(0);opacity:1;pointer-events:all}
+#side-popup::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright))}
+.sp-close{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--text-3);cursor:pointer;font-size:16px;line-height:1;padding:2px;transition:color .2s;font-family:var(--font-mono)}
+.sp-close:hover{color:var(--text)}
+.sp-icon{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(123,94,167,.15));border:1px solid rgba(0,212,255,.2);display:flex;align-items:center;justify-content:center;margin-bottom:10px;font-family:var(--font-mono);font-weight:700;font-size:14px;color:var(--cyan)}
+.sp-title{font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--text);margin-bottom:5px}
+.sp-text{font-size:12.5px;color:var(--text-3);line-height:1.5;margin-bottom:12px}
+.sp-input{width:100%;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:8px;padding:9px 12px;color:var(--text);font-size:12.5px;outline:none;margin-bottom:8px;font-family:var(--font-body);transition:border-color .2s}
+.sp-input:focus{border-color:var(--cyan)}
+.sp-btn{width:100%;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);border:none;border-radius:8px;padding:9px;font-size:12.5px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .15s;font-family:var(--font-body)}
+.sp-btn:hover{opacity:.9;transform:translateY(-1px)}
+.sp-note{font-size:10.5px;color:var(--text-3);text-align:center;margin-top:6px;font-family:var(--font-mono)}
+
+/* BACK TO TOP */
+#back-top{position:fixed;bottom:26px;right:26px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:0 0 20px rgba(0,212,255,.3);z-index:200;font-weight:700}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.1) translateY(-2px);box-shadow:0 0 30px rgba(0,212,255,.5)}
+
+/* ── ANIMATED FOOTER ── */
+footer{background:var(--bg-2);border-top:1px solid var(--border);padding:56px 24px 28px;position:relative;z-index:1;overflow:hidden}
+.footer-aura{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;animation:footerDrift ease-in-out infinite}
+.footer-aura-1{width:500px;height:500px;background:radial-gradient(circle,rgba(0,212,255,.15),transparent 65%);top:-220px;left:4%;animation-duration:16s}
+.footer-aura-2{width:440px;height:440px;background:radial-gradient(circle,rgba(123,94,167,.18),transparent 65%);top:-180px;right:6%;animation-duration:20s;animation-delay:-6s}
+.footer-aura-3{width:400px;height:400px;background:radial-gradient(circle,rgba(0,229,160,.12),transparent 65%);bottom:-160px;left:48%;animation-duration:18s;animation-delay:-3s}
+.footer-aura-4{width:350px;height:350px;background:radial-gradient(circle,rgba(255,179,71,.08),transparent 65%);bottom:-100px;left:20%;animation-duration:22s;animation-delay:-10s}
+@keyframes footerDrift{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,26px)}}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:44px;position:relative;z-index:1}
+.footer-logo{font-size:19px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:9px;color:var(--text);font-family:var(--font-display)}
+.footer-logo .accent{background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green),var(--amber),var(--cyan));background-size:400% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:accentShift 6s linear infinite}
+@keyframes accentShift{0%{background-position:0% 0}100%{background-position:400% 0}}
+.footer-brand p{color:var(--text-3);font-size:13.5px;line-height:1.7;margin-bottom:18px}
+.footer-social{display:flex;gap:8px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:8px;border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text-2);transition:all .25s;background:var(--bg-3);position:relative;overflow:hidden}
+.fs-btn::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));opacity:0;transition:opacity .25s}
+.fs-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--text-inv);box-shadow:0 0 18px rgba(0,212,255,.3)}
+.fs-btn:hover::after{opacity:1}
+.fs-btn span{position:relative;z-index:1}
+.footer-col h4{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text);margin-bottom:14px;font-family:var(--font-mono);position:relative;display:inline-block}
+.footer-col h4::after{content:'';position:absolute;bottom:-4px;left:0;width:100%;height:1px;background:linear-gradient(90deg,var(--cyan),transparent)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:9px}
+.footer-col a{color:var(--text-3);font-size:13.5px;transition:color .2s,padding-left .2s;display:flex;align-items:center;gap:0}
+.footer-col a:hover{color:var(--cyan);text-decoration:none;padding-left:6px}
+.footer-bottom{max-width:1100px;margin:40px auto 0;padding-top:20px;position:relative;display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--text-3);flex-wrap:wrap;gap:10px;z-index:1}
+.footer-bottom::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green),var(--amber),var(--cyan));background-size:300% 100%;animation:footerShimmer 5s linear infinite}
+@keyframes footerShimmer{0%{background-position:0% 0}100%{background-position:300% 0}}
+.footer-bottom-links{display:flex;gap:18px}
+.footer-bottom-links a{color:var(--text-3);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--cyan);text-decoration:none}
+.footer-pulse{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulseDot 2s ease-in-out infinite;display:inline-block;margin-right:6px;box-shadow:0 0 6px var(--green)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .myth-grid{grid-template-columns:1fr}
+  .related-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .related-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+  #side-popup{right:12px;bottom:80px;width:240px}
+  .article-intro{font-size:16.5px}
+  body{font-size:16px}
+  .myth-grid{grid-template-columns:1fr}
+  .token-input-wrap{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Animated Background -->
+<div class="bg-canvas" aria-hidden="true">
+  <div class="aura aura-1"></div>
+  <div class="aura aura-2"></div>
+  <div class="aura aura-3"></div>
+  <div class="stars" id="starField"></div>
+  <div class="grid-lines"></div>
+  <div id="orbField"></div>
+</div>
+<div class="scanline" aria-hidden="true"></div>
+<div id="progress" role="progressbar" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav class="main-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/logo.svg" alt="NyvoraAI logo" class="logo-img" onerror="this.style.display='none'"/>
+      Nyvora<span class="logo-accent">AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html" class="active">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+</div>
+
+<div class="page-wrap">
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <span class="bc-sep">/</span>
+  <span>How AI Understands Language</span>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge">NLP & Language</span>
+    <span class="badge badge-read">16 min read</span>
+    <span class="badge badge-date">Updated June 2026</span>
+  </div>
+  <h1 class="article-title">How Does <span class="title-glow">AI Understand</span> Human Language?</h1>
+  <p class="article-intro">You type a message. Seconds later, the AI fires back a thoughtful reply. But how does it actually read what you wrote? Beneath every conversation with ChatGPT or Claude lies a fascinating process — and you don't need a computer science degree to understand it.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team author avatar" onerror="this.remove()"/></div>
+      <div><div class="meta-name">NyvoraAI Team</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-06-27">June 27, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Reviewed June 2026</span>
+  </div>
+</header>
+
+<!-- CHAT SCENE CARD -->
+<div class="chat-scene-card reveal">
+  <div class="chat-card-inner">
+    <div class="chat-icon">AI</div>
+    <div>
+      <div class="chat-name">How AI reads and processes your words</div>
+      <div class="chat-status"><span class="status-dot"></span> Tokens, transformers &amp; attention — explained simply</div>
+    </div>
+    <div class="chat-badge">16 min</div>
+  </div>
+</div>
+
+<!-- HERO IMAGE -->
+<div class="hero-wrap reveal">
+  <div class="hero-box">
+    <img
+      src="https://nyvoraai.github.io/assets/blog/how-does-ai-understand-human-language-thumbnail.png"
+      width="1200" height="630" loading="eager"
+      alt="How does AI understand human language - diagram showing text being broken into tokens and processed by a neural network transformer"
+    />
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">What we'll cover</div>
+    <ol>
+      <li><a href="#plain-english">The plain English answer</a></li>
+      <li><a href="#tokens">What are tokens?</a></li>
+      <li><a href="#embeddings">Turning words into numbers</a></li>
+      <li><a href="#transformers">The transformer explained</a></li>
+      <li><a href="#attention">How attention works</a></li>
+      <li><a href="#myths">Myths vs. reality</a></li>
+      <li><a href="#quiz">Quick knowledge quiz</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">Think about the last time you typed something into ChatGPT, Claude, or Google's Gemini. You wrote a few sentences, hit enter, and the AI responded as if it truly understood you — sometimes even better than a human would. But what's actually happening behind the scenes? How does a piece of software look at a string of letters and know what you mean?</p>
+
+  <p class="reveal">The honest answer is both simpler and stranger than most people imagine. AI doesn't "read" the way you do. It doesn't picture a rainy day when you write "it's cold outside." It doesn't feel curiosity when you ask it a question. But it has learned, through exposure to an almost incomprehensible amount of text, exactly how words relate to each other — and that turns out to be enough to have a surprisingly intelligent conversation.</p>
+
+  <!-- QUICK ANSWER -->
+  <div class="quick-answer reveal" id="quick-answer">
+    <div class="qa-title">Quick Answer (AEO-Optimised)</div>
+    <p><strong>AI understands human language through Natural Language Processing (NLP).</strong> It breaks your text into small pieces called tokens, converts them into numbers, and uses a system called a transformer to figure out how those pieces relate to each other.</p>
+    <ul>
+      <li><strong>Tokenisation:</strong> Your sentence is split into chunks (words or parts of words).</li>
+      <li><strong>Embeddings:</strong> Each token is converted into a list of numbers that encodes its meaning and context.</li>
+      <li><strong>Transformer &amp; Attention:</strong> The model figures out which tokens are most important relative to every other token.</li>
+      <li><strong>Prediction:</strong> It predicts the most likely next word — one at a time — until your answer is complete.</li>
+      <li><strong>No true understanding:</strong> The AI doesn't "know" what words mean the way humans do. It recognises statistical patterns between them.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2 id="plain-english"><span class="h2-num">01</span>The Plain English Answer</h2>
+
+  <p class="reveal">Let's start with the most important thing to understand: <strong>AI doesn't understand language the way humans do.</strong> When you read the word "dog," your brain instantly conjures a furry creature, a wagging tail, maybe a memory of a childhood pet. When an AI reads "dog," it doesn't picture anything. Instead, it knows that "dog" statistically tends to appear near words like "bark," "leash," "loyal," and "breed."</p>
+
+  <p class="reveal">That might sound like a limitation — and in some ways it is — but it's also incredibly powerful. After training on billions of sentences, the AI has built up such a detailed map of how words relate to each other that it can produce responses that feel genuinely thoughtful and contextually appropriate. It's not understanding in the philosophical sense, but it's a very convincing approximation of it.</p>
+
+  <div class="analogy-box reveal">
+    <div class="analogy-title">Think of it like a world-class crossword solver</div>
+    <p>Imagine someone who has solved ten million crossword puzzles. They've never actually visited Paris, but they know that "City of Lights" almost always leads to "Paris," that "Eiffel" connects to "Tower," and that French words appear in certain patterns. Ask them to fill in the blank: "The Eiffel ___ is in Paris" and they'll get it right every time — not because they understand Paris, but because they've seen the pattern so many times.</p>
+    <p>That's essentially how AI processes language. Incredible pattern recognition, not genuine human experience. But when you've seen enough patterns, the results start to look a lot like understanding.</p>
+  </div>
+
+  <p class="reveal">To really understand how AI handles language, we need to go one level deeper and look at the three building blocks: <strong>tokens, embeddings, and transformers.</strong> Don't worry — we'll explain all three without any maths.</p>
+
+  <!-- SECTION 2 -->
+  <h2 id="tokens"><span class="h2-num">02</span>What Are Tokens? (The First Step)</h2>
+
+  <p class="reveal">Before an AI can do anything with your text, it needs to break it down into manageable pieces. Those pieces are called <strong>tokens</strong>. A token is roughly a word or part of a word — it's the basic unit of language that AI models work with.</p>
+
+  <p class="reveal">For example, the sentence "I love learning about AI" might be split into tokens like: <code style="background:rgba(0,212,255,.1);color:var(--cyan);padding:2px 7px;border-radius:5px;font-family:var(--font-mono);font-size:14px">["I", " love", " learning", " about", " AI"]</code>. A longer or more complex word like "unbelievable" might actually be broken into two tokens: "un" and "believable." This matters because it affects how much context the AI can hold at once — measured in what's called a <a href="https://nyvoraai.github.io/blog/what-is-the-context-window-in-ai-models.html">context window</a>.</p>
+
+  <p class="reveal">Try the interactive tokeniser below to see this in action:</p>
+
+  <!-- INTERACTIVE TOKEN DEMO -->
+  <div class="token-demo reveal">
+    <div class="demo-title">Interactive Token Visualiser</div>
+    <p class="demo-desc">Type any sentence below and see how AI might break it into tokens. Each colour represents a different token.</p>
+    <div class="token-input-wrap">
+      <input class="token-input" id="tokenInput" type="text" placeholder="e.g. How does AI understand language?" maxlength="120"/>
+      <button class="token-btn" onclick="tokenise()">Tokenise It</button>
+    </div>
+    <div class="token-output" id="tokenOutput">
+      <span class="token-placeholder">Your tokens will appear here...</span>
+    </div>
+    <div class="token-count" id="tokenCount"></div>
+  </div>
+
+  <p class="reveal">Notice how even simple sentences produce a surprising number of tokens? This is important because AI models have a limit on how many tokens they can process at once (called the context window). If your conversation gets very long, the AI may start to "forget" earlier parts of the chat — not because it's careless, but because it has reached the edge of what it can hold in memory at one time. You can read more about how this works in our deep dive on <a href="https://nyvoraai.github.io/blog/what-is-the-context-window-in-ai-models.html">what the context window in AI models actually is</a>.</p>
+
+  <!-- SECTION 3 -->
+  <h2 id="embeddings"><span class="h2-num">03</span>Turning Words Into Numbers (Embeddings)</h2>
+
+  <p class="reveal">Here's where things get genuinely fascinating. Computers can't process words directly — they can only work with numbers. So every token needs to be converted into a long list of numbers called an <strong>embedding</strong>.</p>
+
+  <p class="reveal">But here's the clever part: these numbers aren't random. They're positioned in a giant mathematical space where words with similar meanings end up closer together. "King" and "Queen" are close to each other. "Dog" and "Cat" are close to each other. "Dog" and "Telescope" are far apart.</p>
+
+  <div class="fig-wrap reveal">
+    <img
+      src="https://nyvoraai.github.io/assets/blog/ai-word-embeddings-diagram.png"
+      width="840" height="420"
+      loading="lazy"
+      alt="How does AI understand human language - word embeddings diagram showing King Queen Man Woman relationships in vector space"
+      onerror="this.parentElement.style.display='none'"
+    />
+    <div class="fig-caption">// Word embeddings: similar words cluster together in a mathematical space the AI can navigate.</div>
+  </div>
+
+  <p class="reveal">One of the most famous examples of this: if you take the embedding for "King," subtract "Man," and add "Woman," you get a number very close to the embedding for "Queen." The AI has discovered the relationship between genders and royalty — not by being told about it, but just by observing patterns in language. It's one of those moments that makes AI feel genuinely magical.</p>
+
+  <p class="reveal">This is also why AI can understand context. The word "bank" means something different in "river bank" versus "savings bank." Because embeddings are shaped by surrounding words, the model can tell them apart. If you're curious about how this kind of image-related processing works, our article on <a href="https://nyvoraai.github.io/blog/how-does-ai-generate-images-from-text.html">how AI generates images from text</a> explores a very similar concept applied to visuals.</p>
+
+  <!-- SECTION 4 -->
+  <h2 id="transformers"><span class="h2-num">04</span>The Transformer: The Engine Under the Hood</h2>
+
+  <p class="reveal">Now we get to the architecture that changed everything: the <strong>transformer</strong>. Introduced in a 2017 research paper called "Attention Is All You Need," the transformer is the core design behind GPT-4, Claude, Gemini, and essentially every major language model today.</p>
+
+  <p class="reveal">Before transformers, AI systems read text sequentially — word by word, left to right, like a human reading a book slowly. This was slow and caused the AI to "forget" things mentioned early in a sentence by the time it reached the end. Transformers solved this brilliantly: <strong>they process all the tokens in a sentence at the same time</strong>, looking at every word in relation to every other word simultaneously.</p>
+
+  <div class="steps reveal">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h3>Input: Tokenise &amp; Embed</h3>
+        <p>Your sentence is broken into tokens, and each token is converted into a numerical embedding. These embeddings also include information about position — so the model knows "dog" at the start of a sentence is in a different place than "dog" at the end.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h3>Attention: Which Words Matter Most?</h3>
+        <p>This is the core of the transformer. It asks: for each token, which other tokens in the sentence are most relevant? In "The cat sat on the mat because it was tired," the word "it" refers to "cat" — and the attention mechanism figures this out by looking at all word relationships simultaneously.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h3>Layers: Deep Processing</h3>
+        <p>Modern language models stack many transformer layers on top of each other — sometimes over 100. Each layer refines the understanding. Early layers detect grammar and syntax. Deeper layers handle meaning, context, and even nuance like irony or contrast.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h3>Output: Predicting the Next Token</h3>
+        <p>The final step is simple in concept: the model predicts which token is most likely to come next, given everything it has processed. It does this repeatedly — one token at a time — until your response is complete. This is why if you ask the same question twice, you might get slightly different wording.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="reveal">If you want to go even deeper on how these systems are structured internally, our explainer on <a href="https://nyvoraai.github.io/blog/what-happens-inside-a-neural-network.html">what happens inside a neural network</a> is the perfect next read.</p>
+
+  <!-- SECTION 5 -->
+  <h2 id="attention"><span class="h2-num">05</span>Attention: How AI Knows What to Focus On</h2>
+
+  <p class="reveal">The attention mechanism is arguably the most important breakthrough in modern AI. Let's make it concrete with an example.</p>
+
+  <p class="reveal">Take the sentence: <strong>"The trophy didn't fit in the suitcase because it was too big."</strong> What does "it" refer to — the trophy or the suitcase? As a human, you know it's the trophy, because a trophy being too big is why it wouldn't fit. But this requires reasoning about the entire sentence, not just the word immediately before "it."</p>
+
+  <!-- ATTENTION VISUALISER -->
+  <div class="attention-box reveal">
+    <div class="att-title">Attention Visualiser — Hover a word to see what it "attends to"</div>
+    <div class="att-sentence" id="attSentence">
+      <span class="att-word" data-attends="trophy,suitcase,fit" style="background:rgba(0,212,255,.08)" onmouseenter="highlight(this)" onmouseleave="unhighlight()">The</span>&nbsp;
+      <span class="att-word" data-attends="fit,big,suitcase" style="background:rgba(123,94,167,.15)" onmouseenter="highlight(this)" onmouseleave="unhighlight()" id="aw-trophy">trophy</span>&nbsp;
+      <span class="att-word" data-attends="trophy,suitcase" style="background:rgba(0,229,160,.1)" onmouseenter="highlight(this)" onmouseleave="unhighlight()">didn't</span>&nbsp;
+      <span class="att-word" data-attends="trophy,suitcase,big" style="background:rgba(255,179,71,.12)" onmouseenter="highlight(this)" onmouseleave="unhighlight()">fit</span>&nbsp;
+      <span class="att-word" data-attends="trophy,fit" style="background:rgba(0,212,255,.05)" onmouseenter="highlight(this)" onmouseleave="unhighlight()">in</span>&nbsp;
+      <span class="att-word" data-attends="fit,it,big" style="background:rgba(123,94,167,.1)" onmouseenter="highlight(this)" onmouseleave="unhighlight()" id="aw-suitcase">the suitcase</span>&nbsp;
+      <span class="att-word" data-attends="fit,trophy,suitcase" style="background:rgba(0,229,160,.05)" onmouseenter="highlight(this)" onmouseleave="unhighlight()">because</span>&nbsp;
+      <span class="att-word" data-attends="trophy,big" style="background:rgba(255,179,71,.15)" onmouseenter="highlight(this)" onmouseleave="unhighlight()" id="aw-it">it</span>&nbsp;
+      <span class="att-word" data-attends="trophy,fit,it" style="background:rgba(0,212,255,.08)" onmouseenter="highlight(this)" onmouseleave="unhighlight()">was</span>&nbsp;
+      <span class="att-word" data-attends="trophy,fit,suitcase" style="background:rgba(123,94,167,.2)" onmouseenter="highlight(this)" onmouseleave="unhighlight()" id="aw-big">too big</span>
+    </div>
+    <p style="font-size:13px;color:var(--text-3);font-family:var(--font-mono);margin-top:8px">// Hover each word — the attention mechanism links "it" most strongly to "trophy"</p>
+  </div>
+
+  <p class="reveal">This is the essence of attention: for each word in a sentence, the model assigns a weight to every other word — essentially asking, "how relevant is that word to understanding this one?" The word "it" ends up strongly connected to "trophy" because that's the most logical referent given the full context. This is how AI resolves ambiguity that would completely baffle older, simpler systems.</p>
+
+  <p class="reveal">This same mechanism is what makes modern AI useful for customer service. When someone says "my order hasn't arrived and I'm frustrated," the model attends to "hasn't arrived" (the factual problem), "frustrated" (the emotional state), and "my" (it's a personal situation). See how AI tools use this for real business applications in our piece on <a href="https://nyvoraai.github.io/ai-news/what-ai-tools-help-with-customer-service.html">what AI tools help with customer service</a>.</p>
+
+  <!-- SECTION 6 -->
+  <h2 id="myths"><span class="h2-num">06</span>Myths vs. Reality: What AI Can and Can't Do With Language</h2>
+
+  <p class="reveal">Now that you understand the mechanics, let's clear up some of the most common misconceptions people have about how AI handles language.</p>
+
+  <div class="myth-grid reveal">
+    <div class="myth-card myth">
+      <span class="myth-label">Myth</span>
+      <h3>AI "reads" like a human</h3>
+      <p>AI doesn't picture anything, feel anything, or actually comprehend meaning. It processes statistical relationships between tokens at incredible speed.</p>
+    </div>
+    <div class="myth-card fact">
+      <span class="myth-label">Reality</span>
+      <h3>AI maps relationships between words</h3>
+      <p>Its understanding is relational — it knows "hot" and "cold" are opposites because they consistently appear in opposing contexts across billions of documents.</p>
+    </div>
+    <div class="myth-card myth">
+      <span class="myth-label">Myth</span>
+      <h3>AI always understands sarcasm</h3>
+      <p>Sarcasm, irony, and humour depend on tone, shared experience, and cultural context — things that are hard to capture in text alone.</p>
+    </div>
+    <div class="myth-card fact">
+      <span class="myth-label">Reality</span>
+      <h3>AI can detect common sarcasm patterns</h3>
+      <p>Trained on enough examples ("Oh great, another Monday!"), AI can often identify obvious sarcasm — but subtle or cultural humour regularly trips it up.</p>
+    </div>
+    <div class="myth-card myth">
+      <span class="myth-label">Myth</span>
+      <h3>Bigger vocabulary = better understanding</h3>
+      <p>Raw vocabulary size is less important than the quality of the training data and the architecture used to process it.</p>
+    </div>
+    <div class="myth-card fact">
+      <span class="myth-label">Reality</span>
+      <h3>Context matters far more than vocabulary</h3>
+      <p>What makes modern AI impressive isn't that it knows more words — it's that transformers let it hold and weigh context across very long passages of text.</p>
+    </div>
+    <div class="myth-card myth">
+      <span class="myth-label">Myth</span>
+      <h3>AI always gives factually correct answers</h3>
+      <p>Because AI predicts the most statistically likely response — not the most accurate one — it can confidently produce plausible-sounding wrong answers.</p>
+    </div>
+    <div class="myth-card fact">
+      <span class="myth-label">Reality</span>
+      <h3>AI can hallucinate convincingly</h3>
+      <p>This is called a hallucination. Understanding why it happens helps you use AI more safely. Read more in our guide on <a href="https://nyvoraai.github.io/blog/why-does-ai-sometimes-give-wrong-answers.html">why AI sometimes gives wrong answers</a>.</p>
+    </div>
+  </div>
+
+  <!-- WHAT THIS MEANS FOR YOU -->
+  <h3>What This Means in Practice</h3>
+  <p class="reveal">Understanding how AI processes language isn't just academic — it directly affects how you interact with these tools. Once you know that AI is doing advanced pattern matching rather than genuine reasoning, several things make more sense:</p>
+
+  <div class="tbl-wrap reveal">
+    <table class="tool-table">
+      <thead>
+        <tr>
+          <th>Situation</th>
+          <th>Why It Happens</th>
+          <th>What to Do</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>AI gives a wrong answer confidently</strong></td>
+          <td>It predicts the most likely-sounding response, not the most accurate one</td>
+          <td>Always verify important facts independently</td>
+        </tr>
+        <tr>
+          <td><strong>AI misses the point of a vague question</strong></td>
+          <td>Without context, pattern-matching defaults to the most common interpretation</td>
+          <td>Be specific and give context in your prompt</td>
+        </tr>
+        <tr>
+          <td><strong>AI forgets early parts of a long chat</strong></td>
+          <td>The context window has a token limit</td>
+          <td>Start a fresh chat for new topics, or summarise earlier context</td>
+        </tr>
+        <tr>
+          <td><strong>AI doesn't catch subtle sarcasm</strong></td>
+          <td>Tone and intent are hard to encode in text tokens alone</td>
+          <td>Be direct; if you're joking, you can say so</td>
+        </tr>
+        <tr>
+          <td><strong>AI responses vary slightly each time</strong></td>
+          <td>Token prediction includes a randomness setting called temperature</td>
+          <td>Normal — ask for consistency or ask it to regenerate if needed</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTION 7: QUIZ -->
+  <h2 id="quiz"><span class="h2-num">07</span>Test Your Knowledge: Quick Quiz</h2>
+  <p class="reveal">Let's make sure these concepts have landed. Three quick questions — no tricks, just solid understanding.</p>
+
+  <div class="quiz-box reveal">
+    <div class="quiz-title">How Well Do You Know AI Language Processing?</div>
+    <p class="quiz-desc">Answer all three questions to see your final score.</p>
+    <div id="quizContainer"></div>
+  </div>
+
+  <!-- SECTION 8: FAQ -->
+  <h2 id="faq"><span class="h2-num">08</span>Frequently Asked Questions</h2>
+  <div class="faq reveal">
+    <details open>
+      <summary>How does AI understand human language?</summary>
+      <div class="faq-body">AI understands human language through Natural Language Processing (NLP). It breaks text into tokens, converts them to numerical embeddings, and uses a transformer architecture with an attention mechanism to understand how words relate to each other. It then predicts the most likely response, one token at a time.</div>
+    </details>
+    <details>
+      <summary>What is a token in AI language models?</summary>
+      <div class="faq-body">A token is a chunk of text — usually a word or part of a word. The sentence "Understanding AI" might become three tokens: "Under", "standing", "AI". AI models process everything as tokens, which is why very long conversations can hit limits — there's only so many tokens a model can hold in its context window at once.</div>
+    </details>
+    <details>
+      <summary>Does AI actually understand meaning?</summary>
+      <div class="faq-body">Not in the way humans do. AI has no consciousness, feelings, or real-world experience. It understands language in the sense that it has mapped statistical relationships between words with extraordinary precision. It knows "hot" and "cold" are opposites because they consistently appear in opposite contexts — but it has never felt heat.</div>
+    </details>
+    <details>
+      <summary>What is NLP in simple terms?</summary>
+      <div class="faq-body">NLP stands for Natural Language Processing. It's the branch of AI dedicated to handling human language — reading it, understanding its structure, and generating coherent responses. Everything from your email's spam filter to ChatGPT's conversation engine runs on NLP technology under the hood.</div>
+    </details>
+    <details>
+      <summary>Why does AI sometimes misunderstand sarcasm or jokes?</summary>
+      <div class="faq-body">Sarcasm depends on tone, facial expression, vocal inflection, and shared cultural context — none of which exist in plain text. The AI sees the literal words and matches them against patterns. "Oh great, another Monday" is a common enough pattern that it will likely get it right, but a subtle or highly personal joke will often fly right over its head.</div>
+    </details>
+    <details>
+      <summary>What is a transformer in AI?</summary>
+      <div class="faq-body">A transformer is the internal architecture (the structural design) used by most modern AI language models. Its key innovation is the attention mechanism, which allows the model to weigh the importance of every word in relation to every other word in a sentence, simultaneously. This solved the "forgetting" problem that plagued earlier AI systems and is why models like GPT-4 and Claude are so much better at understanding context.</div>
+    </details>
+  </div>
+
+  <!-- AUTHOR BOX -->
+  <div class="author-box reveal">
+    <div class="meta-avatar" style="width:42px;height:42px;font-size:15px">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI author avatar" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by the NyvoraAI Team</h3>
+      <p>We make the complex world of AI genuinely accessible — no PhD required. If you have questions or topics you'd like us to cover, <a href="https://nyvoraai.github.io/contact.html">reach out to us</a>. We read everything.</p>
+    </div>
+  </div>
+
+  <!-- SHARE -->
+  <div class="share-section reveal">
+    <div class="share-title">Found this useful? Share it with someone who's curious about AI.</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=How+Does+AI+Understand+Human+Language%3F+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/blog/how-does-ai-understand-human-language.html" target="_blank" rel="noopener" class="share-btn">Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/blog/how-does-ai-understand-human-language.html" target="_blank" rel="noopener" class="share-btn">Share on Facebook</a>
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="share-btn">Follow on Instagram</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="share-btn">Watch on YouTube</a>
+      <button class="share-btn" onclick="copyLink()">Copy Link</button>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter reveal">
+    <h2>Get weekly AI guides — in plain English</h2>
+    <p>Join thousands of curious readers getting jargon-free explainers every week. 100% free, zero spam, unsubscribe any time.</p>
+    <form class="nl-form" action="https://formspree.io/f/xwvjgdpw" method="POST" onsubmit="handleNewsletter(event,this)">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required/>
+      <button class="nl-btn" type="submit">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · 100% free forever</p>
+    <div class="nl-social">
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc">Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc">X / Twitter</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc">YouTube</a>
+    </div>
+  </div>
+
+  <!-- RELATED POSTS -->
+  <div class="related reveal">
+    <div class="related-title">Keep Exploring</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/blog/what-happens-inside-a-neural-network.html" class="rel-card">
+        <div class="rel-tag">Deep Dives</div>
+        <div class="rel-title">What Happens Inside a Neural Network?</div>
+        <div class="rel-read">15 min read</div>
+      </a>
+      <a href="https://nyvoraai.github.io/blog/how-does-ai-generate-images-from-text.html" class="rel-card">
+        <div class="rel-tag">Generative AI</div>
+        <div class="rel-title">How Does AI Generate Images From Text?</div>
+        <div class="rel-read">12 min read</div>
+      </a>
+      <a href="https://nyvoraai.github.io/blog/why-does-ai-sometimes-give-wrong-answers.html" class="rel-card">
+        <div class="rel-tag">AI Limitations</div>
+        <div class="rel-title">Why Does AI Sometimes Give Wrong Answers?</div>
+        <div class="rel-read">11 min read</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<!-- ANIMATED FOOTER -->
+<footer>
+  <div class="footer-aura footer-aura-1"></div>
+  <div class="footer-aura footer-aura-2"></div>
+  <div class="footer-aura footer-aura-3"></div>
+  <div class="footer-aura footer-aura-4"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">
+        <img src="https://nyvoraai.github.io/logo.svg" alt="NyvoraAI logo" class="logo-img" onerror="this.style.display='none'"/>
+        Nyvora<span class="accent">AI</span>
+      </span>
+      <p>Your trusted source for original AI news, beginner guides, deep dives, and practical insights on artificial intelligence. Built for the AI generation.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn"><span>Instagram</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn"><span>Facebook</span></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn"><span>X</span></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn"><span>YouTube</span></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Topics</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">For Beginners</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">AI Tools</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Guides</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Tool Reviews</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span><span class="footer-pulse"></span>2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+      <a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /page-wrap -->
+
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<!-- SIDE POPUP -->
+<div id="side-popup" role="dialog" aria-label="Subscribe to NyvoraAI">
+  <button class="sp-close" onclick="closePopup()" aria-label="Close">×</button>
+  <div class="sp-icon">AI</div>
+  <div class="sp-title">Weekly AI explainers</div>
+  <div class="sp-text">Get jargon-free AI guides delivered free every week. Join thousands of curious readers.</div>
+  <form id="sp-form" action="https://formspree.io/f/xwvjgdpw" method="POST" onsubmit="handlePopupSubmit(event,this)">
+    <input class="sp-input" type="email" name="email" placeholder="your@email.com" required/>
+    <button class="sp-btn" type="submit">Get free guides</button>
+  </form>
+  <div class="sp-note">No spam · Unsubscribe anytime</div>
+</div>
+
+<script>
+/* === STARS & ORBS === */
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const f=document.getElementById('starField');
+  for(let i=0;i<120;i++){
+    const s=document.createElement('div');s.className='star';
+    const sz=Math.random()*1.8+0.4;
+    s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${2+Math.random()*4}s;animation-delay:${-Math.random()*4}s;opacity:${0.1+Math.random()*0.5}`;
+    f.appendChild(s);
+  }
+})();
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const w=document.getElementById('orbField');
+  const colors=['rgba(0,212,255,0.5)','rgba(123,94,167,0.5)','rgba(0,229,160,0.4)','rgba(255,179,71,0.4)'];
+  for(let i=0;i<14;i++){
+    const o=document.createElement('div');o.className='orb';
+    const sz=3+Math.random()*6;const dur=12+Math.random()*16;const delay=-Math.random()*dur;
+    o.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;background:${colors[i%4]};filter:blur(1px);animation-duration:${dur}s;animation-delay:${delay}s;box-shadow:0 0 ${sz*2}px ${colors[i%4]}`;
+    w.appendChild(o);
+  }
+})();
+
+/* === SCROLL PROGRESS & BACK TO TOP === */
+let popupShown=false,popupClosed=false;
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const pct=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  document.getElementById('progress').style.width=pct+'%';
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+  if(pct>40&&!popupClosed&&!popupShown){popupShown=true;setTimeout(()=>document.getElementById('side-popup').classList.add('show'),500);}
+});
+
+/* === REVEAL ON SCROLL === */
+const reveals=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.08});
+reveals.forEach(r=>io.observe(r));
+
+/* === MOBILE MENU === */
+function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open');}
+
+/* === COPY LINK === */
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(()=>{
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;const o=btn.textContent;
+    btn.textContent='Copied!';btn.style.color='var(--green)';
+    setTimeout(()=>{btn.textContent=o;btn.style.color='';},2000);
+  });
+}
+
+/* === NEWSLETTER === */
+function handleNewsletter(e,form){
+  e.preventDefault();const btn=form.querySelector('.nl-btn');
+  btn.textContent='Sending...';btn.style.opacity='.7';
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{if(r.ok){btn.textContent='Subscribed!';btn.style.background='var(--green)';form.reset();}else{btn.textContent='Try again';btn.style.opacity='1';}})
+    .catch(()=>{btn.textContent='Try again';btn.style.opacity='1';});
+}
+
+/* === POPUP === */
+function closePopup(){document.getElementById('side-popup').classList.remove('show');popupClosed=true;}
+function handlePopupSubmit(e,form){
+  e.preventDefault();const btn=form.querySelector('.sp-btn');btn.textContent='Sending...';
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{
+      if(r.ok){document.getElementById('side-popup').innerHTML='<div style="padding:8px 0;text-align:center"><div style="font-family:var(--font-mono);font-size:12px;color:var(--green);font-weight:700;margin-bottom:6px">Subscribed!</div><div style="font-size:12px;color:var(--text-3)">Check your inbox soon.</div></div>';setTimeout(closePopup,2400);}
+      else{btn.textContent='Try again';}
+    }).catch(()=>{btn.textContent='Try again';});
+}
+setTimeout(()=>{if(!popupShown&&!popupClosed){popupShown=true;document.getElementById('side-popup').classList.add('show');}},9000);
+
+/* === TOKEN VISUALISER === */
+const TOKEN_COLORS=[
+  ['rgba(0,212,255,.15)','rgba(0,212,255,.4)','#00D4FF'],
+  ['rgba(123,94,167,.2)','rgba(123,94,167,.5)','#9B7EC8'],
+  ['rgba(0,229,160,.15)','rgba(0,229,160,.4)','#00E5A0'],
+  ['rgba(255,179,71,.15)','rgba(255,179,71,.4)','#FFB347'],
+  ['rgba(255,107,107,.15)','rgba(255,107,107,.4)','#FF6B6B'],
+  ['rgba(100,200,255,.15)','rgba(100,200,255,.4)','#64C8FF'],
+];
+function tokenise(){
+  const input=document.getElementById('tokenInput').value.trim();
+  const out=document.getElementById('tokenOutput');
+  const cnt=document.getElementById('tokenCount');
+  if(!input){out.innerHTML='<span class="token-placeholder">Please type something first...</span>';cnt.textContent='';return;}
+  // Simple but realistic tokenisation approximation
+  const raw=input.replace(/([.,!?;:'"()\-])/g,' $1 ').trim().split(/\s+/).filter(Boolean);
+  const tokens=[];
+  raw.forEach(w=>{
+    if(w.length>10&&/^[a-zA-Z]+$/.test(w)){
+      // Split long words
+      tokens.push(w.slice(0,Math.ceil(w.length/2)));
+      tokens.push(w.slice(Math.ceil(w.length/2)));
+    } else {
+      tokens.push(w);
+    }
+  });
+  out.innerHTML='';
+  tokens.forEach((t,i)=>{
+    const c=TOKEN_COLORS[i%TOKEN_COLORS.length];
+    const chip=document.createElement('span');
+    chip.className='token-chip';
+    chip.style.background=c[0];chip.style.borderColor=c[1];chip.style.color=c[2];
+    chip.style.animationDelay=(i*0.06)+'s';
+    chip.textContent=t;
+    out.appendChild(chip);
+  });
+  cnt.textContent=`// ~${tokens.length} token${tokens.length!==1?'s':''} detected`;
+}
+document.getElementById('tokenInput').addEventListener('keydown',function(e){if(e.key==='Enter')tokenise();});
+
+/* === ATTENTION HIGHLIGHT === */
+function highlight(el){
+  const attends=(el.getAttribute('data-attends')||'').split(',').map(s=>s.trim().toLowerCase());
+  document.querySelectorAll('.att-word').forEach(w=>{
+    const wText=w.textContent.trim().toLowerCase();
+    const matched=attends.some(a=>wText.includes(a)||a.includes(wText));
+    w.style.outline=matched?'2px solid var(--cyan)':'none';
+    w.style.transform=matched?'scale(1.08) translateY(-2px)':'none';
+    w.style.boxShadow=matched?'0 0 10px rgba(0,212,255,.4)':'none';
+  });
+}
+function unhighlight(){
+  document.querySelectorAll('.att-word').forEach(w=>{
+    w.style.outline='none';w.style.transform='none';w.style.boxShadow='none';
+  });
+}
+
+/* === QUIZ === */
+const quizData=[
+  {
+    q:"What is the basic unit of text that AI language models process?",
+    opts:["A sentence","A paragraph","A token","A character"],
+    correct:2,
+    feedback:"Correct! Tokens are the fundamental building blocks — chunks of text (usually a word or part of a word) that the model processes. Everything else gets built up from tokens."
+  },
+  {
+    q:"What does the 'attention mechanism' in a transformer do?",
+    opts:["It focuses on only the most recent word","It weighs how relevant each word is to every other word in the sentence","It searches the internet for answers","It stores conversation history permanently"],
+    correct:1,
+    feedback:"Exactly right. Attention is what lets the model understand context — it figures out that 'it' in 'The trophy didn't fit because it was too big' refers to the trophy, not the suitcase."
+  },
+  {
+    q:"True or false: AI understands language in the same way a human does, with genuine comprehension of meaning.",
+    opts:["True — it comprehends meaning","False — it maps statistical relationships between tokens","True — it experiences the world through text","False — it can't understand any language at all"],
+    correct:1,
+    feedback:"Correct! AI doesn't 'understand' in the human sense — it has no consciousness or feelings. But through incredibly sophisticated pattern matching, it can produce responses that feel like genuine understanding."
+  }
+];
+let currentQ=0,score=0,answered=false;
+function renderQuiz(){
+  const container=document.getElementById('quizContainer');
+  if(currentQ>=quizData.length){
+    container.innerHTML=`<div class="quiz-score-final"><div class="quiz-score-num">${score}/${quizData.length}</div><div class="quiz-score-label">${score===quizData.length?'Perfect score! You really get how AI understands language.':score>=2?'Great job — you understand the key concepts!':'Good start! Re-read the sections above to reinforce the ideas.'}</div></div>`;
+    return;
+  }
+  const q=quizData[currentQ];
+  container.innerHTML=`
+    <div class="quiz-progress">Question ${currentQ+1} of ${quizData.length}</div>
+    <div class="quiz-q">${q.q}</div>
+    <div class="quiz-options">${q.opts.map((o,i)=>`<button class="quiz-opt" onclick="selectAnswer(${i})">${o}</button>`).join('')}</div>
+    <div class="quiz-feedback" id="qFeedback"></div>
+    <button class="quiz-next" id="qNext" onclick="nextQuestion()">${currentQ===quizData.length-1?'See My Score':'Next Question →'}</button>
+  `;
+  answered=false;
+}
+function selectAnswer(idx){
+  if(answered)return;answered=true;
+  const q=quizData[currentQ];
+  const opts=document.querySelectorAll('.quiz-opt');
+  opts[q.correct].classList.add('correct');
+  if(idx!==q.correct)opts[idx].classList.add('wrong');
+  else score++;
+  const fb=document.getElementById('qFeedback');
+  fb.textContent=q.feedback;fb.classList.add('show');
+  document.getElementById('qNext').classList.add('show');
+}
+function nextQuestion(){currentQ++;renderQuiz();}
+renderQuiz();
+</script>
+</body>
+</html>
