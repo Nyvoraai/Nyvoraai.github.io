@@ -6,7 +6,7 @@
 <description>Latest AI news, beginner guides, and explainers from NyvoraAI.</description>
 <language>en-us</language>
 <atom:link href="https://nyvoraai.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 27 Jun 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 28 Jun 2026 00:00:00 GMT</lastBuildDate>
 <item>
 <title>Can AI Help with Business Email Writing? 2026 Guide</title>
 <link>https://nyvoraai.github.io/ai-news/can-ai-help-with-business-email-writing.html</link>
@@ -139,6 +139,13 @@
 <guid isPermaLink="true">https://nyvoraai.github.io/blog/how-does-ai-generate-images-from-text.html</guid>
 <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
 <description>Ever wondered how AI turns a sentence into a picture? This guide explains text-to-image AI, diffusion models, and prompts in plain English.</description>
+</item>
+<item>
+<title>How Does AI Translation Work? (2026 Guide)</title>
+<link>https://nyvoraai.github.io/blog/how-does-ai-translation-work.html</link>
+<guid isPermaLink="true">https://nyvoraai.github.io/blog/how-does-ai-translation-work.html</guid>
+<pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
+<description>How does AI translation work? This guide explains neural translation, context, and why nuance is still hard, in plain English.</description>
 </item>
 <item>
 <title>How Does AI Understand Human Language? (2026)</title>
