@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (92 articles)
+## AI News (93 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -25,6 +25,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Can AI Be Used to Spread Misinformation? The 2026 Guide](https://nyvoraai.github.io/ai-news/can-ai-spread-misinformation.html): Can AI be used to spread misinformation? Discover how deepfakes, fake news, and AI-generated content are created, and learn how to spot them in 2026.
 - [Can AI Help with Business Email Writing? 2026 Guide](https://nyvoraai.github.io/ai-news/can-ai-help-with-business-email-writing.html): Discover how AI helps with business email writing. Learn top tools, prompt formulas, and tips to save time while keeping a human touch.
 - [Can AI Make Autonomous Weapons? 2026 Reality Check](https://nyvoraai.github.io/ai-news/can-ai-make-autonomous-weapons.html): Can AI make autonomous weapons? Explore the reality of lethal autonomous weapons systems (LAWS), ethical concerns, and global regulations in 2026.
+- [Can AI Robots Replace Warehouse Workers? 2026](https://nyvoraai.github.io/ai-news/can-ai-robots-replace-warehouse-workers.html): Discover if AI robots can replace warehouse workers. Explore automation trends, job evolution, and the future of logistics in 2026.
 - [Can AI Tools Create YouTube Scripts? 2026 Guide](https://nyvoraai.github.io/ai-news/can-ai-tools-create-youtube-scripts.html): Discover if AI tools can create YouTube scripts. Learn the best AI script generators, prompts, and strategies to automate your video content creation.
 - [Can AI Tools Help with Video Editing? 2026 Guide](https://nyvoraai.github.io/ai-news/can-ai-tools-help-with-video-editing.html): Discover how AI tools revolutionize video editing. Learn about automated editing, AI effects, and the best tools for creators in 2026.
 - [Can AI Write Business Proposals? The 2026 Guide](https://nyvoraai.github.io/ai-news/can-ai-write-business-proposals.html): Discover if AI can write business proposals. Learn top tools, prompt strategies, and how to close more deals with AI automation in 2026.
