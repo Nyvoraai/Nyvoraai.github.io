@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (96 articles)
+## AI News (97 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -44,6 +44,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [How Does AI Generate Text Step by Step? 2026 Guide](https://nyvoraai.github.io/ai-news/how-ai-generates-text-step-by-step.html): Discover how AI generates text step by step. Learn about tokens, probabilities, neural networks, and the exact mechanics behind LLMs in our 2026 guide.
 - [How Does AI Learn From Human Feedback? 2026 Guide](https://nyvoraai.github.io/ai-news/how-does-ai-learn-from-human-feedback.html): Discover how AI learns from human feedback via RLHF and DPO. Explore the complete guide to AI alignment, safety, and model training in 2026.
 - [How Does DeepSeek Compare to ChatGPT?](https://nyvoraai.github.io/ai-news/how-does-deepseek-compare-to-chatgpt.html): How does DeepSeek compare to ChatGPT? We break down the key differences in coding, reasoning, cost, and privacy to help you choose the right AI.
+- [How Does Figure AI Robot Work? 2026 Guide](https://nyvoraai.github.io/ai-news/how-does-figure-ai-robot-work.html): Discover how Figure AI's humanoid robot works. Learn about its advanced AI brain, dexterous hands, and real-world factory applications in 2026.
 - [How is AI Changing E-commerce in 2026? Expert Guide](https://nyvoraai.github.io/ai-news/how-is-ai-changing-ecommerce-in-2026.html): Discover how AI is changing e-commerce in 2026. Explore hyper-personalization, automated supply chains, and predictive trends driving online sales.
 - [How is AI Misused for Scams and Fraud? 2026 Safety Guide](https://nyvoraai.github.io/ai-news/ai-misused-scams-fraud.html): Discover how AI is misused for scams and fraud in 2026. Learn about deepfake voice cloning, AI phishing, romance scams & how to protect yourself.
 - [How Is AI Research Funded? The 2026 Investment Guide](https://nyvoraai.github.io/ai-news/how-is-ai-research-funded.html): Discover how AI research is funded in 2026. Explore venture capital, Big Tech investments, government grants, and the economics of building AI.
