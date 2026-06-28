@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (97 articles)
+## AI News (98 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -87,6 +87,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [What Is AI Watermarking? Complete 2026 Guide](https://nyvoraai.github.io/ai-news/what-is-ai-watermarking.html): Discover what AI watermarking is, how it works, and why it matters. Learn about invisible digital fingerprints that identify AI-generated content in 2026.
 - [What Is an LLM in Simple Words?](https://nyvoraai.github.io/ai-news/what-is-an-llm-in-simple-words.html): What is an LLM in simple words? A clear, jargon-free explainer on how ChatGPT, Claude, and Gemini actually work — for total beginners.
 - [What Is Anthropic Doing for AI Safety? 2026 Guide](https://nyvoraai.github.io/ai-news/anthropic-ai-safety-guide.html): Discover what Anthropic is doing for AI safety in 2026. Learn about Constitutional AI, red teaming, and their unique approach to building secure models.
+- [What Is Boston Dynamics Doing With AI? 2026](https://nyvoraai.github.io/ai-news/what-is-boston-dynamics-doing-with-ai.html): Discover what Boston Dynamics is doing with AI in 2026. From Atlas to Spot — real robots, real use cases, and what it means for you.
 - [What Is Constitutional AI? A Simple 2026 Guide](https://nyvoraai.github.io/ai-news/what-is-constitutional-ai.html): What is constitutional AI? Learn how this groundbreaking AI safety method uses core rules to prevent harm, bias, and misinformation.
 - [What Is Google DeepMind Working On in 2026?](https://nyvoraai.github.io/ai-news/google-deepmind-2026-projects.html): Discover what Google DeepMind is working on in 2026. Explore their latest AI breakthroughs, AGI research, safety initiatives, and revolutionary projects shaping the future.
 - [What Is Google DeepMind Working On in 2026? Latest Projects](https://nyvoraai.github.io/ai-news/what-is-google-deepmind-working-on-2026.html): Discover what Google DeepMind is working on in 2026: AGI breakthroughs, AlphaFold 3, Gemini Ultra, and revolutionary AI research shaping our future.
