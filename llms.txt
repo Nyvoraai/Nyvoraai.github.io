@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (100 articles)
+## AI News (101 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -40,6 +40,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [How Do Large Language Models Learn From Data?](https://nyvoraai.github.io/ai-news/how-do-large-language-models-learn-from-data.html): How do large language models learn from data? Discover training, tokenisation, RLHF & more in this plain-English beginner guide. Updated 2026.
 - [How Do Retailers Use AI for Recommendations? 2026](https://nyvoraai.github.io/ai-news/how-do-retailers-use-ai-for-recommendations.html): Discover how retailers use AI for product recommendations. Learn about personalization engines, collaborative filtering, and boosting sales in 2026.
 - [How Do Scientists Test How Smart AI Is? 2026 Guide](https://nyvoraai.github.io/ai-news/how-do-scientists-test-how-smart-ai-is.html): Discover how scientists test how smart AI is using benchmarks, Turing tests, and evals. Learn about AI evaluation metrics and safety testing in 2026.
+- [How Do Self-Driving Cars Use AI? 2026 Guide](https://nyvoraai.github.io/ai-news/how-do-self-driving-cars-use-ai.html): Discover how self-driving cars use AI to navigate roads. Learn about sensors, neural networks, and autonomous vehicle technology in 2026.
 - [How Does AI Affect Children's Safety Online? 2026 Parent Guide](https://nyvoraai.github.io/ai-news/ai-children-safety-online.html): Discover how AI affects children's safety online: risks, predators, misinformation & protection strategies for parents in 2026.
 - [How Does AI Benchmark Testing Work? 2026 Guide](https://nyvoraai.github.io/ai-news/how-ai-benchmark-testing-works.html): Discover how AI benchmark testing works. Learn about MMLU, HumanEval, and how scientists measure AI intelligence, reasoning, and safety in 2026.
 - [How Does AI Generate Text Step by Step? 2026 Guide](https://nyvoraai.github.io/ai-news/how-ai-generates-text-step-by-step.html): Discover how AI generates text step by step. Learn about tokens, probabilities, neural networks, and the exact mechanics behind LLMs in our 2026 guide.
