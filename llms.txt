@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (108 articles)
+## AI News (109 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -112,6 +112,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [What Is the Context Window in an LLM? (2026 Guide)](https://nyvoraai.github.io/ai-news/what-is-context-window-in-llm.html): What is the context window in an LLM? Learn how context length works, compare GPT vs Claude vs Gemini windows & master token limits. Updated 2026.
 - [What is the Difference Between AI and a Robot? 2026](https://nyvoraai.github.io/ai-news/what-is-the-difference-between-ai-and-a-robot.html): Discover the difference between AI and a robot. Learn how software meets hardware in 2026 to create intelligent machines and embodied AI.
 - [What Is the EU AI Act in Simple Terms? 2026 Guide](https://nyvoraai.github.io/ai-news/eu-ai-act-simple-terms.html): Understand the EU AI Act in simple terms. Learn about the 4-tier risk system, banned AI practices, massive fines, and how it protects users in 2026.
+- [What Is the Future of AI Robotics? 2026-2030 Guide](https://nyvoraai.github.io/ai-news/what-is-the-future-of-ai-robotics.html): Discover what is the future of AI robotics. Explore 2026-2030 predictions for humanoid robots, healthcare AI, automation, and how they will change daily life.
 - [What Is the MMLU Benchmark for AI? Complete 2026 Guide](https://nyvoraai.github.io/ai-news/what-is-mmlu-benchmark-ai.html): Discover what the MMLU benchmark for AI is, how it measures AI performance across 57 subjects, and why it matters for evaluating large language models in 2026.
 - [What is the ROI of Using AI in Business? 2026](https://nyvoraai.github.io/ai-news/what-is-the-roi-of-using-ai-in-business.html): Discover the true ROI of using AI in business. Learn real stats, cost savings, and how to calculate your AI return on investment in 2026.
 - [What Is the Scaling Law in AI? The 2026 Guide](https://nyvoraai.github.io/ai-news/what-is-the-scaling-law-in-ai.html): Discover what the scaling law in AI is, how data and compute drive intelligence, and why it's the secret behind modern AI breakthroughs.
