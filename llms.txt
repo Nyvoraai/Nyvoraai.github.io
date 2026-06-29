@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (103 articles)
+## AI News (104 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -34,6 +34,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Can Robots Learn From Humans Watching Them?](https://nyvoraai.github.io/ai-news/can-robots-learn-from-humans-watching.html): Yes — robots can learn by watching humans. Discover how imitation learning works, which robots use it, and what it means for the future of AI in 2026.
 - [GPT vs Claude: Key Differences Explained (2026 Guide)](https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html): What is the difference between GPT and Claude? We compare accuracy, coding skills, tone, and pricing to help you choose the right AI model in 2026.
 - [How Are AI and Robotics Connected? 2026 Guide](https://nyvoraai.github.io/ai-news/how-are-ai-and-robotics-connected.html): Discover how AI and robotics are connected. Learn how artificial intelligence powers modern robots, from autonomous vehicles to humanoid assistants.
+- [How Are AI Robots Used in Hospitals? 2026 Guide](https://nyvoraai.github.io/ai-news/how-are-ai-robots-used-in-hospitals.html): Discover how AI robots are used in hospitals. Learn about surgical robots, delivery bots, disinfection systems, and patient care automation in 2026.
 - [How Are Small Businesses Using AI in 2026? Expert Guide](https://nyvoraai.github.io/ai-news/how-are-small-businesses-using-ai-in-2026.html): Discover how small businesses are using AI in 2026 to save time, cut costs, and grow. Real examples, top tools, and expert strategies for success.
 - [How Do AI Companies Make Their Models Safe? 2026 Guide](https://nyvoraai.github.io/ai-news/how-ai-companies-make-models-safe.html): Discover how AI companies build safe models in 2026. Learn about RLHF, red teaming, guardrails, and AI alignment techniques explained simply.
 - [How Do Companies Use AI for Data Analysis? 2026](https://nyvoraai.github.io/ai-news/how-do-companies-use-ai-for-data-analysis.html): Discover how companies use AI for data analysis in 2026. Learn top tools, real-world use cases, and strategies to turn raw data into growth.
