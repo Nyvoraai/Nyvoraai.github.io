@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (104 articles)
+## AI News (105 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -105,6 +105,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [What Is Reinforcement Learning in Simple Terms?](https://nyvoraai.github.io/ai-news/what-is-reinforcement-learning-simple-terms.html): What is reinforcement learning in simple terms? Learn how AI learns through trial, error, and rewards, shaping the future of smart technology in 2026.
 - [What Is Responsible AI Development?](https://nyvoraai.github.io/ai-news/what-is-responsible-ai-development.html): What is responsible AI development? Learn the core principles, ethical frameworks, and practical steps to build safe, fair, and transparent AI systems.
 - [What Is RLHF in AI? Complete Guide to Reinforcement Learning](https://nyvoraai.github.io/ai-news/what-is-rlhf-ai.html): Discover what RLHF is in artificial intelligence. Learn how human feedback trains AI models like ChatGPT to be more helpful, harmless, and honest in 2026.
+- [What is Robot Process Automation RPA? 2026 Guide](https://nyvoraai.github.io/ai-news/what-is-robot-process-automation-rpa.html): Discover what robot process automation RPA is and how it transforms business operations. Learn use cases, benefits, and implementation strategies.
 - [What is the Best AI Chatbot in 2026? Expert Guide](https://nyvoraai.github.io/ai-news/what-is-the-best-ai-chatbot-in-2026.html): Discover the best AI chatbot in 2026. Compare ChatGPT, Claude, Gemini & more. Expert reviews, features, pricing & recommendations.
 - [What Is the Context Window in an LLM? (2026 Guide)](https://nyvoraai.github.io/ai-news/what-is-context-window-in-llm.html): What is the context window in an LLM? Learn how context length works, compare GPT vs Claude vs Gemini windows & master token limits. Updated 2026.
 - [What Is the EU AI Act in Simple Terms? 2026 Guide](https://nyvoraai.github.io/ai-news/eu-ai-act-simple-terms.html): Understand the EU AI Act in simple terms. Learn about the 4-tier risk system, banned AI practices, massive fines, and how it protects users in 2026.
