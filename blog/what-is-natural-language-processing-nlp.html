@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>What Is Natural Language Processing (NLP)? (2026 Guide)</title>
+<meta name="description" content="What is natural language processing (NLP)? Learn how computers read, understand, and generate human language, explained in plain English."/>
+<meta name="keywords" content="what is natural language processing, what is NLP, natural language processing explained, how does NLP work, NLP examples"/>
+<meta name="author" content="NyvoraAI Team"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="canonical" href="https://nyvoraai.github.io/blog/what-is-natural-language-processing-nlp.html"/>
+<link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
+<link rel="icon" type="image/png" href="https://nyvoraai.github.io/favicon-32x32.png"/>
+<link rel="apple-touch-icon" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
+<link rel="alternate" type="application/rss+xml" title="NyvoraAI Blog RSS Feed" href="https://nyvoraai.github.io/rss.xml"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="What Is Natural Language Processing (NLP)? | NyvoraAI"/>
+<meta property="og:description" content="Learn how computers read, understand, and generate human language, from tokenization to transformers, explained in plain English."/>
+<meta property="og:url" content="https://nyvoraai.github.io/blog/what-is-natural-language-processing-nlp.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/blog/what-is-natural-language-processing-nlp-thumbnail.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-06-30T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-06-30T00:00:00Z"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="What Is Natural Language Processing (NLP)? | NyvoraAI"/>
+<meta name="twitter:description" content="Learn how computers read, understand, and generate human language, from tokenization to transformers, explained in plain English."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/blog/what-is-natural-language-processing-nlp-thumbnail.png"/>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What Is Natural Language Processing (NLP)?","description":"What is natural language processing (NLP)? Learn how computers read, understand, and generate human language, explained in plain English.","image":"https://nyvoraai.github.io/assets/blog/what-is-natural-language-processing-nlp-thumbnail.png","datePublished":"2026-06-30","dateModified":"2026-06-30","author":{"@type":"Organization","name":"NyvoraAI Team","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/blog/what-is-natural-language-processing-nlp.html"}}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://nyvoraai.github.io/blog.html"},{"@type":"ListItem","position":3,"name":"What Is Natural Language Processing (NLP)?","item":"https://nyvoraai.github.io/blog/what-is-natural-language-processing-nlp.html"}]}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is natural language processing (NLP)?","acceptedAnswer":{"@type":"Answer","text":"Natural language processing, or NLP, is a branch of AI that teaches computers to read, understand, and generate human language. It powers tools like chatbots, translators, voice assistants, and spam filters by converting words into numbers a machine can analyze and respond to."}},{"@type":"Question","name":"How does NLP work step by step?","acceptedAnswer":{"@type":"Answer","text":"NLP typically breaks text into tokens, normalizes the text, converts tokens into numerical embeddings, tags grammar and entities, runs the result through a trained model such as a transformer, and produces an output like a translation, a label, or a generated reply."}},{"@type":"Question","name":"What is the difference between NLP and machine learning?","acceptedAnswer":{"@type":"Answer","text":"Machine learning is the broader field of training computers to learn patterns from data. NLP is a specific application of machine learning focused only on language, text, and speech, using techniques like embeddings and transformer models built for that purpose."}},{"@type":"Question","name":"What are some everyday examples of NLP?","acceptedAnswer":{"@type":"Answer","text":"Everyday NLP includes autocomplete and spell check, voice assistants like Siri and Alexa, spam email filters, live translation apps, customer service chatbots, and the sentiment analysis brands use to monitor reviews and social media mentions."}},{"@type":"Question","name":"Can NLP understand sarcasm and tone?","acceptedAnswer":{"@type":"Answer","text":"Modern NLP models have improved significantly at detecting sarcasm and tone, but they still struggle compared to humans, especially with dry sarcasm, cultural context, or sentences that rely heavily on shared background knowledge to interpret correctly."}},{"@type":"Question","name":"Is ChatGPT an example of NLP?","acceptedAnswer":{"@type":"Answer","text":"Yes. ChatGPT and similar large language models are advanced applications of NLP, built on transformer architectures that process and generate text. They represent one of the most capable forms of natural language processing in use today."}},{"@type":"Question","name":"What's the difference between NLP and a transformer model?","acceptedAnswer":{"@type":"Answer","text":"NLP is the overall field of getting computers to work with human language. A transformer model is a specific neural network architecture, one of many tools used inside modern NLP systems to understand context and relationships between words."}},{"@type":"Question","name":"Do I need to know coding to understand NLP?","acceptedAnswer":{"@type":"Answer","text":"No. You can understand the core concepts of NLP, like tokenization, embeddings, and how chatbots generate replies, without writing a single line of code. Coding only becomes necessary if you want to build or train NLP models yourself."}}]}</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#080A0F;
+  --bg-2:#0D1117;
+  --bg-3:#111827;
+  --bg-card:#141B26;
+  --bg-card-2:#1A2235;
+  --border:#1E2D40;
+  --border-bright:#2A3F5C;
+
+  --cyan:#00D4FF;
+  --cyan-dim:#0099BB;
+  --cyan-glow:rgba(0,212,255,0.15);
+  --violet:#7B5EA7;
+  --violet-bright:#9B7EC8;
+  --violet-glow:rgba(123,94,167,0.18);
+  --green:#00E5A0;
+  --green-dim:#00B07A;
+  --green-glow:rgba(0,229,160,0.12);
+  --amber:#FFB347;
+  --amber-glow:rgba(255,179,71,0.12);
+  --red:#FF6B6B;
+
+  --text:#E8EDF5;
+  --text-2:#9BA8BC;
+  --text-3:#5C6B80;
+  --text-inv:#080A0F;
+
+  --radius:16px;
+  --radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+
+  --glow-cyan:0 0 30px rgba(0,212,255,0.2),0 0 60px rgba(0,212,255,0.08);
+  --glow-violet:0 0 30px rgba(123,94,167,0.25);
+  --shadow-card:0 4px 24px rgba(0,0,0,0.4),0 1px 4px rgba(0,0,0,0.3);
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.78;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--cyan);text-decoration:none;transition:color .2s}
+a:hover{color:var(--cyan-dim);text-decoration:underline}
+h1,h2,h3,.font-display{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+abbr.term{text-decoration:none;border-bottom:1px dashed var(--cyan-dim);cursor:help;color:var(--text)}
+
+/* ── ANIMATED BACKGROUND ── */
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.stars{position:absolute;inset:0}
+.star{position:absolute;background:#fff;border-radius:50%;animation:starTwinkle ease-in-out infinite}
+@keyframes starTwinkle{0%,100%{opacity:.15;transform:scale(1)}50%{opacity:.8;transform:scale(1.4)}}
+.aura{position:absolute;border-radius:50%;filter:blur(100px);will-change:transform;animation:auraFloat ease-in-out infinite;pointer-events:none}
+.aura-1{width:700px;height:700px;background:radial-gradient(circle,rgba(0,212,255,.18),transparent 65%);top:-200px;left:-200px;animation-duration:20s}
+.aura-2{width:600px;height:600px;background:radial-gradient(circle,rgba(123,94,167,.22),transparent 65%);bottom:-150px;right:-150px;animation-duration:25s;animation-delay:-8s}
+.aura-3{width:500px;height:500px;background:radial-gradient(circle,rgba(0,229,160,.12),transparent 65%);top:40%;left:55%;animation-duration:18s;animation-delay:-4s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(60px,-50px) scale(1.1)}66%{transform:translate(-40px,35px) scale(.92)}}
+.grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.025) 1px,transparent 1px);background-size:60px 60px;animation:gridShift 40s linear infinite}
+@keyframes gridShift{0%{background-position:0 0}100%{background-position:60px 60px}}
+.orb{position:absolute;border-radius:50%;animation:orbFloat ease-in-out infinite;opacity:0}
+@keyframes orbFloat{0%{transform:translateY(110vh) scale(0.5);opacity:0}10%{opacity:.6}90%{opacity:.3}100%{transform:translateY(-10vh) scale(1.2);opacity:0}}
+@media(prefers-reduced-motion:reduce){.star,.aura,.orb,.grid-lines{animation:none;display:none}html{scroll-behavior:auto}}
+
+#progress{position:fixed;top:0;left:0;width:0;height:2px;z-index:400;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green));transition:width .08s;box-shadow:0 0 12px var(--cyan)}
+
+/* ── NAV ── */
+nav{position:sticky;top:0;z-index:300;background:rgba(8,10,15,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:62px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:20px;font-weight:700;letter-spacing:-.02em;color:var(--text);display:flex;align-items:center;gap:9px}
+.nav-logo .logo-accent{color:var(--cyan)}
+.logo-img{height:28px;width:28px;border-radius:7px;object-fit:cover}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--text-2);font-size:14px;font-weight:500;transition:color .2s;letter-spacing:.01em}
+.nav-links a:hover,.nav-links a.active{color:var(--text);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-cta{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:8px 18px;border-radius:8px;font-size:13px;font-weight:700;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 20px rgba(0,212,255,.25)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 30px rgba(0,212,255,.4);text-decoration:none;color:var(--text-inv)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--text-2);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:62px;left:0;right:0;background:rgba(13,17,23,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:20px 24px;flex-direction:column;gap:16px;z-index:299}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--text);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
+
+/* ── BREADCRUMB ── */
+.breadcrumb{max-width:840px;margin:24px auto 0;padding:0 24px;font-size:12.5px;color:var(--text-3);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--text-3);transition:color .2s}
+.breadcrumb a:hover{color:var(--cyan);text-decoration:none}
+.bc-sep{color:var(--border-bright)}
+
+/* ── ARTICLE HEADER ── */
+.article-hdr{max-width:840px;margin:20px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;background:rgba(0,212,255,.08);color:var(--cyan);border:1px solid rgba(0,212,255,.2);font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 12px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-read{background:rgba(0,229,160,.08);color:var(--green);border-color:rgba(0,229,160,.2)}
+.badge-date{background:rgba(255,179,71,.08);color:var(--amber);border-color:rgba(255,179,71,.2)}
+.article-title{font-size:clamp(28px,5vw,46px);font-weight:700;line-height:1.16;color:var(--text);margin-bottom:16px;letter-spacing:-.025em}
+.title-glow{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.article-intro{font-size:18.5px;color:var(--text-2);line-height:1.65;margin-bottom:22px}
+.article-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--text-3);padding-bottom:22px;border-bottom:1px solid var(--border)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{width:34px;height:34px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--text-inv);font-family:var(--font-display);position:relative;overflow:hidden}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--text-2)}
+.meta-sep{color:var(--border-bright)}
+
+/* ── HERO IMAGE ── */
+.hero-wrap{max-width:840px;margin:28px auto;padding:0 24px}
+.hero-box{width:100%;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);background:var(--bg-card);box-shadow:var(--shadow-card),var(--glow-cyan);line-height:0}
+.hero-box img{width:100%;height:auto;display:block}
+
+/* ── TOC ── */
+.toc-box{max-width:840px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow-card)}
+.toc-title{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc-title::before{content:'';width:3px;height:13px;background:var(--cyan);border-radius:2px;display:inline-block;box-shadow:0 0 8px var(--cyan)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:5px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--text-2);font-size:14px;transition:color .2s;display:flex;gap:8px;padding:3px 0}
+.toc a::before{content:counter(tocnum,'0'counter(tocnum));font-family:var(--font-mono);color:var(--cyan);font-weight:700;font-size:11.5px;min-width:18px;opacity:.7}
+.toc a:hover{color:var(--cyan);text-decoration:none}
+
+.layout{max-width:840px;margin:0 auto;padding:36px 24px 80px}
+
+/* ── PROSE ── */
+.prose h2{font-size:25px;font-weight:700;color:var(--text);margin:52px 0 16px;letter-spacing:-.02em;scroll-margin-top:88px;display:flex;align-items:center;gap:12px}
+.prose h2 .h2-num{font-family:var(--font-mono);font-size:12px;color:var(--cyan);font-weight:700;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.2);padding:3px 9px;border-radius:6px;letter-spacing:.05em}
+.prose h3{font-size:18px;font-weight:600;color:var(--text);margin:24px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--text-2)}
+.prose strong{color:var(--text);font-weight:600}
+.prose ul,.prose ol{margin:0 0 20px 20px}
+.prose li{margin-bottom:9px;color:var(--text-2)}
+
+/* ── KEY TAKEAWAYS ── */
+.key-takeaways{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--cyan);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow-card),0 0 0 1px rgba(0,212,255,.06) inset}
+.kt-title{font-family:var(--font-mono);font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+.key-takeaways ul{margin:0;list-style:none}
+.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15px;color:var(--text-2)}
+.key-takeaways li:last-child{margin-bottom:0}
+.key-takeaways li::before{content:'//';color:var(--cyan);flex-shrink:0;font-weight:700;font-family:var(--font-mono);font-size:12px;opacity:.7}
+.key-takeaways p{color:var(--text);font-size:16px;margin-bottom:10px}
+
+/* ── NLP PIPELINE FLOW ── */
+.face-flow{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px 24px;margin:32px 0;position:relative;overflow:hidden}
+.face-flow::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green))}
+.flow-title{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text);margin-bottom:28px;text-align:center}
+.flow-steps{display:flex;flex-direction:column;gap:24px;position:relative}
+.flow-step{display:flex;align-items:flex-start;gap:20px;background:var(--bg-3);border:1px solid var(--border);border-radius:12px;padding:20px;transition:transform .2s,border-color .2s}
+.flow-step:hover{transform:translateX(8px);border-color:var(--border-bright)}
+.flow-number{flex-shrink:0;width:42px;height:42px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:16px;color:var(--text-inv);box-shadow:0 0 15px rgba(0,212,255,.3)}
+.flow-content h4{font-size:15px;font-weight:600;color:var(--text);margin-bottom:6px;font-family:var(--font-display)}
+.flow-content p{font-size:14px;color:var(--text-2);line-height:1.6;margin:0}
+.flow-arrow{position:absolute;left:62px;top:90px;bottom:-24px;width:2px;background:linear-gradient(180deg,var(--cyan),var(--violet-bright));opacity:.4}
+.flow-step:last-child .flow-arrow{display:none}
+
+/* ── INTERACTIVE DEMO (NLP tagger) ── */
+.face-demo{background:linear-gradient(135deg,var(--bg-card),var(--bg-card-2));border:1px solid var(--border-bright);border-radius:var(--radius);padding:32px;margin:32px 0;box-shadow:var(--shadow-card),0 0 30px rgba(123,94,167,.1)}
+.demo-title{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text);margin-bottom:8px}
+.demo-subtitle{color:var(--text-2);margin-bottom:24px;font-size:15px}
+.demo-face{background:var(--bg-3);border:2px solid var(--border);border-radius:12px;padding:30px 24px;position:relative;overflow:visible;min-height:120px;display:flex;align-items:center;justify-content:center}
+.nlp-sentence{font-family:var(--font-mono);font-size:17px;line-height:2.4;color:var(--text-2);text-align:center;max-width:560px}
+.nlp-sentence .tok{position:relative;transition:color .25s,background .25s,border-color .25s;border-radius:4px;padding:1px 2px}
+.nlp-sentence .tok-punc{color:var(--text-3)}
+/* Tokenization mode */
+.nlp-sentence.mode-tokens .tok{border:1px solid var(--cyan);background:rgba(0,212,255,.08);margin:0 2px;color:var(--text)}
+/* Part-of-speech mode */
+.nlp-sentence.mode-pos .tok[data-pos="verb"]{color:var(--cyan);font-weight:700}
+.nlp-sentence.mode-pos .tok[data-pos="noun"]{color:var(--green);font-weight:700}
+.nlp-sentence.mode-pos .tok[data-pos="adj"]{color:var(--amber);font-weight:700}
+.nlp-sentence.mode-pos .tok[data-pos="adverb"]{color:var(--violet-bright);font-weight:700}
+/* Named entity mode */
+.nlp-sentence.mode-entity .tok[data-entity]{background:rgba(0,229,160,.15);border:1px solid var(--green);color:var(--text)}
+.nlp-sentence.mode-entity .tok[data-entity]::after{content:attr(data-entity);position:absolute;top:-19px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--green);white-space:nowrap;font-weight:700;letter-spacing:.04em}
+/* Sentiment mode */
+.nlp-sentence.mode-sentiment .tok[data-sent="pos"]{color:var(--green);font-weight:700;text-decoration:underline;text-decoration-color:var(--green)}
+.nlp-sentence.mode-sentiment .tok[data-sent="neg"]{color:var(--red);font-weight:700;text-decoration:underline;text-decoration-color:var(--red)}
+.demo-controls{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.demo-btn{background:var(--bg-3);border:1px solid var(--border);border-radius:8px;padding:10px 18px;color:var(--text);font-size:13.5px;cursor:pointer;transition:all .2s;font-family:var(--font-body)}
+.demo-btn:hover{border-color:var(--cyan);color:var(--cyan)}
+.demo-btn.active{background:rgba(0,212,255,.15);border-color:var(--cyan);color:var(--cyan)}
+.demo-info{margin-top:16px;padding:16px;background:rgba(0,212,255,.05);border:1px solid rgba(0,212,255,.2);border-radius:8px;font-size:14px;color:var(--text-2)}
+
+/* ── COMPARISON TABLE ── */
+.tbl-wrap{overflow-x:auto;margin:22px 0;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow-card)}
+.tool-table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:460px;background:var(--bg-card)}
+.tool-table thead tr{background:var(--bg-3)}
+.tool-table th{text-align:left;padding:12px 16px;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-3);border-bottom:1px solid var(--border);font-family:var(--font-mono)}
+.tool-table td{padding:13px 16px;border-bottom:1px solid var(--border);vertical-align:middle;color:var(--text-2)}
+.tool-table tr:last-child td{border-bottom:none}
+.tool-table tr:hover td{background:rgba(0,212,255,.04)}
+.tool-table strong{color:var(--text)}
+
+/* ── USE CASES GRID ── */
+.use-cases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
+.use-case{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;transition:border-color .2s,transform .2s}
+.use-case:hover{border-color:var(--border-bright);transform:translateY(-3px)}
+.use-icon{font-size:28px;margin-bottom:12px;display:block}
+.use-case h3{font-size:16px;font-weight:600;color:var(--text);margin-bottom:8px;font-family:var(--font-display)}
+.use-case p{font-size:13.5px;color:var(--text-2);line-height:1.6;margin:0}
+
+/* ── PRO TIP BOX ── */
+.pro-tip{background:linear-gradient(135deg,rgba(0,212,255,.08),rgba(123,94,167,.08));border:1px solid rgba(0,212,255,.25);border-radius:var(--radius);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start}
+.pro-tip-icon{flex-shrink:0;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));border:1px solid rgba(0,212,255,.3);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-weight:700;font-size:14px;color:var(--text-inv)}
+.pro-tip h4{font-family:var(--font-mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--cyan);margin-bottom:6px}
+.pro-tip p{margin:0;color:var(--text-2);font-size:14.5px;line-height:1.65}
+
+/* ── LIMITATION STEPS ── */
+.steps{display:flex;flex-direction:column;gap:14px;margin:24px 0}
+.step{display:flex;gap:16px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:18px 20px;transition:border-color .2s,transform .2s}
+.step:hover{border-color:var(--border-bright);transform:translateX(6px)}
+.step-num{flex-shrink:0;width:36px;height:36px;border-radius:10px;background:rgba(255,107,107,.12);border:1px solid rgba(255,107,107,.3);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;font-family:var(--font-mono)}
+.step-body h3{margin:0 0 6px;font-size:15.5px}
+.step-body p{margin:0;font-size:14px}
+
+/* ── FAQ ── */
+.faq{margin:14px 0}
+details{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--border-bright)}
+summary{padding:16px 20px;cursor:pointer;font-weight:600;font-size:15.5px;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--cyan);font-size:20px;font-weight:300;transition:transform .3s;flex-shrink:0;font-family:var(--font-mono)}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 20px 16px;color:var(--text-2);font-size:14.5px;line-height:1.7}
+
+/* ── AUTHOR BOX ── */
+.author-box{display:flex;gap:14px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin:44px 0 0;box-shadow:var(--shadow-card)}
+.author-box h3{font-size:14.5px;font-family:var(--font-display);margin-bottom:4px;color:var(--text)}
+.author-box p{font-size:13.5px;color:var(--text-3);margin:0;line-height:1.6}
+
+/* ── SHARE ── */
+.share-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;margin:28px 0 0;text-align:center}
+.share-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:14px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:7px;padding:9px 16px;border-radius:8px;border:1px solid var(--border);font-size:12.5px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--bg-3);color:var(--text-2);font-family:var(--font-body)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 14px rgba(0,212,255,.15)}
+
+/* ── NEWSLETTER ── */
+.newsletter{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:40px;margin:52px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow-card)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green))}
+.newsletter::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(0,212,255,.06),transparent 60%);pointer-events:none}
+.newsletter h2{font-size:23px;font-weight:700;color:var(--text);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--text-2);margin-bottom:22px;font-size:15px}
+.nl-form{display:flex;gap:10px;max-width:420px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:9px;padding:12px 15px;color:var(--text);font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--text-3)}
+.nl-input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,212,255,.1)}
+.nl-btn{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:12px 20px;border-radius:9px;border:none;cursor:pointer;font-size:13.5px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 20px rgba(0,212,255,.25)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 30px rgba(0,212,255,.4)}
+.nl-note{font-size:11.5px;color:var(--text-3);margin:10px 0 0}
+.nl-social{display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:8px 14px;border-radius:8px;border:1px solid var(--border);color:var(--text-2);transition:all .2s;background:var(--bg-3)}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--cyan)}
+
+/* ── RELATED ── */
+.related{margin:44px 0 0}
+.related-title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:16px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.rel-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;transition:border-color .2s,transform .2s;cursor:pointer;display:block}
+.rel-card:hover{border-color:var(--border-bright);transform:translateY(-3px);text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.rel-tag{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan);margin-bottom:7px;font-family:var(--font-mono)}
+.rel-title{font-size:13.5px;font-weight:600;color:var(--text);line-height:1.4;margin-bottom:7px;font-family:var(--font-display)}
+.rel-read{font-size:11.5px;color:var(--text-3);font-family:var(--font-mono)}
+
+/* ── FOOTER (animated + colorful) ── */
+footer{background:var(--bg-2);border-top:1px solid var(--border);padding:56px 24px 28px;position:relative;z-index:1;overflow:hidden}
+.footer-aura{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;animation:footerDrift ease-in-out infinite}
+.footer-aura-1{width:480px;height:480px;background:radial-gradient(circle,rgba(0,212,255,.12),transparent 65%);top:-220px;left:6%;animation-duration:16s}
+.footer-aura-2{width:420px;height:420px;background:radial-gradient(circle,rgba(123,94,167,.16),transparent 65%);top:-180px;right:8%;animation-duration:20s;animation-delay:-6s}
+.footer-aura-3{width:380px;height:380px;background:radial-gradient(circle,rgba(0,229,160,.10),transparent 65%);bottom:-160px;left:50%;animation-duration:18s;animation-delay:-3s}
+@keyframes footerDrift{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,26px)}}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:44px;position:relative;z-index:1}
+.footer-logo{font-size:19px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:9px;color:var(--text);font-family:var(--font-display)}
+.footer-logo .accent{background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green),var(--cyan));background-size:300% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:accentShift 7s linear infinite}
+@keyframes accentShift{0%{background-position:0% 0}100%{background-position:300% 0}}
+.footer-brand p{color:var(--text-3);font-size:13.5px;line-height:1.7;margin-bottom:18px}
+.footer-social{display:flex;gap:8px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:8px;border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text-2);transition:all .2s;background:var(--bg-3);position:relative;overflow:hidden}
+.fs-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--text-inv);background:linear-gradient(135deg,var(--cyan),var(--violet-bright));box-shadow:0 0 16px rgba(0,212,255,.3)}
+.footer-col h4{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text);margin-bottom:14px;font-family:var(--font-mono)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:9px}
+.footer-col a{color:var(--text-3);font-size:13.5px;transition:color .2s}
+.footer-col a:hover{color:var(--cyan);text-decoration:none}
+.footer-bottom{max-width:1100px;margin:40px auto 0;padding-top:20px;position:relative;display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--text-3);flex-wrap:wrap;gap:10px;z-index:1}
+.footer-bottom::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green),var(--cyan));background-size:200% 100%;animation:footerShimmer 6s linear infinite}
+@keyframes footerShimmer{0%{background-position:0% 0}100%{background-position:200% 0}}
+.footer-bottom-links{display:flex;gap:18px}
+.footer-bottom-links a{color:var(--text-3);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--cyan);text-decoration:none}
+
+/* ── BACK TO TOP ── */
+#back-top{position:fixed;bottom:26px;right:26px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:0 0 20px rgba(0,212,255,.3);z-index:200;font-weight:700}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.1) translateY(-2px);box-shadow:0 0 30px rgba(0,212,255,.5)}
+
+.chat-scene-card{max-width:840px;margin:22px auto 0;padding:0 24px}
+.chat-card-inner{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow-card)}
+.chat-icon{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(123,94,167,.15));border:1px solid rgba(0,212,255,.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;font-family:var(--font-mono);font-weight:700;color:var(--cyan)}
+.chat-name{font-family:var(--font-display);font-weight:700;font-size:14.5px;color:var(--text)}
+.chat-status{font-size:12px;color:var(--text-3);display:flex;align-items:center;gap:6px;margin-top:2px;font-family:var(--font-mono)}
+.status-dot{width:6px;height:6px;border-radius:50%;background:var(--green);display:inline-block;animation:pulseDot 2s ease-in-out infinite;box-shadow:0 0 6px var(--green)}
+@keyframes pulseDot{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,229,160,.4)}50%{opacity:.7;box-shadow:0 0 0 5px rgba(0,229,160,0)}}
+.chat-badge{font-family:var(--font-mono);font-size:10.5px;color:var(--text-3);background:var(--bg-3);padding:4px 10px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+#side-popup{position:fixed;bottom:88px;right:26px;z-index:500;width:260px;background:var(--bg-card);border:1px solid var(--border-bright);border-radius:16px;padding:18px;box-shadow:var(--shadow-card),0 0 40px rgba(0,212,255,.15);transform:translateX(320px);opacity:0;transition:transform .45s cubic-bezier(.22,1,.36,1),opacity .35s ease;pointer-events:none;overflow:hidden}
+#side-popup.show{transform:translateX(0);opacity:1;pointer-events:all}
+#side-popup::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright))}
+.sp-close{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--text-3);cursor:pointer;font-size:16px;line-height:1;padding:2px;transition:color .2s;font-family:var(--font-mono)}
+.sp-close:hover{color:var(--text)}
+.sp-icon{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(123,94,167,.15));border:1px solid rgba(0,212,255,.2);display:flex;align-items:center;justify-content:center;margin-bottom:10px;font-family:var(--font-mono);font-weight:700;font-size:14px;color:var(--cyan)}
+.sp-title{font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--text);margin-bottom:5px}
+.sp-text{font-size:12.5px;color:var(--text-3);line-height:1.5;margin-bottom:12px}
+.sp-input{width:100%;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:8px;padding:9px 12px;color:var(--text);font-size:12.5px;outline:none;margin-bottom:8px;font-family:var(--font-body);transition:border-color .2s}
+.sp-input:focus{border-color:var(--cyan)}
+.sp-btn{width:100%;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);border:none;border-radius:8px;padding:9px;font-size:12.5px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .15s;font-family:var(--font-body)}
+.sp-btn:hover{opacity:.9;transform:translateY(-1px)}
+.sp-note{font-size:10.5px;color:var(--text-3);text-align:center;margin-top:6px;font-family:var(--font-mono)}
+
+.scanline{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.06;animation:scanDown 8s linear infinite;pointer-events:none;z-index:1}
+@keyframes scanDown{0%{top:-2px}100%{top:100vh}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .use-cases{grid-template-columns:repeat(2,1fr)}
+  .related-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .use-cases{grid-template-columns:1fr}
+  .related-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+  #side-popup{right:12px;bottom:80px;width:240px}
+  .article-intro{font-size:16.5px}
+  body{font-size:16px}
+  .nlp-sentence{font-size:14.5px;line-height:2.6}
+}
+</style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="bg-canvas" aria-hidden="true">
+  <div class="aura aura-1"></div>
+  <div class="aura aura-2"></div>
+  <div class="aura aura-3"></div>
+  <div class="stars" id="starField"></div>
+  <div class="grid-lines"></div>
+  <div id="orbField"></div>
+</div>
+<div class="scanline" aria-hidden="true"></div>
+<div id="progress" role="progressbar" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/logo.svg" alt="" class="logo-img" onerror="this.style.display='none'"/>
+      Nyvora<span class="logo-accent">AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html" class="active">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+</div>
+
+<div class="page-wrap">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <span class="bc-sep">/</span>
+  <span>AI Fundamentals</span>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge">AI Fundamentals</span>
+    <span class="badge badge-read">18 min read</span>
+    <span class="badge badge-date">Updated June 2026</span>
+  </div>
+  <h1 class="article-title">What Is <span class="title-glow">Natural Language Processing</span> (NLP)?</h1>
+  <p class="article-intro">Every time autocomplete finishes your sentence, Alexa understands a slurred "set a timer," or a spam email gets quietly filtered out, the same field of AI is working behind the scenes. Here's exactly what natural language processing is, and how it turns your messy human sentences into something a computer can actually use.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="" onerror="this.remove()"/></div>
+      <div><div class="meta-name">NyvoraAI Team</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-06-30">June 30, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Reviewed June 2026</span>
+  </div>
+</header>
+
+<div class="chat-scene-card reveal">
+  <div class="chat-card-inner">
+    <div class="chat-icon">AI</div>
+    <div>
+      <div class="chat-name">The science behind language AI</div>
+      <div class="chat-status"><span class="status-dot"></span> From words to numbers</div>
+    </div>
+    <div class="chat-badge">18 min</div>
+  </div>
+</div>
+
+<!-- HERO THUMBNAIL IMAGE / BLOG BANNER -->
+<div class="hero-wrap reveal">
+  <div class="hero-box">
+    <img src="https://nyvoraai.github.io/assets/blog/what-is-natural-language-processing-nlp-thumbnail.png" width="1200" height="630" loading="eager" alt="What is natural language processing NLP - diagram showing a sentence being tokenized, tagged for sentiment and named entities, and processed by a language model"/>
+  </div>
+</div>
+
+<!-- TOC -->
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">What we'll explore</div>
+    <ol>
+      <li><a href="#simple-answer">The simple answer</a></li>
+      <li><a href="#step-by-step">Step-by-step process</a></li>
+      <li><a href="#interactive-demo">Interactive demo</a></li>
+      <li><a href="#neural-networks">From rules to transformers</a></li>
+      <li><a href="#real-world-uses">Real-world applications</a></li>
+      <li><a href="#accuracy-limits">Accuracy & limitations</a></li>
+      <li><a href="#privacy-concerns">Privacy & ethics</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">Type "how do i" into a search bar and watch it finish your thought before you do. Ask your phone to "remind me to call mom tomorrow" and watch it actually understand what you mean. Send an email in Hindi and have it land, fluently, in someone's English inbox. None of this works without one specific branch of artificial intelligence quietly doing the heavy lifting underneath.</p>
+
+  <p class="reveal">So, <strong>what is natural language processing (NLP)</strong>, exactly? In plain terms, NLP is the field of AI focused on teaching computers to read, understand, and generate human language, the messy, ambiguous, full-of-slang language we actually speak and write, not the tidy rows of numbers computers normally prefer. It's the bridge between "how humans talk" and "what a machine can compute."</p>
+
+  <p class="reveal">NLP isn't a single tool, it's an entire toolbox, and like most modern AI, it sits inside the broader discipline of machine learning. If the difference between AI that's truly "learned" something and AI that's just following fixed rules feels blurry, our guide on <a href="https://nyvoraai.github.io/blog/what-is-the-difference-between-ai-and-automation.html">what is the difference between AI and automation</a> is a good place to start before diving into NLP specifically.</p>
+
+  <div class="key-takeaways reveal">
+    <div class="kt-title">Key Takeaways</div>
+    <ul>
+      <li><strong>Language as numbers:</strong> NLP converts words and sentences into numerical "embeddings" a computer can mathematically compare.</li>
+      <li><strong>A multi-step pipeline:</strong> text is tokenized, normalized, tagged, and modeled before any output is produced.</li>
+      <li><strong>Two directions:</strong> NLP covers both understanding language (NLU) and generating it (NLG), like a chatbot's reply.</li>
+      <li><strong>Transformers changed everything:</strong> modern NLP relies heavily on the same attention-based architecture behind chatbots and translators.</li>
+      <li><strong>It's everywhere already:</strong> search, spam filters, autocomplete, voice assistants, and translation all run on NLP daily.</li>
+    </ul>
+  </div>
+
+  <h2 id="simple-answer"><span class="h2-num">01</span>The Simple Answer: Teaching Computers to Understand Language</h2>
+  <p class="reveal">Computers are naturally good at numbers and naturally terrible at language. They don't know that "bank" means something different in "river bank" versus "savings bank," and they have no built-in sense of grammar, tone, or sarcasm. NLP exists to close that gap, by converting unstructured text into structured data a model can actually work with.</p>
+
+  <p class="reveal">This is the same basic trick used across most modern AI systems. If you've read our explainer on <a href="https://nyvoraai.github.io/blog/how-does-ai-recognize-faces-in-photos.html">how does AI recognize faces in photos</a>, you've already seen the pattern: a system takes something messy and human, in that case a face, and turns it into a clean set of numbers it can measure and compare. NLP does the exact same thing with words. Every word, sentence, or document gets converted into an "embedding," a long list of numbers that captures its meaning, so that words used in similar ways end up sitting close together in that mathematical space.</p>
+
+  <p class="reveal">Once language has been turned into numbers, a trained model can do almost anything with it: classify it, translate it, summarize it, or generate a brand-new sentence in reply. If the idea of "training" a model on data is new to you, our guide on <a href="https://nyvoraai.github.io/blog/what-is-machine-learning-how-trained.html">what is machine learning and how is it trained</a> covers the fundamentals in plain language before we go further.</p>
+
+  <h2 id="step-by-step"><span class="h2-num">02</span>Step-by-Step: How NLP Turns Text Into Meaning</h2>
+  <p class="reveal">Here's the journey a sentence takes from raw text to a usable result:</p>
+
+  <div class="face-flow reveal">
+    <div class="flow-title">What Is Natural Language Processing: The Complete Pipeline</div>
+    <div class="flow-steps">
+      <div class="flow-step">
+        <div class="flow-number">1</div>
+        <div class="flow-content">
+          <h4>Tokenization: Breaking Text Into Pieces</h4>
+          <p>The first step splits a sentence into smaller units called tokens, usually words or pieces of words. "I'm loving this" might become ["I", "'m", "loving", "this"]. This gives the model bite-sized chunks to work with instead of one solid block of text.</p>
+        </div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-number">2</div>
+        <div class="flow-content">
+          <h4>Text Normalization: Cleaning Things Up</h4>
+          <p>Tokens get standardized: lowercasing, removing stray punctuation, correcting common typos, and sometimes reducing words to their root form, so "running," "ran," and "runs" can all be recognized as related to "run."</p>
+        </div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-number">3</div>
+        <div class="flow-content">
+          <h4>Vectorization: Turning Words Into Numbers</h4>
+          <p>Each cleaned token is converted into a numerical embedding. Modern systems learn these embeddings from enormous text corpora, since meaning only becomes statistically reliable after a model has seen a word used correctly millions of times. That's part of why our piece on <a href="https://nyvoraai.github.io/blog/why-does-ai-need-so-much-data-to-train.html">why does AI need so much data to train</a> is so relevant here.</p>
+        </div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-number">4</div>
+        <div class="flow-content">
+          <h4>Parsing & Tagging: Adding Grammar and Structure</h4>
+          <p>The system tags each token's part of speech (noun, verb, adjective) and identifies named entities like people, places, brands, or dates, building a structural map of the sentence on top of the raw numbers.</p>
+        </div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-number">5</div>
+        <div class="flow-content">
+          <h4>Model Processing: Understanding Context</h4>
+          <p>The tagged, vectorized sentence is run through a trained model, in most modern systems a transformer, which weighs how every word relates to every other word in context before deciding what the sentence actually means. Our guide on <a href="https://nyvoraai.github.io/blog/what-is-a-transformer-model-in-ai.html">what is a transformer model in AI</a> breaks this exact mechanism down in detail.</p>
+        </div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-number">6</div>
+        <div class="flow-content">
+          <h4>Output: Producing a Result</h4>
+          <p>Finally, the model produces something useful: a translated sentence, a spam/not-spam label, a sentiment score, a search ranking, or, in the case of a chatbot, an entirely new generated reply.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="interactive-demo"><span class="h2-num">03</span>Interactive Demo: See NLP Tag a Real Sentence</h2>
+  <p class="reveal">Here's a sample product review. Click the buttons below to see how different NLP tasks "read" the exact same sentence in different ways.</p>
+
+  <div class="face-demo reveal">
+    <div class="demo-title">Live Sentence Tagger</div>
+    <p class="demo-subtitle">Watch how tokenization, grammar tagging, entity recognition, and sentiment analysis each interpret this sentence</p>
+    <div class="demo-face" id="demoFace">
+      <div class="nlp-sentence mode-tokens" id="nlpSentence"><span class="tok" data-pos="pronoun">I</span> <span class="tok" data-pos="adverb">absolutely</span> <span class="tok" data-pos="verb" data-sent="pos">loved</span> <span class="tok" data-pos="det">the</span> <span class="tok" data-pos="adj">new</span> <span class="tok" data-pos="noun" data-entity="PRODUCT">phone</span><span class="tok-punc">,</span> <span class="tok" data-pos="conj">but</span> <span class="tok" data-pos="det">the</span> <span class="tok" data-pos="noun">battery</span> <span class="tok" data-pos="noun">life</span> <span class="tok" data-pos="verb">is</span> <span class="tok" data-pos="adj" data-sent="neg">disappointing</span><span class="tok-punc">.</span></div>
+    </div>
+    <div class="demo-controls">
+      <button class="demo-btn active" onclick="setNlpMode('tokens')">Tokenization</button>
+      <button class="demo-btn" onclick="setNlpMode('pos')">Part-of-Speech Tags</button>
+      <button class="demo-btn" onclick="setNlpMode('entity')">Named Entities</button>
+      <button class="demo-btn" onclick="setNlpMode('sentiment')">Sentiment Analysis</button>
+    </div>
+    <div class="demo-info" id="nlpInfo">
+      <strong>Tokenization:</strong> The sentence is split into individual tokens, the smallest units the model will work with. Notice "I'm" or contractions would split into two tokens; this one's already clean.
+    </div>
+  </div>
+
+  <h2 id="neural-networks"><span class="h2-num">04</span>From Rule-Based Systems to Transformers</h2>
+  <p class="reveal">NLP didn't start with deep learning. Early systems in the 1960s through 1990s relied on hand-written grammar rules and dictionaries, painstakingly coded by linguists for every exception language could throw at them. They were brittle: a sentence structured slightly differently than expected would simply break the system.</p>
+
+  <p class="reveal">Statistical NLP, which dominated from the late 1990s through the 2010s, replaced hard-coded rules with probabilities learned from real text, a major improvement, but these models still treated context in a fairly narrow window, usually just a handful of nearby words. The real shift came with deep learning, and specifically with transformer architectures, which can weigh relationships between every word in a sentence (or even an entire document) simultaneously, rather than one neighbor at a time.</p>
+
+  <p class="reveal">This is also where NLP splits into two related but distinct directions: natural language understanding (NLU), which is about interpreting what a sentence means, and natural language generation (NLG), which is about producing new, coherent text. A chatbot needs both. Our explainer on <a href="https://nyvoraai.github.io/blog/how-does-ai-decide-what-to-say-next.html">how does AI decide what to say next</a> focuses specifically on the generation side, predicting the next word in a sequence, which is exactly how modern chatbots write their replies.</p>
+
+  <p class="reveal">It's also worth knowing that the heavy lifting of "learning language" happens long before you ever type a message. Training a large NLP model on a huge text corpus takes enormous computing time, but using that finished model to read your sentence happens almost instantly. Our piece on <a href="https://nyvoraai.github.io/blog/ai-inference-vs-training.html">AI inference vs training</a> walks through that distinction in detail.</p>
+
+  <div class="tbl-wrap reveal">
+    <table class="tool-table">
+      <thead><tr><th>Era</th><th>Approach</th><th>Real-World Analogy</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Rule-Based (1960s–1990s)</strong></td><td>Hand-coded grammar rules and dictionaries</td><td>Like a strict grammar teacher who can't handle slang</td></tr>
+        <tr><td><strong>Statistical NLP (1990s–2010s)</strong></td><td>Probabilities learned from text frequency</td><td>Like guessing the next word from habit, not understanding</td></tr>
+        <tr><td><strong>Deep Learning / Embeddings (2013+)</strong></td><td>Words represented as vectors in meaning-space</td><td>Like placing every word on a map by what it's close to</td></tr>
+        <tr><td><strong>Transformers (2017+)</strong></td><td>Attention across the whole sentence or document at once</td><td>Like reading an entire paragraph before forming an opinion</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="real-world-uses"><span class="h2-num">05</span>Where You Already Use NLP Every Day</h2>
+  <p class="reveal">NLP isn't a futuristic concept, it's already running quietly in tools you probably used this morning:</p>
+
+  <div class="use-cases reveal">
+    <div class="use-case">
+      <span class="use-icon">🔍</span>
+      <h3>Search Engines</h3>
+      <p>Search understands the intent behind your query, not just the exact keywords you typed, matching meaning rather than literal text.</p>
+    </div>
+    <div class="use-case">
+      <span class="use-icon">💬</span>
+      <h3>Chatbots & Virtual Assistants</h3>
+      <p>From customer support bots to Siri and Alexa, NLP parses what you said and generates a coherent, relevant reply.</p>
+    </div>
+    <div class="use-case">
+      <span class="use-icon">🌐</span>
+      <h3>Machine Translation</h3>
+      <p>Tools like Google Translate use NLP to convert meaning, not just words, between languages with very different grammar.</p>
+    </div>
+    <div class="use-case">
+      <span class="use-icon">🚫</span>
+      <h3>Spam & Content Moderation</h3>
+      <p>Email filters and social platforms use NLP to flag spam, scams, and harmful content based on language patterns, not just keywords.</p>
+    </div>
+    <div class="use-case">
+      <span class="use-icon">📊</span>
+      <h3>Sentiment Analysis</h3>
+      <p>Brands track product reviews and social mentions automatically, measuring whether the language used is positive, negative, or neutral.</p>
+    </div>
+    <div class="use-case">
+      <span class="use-icon">⌨️</span>
+      <h3>Autocomplete & Spell Check</h3>
+      <p>Predictive text and grammar correction tools use the same underlying language modeling that powers far larger NLP systems.</p>
+    </div>
+  </div>
+
+  <p class="reveal">Worth noting: not every personalization system online runs on language at all. YouTube's feed, for example, leans far more heavily on behavioral signals like watch time than on anything you've typed or said, see our breakdown of <a href="https://nyvoraai.github.io/blog/how-do-ai-recommendations-work-on-youtube.html">how do AI recommendations work on YouTube</a> for a useful contrast between language-based AI and behavior-based AI.</p>
+
+  <h2 id="accuracy-limits"><span class="h2-num">06</span>How Accurate Is It? (And Where Does It Still Struggle?)</h2>
+  <p class="reveal">Modern NLP, especially transformer-based systems, has gotten remarkably good at understanding context, tone, and even implied meaning. But language is genuinely one of the hardest things to model, because so much of it depends on shared culture, situation, and unspoken assumptions.</p>
+
+  <div class="pro-tip reveal">
+    <div class="pro-tip-icon">📊</div>
+    <div>
+      <h4>Context Is Everything</h4>
+      <p>The same sentence can mean completely different things depending on who's speaking, the platform it's posted on, and what came immediately before it. NLP models do their best to use surrounding context, but they don't have a lived human life to draw on.</p>
+    </div>
+  </div>
+
+  <h3>Where NLP Still Falls Short:</h3>
+
+  <div class="steps reveal">
+    <div class="step"><div class="step-num">✗</div><div class="step-body"><h3>Sarcasm and Dry Humor</h3><p>"Oh great, another Monday" reads as positive on the surface but negative in tone, a gap that still trips up even strong models without extra context cues.</p></div></div>
+    <div class="step"><div class="step-num">✗</div><div class="step-body"><h3>Low-Resource Languages</h3><p>NLP performs best on languages with massive amounts of available text, like English. Languages with smaller digital footprints often get noticeably weaker support.</p></div></div>
+    <div class="step"><div class="step-num">✗</div><div class="step-body"><h3>Ambiguous Phrasing</h3><p>"I saw her duck" could mean an animal or an action. Models lean on context to resolve this, but genuinely ambiguous sentences can still confuse them.</p></div></div>
+    <div class="step"><div class="step-num">✗</div><div class="step-body"><h3>Bias Inherited From Training Data</h3><p>Since models learn from real-world text, they can absorb and repeat the same stereotypes, slang biases, or skewed associations present in that data.</p></div></div>
+    <div class="step"><div class="step-num">✗</div><div class="step-body"><h3>Limited Context Windows</h3><p>Even powerful models can only "see" a certain amount of surrounding text at once, so very long documents or conversations can lose earlier context.</p></div></div>
+  </div>
+
+  <h2 id="privacy-concerns"><span class="h2-num">07</span>The Privacy and Ethics Debate</h2>
+  <p class="reveal">A technology that can read and interpret human language at scale naturally raises bigger questions than just accuracy:</p>
+
+  <div class="key-takeaways reveal">
+    <div class="kt-title">Key Privacy & Ethics Concerns</div>
+    <ul>
+      <li><strong>Training data sourcing:</strong> large NLP models are trained on enormous amounts of text scraped from the public internet, raising questions about consent and copyright.</li>
+      <li><strong>Surveillance potential:</strong> the same sentiment and entity-extraction techniques used for customer reviews can also be applied to monitor private messages or employee communications.</li>
+      <li><strong>Misinformation at scale:</strong> language generation makes it cheap to produce large volumes of convincing but false or misleading text.</li>
+      <li><strong>Bias and fairness:</strong> language models can reinforce stereotypes present in their training data if left unchecked.</li>
+      <li><strong>Regulation:</strong> frameworks like the EU AI Act now place specific transparency requirements on systems that generate or analyze human language at scale.</li>
+    </ul>
+  </div>
+
+  <p class="reveal">As a user, the most practical safeguard is simply being aware that anything you type into a chatbot, review box, or comment section may be processed, analyzed, and in some cases used to improve future models, depending on the platform's specific privacy policy.</p>
+
+  <h2 id="faq"><span class="h2-num">08</span>Frequently Asked Questions</h2>
+  <div class="faq reveal">
+    <details open>
+      <summary>What is natural language processing (NLP)?</summary>
+      <div class="faq-body">Natural language processing, or NLP, is a branch of AI that teaches computers to read, understand, and generate human language. It powers tools like chatbots, translators, voice assistants, and spam filters by converting words into numbers a machine can analyze and respond to.</div>
+    </details>
+    <details>
+      <summary>How does NLP work step by step?</summary>
+      <div class="faq-body">NLP typically breaks text into tokens, normalizes the text, converts tokens into numerical embeddings, tags grammar and entities, runs the result through a trained model such as a transformer, and produces an output like a translation, a label, or a generated reply.</div>
+    </details>
+    <details>
+      <summary>What is the difference between NLP and machine learning?</summary>
+      <div class="faq-body">Machine learning is the broader field of training computers to learn patterns from data. NLP is a specific application of machine learning focused only on language, text, and speech, using techniques like embeddings and transformer models built for that purpose.</div>
+    </details>
+    <details>
+      <summary>What are some everyday examples of NLP?</summary>
+      <div class="faq-body">Everyday NLP includes autocomplete and spell check, voice assistants like Siri and Alexa, spam email filters, live translation apps, customer service chatbots, and the sentiment analysis brands use to monitor reviews and social media mentions.</div>
+    </details>
+    <details>
+      <summary>Can NLP understand sarcasm and tone?</summary>
+      <div class="faq-body">Modern NLP models have improved significantly at detecting sarcasm and tone, but they still struggle compared to humans, especially with dry sarcasm, cultural context, or sentences that rely heavily on shared background knowledge to interpret correctly.</div>
+    </details>
+    <details>
+      <summary>Is ChatGPT an example of NLP?</summary>
+      <div class="faq-body">Yes. ChatGPT and similar large language models are advanced applications of NLP, built on transformer architectures that process and generate text. They represent one of the most capable forms of natural language processing in use today.</div>
+    </details>
+    <details>
+      <summary>What's the difference between NLP and a transformer model?</summary>
+      <div class="faq-body">NLP is the overall field of getting computers to work with human language. A transformer model is a specific neural network architecture, one of many tools used inside modern NLP systems to understand context and relationships between words.</div>
+    </details>
+    <details>
+      <summary>Do I need to know coding to understand NLP?</summary>
+      <div class="faq-body">No. You can understand the core concepts of NLP, like tokenization, embeddings, and how chatbots generate replies, without writing a single line of code. Coding only becomes necessary if you want to build or train NLP models yourself.</div>
+    </details>
+  </div>
+
+  <div class="author-box reveal">
+    <div class="meta-avatar" style="width:42px;height:42px;font-size:15px">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by the NyvoraAI Team</h3>
+      <p>We're passionate about making complex AI technology accessible to everyone. This guide breaks down natural language processing into digestible concepts. Questions? <a href="https://nyvoraai.github.io/contact.html">We're here to help!</a></p>
+    </div>
+  </div>
+
+  <div class="share-section reveal">
+    <div class="share-title">Know someone curious about how NLP works? Share this guide!</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=What+Is+Natural+Language+Processing+%28NLP%29%3F+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/blog/what-is-natural-language-processing-nlp.html" target="_blank" rel="noopener" class="share-btn">Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/blog/what-is-natural-language-processing-nlp.html" target="_blank" rel="noopener" class="share-btn">Share on Facebook</a>
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="share-btn">Follow on Instagram</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="share-btn">Watch on YouTube</a>
+      <button class="share-btn" onclick="copyLink()">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="newsletter reveal">
+    <h2>Stay ahead of the AI curve</h2>
+    <p>Join thousands of readers getting weekly AI insights, tutorials, and breaking news, delivered straight to your inbox.</p>
+    <form class="nl-form" action="https://formspree.io/f/xwvjgdpw" method="POST" onsubmit="handleNewsletter(event,this)">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required/>
+      <button class="nl-btn" type="submit">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · 100% free forever</p>
+    <div class="nl-social">
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc">Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc">X / Twitter</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc">YouTube</a>
+    </div>
+  </div>
+
+  <div class="related reveal">
+    <div class="related-title">Keep Learning</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/blog/what-is-a-transformer-model-in-ai.html" class="rel-card">
+        <div class="rel-tag">AI Fundamentals</div>
+        <div class="rel-title">What Is a Transformer Model in AI?</div>
+        <div class="rel-read">13 min read</div>
+      </a>
+      <a href="https://nyvoraai.github.io/blog/how-does-ai-decide-what-to-say-next.html" class="rel-card">
+        <div class="rel-tag">AI Applications</div>
+        <div class="rel-title">How Does AI Decide What to Say Next?</div>
+        <div class="rel-read">12 min read</div>
+      </a>
+      <a href="https://nyvoraai.github.io/blog/ai-inference-vs-training.html" class="rel-card">
+        <div class="rel-tag">Deep Dive</div>
+        <div class="rel-title">AI Inference vs Training: What's the Difference?</div>
+        <div class="rel-read">11 min read</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<!-- FOOTER (animated + colorful) -->
+<footer>
+  <div class="footer-aura footer-aura-1"></div>
+  <div class="footer-aura footer-aura-2"></div>
+  <div class="footer-aura footer-aura-3"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">
+        <img src="https://nyvoraai.github.io/logo.svg" alt="" class="logo-img" onerror="this.style.display='none'"/>
+        Nyvora<span class="accent">AI</span>
+      </span>
+      <p>Your trusted source for original AI news, beginner guides, deep dives, and practical insights on artificial intelligence. Built for the AI generation.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn">Facebook</a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn">X</a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Topics</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">For Beginners</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">AI Tools</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Guides</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Tool Reviews</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+      <a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /page-wrap -->
+
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">^</button>
+
+<div id="side-popup" role="dialog" aria-label="Subscribe to NyvoraAI">
+  <button class="sp-close" onclick="closePopup()" aria-label="Close">x</button>
+  <div class="sp-icon">AI</div>
+  <div class="sp-title">Weekly AI guides</div>
+  <div class="sp-text">Get the best beginner-friendly AI explainers delivered free every week.</div>
+  <form id="sp-form" action="https://formspree.io/f/xwvjgdpw" method="POST" onsubmit="handlePopupSubmit(event,this)">
+    <input class="sp-input" type="email" name="email" placeholder="your@email.com" required/>
+    <button class="sp-btn" type="submit">Get free guides</button>
+  </form>
+  <div class="sp-note">No spam · Unsubscribe anytime</div>
+</div>
+
+<script>
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  const f=document.getElementById('starField');
+  for(let i=0;i<120;i++){
+    const s=document.createElement('div');
+    s.className='star';
+    const sz=Math.random()*1.8+0.4;
+    s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${2+Math.random()*4}s;animation-delay:${-Math.random()*4}s;opacity:${0.1+Math.random()*0.5}`;
+    f.appendChild(s);
+  }
+})();
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  const w=document.getElementById('orbField');
+  const colors=['rgba(0,212,255,0.5)','rgba(123,94,167,0.5)','rgba(0,229,160,0.4)'];
+  for(let i=0;i<12;i++){
+    const o=document.createElement('div');
+    o.className='orb';
+    const sz=3+Math.random()*6;
+    const dur=12+Math.random()*16;
+    const delay=-Math.random()*dur;
+    o.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;background:${colors[i%3]};filter:blur(1px);animation-duration:${dur}s;animation-delay:${delay}s;box-shadow:0 0 ${sz*2}px ${colors[i%3]}`;
+    w.appendChild(o);
+  }
+})();
+
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const pct=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  document.getElementById('progress').style.width=pct+'%';
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+  if(pct>40 && !popupClosed && !popupShown){
+    popupShown=true;
+    setTimeout(()=>document.getElementById('side-popup').classList.add('show'),400);
+  }
+});
+
+const reveals=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});
+},{threshold:.1});
+reveals.forEach(r=>io.observe(r));
+
+function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open')}
+
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(()=>{
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;
+    const o=btn.textContent;
+    btn.textContent='Copied!';
+    btn.style.color='var(--green)';
+    setTimeout(()=>{btn.textContent=o;btn.style.color='';},2000);
+  });
+}
+
+function handleNewsletter(e,form){
+  e.preventDefault();
+  const btn=form.querySelector('.nl-btn');
+  btn.textContent='Sending...';
+  btn.style.opacity='.7';
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{
+      if(r.ok){
+        btn.textContent='Subscribed!';
+        btn.style.background='var(--green)';
+        form.reset();
+      } else {
+        btn.textContent='Try again';
+        btn.style.opacity='1';
+      }
+    })
+    .catch(()=>{btn.textContent='Try again';btn.style.opacity='1';});
+}
+
+let popupShown=false,popupClosed=false;
+function closePopup(){
+  document.getElementById('side-popup').classList.remove('show');
+  popupClosed=true;
+}
+function handlePopupSubmit(e,form){
+  e.preventDefault();
+  const btn=form.querySelector('.sp-btn');
+  btn.textContent='Sending...';
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{
+      if(r.ok){
+        document.getElementById('side-popup').innerHTML='<div style="padding:8px 0;text-align:center"><div style="font-family:var(--font-mono);font-size:12px;color:var(--green);font-weight:700;margin-bottom:6px">Subscribed!</div><div style="font-size:12px;color:var(--text-3)">Check your inbox soon.</div></div>';
+        setTimeout(closePopup,2400);
+      } else {
+        btn.textContent='Try again';
+      }
+    })
+    .catch(()=>{btn.textContent='Try again';});
+}
+setTimeout(()=>{
+  if(!popupShown && !popupClosed){
+    popupShown=true;
+    document.getElementById('side-popup').classList.add('show');
+  }
+},8000);
+
+/* ── NLP SENTENCE TAGGER DEMO LOGIC ── */
+const nlpInfoText = {
+  tokens: '<strong>Tokenization:</strong> The sentence is split into individual tokens, the smallest units the model will work with. Notice how punctuation and words are handled separately, this is the very first step in any NLP pipeline.',
+  pos: '<strong>Part-of-Speech Tagging:</strong> Each token is labeled by its grammatical role, cyan for verbs, green for nouns, amber for adjectives, violet for adverbs. This structural map helps the model understand sentence roles before judging meaning.',
+  entity: '<strong>Named Entity Recognition:</strong> The model identifies specific real-world entities in the text, here "phone" is tagged as a PRODUCT. NER is what lets a system pull names, places, and brands out of free-flowing text.',
+  sentiment: '<strong>Sentiment Analysis:</strong> The model scores emotional tone word by word and overall. "Loved" pulls the sentence positive, "disappointing" pulls it negative, a great example of genuinely mixed sentiment in one sentence.'
+};
+
+function setNlpMode(mode){
+  const sentence = document.getElementById('nlpSentence');
+  const info = document.getElementById('nlpInfo');
+  const buttons = document.querySelectorAll('.demo-btn');
+
+  buttons.forEach(btn => btn.classList.remove('active'));
+  if(event && event.target) event.target.classList.add('active');
+
+  sentence.classList.remove('mode-tokens','mode-pos','mode-entity','mode-sentiment');
+  sentence.classList.add('mode-' + mode);
+  info.innerHTML = nlpInfoText[mode];
+}
+</script>
+</body>
+</html>
