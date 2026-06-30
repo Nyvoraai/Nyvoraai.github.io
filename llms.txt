@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (115 articles)
+## AI News (116 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -111,6 +111,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [What Is Reasoning AI and How Does It Work?](https://nyvoraai.github.io/ai-news/what-is-reasoning-ai-how-does-it-work.html): What is reasoning AI and how does it work? Discover how next-gen AI models think step-by-step, solve complex problems, and change the future of technology.
 - [What Is Reinforcement Learning in Simple Terms?](https://nyvoraai.github.io/ai-news/what-is-reinforcement-learning-simple-terms.html): What is reinforcement learning in simple terms? Learn how AI learns through trial, error, and rewards, shaping the future of smart technology in 2026.
 - [What Is Responsible AI Development?](https://nyvoraai.github.io/ai-news/what-is-responsible-ai-development.html): What is responsible AI development? Learn the core principles, ethical frameworks, and practical steps to build safe, fair, and transparent AI systems.
+- [What Is Retrieval Augmented Generation (RAG)? Guide 2026](https://nyvoraai.github.io/ai-news/what-is-retrieval-augmented-generation-rag.html): Learn what Retrieval Augmented Generation (RAG) is, how it works, and why it's transforming AI. Complete guide with examples and use cases for 2026.
 - [What Is RLHF in AI? Complete Guide to Reinforcement Learning](https://nyvoraai.github.io/ai-news/what-is-rlhf-ai.html): Discover what RLHF is in artificial intelligence. Learn how human feedback trains AI models like ChatGPT to be more helpful, harmless, and honest in 2026.
 - [What is Robot Process Automation RPA? 2026 Guide](https://nyvoraai.github.io/ai-news/what-is-robot-process-automation-rpa.html): Discover what robot process automation RPA is and how it transforms business operations. Learn use cases, benefits, and implementation strategies.
 - [What is the Best AI Chatbot in 2026? Expert Guide](https://nyvoraai.github.io/ai-news/what-is-the-best-ai-chatbot-in-2026.html): Discover the best AI chatbot in 2026. Compare ChatGPT, Claude, Gemini & more. Expert reviews, features, pricing & recommendations.
