@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>How Does AI Detect Spam Emails? (2026 Guide)</title>
+<meta name="description" content="How does AI detect spam emails? See how filters read patterns, links, and language to catch scams before they hit your inbox."/>
+<meta name="keywords" content="how does AI detect spam emails, AI spam detection, how AI filters spam, email spam filter AI, AI spam detection explained"/>
+<meta name="author" content="Varun Lalwani"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="canonical" href="https://nyvoraai.github.io/blog/how-does-ai-detect-spam-emails.html"/>
+<link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
+<link rel="icon" type="image/png" href="https://nyvoraai.github.io/favicon-32x32.png"/>
+<link rel="apple-touch-icon" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
+<link rel="alternate" type="application/rss+xml" title="NyvoraAI Blog RSS Feed" href="https://nyvoraai.github.io/rss.xml"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How Does AI Detect Spam Emails? | NyvoraAI"/>
+<meta property="og:description" content="How does AI detect spam emails? See how filters read patterns, links, and language to catch scams before they hit your inbox."/>
+<meta property="og:url" content="https://nyvoraai.github.io/blog/how-does-ai-detect-spam-emails.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/blog/how-does-ai-detect-spam-emails-thumbnail.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-06-30T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-06-30T00:00:00Z"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="How Does AI Detect Spam Emails? | NyvoraAI"/>
+<meta name="twitter:description" content="How does AI detect spam emails? See how filters read patterns, links, and language to catch scams before they hit your inbox."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/blog/how-does-ai-detect-spam-emails-thumbnail.png"/>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How Does AI Detect Spam Emails?","description":"How does AI detect spam emails? See how filters read patterns, links, and language to catch scams before they hit your inbox.","image":"https://nyvoraai.github.io/assets/blog/how-does-ai-detect-spam-emails-thumbnail.png","datePublished":"2026-06-30","dateModified":"2026-06-30","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/blog/how-does-ai-detect-spam-emails.html"}}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://nyvoraai.github.io/blog.html"},{"@type":"ListItem","position":3,"name":"How Does AI Detect Spam Emails?","item":"https://nyvoraai.github.io/blog/how-does-ai-detect-spam-emails.html"}]}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does AI detect spam emails?","acceptedAnswer":{"@type":"Answer","text":"AI detects spam emails by analyzing the sender's reputation, the structure and wording of the message, embedded links and attachments, and patterns learned from millions of previously labeled spam and non-spam emails, then scoring the message and routing it accordingly."}},{"@type":"Question","name":"What signals do AI spam filters look at?","acceptedAnswer":{"@type":"Answer","text":"AI spam filters look at sender authentication records, domain age and reputation, language patterns common in scams, suspicious links and attachments, formatting quirks, and how recipients have interacted with similar emails in the past."}},{"@type":"Question","name":"Can AI spam filters be wrong?","acceptedAnswer":{"@type":"Answer","text":"Yes. AI spam filters occasionally misclassify legitimate email as spam, known as a false positive, or let genuine spam through, known as a false negative. Most providers let users mark emails as not spam to retrain the filter over time."}},{"@type":"Question","name":"How is AI spam detection different from old keyword filters?","acceptedAnswer":{"@type":"Answer","text":"Old keyword filters blocked emails containing specific words like free or winner. AI spam detection instead learns patterns across the whole message, sender behavior, and link structure, making it far harder for spammers to bypass with simple word substitutions."}},{"@type":"Question","name":"Do AI spam filters get smarter over time?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most major email providers continuously retrain their spam models on new data, including user reports, so the filter adapts as spammers change tactics, though there is always a short lag between new scam techniques and the model catching up."}},{"@type":"Question","name":"Can spammers fool AI detection systems?","acceptedAnswer":{"@type":"Answer","text":"Spammers constantly try new tricks like misspelling words, using images instead of text, or hijacking trusted domains. AI systems counter this with multiple overlapping signals, so bypassing one check, such as text scanning, still leaves others, like sender reputation, in place."}},{"@type":"Question","name":"Is AI spam detection the same as phishing detection?","acceptedAnswer":{"@type":"Answer","text":"They overlap but are not identical. Spam detection focuses on unwanted bulk email in general, while phishing detection specifically targets messages designed to steal credentials or money, often using more aggressive checks on links and impersonated senders."}}]}</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#080A0F;
+  --bg-2:#0D1117;
+  --bg-3:#111827;
+  --bg-card:#141B26;
+  --bg-card-2:#1A2235;
+  --border:#1E2D40;
+  --border-bright:#2A3F5C;
+
+  --cyan:#00D4FF;
+  --cyan-dim:#0099BB;
+  --cyan-glow:rgba(0,212,255,0.15);
+  --violet:#7B5EA7;
+  --violet-bright:#9B7EC8;
+  --violet-glow:rgba(123,94,167,0.18);
+  --green:#00E5A0;
+  --green-dim:#00B07A;
+  --green-glow:rgba(0,229,160,0.12);
+  --amber:#FFB347;
+  --amber-glow:rgba(255,179,71,0.12);
+  --red:#FF6B6B;
+
+  --text:#E8EDF5;
+  --text-2:#9BA8BC;
+  --text-3:#5C6B80;
+  --text-inv:#080A0F;
+
+  --radius:16px;
+  --radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+
+  --glow-cyan:0 0 30px rgba(0,212,255,0.2),0 0 60px rgba(0,212,255,0.08);
+  --glow-violet:0 0 30px rgba(123,94,167,0.25);
+  --shadow-card:0 4px 24px rgba(0,0,0,0.4),0 1px 4px rgba(0,0,0,0.3);
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.78;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--cyan);text-decoration:none;transition:color .2s}
+a:hover{color:var(--cyan-dim);text-decoration:underline}
+h1,h2,h3,.font-display{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+abbr.term{text-decoration:none;border-bottom:1px dashed var(--cyan-dim);cursor:help;color:var(--text)}
+
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.stars{position:absolute;inset:0}
+.star{position:absolute;background:#fff;border-radius:50%;animation:starTwinkle ease-in-out infinite}
+@keyframes starTwinkle{0%,100%{opacity:.15;transform:scale(1)}50%{opacity:.8;transform:scale(1.4)}}
+.aura{position:absolute;border-radius:50%;filter:blur(100px);will-change:transform;animation:auraFloat ease-in-out infinite;pointer-events:none}
+.aura-1{width:700px;height:700px;background:radial-gradient(circle,rgba(0,212,255,.18),transparent 65%);top:-200px;left:-200px;animation-duration:20s}
+.aura-2{width:600px;height:600px;background:radial-gradient(circle,rgba(123,94,167,.22),transparent 65%);bottom:-150px;right:-150px;animation-duration:25s;animation-delay:-8s}
+.aura-3{width:500px;height:500px;background:radial-gradient(circle,rgba(0,229,160,.12),transparent 65%);top:40%;left:55%;animation-duration:18s;animation-delay:-4s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(60px,-50px) scale(1.1)}66%{transform:translate(-40px,35px) scale(.92)}}
+.grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.025) 1px,transparent 1px);background-size:60px 60px;animation:gridShift 40s linear infinite}
+@keyframes gridShift{0%{background-position:0 0}100%{background-position:60px 60px}}
+.orb{position:absolute;border-radius:50%;animation:orbFloat ease-in-out infinite;opacity:0}
+@keyframes orbFloat{0%{transform:translateY(110vh) scale(0.5);opacity:0}10%{opacity:.6}90%{opacity:.3}100%{transform:translateY(-10vh) scale(1.2);opacity:0}}
+@media(prefers-reduced-motion:reduce){.star,.aura,.orb,.grid-lines{animation:none;display:none}html{scroll-behavior:auto}}
+
+#progress{position:fixed;top:0;left:0;width:0;height:2px;z-index:400;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green));transition:width .08s;box-shadow:0 0 12px var(--cyan)}
+
+nav{position:sticky;top:0;z-index:300;background:rgba(8,10,15,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:62px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:20px;font-weight:700;letter-spacing:-.02em;color:var(--text);display:flex;align-items:center;gap:9px}
+.nav-logo .logo-accent{color:var(--cyan)}
+.logo-img{height:28px;width:28px;border-radius:7px;object-fit:cover}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--text-2);font-size:14px;font-weight:500;transition:color .2s;letter-spacing:.01em}
+.nav-links a:hover,.nav-links a.active{color:var(--text);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-cta{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:8px 18px;border-radius:8px;font-size:13px;font-weight:700;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 20px rgba(0,212,255,.25)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 30px rgba(0,212,255,.4);text-decoration:none;color:var(--text-inv)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--text-2);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:62px;left:0;right:0;background:rgba(13,17,23,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:20px 24px;flex-direction:column;gap:16px;z-index:299}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--text);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
+
+.breadcrumb{max-width:840px;margin:24px auto 0;padding:0 24px;font-size:12.5px;color:var(--text-3);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--text-3);transition:color .2s}
+.breadcrumb a:hover{color:var(--cyan);text-decoration:none}
+.bc-sep{color:var(--border-bright)}
+
+.article-hdr{max-width:840px;margin:20px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;background:rgba(0,212,255,.08);color:var(--cyan);border:1px solid rgba(0,212,255,.2);font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 12px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-read{background:rgba(0,229,160,.08);color:var(--green);border-color:rgba(0,229,160,.2)}
+.badge-date{background:rgba(255,179,71,.08);color:var(--amber);border-color:rgba(255,179,71,.2)}
+.article-title{font-size:clamp(28px,5vw,46px);font-weight:700;line-height:1.16;color:var(--text);margin-bottom:16px;letter-spacing:-.025em}
+.title-glow{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.article-intro{font-size:18.5px;color:var(--text-2);line-height:1.65;margin-bottom:22px}
+.article-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--text-3);padding-bottom:22px;border-bottom:1px solid var(--border)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{width:34px;height:34px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--text-inv);font-family:var(--font-display);position:relative;overflow:hidden}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--text-2)}
+.meta-sep{color:var(--border-bright)}
+
+.hero-wrap{max-width:840px;margin:28px auto;padding:0 24px}
+.hero-box{width:100%;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);background:var(--bg-card);box-shadow:var(--shadow-card),var(--glow-cyan);line-height:0}
+.hero-box img{width:100%;height:auto;display:block}
+
+.toc-box{max-width:840px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow-card)}
+.toc-title{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc-title::before{content:'';width:3px;height:13px;background:var(--cyan);border-radius:2px;display:inline-block;box-shadow:0 0 8px var(--cyan)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:5px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--text-2);font-size:14px;transition:color .2s;display:flex;gap:8px;padding:3px 0}
+.toc a::before{content:counter(tocnum,'0'counter(tocnum));font-family:var(--font-mono);color:var(--cyan);font-weight:700;font-size:11.5px;min-width:18px;opacity:.7}
+.toc a:hover{color:var(--cyan);text-decoration:none}
+
+.layout{max-width:840px;margin:0 auto;padding:36px 24px 80px}
+
+.prose h2{font-size:25px;font-weight:700;color:var(--text);margin:52px 0 16px;letter-spacing:-.02em;scroll-margin-top:88px;display:flex;align-items:center;gap:12px}
+.prose h2 .h2-num{font-family:var(--font-mono);font-size:12px;color:var(--cyan);font-weight:700;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.2);padding:3px 9px;border-radius:6px;letter-spacing:.05em}
+.prose h3{font-size:18px;font-weight:600;color:var(--text);margin:24px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--text-2)}
+.prose strong{color:var(--text);font-weight:600}
+.prose ul,.prose ol{margin:0 0 20px 20px}
+.prose li{margin-bottom:9px;color:var(--text-2)}
+
+.key-takeaways{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--cyan);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow-card),0 0 0 1px rgba(0,212,255,.06) inset}
+.kt-title{font-family:var(--font-mono);font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+.key-takeaways ul{margin:0;list-style:none}
+.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15px;color:var(--text-2)}
+.key-takeaways li:last-child{margin-bottom:0}
+.key-takeaways li::before{content:'//';color:var(--cyan);flex-shrink:0;font-weight:700;font-family:var(--font-mono);font-size:12px;opacity:.7}
+.key-takeaways p{color:var(--text);font-size:16px;margin-bottom:10px}
+
+.face-flow{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px 24px;margin:32px 0;position:relative;overflow:hidden}
+.face-flow::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green))}
+.flow-title{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text);margin-bottom:28px;text-align:center}
+.flow-steps{display:flex;flex-direction:column;gap:24px;position:relative}
+.flow-step{display:flex;align-items:flex-start;gap:20px;background:var(--bg-3);border:1px solid var(--border);border-radius:12px;padding:20px;transition:transform .2s,border-color .2s}
+.flow-step:hover{transform:translateX(8px);border-color:var(--border-bright)}
+.flow-number{flex-shrink:0;width:42px;height:42px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:16px;color:var(--text-inv);box-shadow:0 0 15px rgba(0,212,255,.3)}
+.flow-content h4{font-size:15px;font-weight:600;color:var(--text);margin-bottom:6px;font-family:var(--font-display)}
+.flow-content p{font-size:14px;color:var(--text-2);line-height:1.6;margin:0}
+.flow-arrow{position:absolute;left:62px;top:90px;bottom:-24px;width:2px;background:linear-gradient(180deg,var(--cyan),var(--violet-bright));opacity:.4}
+.flow-step:last-child .flow-arrow{display:none}
+
+.face-demo{background:linear-gradient(135deg,var(--bg-card),var(--bg-card-2));border:1px solid var(--border-bright);border-radius:var(--radius);padding:32px;margin:32px 0;box-shadow:var(--shadow-card),0 0 30px rgba(123,94,167,.1)}
+.demo-title{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text);margin-bottom:8px}
+.demo-subtitle{color:var(--text-2);margin-bottom:24px;font-size:15px}
+.demo-face{background:var(--bg-3);border:2px solid var(--border);border-radius:12px;padding:24px;position:relative;overflow:visible}
+.email-preview{font-family:var(--font-mono);font-size:14.5px;line-height:2;color:var(--text-2)}
+.email-line{display:flex;gap:10px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+.email-label{color:var(--text-3);min-width:54px;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.email-flag{display:none;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.04em;text-transform:uppercase;font-family:var(--font-mono)}
+.flag-risk{background:rgba(255,107,107,.15);color:var(--red);border:1px solid rgba(255,107,107,.35)}
+.flag-warn{background:rgba(255,179,71,.15);color:var(--amber);border:1px solid rgba(255,179,71,.35)}
+.flag-ok{background:rgba(0,229,160,.15);color:var(--green);border:1px solid rgba(0,229,160,.35)}
+.demo-face.mode-sender .email-line[data-cat="sender"] .email-flag{display:inline-block}
+.demo-face.mode-links .email-line[data-cat="links"] .email-flag{display:inline-block}
+.demo-face.mode-language .email-line[data-cat="language"] .email-flag{display:inline-block}
+.demo-face.mode-score .score-box{display:flex}
+.score-box{display:none;margin-top:18px;align-items:center;gap:16px;background:rgba(255,107,107,.08);border:1px solid rgba(255,107,107,.25);border-radius:10px;padding:16px}
+.score-num{font-family:var(--font-mono);font-size:28px;font-weight:700;color:var(--red)}
+.score-label{font-size:13px;color:var(--text-2)}
+.demo-controls{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.demo-btn{background:var(--bg-3);border:1px solid var(--border);border-radius:8px;padding:10px 18px;color:var(--text);font-size:13.5px;cursor:pointer;transition:all .2s;font-family:var(--font-body)}
+.demo-btn:hover{border-color:var(--cyan);color:var(--cyan)}
+.demo-btn.active{background:rgba(0,212,255,.15);border-color:var(--cyan);color:var(--cyan)}
+.demo-info{margin-top:16px;padding:16px;background:rgba(0,212,255,.05);border:1px solid rgba(0,212,255,.2);border-radius:8px;font-size:14px;color:var(--text-2)}
+
+.tbl-wrap{overflow-x:auto;margin:22px 0;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow-card)}
+.tool-table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:460px;background:var(--bg-card)}
+.tool-table thead tr{background:var(--bg-3)}
+.tool-table th{text-align:left;padding:12px 16px;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-3);border-bottom:1px solid var(--border);font-family:var(--font-mono)}
+.tool-table td{padding:13px 16px;border-bottom:1px solid var(--border);vertical-align:middle;color:var(--text-2)}
+.tool-table tr:last-child td{border-bottom:none}
+.tool-table tr:hover td{background:rgba(0,212,255,.04)}
+.tool-table strong{color:var(--text)}
+
+.use-cases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
+.use-case{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;transition:border-color .2s,transform .2s}
+.use-case:hover{border-color:var(--border-bright);transform:translateY(-3px)}
+.use-icon{font-size:28px;margin-bottom:12px;display:block}
+.use-case h3{font-size:16px;font-weight:600;color:var(--text);margin-bottom:8px;font-family:var(--font-display)}
+.use-case p{font-size:13.5px;color:var(--text-2);line-height:1.6;margin:0}
+
+.pro-tip{background:linear-gradient(135deg,rgba(0,212,255,.08),rgba(123,94,167,.08));border:1px solid rgba(0,212,255,.25);border-radius:var(--radius);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start}
+.pro-tip-icon{flex-shrink:0;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));border:1px solid rgba(0,212,255,.3);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-weight:700;font-size:14px;color:var(--text-inv)}
+.pro-tip h4{font-family:var(--font-mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--cyan);margin-bottom:6px}
+.pro-tip p{margin:0;color:var(--text-2);font-size:14.5px;line-height:1.65}
+
+.steps{display:flex;flex-direction:column;gap:14px;margin:24px 0}
+.step{display:flex;gap:16px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:18px 20px;transition:border-color .2s,transform .2s}
+.step:hover{border-color:var(--border-bright);transform:translateX(6px)}
+.step-num{flex-shrink:0;width:36px;height:36px;border-radius:10px;background:rgba(255,107,107,.12);border:1px solid rgba(255,107,107,.3);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;font-family:var(--font-mono)}
+.step-body h3{margin:0 0 6px;font-size:15.5px}
+.step-body p{margin:0;font-size:14px}
+
+.faq{margin:14px 0}
+details{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--border-bright)}
+summary{padding:16px 20px;cursor:pointer;font-weight:600;font-size:15.5px;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--cyan);font-size:20px;font-weight:300;transition:transform .3s;flex-shrink:0;font-family:var(--font-mono)}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 20px 16px;color:var(--text-2);font-size:14.5px;line-height:1.7}
+
+.author-box{display:flex;gap:14px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin:44px 0 0;box-shadow:var(--shadow-card)}
+.author-box h3{font-size:14.5px;font-family:var(--font-display);margin-bottom:4px;color:var(--text)}
+.author-box p{font-size:13.5px;color:var(--text-3);margin:0;line-height:1.6}
+
+.share-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;margin:28px 0 0;text-align:center}
+.share-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:14px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:7px;padding:9px 16px;border-radius:8px;border:1px solid var(--border);font-size:12.5px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--bg-3);color:var(--text-2);font-family:var(--font-body)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 14px rgba(0,212,255,.15)}
+
+.newsletter{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:40px;margin:52px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow-card)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green))}
+.newsletter::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(0,212,255,.06),transparent 60%);pointer-events:none}
+.newsletter h2{font-size:23px;font-weight:700;color:var(--text);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--text-2);margin-bottom:22px;font-size:15px}
+.nl-form{display:flex;gap:10px;max-width:420px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:9px;padding:12px 15px;color:var(--text);font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--text-3)}
+.nl-input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,212,255,.1)}
+.nl-btn{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:12px 20px;border-radius:9px;border:none;cursor:pointer;font-size:13.5px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 20px rgba(0,212,255,.25)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 30px rgba(0,212,255,.4)}
+.nl-note{font-size:11.5px;color:var(--text-3);margin:10px 0 0}
+.nl-social{display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:8px 14px;border-radius:8px;border:1px solid var(--border);color:var(--text-2);transition:all .2s;background:var(--bg-3)}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--cyan)}
+
+.related{margin:44px 0 0}
+.related-title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:16px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.rel-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;transition:border-color .2s,transform .2s;cursor:pointer;display:block}
+.rel-card:hover{border-color:var(--border-bright);transform:translateY(-3px);text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.rel-tag{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan);margin-bottom:7px;font-family:var(--font-mono)}
+.rel-title{font-size:13.5px;font-weight:600;color:var(--text);line-height:1.4;margin-bottom:7px;font-family:var(--font-display)}
+.rel-read{font-size:11.5px;color:var(--text-3);font-family:var(--font-mono)}
+
+footer{background:var(--bg-2);border-top:1px solid var(--border);padding:56px 24px 28px;position:relative;z-index:1;overflow:hidden}
+.footer-aura{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;animation:footerDrift ease-in-out infinite}
+.footer-aura-1{width:480px;height:480px;background:radial-gradient(circle,rgba(0,212,255,.12),transparent 65%);top:-220px;left:6%;animation-duration:16s}
+.footer-aura-2{width:420px;height:420px;background:radial-gradient(circle,rgba(123,94,167,.16),transparent 65%);top:-180px;right:8%;animation-duration:20s;animation-delay:-6s}
+.footer-aura-3{width:380px;height:380px;background:radial-gradient(circle,rgba(0,229,160,.10),transparent 65%);bottom:-160px;left:50%;animation-duration:18s;animation-delay:-3s}
+@keyframes footerDrift{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,26px)}}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:44px;position:relative;z-index:1}
+.footer-logo{font-size:19px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:9px;color:var(--text);font-family:var(--font-display)}
+.footer-logo .accent{background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green),var(--cyan));background-size:300% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:accentShift 7s linear infinite}
+@keyframes accentShift{0%{background-position:0% 0}100%{background-position:300% 0}}
+.footer-brand p{color:var(--text-3);font-size:13.5px;line-height:1.7;margin-bottom:18px}
+.footer-social{display:flex;gap:8px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:8px;border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text-2);transition:all .2s;background:var(--bg-3);position:relative;overflow:hidden}
+.fs-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--text-inv);background:linear-gradient(135deg,var(--cyan),var(--violet-bright));box-shadow:0 0 16px rgba(0,212,255,.3)}
+.footer-col h4{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text);margin-bottom:14px;font-family:var(--font-mono)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:9px}
+.footer-col a{color:var(--text-3);font-size:13.5px;transition:color .2s}
+.footer-col a:hover{color:var(--cyan);text-decoration:none}
+.footer-bottom{max-width:1100px;margin:40px auto 0;padding-top:20px;position:relative;display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--text-3);flex-wrap:wrap;gap:10px;z-index:1}
+.footer-bottom::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green),var(--cyan));background-size:200% 100%;animation:footerShimmer 6s linear infinite}
+@keyframes footerShimmer{0%{background-position:0% 0}100%{background-position:200% 0}}
+.footer-bottom-links{display:flex;gap:18px}
+.footer-bottom-links a{color:var(--text-3);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--cyan);text-decoration:none}
+
+#back-top{position:fixed;bottom:26px;right:26px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:0 0 20px rgba(0,212,255,.3);z-index:200;font-weight:700}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.1) translateY(-2px);box-shadow:0 0 30px rgba(0,212,255,.5)}
+
+.chat-scene-card{max-width:840px;margin:22px auto 0;padding:0 24px}
+.chat-card-inner{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow-card)}
+.chat-icon{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(123,94,167,.15));border:1px solid rgba(0,212,255,.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;font-family:var(--font-mono);font-weight:700;color:var(--cyan)}
+.chat-name{font-family:var(--font-display);font-weight:700;font-size:14.5px;color:var(--text)}
+.chat-status{font-size:12px;color:var(--text-3);display:flex;align-items:center;gap:6px;margin-top:2px;font-family:var(--font-mono)}
+.status-dot{width:6px;height:6px;border-radius:50%;background:var(--green);display:inline-block;animation:pulseDot 2s ease-in-out infinite;box-shadow:0 0 6px var(--green)}
+@keyframes pulseDot{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,229,160,.4)}50%{opacity:.7;box-shadow:0 0 0 5px rgba(0,229,160,0)}}
+.chat-badge{font-family:var(--font-mono);font-size:10.5px;color:var(--text-3);background:var(--bg-3);padding:4px 10px;border-radius:6px;border:1px solid var(--border);white-space:nowrap}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+#side-popup{position:fixed;bottom:88px;right:26px;z-index:500;width:260px;background:var(--bg-card);border:1px solid var(--border-bright);border-radius:16px;padding:18px;box-shadow:var(--shadow-card),0 0 40px rgba(0,212,255,.15);transform:translateX(320px);opacity:0;transition:transform .45s cubic-bezier(.22,1,.36,1),opacity .35s ease;pointer-events:none;overflow:hidden}
+#side-popup.show{transform:translateX(0);opacity:1;pointer-events:all}
+#side-popup::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright))}
+.sp-close{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--text-3);cursor:pointer;font-size:16px;line-height:1;padding:2px;transition:color .2s;font-family:var(--font-mono)}
+.sp-close:hover{color:var(--text)}
+.sp-icon{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(123,94,167,.15));border:1px solid rgba(0,212,255,.2);display:flex;align-items:center;justify-content:center;margin-bottom:10px;font-family:var(--font-mono);font-weight:700;font-size:14px;color:var(--cyan)}
+.sp-title{font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--text);margin-bottom:5px}
+.sp-text{font-size:12.5px;color:var(--text-3);line-height:1.5;margin-bottom:12px}
+.sp-input{width:100%;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:8px;padding:9px 12px;color:var(--text);font-size:12.5px;outline:none;margin-bottom:8px;font-family:var(--font-body);transition:border-color .2s}
+.sp-input:focus{border-color:var(--cyan)}
+.sp-btn{width:100%;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);border:none;border-radius:8px;padding:9px;font-size:12.5px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .15s;font-family:var(--font-body)}
+.sp-btn:hover{opacity:.9;transform:translateY(-1px)}
+.sp-note{font-size:10.5px;color:var(--text-3);text-align:center;margin-top:6px;font-family:var(--font-mono)}
+
+.scanline{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.06;animation:scanDown 8s linear infinite;pointer-events:none;z-index:1}
+@keyframes scanDown{0%{top:-2px}100%{top:100vh}}
+
+@media(max-width:900px){
+  .use-cases{grid-template-columns:repeat(2,1fr)}
+  .related-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .use-cases{grid-template-columns:1fr}
+  .related-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+  #side-popup{right:12px;bottom:80px;width:240px}
+  .article-intro{font-size:16.5px}
+  body{font-size:16px}
+  .email-preview{font-size:13px}
+}
+</style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="bg-canvas" aria-hidden="true">
+  <div class="aura aura-1"></div>
+  <div class="aura aura-2"></div>
+  <div class="aura aura-3"></div>
+  <div class="stars" id="starField"></div>
+  <div class="grid-lines"></div>
+  <div id="orbField"></div>
+</div>
+<div class="scanline" aria-hidden="true"></div>
+<div id="progress" role="progressbar" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/logo.svg" alt="" class="logo-img" onerror="this.style.display='none'"/>
+      Nyvora<span class="logo-accent">AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html" class="active">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+</div>
+
+<div class="page-wrap">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <span class="bc-sep">/</span>
+  <span>AI Applications</span>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge">AI Applications</span>
+    <span class="badge badge-read">14 min read</span>
+    <span class="badge badge-date">Updated June 2026</span>
+  </div>
+  <h1 class="article-title">How Does <span class="title-glow">AI Detect Spam</span> Emails?</h1>
+  <p class="article-intro">Your inbox quietly blocks thousands of scam attempts, fake invoices, and phishing links every year without you ever seeing most of them. Here's exactly how AI detects spam emails, the signals it reads, the model behind the scoring, and why a few sketchy messages still slip through.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">V<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="" onerror="this.remove()"/></div>
+      <div><div class="meta-name">Varun Lalwani</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-06-30">June 30, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Reviewed June 2026</span>
+  </div>
+</header>
+
+<div class="chat-scene-card reveal">
+  <div class="chat-card-inner">
+    <div class="chat-icon">AI</div>
+    <div>
+      <div class="chat-name">The system that guards your inbox</div>
+      <div class="chat-status"><span class="status-dot"></span> Scoring every message in milliseconds</div>
+    </div>
+    <div class="chat-badge">14 min</div>
+  </div>
+</div>
+
+<!-- HERO THUMBNAIL IMAGE / BLOG BANNER -->
+<div class="hero-wrap reveal">
+  <div class="hero-box">
+    <img src="https://nyvoraai.github.io/assets/blog/how-does-ai-detect-spam-emails-thumbnail.png" width="1200" height="630" loading="eager" alt="How does AI detect spam emails - diagram showing an inbox scanning a message for sender reputation, suspicious links, and spam language"/>
+  </div>
+</div>
+
+<!-- TOC -->
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">What we'll explore</div>
+    <ol>
+      <li><a href="#simple-answer">The simple answer</a></li>
+      <li><a href="#step-by-step">Step-by-step process</a></li>
+      <li><a href="#interactive-demo">Interactive demo</a></li>
+      <li><a href="#models-behind-it">The models behind the filter</a></li>
+      <li><a href="#signals-it-reads">Every signal it reads</a></li>
+      <li><a href="#accuracy-limits">Accuracy & limitations</a></li>
+      <li><a href="#protect-yourself">How to protect yourself</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">Open your spam folder right now and you'll probably find a small graveyard of fake delivery notices, too-good-to-be-true job offers, and "your account has been suspended" panic emails. You never clicked report. You never trained a filter by hand. Somehow, your inbox just knew. That quiet, constant sorting is one of the oldest and most successful applications of artificial intelligence running in your daily life, and almost nobody thinks about how it actually works.</p>
+
+  <p class="reveal">So, <strong>how does AI detect spam emails</strong>? In short, AI spam filters read a message the way a suspicious detective would: who sent it, how it's worded, what links and attachments it carries, and how similar messages have behaved in the past. Every one of those signals gets converted into a score, and if the score crosses a threshold, the email gets quarantined before it ever reaches you.</p>
+
+  <p class="reveal">This is the same kind of pattern-matching that powers a lot of AI you interact with daily. If you've ever wondered how a much more advanced sibling of this technology reads entire sentences for meaning rather than just flags, our guide on <a href="https://nyvoraai.github.io/blog/what-is-natural-language-processing-nlp.html">what is natural language processing (NLP)</a> breaks down the language side of this in detail, and spam detection is really just NLP with a very specific, very practical job.</p>
+
+  <div class="key-takeaways reveal">
+    <div class="kt-title">Key Takeaways</div>
+    <ul>
+      <li><strong>Multiple signals, not one rule:</strong> AI spam filters combine sender reputation, link analysis, language patterns, and user behavior into a single risk score.</li>
+      <li><strong>It's a learning system:</strong> models are trained on millions of labeled spam and non-spam emails, and they keep retraining as new scams appear.</li>
+      <li><strong>Beyond keywords:</strong> old filters blocked specific words; modern AI understands context, so "FREE" in a coupon newsletter isn't treated the same as "FREE" in a lottery scam.</li>
+      <li><strong>You're part of the loop:</strong> marking a message as spam or not spam directly feeds back into how the model adjusts future scoring.</li>
+      <li><strong>It's never perfect:</strong> false positives and false negatives still happen, which is why a healthy dose of personal awareness still matters.</li>
+    </ul>
+  </div>
+
+  <h2 id="simple-answer"><span class="h2-num">01</span>The Simple Answer: A Risk Score for Every Message</h2>
+  <p class="reveal">At its core, an AI spam filter is a classification system. Every incoming email gets run through a trained model that outputs a probability: how likely is this message to be spam, phishing, or a legitimate email a person actually wants to read? That probability becomes a score, and depending on where it lands, the email gets delivered to your inbox, flagged with a warning banner, or routed straight to the spam folder.</p>
+
+  <p class="reveal">What makes this genuinely "AI" rather than a simple if-this-then-that script is that the model isn't following a fixed list of rules written by a human. It has learned, from enormous volumes of real email data, what spam tends to look like statistically, even when spammers change their wording to dodge detection. If the concept of a model "learning" patterns from data instead of being explicitly programmed feels unfamiliar, our explainer on <a href="https://nyvoraai.github.io/blog/what-is-machine-learning-how-trained.html">what is machine learning and how is it trained</a> covers exactly that foundation.</p>
+
+  <p class="reveal">Think of it less like a bouncer checking IDs against a static list, and more like a bouncer who has personally watched a million people walk through the door and has developed an instinct for who's trouble, even if that exact person has never shown up before.</p>
+
+  <h2 id="step-by-step"><span class="h2-num">02</span>Step-by-Step: How an Email Gets Scored</h2>
+  <p class="reveal">Here's the journey a single email takes in the fraction of a second between hitting a mail server and landing (or not landing) in your inbox:</p>
+
+  <div class="face-flow reveal">
+    <div class="flow-title">How Does AI Detect Spam Emails: The Filtering Pipeline</div>
+    <div class="flow-steps">
+      <div class="flow-step">
+        <div class="flow-number">1</div>
+        <div class="flow-content">
+          <h4>Sender Authentication Check</h4>
+          <p>Before the content is even read, the system verifies sender identity using protocols like SPF, DKIM, and DMARC, essentially checking whether the email actually came from the domain it claims to be from, or whether it's been spoofed.</p>
+        </div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-number">2</div>
+        <div class="flow-content">
+          <h4>Reputation Scoring</h4>
+          <p>The sender's domain, IP address, and sending history are checked against reputation databases. A brand-new domain blasting thousands of emails in an hour looks very different from an established sender with years of clean history.</p>
+        </div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-number">3</div>
+        <div class="flow-content">
+          <h4>Content & Language Analysis</h4>
+          <p>The subject line and body are processed using natural language techniques, tokenizing the text and converting it into numerical features the model can evaluate for urgency, manipulation tactics, and known scam phrasing patterns.</p>
+        </div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-number">4</div>
+        <div class="flow-content">
+          <h4>Link & Attachment Inspection</h4>
+          <p>Every URL is checked against blocklists and analyzed for red flags like mismatched display text, lookalike domains, or freshly registered web addresses. Attachments get scanned for malicious code or suspicious file types.</p>
+        </div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-number">5</div>
+        <div class="flow-content">
+          <h4>Behavioral Signal Weighting</h4>
+          <p>The model factors in how recipients have interacted with similar emails: did people across the network mark messages like this as spam, or did they reply and engage normally? This crowd-level signal is surprisingly powerful.</p>
+        </div>
+        <div class="flow-arrow"></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-number">6</div>
+        <div class="flow-content">
+          <h4>Final Classification & Routing</h4>
+          <p>All these signals get combined into a single risk score in milliseconds. Based on the threshold, the email lands in your inbox, gets a warning label, or is quietly diverted to spam, all before you've even opened your mail app.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="interactive-demo"><span class="h2-num">03</span>Interactive Demo: Watch a Suspicious Email Get Flagged</h2>
+  <p class="reveal">Below is a sample scam-style email. Click each button to see which part of the message an AI spam filter would flag, and why.</p>
+
+  <div class="face-demo reveal">
+    <div class="demo-title">Live Spam Risk Scanner</div>
+    <p class="demo-subtitle">See how sender details, links, and language each get evaluated independently before being combined into one score</p>
+    <div class="demo-face mode-sender" id="demoFace">
+      <div class="email-preview">
+        <div class="email-line" data-cat="sender"><span class="email-label">From</span> security-alert@paypa1-verify.com <span class="email-flag flag-risk">Lookalike domain</span></div>
+        <div class="email-line" data-cat="sender"><span class="email-label">Domain</span> Registered 3 days ago <span class="email-flag flag-risk">New domain</span></div>
+        <div class="email-line" data-cat="language"><span class="email-label">Subject</span> URGENT: Your account will be suspended in 24 hours <span class="email-flag flag-warn">Urgency tactic</span></div>
+        <div class="email-line" data-cat="language"><span class="email-label">Body</span> "Verify your identity immediately or lose access permanently." <span class="email-flag flag-warn">Pressure language</span></div>
+        <div class="email-line" data-cat="links"><span class="email-label">Link</span> hxxp://paypa1-secure-login.net/verify <span class="email-flag flag-risk">Spoofed URL</span></div>
+        <div class="email-line" data-cat="links"><span class="email-label">Display</span> Text says "paypal.com" <span class="email-flag flag-risk">Link mismatch</span></div>
+        <div class="score-box"><div class="score-num">94%</div><div class="score-label">Spam probability score<br/>Routed directly to spam folder</div></div>
+      </div>
+    </div>
+    <div class="demo-controls">
+      <button class="demo-btn active" onclick="setSpamMode('sender')">Sender Reputation</button>
+      <button class="demo-btn" onclick="setSpamMode('links')">Link Analysis</button>
+      <button class="demo-btn" onclick="setSpamMode('language')">Language Patterns</button>
+      <button class="demo-btn" onclick="setSpamMode('score')">Final Risk Score</button>
+    </div>
+    <div class="demo-info" id="spamInfo">
+      <strong>Sender Reputation:</strong> A brand-new domain mimicking a trusted brand ("paypa1" instead of "paypal") is one of the strongest early red flags. Domain age and authentication failures get weighted heavily before content is even read.
+    </div>
+  </div>
+
+  <h2 id="models-behind-it"><span class="h2-num">04</span>The Models Behind the Filter</h2>
+  <p class="reveal">Early spam filters in the 1990s and early 2000s relied on a technique called Bayesian filtering, essentially calculating the statistical probability that specific words would appear in spam versus legitimate mail. It worked reasonably well until spammers learned to misspell trigger words or hide text inside images to dodge keyword scanning.</p>
+
+  <p class="reveal">Modern spam detection is far more layered. It typically combines several types of models working together: gradient-boosted decision trees for structured signals like sender reputation and metadata, and transformer-based language models for understanding the actual meaning and intent of the message text, not just its keywords. This is essentially the same architecture used in modern chatbots, just pointed at a narrower task. Our deep dive on <a href="https://nyvoraai.github.io/blog/how-does-ai-decide-what-to-say-next.html">how does AI decide what to say next</a> explains how these language models process and predict text, which overlaps significantly with how a spam filter "reads" a suspicious message.</p>
+
+  <p class="reveal">Training these models takes enormous amounts of labeled data and computing power, but once trained, scoring a single incoming email happens almost instantly. That gap between the slow, expensive process of training a model and the near-instant process of actually using it is worth understanding on its own, and our piece on <a href="https://nyvoraai.github.io/blog/ai-inference-vs-training.html">AI inference vs training</a> walks through that distinction clearly.</p>
+
+  <div class="tbl-wrap reveal">
+    <table class="tool-table">
+      <thead><tr><th>Era</th><th>Approach</th><th>Real-World Analogy</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Keyword Filters (1990s)</strong></td><td>Block emails containing specific flagged words</td><td>Like a bouncer with a list of banned names, easy to dodge with a fake ID</td></tr>
+        <tr><td><strong>Bayesian Filtering (Early 2000s)</strong></td><td>Statistical probability based on word frequency</td><td>Like guessing based on how often certain phrases showed up in past scams</td></tr>
+        <tr><td><strong>Machine Learning Classifiers (2010s)</strong></td><td>Decision trees and ensemble models using dozens of signals</td><td>Like a detective cross-referencing multiple clues, not just one</td></tr>
+        <tr><td><strong>Transformer-Based NLP (2018+)</strong></td><td>Deep contextual understanding of intent and tone</td><td>Like reading the whole email and sensing manipulation, not just spotting a word</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="signals-it-reads"><span class="h2-num">05</span>Every Signal an AI Spam Filter Actually Reads</h2>
+  <p class="reveal">No single clue gets an email blocked. It's the combination of dozens of small signals stacking up that pushes a message over the spam threshold:</p>
+
+  <div class="use-cases reveal">
+    <div class="use-case">
+      <span class="use-icon">📧</span>
+      <h3>Sender Authentication</h3>
+      <p>SPF, DKIM, and DMARC records confirm whether an email genuinely came from the domain it claims, catching spoofed senders before content is even scanned.</p>
+    </div>
+    <div class="use-case">
+      <span class="use-icon">🌐</span>
+      <h3>Domain & IP Reputation</h3>
+      <p>New, low-trust, or previously flagged domains and IP addresses carry far more risk weight than long-established, consistently clean senders.</p>
+    </div>
+    <div class="use-case">
+      <span class="use-icon">🔗</span>
+      <h3>Link Structure</h3>
+      <p>Mismatched display text, lookalike domains, URL shorteners, and freshly registered web addresses are classic phishing fingerprints models are trained to spot.</p>
+    </div>
+    <div class="use-case">
+      <span class="use-icon">✍️</span>
+      <h3>Language & Tone</h3>
+      <p>Urgency, threats, too-good-to-be-true offers, and requests for sensitive information are weighed contextually, not just flagged as banned keywords.</p>
+    </div>
+    <div class="use-case">
+      <span class="use-icon">📎</span>
+      <h3>Attachments</h3>
+      <p>File types, embedded macros, and known malware signatures are scanned before an attachment is ever allowed to download.</p>
+    </div>
+    <div class="use-case">
+      <span class="use-icon">👥</span>
+      <h3>Crowd Behavior</h3>
+      <p>If thousands of recipients across a provider's network mark a similar message as spam within minutes, that collective signal gets factored into everyone else's filter almost immediately.</p>
+    </div>
+  </div>
+
+  <p class="reveal">It's worth noting that spam detection is a fairly narrow, rules-meets-learning kind of AI compared to the broader personalization systems running elsewhere online. If you're curious how a completely different kind of model decides what to show you based purely on behavior rather than content, our breakdown of <a href="https://nyvoraai.github.io/blog/how-do-ai-recommendations-work-on-youtube.html">how do AI recommendations work on YouTube</a> offers a useful contrast.</p>
+
+  <h2 id="accuracy-limits"><span class="h2-num">06</span>How Accurate Is It? (And Where Does It Still Fail?)</h2>
+  <p class="reveal">Major email providers now catch the overwhelming majority of spam and phishing attempts before they ever reach an inbox. But "overwhelming majority" isn't "all," and the gap between those two is where real harm still happens.</p>
+
+  <div class="pro-tip reveal">
+    <div class="pro-tip-icon">⚠️</div>
+    <div>
+      <h4>It's a Constant Arms Race</h4>
+      <p>Spammers actively test their messages against popular filters before sending them out. The moment a model learns to catch one pattern, scammers tweak their approach. AI spam detection isn't a solved problem, it's a continuously moving target.</p>
+    </div>
+  </div>
+
+  <h3>Where AI Spam Detection Still Struggles:</h3>
+
+  <div class="steps reveal">
+    <div class="step"><div class="step-num">✗</div><div class="step-body"><h3>False Positives</h3><p>Legitimate emails, especially from new businesses, cold outreach, or unusual formatting, can occasionally get misclassified as spam and buried where you'll never see them.</p></div></div>
+    <div class="step"><div class="step-num">✗</div><div class="step-body"><h3>Image-Based Spam</h3><p>Spammers sometimes embed their message as an image instead of text specifically to dodge language-based detection, forcing filters to rely on slower image-analysis techniques.</p></div></div>
+    <div class="step"><div class="step-num">✗</div><div class="step-body"><h3>Highly Targeted Phishing</h3><p>Spear phishing emails written specifically for one person or company, with no obvious mass-spam fingerprint, are far harder for pattern-based models to catch.</p></div></div>
+    <div class="step"><div class="step-num">✗</div><div class="step-body"><h3>Compromised Legitimate Accounts</h3><p>When a scammer sends spam from an already-trusted, hacked email account, sender reputation signals become far less reliable, since the domain itself looks clean.</p></div></div>
+    <div class="step"><div class="step-num">✗</div><div class="step-body"><h3>Brand-New Scam Patterns</h3><p>There's always a short lag between a genuinely new scam technique appearing and enough labeled examples existing for a model to learn to recognize it reliably.</p></div></div>
+  </div>
+
+  <h2 id="protect-yourself"><span class="h2-num">07</span>How to Protect Yourself Beyond the Filter</h2>
+  <p class="reveal">AI spam detection is good, but it isn't a replacement for basic awareness. A few habits go a long way toward catching what slips through:</p>
+
+  <div class="key-takeaways reveal">
+    <div class="kt-title">Practical Habits That Help</div>
+    <ul>
+      <li><strong>Check the actual sender address,</strong> not just the display name, since spoofed names are trivial to fake.</li>
+      <li><strong>Hover before you click</strong> to see where a link genuinely leads, rather than trusting the visible text.</li>
+      <li><strong>Be suspicious of urgency,</strong> any email demanding immediate action "or else" deserves a second look.</li>
+      <li><strong>Mark spam manually</strong> when it slips through; this directly retrains the model behind your inbox.</li>
+      <li><strong>Never enter credentials</strong> through a link in an unexpected email, go to the site directly instead.</li>
+    </ul>
+  </div>
+
+  <p class="reveal">In short, the most effective spam protection isn't AI alone or human judgment alone, it's the two working together, with your reports continuously sharpening the model's instincts over time.</p>
+
+  <h2 id="faq"><span class="h2-num">08</span>Frequently Asked Questions</h2>
+  <div class="faq reveal">
+    <details open>
+      <summary>How does AI detect spam emails?</summary>
+      <div class="faq-body">AI detects spam emails by analyzing the sender's reputation, the structure and wording of the message, embedded links and attachments, and patterns learned from millions of previously labeled spam and non-spam emails, then scoring the message and routing it accordingly.</div>
+    </details>
+    <details>
+      <summary>What signals do AI spam filters look at?</summary>
+      <div class="faq-body">AI spam filters look at sender authentication records, domain age and reputation, language patterns common in scams, suspicious links and attachments, formatting quirks, and how recipients have interacted with similar emails in the past.</div>
+    </details>
+    <details>
+      <summary>Can AI spam filters be wrong?</summary>
+      <div class="faq-body">Yes. AI spam filters occasionally misclassify legitimate email as spam, known as a false positive, or let genuine spam through, known as a false negative. Most providers let users mark emails as not spam to retrain the filter over time.</div>
+    </details>
+    <details>
+      <summary>How is AI spam detection different from old keyword filters?</summary>
+      <div class="faq-body">Old keyword filters blocked emails containing specific words like free or winner. AI spam detection instead learns patterns across the whole message, sender behavior, and link structure, making it far harder for spammers to bypass with simple word substitutions.</div>
+    </details>
+    <details>
+      <summary>Do AI spam filters get smarter over time?</summary>
+      <div class="faq-body">Yes. Most major email providers continuously retrain their spam models on new data, including user reports, so the filter adapts as spammers change tactics, though there is always a short lag between new scam techniques and the model catching up.</div>
+    </details>
+    <details>
+      <summary>Can spammers fool AI detection systems?</summary>
+      <div class="faq-body">Spammers constantly try new tricks like misspelling words, using images instead of text, or hijacking trusted domains. AI systems counter this with multiple overlapping signals, so bypassing one check, such as text scanning, still leaves others, like sender reputation, in place.</div>
+    </details>
+    <details>
+      <summary>Is AI spam detection the same as phishing detection?</summary>
+      <div class="faq-body">They overlap but are not identical. Spam detection focuses on unwanted bulk email in general, while phishing detection specifically targets messages designed to steal credentials or money, often using more aggressive checks on links and impersonated senders.</div>
+    </details>
+  </div>
+
+  <p class="reveal">The next time a scam email vanishes into your spam folder without you lifting a finger, it's worth remembering how much is actually happening behind that one quiet, unremarkable moment: authentication checks, reputation scoring, language analysis, link inspection, and crowd-sourced behavioral signals, all combined into a single decision in less time than it takes to blink. AI spam detection won't ever be flawless, scammers adapt too fast for that, but the layered, learning-based approach it uses today is a long way from the simple keyword blocklists of the early internet, and it's one of the clearest everyday reminders of how much invisible AI infrastructure is quietly protecting you.</p>
+
+  <div class="author-box reveal">
+    <div class="meta-avatar" style="width:42px;height:42px;font-size:15px">V<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by Varun Lalwani</h3>
+      <p>Varun writes about how everyday AI systems actually work, breaking down the technology behind the tools we use without thinking twice. Questions? <a href="https://nyvoraai.github.io/contact.html">We're here to help!</a></p>
+    </div>
+  </div>
+
+  <div class="share-section reveal">
+    <div class="share-title">Know someone who'd like to understand their spam folder better? Share this guide!</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=How+Does+AI+Detect+Spam+Emails%3F+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/blog/how-does-ai-detect-spam-emails.html" target="_blank" rel="noopener" class="share-btn">Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/blog/how-does-ai-detect-spam-emails.html" target="_blank" rel="noopener" class="share-btn">Share on Facebook</a>
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="share-btn">Follow on Instagram</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="share-btn">Watch on YouTube</a>
+      <button class="share-btn" onclick="copyLink()">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="newsletter reveal">
+    <h2>Stay ahead of the AI curve</h2>
+    <p>Join thousands of readers getting weekly AI insights, tutorials, and breaking news, delivered straight to your inbox.</p>
+    <form class="nl-form" action="https://formspree.io/f/xwvjgdpw" method="POST" onsubmit="handleNewsletter(event,this)">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required/>
+      <button class="nl-btn" type="submit">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · 100% free forever</p>
+    <div class="nl-social">
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc">Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc">X / Twitter</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc">YouTube</a>
+    </div>
+  </div>
+
+  <div class="related reveal">
+    <div class="related-title">Keep Learning</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/blog/what-is-natural-language-processing-nlp.html" class="rel-card">
+        <div class="rel-tag">AI Fundamentals</div>
+        <div class="rel-title">What Is Natural Language Processing (NLP)?</div>
+        <div class="rel-read">18 min read</div>
+      </a>
+      <a href="https://nyvoraai.github.io/blog/how-does-ai-recognize-faces-in-photos.html" class="rel-card">
+        <div class="rel-tag">AI Applications</div>
+        <div class="rel-title">How Does AI Recognize Faces in Photos?</div>
+        <div class="rel-read">12 min read</div>
+      </a>
+      <a href="https://nyvoraai.github.io/blog/ai-inference-vs-training.html" class="rel-card">
+        <div class="rel-tag">Deep Dive</div>
+        <div class="rel-title">AI Inference vs Training: What's the Difference?</div>
+        <div class="rel-read">11 min read</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<!-- FOOTER (animated + colorful) -->
+<footer>
+  <div class="footer-aura footer-aura-1"></div>
+  <div class="footer-aura footer-aura-2"></div>
+  <div class="footer-aura footer-aura-3"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">
+        <img src="https://nyvoraai.github.io/logo.svg" alt="" class="logo-img" onerror="this.style.display='none'"/>
+        Nyvora<span class="accent">AI</span>
+      </span>
+      <p>Your trusted source for original AI news, beginner guides, deep dives, and practical insights on artificial intelligence. Built for the AI generation.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn">Facebook</a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn">X</a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Topics</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">For Beginners</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">AI Tools</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Guides</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Tool Reviews</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+      <a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /page-wrap -->
+
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">^</button>
+
+<div id="side-popup" role="dialog" aria-label="Subscribe to NyvoraAI">
+  <button class="sp-close" onclick="closePopup()" aria-label="Close">x</button>
+  <div class="sp-icon">AI</div>
+  <div class="sp-title">Weekly AI guides</div>
+  <div class="sp-text">Get the best beginner-friendly AI explainers delivered free every week.</div>
+  <form id="sp-form" action="https://formspree.io/f/xwvjgdpw" method="POST" onsubmit="handlePopupSubmit(event,this)">
+    <input class="sp-input" type="email" name="email" placeholder="your@email.com" required/>
+    <button class="sp-btn" type="submit">Get free guides</button>
+  </form>
+  <div class="sp-note">No spam · Unsubscribe anytime</div>
+</div>
+
+<script>
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  const f=document.getElementById('starField');
+  for(let i=0;i<120;i++){
+    const s=document.createElement('div');
+    s.className='star';
+    const sz=Math.random()*1.8+0.4;
+    s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${2+Math.random()*4}s;animation-delay:${-Math.random()*4}s;opacity:${0.1+Math.random()*0.5}`;
+    f.appendChild(s);
+  }
+})();
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  const w=document.getElementById('orbField');
+  const colors=['rgba(0,212,255,0.5)','rgba(123,94,167,0.5)','rgba(0,229,160,0.4)'];
+  for(let i=0;i<12;i++){
+    const o=document.createElement('div');
+    o.className='orb';
+    const sz=3+Math.random()*6;
+    const dur=12+Math.random()*16;
+    const delay=-Math.random()*dur;
+    o.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;background:${colors[i%3]};filter:blur(1px);animation-duration:${dur}s;animation-delay:${delay}s;box-shadow:0 0 ${sz*2}px ${colors[i%3]}`;
+    w.appendChild(o);
+  }
+})();
+
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const pct=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  document.getElementById('progress').style.width=pct+'%';
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+  if(pct>40 && !popupClosed && !popupShown){
+    popupShown=true;
+    setTimeout(()=>document.getElementById('side-popup').classList.add('show'),400);
+  }
+});
+
+const reveals=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});
+},{threshold:.1});
+reveals.forEach(r=>io.observe(r));
+
+function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open')}
+
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(()=>{
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;
+    const o=btn.textContent;
+    btn.textContent='Copied!';
+    btn.style.color='var(--green)';
+    setTimeout(()=>{btn.textContent=o;btn.style.color='';},2000);
+  });
+}
+
+function handleNewsletter(e,form){
+  e.preventDefault();
+  const btn=form.querySelector('.nl-btn');
+  btn.textContent='Sending...';
+  btn.style.opacity='.7';
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{
+      if(r.ok){
+        btn.textContent='Subscribed!';
+        btn.style.background='var(--green)';
+        form.reset();
+      } else {
+        btn.textContent='Try again';
+        btn.style.opacity='1';
+      }
+    })
+    .catch(()=>{btn.textContent='Try again';btn.style.opacity='1';});
+}
+
+let popupShown=false,popupClosed=false;
+function closePopup(){
+  document.getElementById('side-popup').classList.remove('show');
+  popupClosed=true;
+}
+function handlePopupSubmit(e,form){
+  e.preventDefault();
+  const btn=form.querySelector('.sp-btn');
+  btn.textContent='Sending...';
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{
+      if(r.ok){
+        document.getElementById('side-popup').innerHTML='<div style="padding:8px 0;text-align:center"><div style="font-family:var(--font-mono);font-size:12px;color:var(--green);font-weight:700;margin-bottom:6px">Subscribed!</div><div style="font-size:12px;color:var(--text-3)">Check your inbox soon.</div></div>';
+        setTimeout(closePopup,2400);
+      } else {
+        btn.textContent='Try again';
+      }
+    })
+    .catch(()=>{btn.textContent='Try again';});
+}
+setTimeout(()=>{
+  if(!popupShown && !popupClosed){
+    popupShown=true;
+    document.getElementById('side-popup').classList.add('show');
+  }
+},8000);
+
+/* ── SPAM RISK SCANNER DEMO LOGIC ── */
+const spamInfoText = {
+  sender: '<strong>Sender Reputation:</strong> A brand-new domain mimicking a trusted brand ("paypa1" instead of "paypal") is one of the strongest early red flags. Domain age and authentication failures get weighted heavily before content is even read.',
+  links: '<strong>Link Analysis:</strong> When the visible link text says one thing but the real destination is different, that mismatch is a classic phishing signal. Filters also check how recently a domain was registered.',
+  language: '<strong>Language Patterns:</strong> Manufactured urgency ("24 hours," "immediately," "permanently") is a well-known manipulation tactic. Modern models weigh this contextually rather than just blocking the word "urgent" outright.',
+  score: '<strong>Final Risk Score:</strong> Every signal above gets combined into one probability score. A 94% spam likelihood here easily crosses the threshold for automatic filtering, all decided in a fraction of a second.'
+};
+
+function setSpamMode(mode){
+  const face = document.getElementById('demoFace');
+  const info = document.getElementById('spamInfo');
+  const buttons = document.querySelectorAll('.demo-btn');
+
+  buttons.forEach(btn => btn.classList.remove('active'));
+  if(event && event.target) event.target.classList.add('active');
+
+  face.classList.remove('mode-sender','mode-links','mode-language','mode-score');
+  face.classList.add('mode-' + mode);
+  info.innerHTML = spamInfoText[mode];
+}
+</script>
+</body>
+</html>
