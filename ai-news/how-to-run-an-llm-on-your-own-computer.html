@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>How to Run an LLM on Your Own Computer (2026 Guide)</title>
+<meta name="description" content="Learn how to run an LLM on your own computer in 2026 — step-by-step setup, hardware needs, top tools like Ollama, and privacy benefits explained."/>
+<meta name="keywords" content="how to run an LLM on your own computer, run LLM locally, Ollama setup, local AI model, offline AI 2026"/>
+<meta name="author" content="NyvoraAI Team"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#EFF1EA"/>
+<!-- GEO / AEO -->
+<meta name="geo.region" content="US"/>
+<meta name="geo.placename" content="United States"/>
+<meta name="ICBM" content="37.09024, -95.712891"/>
+<!-- Favicons -->
+<link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
+<link rel="icon" type="image/png" href="https://nyvoraai.github.io/favicon-32x32.png"/>
+<link rel="apple-touch-icon" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="NyvoraAI RSS Feed" href="https://nyvoraai.github.io/rss.xml"/>
+<link rel="canonical" href="https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How to Run an LLM on Your Own Computer (2026 Guide)"/>
+<meta property="og:description" content="Learn how to run an LLM on your own computer in 2026 — step-by-step setup, hardware needs, top tools like Ollama, and privacy benefits explained."/>
+<meta property="og:url" content="https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/run-llm-locally-banner.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-06-30T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-06-30T00:00:00Z"/>
+<meta property="article:section" content="AI News"/>
+<meta property="article:tag" content="Local LLM, Ollama, Open Source AI, Offline AI, AI 2026"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:creator" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="How to Run an LLM on Your Own Computer (2026 Guide)"/>
+<meta name="twitter:description" content="A step-by-step, beginner-friendly guide to running a large language model locally — no cloud, no subscription, full privacy."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/run-llm-locally-banner.jpg"/>
+<!-- Schema: Organization -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":"https://nyvoraai.github.io/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai"]}</script>
+<!-- Schema: WebSite -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"NyvoraAI","url":"https://nyvoraai.github.io","publisher":{"@type":"Organization","name":"NyvoraAI"}}</script>
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.github.io/ai-news.html"},{"@type":"ListItem","position":3,"name":"How to Run an LLM on Your Own Computer","item":"https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html"}]}</script>
+<!-- Schema: Article -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Run an LLM on Your Own Computer (2026 Guide)","description":"A complete step-by-step guide to running a large language model locally on your own computer in 2026, covering hardware requirements, the best tools, and setup instructions.","image":"https://nyvoraai.github.io/assets/run-llm-locally-banner.jpg","datePublished":"2026-06-30","dateModified":"2026-06-30","inLanguage":"en-US","author":{"@type":"Organization","name":"NyvoraAI Team","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html"},"articleSection":"AI News","keywords":"how to run an LLM on your own computer, run LLM locally, Ollama, LM Studio, offline AI","timeRequired":"PT22M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}</script>
+<!-- Schema: FAQPage (AEO) -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I run an LLM on my own computer?","acceptedAnswer":{"@type":"Answer","text":"Install a local AI runner such as Ollama or LM Studio, download an open-weight model like Llama 3 8B or Mistral 7B through the app, and start chatting through the built-in interface or command line. No internet connection is needed once the model is downloaded, and no API key or subscription is required."}},{"@type":"Question","name":"What computer specs do I need to run an LLM locally?","acceptedAnswer":{"@type":"Answer","text":"For small models (7B-8B parameters), 16GB of RAM and a modern CPU is enough to run slowly, while a GPU with 8GB or more VRAM makes it fast. Apple Silicon Macs with 16GB+ unified memory handle these models well. Larger 70B models need 40GB+ of VRAM or a high-RAM Mac with Apple Silicon."}},{"@type":"Question","name":"Is it free to run an LLM on my own computer?","acceptedAnswer":{"@type":"Answer","text":"Yes. The software (Ollama, LM Studio, llama.cpp) and most open-weight models (Llama, Mistral, Gemma, Qwen) are free to download and use. The only cost is the electricity to run your computer and, optionally, a GPU upgrade if you want faster performance."}},{"@type":"Question","name":"Is running an LLM locally safe and private?","acceptedAnswer":{"@type":"Answer","text":"Yes, running an LLM locally is one of the most private ways to use AI. Your prompts and data never leave your device, since there is no cloud server involved. This makes local LLMs popular for sensitive work in healthcare, law, and any field with strict data compliance requirements."}},{"@type":"Question","name":"Which local LLM should a beginner start with?","acceptedAnswer":{"@type":"Answer","text":"Beginners should start with Ollama paired with a small instruction-tuned model such as Llama 3 8B or Mistral 7B. These models run comfortably on most modern laptops, install in minutes, and provide a great introduction to local AI before trying larger models."}}]}</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#EFF1EA;--bg-deep:#E5E9DC;--paper:#FFFFFF;--paper-warm:#FBF8F1;
+  --ink:#1C2321;--ink-soft:#4B5650;--muted:#7C8579;--line:#DCE0D2;--line-soft:#E8EBE0;
+  --coral:#FF6B4A;--coral-dp:#B8431F;--coral-soft:#FFE1D6;
+  --teal:#146B5C;--teal-dp:#0E4F45;--teal-soft:#DCEEE8;
+  --gold:#E89B2D;--gold-soft:#FCEACB;
+  --purple:#8B5CF6;--purple-soft:#EDE9FE;
+  --green:#16A34A;--green-soft:#DCFCE7;
+  --blue:#2563EB;--blue-soft:#DBEAFE;
+  --radius:18px;--radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,-apple-system,sans-serif;
+  --font-body:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+  --shadow:0 1px 2px rgba(28,35,33,.04),0 8px 24px rgba(28,35,33,.06);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:18px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--teal-dp);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;background:var(--bg)}
+.aura{position:absolute;border-radius:50%;filter:blur(85px);will-change:transform;animation:auraFloat ease-in-out infinite}
+.aura-1{width:560px;height:560px;background:radial-gradient(circle,var(--coral),transparent 68%);top:-140px;left:-120px;opacity:.22;animation-duration:17s}
+.aura-2{width:500px;height:500px;background:radial-gradient(circle,var(--teal),transparent 68%);bottom:-130px;right:-100px;opacity:.20;animation-duration:21s;animation-delay:-6s}
+.aura-3{width:420px;height:420px;background:radial-gradient(circle,var(--gold),transparent 68%);top:30%;left:58%;opacity:.16;animation-duration:14s;animation-delay:-3s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.12)}66%{transform:translate(-35px,30px) scale(.92)}}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.045'/></svg>")}
+.bubble-field{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fbubble{position:absolute;border:1.5px solid;opacity:0;border-radius:14px 14px 14px 3px;animation:bubbleDrift linear infinite}
+@keyframes bubbleDrift{0%{transform:translateY(10vh) rotate(-4deg) scale(.85)}10%{opacity:.24}50%{transform:translateY(-45vh) rotate(2deg) scale(1.04)}85%{opacity:.16}100%{transform:translateY(-100vh) rotate(5deg) scale(1.1);opacity:0}}
+@media(prefers-reduced-motion:reduce){.fbubble,.aura{animation:none;display:none}html{scroll-behavior:auto}}
+
+#progress{position:fixed;top:64px;left:0;width:0;height:3px;z-index:300;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal));transition:width .1s;border-radius:0 3px 3px 0}
+
+nav.main-nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:21px;font-weight:700;letter-spacing:-.02em;color:var(--ink);display:flex;align-items:center;gap:9px}
+.nav-logo span{color:var(--teal)}
+.logo-img{height:30px;width:30px;border-radius:8px;object-fit:cover;display:block}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{color:var(--ink-soft);font-size:14.5px;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-social{display:flex;gap:6px}
+.nav-soc{color:var(--ink-soft);width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:8px;transition:background .2s,color .2s}
+.nav-soc:hover{background:var(--line-soft);color:var(--ink);text-decoration:none}
+.icon{width:17px;height:17px;flex-shrink:0;display:block}
+.nav-cta{background:var(--coral);color:#fff;padding:9px 18px;border-radius:9px;font-size:13.5px;font-weight:700;transition:opacity .2s,transform .15s;box-shadow:0 4px 14px rgba(255,107,74,.28)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);text-decoration:none}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--ink-soft);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:20px 24px;flex-direction:column;gap:16px;z-index:199}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--ink);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
+
+.breadcrumb{max-width:860px;margin:26px auto 0;padding:0 24px;font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--muted)}.breadcrumb a:hover{color:var(--teal-dp)}.bc-sep{color:var(--line)}
+
+.article-hdr{max-width:860px;margin:22px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:5px 13px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-ai{background:var(--teal-soft);color:var(--teal-dp);border:1px solid rgba(20,107,92,.18)}
+.badge-read{background:var(--gold-soft);color:#8A5A12;border:1px solid rgba(232,155,45,.25)}
+.badge-date{background:var(--coral-soft);color:var(--coral-dp);border:1px solid rgba(255,107,74,.22)}
+.badge-hot{background:linear-gradient(135deg,var(--coral),var(--purple));color:#fff;border:none}
+.badge-open{background:var(--green-soft);color:var(--green);border:1px solid rgba(22,163,74,.2)}
+.article-title{font-size:clamp(30px,5.2vw,48px);font-weight:700;line-height:1.18;color:var(--ink);margin-bottom:18px;letter-spacing:-.025em;font-family:var(--font-display)}
+.title-underline{background:linear-gradient(120deg,transparent 0%,var(--gold-soft) 0%);background-size:100% 38%;background-repeat:no-repeat;background-position:0 88%;padding:0 2px}
+.article-intro{font-size:19.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:24px}
+.article-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);padding-bottom:24px;border-bottom:1px solid var(--line)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{position:relative;overflow:hidden;width:36px;height:36px;border-radius:50%;flex-shrink:0;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;font-family:var(--font-display)}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--ink-soft)}.meta-sep{color:var(--line)}
+
+.blog-banner-wrap{max-width:860px;margin:30px auto;padding:0 24px}
+.blog-banner{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow);display:block;object-fit:cover;max-height:450px}
+.banner-fallback{width:100%;border-radius:var(--radius);border:1px solid var(--line);min-height:300px;background:linear-gradient(135deg,var(--blue-soft) 0%,var(--paper) 45%,var(--gold-soft) 100%);display:none;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.banner-fallback::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(37,99,235,.05),transparent 60%,rgba(232,155,45,.06));pointer-events:none}
+.bf-inner{position:relative;z-index:1;text-align:center;padding:44px 24px}
+.bf-logo-big{font-family:var(--font-display);font-size:56px;font-weight:700;background:linear-gradient(135deg,var(--blue),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px;line-height:1}
+.bf-text{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.bf-sub{font-size:13px;color:var(--muted);font-family:var(--font-mono);margin-bottom:16px}
+.bf-tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.bf-tag{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 12px;border-radius:20px;border:1px solid}
+.bf-tag-blue{background:var(--blue-soft);color:var(--blue);border-color:rgba(37,99,235,.2)}
+.bf-tag-teal{background:var(--teal-soft);color:var(--teal-dp);border-color:rgba(20,107,92,.2)}
+.bf-tag-gold{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.2)}
+.bf-tag-green{background:var(--green-soft);color:var(--green);border-color:rgba(22,163,74,.2)}
+
+.toc-box{max-width:860px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow)}
+.toc-title{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--ink-soft);font-size:14.5px;transition:color .2s;display:flex;gap:8px}
+.toc a::before{content:counter(tocnum);font-family:var(--font-mono);color:var(--coral);font-weight:700;font-size:12.5px;min-width:16px}
+.toc a:hover{color:var(--coral);text-decoration:none}
+
+.layout{max-width:860px;margin:0 auto;padding:36px 24px 80px}
+
+.prose h2{font-size:27px;font-weight:700;color:var(--ink);margin:54px 0 18px;letter-spacing:-.02em;scroll-margin-top:90px;display:flex;align-items:baseline;gap:10px}
+.prose h2 .h2-mark{font-family:var(--font-mono);font-size:14px;color:var(--coral);font-weight:700}
+.prose h3{font-size:18.5px;font-weight:700;color:var(--ink);margin:28px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--ink)}
+.prose strong{color:var(--ink);font-weight:700}
+.prose ul,.prose ol{margin:0 0 22px 22px}
+.prose li{margin-bottom:9px;color:var(--ink)}
+.prose a,.faq-body a{color:var(--teal-dp);border-bottom:1px solid rgba(14,79,69,.25);transition:border-color .2s,color .2s}
+.prose a:hover,.faq-body a:hover{color:var(--coral);border-color:var(--coral);text-decoration:none}
+
+.key-takeaways{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow)}
+.kt-title{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.key-takeaways ul{margin:0;list-style:none}
+.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15.5px;color:var(--ink-soft)}
+.key-takeaways li:last-child{margin-bottom:0}
+.key-takeaways li::before{content:'✨';color:var(--gold);flex-shrink:0}
+
+.stat-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0}
+.stat-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center;transition:transform .3s,border-color .3s;box-shadow:var(--shadow)}
+.stat-card:hover{transform:translateY(-4px);border-color:var(--teal)}
+.stat-num{font-family:var(--font-display);font-size:34px;font-weight:700;color:var(--coral)}
+.stat-label{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.4}
+.stat-src{font-size:11px;color:var(--muted);font-family:var(--font-mono);margin-top:4px}
+
+.version-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:28px 0}
+.version-card{background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);padding:24px;transition:all .3s;position:relative;overflow:hidden}
+.version-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+.version-card.v1::before{background:linear-gradient(90deg,var(--gold),var(--coral))}
+.version-card.v2::before{background:linear-gradient(90deg,var(--teal),var(--blue))}
+.version-card.v3::before{background:linear-gradient(90deg,var(--coral),var(--purple))}
+.version-card.v4::before{background:linear-gradient(90deg,var(--purple),var(--gold))}
+.version-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--teal)}
+.version-badge{font-family:var(--font-mono);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 10px;border-radius:6px;display:inline-block;margin-bottom:10px}
+.vb-1{background:var(--gold-soft);color:#8A5A12;border:1px solid rgba(232,155,45,.25)}
+.vb-2{background:var(--teal-soft);color:var(--teal-dp);border:1px solid rgba(20,107,92,.2)}
+.vb-3{background:var(--coral-soft);color:var(--coral-dp);border:1px solid rgba(255,107,74,.22)}
+.vb-4{background:var(--purple-soft);color:#6D28D9;border:1px solid rgba(139,92,246,.22)}
+.version-name{font-family:var(--font-display);font-size:19px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.version-date{font-family:var(--font-mono);font-size:12px;color:var(--muted);margin-bottom:10px}
+.version-desc{font-size:14px;color:var(--ink-soft);line-height:1.6}
+.version-highlight{display:inline-block;margin-top:10px;font-size:11px;font-weight:700;font-family:var(--font-mono);color:var(--teal-dp);background:var(--teal-soft);padding:3px 10px;border-radius:6px;border:1px solid rgba(20,107,92,.2)}
+
+.usecase-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin:28px 0}
+.usecase-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;transition:all .3s;box-shadow:var(--shadow)}
+.usecase-card:hover{transform:translateY(-3px);border-color:var(--coral)}
+.uc-icon{font-size:30px;margin-bottom:10px}
+.uc-title{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.uc-desc{font-size:14px;color:var(--ink-soft);line-height:1.6}
+
+.compare-wrap{overflow-x:auto;margin:28px 0;border-radius:var(--radius);box-shadow:var(--shadow)}
+.compare-table{width:100%;border-collapse:collapse;min-width:500px}
+.compare-table th{background:var(--bg-deep);color:var(--ink);font-family:var(--font-display);font-size:13px;font-weight:700;padding:14px 18px;text-align:left;border-bottom:2px solid var(--line)}
+.compare-table td{padding:13px 18px;font-size:14.5px;color:var(--ink-soft);border-bottom:1px solid var(--line-soft);background:var(--paper)}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table tr:hover td{background:var(--paper-warm)}
+.td-good{color:var(--teal-dp);font-weight:700;font-family:var(--font-mono)}
+.td-mid{color:#8A5A12;font-weight:700;font-family:var(--font-mono)}
+.td-no{color:var(--coral-dp);font-weight:700;font-family:var(--font-mono)}
+.td-label{font-weight:600;color:var(--ink);font-family:var(--font-display)}
+
+.callout{background:var(--teal-soft);border:1px solid rgba(20,107,92,.2);border-left:4px solid var(--teal);border-radius:0 var(--radius) var(--radius) 0;padding:20px 24px;margin:28px 0}
+.callout-title{font-family:var(--font-display);font-weight:700;font-size:13px;color:var(--teal-dp);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
+.callout p{font-size:15px;color:var(--ink-soft);margin:0;line-height:1.7}
+.callout-gold{background:var(--gold-soft);border-left-color:var(--gold)}
+.callout-gold .callout-title{color:#8A5A12}
+.callout-purple{background:var(--purple-soft);border-left-color:var(--purple)}
+.callout-purple .callout-title{color:#6D28D9}
+
+.steps{margin:28px 0}
+.step{display:flex;gap:18px;margin-bottom:22px;align-items:flex-start}
+.step-num{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--coral),var(--gold));color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:14px;font-weight:700;flex-shrink:0;box-shadow:0 4px 12px rgba(255,107,74,.28)}
+.step-body{flex:1;padding-top:7px}
+.step-title{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.step-desc{font-size:14.5px;color:var(--ink-soft);line-height:1.65}
+
+.counter-box{background:linear-gradient(135deg,var(--teal-soft),var(--gold-soft));border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin:32px 0;box-shadow:var(--shadow);text-align:center}
+.counter-title{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.counter-sub{font-size:13px;color:var(--muted);margin-bottom:20px;font-family:var(--font-mono)}
+.counter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.counter-item{background:var(--paper);border-radius:var(--radius-sm);padding:16px 12px;border:1px solid var(--line)}
+.counter-num{font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--coral)}
+.counter-label{font-size:12px;color:var(--muted);font-family:var(--font-mono);margin-top:4px}
+
+.faq{margin:16px 0}
+details{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--coral)}
+summary{padding:18px 22px;cursor:pointer;font-weight:600;font-size:16px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--coral);font-size:22px;font-weight:300;flex-shrink:0}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 22px 18px;color:var(--ink-soft);font-size:15px;line-height:1.7}
+
+.author-box{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin:48px 0 0}
+.author-box .meta-avatar{width:48px;height:48px;font-size:17px;flex-shrink:0}
+.author-box h3{font-size:15px;font-family:var(--font-display);margin-bottom:4px;color:var(--ink)}
+.author-box p{font-size:14px;color:var(--muted);margin:0;line-height:1.6}
+
+.share-section{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:32px 0 0;text-align:center}
+.share-title{font-size:15.5px;font-weight:700;color:var(--ink);margin-bottom:16px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--paper);color:var(--ink-soft);font-family:var(--font-body)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--ink)}
+
+.newsletter{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:44px;margin:56px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal))}
+.newsletter h2{font-size:25px;font-weight:700;color:var(--ink);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--muted);margin-bottom:24px;font-size:15.5px}
+.nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 16px;color:var(--ink);font-size:14px;outline:none;transition:border-color .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--muted)}.nl-input:focus{border-color:var(--coral)}
+.nl-btn{background:var(--coral);color:#fff;padding:13px 22px;border-radius:10px;border:none;cursor:pointer;font-size:14px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s;box-shadow:0 4px 16px rgba(255,107,74,.28);font-family:var(--font-display)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px)}
+.nl-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+.nl-social{display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;padding:9px 16px;border-radius:10px;border:1px solid var(--line);color:var(--ink-soft);transition:all .2s}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--ink)}
+
+.related{margin:48px 0 0}
+.related-title{font-size:19px;font-weight:700;color:var(--ink);margin-bottom:20px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rel-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px;transition:border-color .2s,transform .2s;display:block}
+.rel-card:hover{border-color:var(--coral);transform:translateY(-3px);text-decoration:none;box-shadow:var(--shadow)}
+.rel-tag{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--coral);margin-bottom:8px;font-family:var(--font-mono)}
+.rel-title{font-size:14px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:8px;font-family:var(--font-display)}
+.rel-read{font-size:12px;color:var(--muted)}
+
+footer{background:var(--paper);border-top:1px solid var(--line);padding:60px 24px 32px;position:relative;z-index:1;overflow:hidden}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal),var(--purple),var(--blue),var(--coral));background-size:300% 100%;animation:ftStripe 5s linear infinite}
+@keyframes ftStripe{0%{background-position:0%}100%{background-position:300%}}
+.ft-blob{position:absolute;border-radius:50%;pointer-events:none;animation:ftBlob ease-in-out infinite;filter:blur(55px)}
+@keyframes ftBlob{0%,100%{transform:scale(1) translate(0,0);opacity:.1}50%{transform:scale(1.25) translate(10px,-8px);opacity:.18}}
+.ft-dots{display:flex;gap:7px;margin-bottom:14px}
+.ft-dot{width:8px;height:8px;border-radius:50%;animation:ftDotPulse 2.2s ease-in-out infinite}
+@keyframes ftDotPulse{0%,100%{transform:scale(1);opacity:.5}50%{transform:scale(1.6);opacity:1}}
+.footer-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;position:relative;z-index:1}
+.footer-logo-wrap{font-size:21px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:9px;color:var(--ink);font-family:var(--font-display)}
+.footer-logo-wrap span{color:var(--teal)}
+.footer-brand p{color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:16px}
+.footer-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.chip{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 10px;border-radius:20px;border:1px solid}
+.chip-coral{background:var(--coral-soft);color:var(--coral-dp);border-color:rgba(255,107,74,.3)}
+.chip-teal{background:var(--teal-soft);color:var(--teal-dp);border-color:rgba(20,107,92,.2)}
+.chip-gold{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.3)}
+.chip-purple{background:var(--purple-soft);color:#6D28D9;border-color:rgba(139,92,246,.25)}
+.chip-blue{background:var(--blue-soft);color:var(--blue);border-color:rgba(37,99,235,.2)}
+.footer-social{display:flex;gap:10px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:7px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--ink-soft);transition:all .3s;position:relative;overflow:hidden;background:transparent}
+.fs-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--coral-soft),var(--teal-soft));transform:translateY(100%);transition:transform .3s;z-index:0;border-radius:inherit}
+.fs-btn:hover{color:var(--coral-dp);border-color:var(--coral);transform:translateY(-3px);text-decoration:none}
+.fs-btn:hover::before{transform:translateY(0)}
+.fs-btn svg,.fs-btn span{position:relative;z-index:1}
+.footer-col h4{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);margin-bottom:16px;font-family:var(--font-mono)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:var(--muted);font-size:14px;transition:color .2s,padding-left .2s;display:inline-flex;align-items:center;gap:5px}
+.footer-col a::before{content:'›';color:var(--coral);opacity:0;transform:translateX(-6px);transition:all .2s;font-size:16px}
+.footer-col a:hover{color:var(--coral);padding-left:8px;text-decoration:none}
+.footer-col a:hover::before{opacity:1;transform:translateX(0)}
+.rss-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--gold);border:1px solid rgba(232,155,45,.3);background:var(--gold-soft);padding:6px 14px;border-radius:8px;margin-top:10px;transition:all .2s;font-family:var(--font-mono)}
+.rss-link:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--coral-dp)}
+.footer-bottom{max-width:1160px;margin:44px auto 0;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);flex-wrap:wrap;gap:10px;position:relative;z-index:1}
+.footer-bottom-links{display:flex;gap:20px}
+.footer-bottom-links a{color:var(--muted);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--ink);text-decoration:none}
+
+#back-top{position:fixed;bottom:28px;right:28px;background:var(--coral);color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:var(--shadow);z-index:200;font-weight:700}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.08) translateY(-2px);background:var(--coral-dp)}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media(max-width:900px){
+  .version-grid,.usecase-grid{grid-template-columns:1fr}
+  .related-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-social,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+  .stat-strip,.counter-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .related-grid,.stat-strip,.counter-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .step{flex-direction:column;gap:10px}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.15" fill="currentColor"/></symbol>
+<symbol id="icon-facebook" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 8.6h1.4V6h-1.9c-1.9 0-2.9 1.15-2.9 3v1.5H8.7V13h1.9v6.3h2.4V13h1.7l.3-2.5h-2V9.4c0-.5.2-.8.9-.8z" fill="currentColor"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5.2 4.8l14 14.4M19.2 4.8L5.2 19.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+<symbol id="icon-youtube" viewBox="0 0 24 24"><rect x="2.3" y="6" width="19.4" height="12" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.3 9.4l5.2 2.6-5.2 2.6z" fill="currentColor"/></symbol>
+<symbol id="icon-rss" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="5" cy="19" r="1.5" fill="currentColor"/></symbol>
+</defs>
+</svg>
+
+<div class="bg-canvas">
+  <div class="aura aura-1"></div><div class="aura aura-2"></div><div class="aura aura-3"></div>
+</div>
+<div class="grain"></div>
+<div class="bubble-field" id="bubbleField"></div>
+<div id="progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<nav class="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI logo" class="logo-img" onerror="this.remove()"/>
+      Nyvora<span>AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html" class="active">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://nyvoraai.github.io/rss.xml" class="nav-soc" aria-label="RSS Feed"><svg class="icon"><use href="#icon-rss"/></svg></a>
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nav-soc" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nav-soc" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"/></svg></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nav-soc" aria-label="X"><svg class="icon"><use href="#icon-x"/></svg></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nav-soc" aria-label="YouTube"><svg class="icon"><use href="#icon-youtube"/></svg></a>
+      </div>
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" aria-expanded="false" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+</div>
+
+<div class="page-wrap">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a><span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a><span class="bc-sep">/</span>
+  <span aria-current="page">How to Run an LLM on Your Own Computer</span>
+</nav>
+
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge badge-hot">💻 Local AI 2026</span>
+    <span class="badge badge-open">✅ 100% Free</span>
+    <span class="badge badge-read">⏱ 22 min read</span>
+    <span class="badge badge-date">📅 June 2026</span>
+  </div>
+  <h1 class="article-title">How to Run an <span class="title-underline">LLM on Your Own Computer</span></h1>
+  <p class="article-intro">You don't need a data center, a subscription, or even an internet connection to use a genuinely capable AI model. With the right free tools, you can download a large language model straight to your laptop and start chatting with it offline, in complete privacy, today. This guide walks you through exactly how — step by step, in plain English.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team author avatar" onerror="this.remove()"/></div>
+      <div><div class="meta-name">NyvoraAI Team</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-06-30">June 30, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Reviewed <time datetime="2026-06">June 2026</time></span>
+  </div>
+</header>
+
+<div class="blog-banner-wrap reveal">
+  <img
+    src="https://nyvoraai.github.io/assets/run-llm-locally-banner.jpg"
+    alt="How to run an LLM on your own computer - laptop screen showing a local AI chat interface powered by Ollama"
+    class="blog-banner"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+  />
+  <div class="banner-fallback">
+    <div class="bf-inner">
+      <div class="bf-logo-big">💻 Local LLM</div>
+      <div class="bf-text">How to Run an LLM on Your Own Computer</div>
+      <div class="bf-sub">Offline · Private · Free · NyvoraAI Guide · 2026</div>
+      <div class="bf-tags">
+        <span class="bf-tag bf-tag-blue">Ollama</span>
+        <span class="bf-tag bf-tag-green">Free Forever</span>
+        <span class="bf-tag bf-tag-teal">Offline AI</span>
+        <span class="bf-tag bf-tag-gold">No API Key</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">📌 Quick Navigation</div>
+    <ol>
+      <li><a href="#quick-answer">Quick answer</a></li>
+      <li><a href="#why-local">Why run an LLM locally?</a></li>
+      <li><a href="#hardware">Hardware you actually need</a></li>
+      <li><a href="#tools">Best tools to run an LLM</a></li>
+      <li><a href="#setup">Step-by-step setup (Ollama)</a></li>
+      <li><a href="#models">Which model should you pick?</a></li>
+      <li><a href="#troubleshoot">Common problems and fixes</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">For most of AI's recent history, using a powerful language model meant one thing: sending your text to someone else's server. You type a prompt, it travels across the internet to a company's data center, gets processed, and the answer travels back. That's how ChatGPT works. That's how Claude works. It's fast, polished, and for most casual use it's completely fine. But it also means your data leaves your device every single time, and it means you're paying — in money or in usage limits — for every conversation.</p>
+
+  <p class="reveal">There's a quieter alternative that has grown enormously over the past two years: running the model yourself, on your own hardware, with nothing going over the internet at all. Thanks to open-weight models from Meta, Mistral, Google, and Alibaba, plus free tools that handle all the technical complexity for you, this is no longer a project reserved for machine learning engineers. If you can install a normal desktop app, you can run an LLM on your own computer this afternoon. This guide shows you exactly how, what hardware you'll need, and which tools and models are worth your time in 2026.</p>
+
+  <div class="key-takeaways quick-answer reveal" id="quick-answer">
+    <div class="kt-title">✨ Quick Answer — How to Run an LLM on Your Own Computer</div>
+    <ul>
+      <li><strong>Easiest method:</strong> Install Ollama (free, one-click installer for Mac, Windows, and Linux), then run a single command to download and chat with a model — no coding required.</li>
+      <li><strong>Minimum hardware:</strong> 16GB of RAM and a modern CPU will run small 7B–8B models slowly. A GPU with 8GB+ VRAM, or an Apple Silicon Mac, makes it genuinely fast.</li>
+      <li><strong>Best beginner models:</strong> Llama 3 8B, Mistral 7B, or Gemma 2 9B — all free, all open-weight, all small enough to run on a normal laptop.</li>
+      <li><strong>Cost:</strong> $0. The software is free and the models are free. You only pay for electricity, or for a GPU upgrade if you want more speed.</li>
+      <li><strong>Privacy:</strong> Once downloaded, the model runs entirely offline. Nothing you type is sent anywhere.</li>
+    </ul>
+  </div>
+
+  <div class="stat-strip reveal">
+    <div class="stat-card">
+      <div class="stat-num">5 min</div>
+      <div class="stat-label">Typical time to install Ollama and run your first model</div>
+      <div class="stat-src">NyvoraAI testing, 2026</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">8GB</div>
+      <div class="stat-label">RAM/VRAM needed to comfortably run a 7B–8B model</div>
+      <div class="stat-src">Community benchmarks, 2026</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">$0</div>
+      <div class="stat-label">Ongoing cost once your hardware is set up</div>
+      <div class="stat-src">NyvoraAI estimate, 2026</div>
+    </div>
+  </div>
+
+  <h2 id="why-local"><span class="h2-mark">01</span> Why Run an LLM Locally Instead of Using the Cloud?</h2>
+
+  <p class="reveal">Before diving into setup steps, it's worth being honest about why you'd bother. Cloud AI assistants are convenient, and for plenty of people they're the right choice. But local LLMs solve real problems that cloud tools can't.</p>
+
+  <div class="steps reveal">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <div class="step-title">Total privacy, by design</div>
+        <div class="step-desc">When a model runs on your own machine, your prompts never leave your device. There's no server to breach, no provider to subpoena, no terms-of-service change that suddenly allows your conversations to be used for training. For journaling, personal research, medical questions, legal drafts, or just sensitive business data, this matters enormously.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <div class="step-title">Zero ongoing cost</div>
+        <div class="step-desc">Cloud APIs charge per token. If you're experimenting heavily, building a product, or just chatting constantly, those costs add up fast. A local model has a one-time hardware cost (which you may already own) and then runs for free, forever, as many times as you want.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <div class="step-title">Works without internet</div>
+        <div class="step-desc">On a plane, in a remote area, during an outage — a local model keeps working. For travelers, field researchers, or anyone who simply wants AI that isn't dependent on a working internet connection, this is a genuine advantage cloud tools cannot offer.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <div class="step-title">Full control and customization</div>
+        <div class="step-desc">You decide which model to run, how it behaves, and whether to fine-tune it on your own data. There's no rate limit imposed by a company, no sudden feature removal, and no dependency on a single provider's roadmap.</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="reveal">That said, local models aren't a total replacement for the largest cloud models — a small 7B–8B model won't match the raw reasoning power of a frontier system. If you're weighing the tradeoffs between the biggest proprietary assistants, our comparison of <a href="https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html">GPT vs Claude differences</a> is a useful companion read before you decide what mix of local and cloud AI makes sense for you.</p>
+
+  <h2 id="hardware"><span class="h2-mark">02</span> Hardware You Actually Need</h2>
+
+  <p class="reveal">This is usually where people assume they need an expensive gaming PC or a server-grade GPU. In reality, the hardware bar for small, genuinely useful models is much lower than most people expect in 2026.</p>
+
+  <div class="compare-wrap reveal">
+    <table class="compare-table" aria-label="Hardware requirements for running local LLMs">
+      <thead>
+        <tr>
+          <th>Model size</th>
+          <th>Minimum RAM</th>
+          <th>Recommended setup</th>
+          <th>Typical speed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-label">3B–4B (tiny)</td>
+          <td class="td-good">8GB RAM</td>
+          <td>Any modern laptop, CPU only</td>
+          <td class="td-good">Fast</td>
+        </tr>
+        <tr>
+          <td class="td-label">7B–9B (small)</td>
+          <td class="td-mid">16GB RAM</td>
+          <td>8GB+ GPU or Apple Silicon Mac</td>
+          <td class="td-mid">Good</td>
+        </tr>
+        <tr>
+          <td class="td-label">13B–14B (medium)</td>
+          <td class="td-mid">32GB RAM</td>
+          <td>12GB+ GPU or 32GB unified memory Mac</td>
+          <td class="td-mid">Moderate</td>
+        </tr>
+        <tr>
+          <td class="td-label">70B (large)</td>
+          <td class="td-no">64GB+ RAM</td>
+          <td>40GB+ VRAM or high-RAM Apple Silicon</td>
+          <td class="td-no">Slow without strong GPU</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout reveal">
+    <div class="callout-title">💡 The honest truth about CPU-only setups</div>
+    <p>You can run a small model on CPU alone with no GPU at all. It works — it's just slower, often taking several seconds per sentence instead of near-instant responses. For casual use, drafting, or learning, this is completely fine. If you want a snappier, chat-like experience, a GPU with at least 8GB of VRAM (or an Apple Silicon Mac with 16GB+ unified memory) makes a dramatic difference.</p>
+  </div>
+
+  <h2 id="tools"><span class="h2-mark">03</span> The Best Tools to Run an LLM Locally in 2026</h2>
+
+  <p class="reveal">You don't need to write any code. A handful of free, polished tools have made local AI as easy as installing any other desktop app.</p>
+
+  <div class="usecase-grid reveal">
+    <div class="usecase-card">
+      <div class="uc-icon">🦙</div>
+      <div class="uc-title">Ollama</div>
+      <div class="uc-desc">The most popular way to run local models. A simple command-line tool (with a growing desktop app) that handles downloading, running, and managing models with a single command. Best for people comfortable typing one or two terminal commands.</div>
+    </div>
+    <div class="usecase-card">
+      <div class="uc-icon">🖥️</div>
+      <div class="uc-title">LM Studio</div>
+      <div class="uc-desc">A fully visual desktop app — no terminal required at all. Browse a model library, click download, and chat through a clean chat-style interface. The best option if you want a completely point-and-click experience.</div>
+    </div>
+    <div class="usecase-card">
+      <div class="uc-icon">⚙️</div>
+      <div class="uc-title">llama.cpp</div>
+      <div class="uc-desc">The underlying engine that powers many of these tools. More technical to set up directly, but extremely lightweight and highly optimized — popular with developers who want maximum control and performance.</div>
+    </div>
+    <div class="usecase-card">
+      <div class="uc-icon">📱</div>
+      <div class="uc-title">GPT4All</div>
+      <div class="uc-desc">A beginner-friendly desktop app with a built-in model browser, designed specifically for people who have never run a local AI model before. Good documentation and a gentle learning curve.</div>
+    </div>
+    <div class="usecase-card">
+      <div class="uc-icon">🧩</div>
+      <div class="uc-title">Jan</div>
+      <div class="uc-desc">An open-source, privacy-first chat app that runs entirely offline by default and looks and feels similar to a typical AI chat product, making the transition from cloud tools feel familiar.</div>
+    </div>
+    <div class="usecase-card">
+      <div class="uc-icon">🐳</div>
+      <div class="uc-title">Docker Model Runner</div>
+      <div class="uc-desc">For developers already comfortable with Docker, several container-based options now make it easy to spin up a local model as part of a larger development workflow or app.</div>
+    </div>
+  </div>
+
+  <p class="reveal">For this guide, we'll walk through Ollama specifically, since it's free, works identically across Mac, Windows, and Linux, and has become something of a community standard. The same general steps apply closely to LM Studio if you'd rather skip the terminal entirely.</p>
+
+  <h2 id="setup"><span class="h2-mark">04</span> Step-by-Step: Run Your First Local LLM With Ollama</h2>
+
+  <div class="steps reveal">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <div class="step-title">Download and install Ollama</div>
+        <div class="step-desc">Go to Ollama's official website and download the installer for your operating system — Mac, Windows, or Linux are all supported. Run the installer like you would any normal application. It typically takes under two minutes and requires no special configuration.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <div class="step-title">Open your terminal (or command prompt)</div>
+        <div class="step-desc">On Mac, open Terminal from Spotlight. On Windows, open Command Prompt or PowerShell. This sounds intimidating if you've never used one, but you'll only need to type a single short command.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <div class="step-title">Pull and run your first model</div>
+        <div class="step-desc">Type a command like "ollama run llama3" and press enter. Ollama will automatically download the model — this can take a few minutes depending on your internet speed and the model size — and then drop you straight into a chat prompt.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <div class="step-title">Start chatting</div>
+        <div class="step-desc">Once the model loads, simply type your question or instruction and press enter. You're now talking to an AI model running entirely on your own computer, with no internet connection required for any future conversation.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-body">
+        <div class="step-title">(Optional) Add a chat-style interface</div>
+        <div class="step-desc">If you'd prefer a visual chat window instead of the terminal, free front-ends like Open WebUI connect directly to Ollama and give you a familiar browser-based chat experience, complete with conversation history and model switching.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="counter-box reveal">
+    <div class="counter-title">⚡ What You Get After Setup</div>
+    <div class="counter-sub">// local_llm_results · updated_june_2026</div>
+    <div class="counter-grid">
+      <div class="counter-item">
+        <div class="counter-num" id="cnt1">0</div>
+        <div class="counter-label">Internet connections required after setup</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num" id="cnt2">0</div>
+        <div class="counter-label">Dollars spent on API calls, ever</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num" id="cnt3">100</div>
+        <div class="counter-label">Percent of your data staying on your device</div>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="models"><span class="h2-mark">05</span> Which Model Should You Actually Pick?</h2>
+
+  <p class="reveal">Once your tooling is in place, the next question is which model to download. There's no single "best" answer — it depends on your hardware and what you want to use it for.</p>
+
+  <div class="version-grid reveal">
+    <div class="version-card v1">
+      <div class="version-badge vb-1">Best for beginners</div>
+      <div class="version-name">Llama 3 8B</div>
+      <div class="version-date">By Meta AI</div>
+      <div class="version-desc">A well-rounded, instruction-tuned model that handles everyday conversation, writing, and general questions comfortably on a normal laptop. The default starting point for most people new to local AI. To understand the full story behind this model family, see our guide on <a href="https://nyvoraai.github.io/ai-news/what-is-llama-ai-and-who-made-it.html">what Llama AI is and who made it</a>.</div>
+      <span class="version-highlight">🟢 Easiest start</span>
+    </div>
+    <div class="version-card v2">
+      <div class="version-badge vb-2">Best for low-spec machines</div>
+      <div class="version-name">Mistral 7B</div>
+      <div class="version-date">By Mistral AI</div>
+      <div class="version-desc">Extremely efficient for its size, often punching above its weight on reasoning tasks while staying light enough to run smoothly on machines with limited RAM.</div>
+      <span class="version-highlight">💨 Lightweight</span>
+    </div>
+    <div class="version-card v3">
+      <div class="version-badge vb-3">Best for coding</div>
+      <div class="version-name">Qwen 2.5 Coder / Code Llama</div>
+      <div class="version-date">By Alibaba / Meta</div>
+      <div class="version-desc">Specialized variants fine-tuned heavily on code. A great choice if your main use case is a private, offline coding assistant integrated into your editor.</div>
+      <span class="version-highlight">⌨️ Code-focused</span>
+    </div>
+    <div class="version-card v4">
+      <div class="version-badge vb-4">Best with strong hardware</div>
+      <div class="version-name">Llama 3.x 70B</div>
+      <div class="version-date">By Meta AI</div>
+      <div class="version-desc">A much larger, far more capable model that approaches frontier-level reasoning, but needs serious GPU memory or a high-RAM Apple Silicon Mac to run at usable speed.</div>
+      <span class="version-highlight">🚀 Most capable</span>
+    </div>
+  </div>
+
+  <p class="reveal">If you're not sure how a local 7B model stacks up against a frontier cloud model in real-world quality, it helps to read a broader overview first. Our guide on <a href="https://nyvoraai.github.io/ai-news/which-llm-is-best-for-beginners-2026.html">which LLM is best for beginners in 2026</a> compares local and cloud options side by side so you can set realistic expectations before you start.</p>
+
+  <div class="callout callout-gold reveal">
+    <div class="callout-title">⚠️ Quantization — the word you'll see everywhere</div>
+    <p>Most downloadable models come in "quantized" versions, labeled things like Q4 or Q8. Quantization shrinks a model's file size and memory needs by reducing numerical precision slightly, at a small cost to quality. For everyday use, a Q4 or Q5 quantized model is the sweet spot — noticeably smaller and faster, with barely any difference in output quality for typical conversations.</p>
+  </div>
+
+  <h2 id="troubleshoot"><span class="h2-mark">06</span> Common Problems and How to Fix Them</h2>
+
+  <p class="reveal">Local AI setup is much smoother in 2026 than it was a couple of years ago, but a few hiccups are still common for first-timers.</p>
+
+  <div class="steps reveal">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <div class="step-title">"It's running, but it's painfully slow"</div>
+        <div class="step-desc">This almost always means the model is running on CPU instead of a GPU, or that you've chosen a model too large for your hardware. Try a smaller model size or a more aggressive quantization level (such as Q4 instead of Q8) first.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <div class="step-title">"My computer is running out of memory"</div>
+        <div class="step-desc">Close other heavy applications before loading a model, and pick a smaller model size that fits comfortably within your available RAM, leaving headroom for your operating system.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <div class="step-title">"The model gives strange or repetitive answers"</div>
+        <div class="step-desc">Make sure you're using an instruction-tuned or "chat" version of the model rather than a raw base model, which isn't designed for conversation. Also check you're not running a heavily compressed quantization that's too aggressive for the task.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <div class="step-title">"It worked once, but won't start again"</div>
+        <div class="step-desc">Restart the Ollama or LM Studio background service, and confirm no other heavy application is competing for GPU memory at the same time.</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="reveal">It's also worth keeping in mind that local AI isn't the only path toward cheaper, more accessible AI right now — pricing across the entire industry has been falling fast. Our analysis of <a href="https://nyvoraai.github.io/ai-news/why-are-llms-getting-cheaper-2026.html">why LLMs are getting cheaper in 2026</a> looks at the broader trend, including how open models like Llama and Mistral are pushing prices down even for people who never touch a local install.</p>
+
+  <div class="callout callout-purple reveal">
+    <div class="callout-title">🔮 Where local AI is headed next</div>
+    <p>Hardware makers and model developers are both racing toward the same goal: making powerful AI run smoothly on everyday devices without a dedicated GPU. Expect smaller, more efficient models, tighter integration directly into operating systems, and phones capable of running genuinely useful AI completely offline within the next couple of product cycles. The gap between "what runs in the cloud" and "what runs on your device" keeps shrinking every few months.</p>
+  </div>
+
+  <h3>A Quick Recap Before You Start</h3>
+  <p class="reveal">Running an LLM on your own computer in 2026 is no longer a niche, technical hobby — it's a genuinely practical option for privacy-conscious users, developers on a budget, and anyone curious about how these systems actually work under the hood. Install Ollama or LM Studio, pick a model that matches your hardware, and you'll be having your first fully offline AI conversation within minutes.</p>
+
+  <h2 id="faq"><span class="h2-mark">07</span> Frequently Asked Questions</h2>
+  <div class="faq reveal">
+    <details open>
+      <summary>How do I run an LLM on my own computer?</summary>
+      <div class="faq-body">Install a local AI runner such as Ollama or LM Studio, download an open-weight model like Llama 3 8B or Mistral 7B through the app, and start chatting through the built-in interface or command line. No internet connection is needed once the model is downloaded, and no API key or subscription is required.</div>
+    </details>
+    <details>
+      <summary>What computer specs do I need to run an LLM locally?</summary>
+      <div class="faq-body">For small models (7B–8B parameters), 16GB of RAM and a modern CPU is enough to run slowly, while a GPU with 8GB or more VRAM makes it fast. Apple Silicon Macs with 16GB+ unified memory handle these models well. Larger 70B models need 40GB+ of VRAM or a high-RAM Mac with Apple Silicon.</div>
+    </details>
+    <details>
+      <summary>Is it free to run an LLM on my own computer?</summary>
+      <div class="faq-body">Yes. The software (Ollama, LM Studio, llama.cpp) and most open-weight models (Llama, Mistral, Gemma, Qwen) are free to download and use. The only cost is the electricity to run your computer and, optionally, a GPU upgrade if you want faster performance.</div>
+    </details>
+    <details>
+      <summary>Is running an LLM locally safe and private?</summary>
+      <div class="faq-body">Yes, running an LLM locally is one of the most private ways to use AI. Your prompts and data never leave your device, since there is no cloud server involved. This makes local LLMs popular for sensitive work in healthcare, law, and any field with strict data compliance requirements.</div>
+    </details>
+    <details>
+      <summary>Which local LLM should a beginner start with?</summary>
+      <div class="faq-body">Beginners should start with Ollama paired with a small instruction-tuned model such as Llama 3 8B or Mistral 7B. These models run comfortably on most modern laptops, install in minutes, and provide a great introduction to local AI before trying larger models.</div>
+    </details>
+  </div>
+
+  <div class="author-box reveal">
+    <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team author avatar" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by the NyvoraAI Team</h3>
+      <p>We cover large language models, open-source AI, and the future of accessible intelligence. Published June 2026. Questions? <a href="https://nyvoraai.github.io/contact.html">Contact our team</a> or <a href="https://nyvoraai.github.io/about.html">learn about our mission</a>. Stay updated via our <a href="https://nyvoraai.github.io/rss.xml">RSS feed</a>.</p>
+    </div>
+  </div>
+
+  <div class="share-section reveal">
+    <div class="share-title">Know someone who wants to run AI offline? Share this guide 👇</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=How+to+Run+an+LLM+on+Your+Own+Computer+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-x"/></svg> Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Share on Facebook</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html" target="_blank" rel="noopener" class="share-btn">💼 Share on LinkedIn</a>
+      <button class="share-btn" onclick="copyLink()">🔗 Copy Link</button>
+    </div>
+  </div>
+
+  <div class="newsletter reveal">
+    <h2>Never Miss an AI Breakthrough</h2>
+    <p>Weekly coverage of LLMs, open-source AI, and what's actually worth your attention. Join 10,000+ smart readers.</p>
+    <form action="https://formspree.io/f/xwvjgdpw" method="POST" class="nl-form" id="nlForm">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
+      <input type="hidden" name="_subject" value="Newsletter Signup - How to Run an LLM on Your Own Computer"/>
+      <button type="submit" class="nl-btn">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · Privacy-focused</p>
+    <div class="nl-social">
+      <a href="https://nyvoraai.github.io/rss.xml" class="nl-soc"><svg class="icon"><use href="#icon-rss"/></svg> RSS Feed</a>
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-instagram"/></svg> Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-facebook"/></svg> Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-x"/></svg> X</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</a>
+    </div>
+  </div>
+
+  <div class="related reveal">
+    <div class="related-title">Continue Your AI Journey</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/ai-news/what-is-llama-ai-and-who-made-it.html" class="rel-card">
+        <div class="rel-tag">Model Guide</div>
+        <div class="rel-title">What Is Llama AI and Who Made It?</div>
+        <div class="rel-read">20 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html" class="rel-card">
+        <div class="rel-tag">Comparison</div>
+        <div class="rel-title">GPT vs Claude — Key Differences</div>
+        <div class="rel-read">16 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/which-llm-is-best-for-beginners-2026.html" class="rel-card">
+        <div class="rel-tag">Recommendations</div>
+        <div class="rel-title">Which LLM Is Best for Beginners 2026?</div>
+        <div class="rel-read">15 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/why-are-llms-getting-cheaper-2026.html" class="rel-card">
+        <div class="rel-tag">Trends</div>
+        <div class="rel-title">Why Are LLMs Getting Cheaper in 2026?</div>
+        <div class="rel-read">17 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news.html" class="rel-card">
+        <div class="rel-tag">All News</div>
+        <div class="rel-title">Browse All AI News &amp; Guides</div>
+        <div class="rel-read">Explore →</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<footer>
+  <div class="ft-blob" style="width:220px;height:220px;background:var(--coral-soft);top:8%;left:1%;animation-duration:9s"></div>
+  <div class="ft-blob" style="width:180px;height:180px;background:var(--blue-soft);bottom:18%;left:20%;animation-duration:11s;animation-delay:-3s"></div>
+  <div class="ft-blob" style="width:200px;height:200px;background:var(--gold-soft);top:25%;right:3%;animation-duration:8s;animation-delay:-1s"></div>
+  <div class="ft-blob" style="width:160px;height:160px;background:var(--purple-soft);bottom:22%;right:16%;animation-duration:10s;animation-delay:-5s"></div>
+  <div class="ft-blob" style="width:140px;height:140px;background:var(--teal-soft);top:55%;left:42%;animation-duration:12s;animation-delay:-2s"></div>
+
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="ft-dots">
+        <div class="ft-dot" style="background:var(--coral);animation-delay:0s"></div>
+        <div class="ft-dot" style="background:var(--gold);animation-delay:.2s"></div>
+        <div class="ft-dot" style="background:var(--teal);animation-delay:.4s"></div>
+        <div class="ft-dot" style="background:var(--purple);animation-delay:.6s"></div>
+        <div class="ft-dot" style="background:var(--blue);animation-delay:.8s"></div>
+      </div>
+      <div class="footer-logo-wrap">
+        <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI logo icon" class="logo-img" onerror="this.remove()"/>
+        Nyvora<span>AI</span>
+      </div>
+      <p>Your trusted source for AI news, LLM guides, and practical intelligence. We make complex AI research accessible and genuinely useful for everyone.</p>
+      <div class="footer-chips">
+        <span class="chip chip-coral">💻 Local AI</span>
+        <span class="chip chip-teal">🧠 LLM News</span>
+        <span class="chip chip-gold">⚡ Weekly Updates</span>
+        <span class="chip chip-blue">🌍 Global Coverage</span>
+        <span class="chip chip-purple">🔬 Research</span>
+      </div>
+      <div class="footer-social" style="margin-top:18px">
+        <a href="https://nyvoraai.github.io/rss.xml" class="fs-btn"><svg class="icon"><use href="#icon-rss"/></svg><span>RSS</span></a>
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-instagram"/></svg><span>Instagram</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-facebook"/></svg><span>Facebook</span></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-x"/></svg><span>X</span></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-youtube"/></svg><span>YouTube</span></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>LLM Guides</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news/what-is-llama-ai-and-who-made-it.html">What Is Llama AI?</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html">GPT vs Claude</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/which-llm-is-best-for-beginners-2026.html">Best LLM for Beginners</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/why-are-llms-getting-cheaper-2026.html">Why LLMs Get Cheaper</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">All AI News</a></li>
+      </ul>
+      <a href="https://nyvoraai.github.io/rss.xml" class="rss-link"><svg class="icon"><use href="#icon-rss"/></svg> Subscribe RSS</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+      <a href="https://nyvoraai.github.io/rss.xml">RSS</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const wrap=document.getElementById('bubbleField');
+  const colors=['#FF6B4A','#146B5C','#E89B2D','#8B5CF6','#2563EB'];
+  const n=window.innerWidth<700?8:14;
+  for(let i=0;i<n;i++){
+    const b=document.createElement('div');b.className='fbubble';
+    const s=26+Math.random()*60,l=Math.random()*100,d=13+Math.random()*13,dl=-Math.random()*d;
+    b.style.cssText='width:'+s+'px;height:'+(s*.7)+'px;left:'+l+'%;bottom:-10%;border-color:'+colors[i%colors.length]+';animation-duration:'+d+'s;animation-delay:'+dl+'s';
+    wrap.appendChild(b);
+  }
+})();
+
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const p=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  const bar=document.getElementById('progress');
+  bar.style.width=p+'%';bar.setAttribute('aria-valuenow',Math.round(p));
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+},{passive:true});
+
+const io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(!e.isIntersecting)return;
+    e.target.classList.add('visible');
+    if(e.target.classList.contains('counter-box')){
+      animateCounter('cnt1',0,'');
+      animateCounter('cnt2',0,'');
+      animateCounter('cnt3',100,'%');
+    }
+    io.unobserve(e.target);
+  });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(r){io.observe(r);});
+
+function animateCounter(id, target, suffix){
+  const el=document.getElementById(id);
+  if(!el)return;
+  let current=0;
+  const step=Math.max(1,Math.ceil(target/60));
+  if(target===0){el.textContent='0'+suffix;return;}
+  const timer=setInterval(function(){
+    current=Math.min(current+step,target);
+    el.textContent=current+suffix;
+    if(current>=target)clearInterval(timer);
+  },22);
+}
+
+function toggleMenu(){
+  const nav=document.getElementById('mobileNav'),ham=document.getElementById('ham');
+  const open=nav.classList.toggle('open');
+  ham.setAttribute('aria-expanded',open?'true':'false');
+}
+
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(function(){
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;const o=btn.textContent;
+    btn.textContent='✅ Copied!';setTimeout(function(){btn.textContent=o;},2000);
+  });
+}
+
+document.getElementById('nlForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const btn=this.querySelector('.nl-btn');btn.textContent='Sending...';btn.disabled=true;
+  fetch(this.action,{method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}})
+    .then(function(r){btn.textContent=r.ok?'✅ Subscribed!':'Try again';if(!r.ok)btn.disabled=false;})
+    .catch(function(){btn.textContent='Try again';btn.disabled=false;});
+});
+</script>
+</body>
+</html>
