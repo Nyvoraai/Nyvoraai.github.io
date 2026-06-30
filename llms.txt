@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (116 articles)
+## AI News (117 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -129,6 +129,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Which Industries Use AI Robots the Most? 2026](https://nyvoraai.github.io/ai-news/which-industries-use-ai-robots-the-most.html): Discover which industries use AI robots the most in 2026. Explore top sectors like manufacturing, healthcare, and logistics driving automation.
 - [Which LLM Is Best for Beginners in 2026?](https://nyvoraai.github.io/ai-news/which-llm-is-best-for-beginners-2026.html): Which LLM is best for beginners in 2026? We compare ChatGPT, Claude, and Gemini on ease of use, free features, and safety to help you choose.
 - [Why Are LLMs Getting Cheaper in 2026?](https://nyvoraai.github.io/ai-news/why-are-llms-getting-cheaper-2026.html): Why are LLMs getting cheaper in 2026? Discover the tech breakthroughs, hardware shifts, and market forces driving AI costs down for everyone.
+- [Why Do LLMs Hallucinate Facts? The Truth Behind AI Lies](https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html): Discover why LLMs hallucinate facts — from training limitations to probability patterns. Learn how AI hallucinations happen and how to reduce them in 2026.
 - [Why Was Fable 5 Banned? The Real Story Explained](https://nyvoraai.github.io/ai-news/why-was-fable-5-banned.html): Why was Claude Fable 5 banned? The real story: a 'fix this code' prompt, a same-day export order, and 300+ security experts demanding it be reversed.
 
 ## Blog (47 articles)
