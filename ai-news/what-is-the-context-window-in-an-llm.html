@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>What Is the Context Window in an LLM? 2026 Guide</title>
+<meta name="description" content="Learn what the context window in an LLM is, how tokens work, why size matters, and how to handle long documents. Complete 2026 guide with examples."/>
+<meta name="keywords" content="what is the context window in an LLM, LLM context window, AI tokens, context length, GPT context size, long context AI 2026"/>
+<meta name="author" content="Varun Lalwani"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#EFF1EA"/>
+<!-- GEO / AEO -->
+<meta name="geo.region" content="US"/>
+<meta name="geo.placename" content="United States"/>
+<meta name="ICBM" content="37.09024, -95.712891"/>
+<!-- Favicons -->
+<link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
+<link rel="icon" type="image/png" href="https://nyvoraai.github.io/favicon-32x32.png"/>
+<link rel="apple-touch-icon" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="NyvoraAI RSS Feed" href="https://nyvoraai.github.io/rss.xml"/>
+<link rel="canonical" href="https://nyvoraai.github.io/ai-news/what-is-the-context-window-in-an-llm.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="What Is the Context Window in an LLM? 2026 Guide"/>
+<meta property="og:description" content="Learn what the context window in an LLM is, how tokens work, why size matters, and how to handle long documents. Complete 2026 guide with examples."/>
+<meta property="og:url" content="https://nyvoraai.github.io/ai-news/what-is-the-context-window-in-an-llm.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/llm-context-window-banner.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-06-30T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-06-30T00:00:00Z"/>
+<meta property="article:section" content="AI News"/>
+<meta property="article:tag" content="Context Window, LLM Tokens, AI Architecture, Long Context, Prompt Engineering"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:creator" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="What Is the Context Window in an LLM? 2026 Guide"/>
+<meta name="twitter:description" content="Why can't you paste an entire book into ChatGPT? Discover how context windows work, what tokens are, and how AI handles long conversations."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/llm-context-window-banner.jpg"/>
+<!-- Schema: Organization -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":"https://nyvoraai.github.io/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai"]}</script>
+<!-- Schema: WebSite -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"NyvoraAI","url":"https://nyvoraai.github.io","publisher":{"@type":"Organization","name":"NyvoraAI"}}</script>
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.github.io/ai-news.html"},{"@type":"ListItem","position":3,"name":"What Is the Context Window in an LLM","item":"https://nyvoraai.github.io/ai-news/what-is-the-context-window-in-an-llm.html"}]}</script>
+<!-- Schema: Article -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What Is the Context Window in an LLM? Complete 2026 Guide","description":"A comprehensive guide to understanding LLM context windows: what they are, how tokens work, why size matters, and how to work around their limits.","image":"https://nyvoraai.github.io/assets/llm-context-window-banner.jpg","datePublished":"2026-06-30","dateModified":"2026-06-30","inLanguage":"en-US","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/ai-news/what-is-the-context-window-in-an-llm.html"},"articleSection":"AI News","keywords":"what is the context window in an LLM, LLM context window, tokens","timeRequired":"PT24M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}</script>
+<!-- Schema: FAQPage (AEO) -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the context window in an LLM?","acceptedAnswer":{"@type":"Answer","text":"The context window in an LLM is the maximum amount of text (measured in tokens) that the model can process in a single request. It includes both the input prompt and the model's output combined. Think of it as the AI's short-term memory—once the conversation exceeds this limit, older information gets dropped or the request fails."}},{"@type":"Question","name":"What is a token in AI and how does it relate to words?","acceptedAnswer":{"@type":"Answer","text":"A token is a chunk of text that an AI model processes as a single unit. In English, one token is roughly 4 characters or about 0.75 words. So 1,000 tokens equals approximately 750 English words. Tokens can be whole words, parts of words, or even punctuation marks. Different languages have different tokenization ratios—non-Latin scripts often require more tokens per word."}},{"@type":"Question","name":"Why do LLMs have context window limits?","acceptedAnswer":{"@type":"Answer","text":"LLMs have context window limits due to the quadratic computational complexity of the attention mechanism. As input length grows, the compute and memory required increases exponentially. Processing 100,000 tokens can require thousands of times more resources than 1,000 tokens. Context limits exist because of these hardware and cost constraints, not arbitrary software decisions."}},{"@type":"Question","name":"Which LLM has the largest context window in 2026?","acceptedAnswer":{"@type":"Answer","text":"As of 2026, Google's Gemini 1.5 Pro leads with a 1 million to 2 million token context window, equivalent to roughly 1,500 to 3,000 pages of text or dozens of hours of audio. Anthropic's Claude 3.5 offers 200K tokens, while OpenAI's GPT-4 Turbo supports 128K tokens. Most open-source models like Llama 3 support 8K to 128K tokens depending on the variant."}},{"@type":"Question","name":"Is a bigger context window always better?","acceptedAnswer":{"@type":"Answer","text":"No. Bigger context windows come with trade-offs: higher cost per request, slower response times, and the 'lost in the middle' problem where models pay less attention to information in the middle of long inputs. For most practical use cases, 32K-128K tokens is the sweet spot, and techniques like RAG often work better than simply using massive context windows."}},{"@type":"Question","name":"How do I work around context window limits?","acceptedAnswer":{"@type":"Answer","text":"Common strategies include: using RAG (Retrieval Augmented Generation) to pull only relevant information, chunking long documents into smaller pieces, summarizing previous conversation turns, using sliding windows that keep recent context while dropping older parts, and breaking complex tasks into multiple smaller requests that build on each other."}}]}</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#EFF1EA;--bg-deep:#E5E9DC;--paper:#FFFFFF;--paper-warm:#FBF8F1;
+  --ink:#1C2321;--ink-soft:#4B5650;--muted:#7C8579;--line:#DCE0D2;--line-soft:#E8EBE0;
+  --coral:#FF6B4A;--coral-dp:#B8431F;--coral-soft:#FFE1D6;
+  --teal:#146B5C;--teal-dp:#0E4F45;--teal-soft:#DCEEE8;
+  --gold:#E89B2D;--gold-soft:#FCEACB;
+  --purple:#8B5CF6;--purple-soft:#EDE9FE;
+  --green:#16A34A;--green-soft:#DCFCE7;
+  --blue:#2563EB;--blue-soft:#DBEAFE;
+  --radius:18px;--radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,-apple-system,sans-serif;
+  --font-body:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+  --shadow:0 1px 2px rgba(28,35,33,.04),0 8px 24px rgba(28,35,33,.06);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:18px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--teal-dp);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;background:var(--bg)}
+.aura{position:absolute;border-radius:50%;filter:blur(85px);will-change:transform;animation:auraFloat ease-in-out infinite}
+.aura-1{width:560px;height:560px;background:radial-gradient(circle,var(--coral),transparent 68%);top:-140px;left:-120px;opacity:.22;animation-duration:17s}
+.aura-2{width:500px;height:500px;background:radial-gradient(circle,var(--teal),transparent 68%);bottom:-130px;right:-100px;opacity:.20;animation-duration:21s;animation-delay:-6s}
+.aura-3{width:420px;height:420px;background:radial-gradient(circle,var(--gold),transparent 68%);top:30%;left:58%;opacity:.16;animation-duration:14s;animation-delay:-3s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.12)}66%{transform:translate(-35px,30px) scale(.92)}}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.045'/></svg>")}
+.bubble-field{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fbubble{position:absolute;border:1.5px solid;opacity:0;border-radius:14px 14px 14px 3px;animation:bubbleDrift linear infinite}
+@keyframes bubbleDrift{0%{transform:translateY(10vh) rotate(-4deg) scale(.85)}10%{opacity:.24}50%{transform:translateY(-45vh) rotate(2deg) scale(1.04)}85%{opacity:.16}100%{transform:translateY(-100vh) rotate(5deg) scale(1.1);opacity:0}}
+@media(prefers-reduced-motion:reduce){.fbubble,.aura{animation:none;display:none}html{scroll-behavior:auto}}
+
+#progress{position:fixed;top:64px;left:0;width:0;height:3px;z-index:300;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal));transition:width .1s;border-radius:0 3px 3px 0}
+
+nav.main-nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:21px;font-weight:700;letter-spacing:-.02em;color:var(--ink);display:flex;align-items:center;gap:9px}
+.nav-logo span{color:var(--teal)}
+.logo-img{height:30px;width:30px;border-radius:8px;object-fit:cover;display:block}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{color:var(--ink-soft);font-size:14.5px;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-social{display:flex;gap:6px}
+.nav-soc{color:var(--ink-soft);width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:8px;transition:background .2s,color .2s}
+.nav-soc:hover{background:var(--line-soft);color:var(--ink);text-decoration:none}
+.icon{width:17px;height:17px;flex-shrink:0;display:block}
+.nav-cta{background:var(--coral);color:#fff;padding:9px 18px;border-radius:9px;font-size:13.5px;font-weight:700;transition:opacity .2s,transform .15s;box-shadow:0 4px 14px rgba(255,107,74,.28)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);text-decoration:none}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--ink-soft);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:20px 24px;flex-direction:column;gap:16px;z-index:199}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--ink);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
+
+.breadcrumb{max-width:860px;margin:26px auto 0;padding:0 24px;font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--muted)}.breadcrumb a:hover{color:var(--teal-dp)}.bc-sep{color:var(--line)}
+
+.article-hdr{max-width:860px;margin:22px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:5px 13px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-ai{background:var(--teal-soft);color:var(--teal-dp);border:1px solid rgba(20,107,92,.18)}
+.badge-read{background:var(--gold-soft);color:#8A5A12;border:1px solid rgba(232,155,45,.25)}
+.badge-date{background:var(--coral-soft);color:var(--coral-dp);border:1px solid rgba(255,107,74,.22)}
+.badge-hot{background:linear-gradient(135deg,var(--coral),var(--purple));color:#fff;border:none}
+.badge-open{background:var(--green-soft);color:var(--green);border:1px solid rgba(22,163,74,.2)}
+.article-title{font-size:clamp(30px,5.2vw,48px);font-weight:700;line-height:1.18;color:var(--ink);margin-bottom:18px;letter-spacing:-.025em;font-family:var(--font-display)}
+.title-underline{background:linear-gradient(120deg,transparent 0%,var(--gold-soft) 0%);background-size:100% 38%;background-repeat:no-repeat;background-position:0 88%;padding:0 2px}
+.article-intro{font-size:19.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:24px}
+.article-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);padding-bottom:24px;border-bottom:1px solid var(--line)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{position:relative;overflow:hidden;width:36px;height:36px;border-radius:50%;flex-shrink:0;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;font-family:var(--font-display)}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--ink-soft)}.meta-sep{color:var(--line)}
+
+.blog-banner-wrap{max-width:860px;margin:30px auto;padding:0 24px}
+.blog-banner{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow);display:block;object-fit:cover;max-height:450px}
+.banner-fallback{width:100%;border-radius:var(--radius);border:1px solid var(--line);min-height:300px;background:linear-gradient(135deg,var(--blue-soft) 0%,var(--paper) 45%,var(--gold-soft) 100%);display:none;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.banner-fallback::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(37,99,235,.05),transparent 60%,rgba(232,155,45,.06));pointer-events:none}
+.bf-inner{position:relative;z-index:1;text-align:center;padding:44px 24px}
+.bf-logo-big{font-family:var(--font-display);font-size:56px;font-weight:700;background:linear-gradient(135deg,var(--blue),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px;line-height:1}
+.bf-text{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.bf-sub{font-size:13px;color:var(--muted);font-family:var(--font-mono);margin-bottom:16px}
+.bf-tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.bf-tag{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 12px;border-radius:20px;border:1px solid}
+.bf-tag-blue{background:var(--blue-soft);color:var(--blue);border-color:rgba(37,99,235,.2)}
+.bf-tag-teal{background:var(--teal-soft);color:var(--teal-dp);border-color:rgba(20,107,92,.2)}
+.bf-tag-gold{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.2)}
+.bf-tag-green{background:var(--green-soft);color:var(--green);border-color:rgba(22,163,74,.2)}
+
+.toc-box{max-width:860px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow)}
+.toc-title{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--ink-soft);font-size:14.5px;transition:color .2s;display:flex;gap:8px}
+.toc a::before{content:counter(tocnum);font-family:var(--font-mono);color:var(--coral);font-weight:700;font-size:12.5px;min-width:16px}
+.toc a:hover{color:var(--coral);text-decoration:none}
+
+.layout{max-width:860px;margin:0 auto;padding:36px 24px 80px}
+
+.prose h2{font-size:27px;font-weight:700;color:var(--ink);margin:54px 0 18px;letter-spacing:-.02em;scroll-margin-top:90px;display:flex;align-items:baseline;gap:10px}
+.prose h2 .h2-mark{font-family:var(--font-mono);font-size:14px;color:var(--coral);font-weight:700}
+.prose h3{font-size:18.5px;font-weight:700;color:var(--ink);margin:28px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--ink)}
+.prose strong{color:var(--ink);font-weight:700}
+.prose ul,.prose ol{margin:0 0 22px 22px}
+.prose li{margin-bottom:9px;color:var(--ink)}
+.prose a,.faq-body a{color:var(--teal-dp);border-bottom:1px solid rgba(14,79,69,.25);transition:border-color .2s,color .2s}
+.prose a:hover,.faq-body a:hover{color:var(--coral);border-color:var(--coral);text-decoration:none}
+
+.key-takeaways{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow)}
+.kt-title{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.key-takeaways ul{margin:0;list-style:none}
+.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15.5px;color:var(--ink-soft)}
+.key-takeaways li:last-child{margin-bottom:0}
+.key-takeaways li::before{content:'✨';color:var(--gold);flex-shrink:0}
+
+.stat-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0}
+.stat-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center;transition:transform .3s,border-color .3s;box-shadow:var(--shadow)}
+.stat-card:hover{transform:translateY(-4px);border-color:var(--teal)}
+.stat-num{font-family:var(--font-display);font-size:34px;font-weight:700;color:var(--coral)}
+.stat-label{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.4}
+.stat-src{font-size:11px;color:var(--muted);font-family:var(--font-mono);margin-top:4px}
+
+/* Memory Analogy Card */
+.analogy-box{background:linear-gradient(135deg,var(--teal-soft),var(--gold-soft));border:2px solid var(--line);border-radius:var(--radius);padding:32px;margin:36px 0;position:relative;overflow:hidden}
+.analogy-box::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--gold))}
+.analogy-title{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--ink);margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.analogy-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.analogy-card{background:var(--paper);border-radius:12px;padding:18px;border:1px solid var(--line)}
+.analogy-card h4{font-family:var(--font-display);font-size:14px;font-weight:700;color:var(--teal-dp);margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.analogy-card p{font-size:13.5px;color:var(--ink-soft);line-height:1.6;margin:0}
+
+/* Context Window Visualizer */
+.context-viz{background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);padding:28px;margin:36px 0;box-shadow:var(--shadow)}
+.viz-title{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.viz-sub{font-size:14px;color:var(--ink-soft);margin-bottom:20px}
+.viz-bar{height:48px;background:var(--bg-deep);border-radius:10px;overflow:hidden;position:relative;margin-bottom:8px;border:1px solid var(--line)}
+.viz-fill{height:100%;background:linear-gradient(90deg,var(--teal),var(--blue));display:flex;align-items:center;padding:0 14px;color:#fff;font-family:var(--font-mono);font-size:13px;font-weight:700;transition:width .8s cubic-bezier(.4,0,.2,1);box-shadow:inset 0 0 20px rgba(255,255,255,.15)}
+.viz-fill.over{background:linear-gradient(90deg,var(--coral),var(--coral-dp))}
+.viz-labels{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);font-family:var(--font-mono);margin-bottom:24px}
+.viz-input{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;font-family:var(--font-body);color:var(--ink);margin-bottom:14px;outline:none;transition:border-color .2s}
+.viz-input:focus{border-color:var(--coral)}
+.viz-presets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.viz-preset{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:12.5px;font-weight:600;color:var(--ink-soft);cursor:pointer;transition:all .2s;font-family:var(--font-mono)}
+.viz-preset:hover{border-color:var(--coral);color:var(--ink);transform:translateY(-1px)}
+.viz-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.viz-stat{background:var(--bg);border-radius:10px;padding:14px;text-align:center;border:1px solid var(--line-soft)}
+.viz-stat-num{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--teal-dp)}
+.viz-stat-label{font-size:11px;color:var(--muted);font-family:var(--font-mono);margin-top:4px}
+
+/* Model Comparison Grid */
+.model-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:32px 0}
+.model-card{background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);padding:20px;transition:all .3s;position:relative;overflow:hidden}
+.model-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.model-card.mc-gemini::before{background:linear-gradient(90deg,var(--blue),var(--teal))}
+.model-card.mc-claude::before{background:linear-gradient(90deg,var(--coral),var(--gold))}
+.model-card.mc-gpt::before{background:linear-gradient(90deg,var(--green),var(--teal))}
+.model-card.mc-llama::before{background:linear-gradient(90deg,var(--purple),var(--coral))}
+.model-card:hover{transform:translateY(-4px);border-color:var(--teal);box-shadow:var(--shadow)}
+.mc-name{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--ink);margin-bottom:4px}
+.mc-maker{font-size:12px;color:var(--muted);font-family:var(--font-mono);margin-bottom:12px}
+.mc-tokens{font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--teal-dp);margin-bottom:4px}
+.mc-unit{font-size:11px;color:var(--muted);font-family:var(--font-mono);text-transform:uppercase}
+.mc-equiv{font-size:12px;color:var(--ink-soft);margin-top:10px;padding-top:10px;border-top:1px solid var(--line-soft);line-height:1.5}
+
+/* Lost in Middle Demo */
+.lim-demo{background:var(--paper-warm);border:2px solid var(--line);border-radius:var(--radius);padding:28px;margin:36px 0;position:relative;overflow:hidden}
+.lim-demo::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--coral))}
+.lim-title{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.lim-sub{font-size:14px;color:var(--ink-soft);margin-bottom:20px}
+.lim-visual{display:flex;gap:4px;height:60px;margin:20px 0;border-radius:8px;overflow:hidden;background:var(--bg-deep);padding:6px;align-items:center}
+.lim-cell{flex:1;background:var(--teal);border-radius:4px;transition:all .4s;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;font-family:var(--font-mono);opacity:.7}
+.lim-cell.hot{background:var(--coral);opacity:1;box-shadow:0 0 10px rgba(255,107,74,.4)}
+.lim-cell.cold{background:var(--line);opacity:.4}
+.lim-legend{display:flex;gap:16px;justify-content:center;margin-top:12px;font-size:12px;font-family:var(--font-mono);color:var(--muted)}
+.lim-dot{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:middle;margin-right:5px}
+.lim-explain{background:var(--paper);border-radius:10px;padding:16px;margin-top:16px;font-size:14px;color:var(--ink-soft);line-height:1.7;border:1px solid var(--line-soft)}
+
+/* Workaround Cards */
+.workaround-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:28px 0}
+.wa-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;transition:all .3s;box-shadow:var(--shadow)}
+.wa-card:hover{transform:translateY(-3px);border-color:var(--coral)}
+.wa-icon{font-size:28px;margin-bottom:10px}
+.wa-title{font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.wa-desc{font-size:13.5px;color:var(--ink-soft);line-height:1.6}
+
+.callout{background:var(--teal-soft);border:1px solid rgba(20,107,92,.2);border-left:4px solid var(--teal);border-radius:0 var(--radius) var(--radius) 0;padding:20px 24px;margin:28px 0}
+.callout-title{font-family:var(--font-display);font-weight:700;font-size:13px;color:var(--teal-dp);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
+.callout p{font-size:15px;color:var(--ink-soft);margin:0;line-height:1.7}
+.callout-gold{background:var(--gold-soft);border-left-color:var(--gold)}
+.callout-gold .callout-title{color:#8A5A12}
+.callout-purple{background:var(--purple-soft);border-left-color:var(--purple)}
+.callout-purple .callout-title{color:#6D28D9}
+.callout-coral{background:var(--coral-soft);border-left-color:var(--coral)}
+.callout-coral .callout-title{color:var(--coral-dp)}
+
+.steps{margin:28px 0}
+.step{display:flex;gap:18px;margin-bottom:22px;align-items:flex-start}
+.step-num{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--coral),var(--gold));color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:14px;font-weight:700;flex-shrink:0;box-shadow:0 4px 12px rgba(255,107,74,.28)}
+.step-body{flex:1;padding-top:7px}
+.step-title{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.step-desc{font-size:14.5px;color:var(--ink-soft);line-height:1.65}
+
+.faq{margin:16px 0}
+details{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--coral)}
+summary{padding:18px 22px;cursor:pointer;font-weight:600;font-size:16px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--coral);font-size:22px;font-weight:300;flex-shrink:0}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 22px 18px;color:var(--ink-soft);font-size:15px;line-height:1.7}
+
+.author-box{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin:48px 0 0}
+.author-box .meta-avatar{width:48px;height:48px;font-size:17px;flex-shrink:0}
+.author-box h3{font-size:15px;font-family:var(--font-display);margin-bottom:4px;color:var(--ink)}
+.author-box p{font-size:14px;color:var(--muted);margin:0;line-height:1.6}
+
+.share-section{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:32px 0 0;text-align:center}
+.share-title{font-size:15.5px;font-weight:700;color:var(--ink);margin-bottom:16px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--paper);color:var(--ink-soft);font-family:var(--font-body)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--ink)}
+
+.newsletter{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:44px;margin:56px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal))}
+.newsletter h2{font-size:25px;font-weight:700;color:var(--ink);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--muted);margin-bottom:24px;font-size:15.5px}
+.nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 16px;color:var(--ink);font-size:14px;outline:none;transition:border-color .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--muted)}.nl-input:focus{border-color:var(--coral)}
+.nl-btn{background:var(--coral);color:#fff;padding:13px 22px;border-radius:10px;border:none;cursor:pointer;font-size:14px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s;box-shadow:0 4px 16px rgba(255,107,74,.28);font-family:var(--font-display)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px)}
+.nl-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+.nl-social{display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;padding:9px 16px;border-radius:10px;border:1px solid var(--line);color:var(--ink-soft);transition:all .2s}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--ink)}
+
+.related{margin:48px 0 0}
+.related-title{font-size:19px;font-weight:700;color:var(--ink);margin-bottom:20px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rel-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px;transition:border-color .2s,transform .2s;display:block}
+.rel-card:hover{border-color:var(--coral);transform:translateY(-3px);text-decoration:none;box-shadow:var(--shadow)}
+.rel-tag{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--coral);margin-bottom:8px;font-family:var(--font-mono)}
+.rel-title{font-size:14px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:8px;font-family:var(--font-display)}
+.rel-read{font-size:12px;color:var(--muted)}
+
+footer{background:var(--paper);border-top:1px solid var(--line);padding:60px 24px 32px;position:relative;z-index:1;overflow:hidden}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal),var(--purple),var(--blue),var(--coral));background-size:300% 100%;animation:ftStripe 5s linear infinite}
+@keyframes ftStripe{0%{background-position:0%}100%{background-position:300%}}
+.ft-blob{position:absolute;border-radius:50%;pointer-events:none;animation:ftBlob ease-in-out infinite;filter:blur(55px)}
+@keyframes ftBlob{0%,100%{transform:scale(1) translate(0,0);opacity:.1}50%{transform:scale(1.25) translate(10px,-8px);opacity:.18}}
+.ft-dots{display:flex;gap:7px;margin-bottom:14px}
+.ft-dot{width:8px;height:8px;border-radius:50%;animation:ftDotPulse 2.2s ease-in-out infinite}
+@keyframes ftDotPulse{0%,100%{transform:scale(1);opacity:.5}50%{transform:scale(1.6);opacity:1}}
+.footer-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;position:relative;z-index:1}
+.footer-logo-wrap{font-size:21px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:9px;color:var(--ink);font-family:var(--font-display)}
+.footer-logo-wrap span{color:var(--teal)}
+.footer-brand p{color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:16px}
+.footer-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.chip{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 10px;border-radius:20px;border:1px solid}
+.chip-coral{background:var(--coral-soft);color:var(--coral-dp);border-color:rgba(255,107,74,.3)}
+.chip-teal{background:var(--teal-soft);color:var(--teal-dp);border-color:rgba(20,107,92,.2)}
+.chip-gold{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.3)}
+.chip-purple{background:var(--purple-soft);color:#6D28D9;border-color:rgba(139,92,246,.25)}
+.chip-blue{background:var(--blue-soft);color:var(--blue);border-color:rgba(37,99,235,.2)}
+.footer-social{display:flex;gap:10px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:7px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--ink-soft);transition:all .3s;position:relative;overflow:hidden;background:transparent}
+.fs-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--coral-soft),var(--teal-soft));transform:translateY(100%);transition:transform .3s;z-index:0;border-radius:inherit}
+.fs-btn:hover{color:var(--coral-dp);border-color:var(--coral);transform:translateY(-3px);text-decoration:none}
+.fs-btn:hover::before{transform:translateY(0)}
+.fs-btn svg,.fs-btn span{position:relative;z-index:1}
+.footer-col h4{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);margin-bottom:16px;font-family:var(--font-mono)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:var(--muted);font-size:14px;transition:color .2s,padding-left .2s;display:inline-flex;align-items:center;gap:5px}
+.footer-col a::before{content:'›';color:var(--coral);opacity:0;transform:translateX(-6px);transition:all .2s;font-size:16px}
+.footer-col a:hover{color:var(--coral);padding-left:8px;text-decoration:none}
+.footer-col a:hover::before{opacity:1;transform:translateX(0)}
+.footer-bottom{max-width:1160px;margin:44px auto 0;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);flex-wrap:wrap;gap:10px;position:relative;z-index:1}
+.footer-bottom-links{display:flex;gap:20px}
+.footer-bottom-links a{color:var(--muted);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--ink);text-decoration:none}
+
+#back-top{position:fixed;bottom:28px;right:28px;background:var(--coral);color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:var(--shadow);z-index:200;font-weight:700}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.08) translateY(-2px);background:var(--coral-dp)}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media(max-width:900px){
+  .model-grid,.related-grid,.workaround-grid{grid-template-columns:1fr 1fr}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-social,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+  .stat-strip{grid-template-columns:1fr 1fr}
+  .analogy-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .related-grid,.stat-strip,.model-grid,.workaround-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .step{flex-direction:column;gap:10px}
+  .viz-stats{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.15" fill="currentColor"/></symbol>
+<symbol id="icon-facebook" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 8.6h1.4V6h-1.9c-1.9 0-2.9 1.15-2.9 3v1.5H8.7V13h1.9v6.3h2.4V13h1.7l.3-2.5h-2V9.4c0-.5.2-.8.9-.8z" fill="currentColor"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5.2 4.8l14 14.4M19.2 4.8L5.2 19.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+<symbol id="icon-youtube" viewBox="0 0 24 24"><rect x="2.3" y="6" width="19.4" height="12" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.3 9.4l5.2 2.6-5.2 2.6z" fill="currentColor"/></symbol>
+</defs>
+</svg>
+
+<div class="bg-canvas">
+  <div class="aura aura-1"></div><div class="aura aura-2"></div><div class="aura aura-3"></div>
+</div>
+<div class="grain"></div>
+<div class="bubble-field" id="bubbleField"></div>
+<div id="progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<nav class="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI logo" class="logo-img" onerror="this.remove()"/>
+      Nyvora<span>AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html" class="active">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nav-soc" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nav-soc" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"/></svg></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nav-soc" aria-label="X"><svg class="icon"><use href="#icon-x"/></svg></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nav-soc" aria-label="YouTube"><svg class="icon"><use href="#icon-youtube"/></svg></a>
+      </div>
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" aria-expanded="false" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+</div>
+
+<div class="page-wrap">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a><span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a><span class="bc-sep">/</span>
+  <span aria-current="page">What Is the Context Window in an LLM</span>
+</nav>
+
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge badge-hot">🧠 LLM Architecture</span>
+    <span class="badge badge-ai">📏 Tokens & Limits</span>
+    <span class="badge badge-read">⏱ 24 min read</span>
+    <span class="badge badge-date">📅 June 2026</span>
+  </div>
+  <h1 class="article-title">What Is the <span class="title-underline">Context Window</span> in an LLM?</h1>
+  <p class="article-intro">You've probably tried pasting an entire PDF, a long email thread, or a full chapter of a novel into ChatGPT, only to get a cryptic error message telling you the input is "too long." That's your first real encounter with the context window—one of the most important (and least understood) constraints in modern AI. Here's everything you need to know about how it works, why it exists, and how to work around it.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">V<img src="https://nyvoraai.github.io/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+      <div><div class="meta-name">Varun Lalwani</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-06-30">June 30, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Reviewed <time datetime="2026-06">June 2026</time></span>
+  </div>
+</header>
+
+<div class="blog-banner-wrap reveal">
+  <img
+    src="https://nyvoraai.github.io/assets/llm-context-window-banner.jpg"
+    alt="What is the context window in an LLM - visual diagram showing tokens flowing into AI model memory"
+    class="blog-banner"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+  />
+  <div class="banner-fallback">
+    <div class="bf-inner">
+      <div class="bf-logo-big">📏 Context Window</div>
+      <div class="bf-text">Understanding AI's Short-Term Memory</div>
+      <div class="bf-sub">Complete Guide · NyvoraAI · 2026</div>
+      <div class="bf-tags">
+        <span class="bf-tag bf-tag-blue">Tokens</span>
+        <span class="bf-tag bf-tag-green">Memory</span>
+        <span class="bf-tag bf-tag-teal">Attention</span>
+        <span class="bf-tag bf-tag-gold">Long Context</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">📌 Quick Navigation</div>
+    <ol>
+      <li><a href="#quick-answer">Quick answer</a></li>
+      <li><a href="#what-is">What is a context window?</a></li>
+      <li><a href="#tokens">Tokens vs words explained</a></li>
+      <li><a href="#why-limits">Why do limits exist?</a></li>
+      <li><a href="#model-compare">2026 model comparison</a></li>
+      <li><a href="#lost-middle">The "lost in the middle" problem</a></li>
+      <li><a href="#workarounds">Smart workarounds</a></li>
+      <li><a href="#calculator">Interactive calculator</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">Picture this: you're in the middle of a fascinating conversation with an AI assistant. You've been going back and forth for an hour, brainstorming ideas, refining concepts, building on each other's thoughts. Then, suddenly, the AI seems to forget something you established twenty minutes ago. It contradicts itself, or asks you to repeat information you've already shared. That isn't a glitch—it's the context window hitting its limit.</p>
+
+  <p class="reveal">The context window is one of those AI concepts that sounds technical but actually affects anyone who uses ChatGPT, Claude, Gemini, or any other LLM on a daily basis. It determines how much information the AI can "hold in its head" at once, how long your conversations can get before things start breaking down, and whether you can paste that 50-page research paper in a single message.</p>
+
+  <p class="reveal">Understanding context windows isn't just academic—it's the difference between getting brilliant, contextual responses and getting frustrating, repetitive ones. Let's break down exactly what's happening under the hood, and more importantly, how to work with these limits rather than against them.</p>
+
+  <div class="key-takeaways quick-answer reveal" id="quick-answer">
+    <div class="kt-title">✨ Quick Answer — What Is the Context Window in an LLM?</div>
+    <ul>
+      <li><strong>Simple definition:</strong> The context window is the maximum amount of text an LLM can process in a single request, measured in tokens. It includes your input (prompt + conversation history) and the model's response combined.</li>
+      <li><strong>Best analogy:</strong> Think of it as the AI's short-term working memory. Just as humans can only hold about 7 items in their working memory at once, LLMs have a fixed "mental workspace" where all current information must fit.</li>
+      <li><strong>Tokens, not words:</strong> Context is measured in tokens, where 1 token ≈ 4 characters or 0.75 English words. So a 128K context window holds roughly 96,000 words or about 300 pages of text.</li>
+      <li><strong>Limits exist for real reasons:</strong> Computational cost grows quadratically with length, meaning doubling the context roughly quadruples the computing power needed. It's a hardware and physics constraint, not arbitrary.</li>
+      <li><strong>Bigger isn't always better:</strong> Massive context windows cost more, run slower, and suffer from "lost in the middle" problems. Smart techniques like RAG often outperform simply using huge contexts.</li>
+    </ul>
+  </div>
+
+  <div class="stat-strip reveal">
+    <div class="stat-card">
+      <div class="stat-num">2M</div>
+      <div class="stat-label">Largest context window available (Gemini 1.5 Pro, 2026)</div>
+      <div class="stat-src">Google DeepMind, 2026</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">~4</div>
+      <div class="stat-label">Characters per token in English text (approximate)</div>
+      <div class="stat-src">OpenAI Tokenizer, 2026</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">4x</div>
+      <div class="stat-label">More compute needed when context length doubles</div>
+      <div class="stat-src">Stanford CRFM, 2026</div>
+    </div>
+  </div>
+
+  <h2 id="what-is"><span class="h2-mark">01</span> What Exactly Is a Context Window?</h2>
+
+  <p class="reveal">Let's strip away the jargon and get to the core concept. Every time you send a message to an LLM, you're not just sending that one message. You're actually sending the entire conversation history up to that point, plus any system instructions, plus your new message, plus the space needed for the model's response. All of that combined has to fit inside the context window.</p>
+
+  <p class="reveal">If the context window is 128,000 tokens, then your system prompt + all previous messages + your current message + the model's reply together cannot exceed 128,000 tokens. Once you go over, either the oldest messages get dropped, you get an error, or the model starts behaving strangely.</p>
+
+  <div class="analogy-box reveal">
+    <div class="analogy-title">🧠 The Working Memory Analogy</div>
+    <div class="analogy-grid">
+      <div class="analogy-card">
+        <h4>📚 Your Brain</h4>
+        <p>Psychologists have long known humans can hold about 7 (±2) items in their working memory at once. Try memorizing a 20-digit number without writing it down—you'll struggle. Your brain has a hard limit on active information.</p>
+      </div>
+      <div class="analogy-card">
+        <h4>🤖 The AI's Brain</h4>
+        <p>LLMs work similarly. Their "working memory" is the context window. They can only attend to information that fits inside this window at any given moment. Unlike humans, they don't have long-term episodic memory—they're essentially starting fresh each time, reading everything in the window anew.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="reveal">This is why AI sometimes seems to "forget" things from earlier in long conversations. It's not forgetting in the human sense—it's that the earlier parts of the conversation have literally been pushed out of the window and are no longer being processed. The model has no way to recall them unless they're explicitly included again.</p>
+
+  <p class="reveal">Think of it like trying to read a novel while only being allowed to look at 50 pages at a time. When you turn to page 51, page 1 falls off the table. You can still read the current 50 pages, but you've lost the beginning of the story unless you made notes or summaries.</p>
+
+  <h2 id="tokens"><span class="h2-mark">02</span> Tokens vs. Words: The Language of LLMs</h2>
+
+  <p class="reveal">Here's something that trips up a lot of people new to AI: context windows are measured in <strong>tokens</strong>, not words. And tokens aren't the same thing as words. If you're trying to figure out how much content fits into a model, you need to understand this distinction.</p>
+
+  <h3>What Is a Token?</h3>
+  <p class="reveal">A token is a chunk of text that the AI's tokenizer breaks your input into. The tokenizer doesn't split text by spaces or by words—it uses sophisticated algorithms (like BPE, or Byte-Pair Encoding) to find efficient chunks based on how often certain character combinations appear.</p>
+
+  <p class="reveal">For English text, the rough rule of thumb is:</p>
+  <ul>
+    <li><strong>1 token ≈ 4 characters</strong> (including spaces and punctuation)</li>
+    <li><strong>1 token ≈ 0.75 English words</strong></li>
+    <li><strong>1,000 tokens ≈ 750 words ≈ 1.5 pages of text</strong></li>
+  </ul>
+
+  <h3>Tokenization in Action</h3>
+  <p class="reveal">Let's see how different words get broken into tokens:</p>
+
+  <div class="callout callout-gold reveal">
+    <div class="callout-title">🔤 Real Tokenization Examples</div>
+    <p>
+    "Hello" → 1 token<br/>
+    "Unbelievable" → 3 tokens: "Un" + "believ" + "able"<br/>
+    "ChatGPT" → 3 tokens: "Chat" + "G" + "PT"<br/>
+    "🔥" (emoji) → 1-3 tokens depending on model<br/>
+    "你好" (Chinese for "hello") → 1-2 tokens<br/>
+    "definitely" → 1 token (common enough to be a single unit)
+    </p>
+  </div>
+
+  <p class="reveal">This is why context usage varies so much by language. Japanese, Chinese, and Korean often require more tokens per character than English because the tokenizers were primarily trained on English text. If you're building an application for non-English users, you might burn through your context window much faster than you'd expect.</p>
+
+  <p class="reveal">The exact ratio also depends on which model you're using. GPT-4, Claude 3, Llama 3, and Gemini all use slightly different tokenizers. If you're interested in exploring <a href="https://nyvoraai.github.io/ai-news/best-open-source-llm-2026.html">the best open source LLM 2026</a>, you'll notice each has its own tokenizer quirks that affect real-world context usage.</p>
+
+  <h2 id="why-limits"><span class="h2-mark">03</span> Why Do Context Window Limits Even Exist?</h2>
+
+  <p class="reveal">Given that Google's Gemini can handle 2 million tokens, why can't every model just do that? Why do we even have limits? The answer comes down to some fundamental math and physics of how transformer models work.</p>
+
+  <h3>The Quadratic Attention Problem</h3>
+  <p class="reveal">The core of a modern LLM is the "attention mechanism"—the algorithm that lets the model figure out which parts of the input are relevant to each other. For every token in the input, the model has to compare it to every other token to decide what matters.</p>
+
+  <p class="reveal">This means the amount of computation grows quadratically (n²) with context length:</p>
+  <ul>
+    <li>1,000 tokens → ~1 million comparisons</li>
+    <li>10,000 tokens → ~100 million comparisons (100x more)</li>
+    <li>100,000 tokens → ~10 billion comparisons (10,000x more)</li>
+    <li>1,000,000 tokens → ~1 trillion comparisons (1,000,000x more)</li>
+  </ul>
+
+  <p class="reveal">That's why doubling the context length roughly quadruples the compute required. At some point, the math simply becomes impractical. Even with today's best hardware, processing a million tokens takes serious time and money. This is why context windows are tied to how we <a href="https://nyvoraai.github.io/ai-news/how-do-ai-models-get-their-training-data.html">train AI models on data</a>—the same quadratic scaling applies during training, making long-context models significantly more expensive to build.</p>
+
+  <h3>Memory Constraints</h3>
+  <p class="reveal">Beyond compute, there's raw memory. When processing a 128K token input, the model has to keep track of attention patterns for every token. This intermediate data (called the KV cache) grows linearly with context length but can still consume tens of gigabytes of GPU memory for long inputs. Your average laptop simply doesn't have that kind of VRAM—which is one reason why <a href="https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html">running an LLM on your own computer</a> works best with smaller context windows.</p>
+
+  <h3>Cost and Speed</h3>
+  <p class="reveal">Even when it's technically possible, longer contexts cost more and run slower. Cloud AI providers charge per token, so a 1M token request costs 100x more than a 10K token request. And latency scales with length—waiting 30 seconds for a response might be fine for research, but it's terrible for a chatbot interface.</p>
+
+  <div class="callout reveal">
+    <div class="callout-title">💡 The Sweet Spot</div>
+    <p>Most practical AI applications hit the sweet spot between 32K and 128K tokens. This range handles everything from long documents to multi-turn conversations without the extreme costs and latency of million-token contexts. Bigger contexts are mostly marketing until you actually need them.</p>
+  </div>
+
+  <h2 id="model-compare"><span class="h2-mark">04</span> 2026 Model Context Window Comparison</h2>
+
+  <p class="reveal">Context window sizes have exploded in recent years. What was once 4K tokens (the original GPT-3) has ballooned to 2 million tokens in some models. Here's how the major players stack up in mid-2026:</p>
+
+  <div class="model-grid reveal">
+    <div class="model-card mc-gemini">
+      <div class="mc-name">Gemini 1.5 Pro</div>
+      <div class="mc-maker">Google DeepMind</div>
+      <div class="mc-tokens">2M</div>
+      <div class="mc-unit">tokens</div>
+      <div class="mc-equiv">≈ 1.5M words<br/>≈ 3,000 pages<br/>≈ 40 hours of audio</div>
+    </div>
+    <div class="model-card mc-claude">
+      <div class="mc-name">Claude 3.5 Sonnet</div>
+      <div class="mc-maker">Anthropic</div>
+      <div class="mc-tokens">200K</div>
+      <div class="mc-unit">tokens</div>
+      <div class="mc-equiv">≈ 150K words<br/>≈ 300 pages<br/>≈ 4 hours of audio</div>
+    </div>
+    <div class="model-card mc-gpt">
+      <div class="mc-name">GPT-4 Turbo</div>
+      <div class="mc-maker">OpenAI</div>
+      <div class="mc-tokens">128K</div>
+      <div class="mc-unit">tokens</div>
+      <div class="mc-equiv">≈ 96K words<br/>≈ 200 pages<br/>≈ 2.5 hours of audio</div>
+    </div>
+    <div class="model-card mc-llama">
+      <div class="mc-name">Llama 3.1 405B</div>
+      <div class="mc-maker">Meta</div>
+      <div class="mc-tokens">128K</div>
+      <div class="mc-unit">tokens</div>
+      <div class="mc-equiv">≈ 96K words<br/>≈ 200 pages<br/>Open source champion</div>
+    </div>
+  </div>
+
+  <p class="reveal">The growth has been genuinely staggering. When <a href="https://nyvoraai.github.io/ai-news/what-is-llama-ai-and-who-made-it.html">Llama AI</a> first launched in 2023, its context window was just 2,048 tokens—barely enough for a long email. Today, Llama 3.1 handles 128K tokens, a 64x increase in under three years. Similar leaps have happened across the industry.</p>
+
+  <p class="reveal">But here's the catch: advertised context window size isn't the same as <em>effective</em> context window size. A model might technically accept 200K tokens but struggle to retrieve information from the middle of that input. That brings us to one of the most fascinating (and frustrating) quirks of modern LLMs.</p>
+
+  <h2 id="lost-middle"><span class="h2-mark">05</span> The "Lost in the Middle" Problem</h2>
+
+  <p class="reveal">In 2023, researchers at Stanford published a paper that identified a strange pattern in how LLMs handle long contexts. When information is placed at the beginning or end of a long input, the model retrieves it accurately. But when the same information is placed in the middle, retrieval accuracy drops dramatically.</p>
+
+  <p class="reveal">They called this the "Lost in the Middle" phenomenon, and it remains one of the biggest unsolved problems in long-context AI.</p>
+
+  <div class="lim-demo reveal">
+    <div class="lim-title">🔍 Visualizing "Lost in the Middle"</div>
+    <div class="lim-sub">See how attention varies across positions in a long context (red = high attention, gray = low attention)</div>
+    
+    <div class="lim-visual" id="limVisual">
+      <!-- Cells injected via JS -->
+    </div>
+    
+    <div class="lim-legend">
+      <span><span class="lim-dot" style="background:var(--coral)"></span> High attention</span>
+      <span><span class="lim-dot" style="background:var(--teal)"></span> Medium attention</span>
+      <span><span class="lim-dot" style="background:var(--line)"></span> Low attention</span>
+    </div>
+    
+    <div class="lim-explain">
+      <strong>What this means:</strong> If you put critical information at the start of a 100K-token document and ask the AI about it, you'll get accurate answers. Same if you put it at the end. But hide that same fact somewhere around token 50,000, and the model often misses it—even though it's technically "in" the context window. This is why simply stuffing more information into the prompt doesn't always work.
+    </div>
+  </div>
+
+  <p class="reveal">Why does this happen? The current leading theory involves how attention weights get distributed. When processing massive contexts, the model has a limited "attention budget" to spread across all the tokens. Information at the edges (primacy and recency effects, just like human memory) tends to get prioritized, while middle content gets shortchanged.</p>
+
+  <p class="reveal">This isn't just theoretical. It has real practical implications:</p>
+  <ul>
+    <li><strong>Legal document review:</strong> Critical clauses hidden in the middle of 100-page contracts might get missed</li>
+    <li><strong>Code analysis:</strong> Bugs in the middle of large codebases might not be caught by AI reviewers</li>
+    <li><strong>Research synthesis:</strong> Key findings in the middle of long papers might be overlooked</li>
+  </ul>
+
+  <div class="callout callout-coral reveal">
+    <div class="callout-title">⚠️ Don't Trust the Hype</div>
+    <p>A 200K context window doesn't mean the model will perfectly understand and use every token. Real-world performance degrades with length, especially for information in the middle. Always put the most critical information at the beginning or end of your prompts, and consider whether a smaller, focused context might actually work better.</p>
+  </div>
+
+  <h2 id="workarounds"><span class="h2-mark">06</span> Smart Ways to Work Around Context Limits</h2>
+
+  <p class="reveal">Knowing the limits is only half the battle. The real skill is learning to work around them effectively. Here are the battle-tested strategies that developers and power users rely on in 2026:</p>
+
+  <div class="workaround-grid reveal">
+    <div class="wa-card">
+      <div class="wa-icon">🎯</div>
+      <div class="wa-title">RAG (Retrieval Augmented Generation)</div>
+      <div class="wa-desc">Instead of stuffing everything into context, store information in a vector database and retrieve only the relevant pieces for each query. Learn more about <a href="https://nyvoraai.github.io/ai-news/what-is-retrieval-augmented-generation-rag.html">what is retrieval augmented generation RAG</a> to master this approach.</div>
+    </div>
+    <div class="wa-card">
+      <div class="wa-icon">✂️</div>
+      <div class="wa-title">Strategic Chunking</div>
+      <div class="wa-desc">Break long documents into overlapping chunks of 2-4K tokens each. Process each chunk separately with specific questions, then combine the results. This avoids context overflow while maintaining coverage.</div>
+    </div>
+    <div class="wa-card">
+      <div class="wa-icon">📝</div>
+      <div class="wa-title">Conversation Summarization</div>
+      <div class="wa-desc">Periodically summarize older parts of long conversations and replace them with the summary. This keeps the "essence" of history while staying within context limits—like taking notes instead of rereading the whole chat.</div>
+    </div>
+    <div class="wa-card">
+      <div class="wa-icon">🪟</div>
+      <div class="wa-title">Sliding Window Approach</div>
+      <div class="wa-desc">Keep only the most recent N turns of conversation in context, dropping older ones. This works well for chatbots where recent context matters more than ancient history.</div>
+    </div>
+    <div class="wa-card">
+      <div class="wa-icon">🎬</div>
+      <div class="wa-title">Multi-Prompt Chaining</div>
+      <div class="wa-desc">Break complex tasks into multiple smaller prompts, each building on the previous output. Pass only the essential output between steps rather than accumulating everything.</div>
+    </div>
+    <div class="wa-card">
+      <div class="wa-icon">🗜️</div>
+      <div class="wa-title">Compression Techniques</div>
+      <div class="wa-desc">Use methods like LLMLingua or prompt compression to reduce token count while preserving meaning. These can often cut context usage by 50-80% with minimal quality loss.</div>
+    </div>
+  </div>
+
+  <h3>Choosing the Right Strategy</h3>
+  <p class="reveal">The best approach depends on your use case:</p>
+  <ul>
+    <li><strong>Knowledge bases and docs:</strong> RAG is almost always the answer</li>
+    <li><strong>Long conversations:</strong> Summarization + sliding window</li>
+    <li><strong>Document analysis:</strong> Chunking with per-chunk queries</li>
+    <li><strong>Complex reasoning:</strong> Multi-prompt chaining</li>
+    <li><strong>Cost-sensitive applications:</strong> Compression + smaller models</li>
+  </ul>
+
+  <p class="reveal">Professional AI engineers often combine multiple strategies. For instance, a customer support bot might use RAG for product knowledge, sliding windows for conversation history, and compression for system prompts—achieving excellent results while keeping context usage under 16K tokens per request.</p>
+
+  <h2 id="calculator"><span class="h2-mark">07</span> Interactive Context Window Calculator</h2>
+
+  <p class="reveal">Want to see how your content fits into different context windows? Try this interactive calculator. Paste some text, pick a model, and watch the numbers update in real time.</p>
+
+  <div class="context-viz reveal">
+    <div class="viz-title">📏 Context Window Calculator</div>
+    <div class="viz-sub">Paste text below to estimate token usage across popular models</div>
+
+    <textarea class="viz-input" id="vizInput" rows="4" placeholder="Paste any text here... try a paragraph, an email, or a page of content to see how it fits."></textarea>
+
+    <div class="viz-presets">
+      <button class="viz-preset" onclick="loadPreset('short')">Short email (~100 words)</button>
+      <button class="viz-preset" onclick="loadPreset('article')">Blog article (~1K words)</button>
+      <button class="viz-preset" onclick="loadPreset('chapter')">Book chapter (~5K words)</button>
+      <button class="viz-preset" onclick="loadPreset('paper')">Research paper (~10K words)</button>
+    </div>
+
+    <div style="font-size:12px;color:var(--muted);font-family:var(--font-mono);margin-bottom:8px">GPT-4 Turbo (128K tokens)</div>
+    <div class="viz-bar"><div class="viz-fill" id="fillGPT" style="width:0%">0%</div></div>
+    
+    <div style="font-size:12px;color:var(--muted);font-family:var(--font-mono);margin-bottom:8px;margin-top:14px">Claude 3.5 (200K tokens)</div>
+    <div class="viz-bar"><div class="viz-fill" id="fillClaude" style="width:0%">0%</div></div>
+    
+    <div style="font-size:12px;color:var(--muted);font-family:var(--font-mono);margin-bottom:8px;margin-top:14px">Gemini 1.5 Pro (2M tokens)</div>
+    <div class="viz-bar"><div class="viz-fill" id="fillGemini" style="width:0%">0%</div></div>
+
+    <div class="viz-labels">
+      <span>0 tokens</span>
+      <span id="vizMaxLabel">0 tokens</span>
+    </div>
+
+    <div class="viz-stats">
+      <div class="viz-stat">
+        <div class="viz-stat-num" id="statChars">0</div>
+        <div class="viz-stat-label">Characters</div>
+      </div>
+      <div class="viz-stat">
+        <div class="viz-stat-num" id="statWords">0</div>
+        <div class="viz-stat-label">Words</div>
+      </div>
+      <div class="viz-stat">
+        <div class="viz-stat-num" id="statTokens">0</div>
+        <div class="viz-stat-label">Tokens (est.)</div>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="conclusion"><span class="h2-mark">08</span> Conclusion: Context Is Currency in the AI Age</h2>
+
+  <p class="reveal">The context window might be one of the most underappreciated concepts in modern AI, but it quietly shapes every interaction you have with language models. It determines how long your conversations can run, how much source material you can feed into a prompt, and ultimately, how useful the AI can be for your specific task.</p>
+
+  <p class="reveal">What's particularly interesting is how rapidly this landscape has evolved. Just three years ago, 4K tokens was standard and 32K was considered "long context." Today, million-token windows exist, though they come with real trade-offs around cost, speed, and the persistent "lost in the middle" problem that researchers are still working to solve.</p>
+
+  <p class="reveal">The smartest AI practitioners in 2026 don't just chase the biggest context window they can find. Instead, they understand the physics of the problem: that quadratic scaling means bigger isn't always better, that tokens aren't the same as words, and that strategies like RAG and chunking often deliver better results than brute-forcing everything into a single massive prompt.</p>
+
+  <p class="reveal">Whether you're a developer building AI applications, a business user getting more out of ChatGPT, or just someone curious about how this technology actually works, understanding context windows gives you a real advantage. You'll know when an AI is likely to forget something, why some tasks cost more than others, and how to structure your prompts for maximum effectiveness.</p>
+
+  <p class="reveal">As we look toward 2027 and beyond, expect continued innovation on multiple fronts: more efficient attention mechanisms that break the quadratic scaling barrier, better solutions to the lost-in-the-middle problem, and clever hybrid approaches that combine large contexts with intelligent retrieval. The context window will keep growing, but the real progress will come from learning to use it wisely.</p>
+
+  <p class="reveal">The next time an AI seems to forget what you told it five minutes ago, you'll know exactly why. And more importantly, you'll know what to do about it.</p>
+
+  <h2 id="faq"><span class="h2-mark">09</span> Frequently Asked Questions</h2>
+  <div class="faq reveal">
+    <details open>
+      <summary>What is the context window in an LLM?</summary>
+      <div class="faq-body">The context window in an LLM is the maximum amount of text (measured in tokens) that the model can process in a single request. It includes both the input prompt and the model's output combined. Think of it as the AI's short-term memory—once the conversation exceeds this limit, older information gets dropped or the request fails.</div>
+    </details>
+    <details>
+      <summary>What is a token in AI and how does it relate to words?</summary>
+      <div class="faq-body">A token is a chunk of text that an AI model processes as a single unit. In English, one token is roughly 4 characters or about 0.75 words. So 1,000 tokens equals approximately 750 English words. Tokens can be whole words, parts of words, or even punctuation marks. Different languages have different tokenization ratios—non-Latin scripts often require more tokens per word.</div>
+    </details>
+    <details>
+      <summary>Why do LLMs have context window limits?</summary>
+      <div class="faq-body">LLMs have context window limits due to the quadratic computational complexity of the attention mechanism. As input length grows, the compute and memory required increases exponentially. Processing 100,000 tokens can require thousands of times more resources than 1,000 tokens. Context limits exist because of these hardware and cost constraints, not arbitrary software decisions.</div>
+    </details>
+    <details>
+      <summary>Which LLM has the largest context window in 2026?</summary>
+      <div class="faq-body">As of 2026, Google's Gemini 1.5 Pro leads with a 1 million to 2 million token context window, equivalent to roughly 1,500 to 3,000 pages of text or dozens of hours of audio. Anthropic's Claude 3.5 offers 200K tokens, while OpenAI's GPT-4 Turbo supports 128K tokens. Most open-source models like Llama 3 support 8K to 128K tokens depending on the variant.</div>
+    </details>
+    <details>
+      <summary>Is a bigger context window always better?</summary>
+      <div class="faq-body">No. Bigger context windows come with trade-offs: higher cost per request, slower response times, and the "lost in the middle" problem where models pay less attention to information in the middle of long inputs. For most practical use cases, 32K-128K tokens is the sweet spot, and techniques like RAG often work better than simply using massive context windows.</div>
+    </details>
+    <details>
+      <summary>How do I work around context window limits?</summary>
+      <div class="faq-body">Common strategies include: using RAG (Retrieval Augmented Generation) to pull only relevant information, chunking long documents into smaller pieces, summarizing previous conversation turns, using sliding windows that keep recent context while dropping older parts, and breaking complex tasks into multiple smaller requests that build on each other.</div>
+    </details>
+    <details>
+      <summary>Does context window size affect response quality?</summary>
+      <div class="faq-body">Yes, but not always in the way you'd expect. While larger contexts allow more information to be considered, quality can actually degrade with very long inputs due to the "lost in the middle" effect and attention dilution. For most tasks, a well-curated 16K-64K token prompt outperforms a poorly organized 200K token one. Quality of input matters more than quantity.</div>
+    </details>
+  </div>
+
+  <div class="author-box reveal">
+    <div class="meta-avatar">V<img src="https://nyvoraai.github.io/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by Varun Lalwani</h3>
+      <p>Varun covers large language models, AI architecture, and practical prompt engineering. Published June 2026. Questions? <a href="https://nyvoraai.github.io/contact.html">Contact our team</a> or <a href="https://nyvoraai.github.io/about.html">learn about our mission</a>.</p>
+    </div>
+  </div>
+
+  <div class="share-section reveal">
+    <div class="share-title">Know someone frustrated by AI "forgetting" things? Share this guide 👇</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=What+Is+the+Context+Window+in+an+LLM%3F+Complete+2026+Guide+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/ai-news/what-is-the-context-window-in-an-llm.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-x"/></svg> Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/ai-news/what-is-the-context-window-in-an-llm.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Share on Facebook</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nyvoraai.github.io/ai-news/what-is-the-context-window-in-an-llm.html" target="_blank" rel="noopener" class="share-btn">💼 Share on LinkedIn</a>
+      <button class="share-btn" onclick="copyLink()">🔗 Copy Link</button>
+    </div>
+  </div>
+
+  <div class="newsletter reveal">
+    <h2>Master AI Fundamentals</h2>
+    <p>Weekly insights on LLMs, prompt engineering, and practical AI. Join 10,000+ builders and enthusiasts.</p>
+    <form action="https://formspree.io/f/xwvjgdpw" method="POST" class="nl-form" id="nlForm">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
+      <input type="hidden" name="_subject" value="Newsletter Signup - Context Window Guide 2026"/>
+      <button type="submit" class="nl-btn">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · Privacy-focused</p>
+    <div class="nl-social">
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-instagram"/></svg> Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-facebook"/></svg> Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-x"/></svg> X</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</a>
+    </div>
+  </div>
+
+  <div class="related reveal">
+    <div class="related-title">Continue Your AI Journey</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/ai-news/what-is-retrieval-augmented-generation-rag.html" class="rel-card">
+        <div class="rel-tag">Architecture</div>
+        <div class="rel-title">What Is Retrieval Augmented Generation (RAG)?</div>
+        <div class="rel-read">28 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/how-do-ai-models-get-their-training-data.html" class="rel-card">
+        <div class="rel-tag">Foundation</div>
+        <div class="rel-title">How Do AI Models Get Their Training Data?</div>
+        <div class="rel-read">19 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/best-open-source-llm-2026.html" class="rel-card">
+        <div class="rel-tag">Rankings</div>
+        <div class="rel-title">Best Open Source LLM in 2026</div>
+        <div class="rel-read">23 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html" class="rel-card">
+        <div class="rel-tag">Setup Guide</div>
+        <div class="rel-title">How to Run an LLM on Your Own Computer</div>
+        <div class="rel-read">22 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/what-is-llama-ai-and-who-made-it.html" class="rel-card">
+        <div class="rel-tag">Model Guide</div>
+        <div class="rel-title">What Is Llama AI and Who Made It?</div>
+        <div class="rel-read">20 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news.html" class="rel-card">
+        <div class="rel-tag">All News</div>
+        <div class="rel-title">Browse All AI News & Guides</div>
+        <div class="rel-read">Explore →</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<footer>
+  <div class="ft-blob" style="width:220px;height:220px;background:var(--coral-soft);top:8%;left:1%;animation-duration:9s"></div>
+  <div class="ft-blob" style="width:180px;height:180px;background:var(--blue-soft);bottom:18%;left:20%;animation-duration:11s;animation-delay:-3s"></div>
+  <div class="ft-blob" style="width:200px;height:200px;background:var(--gold-soft);top:25%;right:3%;animation-duration:8s;animation-delay:-1s"></div>
+  <div class="ft-blob" style="width:160px;height:160px;background:var(--purple-soft);bottom:22%;right:16%;animation-duration:10s;animation-delay:-5s"></div>
+  <div class="ft-blob" style="width:140px;height:140px;background:var(--teal-soft);top:55%;left:42%;animation-duration:12s;animation-delay:-2s"></div>
+  <div class="ft-blob" style="width:190px;height:190px;background:var(--green-soft);top:15%;right:25%;animation-duration:10s;animation-delay:-4s"></div>
+
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="ft-dots">
+        <div class="ft-dot" style="background:var(--coral);animation-delay:0s"></div>
+        <div class="ft-dot" style="background:var(--gold);animation-delay:.2s"></div>
+        <div class="ft-dot" style="background:var(--teal);animation-delay:.4s"></div>
+        <div class="ft-dot" style="background:var(--purple);animation-delay:.6s"></div>
+        <div class="ft-dot" style="background:var(--blue);animation-delay:.8s"></div>
+      </div>
+      <div class="footer-logo-wrap">
+        <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI logo icon" class="logo-img" onerror="this.remove()"/>
+        Nyvora<span>AI</span>
+      </div>
+      <p>Your trusted source for AI news, LLM guides, and practical intelligence. We make complex AI research accessible and genuinely useful for everyone.</p>
+      <div class="footer-chips">
+        <span class="chip chip-coral">📏 Context Windows</span>
+        <span class="chip chip-teal">🧠 LLM News</span>
+        <span class="chip chip-gold">⚡ Weekly Updates</span>
+        <span class="chip chip-blue">🌍 Global Coverage</span>
+        <span class="chip chip-purple">🔬 Research</span>
+      </div>
+      <div class="footer-social" style="margin-top:18px">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-instagram"/></svg><span>Instagram</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-facebook"/></svg><span>Facebook</span></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-x"/></svg><span>X</span></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-youtube"/></svg><span>YouTube</span></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>AI Guides</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news/what-is-the-context-window-in-an-llm.html">Context Windows</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/what-is-retrieval-augmented-generation-rag.html">What Is RAG?</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html">Run an LLM Locally</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/best-open-source-llm-2026.html">Best Open Source LLM</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">All AI News</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+// Background Bubbles
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const wrap=document.getElementById('bubbleField');
+  const colors=['#FF6B4A','#146B5C','#E89B2D','#8B5CF6','#2563EB'];
+  const n=window.innerWidth<700?8:14;
+  for(let i=0;i<n;i++){
+    const b=document.createElement('div');b.className='fbubble';
+    const s=26+Math.random()*60,l=Math.random()*100,d=13+Math.random()*13,dl=-Math.random()*d;
+    b.style.cssText='width:'+s+'px;height:'+(s*.7)+'px;left:'+l+'%;bottom:-10%;border-color:'+colors[i%colors.length]+';animation-duration:'+d+'s;animation-delay:'+dl+'s';
+    wrap.appendChild(b);
+  }
+})();
+
+// Scroll Progress & Back to Top
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const p=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  const bar=document.getElementById('progress');
+  bar.style.width=p+'%';bar.setAttribute('aria-valuenow',Math.round(p));
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+},{passive:true});
+
+// Reveal on Scroll
+const io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(!e.isIntersecting)return;
+    e.target.classList.add('visible');
+    io.unobserve(e.target);
+  });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(r){io.observe(r);});
+
+// Menu Toggle
+function toggleMenu(){
+  const nav=document.getElementById('mobileNav'),ham=document.getElementById('ham');
+  const open=nav.classList.toggle('open');
+  ham.setAttribute('aria-expanded',open?'true':'false');
+}
+
+// Copy Link
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(function(){
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;const o=btn.textContent;
+    btn.textContent='✅ Copied!';setTimeout(function(){btn.textContent=o;},2000);
+  });
+}
+
+// Newsletter Form
+document.getElementById('nlForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const btn=this.querySelector('.nl-btn');btn.textContent='Sending...';btn.disabled=true;
+  fetch(this.action,{method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}})
+    .then(function(r){btn.textContent=r.ok?'✅ Subscribed!':'Try again';if(!r.ok)btn.disabled=false;})
+    .catch(function(){btn.textContent='Try again';btn.disabled=false;});
+});
+
+// Lost in the Middle Visualization
+(function(){
+  const visual=document.getElementById('limVisual');
+  if(!visual)return;
+  const cellCount=30;
+  let html='';
+  for(let i=0;i<cellCount;i++){
+    let cls='lim-cell';
+    let label='';
+    // Hot at start (0-4) and end (25-29), cold in middle
+    if(i<5||i>=cellCount-5){cls+=' hot';label='H';}
+    else if(i<8||i>=cellCount-8){cls+=' ';label='M';}
+    else{cls+=' cold';label='L';}
+    html+=`<div class="${cls}">${label}</div>`;
+  }
+  visual.innerHTML=html;
+})();
+
+// Context Calculator
+const presets={
+  short:"Hi Sarah,\n\nI hope this email finds you well. I wanted to follow up on our conversation from last Tuesday about the Q3 marketing campaign. After reviewing the numbers with the team, we think we should pivot toward a more social-focused strategy rather than the paid search approach we originally discussed.\n\nThe main reason is that our organic engagement has been growing at about 23% month-over-month, while our paid search ROI has been declining. I've attached a detailed breakdown of the numbers for your review.\n\nCould we schedule a 30-minute call this Thursday or Friday to go over this in more detail? I'm flexible on timing.\n\nBest regards,\nAlex",
+  article:"The landscape of artificial intelligence has shifted dramatically over the past three years. What once seemed like a technology reserved for research labs and tech giants has become an everyday tool for millions of people around the world.\n\nAt the heart of this transformation are large language models—sophisticated AI systems trained on vast amounts of text data to understand and generate human language. These models have evolved from simple autocomplete tools into versatile assistants capable of writing code, analyzing documents, creating images, and engaging in nuanced conversation.\n\nThe democratization of AI hasn't happened by accident. It's the result of several converging factors: more efficient model architectures, cheaper computing hardware, better training techniques, and the rise of open-source alternatives that challenge even the most powerful commercial offerings.\n\nFor developers, this means unprecedented opportunities to build intelligent applications. For businesses, it means rethinking workflows and processes. For everyday users, it means having a remarkably capable assistant available on their phone or laptop, ready to help with virtually any task involving language.\n\nBut this rapid advancement also brings challenges. Questions about job displacement, misinformation, privacy, and the concentration of AI power in a few large companies remain largely unanswered. The technology is moving faster than our ability to understand its societal implications.\n\nAs we move forward, the most important skill may not be learning to use AI effectively—though that matters—but learning to think critically about its outputs, limitations, and appropriate applications. The AI revolution is here, and it's up to all of us to shape what comes next.",
+  chapter:"The old house on Maple Street had been empty for seven years when Eleanor finally decided to buy it. Everyone in town thought she was crazy. The place was a wreck—sagging porch, broken windows, vines creeping up the brick facade like nature was slowly reclaiming what humans had abandoned.\n\nBut Eleanor saw something others didn't. She saw the beautiful original woodwork hidden under layers of peeling paint. She saw the grand staircase that could be restored to its former glory. She saw the garden that, with some work, could bloom again.\n\nThe previous owner, old Mr. Henderson, had died alone in the house, leaving no family to claim it. The bank had foreclosed, and the property had sat empty ever since. Neighbors reported strange noises at night—creaking floorboards, the sound of footsteps, sometimes even what sounded like quiet humming.\n\nEleanor didn't believe in ghosts. She was a practical woman, an architect by training, someone who saw the world in terms of load-bearing walls and structural integrity. But as she signed the papers and received the keys, she felt a strange chill run down her spine.\n\nThe first night in the house was uneventful. She set up a cot in what would eventually become the living room, too exhausted from moving boxes to explore further. The old radiators clanked and hissed, the floors settled with soft groans, but nothing unusual happened.\n\nIt was on the third night that things changed.\n\nEleanor woke at 3:17 AM to the sound of a piano playing. Not a recording—she could tell by the subtle hesitations and variations in tempo that someone was actually playing. The melody was hauntingly familiar, something she felt she should recognize but couldn't quite place.\n\nShe lay still, listening. The music drifted down from the second floor, where the old parlor was located. There was no piano in the house—she'd checked thoroughly when she first toured it. The previous owners had taken all their belongings when they left.\n\nSlowly, she got up and crept to the staircase. The music grew louder as she climbed, each step creaking beneath her weight. At the top of the stairs, she paused.\n\nThe parlor door was closed. The piano music continued, clearer now, a waltz in a minor key. Eleanor took a deep breath, reached for the doorknob, and pushed the door open.",
+  paper:"Abstract: This paper investigates the emergence of reasoning capabilities in large language models through the lens of chain-of-thought prompting. We analyze how explicit reasoning traces improve performance on complex mathematical and logical tasks, and propose a new framework for understanding when and why these techniques succeed or fail.\n\n1. Introduction\nLarge language models have demonstrated remarkable capabilities across a wide range of natural language tasks. However, their performance on tasks requiring multi-step reasoning has historically been inconsistent. Recent work has shown that prompting models to generate explicit reasoning traces—so-called chain-of-thought (CoT) prompting—can dramatically improve performance on such tasks.\n\nIn this work, we systematically investigate the mechanisms underlying these improvements. We find that CoT prompting works not merely by eliciting latent reasoning capabilities, but by fundamentally changing how the model processes information across its context window. Our analysis reveals three distinct mechanisms: working memory extension, attention focusing, and compositional decomposition.\n\n2. Related Work\nThe study of reasoning in language models has a long history, dating back to early work on symbolic AI and expert systems. More recently, researchers have explored how neural models can be trained or prompted to perform reasoning tasks. Wei et al. (2022) introduced chain-of-thought prompting, demonstrating significant improvements on arithmetic and commonsense reasoning benchmarks.\n\nSubsequent work has expanded on these findings in several directions. Self-consistency (Wang et al., 2022) uses multiple reasoning paths to improve reliability. Tree-of-thought (Yao et al., 2023) allows models to explore multiple reasoning branches simultaneously. Least-to-most prompting (Zhou et al., 2022) breaks complex problems into simpler sub-problems.\n\n3. Methods\nWe conduct experiments across three model families (GPT-4, Claude 3, and Llama 3.1) and five reasoning benchmarks (GSM8K, MATH, ARC-Challenge, BBH, and a new benchmark we introduce called ComplexReasoning-2026). For each model-benchmark combination, we test four prompting strategies: standard few-shot, chain-of-thought, self-consistency, and our proposed reasoning-graph approach.\n\nWe also conduct detailed mechanistic studies using attention visualization, activation patching, and causal mediation analysis to understand how different prompting strategies affect model computation.\n\n4. Results\nOur experiments confirm that chain-of-thought prompting significantly improves performance across all tested models and benchmarks, with average accuracy improvements ranging from 23% to 47%. However, we find substantial variation in effectiveness depending on task characteristics.\n\nSpecifically, we identify three factors that predict when CoT will be most effective: (1) the number of reasoning steps required, (2) the degree of compositional structure in the problem, and (3) the presence of intermediate variables that need to be tracked.\n\nOur mechanistic studies reveal that CoT works primarily by extending the model's effective working memory. When forced to output intermediate steps, the model can attend to its own previous outputs, effectively giving itself more context to work with. This explains why CoT is less effective for very simple problems (where no extension is needed) and extremely complex problems (where even extended working memory is insufficient).\n\n5. Discussion\nThese findings have important implications for both practitioners and researchers. For practitioners, they suggest that CoT prompting should be applied selectively, based on problem characteristics. For researchers, they point toward new directions in understanding and improving reasoning in language models.\n\nWe also discuss limitations of our study, including potential biases in our benchmark selection and the difficulty of generalizing from specific model architectures to the broader class of transformer-based models.\n\n6. Conclusion\nOur work provides a more nuanced understanding of how chain-of-thought prompting enables reasoning in large language models. By identifying the specific mechanisms at work and the conditions under which they are effective, we hope to guide both the practical application of these techniques and future research into improving AI reasoning capabilities."
+};
+
+function estimateTokens(text){
+  if(!text||!text.trim())return 0;
+  // Rough estimate: 4 chars per token for English, adjust for non-ASCII
+  let ascii=0,non=0;
+  for(let i=0;i<text.length;i++){
+    if(text.charCodeAt(i)<128)ascii++;
+    else non++;
+  }
+  return Math.ceil(ascii/4+non/2.5);
+}
+
+function countWords(text){
+  if(!text||!text.trim())return 0;
+  return text.trim().split(/\s+/).length;
+}
+
+function updateCalculator(){
+  const input=document.getElementById('vizInput');
+  const text=input.value;
+  const chars=text.length;
+  const words=countWords(text);
+  const tokens=estimateTokens(text);
+  
+  document.getElementById('statChars').textContent=chars.toLocaleString();
+  document.getElementById('statWords').textContent=words.toLocaleString();
+  document.getElementById('statTokens').textContent=tokens.toLocaleString();
+  
+  const gptMax=128000,claudeMax=200000,geminiMax=2000000;
+  const gptPct=Math.min((tokens/gptMax)*100,100);
+  const claudePct=Math.min((tokens/claudeMax)*100,100);
+  const geminiPct=Math.min((tokens/geminiMax)*100,100);
+  
+  const fillGPT=document.getElementById('fillGPT');
+  const fillClaude=document.getElementById('fillClaude');
+  const fillGemini=document.getElementById('fillGemini');
+  
+  fillGPT.style.width=gptPct>0?Math.max(gptPct,3)+'%':'0%';
+  fillGPT.textContent=gptPct.toFixed(2)+'%';
+  fillGPT.classList.toggle('over',tokens>gptMax);
+  
+  fillClaude.style.width=claudePct>0?Math.max(claudePct,3)+'%':'0%';
+  fillClaude.textContent=claudePct.toFixed(2)+'%';
+  fillClaude.classList.toggle('over',tokens>claudeMax);
+  
+  fillGemini.style.width=geminiPct>0?Math.max(geminiPct,3)+'%':'0%';
+  fillGemini.textContent=geminiPct.toFixed(2)+'%';
+  fillGemini.classList.toggle('over',tokens>geminiMax);
+  
+  document.getElementById('vizMaxLabel').textContent=tokens.toLocaleString()+' tokens';
+}
+
+document.getElementById('vizInput').addEventListener('input',updateCalculator);
+
+function loadPreset(key){
+  document.getElementById('vizInput').value=presets[key]||'';
+  updateCalculator();
+}
+
+updateCalculator();
+</script>
+</body>
+</html>
