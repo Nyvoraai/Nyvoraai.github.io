@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Why Do LLMs Hallucinate Facts? The Truth Behind AI Lies</title>
+<meta name="description" content="Discover why LLMs hallucinate facts — from training limitations to probability patterns. Learn how AI hallucinations happen and how to reduce them in 2026."/>
+<meta name="keywords" content="why do LLMs hallucinate facts, AI hallucinations, LLM errors, ChatGPT false information, AI reliability"/>
+<meta name="author" content="Varun Lalwani"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#EFF1EA"/>
+<!-- GEO / AEO -->
+<meta name="geo.region" content="US"/>
+<meta name="geo.placename" content="United States"/>
+<meta name="ICBM" content="37.09024, -95.712891"/>
+<!-- Favicons -->
+<link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
+<link rel="icon" type="image/png" href="https://nyvoraai.github.io/favicon-32x32.png"/>
+<link rel="apple-touch-icon" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="NyvoraAI RSS Feed" href="https://nyvoraai.github.io/rss.xml"/>
+<link rel="canonical" href="https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Why Do LLMs Hallucinate Facts? The Truth Behind AI Lies"/>
+<meta property="og:description" content="Discover why LLMs hallucinate facts — from training limitations to probability patterns. Learn how AI hallucinations happen and how to reduce them in 2026."/>
+<meta property="og:url" content="https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/llm-hallucination-banner.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-06-30T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-06-30T00:00:00Z"/>
+<meta property="article:section" content="AI News"/>
+<meta property="article:tag" content="LLM Hallucinations, AI Errors, ChatGPT, AI Reliability, Machine Learning"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:creator" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="Why Do LLMs Hallucinate Facts?"/>
+<meta name="twitter:description" content="AI hallucinations explained: why large language models make things up and how to identify false information from ChatGPT and other LLMs."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/llm-hallucination-banner.jpg"/>
+<!-- Schema: Organization -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":"https://nyvoraai.github.io/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai"]}</script>
+<!-- Schema: WebSite -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"NyvoraAI","url":"https://nyvoraai.github.io","publisher":{"@type":"Organization","name":"NyvoraAI"}}</script>
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.github.io/ai-news.html"},{"@type":"ListItem","position":3,"name":"Why Do LLMs Hallucinate Facts","item":"https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html"}]}</script>
+<!-- Schema: Article -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Why Do LLMs Hallucinate Facts? The Truth Behind AI Lies","description":"A comprehensive exploration of why large language models hallucinate facts, including technical explanations, real examples, and strategies to reduce AI errors.","image":"https://nyvoraai.github.io/assets/llm-hallucination-banner.jpg","datePublished":"2026-06-30","dateModified":"2026-06-30","inLanguage":"en-US","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html"},"articleSection":"AI News","keywords":"why do LLMs hallucinate facts, AI hallucinations, LLM errors","timeRequired":"PT26M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}</script>
+<!-- Schema: FAQPage (AEO) -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why do LLMs hallucinate facts?","acceptedAnswer":{"@type":"Answer","text":"LLMs hallucinate facts because they predict the next most probable word based on patterns in training data, not because they understand truth. They don't have access to a factual database or verification system — they generate text that sounds plausible based on statistical patterns, which sometimes leads to confident but false statements."}},{"@type":"Question","name":"Can AI hallucinations be eliminated?","acceptedAnswer":{"@type":"Answer","text":"While AI hallucinations cannot be completely eliminated, they can be significantly reduced through techniques like retrieval-augmented generation (RAG), better training data, fine-tuning with human feedback, fact-checking systems, and prompting strategies that encourage the model to acknowledge uncertainty."}},{"@type":"Question","name":"How can I identify AI hallucinations?","acceptedAnswer":{"@type":"Answer","text":"Signs of AI hallucinations include overly specific details that seem fabricated, confident statements about obscure topics, citations that don't exist, contradictory information, and claims that sound plausible but are verifiably false. Always verify important information from authoritative sources."}},{"@type":"Question","name":"Do all LLMs hallucinate equally?","acceptedAnswer":{"@type":"Answer","text":"No, hallucination rates vary significantly between models. Larger models generally hallucinate less than smaller ones, models trained on higher-quality data perform better, and specialized models with retrieval systems hallucinate far less than general-purpose chatbots."}},{"@type":"Question","name":"Why do LLMs make up citations and sources?","acceptedAnswer":{"@type":"Answer","text":"LLMs make up citations because they've learned the pattern that credible statements often include references, but they don't actually access or verify real sources. They generate plausible-looking citations based on patterns in academic and news text from their training data."}}]}</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#EFF1EA;--bg-deep:#E5E9DC;--paper:#FFFFFF;--paper-warm:#FBF8F1;
+  --ink:#1C2321;--ink-soft:#4B5650;--muted:#7C8579;--line:#DCE0D2;--line-soft:#E8EBE0;
+  --coral:#FF6B4A;--coral-dp:#B8431F;--coral-soft:#FFE1D6;
+  --teal:#146B5C;--teal-dp:#0E4F45;--teal-soft:#DCEEE8;
+  --gold:#E89B2D;--gold-soft:#FCEACB;
+  --purple:#8B5CF6;--purple-soft:#EDE9FE;
+  --green:#16A34A;--green-soft:#DCFCE7;
+  --blue:#2563EB;--blue-soft:#DBEAFE;
+  --radius:18px;--radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,-apple-system,sans-serif;
+  --font-body:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+  --shadow:0 1px 2px rgba(28,35,33,.04),0 8px 24px rgba(28,35,33,.06);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:18px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--teal-dp);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;background:var(--bg)}
+.aura{position:absolute;border-radius:50%;filter:blur(85px);will-change:transform;animation:auraFloat ease-in-out infinite}
+.aura-1{width:560px;height:560px;background:radial-gradient(circle,var(--coral),transparent 68%);top:-140px;left:-120px;opacity:.22;animation-duration:17s}
+.aura-2{width:500px;height:500px;background:radial-gradient(circle,var(--teal),transparent 68%);bottom:-130px;right:-100px;opacity:.20;animation-duration:21s;animation-delay:-6s}
+.aura-3{width:420px;height:420px;background:radial-gradient(circle,var(--gold),transparent 68%);top:30%;left:58%;opacity:.16;animation-duration:14s;animation-delay:-3s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.12)}66%{transform:translate(-35px,30px) scale(.92)}}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.045'/></svg>")}
+.bubble-field{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fbubble{position:absolute;border:1.5px solid;opacity:0;border-radius:14px 14px 14px 3px;animation:bubbleDrift linear infinite}
+@keyframes bubbleDrift{0%{transform:translateY(10vh) rotate(-4deg) scale(.85)}10%{opacity:.24}50%{transform:translateY(-45vh) rotate(2deg) scale(1.04)}85%{opacity:.16}100%{transform:translateY(-100vh) rotate(5deg) scale(1.1);opacity:0}}
+@media(prefers-reduced-motion:reduce){.fbubble,.aura{animation:none;display:none}html{scroll-behavior:auto}}
+
+#progress{position:fixed;top:64px;left:0;width:0;height:3px;z-index:300;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal));transition:width .1s;border-radius:0 3px 3px 0}
+
+nav.main-nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:21px;font-weight:700;letter-spacing:-.02em;color:var(--ink);display:flex;align-items:center;gap:9px}
+.nav-logo span{color:var(--teal)}
+.logo-img{height:30px;width:30px;border-radius:8px;object-fit:cover;display:block}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{color:var(--ink-soft);font-size:14.5px;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-social{display:flex;gap:6px}
+.nav-soc{color:var(--ink-soft);width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:8px;transition:background .2s,color .2s}
+.nav-soc:hover{background:var(--line-soft);color:var(--ink);text-decoration:none}
+.icon{width:17px;height:17px;flex-shrink:0;display:block}
+.nav-cta{background:var(--coral);color:#fff;padding:9px 18px;border-radius:9px;font-size:13.5px;font-weight:700;transition:opacity .2s,transform .15s;box-shadow:0 4px 14px rgba(255,107,74,.28)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);text-decoration:none}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--ink-soft);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:20px 24px;flex-direction:column;gap:16px;z-index:199}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--ink);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
+
+.breadcrumb{max-width:860px;margin:26px auto 0;padding:0 24px;font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--muted)}.breadcrumb a:hover{color:var(--teal-dp)}.bc-sep{color:var(--line)}
+
+.article-hdr{max-width:860px;margin:22px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:5px 13px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-ai{background:var(--teal-soft);color:var(--teal-dp);border:1px solid rgba(20,107,92,.18)}
+.badge-read{background:var(--gold-soft);color:#8A5A12;border:1px solid rgba(232,155,45,.25)}
+.badge-date{background:var(--coral-soft);color:var(--coral-dp);border:1px solid rgba(255,107,74,.22)}
+.badge-hot{background:linear-gradient(135deg,var(--coral),var(--purple));color:#fff;border:none}
+.badge-open{background:var(--green-soft);color:var(--green);border:1px solid rgba(22,163,74,.2)}
+.article-title{font-size:clamp(30px,5.2vw,48px);font-weight:700;line-height:1.18;color:var(--ink);margin-bottom:18px;letter-spacing:-.025em;font-family:var(--font-display)}
+.title-underline{background:linear-gradient(120deg,transparent 0%,var(--gold-soft) 0%);background-size:100% 38%;background-repeat:no-repeat;background-position:0 88%;padding:0 2px}
+.article-intro{font-size:19.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:24px}
+.article-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);padding-bottom:24px;border-bottom:1px solid var(--line)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{position:relative;overflow:hidden;width:36px;height:36px;border-radius:50%;flex-shrink:0;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;font-family:var(--font-display)}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--ink-soft)}.meta-sep{color:var(--line)}
+
+.blog-banner-wrap{max-width:860px;margin:30px auto;padding:0 24px}
+.blog-banner{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow);display:block;object-fit:cover;max-height:450px}
+.banner-fallback{width:100%;border-radius:var(--radius);border:1px solid var(--line);min-height:300px;background:linear-gradient(135deg,var(--blue-soft) 0%,var(--paper) 45%,var(--gold-soft) 100%);display:none;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.banner-fallback::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(37,99,235,.05),transparent 60%,rgba(232,155,45,.06));pointer-events:none}
+.bf-inner{position:relative;z-index:1;text-align:center;padding:44px 24px}
+.bf-logo-big{font-family:var(--font-display);font-size:56px;font-weight:700;background:linear-gradient(135deg,var(--blue),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px;line-height:1}
+.bf-text{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.bf-sub{font-size:13px;color:var(--muted);font-family:var(--font-mono);margin-bottom:16px}
+.bf-tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.bf-tag{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 12px;border-radius:20px;border:1px solid}
+.bf-tag-blue{background:var(--blue-soft);color:var(--blue);border-color:rgba(37,99,235,.2)}
+.bf-tag-teal{background:var(--teal-soft);color:var(--teal-dp);border-color:rgba(20,107,92,.2)}
+.bf-tag-gold{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.2)}
+.bf-tag-green{background:var(--green-soft);color:var(--green);border-color:rgba(22,163,74,.2)}
+
+.toc-box{max-width:860px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow)}
+.toc-title{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--ink-soft);font-size:14.5px;transition:color .2s;display:flex;gap:8px}
+.toc a::before{content:counter(tocnum);font-family:var(--font-mono);color:var(--coral);font-weight:700;font-size:12.5px;min-width:16px}
+.toc a:hover{color:var(--coral);text-decoration:none}
+
+.layout{max-width:860px;margin:0 auto;padding:36px 24px 80px}
+
+.prose h2{font-size:27px;font-weight:700;color:var(--ink);margin:54px 0 18px;letter-spacing:-.02em;scroll-margin-top:90px;display:flex;align-items:baseline;gap:10px}
+.prose h2 .h2-mark{font-family:var(--font-mono);font-size:14px;color:var(--coral);font-weight:700}
+.prose h3{font-size:18.5px;font-weight:700;color:var(--ink);margin:28px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--ink)}
+.prose strong{color:var(--ink);font-weight:700}
+.prose ul,.prose ol{margin:0 0 22px 22px}
+.prose li{margin-bottom:9px;color:var(--ink)}
+.prose a,.faq-body a{color:var(--teal-dp);border-bottom:1px solid rgba(14,79,69,.25);transition:border-color .2s,color .2s}
+.prose a:hover,.faq-body a:hover{color:var(--coral);border-color:var(--coral);text-decoration:none}
+
+.key-takeaways{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow)}
+.kt-title{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.key-takeaways ul{margin:0;list-style:none}
+.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15.5px;color:var(--ink-soft)}
+.key-takeaways li:last-child{margin-bottom:0}
+.key-takeaways li::before{content:'✨';color:var(--gold);flex-shrink:0}
+
+.stat-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0}
+.stat-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center;transition:transform .3s,border-color .3s;box-shadow:var(--shadow)}
+.stat-card:hover{transform:translateY(-4px);border-color:var(--teal)}
+.stat-num{font-family:var(--font-display);font-size:34px;font-weight:700;color:var(--coral)}
+.stat-label{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.4}
+.stat-src{font-size:11px;color:var(--muted);font-family:var(--font-mono);margin-top:4px}
+
+.hallucination-types{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin:28px 0}
+.hallucination-card{background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);padding:24px;transition:all .3s;position:relative;overflow:hidden}
+.hallucination-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+.hallucination-card.h1::before{background:linear-gradient(90deg,var(--coral),var(--gold))}
+.hallucination-card.h2::before{background:linear-gradient(90deg,var(--purple),var(--blue))}
+.hallucination-card.h3::before{background:linear-gradient(90deg,var(--teal),var(--green))}
+.hallucination-card.h4::before{background:linear-gradient(90deg,var(--gold),var(--coral))}
+.hallucination-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--coral)}
+.hallucination-icon{font-size:40px;margin-bottom:12px}
+.hallucination-name{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--ink);margin-bottom:10px}
+.hallucination-desc{font-size:14.5px;color:var(--ink-soft);line-height:1.6;margin-bottom:12px}
+.hallucination-example{background:var(--bg-deep);padding:12px;border-radius:8px;font-size:13px;font-style:italic;color:var(--ink-soft);border-left:3px solid var(--coral)}
+
+.cause-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:32px 0}
+.cause-card{background:linear-gradient(135deg,var(--paper),var(--paper-warm));border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:all .3s}
+.cause-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--teal)}
+.cause-number{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--coral),var(--gold));color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:20px;font-weight:700;margin-bottom:14px;box-shadow:0 4px 12px rgba(255,107,74,.3)}
+.cause-title{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:10px}
+.cause-desc{font-size:14.5px;color:var(--ink-soft);line-height:1.65}
+
+.solution-box{background:linear-gradient(135deg,var(--teal-soft),var(--blue-soft));border:1px solid var(--line);border-radius:var(--radius);padding:26px;margin:28px 0}
+.solution-title{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--ink);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.solution-list{list-style:none;margin:0}
+.solution-list li{padding:10px 0;border-bottom:1px solid rgba(220,224,210,.5);font-size:14.5px;color:var(--ink-soft);display:flex;gap:10px;align-items:flex-start}
+.solution-list li:last-child{border-bottom:none}
+.solution-list li::before{content:'✓';color:var(--teal);font-weight:700;font-size:16px;flex-shrink:0}
+
+.callout{background:var(--teal-soft);border:1px solid rgba(20,107,92,.2);border-left:4px solid var(--teal);border-radius:0 var(--radius) var(--radius) 0;padding:20px 24px;margin:28px 0}
+.callout-title{font-family:var(--font-display);font-weight:700;font-size:13px;color:var(--teal-dp);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
+.callout p{font-size:15px;color:var(--ink-soft);margin:0;line-height:1.7}
+.callout-gold{background:var(--gold-soft);border-left-color:var(--gold)}
+.callout-gold .callout-title{color:#8A5A12}
+.callout-purple{background:var(--purple-soft);border-left-color:var(--purple)}
+.callout-purple .callout-title{color:#6D28D9}
+.callout-warning{background:var(--coral-soft);border-left-color:var(--coral)}
+.callout-warning .callout-title{color:var(--coral-dp)}
+
+.faq{margin:16px 0}
+details{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--coral)}
+summary{padding:18px 22px;cursor:pointer;font-weight:600;font-size:16px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--coral);font-size:22px;font-weight:300;flex-shrink:0}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 22px 18px;color:var(--ink-soft);font-size:15px;line-height:1.7}
+
+.author-box{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin:48px 0 0}
+.author-box .meta-avatar{width:48px;height:48px;font-size:17px;flex-shrink:0}
+.author-box h3{font-size:15px;font-family:var(--font-display);margin-bottom:4px;color:var(--ink)}
+.author-box p{font-size:14px;color:var(--muted);margin:0;line-height:1.6}
+
+.share-section{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:32px 0 0;text-align:center}
+.share-title{font-size:15.5px;font-weight:700;color:var(--ink);margin-bottom:16px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--paper);color:var(--ink-soft);font-family:var(--font-body)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--ink)}
+
+.newsletter{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:44px;margin:56px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal))}
+.newsletter h2{font-size:25px;font-weight:700;color:var(--ink);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--muted);margin-bottom:24px;font-size:15.5px}
+.nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 16px;color:var(--ink);font-size:14px;outline:none;transition:border-color .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--muted)}.nl-input:focus{border-color:var(--coral)}
+.nl-btn{background:var(--coral);color:#fff;padding:13px 22px;border-radius:10px;border:none;cursor:pointer;font-size:14px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s;box-shadow:0 4px 16px rgba(255,107,74,.28);font-family:var(--font-display)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px)}
+.nl-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+.nl-social{display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;padding:9px 16px;border-radius:10px;border:1px solid var(--line);color:var(--ink-soft);transition:all .2s}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--ink)}
+
+.related{margin:48px 0 0}
+.related-title{font-size:19px;font-weight:700;color:var(--ink);margin-bottom:20px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rel-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px;transition:border-color .2s,transform .2s;display:block}
+.rel-card:hover{border-color:var(--coral);transform:translateY(-3px);text-decoration:none;box-shadow:var(--shadow)}
+.rel-tag{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--coral);margin-bottom:8px;font-family:var(--font-mono)}
+.rel-title{font-size:14px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:8px;font-family:var(--font-display)}
+.rel-read{font-size:12px;color:var(--muted)}
+
+footer{background:var(--paper);border-top:1px solid var(--line);padding:60px 24px 32px;position:relative;z-index:1;overflow:hidden}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal),var(--purple),var(--blue),var(--coral));background-size:300% 100%;animation:ftStripe 5s linear infinite}
+@keyframes ftStripe{0%{background-position:0%}100%{background-position:300%}}
+.ft-blob{position:absolute;border-radius:50%;pointer-events:none;animation:ftBlob ease-in-out infinite;filter:blur(55px)}
+@keyframes ftBlob{0%,100%{transform:scale(1) translate(0,0);opacity:.1}50%{transform:scale(1.25) translate(10px,-8px);opacity:.18}}
+.ft-dots{display:flex;gap:7px;margin-bottom:14px}
+.ft-dot{width:8px;height:8px;border-radius:50%;animation:ftDotPulse 2.2s ease-in-out infinite}
+@keyframes ftDotPulse{0%,100%{transform:scale(1);opacity:.5}50%{transform:scale(1.6);opacity:1}}
+.footer-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;position:relative;z-index:1}
+.footer-logo-wrap{font-size:21px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:9px;color:var(--ink);font-family:var(--font-display)}
+.footer-logo-wrap span{color:var(--teal)}
+.footer-brand p{color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:16px}
+.footer-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.chip{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 10px;border-radius:20px;border:1px solid}
+.chip-coral{background:var(--coral-soft);color:var(--coral-dp);border-color:rgba(255,107,74,.3)}
+.chip-teal{background:var(--teal-soft);color:var(--teal-dp);border-color:rgba(20,107,92,.2)}
+.chip-gold{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.3)}
+.chip-purple{background:var(--purple-soft);color:#6D28D9;border-color:rgba(139,92,246,.25)}
+.chip-blue{background:var(--blue-soft);color:var(--blue);border-color:rgba(37,99,235,.2)}
+.footer-social{display:flex;gap:10px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:7px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--ink-soft);transition:all .3s;position:relative;overflow:hidden;background:transparent}
+.fs-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--coral-soft),var(--teal-soft));transform:translateY(100%);transition:transform .3s;z-index:0;border-radius:inherit}
+.fs-btn:hover{color:var(--coral-dp);border-color:var(--coral);transform:translateY(-3px);text-decoration:none}
+.fs-btn:hover::before{transform:translateY(0)}
+.fs-btn svg,.fs-btn span{position:relative;z-index:1}
+.footer-col h4{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);margin-bottom:16px;font-family:var(--font-mono)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:var(--muted);font-size:14px;transition:color .2s,padding-left .2s;display:inline-flex;align-items:center;gap:5px}
+.footer-col a::before{content:'›';color:var(--coral);opacity:0;transform:translateX(-6px);transition:all .2s;font-size:16px}
+.footer-col a:hover{color:var(--coral);padding-left:8px;text-decoration:none}
+.footer-col a:hover::before{opacity:1;transform:translateX(0)}
+.rss-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--gold);border:1px solid rgba(232,155,45,.3);background:var(--gold-soft);padding:6px 14px;border-radius:8px;margin-top:10px;transition:all .2s;font-family:var(--font-mono)}
+.rss-link:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--coral-dp)}
+.footer-bottom{max-width:1160px;margin:44px auto 0;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);flex-wrap:wrap;gap:10px;position:relative;z-index:1}
+.footer-bottom-links{display:flex;gap:20px}
+.footer-bottom-links a{color:var(--muted);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--ink);text-decoration:none}
+
+#back-top{position:fixed;bottom:28px;right:28px;background:var(--coral);color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:var(--shadow);z-index:200;font-weight:700}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.08) translateY(-2px);background:var(--coral-dp)}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media(max-width:900px){
+  .hallucination-types,.cause-grid{grid-template-columns:1fr}
+  .related-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-social,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+  .stat-strip{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .related-grid,.stat-strip{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.15" fill="currentColor"/></symbol>
+<symbol id="icon-facebook" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 8.6h1.4V6h-1.9c-1.9 0-2.9 1.15-2.9 3v1.5H8.7V13h1.9v6.3h2.4V13h1.7l.3-2.5h-2V9.4c0-.5.2-.8.9-.8z" fill="currentColor"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5.2 4.8l14 14.4M19.2 4.8L5.2 19.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+<symbol id="icon-youtube" viewBox="0 0 24 24"><rect x="2.3" y="6" width="19.4" height="12" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.3 9.4l5.2 2.6-5.2 2.6z" fill="currentColor"/></symbol>
+<symbol id="icon-rss" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="5" cy="19" r="1.5" fill="currentColor"/></symbol>
+</defs>
+</svg>
+
+<div class="bg-canvas">
+  <div class="aura aura-1"></div><div class="aura aura-2"></div><div class="aura aura-3"></div>
+</div>
+<div class="grain"></div>
+<div class="bubble-field" id="bubbleField"></div>
+<div id="progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<nav class="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI logo" class="logo-img" onerror="this.remove()"/>
+      Nyvora<span>AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html" class="active">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://nyvoraai.github.io/rss.xml" class="nav-soc" aria-label="RSS Feed"><svg class="icon"><use href="#icon-rss"/></svg></a>
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nav-soc" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nav-soc" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"/></svg></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nav-soc" aria-label="X"><svg class="icon"><use href="#icon-x"/></svg></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nav-soc" aria-label="YouTube"><svg class="icon"><use href="#icon-youtube"/></svg></a>
+      </div>
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" aria-expanded="false" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+</div>
+
+<div class="page-wrap">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a><span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a><span class="bc-sep">/</span>
+  <span aria-current="page">Why Do LLMs Hallucinate Facts</span>
+</nav>
+
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge badge-hot">⚠️ AI Limitations</span>
+    <span class="badge badge-ai">🤖 LLM Behavior</span>
+    <span class="badge badge-read">⏱ 26 min read</span>
+    <span class="badge badge-date">📅 June 2026</span>
+  </div>
+  <h1 class="article-title">Why Do <span class="title-underline">LLMs Hallucinate Facts</span>?</h1>
+  <p class="article-intro">You ask an AI a simple question, and it confidently gives you a completely wrong answer — complete with fake citations and made-up details. This isn't a bug; it's a fundamental characteristic of how large language models work. Let's explore why AI hallucinations happen and what we can do about them.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">V<img src="https://nyvoraai.github.io/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+      <div><div class="meta-name">Varun Lalwani</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-06-30">June 30, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Reviewed <time datetime="2026-06">June 2026</time></span>
+  </div>
+</header>
+
+<div class="blog-banner-wrap reveal">
+  <img
+    src="https://nyvoraai.github.io/assets/llm-hallucination-banner.jpg"
+    alt="Why do LLMs hallucinate facts - illustration showing AI neural network generating incorrect information with warning symbols"
+    class="blog-banner"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+  />
+  <div class="banner-fallback">
+    <div class="bf-inner">
+      <div class="bf-logo-big">⚠️ AI Hallucinations</div>
+      <div class="bf-text">Why LLMs Make Things Up</div>
+      <div class="bf-sub">Understanding AI False Information · 2026</div>
+      <div class="bf-tags">
+        <span class="bf-tag bf-tag-blue">AI Errors</span>
+        <span class="bf-tag bf-tag-green">Machine Learning</span>
+        <span class="bf-tag bf-tag-teal">ChatGPT</span>
+        <span class="bf-tag bf-tag-gold">AI Reliability</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">📌 Quick Navigation</div>
+    <ol>
+      <li><a href="#quick-answer">Quick answer</a></li>
+      <li><a href="#what-are-hallucinations">What are AI hallucinations?</a></li>
+      <li><a href="#types">Types of hallucinations</a></li>
+      <li><a href="#why-happen">Why they happen</a></li>
+      <li><a href="#contributing-factors">Contributing factors</a></li>
+      <li><a href="#reduction">How to reduce them</a></li>
+      <li><a href="#detection">Detecting hallucinations</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">It's one of the most frustrating experiences with AI: you ask a language model a straightforward question, and it responds with absolute confidence — but the information is completely wrong. The AI might cite a research paper that doesn't exist, claim a historical event happened on the wrong date, or confidently explain a scientific concept that's entirely fabricated.</p>
+
+  <p class="reveal">This phenomenon, known as "hallucination," isn't a glitch or a bug that engineers forgot to fix. It's an inherent characteristic of how large language models (LLMs) work. Understanding why LLMs hallucinate is crucial for anyone using AI tools, whether you're a developer building applications, a researcher relying on AI assistance, or just someone curious about ChatGPT's occasional fabrications.</p>
+
+  <p class="reveal">In this deep dive, we'll explore the technical reasons behind AI hallucinations, examine real examples, and discuss practical strategies to identify and reduce false information from language models. If you're interested in understanding the models themselves, our guide on <a href="https://nyvoraai.github.io/ai-news/what-is-llama-ai-and-who-made-it.html">what Llama AI is and who made it</a> provides helpful background on how these systems are built.</p>
+
+  <div class="key-takeaways quick-answer reveal" id="quick-answer">
+    <div class="kt-title">✨ Quick Answer — Why LLMs Hallucinate</div>
+    <ul>
+      <li><strong>Pattern matching, not truth-seeking:</strong> LLMs predict the next most probable word based on patterns in training data, not by accessing a factual database or verifying information against reality.</li>
+      <li><strong>No ground truth:</strong> Models don't "know" facts — they generate text that sounds plausible based on statistical patterns learned during training, which sometimes produces confident but false statements.</li>
+      <li><strong>Training data limitations:</strong> Models learn from internet text that contains errors, outdated information, and contradictions, which they can reproduce or amplify.</li>
+      <li><strong>Optimization for fluency:</strong> LLMs are trained to generate fluent, coherent text — not necessarily accurate text. A smooth-sounding lie can score higher than an awkward truth.</li>
+      <li><strong>Cannot say "I don't know":</strong> Models are optimized to always provide an answer, even when uncertain, leading to confident fabrications rather than honest admissions of ignorance.</li>
+    </ul>
+  </div>
+
+  <div class="stat-strip reveal">
+    <div class="stat-card">
+      <div class="stat-num">15-20%</div>
+      <div class="stat-label">Average hallucination rate in general-purpose LLMs</div>
+      <div class="stat-src">AI research studies, 2026</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">3-5x</div>
+      <div class="stat-label">More likely to hallucinate on obscure topics</div>
+      <div class="stat-src">ML benchmark tests, 2026</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">40-60%</div>
+      <div class="stat-label">Reduction with retrieval-augmented generation</div>
+      <div class="stat-src">RAG implementation studies, 2026</div>
+    </div>
+  </div>
+
+  <h2 id="what-are-hallucinations"><span class="h2-mark">01</span> What Exactly Are AI Hallucinations?</h2>
+
+  <p class="reveal">In the context of artificial intelligence, a "hallucination" refers to any instance where a language model generates information that is false, misleading, or not grounded in its training data or provided context. The term is borrowed from human psychology, though AI hallucinations are fundamentally different from human ones.</p>
+
+  <p class="reveal">Unlike humans, who hallucinate due to neurological or psychological factors, AI hallucations occur because of the mathematical and statistical nature of how these models work. The model isn't "confused" or "mistaken" in the human sense — it's simply doing exactly what it was designed to do: predict the next most likely token (word or word fragment) based on patterns it learned during training.</p>
+
+  <div class="callout callout-warning reveal">
+    <div class="callout-title">⚠️ Important Distinction</div>
+    <p>AI hallucinations aren't lies in the moral sense — the model has no intent to deceive. They're also not bugs or errors in the code. They're an emergent property of training massive neural networks to predict text, and they reveal a fundamental limitation: fluency doesn't equal accuracy.</p>
+  </div>
+
+  <h2 id="types"><span class="h2-mark">02</span> Types of AI Hallucinations</h2>
+
+  <p class="reveal">Not all hallucinations are created equal. Understanding the different types helps in identifying and mitigating them:</p>
+
+  <div class="hallucination-types reveal">
+    <div class="hallucination-card h1">
+      <div class="hallucination-icon">📚</div>
+      <div class="hallucination-name">Factual Hallucinations</div>
+      <div class="hallucination-desc">The model states incorrect information as fact — wrong dates, false historical events, incorrect scientific claims, or fabricated statistics.</div>
+      <div class="hallucination-example">Example: "The Eiffel Tower was completed in 1887" (actually 1889)</div>
+    </div>
+    <div class="hallucination-card h2">
+      <div class="hallucination-icon">📝</div>
+      <div class="hallucination-name">Citation Hallucinations</div>
+      <div class="hallucination-desc">The model invents academic papers, news articles, books, or websites that don't exist, complete with plausible-sounding titles, authors, and publication details.</div>
+      <div class="hallucination-example">Example: Citing a fake research paper from a real journal</div>
+    </div>
+    <div class="hallucination-card h3">
+      <div class="hallucination-icon">🔗</div>
+      <div class="hallucination-name">Contextual Hallucinations</div>
+      <div class="hallucination-desc">The model contradicts information provided in the conversation or ignores specific instructions, generating responses that don't align with the given context.</div>
+      <div class="hallucination-example">Example: Ignoring user-specified constraints or earlier statements</div>
+    </div>
+    <div class="hallucination-card h4">
+      <div class="hallucination-icon">💭</div>
+      <div class="hallucination-name">Reasoning Hallucinations</div>
+      <div class="hallucination-desc">The model follows logical steps that seem sound but contain hidden errors, leading to incorrect conclusions despite appearing to reason correctly.</div>
+      <div class="hallucination-example">Example: Mathematical errors in step-by-step problem solving</div>
+    </div>
+  </div>
+
+  <h2 id="why-happen"><span class="h2-mark">03</span> The Technical Reasons Why Hallucinations Happen</h2>
+
+  <p class="reveal">To truly understand why LLMs hallucinate, we need to look under the hood at how these models actually work. The reasons are deeply rooted in their architecture and training methodology.</p>
+
+  <h3>1. Probabilistic Nature of Text Generation</h3>
+  <p class="reveal">At their core, large language models are sophisticated probability machines. When you ask a question, the model doesn't search a database for the correct answer. Instead, it calculates: "Given all the text I've seen during training, what word is most likely to come next?"</p>
+  
+  <p class="reveal">This works remarkably well for generating fluent, coherent text. But it means the model optimizes for <em>plausibility</em> rather than <em>accuracy</em>. If a false statement sounds plausible based on patterns in the training data, the model will generate it with confidence.</p>
+
+  <h3>2. No Concept of Truth or Verification</h3>
+  <p class="reveal">Unlike a search engine that retrieves actual documents, or a database that stores verified facts, an LLM has no mechanism to verify whether what it's saying is true. The model doesn't "know" anything in the way humans know things — it has learned statistical correlations between words and phrases.</p>
+  
+  <p class="reveal">When you ask "Who was the 45th President of the United States?", the model doesn't recall a fact. It recognizes a pattern: this question format typically appears in text followed by "Donald Trump," so it generates those words. If the pattern is less clear or the training data contained conflicting information, it might generate something else entirely.</p>
+
+  <h3>3. Training on Noisy, Contradictory Data</h3>
+  <p class="reveal">LLMs are trained on massive datasets scraped from the internet — and the internet contains enormous amounts of incorrect, outdated, biased, and contradictory information. The model learns from all of it without distinguishing truth from falsehood.</p>
+  
+  <p class="reveal">If 70% of sources say one thing and 30% say another, the model might learn both patterns and sometimes generate the less common (or incorrect) version. Worse, if false information is repeated often enough, it becomes a strong pattern the model will reproduce.</p>
+
+  <h3>4. Compression and Generalization</h3>
+  <p class="reveal">A model with 175 billion parameters (like GPT-3) or even 1-2 trillion parameters (like some modern models) is still compressing the information from trillions of words of text. This compression inevitably loses details and creates generalizations.</p>
+  
+  <p class="reveal">When faced with a specific question about an obscure topic, the model might "fill in the gaps" by generalizing from similar patterns it has seen, creating information that sounds reasonable but isn't accurate for this specific case.</p>
+
+  <div class="callout reveal">
+    <div class="callout-title">💡 The Confidence Problem</div>
+    <p>Perhaps most troubling: LLMs express confidence through fluent, detailed prose — not through actual certainty. A model can be completely wrong but sound supremely confident, because confidence in language is expressed through word choice and sentence structure, not through an internal truth-checking mechanism.</p>
+  </div>
+
+  <h2 id="contributing-factors"><span class="h2-mark">04</span> Factors That Increase Hallucination Risk</h2>
+
+  <p class="reveal">Certain conditions make hallucinations more likely. Understanding these helps you know when to be extra skeptical of AI outputs:</p>
+
+  <div class="cause-grid reveal">
+    <div class="cause-card">
+      <div class="cause-number">1</div>
+      <div class="cause-title">Obscure or Rare Topics</div>
+      <div class="cause-desc">When a model has limited training data on a topic, it's more likely to hallucinate. The fewer examples it has to learn from, the more it must generalize and fill gaps with plausible-sounding but potentially false information.</div>
+    </div>
+    <div class="cause-card">
+      <div class="cause-number">2</div>
+      <div class="cause-title">Requests for Specific Details</div>
+      <div class="cause-desc">Asking for specific dates, names, citations, or statistics dramatically increases hallucination risk. Models are better at general concepts than precise details, which they often fabricate to sound authoritative.</div>
+    </div>
+    <div class="cause-card">
+      <div class="cause-number">3</div>
+      <div class="cause-title">Pressure to Answer</div>
+      <div class="cause-desc">When prompted to provide an answer (rather than being allowed to say "I don't know"), models will generate something even when uncertain. The training objective rewards providing responses, not admitting ignorance.</div>
+    </div>
+    <div class="cause-card">
+      <div class="cause-number">4</div>
+      <div class="cause-title">Complex Multi-Step Reasoning</div>
+      <div class="cause-desc">Each step in a reasoning chain introduces potential error. By the final conclusion, small errors compound, leading to confidently stated but incorrect answers, especially in math and logic problems.</div>
+    </div>
+    <div class="cause-card">
+      <div class="cause-number">5</div>
+      <div class="cause-title">Outdated Information</div>
+      <div class="cause-desc">Models trained on data with a cutoff date cannot know about events after that date. When asked about recent events, they may confidently generate outdated or entirely fabricated information.</div>
+    </div>
+    <div class="cause-card">
+      <div class="cause-number">6</div>
+      <div class="cause-title">Leading or Suggestive Prompts</div>
+      <div class="cause-desc">Prompts that suggest a particular answer or contain false premises can lead models to hallucinate supporting details, as they try to be helpful and consistent with the prompt's framing.</div>
+    </div>
+  </div>
+
+  <h2 id="reduction"><span class="h2-mark">05</span> How to Reduce AI Hallucinations</h2>
+
+  <p class="reveal">While we can't eliminate hallucinations entirely, several strategies can significantly reduce their frequency and impact:</p>
+
+  <div class="solution-box reveal">
+    <div class="solution-title">🔧 Technical Solutions (For Developers)</div>
+    <ul class="solution-list">
+      <li><strong>Retrieval-Augmented Generation (RAG):</strong> Connect the model to external knowledge sources and require it to ground responses in retrieved documents rather than relying solely on internal knowledge.</li>
+      <li><strong>Fine-tuning with RLHF:</strong> Use Reinforcement Learning from Human Feedback to train models to say "I don't know" when uncertain and to prioritize accuracy over fluency.</li>
+      <li><strong>Fact-checking layers:</strong> Implement post-generation verification systems that cross-reference claims against trusted databases or knowledge graphs.</li>
+      <li><strong>Temperature control:</strong> Lower temperature settings (closer to 0) make outputs more deterministic and reduce creative fabrications, though they may also reduce diversity.</li>
+      <li><strong>Prompt engineering:</strong> Design prompts that explicitly ask the model to acknowledge uncertainty, cite sources, or indicate confidence levels.</li>
+    </ul>
+  </div>
+
+  <div class="solution-box reveal" style="background:linear-gradient(135deg,var(--gold-soft),var(--coral-soft))">
+    <div class="solution-title">📝 User Strategies (For Everyone)</div>
+    <ul class="solution-list">
+      <li><strong>Verify important information:</strong> Never trust AI-generated facts without checking authoritative sources, especially for critical decisions.</li>
+      <li><strong>Ask for sources:</strong> Request citations, but verify they actually exist — models often fabricate plausible-looking references.</li>
+      <li><strong>Use specific prompts:</strong> Instead of "Tell me about X," try "What are three verified facts about X, and how confident are you in each?"</li>
+      <li><strong>Cross-reference multiple models:</strong> If different models give the same answer, it's more likely to be accurate.</li>
+      <li><strong>Watch for red flags:</strong> Be suspicious of overly specific details, perfect-sounding citations, and confident statements about obscure topics.</li>
+    </ul>
+  </div>
+
+  <p class="reveal">If you're running models locally and want to experiment with different approaches to reduce hallucinations, our guide on <a href="https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html">how to run an LLM on your own computer</a> shows you how to set up various models and test different configurations.</p>
+
+  <div class="callout callout-gold reveal">
+    <div class="callout-title">🎯 The Trade-off</div>
+    <p>There's often a tension between reducing hallucinations and maintaining helpfulness. A model that refuses to answer whenever it's uncertain might be more accurate but less useful. The key is finding the right balance for your specific use case and always maintaining appropriate skepticism.</p>
+  </div>
+
+  <h2 id="detection"><span class="h2-mark">06</span> How to Detect AI Hallucinations</h2>
+
+  <p class="reveal">Even with improvements, you'll encounter hallucinations. Here are warning signs to watch for:</p>
+
+  <h3>Red Flags</h3>
+  <ul>
+    <li><strong>Overly specific details:</strong> Exact dates, page numbers, or statistics on obscure topics are often fabricated</li>
+    <li><strong>Too-perfect citations:</strong> Citations that seem perfectly formatted but can't be found in databases</li>
+    <li><strong>Confidence on controversial topics:</strong> Extreme confidence on topics where experts disagree</li>
+    <li><strong>Inconsistencies:</strong> Contradictions within the same response or with earlier statements</li>
+    <li><strong>Anachronisms:</strong> Information that doesn't fit the stated time period or context</li>
+    <li><strong>Vague sourcing:</strong> Phrases like "studies show" or "experts say" without specific references</li>
+  </ul>
+
+  <h3>Verification Strategies</h3>
+  <p class="reveal">When you suspect a hallucination:</p>
+  <ol>
+    <li><strong>Search for citations:</strong> Look up any cited papers, articles, or sources</li>
+    <li><strong>Cross-reference:</strong> Check multiple authoritative sources</li>
+    <li><strong>Ask the model to verify:</strong> Sometimes asking "Are you certain about this?" or "Can you verify that claim?" prompts the model to reconsider</li>
+    <li><strong>Request sources upfront:</strong> Ask the model to provide sources before generating a full response</li>
+    <li><strong>Use fact-checking tools:</strong> Leverage dedicated fact-checking websites and databases</li>
+  </ol>
+
+  <div class="key-takeaways reveal">
+    <div class="kt-title">🎯 Key Takeaways</div>
+    <ul>
+      <li>LLMs hallucinate because they predict probable text, not because they understand truth</li>
+      <li>Hallucinations are inherent to the technology, not bugs that can be completely fixed</li>
+      <li>Factual errors, fake citations, and reasoning mistakes are the most common types</li>
+      <li>Obscure topics, specific details, and pressure to answer increase hallucination risk</li>
+      <li>RAG, fine-tuning, and careful prompting can reduce but not eliminate hallucinations</li>
+      <li>Always verify important information from AI with authoritative sources</li>
+    </ul>
+  </div>
+
+  <h2 id="faq"><span class="h2-mark">07</span> Frequently Asked Questions</h2>
+  <div class="faq reveal">
+    <details open>
+      <summary>Why do LLMs hallucinate facts?</summary>
+      <div class="faq-body">LLMs hallucinate facts because they predict the next most probable word based on patterns in training data, not because they understand truth. They don't have access to a factual database or verification system — they generate text that sounds plausible based on statistical patterns, which sometimes leads to confident but false statements.</div>
+    </details>
+    <details>
+      <summary>Can AI hallucinations be eliminated?</summary>
+      <div class="faq-body">While AI hallucinations cannot be completely eliminated, they can be significantly reduced through techniques like retrieval-augmented generation (RAG), better training data, fine-tuning with human feedback, fact-checking systems, and prompting strategies that encourage the model to acknowledge uncertainty.</div>
+    </details>
+    <details>
+      <summary>How can I identify AI hallucinations?</summary>
+      <div class="faq-body">Signs of AI hallucinations include overly specific details that seem fabricated, confident statements about obscure topics, citations that don't exist, contradictory information, and claims that sound plausible but are verifiably false. Always verify important information from authoritative sources.</div>
+    </details>
+    <details>
+      <summary>Do all LLMs hallucinate equally?</summary>
+      <div class="faq-body">No, hallucination rates vary significantly between models. Larger models generally hallucinate less than smaller ones, models trained on higher-quality data perform better, and specialized models with retrieval systems hallucinate far less than general-purpose chatbots. If you're comparing different options, check out our analysis of the <a href="https://nyvoraai.github.io/ai-news/best-open-source-llm-2026.html">best open source LLMs in 2026</a>.</div>
+    </details>
+    <details>
+      <summary>Why do LLMs make up citations and sources?</summary>
+      <div class="faq-body">LLMs make up citations because they've learned the pattern that credible statements often include references, but they don't actually access or verify real sources. They generate plausible-looking citations based on patterns in academic and news text from their training data.</div>
+    </details>
+    <details>
+      <summary>Are smaller models more prone to hallucinations?</summary>
+      <div class="faq-body">Generally yes. Smaller models have less capacity to store and recall factual information, so they rely more heavily on pattern-matching and generalization, which increases hallucination risk. However, well-trained smaller models can still be quite reliable for common topics.</div>
+    </details>
+  </div>
+
+  <div class="author-box reveal">
+    <div class="meta-avatar">V<img src="https://nyvoraai.github.io/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by Varun Lalwani</h3>
+      <p>Varun covers large language models, AI reliability, and the practical challenges of working with generative AI. Published June 2026. Questions? <a href="https://nyvoraai.github.io/contact.html">Contact our team</a> or <a href="https://nyvoraai.github.io/about.html">learn about our mission</a>. Stay updated via our <a href="https://nyvoraai.github.io/rss.xml">RSS feed</a>.</p>
+    </div>
+  </div>
+
+  <div class="share-section reveal">
+    <div class="share-title">Know someone who trusts AI too much? Share this guide 👇</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=Why+Do+LLMs+Hallucinate+Facts%3F+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-x"/></svg> Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Share on Facebook</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html" target="_blank" rel="noopener" class="share-btn">💼 Share on LinkedIn</a>
+      <button class="share-btn" onclick="copyLink()">🔗 Copy Link</button>
+    </div>
+  </div>
+
+  <div class="newsletter reveal">
+    <h2>Never Miss an AI Breakthrough</h2>
+    <p>Weekly coverage of LLMs, AI limitations, and what's actually worth your attention. Join 10,000+ smart readers.</p>
+    <form action="https://formspree.io/f/xwvjgdpw" method="POST" class="nl-form" id="nlForm">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
+      <input type="hidden" name="_subject" value="Newsletter Signup - LLM Hallucinations Guide"/>
+      <button type="submit" class="nl-btn">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · Privacy-focused</p>
+    <div class="nl-social">
+      <a href="https://nyvoraai.github.io/rss.xml" class="nl-soc"><svg class="icon"><use href="#icon-rss"/></svg> RSS Feed</a>
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-instagram"/></svg> Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-facebook"/></svg> Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-x"/></svg> X</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</a>
+    </div>
+  </div>
+
+  <div class="related reveal">
+    <div class="related-title">Continue Your AI Journey</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/ai-news/best-open-source-llm-2026.html" class="rel-card">
+        <div class="rel-tag">Model Guide</div>
+        <div class="rel-title">Best Open Source LLM in 2026</div>
+        <div class="rel-read">23 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html" class="rel-card">
+        <div class="rel-tag">Setup Guide</div>
+        <div class="rel-title">How to Run an LLM on Your Own Computer</div>
+        <div class="rel-read">22 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/what-is-llama-ai-and-who-made-it.html" class="rel-card">
+        <div class="rel-tag">Model Guide</div>
+        <div class="rel-title">What Is Llama AI and Who Made It?</div>
+        <div class="rel-read">20 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html" class="rel-card">
+        <div class="rel-tag">Comparison</div>
+        <div class="rel-title">GPT vs Claude — Key Differences</div>
+        <div class="rel-read">16 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/which-llm-is-best-for-beginners-2026.html" class="rel-card">
+        <div class="rel-tag">Recommendations</div>
+        <div class="rel-title">Which LLM Is Best for Beginners 2026?</div>
+        <div class="rel-read">15 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news.html" class="rel-card">
+        <div class="rel-tag">All News</div>
+        <div class="rel-title">Browse All AI News &amp; Guides</div>
+        <div class="rel-read">Explore →</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<footer>
+  <div class="ft-blob" style="width:220px;height:220px;background:var(--coral-soft);top:8%;left:1%;animation-duration:9s"></div>
+  <div class="ft-blob" style="width:180px;height:180px;background:var(--blue-soft);bottom:18%;left:20%;animation-duration:11s;animation-delay:-3s"></div>
+  <div class="ft-blob" style="width:200px;height:200px;background:var(--gold-soft);top:25%;right:3%;animation-duration:8s;animation-delay:-1s"></div>
+  <div class="ft-blob" style="width:160px;height:160px;background:var(--purple-soft);bottom:22%;right:16%;animation-duration:10s;animation-delay:-5s"></div>
+  <div class="ft-blob" style="width:140px;height:140px;background:var(--teal-soft);top:55%;left:42%;animation-duration:12s;animation-delay:-2s"></div>
+
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="ft-dots">
+        <div class="ft-dot" style="background:var(--coral);animation-delay:0s"></div>
+        <div class="ft-dot" style="background:var(--gold);animation-delay:.2s"></div>
+        <div class="ft-dot" style="background:var(--teal);animation-delay:.4s"></div>
+        <div class="ft-dot" style="background:var(--purple);animation-delay:.6s"></div>
+        <div class="ft-dot" style="background:var(--blue);animation-delay:.8s"></div>
+      </div>
+      <div class="footer-logo-wrap">
+        <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI logo icon" class="logo-img" onerror="this.remove()"/>
+        Nyvora<span>AI</span>
+      </div>
+      <p>Your trusted source for AI news, LLM guides, and practical intelligence. We make complex AI research accessible and genuinely useful for everyone.</p>
+      <div class="footer-chips">
+        <span class="chip chip-coral">🏆 Open Source AI</span>
+        <span class="chip chip-teal">🧠 LLM News</span>
+        <span class="chip chip-gold">⚡ Weekly Updates</span>
+        <span class="chip chip-blue">🌍 Global Coverage</span>
+        <span class="chip chip-purple">🔬 Research</span>
+      </div>
+      <div class="footer-social" style="margin-top:18px">
+        <a href="https://nyvoraai.github.io/rss.xml" class="fs-btn"><svg class="icon"><use href="#icon-rss"/></svg><span>RSS</span></a>
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-instagram"/></svg><span>Instagram</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-facebook"/></svg><span>Facebook</span></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-x"/></svg><span>X</span></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-youtube"/></svg><span>YouTube</span></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>LLM Guides</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news/how-to-run-an-llm-on-your-own-computer.html">Run an LLM Locally</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/what-is-llama-ai-and-who-made-it.html">What Is Llama AI?</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html">GPT vs Claude</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/which-llm-is-best-for-beginners-2026.html">Best LLM for Beginners</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">All AI News</a></li>
+      </ul>
+      <a href="https://nyvoraai.github.io/rss.xml" class="rss-link"><svg class="icon"><use href="#icon-rss"/></svg> Subscribe RSS</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+      <a href="https://nyvoraai.github.io/rss.xml">RSS</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const wrap=document.getElementById('bubbleField');
+  const colors=['#FF6B4A','#146B5C','#E89B2D','#8B5CF6','#2563EB'];
+  const n=window.innerWidth<700?8:14;
+  for(let i=0;i<n;i++){
+    const b=document.createElement('div');b.className='fbubble';
+    const s=26+Math.random()*60,l=Math.random()*100,d=13+Math.random()*13,dl=-Math.random()*d;
+    b.style.cssText='width:'+s+'px;height:'+(s*.7)+'px;left:'+l+'%;bottom:-10%;border-color:'+colors[i%colors.length]+';animation-duration:'+d+'s;animation-delay:'+dl+'s';
+    wrap.appendChild(b);
+  }
+})();
+
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const p=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  const bar=document.getElementById('progress');
+  bar.style.width=p+'%';bar.setAttribute('aria-valuenow',Math.round(p));
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+},{passive:true});
+
+const io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(!e.isIntersecting)return;
+    e.target.classList.add('visible');
+    io.unobserve(e.target);
+  });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(r){io.observe(r);});
+
+function toggleMenu(){
+  const nav=document.getElementById('mobileNav'),ham=document.getElementById('ham');
+  const open=nav.classList.toggle('open');
+  ham.setAttribute('aria-expanded',open?'true':'false');
+}
+
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(function(){
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;const o=btn.textContent;
+    btn.textContent='✅ Copied!';setTimeout(function(){btn.textContent=o;},2000);
+  });
+}
+
+document.getElementById('nlForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const btn=this.querySelector('.nl-btn');btn.textContent='Sending...';btn.disabled=true;
+  fetch(this.action,{method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}})
+    .then(function(r){btn.textContent=r.ok?'✅ Subscribed!':'Try again';if(!r.ok)btn.disabled=false;})
+    .catch(function(){btn.textContent='Try again';btn.disabled=false;});
+});
+</script>
+</body>
+</html>
