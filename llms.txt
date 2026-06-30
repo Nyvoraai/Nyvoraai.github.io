@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (113 articles)
+## AI News (114 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -22,6 +22,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Best AI Tool for Students 2026: Top Picks Reviewed](https://nyvoraai.github.io/ai-news/best-ai-tool-for-students-2026.html): Discover the best AI tool for students in 2026. Compare ChatGPT, Grammarly, Notion AI & more for studying, writing, and research. Expert guide with free options.
 - [Best AI Translation Tool 2026: Top 7 Compared](https://nyvoraai.github.io/ai-news/best-ai-tool-for-translation.html): Discover the best AI tool for translation in 2026. Compare DeepL, Google Translate, ChatGPT & more for accuracy, speed, and business use.
 - [Best Free AI Writing Tool in 2026: Top 7 Ranked](https://nyvoraai.github.io/ai-news/best-free-ai-writing-tool-2026.html): Discover the best free AI writing tools in 2026. Compare top 7 options, features, limitations & find the perfect free AI writer for your needs.
+- [Best Open Source LLM in 2026: Top Picks Ranked](https://nyvoraai.github.io/ai-news/best-open-source-llm-2026.html): Discover the best open source LLM in 2026 — compared by performance, size, and use case, with rankings for coding, chat, and local deployment.
 - [Can AI Be Biased and How to Spot It? 2026 Guide](https://nyvoraai.github.io/ai-news/can-ai-be-biased-how-to-spot-it.html): Discover if AI can be biased, how it happens, and how to spot it. Learn to identify algorithmic bias in hiring, loans, and daily tech. Expert 2026 guide.
 - [Can AI Be Used to Spread Misinformation? The 2026 Guide](https://nyvoraai.github.io/ai-news/can-ai-spread-misinformation.html): Can AI be used to spread misinformation? Discover how deepfakes, fake news, and AI-generated content are created, and learn how to spot them in 2026.
 - [Can AI Help with Business Email Writing? 2026 Guide](https://nyvoraai.github.io/ai-news/can-ai-help-with-business-email-writing.html): Discover how AI helps with business email writing. Learn top tools, prompt formulas, and tips to save time while keeping a human touch.
