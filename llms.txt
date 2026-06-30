@@ -128,7 +128,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Why Are LLMs Getting Cheaper in 2026?](https://nyvoraai.github.io/ai-news/why-are-llms-getting-cheaper-2026.html): Why are LLMs getting cheaper in 2026? Discover the tech breakthroughs, hardware shifts, and market forces driving AI costs down for everyone.
 - [Why Was Fable 5 Banned? The Real Story Explained](https://nyvoraai.github.io/ai-news/why-was-fable-5-banned.html): Why was Claude Fable 5 banned? The real story: a 'fix this code' prompt, a same-day export order, and 300+ security experts demanding it be reversed.
 
-## Blog (32 articles)
+## Blog (33 articles)
 
 - [AI vs Machine Learning: Key Differences Explained (2026)](https://nyvoraai.github.io/blog/ai-vs-machine-learning-difference.html): Confused about AI vs machine learning? Learn the real differences, how they work together, and which one powers your favorite apps. Simple guide for beginners.
 - [Best AI App for Phone Users in 2026 (Tested & Ranked)](https://nyvoraai.github.io/blog/best-ai-app-for-phone-users.html): Discover the best AI app for phone users in 2026. We tested ChatGPT, Gemini, Claude & more on mobile. Find which AI app fits your needs with our honest comparison.
@@ -136,6 +136,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Easiest AI Tools to Start With in 2026 (No Skills Needed)](https://nyvoraai.github.io/blog/easiest-ai-tools-to-start-with.html): Discover the easiest AI tools for beginners in 2026. Start using ChatGPT, Gemini, and more with zero technical skills. Free tools included with step-by-step guide.
 - [How Do AI Recommendations Work on YouTube? (2026 Guide)](https://nyvoraai.github.io/blog/how-do-ai-recommendations-work-on-youtube.html): How do AI recommendations work on YouTube? See how the algorithm scores, ranks, and personalizes your Home feed, Up Next, and Shorts.
 - [How Does AI Decide What to Say Next? (The Logic)](https://nyvoraai.github.io/blog/how-does-ai-decide-what-to-say-next.html): Ever wonder how AI picks its words? We explain exactly how AI decides what to say next using probability, patterns, and massive data. No math degree required.
+- [How Does AI Detect Spam Emails? (2026 Guide)](https://nyvoraai.github.io/blog/how-does-ai-detect-spam-emails.html): How does AI detect spam emails? See how filters read patterns, links, and language to catch scams before they hit your inbox.
 - [How Does AI Generate Images from Text? (2026 Guide)](https://nyvoraai.github.io/blog/how-does-ai-generate-images-from-text.html): Ever wondered how AI turns a sentence into a picture? This guide explains text-to-image AI, diffusion models, and prompts in plain English.
 - [How Does AI Recognize Faces in Photos? (2026 Guide)](https://nyvoraai.github.io/blog/how-does-ai-recognize-faces-in-photos.html): How does AI recognize faces in photos? Discover the simple science behind facial recognition, from neural networks to real-world applications.
 - [How Does AI Translation Work? (2026 Guide)](https://nyvoraai.github.io/blog/how-does-ai-translation-work.html): How does AI translation work? This guide explains neural translation, context, and why nuance is still hard, in plain English.
