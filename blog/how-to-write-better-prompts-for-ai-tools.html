@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>How to Write Better Prompts for AI Tools (2026)</title>
+<meta name="description" content="Learn how to write better prompts for AI tools with practical formulas, examples, and mistakes to avoid. A clear, human guide for ChatGPT, Gemini & Claude."/>
+<meta name="keywords" content="how to write better prompts for AI tools, prompt writing guide, AI prompt engineering, better AI prompts, prompt tips ChatGPT Claude Gemini"/>
+<meta name="author" content="Varun Lalwani"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#0A0C10"/>
+<link rel="canonical" href="https://nyvoraai.github.io/blog/how-to-write-better-prompts-for-ai-tools.html"/>
+<link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
+<link rel="icon" type="image/png" href="https://nyvoraai.github.io/favicon-32x32.png"/>
+<link rel="apple-touch-icon" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
+<link rel="alternate" type="application/rss+xml" title="NyvoraAI RSS Feed" href="https://nyvoraai.github.io/rss.xml"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How to Write Better Prompts for AI Tools (2026)"/>
+<meta property="og:description" content="A practical, human guide to writing prompts that actually get you the answers you want from ChatGPT, Claude, Gemini, and more."/>
+<meta property="og:url" content="https://nyvoraai.github.io/blog/how-to-write-better-prompts-for-ai-tools.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/blog/how-to-write-better-prompts-for-ai-tools-thumbnail.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-06-30T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-06-30T00:00:00Z"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="How to Write Better Prompts for AI Tools (2026)"/>
+<meta name="twitter:description" content="Learn how to write better prompts for AI tools with real formulas, examples, and the mistakes most people make."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/blog/how-to-write-better-prompts-for-ai-tools-thumbnail.png"/>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Write Better Prompts for AI Tools (2026)","description":"A practical, human guide to writing better AI prompts with formulas, examples, tool-specific tips, and common mistakes to avoid.","image":"https://nyvoraai.github.io/assets/blog/how-to-write-better-prompts-for-ai-tools-thumbnail.png","datePublished":"2026-06-30","dateModified":"2026-06-30","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/blog/how-to-write-better-prompts-for-ai-tools.html"}}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://nyvoraai.github.io/blog.html"},{"@type":"ListItem","position":3,"name":"How to Write Better Prompts for AI Tools","item":"https://nyvoraai.github.io/blog/how-to-write-better-prompts-for-ai-tools.html"}]}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What makes an AI prompt good?","acceptedAnswer":{"@type":"Answer","text":"A good AI prompt is specific, gives context, states the format you want, and includes examples when possible. Vague prompts produce vague answers, while clear, detailed prompts produce useful, focused ones."}},{"@type":"Question","name":"How long should a good prompt be?","acceptedAnswer":{"@type":"Answer","text":"There is no fixed length. Simple tasks need only a sentence, while complex tasks benefit from a few short paragraphs covering goal, context, format, and constraints. Length matters less than clarity."}},{"@type":"Question","name":"Do different AI tools need different prompting styles?","acceptedAnswer":{"@type":"Answer","text":"The core principles are the same across ChatGPT, Claude, and Gemini, but each tool responds slightly differently to tone, structure, and length, so light adjustments per tool can improve results."}},{"@type":"Question","name":"Can better prompts really change the quality of AI answers?","acceptedAnswer":{"@type":"Answer","text":"Yes. The same AI model can produce a generic answer or an excellent one depending entirely on how the question is framed, because the prompt is the only information the model has to work with."}},{"@type":"Question","name":"Is prompt engineering still useful in 2026?","acceptedAnswer":{"@type":"Answer","text":"Yes, even as AI models get smarter and more forgiving of vague input, clear prompting still produces faster, more accurate, and more personalized results, especially for complex or multi-step tasks."}}]}</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#080A0F;
+  --bg-2:#0D1117;
+  --bg-3:#111827;
+  --bg-card:#141B26;
+  --bg-card-2:#1A2235;
+  --border:#1E2D40;
+  --border-bright:#2A3F5C;
+
+  --cyan:#00D4FF;
+  --cyan-dim:#0099BB;
+  --cyan-glow:rgba(0,212,255,0.15);
+  --violet:#7B5EA7;
+  --violet-bright:#9B7EC8;
+  --violet-glow:rgba(123,94,167,0.18);
+  --green:#00E5A0;
+  --green-dim:#00B07A;
+  --green-glow:rgba(0,229,160,0.12);
+  --amber:#FFB347;
+  --amber-glow:rgba(255,179,71,0.12);
+  --red:#FF6B6B;
+  --pink:#FF69B4;
+  --orange:#FF8C42;
+
+  --text:#E8EDF5;
+  --text-2:#9BA8BC;
+  --text-3:#5C6B80;
+  --text-inv:#080A0F;
+
+  --radius:16px;
+  --radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+
+  --glow-cyan:0 0 30px rgba(0,212,255,0.2),0 0 60px rgba(0,212,255,0.08);
+  --glow-violet:0 0 30px rgba(123,94,167,0.25);
+  --shadow-card:0 4px 24px rgba(0,0,0,0.4),0 1px 4px rgba(0,0,0,0.3);
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.78;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--cyan);text-decoration:none;transition:color .2s}
+a:hover{color:var(--cyan-dim);text-decoration:underline}
+h1,h2,h3,.font-display{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+abbr.term{text-decoration:none;border-bottom:1px dashed var(--cyan-dim);cursor:help;color:var(--text)}
+
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.stars{position:absolute;inset:0}
+.star{position:absolute;background:#fff;border-radius:50%;animation:starTwinkle ease-in-out infinite}
+@keyframes starTwinkle{0%,100%{opacity:.15;transform:scale(1)}50%{opacity:.8;transform:scale(1.4)}}
+.aura{position:absolute;border-radius:50%;filter:blur(100px);will-change:transform;animation:auraFloat ease-in-out infinite;pointer-events:none}
+.aura-1{width:700px;height:700px;background:radial-gradient(circle,rgba(0,212,255,.18),transparent 65%);top:-200px;left:-200px;animation-duration:20s}
+.aura-2{width:600px;height:600px;background:radial-gradient(circle,rgba(123,94,167,.22),transparent 65%);bottom:-150px;right:-150px;animation-duration:25s;animation-delay:-8s}
+.aura-3{width:500px;height:500px;background:radial-gradient(circle,rgba(0,229,160,.12),transparent 65%);top:40%;left:55%;animation-duration:18s;animation-delay:-4s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(60px,-50px) scale(1.1)}66%{transform:translate(-40px,35px) scale(.92)}}
+.grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.025) 1px,transparent 1px);background-size:60px 60px;animation:gridShift 40s linear infinite}
+@keyframes gridShift{0%{background-position:0 0}100%{background-position:60px 60px}}
+.orb{position:absolute;border-radius:50%;animation:orbFloat ease-in-out infinite;opacity:0}
+@keyframes orbFloat{0%{transform:translateY(110vh) scale(0.5);opacity:0}10%{opacity:.6}90%{opacity:.3}100%{transform:translateY(-10vh) scale(1.2);opacity:0}}
+@media(prefers-reduced-motion:reduce){.star,.aura,.orb,.grid-lines{animation:none;display:none}html{scroll-behavior:auto}}
+
+#progress{position:fixed;top:0;left:0;width:0;height:2px;z-index:400;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green));transition:width .08s;box-shadow:0 0 12px var(--cyan)}
+
+nav{position:sticky;top:0;z-index:300;background:rgba(8,10,15,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:62px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:20px;font-weight:700;letter-spacing:-.02em;color:var(--text);display:flex;align-items:center;gap:9px}
+.nav-logo .logo-accent{color:var(--cyan)}
+.logo-img{height:28px;width:28px;border-radius:7px;object-fit:cover}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--text-2);font-size:14px;font-weight:500;transition:color .2s;letter-spacing:.01em}
+.nav-links a:hover,.nav-links a.active{color:var(--text);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-cta{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:8px 18px;border-radius:8px;font-size:13px;font-weight:700;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 20px rgba(0,212,255,.25)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 30px rgba(0,212,255,.4);text-decoration:none;color:var(--text-inv)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--text-2);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:62px;left:0;right:0;background:rgba(13,17,23,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:20px 24px;flex-direction:column;gap:16px;z-index:299}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--text);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
+
+.breadcrumb{max-width:840px;margin:24px auto 0;padding:0 24px;font-size:12.5px;color:var(--text-3);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--text-3);transition:color .2s}
+.breadcrumb a:hover{color:var(--cyan);text-decoration:none}
+.bc-sep{color:var(--border-bright)}
+
+.article-hdr{max-width:840px;margin:20px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;background:rgba(0,212,255,.08);color:var(--cyan);border:1px solid rgba(0,212,255,.2);font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 12px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-read{background:rgba(0,229,160,.08);color:var(--green);border-color:rgba(0,229,160,.2)}
+.badge-date{background:rgba(255,179,71,.08);color:var(--amber);border-color:rgba(255,179,71,.2)}
+.article-title{font-size:clamp(28px,5vw,46px);font-weight:700;line-height:1.16;color:var(--text);margin-bottom:16px;letter-spacing:-.025em}
+.title-glow{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.article-intro{font-size:18.5px;color:var(--text-2);line-height:1.65;margin-bottom:22px}
+.article-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--text-3);padding-bottom:22px;border-bottom:1px solid var(--border)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{width:34px;height:34px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--text-inv);font-family:var(--font-display);position:relative;overflow:hidden}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--text-2)}
+.meta-sep{color:var(--border-bright)}
+
+.hero-wrap{max-width:840px;margin:28px auto;padding:0 24px}
+.hero-box{width:100%;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);background:var(--bg-card);box-shadow:var(--shadow-card),var(--glow-cyan);line-height:0}
+.hero-box img{width:100%;height:auto;display:block}
+
+.toc-box{max-width:840px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow-card)}
+.toc-title{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc-title::before{content:'';width:3px;height:13px;background:var(--cyan);border-radius:2px;display:inline-block;box-shadow:0 0 8px var(--cyan)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:5px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--text-2);font-size:14px;transition:color .2s;display:flex;gap:8px;padding:3px 0}
+.toc a::before{content:counter(tocnum,'0'counter(tocnum));font-family:var(--font-mono);color:var(--cyan);font-weight:700;font-size:11.5px;min-width:18px;opacity:.7}
+.toc a:hover{color:var(--cyan);text-decoration:none}
+
+.layout{max-width:840px;margin:0 auto;padding:36px 24px 80px}
+
+.prose h2{font-size:25px;font-weight:700;color:var(--text);margin:52px 0 16px;letter-spacing:-.02em;scroll-margin-top:88px;display:flex;align-items:center;gap:12px}
+.prose h2 .h2-num{font-family:var(--font-mono);font-size:12px;color:var(--cyan);font-weight:700;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.2);padding:3px 9px;border-radius:6px;letter-spacing:.05em}
+.prose h3{font-size:18px;font-weight:600;color:var(--text);margin:24px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--text-2)}
+.prose strong{color:var(--text);font-weight:600}
+.prose ul,.prose ol{margin:0 0 20px 20px}
+.prose li{margin-bottom:9px;color:var(--text-2)}
+.prose figure{margin:28px 0}
+.prose figure img{width:100%;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow-card)}
+.prose figcaption{font-size:12.5px;color:var(--text-3);margin-top:8px;text-align:center;font-family:var(--font-mono)}
+
+.key-takeaways{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--cyan);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow-card),0 0 0 1px rgba(0,212,255,.06) inset}
+.kt-title{font-family:var(--font-mono);font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+.key-takeaways ul{margin:0;list-style:none}
+.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15px;color:var(--text-2)}
+.key-takeaways li:last-child{margin-bottom:0}
+.key-takeaways li::before{content:'//';color:var(--cyan);flex-shrink:0;font-weight:700;font-family:var(--font-mono);font-size:12px;opacity:.7}
+.key-takeaways p{color:var(--text);font-size:16px;margin-bottom:10px}
+
+.formula-box{background:var(--bg-card-2);border:1px solid var(--border-bright);border-radius:var(--radius);padding:20px 24px;margin:24px 0;font-family:var(--font-mono);font-size:14px;color:var(--green);box-shadow:var(--shadow-card);line-height:1.9;overflow-x:auto}
+.formula-box .lbl{display:block;color:var(--text-3);font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+
+.tbl-wrap{overflow-x:auto;margin:28px 0;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow-card)}
+.tool-table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:600px;background:var(--bg-card)}
+.tool-table thead tr{background:var(--bg-3)}
+.tool-table th{text-align:left;padding:14px 16px;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-3);border-bottom:1px solid var(--border);font-family:var(--font-mono)}
+.tool-table td{padding:14px 16px;border-bottom:1px solid var(--border);vertical-align:middle;color:var(--text-2)}
+.tool-table tr:last-child td{border-bottom:none}
+.tool-table tr:hover td{background:rgba(0,212,255,.04)}
+.tool-table strong{color:var(--text)}
+.badge-free{background:rgba(0,229,160,.1);color:var(--green);border:1px solid rgba(0,229,160,.25);font-size:10.5px;font-weight:700;padding:4px 10px;border-radius:20px;white-space:nowrap;font-family:var(--font-mono)}
+.badge-bad{background:rgba(255,107,107,.1);color:var(--red);border:1px solid rgba(255,107,107,.25);font-size:10.5px;font-weight:700;padding:4px 10px;border-radius:20px;white-space:nowrap;font-family:var(--font-mono)}
+
+.trivia-box{background:rgba(255,179,71,.05);border:1px solid rgba(255,179,71,.2);border-radius:var(--radius);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start}
+.trivia-icon{flex-shrink:0;width:36px;height:36px;border-radius:10px;background:rgba(255,179,71,.12);border:1px solid rgba(255,179,71,.3);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-weight:700;font-size:12px;color:var(--amber)}
+.trivia-box h4{font-family:var(--font-mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--amber);margin-bottom:6px}
+.trivia-box p{margin:0;color:var(--text-2);font-size:14.5px;line-height:1.65}
+
+.steps{margin:26px 0;display:flex;flex-direction:column;gap:10px}
+.step{display:flex;gap:16px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;transition:border-color .2s,transform .2s,box-shadow .2s;cursor:default}
+.step:hover{border-color:var(--cyan);transform:translateX(4px);box-shadow:0 0 20px rgba(0,212,255,.12)}
+.step-num{flex-shrink:0;width:34px;height:34px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--text-inv);font-family:var(--font-display);box-shadow:0 0 16px rgba(0,212,255,.3)}
+.step-body h3{margin:0 0 4px;font-size:15.5px;color:var(--text);font-family:var(--font-display)}
+.step-body p{margin:0;font-size:14px;color:var(--text-2);line-height:1.6}
+
+.faq{margin:14px 0}
+details{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--border-bright)}
+summary{padding:16px 20px;cursor:pointer;font-weight:600;font-size:15.5px;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--cyan);font-size:20px;font-weight:300;transition:transform .3s;flex-shrink:0;font-family:var(--font-mono)}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 20px 16px;color:var(--text-2);font-size:14.5px;line-height:1.7}
+
+.author-box{display:flex;gap:14px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin:44px 0 0;box-shadow:var(--shadow-card)}
+.author-box h3{font-size:14.5px;font-family:var(--font-display);margin-bottom:4px;color:var(--text)}
+.author-box p{font-size:13.5px;color:var(--text-3);margin:0;line-height:1.6}
+
+.share-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;margin:28px 0 0;text-align:center}
+.share-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:14px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:7px;padding:9px 16px;border-radius:8px;border:1px solid var(--border);font-size:12.5px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--bg-3);color:var(--text-2);font-family:var(--font-body)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 14px rgba(0,212,255,.15)}
+
+.newsletter{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:40px;margin:52px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow-card)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green))}
+.newsletter::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(0,212,255,.06),transparent 60%);pointer-events:none}
+.newsletter h2{font-size:23px;font-weight:700;color:var(--text);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--text-2);margin-bottom:22px;font-size:15px}
+.nl-form{display:flex;gap:10px;max-width:420px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:9px;padding:12px 15px;color:var(--text);font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--text-3)}
+.nl-input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,212,255,.1)}
+.nl-btn{background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);padding:12px 20px;border-radius:9px;border:none;cursor:pointer;font-size:13.5px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 0 20px rgba(0,212,255,.25)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 0 30px rgba(0,212,255,.4)}
+.nl-note{font-size:11.5px;color:var(--text-3);margin:10px 0 0}
+.nl-social{display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:8px 14px;border-radius:8px;border:1px solid var(--border);color:var(--text-2);transition:all .2s;background:var(--bg-3)}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--cyan)}
+
+.related{margin:44px 0 0}
+.related-title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:16px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.rel-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;transition:border-color .2s,transform .2s;cursor:pointer;display:block}
+.rel-card:hover{border-color:var(--border-bright);transform:translateY(-3px);text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.rel-tag{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan);margin-bottom:7px;font-family:var(--font-mono)}
+.rel-title{font-size:13.5px;font-weight:600;color:var(--text);line-height:1.4;margin-bottom:7px;font-family:var(--font-display)}
+.rel-read{font-size:11.5px;color:var(--text-3);font-family:var(--font-mono)}
+
+footer{background:var(--bg-2);border-top:1px solid var(--border);padding:56px 24px 28px;position:relative;z-index:1;overflow:hidden}
+.footer-aura{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;animation:footerDrift ease-in-out infinite}
+.footer-aura-1{width:480px;height:480px;background:radial-gradient(circle,rgba(0,212,255,.10),transparent 65%);top:-220px;left:6%;animation-duration:16s}
+.footer-aura-2{width:420px;height:420px;background:radial-gradient(circle,rgba(123,94,167,.14),transparent 65%);top:-180px;right:8%;animation-duration:20s;animation-delay:-6s}
+.footer-aura-3{width:380px;height:380px;background:radial-gradient(circle,rgba(0,229,160,.08),transparent 65%);bottom:-160px;left:50%;animation-duration:18s;animation-delay:-10s}
+.footer-aura-4{width:320px;height:320px;background:radial-gradient(circle,rgba(255,179,71,.08),transparent 65%);top:40%;left:-100px;animation-duration:22s;animation-delay:-4s}
+@keyframes footerDrift{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,26px)}}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:44px;position:relative;z-index:1}
+.footer-logo{font-size:19px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:9px;color:var(--text);font-family:var(--font-display)}
+.footer-logo .accent{background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green),var(--amber),var(--pink),var(--cyan));background-size:400% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:accentShift 8s linear infinite}
+@keyframes accentShift{0%{background-position:0% 0}100%{background-position:400% 0}}
+.footer-brand p{color:var(--text-3);font-size:13.5px;line-height:1.7;margin-bottom:18px}
+.footer-social{display:flex;gap:8px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:8px;border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text-2);transition:all .2s;background:var(--bg-3);position:relative;overflow:hidden}
+.fs-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--cyan);color:var(--text-inv);background:linear-gradient(135deg,var(--cyan),var(--violet-bright));box-shadow:0 0 16px rgba(0,212,255,.3)}
+.footer-col h4{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text);margin-bottom:14px;font-family:var(--font-mono)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:9px}
+.footer-col a{color:var(--text-3);font-size:13.5px;transition:color .2s}
+.footer-col a:hover{color:var(--cyan);text-decoration:none}
+.footer-bottom{max-width:1100px;margin:40px auto 0;padding-top:20px;position:relative;display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--text-3);flex-wrap:wrap;gap:10px;z-index:1}
+.footer-bottom::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright),var(--green),var(--amber),var(--pink),var(--cyan));background-size:300% 100%;animation:footerShimmer 8s linear infinite}
+@keyframes footerShimmer{0%{background-position:0% 0}100%{background-position:300% 0}}
+.footer-bottom-links{display:flex;gap:18px}
+.footer-bottom-links a{color:var(--text-3);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--cyan);text-decoration:none}
+
+#back-top{position:fixed;bottom:26px;right:26px;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:0 0 20px rgba(0,212,255,.3);z-index:200;font-weight:700}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.1) translateY(-2px);box-shadow:0 0 30px rgba(0,212,255,.5)}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+#side-popup{position:fixed;bottom:88px;right:26px;z-index:500;width:260px;background:var(--bg-card);border:1px solid var(--border-bright);border-radius:16px;padding:18px;box-shadow:var(--shadow-card),0 0 40px rgba(0,212,255,.15);transform:translateX(320px);opacity:0;transition:transform .45s cubic-bezier(.22,1,.36,1),opacity .35s ease;pointer-events:none;overflow:hidden}
+#side-popup.show{transform:translateX(0);opacity:1;pointer-events:all}
+#side-popup::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet-bright))}
+.sp-close{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--text-3);cursor:pointer;font-size:16px;line-height:1;padding:2px;transition:color .2s;font-family:var(--font-mono)}
+.sp-close:hover{color:var(--text)}
+.sp-icon{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(123,94,167,.15));border:1px solid rgba(0,212,255,.2);display:flex;align-items:center;justify-content:center;margin-bottom:10px;font-family:var(--font-mono);font-weight:700;font-size:14px;color:var(--cyan)}
+.sp-title{font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--text);margin-bottom:5px}
+.sp-text{font-size:12.5px;color:var(--text-3);line-height:1.5;margin-bottom:12px}
+.sp-input{width:100%;background:var(--bg-3);border:1px solid var(--border-bright);border-radius:8px;padding:9px 12px;color:var(--text);font-size:12.5px;outline:none;margin-bottom:8px;font-family:var(--font-body);transition:border-color .2s}
+.sp-input:focus{border-color:var(--cyan)}
+.sp-btn{width:100%;background:linear-gradient(135deg,var(--cyan),var(--violet-bright));color:var(--text-inv);border:none;border-radius:8px;padding:9px;font-size:12.5px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .15s;font-family:var(--font-body)}
+.sp-btn:hover{opacity:.9;transform:translateY(-1px)}
+.sp-note{font-size:10.5px;color:var(--text-3);text-align:center;margin-top:6px;font-family:var(--font-mono)}
+
+.scanline{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.06;animation:scanDown 8s linear infinite;pointer-events:none;z-index:1}
+@keyframes scanDown{0%{top:-2px}100%{top:100vh}}
+
+@media(max-width:900px){
+  .related-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .related-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+  #side-popup{right:12px;bottom:80px;width:240px}
+  .article-intro{font-size:16.5px}
+  body{font-size:16px}
+}
+</style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="bg-canvas" aria-hidden="true">
+  <div class="aura aura-1"></div>
+  <div class="aura aura-2"></div>
+  <div class="aura aura-3"></div>
+  <div class="stars" id="starField"></div>
+  <div class="grid-lines"></div>
+  <div id="orbField"></div>
+</div>
+<div class="scanline" aria-hidden="true"></div>
+<div id="progress" role="progressbar" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/logo.svg" alt="" class="logo-img" onerror="this.style.display='none'"/>
+      Nyvora<span class="logo-accent">AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html" class="active">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+</div>
+
+<div class="page-wrap">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <span class="bc-sep">/</span>
+  <span>Prompt Guides</span>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge">Prompt Engineering</span>
+    <span class="badge badge-read">11 min read</span>
+    <span class="badge badge-date">Updated June 2026</span>
+  </div>
+  <h1 class="article-title">How to Write <span class="title-glow">Better Prompts for AI Tools</span></h1>
+  <p class="article-intro">The difference between a forgettable AI answer and a genuinely useful one almost never comes down to which model you use — it comes down to how you ask. Here's a practical, no-fluff guide to writing prompts that actually get you what you need.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">V<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="" onerror="this.remove()"/></div>
+      <div><div class="meta-name">Varun Lalwani</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-06-30">June 30, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Works for ChatGPT, Claude & Gemini</span>
+    <span class="meta-sep">·</span>
+    <span>~2,300 words</span>
+  </div>
+</header>
+
+<!-- HERO IMAGE -->
+<div class="hero-wrap reveal">
+  <div class="hero-box">
+    <img src="https://nyvoraai.github.io/assets/blog/how-to-write-better-prompts-for-ai-tools-thumbnail.png" width="1200" height="630" loading="eager" alt="How to write better prompts for AI tools - person typing a structured prompt into an AI chat app on a phone"/>
+  </div>
+</div>
+
+<!-- TOC -->
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">Jump to a section</div>
+    <ol>
+      <li><a href="#quick-answer">Quick answer</a></li>
+      <li><a href="#why-it-matters">Why prompts matter</a></li>
+      <li><a href="#core-principles">Core principles</a></li>
+      <li><a href="#formula">The prompt formula</a></li>
+      <li><a href="#examples">Before & after examples</a></li>
+      <li><a href="#mistakes">Common mistakes</a></li>
+      <li><a href="#advanced">Advanced techniques</a></li>
+      <li><a href="#tool-specific">Tool-specific tips</a></li>
+      <li><a href="#how-to-practice">How to practice</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">Most people type a question into ChatGPT, Claude, or Gemini the same way they'd type into Google — a short fragment, hoping the AI fills in the blanks correctly. Sometimes it works. Often it doesn't, and you end up rewriting the question three or four times, getting frustrated, and settling for a mediocre answer.</p>
+
+  <p class="reveal">Here's the thing nobody tells beginners: AI models aren't mind readers. They respond to exactly what you give them — the words, the context, the structure, the examples. Two people can ask the "same" question and get wildly different quality answers, purely because of how each one phrased it. That gap is what prompt writing is about, and it's a skill anyone can learn in an afternoon.</p>
+
+  <p class="reveal">This guide breaks down the actual mechanics of writing better prompts — not vague tips like "be specific," but a concrete formula, real before-and-after examples, the mistakes that quietly sabotage most prompts, and how the approach shifts slightly depending on which AI tool you're using.</p>
+
+  <div class="key-takeaways reveal">
+    <div class="kt-title">Key Takeaways</div>
+    <p>Writing better prompts for AI tools comes down to four things: clarity, context, format, and iteration.</p>
+    <ul>
+      <li><strong>Be specific:</strong> vague prompts produce vague, generic answers</li>
+      <li><strong>Give context:</strong> tell the AI who you are and what the answer is for</li>
+      <li><strong>Define the format:</strong> ask for a list, table, email, or specific length</li>
+      <li><strong>Iterate:</strong> treat the first response as a draft, not a final answer</li>
+      <li><strong>Use examples:</strong> showing the AI one good example often beats a paragraph of instructions</li>
+    </ul>
+  </div>
+
+  <h2 id="quick-answer"><span class="h2-num">01</span>The Quick Answer</h2>
+  <p class="reveal">If you only remember one thing from this guide, remember this: <strong>a good prompt answers four questions before the AI even has to ask</strong> — what do you want, who is it for, what should it look like, and what should it avoid. Most weak prompts skip two or three of these entirely.</p>
+
+  <p class="reveal">Instead of typing "write a LinkedIn post about productivity," try something closer to: "Write a 150-word LinkedIn post for a freelance designer, sharing one specific productivity habit that helped them hit deadlines. Casual, first-person tone, no corporate buzzwords, end with a question to encourage comments." The second version takes ten extra seconds to type and produces a dramatically more usable result.</p>
+
+  <p class="reveal">If you're brand new to AI chat tools in general, it might help to first understand <a href="https://nyvoraai.github.io/blog/what-is-generative-vs-discriminative-ai.html">how generative AI actually generates text</a> in the first place — it changes how you think about prompting once you understand the model is predicting the most likely next words based on everything you've given it.</p>
+
+  <h2 id="why-it-matters"><span class="h2-num">02</span>Why Prompts Matter More Than the Model You Choose</h2>
+  <p class="reveal">There's a common myth that switching to a "smarter" or more expensive AI model will automatically fix bad answers. In reality, the prompt does most of the heavy lifting. A well-written prompt on a free-tier model will often outperform a lazy, one-line prompt on a premium one.</p>
+
+  <p class="reveal">Think about it from the model's side. It has no memory of your intentions, no idea what "good" looks like to you specifically, and no ability to ask clarifying questions unless you explicitly invite it to. Every single detail it uses to shape its answer has to come from the prompt itself — or from context you've shared earlier in the conversation. When you leave gaps, the model fills them with its best statistical guess, which is usually generic, safe, and forgettable.</p>
+
+  <p class="reveal">This is also why two people using the exact same AI app can have completely opposite opinions about how good it is. One person treats it like a search engine and types three words. The other treats it like a thoughtful assistant and explains what they actually need. The second person gets dramatically better results — not because they have access to a better tool, but because they communicate better with the one they have.</p>
+
+  <figure class="reveal">
+    <img src="https://nyvoraai.github.io/assets/blog/prompt-comparison-vague-vs-detailed.png" alt="how to write better prompts for AI tools - side by side comparison of a vague prompt and a detailed, well-structured prompt" loading="lazy"/>
+    <figcaption>A vague prompt vs. a detailed prompt — same AI model, very different output quality.</figcaption>
+  </figure>
+
+  <h2 id="core-principles"><span class="h2-num">03</span>The Core Principles of a Strong Prompt</h2>
+  <p class="reveal">Before getting into formulas and formatting tricks, it helps to internalize a few underlying principles. These apply whether you're asking for a recipe, debugging code, or drafting a business plan.</p>
+
+  <h3>1. Specificity beats cleverness</h3>
+  <p class="reveal">You don't need fancy wording or "magic phrases" to get good results. You need precision. Replace abstract words like "good," "better," or "professional" with concrete descriptions — word count, tone, audience, structure, and purpose.</p>
+
+  <h3>2. Context changes everything</h3>
+  <p class="reveal">The same question can need a completely different answer depending on who's asking and why. "Explain inflation" to a curious teenager needs a different answer than "explain inflation" for a finance student preparing for an exam. Tell the AI who the answer is for.</p>
+
+  <h3>3. Format requests save you editing time</h3>
+  <p class="reveal">If you need a table, say table. If you need bullet points under 10 words each, say that. If you want a specific structure — intro, three sections, conclusion — describe it. AI tools are very good at following format instructions when you actually give them.</p>
+
+  <h3>4. Constraints sharpen the output</h3>
+  <p class="reveal">Telling the AI what to avoid is just as useful as telling it what to include. "Don't use jargon," "keep it under 200 words," "no exclamation marks," or "avoid mentioning competitors" all narrow the output toward exactly what you need.</p>
+
+  <h3>5. Iteration is part of the process, not a failure</h3>
+  <p class="reveal">Treat the first response as a rough draft. Instead of starting over with a brand-new prompt, refine within the same conversation: "make it shorter," "add a real-world example," "make the tone less formal." The AI retains context, so each follow-up gets sharper.</p>
+
+  <h2 id="formula"><span class="h2-num">04</span>A Simple Formula You Can Reuse</h2>
+  <p class="reveal">Here's a structure that works for almost any request, from emails to code to creative writing. You don't need to use every line every time, but the more boxes you fill, the better your result will be.</p>
+
+  <div class="formula-box reveal">
+<span class="lbl">Prompt Formula</span>
+ROLE: Act as a [specific expert or persona]
+TASK: [exact action you want — write, summarize, explain, fix, compare]
+CONTEXT: [who it's for, why you need it, relevant background]
+FORMAT: [length, structure, tone, style]
+CONSTRAINTS: [what to avoid, what to prioritize]
+EXAMPLE: [optional — one sample of the style or output you want]
+  </div>
+
+  <p class="reveal">You don't need to label each line in your actual prompt — once you've practiced this a few times, it becomes natural to fold all of this into a couple of sentences. The labels are just training wheels until the structure becomes second nature.</p>
+
+  <h2 id="examples"><span class="h2-num">05</span>Before & After: Real Prompt Examples</h2>
+  <p class="reveal">Seeing the difference side by side makes this much easier to apply. Here are three common requests, rewritten using the formula above.</p>
+
+  <div class="tbl-wrap reveal">
+    <table class="tool-table">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Weak Prompt</th>
+          <th>Stronger Prompt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Email</strong></td>
+          <td>"Write an email to my boss about a deadline."</td>
+          <td>"Write a short, polite email to my manager explaining that the Q3 report will be 2 days late due to a vendor delay, and proposing a new delivery date. Keep it under 100 words, professional but not overly formal."</td>
+        </tr>
+        <tr>
+          <td><strong>Learning</strong></td>
+          <td>"Explain quantum computing."</td>
+          <td>"Explain quantum computing to a high school student with no physics background, using a simple real-world analogy. Keep it under 150 words and avoid technical jargon."</td>
+        </tr>
+        <tr>
+          <td><strong>Coding</strong></td>
+          <td>"Fix my code."</td>
+          <td>"Here's a Python function that should sort a list of dictionaries by date, but it's throwing a TypeError. Explain what's causing the error in plain English, then show the corrected code with comments."</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="reveal">Notice that the stronger prompts aren't longer because they're padded with filler — every extra word is doing real work, narrowing down exactly what "good" looks like for that specific situation.</p>
+
+  <h2 id="mistakes"><span class="h2-num">06</span>Common Mistakes That Quietly Ruin Prompts</h2>
+  <p class="reveal">Even people who've used AI tools for months tend to repeat a handful of habits that limit their results. Here are the most common ones we see.</p>
+
+  <ul class="reveal">
+    <li><strong>Being too vague:</strong> "Make this better" gives the AI no direction on what "better" means — faster, shorter, friendlier, more persuasive? Be explicit.</li>
+    <li><strong>Stacking too many tasks in one prompt:</strong> Asking for a blog post, a summary, three headline options, and an image description all at once often produces a rushed, shallow result for each part. Break complex requests into steps.</li>
+    <li><strong>Forgetting the audience:</strong> Skipping who the content is for is one of the single biggest reasons answers feel generic.</li>
+    <li><strong>Not correcting course:</strong> If the first answer misses the mark, many people abandon the tool instead of simply saying "this is too formal, try again with a casual tone."</li>
+    <li><strong>Assuming the AI remembers things it doesn't:</strong> In a fresh chat, the AI knows nothing about your business, your previous conversations, or your preferences unless you restate them.</li>
+    <li><strong>Treating every AI tool the same way:</strong> Copy-pasting the exact same prompt across different tools ignores that each one has slightly different strengths.</li>
+  </ul>
+
+  <div class="trivia-box reveal">
+    <div class="trivia-icon">i</div>
+    <div>
+      <h4>A Useful Mental Model</h4>
+      <p>Think of prompting like briefing a smart new freelancer on their first day. They're capable, but they know nothing about your preferences, your audience, or your standards yet. The more useful context you hand over up front, the less back-and-forth you'll need later.</p>
+    </div>
+  </div>
+
+  <h2 id="advanced"><span class="h2-num">07</span>Advanced Techniques Worth Knowing</h2>
+  <p class="reveal">Once the basics feel natural, a few more advanced techniques can noticeably improve results on harder tasks.</p>
+
+  <h3>Role prompting</h3>
+  <p class="reveal">Asking the AI to "act as" a specific role — a copywriter, a career coach, a senior software engineer, a skeptical editor — shifts the tone, vocabulary, and depth of the response toward that perspective. It's one of the simplest ways to instantly improve relevance.</p>
+
+  <h3>Few-shot examples</h3>
+  <p class="reveal">Instead of describing the style you want in words, paste one or two examples of writing you like and ask the AI to match that voice. This works especially well for things like product descriptions, social captions, or matching a brand's existing tone.</p>
+
+  <h3>Step-by-step reasoning</h3>
+  <p class="reveal">For math, logic, or multi-step decisions, asking the AI to "think through this step by step before giving a final answer" often produces more accurate results than asking for the answer directly, because it forces the model to reason through intermediate steps instead of jumping to a guess.</p>
+
+  <h3>Asking the AI to ask you questions</h3>
+  <p class="reveal">For complex or ambiguous tasks, try ending your prompt with: "Before you answer, ask me any clarifying questions you need." This flips the dynamic — instead of guessing your intent, the AI gathers the missing context first.</p>
+
+  <h2 id="tool-specific"><span class="h2-num">08</span>Do Different AI Tools Need Different Prompts?</h2>
+  <p class="reveal">The core formula works everywhere, but small adjustments help depending on the tool. ChatGPT tends to respond well to very explicit formatting instructions and numbered constraints. Gemini, with its real-time web access, performs best when you explicitly ask it to pull current information rather than assuming it will by default. Claude tends to produce its most natural writing when you describe tone and audience in plain language rather than rigid rules, and it's particularly strong with long documents — feeding it a full draft and asking for a structural edit usually beats asking it to write from scratch.</p>
+
+  <p class="reveal">If you're curious how these models actually process your prompt behind the scenes, it's worth understanding <a href="https://nyvoraai.github.io/blog/how-does-ai-detect-spam-emails.html">how AI systems classify and interpret text patterns</a> more broadly — the same underlying pattern-recognition is part of what makes prompt phrasing so influential on the output you get.</p>
+
+  <h2 id="how-to-practice"><span class="h2-num">09</span>How to Actually Get Better at This</h2>
+  <p class="reveal">Like any skill, prompt writing improves with deliberate practice, not just exposure. Here's a simple way to build the habit.</p>
+
+  <div class="steps reveal">
+    <div class="step"><div class="step-num">1</div><div class="step-body"><h3>Keep a "prompt journal"</h3><p>Save prompts that worked unusually well in a notes app. Over time you'll notice patterns in what actually moves the needle for your specific use cases.</p></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body"><h3>Rewrite one prompt a day</h3><p>Take any request you'd normally type in five words and rewrite it using the role, task, context, format, constraints structure. It takes thirty extra seconds and trains the habit fast.</p></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-body"><h3>Compare outputs side by side</h3><p>Run the same task as a vague prompt and a detailed prompt in two separate chats. Seeing the gap firsthand is the fastest way to internalize why detail matters.</p></div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-body"><h3>Build a personal template library</h3><p>Once you find phrasing that consistently works for emails, summaries, or creative writing, save it as a reusable template you can tweak instead of starting from scratch every time.</p></div></div>
+  </div>
+
+  <p class="reveal">It's also worth experimenting with creative, less obvious use cases to stretch your prompting skills. For instance, you can explore <a href="https://nyvoraai.github.io/blog/how-does-ai-compose-music.html">how AI tools approach composing music</a> from a structured prompt — it's a great way to see how far detailed instructions can push an AI model outside of plain text writing.</p>
+
+  <div class="trivia-box reveal">
+    <div class="trivia-icon">i</div>
+    <div>
+      <h4>One Habit That Changes Everything</h4>
+      <p>Before hitting send on any prompt, pause and ask yourself: "If a new freelancer received only this message and nothing else, would they know exactly what I want?" If the answer is no, you're missing context the AI needs too.</p>
+    </div>
+  </div>
+
+  <h2 id="faq"><span class="h2-num">10</span>Frequently Asked Questions</h2>
+  <div class="faq reveal">
+    <details open>
+      <summary>What makes an AI prompt good?</summary>
+      <div class="faq-body">A good AI prompt is specific, gives context, states the format you want, and includes examples when possible. Vague prompts produce vague answers, while clear, detailed prompts produce useful, focused ones.</div>
+    </details>
+    <details>
+      <summary>How long should a good prompt be?</summary>
+      <div class="faq-body">There is no fixed length. Simple tasks need only a sentence, while complex tasks benefit from a few short paragraphs covering goal, context, format, and constraints. Length matters less than clarity.</div>
+    </details>
+    <details>
+      <summary>Do different AI tools need different prompting styles?</summary>
+      <div class="faq-body">The core principles are the same across ChatGPT, Claude, and Gemini, but each tool responds slightly differently to tone, structure, and length, so light adjustments per tool can improve results.</div>
+    </details>
+    <details>
+      <summary>Can better prompts really change the quality of AI answers?</summary>
+      <div class="faq-body">Yes. The same AI model can produce a generic answer or an excellent one depending entirely on how the question is framed, because the prompt is the only information the model has to work with.</div>
+    </details>
+    <details>
+      <summary>Is prompt engineering still useful in 2026?</summary>
+      <div class="faq-body">Yes, even as AI models get smarter and more forgiving of vague input, clear prompting still produces faster, more accurate, and more personalized results, especially for complex or multi-step tasks.</div>
+    </details>
+  </div>
+
+  <h2 id="conclusion"><span class="h2-num">11</span>Conclusion</h2>
+  <p class="reveal">Writing better prompts isn't about memorizing tricks or finding some secret phrase that unlocks a smarter AI. It's about communicating clearly — telling the model exactly what you want, who it's for, and what it should look like, the same way you'd brief a capable colleague on their first day. Once you internalize the formula of role, task, context, format, and constraints, it stops feeling like a checklist and starts feeling like second nature.</p>
+
+  <p class="reveal">Start small. Pick one prompt you'd normally type in a handful of words, slow down, and add the context you'd naturally assume the AI already knows. You'll likely notice the difference in the very first response. From there, it's just repetition — and within a week or two, writing a sharp, effective prompt will take you no longer than typing a lazy one ever did.</p>
+
+  <div class="author-box reveal">
+    <div class="meta-avatar" style="width:42px;height:42px;font-size:15px">V<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by Varun Lalwani</h3>
+      <p>Varun writes practical, beginner-friendly guides on AI tools and prompt engineering for NyvoraAI. This guide was updated in June 2026 based on hands-on testing across ChatGPT, Claude, and Gemini. Have a question about prompting? <a href="https://nyvoraai.github.io/contact.html">Contact us</a>—we're here to help!</p>
+    </div>
+  </div>
+
+  <div class="share-section reveal">
+    <div class="share-title">Found this useful? Share it with someone still typing one-word prompts!</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=How+to+Write+Better+Prompts+for+AI+Tools+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/blog/how-to-write-better-prompts-for-ai-tools.html" target="_blank" rel="noopener" class="share-btn">Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/blog/how-to-write-better-prompts-for-ai-tools.html" target="_blank" rel="noopener" class="share-btn">Share on Facebook</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nyvoraai.github.io/blog/how-to-write-better-prompts-for-ai-tools.html" target="_blank" rel="noopener" class="share-btn">Share on LinkedIn</a>
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="share-btn">Follow on Instagram</a>
+      <button class="share-btn" onclick="copyLink()">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="newsletter reveal">
+    <h2>Get AI guides & prompt tips weekly</h2>
+    <p>Join thousands of readers getting practical AI tool guides, prompt formulas, and productivity tips from NyvoraAI.</p>
+    <form class="nl-form" action="https://formspree.io/f/xwvjgdpw" method="POST" onsubmit="handleNewsletter(event,this)">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required/>
+      <button class="nl-btn" type="submit">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · 100% free</p>
+    <div class="nl-social">
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc">Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc">X / Twitter</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc">YouTube</a>
+    </div>
+  </div>
+
+  <div class="related reveal">
+    <div class="related-title">More AI Guides</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/blog/how-does-ai-detect-spam-emails.html" class="rel-card">
+        <div class="rel-tag">How AI Works</div>
+        <div class="rel-title">How Does AI Detect Spam Emails?</div>
+        <div class="rel-read">8 min read</div>
+      </a>
+      <a href="https://nyvoraai.github.io/blog/what-is-generative-vs-discriminative-ai.html" class="rel-card">
+        <div class="rel-tag">AI Basics</div>
+        <div class="rel-title">Generative vs. Discriminative AI Explained</div>
+        <div class="rel-read">9 min read</div>
+      </a>
+      <a href="https://nyvoraai.github.io/blog/how-does-ai-compose-music.html" class="rel-card">
+        <div class="rel-tag">Creative AI</div>
+        <div class="rel-title">How Does AI Compose Music?</div>
+        <div class="rel-read">7 min read</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<!-- FOOTER (ANIMATED + COLORFUL) -->
+<footer>
+  <div class="footer-aura footer-aura-1"></div>
+  <div class="footer-aura footer-aura-2"></div>
+  <div class="footer-aura footer-aura-3"></div>
+  <div class="footer-aura footer-aura-4"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">
+        <img src="https://nyvoraai.github.io/logo.svg" alt="" class="logo-img" onerror="this.style.display='none'"/>
+        Nyvora<span class="accent">AI</span>
+      </span>
+      <p>Your trusted source for original AI news, beginner guides, deep dives, and practical insights on artificial intelligence. Built for the AI generation.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn">Facebook</a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn">X</a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Topics</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">AI News</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">For Beginners</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">AI Tools</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Guides</a></li>
+        <li><a href="https://nyvoraai.github.io/blog.html">Tool Reviews</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+        <li><a href="https://nyvoraai.github.io/rss.xml">RSS Feed</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+      <a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /page-wrap -->
+
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">^</button>
+
+<div id="side-popup" role="dialog" aria-label="Subscribe to NyvoraAI">
+  <button class="sp-close" onclick="closePopup()" aria-label="Close">x</button>
+  <div class="sp-icon">AI</div>
+  <div class="sp-title">Weekly AI guides</div>
+  <div class="sp-text">Get the best beginner-friendly AI explainers delivered free every week.</div>
+  <form id="sp-form" action="https://formspree.io/f/xwvjgdpw" method="POST" onsubmit="handlePopupSubmit(event,this)">
+    <input class="sp-input" type="email" name="email" placeholder="your@email.com" required/>
+    <button class="sp-btn" type="submit">Get free guides</button>
+  </form>
+  <div class="sp-note">No spam · Unsubscribe anytime</div>
+</div>
+
+<script>
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  const f=document.getElementById('starField');
+  for(let i=0;i<120;i++){
+    const s=document.createElement('div');
+    s.className='star';
+    const sz=Math.random()*1.8+0.4;
+    s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${2+Math.random()*4}s;animation-delay:${-Math.random()*4}s;opacity:${0.1+Math.random()*0.5}`;
+    f.appendChild(s);
+  }
+})();
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  const w=document.getElementById('orbField');
+  const colors=['rgba(0,212,255,0.5)','rgba(123,94,167,0.5)','rgba(0,229,160,0.4)'];
+  for(let i=0;i<12;i++){
+    const o=document.createElement('div');
+    o.className='orb';
+    const sz=3+Math.random()*6;
+    const dur=12+Math.random()*16;
+    const delay=-Math.random()*dur;
+    o.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;background:${colors[i%3]};filter:blur(1px);animation-duration:${dur}s;animation-delay:${delay}s;box-shadow:0 0 ${sz*2}px ${colors[i%3]}`;
+    w.appendChild(o);
+  }
+})();
+
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const pct=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  document.getElementById('progress').style.width=pct+'%';
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+  if(pct>40 && !popupClosed && !popupShown){
+    popupShown=true;
+    setTimeout(()=>document.getElementById('side-popup').classList.add('show'),400);
+  }
+});
+
+const reveals=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});
+},{threshold:.1});
+reveals.forEach(r=>io.observe(r));
+
+function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open')}
+
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(()=>{
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;
+    const o=btn.textContent;
+    btn.textContent='Copied!';
+    btn.style.color='var(--green)';
+    setTimeout(()=>{btn.textContent=o;btn.style.color='';},2000);
+  });
+}
+
+function handleNewsletter(e,form){
+  e.preventDefault();
+  const btn=form.querySelector('.nl-btn');
+  btn.textContent='Sending...';
+  btn.style.opacity='.7';
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{
+      if(r.ok){
+        btn.textContent='Subscribed!';
+        btn.style.background='var(--green)';
+        form.reset();
+      } else {
+        btn.textContent='Try again';
+        btn.style.opacity='1';
+      }
+    })
+    .catch(()=>{btn.textContent='Try again';btn.style.opacity='1';});
+}
+
+let popupShown=false,popupClosed=false;
+function closePopup(){
+  document.getElementById('side-popup').classList.remove('show');
+  popupClosed=true;
+}
+function handlePopupSubmit(e,form){
+  e.preventDefault();
+  const btn=form.querySelector('.sp-btn');
+  btn.textContent='Sending...';
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{
+      if(r.ok){
+        document.getElementById('side-popup').innerHTML='<div style="padding:8px 0;text-align:center"><div style="font-family:var(--font-mono);font-size:12px;color:var(--green);font-weight:700;margin-bottom:6px">Subscribed!</div><div style="font-size:12px;color:var(--text-3)">Check your inbox soon.</div></div>';
+        setTimeout(closePopup,2400);
+      } else {
+        btn.textContent='Try again';
+      }
+    })
+    .catch(()=>{btn.textContent='Try again';});
+}
+setTimeout(()=>{
+  if(!popupShown && !popupClosed){
+    popupShown=true;
+    document.getElementById('side-popup').classList.add('show');
+  }
+},8000);
+</script>
+</body>
+</html>
