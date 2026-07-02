@@ -6,7 +6,14 @@
 <description>Latest AI news, beginner guides, and explainers from NyvoraAI.</description>
 <language>en-us</language>
 <atom:link href="https://nyvoraai.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 01 Jul 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 02 Jul 2026 00:00:00 GMT</lastBuildDate>
+<item>
+<title>What Is a Foundation Model in AI? Explained 2026</title>
+<link>https://nyvoraai.github.io/ai-news/what-is-a-foundation-model-in-ai.html</link>
+<guid isPermaLink="true">https://nyvoraai.github.io/ai-news/what-is-a-foundation-model-in-ai.html</guid>
+<pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+<description>What is a foundation model in AI? We explain what they are, how they work, real examples like GPT and Llama, and why they matter — in plain English.</description>
+</item>
 <item>
 <title>What Does Open Source LLM Mean? Simply Explained</title>
 <link>https://nyvoraai.github.io/ai-news/what-does-open-source-llm-mean.html</link>
