@@ -139,7 +139,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Why Do LLMs Hallucinate Facts? The Truth Behind AI Lies](https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html): Discover why LLMs hallucinate facts — from training limitations to probability patterns. Learn how AI hallucinations happen and how to reduce them in 2026.
 - [Why Was Fable 5 Banned? The Real Story Explained](https://nyvoraai.github.io/ai-news/why-was-fable-5-banned.html): Why was Claude Fable 5 banned? The real story: a 'fix this code' prompt, a same-day export order, and 300+ security experts demanding it be reversed.
 
-## Blog (55 articles)
+## Blog (56 articles)
 
 - [AI vs Machine Learning: Key Differences Explained (2026)](https://nyvoraai.github.io/blog/ai-vs-machine-learning-difference.html): Confused about AI vs machine learning? Learn the real differences, how they work together, and which one powers your favorite apps. Simple guide for beginners.
 - [Best AI App for Phone Users in 2026 (Tested & Ranked)](https://nyvoraai.github.io/blog/best-ai-app-for-phone-users.html): Discover the best AI app for phone users in 2026. We tested ChatGPT, Gemini, Claude & more on mobile. Find which AI app fits your needs with our honest comparison.
@@ -166,6 +166,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [How to Use AI for Freelance Writing Jobs (2026)](https://nyvoraai.github.io/blog/how-to-use-ai-for-freelance-writing-jobs.html): A practical guide to using AI for freelance writing jobs — pitching, drafting, editing, and pricing faster without losing your voice or your clients' trust.
 - [How to Use AI for SEO Keyword Research (2026)](https://nyvoraai.github.io/blog/how-to-use-ai-for-seo-keyword-research.html): How to use AI for SEO keyword research step by step. Find better keywords faster, spot gaps your competitors miss, and rank higher.
 - [How to Use AI to Create YouTube Content (2026 Guide)](https://nyvoraai.github.io/blog/how-to-use-ai-to-create-youtube-content.html): Learn how to use AI to create YouTube content, from scripts and thumbnails to SEO, voiceover, and editing. Save hours every week.
+- [How to Use AI to Improve Your Resume](https://nyvoraai.github.io/blog/how-to-use-ai-to-improve-your-resume.html): Learn how to use AI to improve your resume, fix weak bullet points, tailor for any job, and pass ATS filters, step by step with examples.
 - [How to Use AI to Learn a New Skill Faster](https://nyvoraai.github.io/blog/how-to-use-ai-to-learn-a-new-skill-faster.html): Want to learn a new skill faster with AI? A practical, step-by-step guide to using AI tools to study smarter, practice better, and stay on track.
 - [How to Use AI to Study for Exams (2026 Guide)](https://nyvoraai.github.io/blog/how-to-use-ai-to-study-for-exams.html): A practical guide on how to use AI to study for exams — flashcards, summaries, practice questions, and study plans. Real tips that actually save time.
 - [How to Use AI to Write Blog Posts Faster](https://nyvoraai.github.io/blog/how-to-use-ai-to-write-blog-posts-faster.html): Learn how to use AI to write blog posts faster with a real workflow, prompts, and tools that keep your content human, helpful, and Google-ready.
