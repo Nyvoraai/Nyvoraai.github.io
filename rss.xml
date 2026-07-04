@@ -6,7 +6,14 @@
 <description>Latest AI news, beginner guides, and explainers from NyvoraAI.</description>
 <language>en-us</language>
 <atom:link href="https://nyvoraai.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 03 Jul 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 04 Jul 2026 00:00:00 GMT</lastBuildDate>
+<item>
+<title>Is Claude AI Better Than ChatGPT for Writing?</title>
+<link>https://nyvoraai.github.io/blog/is-claude-ai-better-than-chatgpt-for-writing.html</link>
+<guid isPermaLink="true">https://nyvoraai.github.io/blog/is-claude-ai-better-than-chatgpt-for-writing.html</guid>
+<pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+<description>Is Claude AI better than ChatGPT for writing? An honest, side-by-side comparison of tone, editing, creativity, and accuracy to help you choose.</description>
+</item>
 <item>
 <title>How to Automate Your Email Replies with AI</title>
 <link>https://nyvoraai.github.io/blog/how-to-automate-your-email-replies-with-ai.html</link>
