@@ -139,7 +139,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Why Do LLMs Hallucinate Facts? The Truth Behind AI Lies](https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html): Discover why LLMs hallucinate facts — from training limitations to probability patterns. Learn how AI hallucinations happen and how to reduce them in 2026.
 - [Why Was Fable 5 Banned? The Real Story Explained](https://nyvoraai.github.io/ai-news/why-was-fable-5-banned.html): Why was Claude Fable 5 banned? The real story: a 'fix this code' prompt, a same-day export order, and 300+ security experts demanding it be reversed.
 
-## Blog (64 articles)
+## Blog (65 articles)
 
 - [AI vs Machine Learning: Key Differences Explained (2026)](https://nyvoraai.github.io/blog/ai-vs-machine-learning-difference.html): Confused about AI vs machine learning? Learn the real differences, how they work together, and which one powers your favorite apps. Simple guide for beginners.
 - [Best AI App for Phone Users in 2026 (Tested & Ranked)](https://nyvoraai.github.io/blog/best-ai-app-for-phone-users.html): Discover the best AI app for phone users in 2026. We tested ChatGPT, Gemini, Claude & more on mobile. Find which AI app fits your needs with our honest comparison.
@@ -183,6 +183,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Is AI Hard to Learn for Beginners? Honest Answer 2026](https://nyvoraai.github.io/blog/is-ai-hard-to-learn-for-beginners.html): Wondering if AI is hard to learn for beginners? Get an honest answer, realistic timeline, and proven strategies to start your AI journey today.
 - [Is ChatGPT Free? How to Sign Up in 2026 (Full Guide)](https://nyvoraai.github.io/blog/is-chatgpt-free-how-to-sign-up.html): Is ChatGPT free and how do I sign up? Get the full truth about ChatGPT pricing, what's free vs paid, and a step-by-step signup guide for beginners.
 - [Is Claude AI Better Than ChatGPT for Writing?](https://nyvoraai.github.io/blog/is-claude-ai-better-than-chatgpt-for-writing.html): Is Claude AI better than ChatGPT for writing? An honest, side-by-side comparison of tone, editing, creativity, and accuracy to help you choose.
+- [Is Perplexity AI Good for Research? 2026 Review](https://nyvoraai.github.io/blog/is-perplexity-ai-good-for-research.html): Is Perplexity AI good for research? An honest 2026 review of its citations, accuracy, and how it stacks up against Google, ChatGPT, and Scholar.
 - [Perplexity AI vs Google for Research (2026)](https://nyvoraai.github.io/blog/how-to-use-perplexity-ai-vs-google-for-research.html): How to use Perplexity AI vs Google for research. See what each tool does best and exactly when to switch between them for faster, smarter results.
 - [Step-by-Step Guide to Using AI for Social Media](https://nyvoraai.github.io/blog/step-by-step-guide-to-using-ai-for-social-media.html): A step-by-step guide to using AI for social media — from content ideas to captions, scheduling, and analytics. Practical tips for beginners and creators.
 - [What AI Tools Are Completely Free in 2026? (Tested)](https://nyvoraai.github.io/blog/what-ai-tools-are-completely-free-2026.html): Discover the best AI tools that are completely free in 2026. No hidden fees, no credit cards. Test ChatGPT, Gemini, Claude & more with our expert guide.
