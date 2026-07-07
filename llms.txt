@@ -139,7 +139,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Why Do LLMs Hallucinate Facts? The Truth Behind AI Lies](https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html): Discover why LLMs hallucinate facts — from training limitations to probability patterns. Learn how AI hallucinations happen and how to reduce them in 2026.
 - [Why Was Fable 5 Banned? The Real Story Explained](https://nyvoraai.github.io/ai-news/why-was-fable-5-banned.html): Why was Claude Fable 5 banned? The real story: a 'fix this code' prompt, a same-day export order, and 300+ security experts demanding it be reversed.
 
-## Blog (89 articles)
+## Blog (90 articles)
 
 - [AI vs Machine Learning: Key Differences Explained (2026)](https://nyvoraai.github.io/blog/ai-vs-machine-learning-difference.html): Confused about AI vs machine learning? Learn the real differences, how they work together, and which one powers your favorite apps. Simple guide for beginners.
 - [Best AI App for Phone Users in 2026 (Tested & Ranked)](https://nyvoraai.github.io/blog/best-ai-app-for-phone-users.html): Discover the best AI app for phone users in 2026. We tested ChatGPT, Gemini, Claude & more on mobile. Find which AI app fits your needs with our honest comparison.
@@ -186,6 +186,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Is Adobe Firefly Better Than Midjourney? (2026)](https://nyvoraai.github.io/blog/is-adobe-firefly-better-than-midjourney.html): Is Adobe Firefly better than Midjourney? An honest, side-by-side comparison of image quality, commercial use, pricing, and which tool fits your workflow in 2026.
 - [Is AI Good or Bad for Education?](https://nyvoraai.github.io/blog/is-ai-good-or-bad-for-education.html): Is AI good or bad for education? A balanced look at the research on both sides, real classroom benefits, and genuine risks for students.
 - [Is AI Hard to Learn for Beginners? Honest Answer 2026](https://nyvoraai.github.io/blog/is-ai-hard-to-learn-for-beginners.html): Wondering if AI is hard to learn for beginners? Get an honest answer, realistic timeline, and proven strategies to start your AI journey today.
+- [Is AI in Hiring Fair to Job Seekers? The 2026 Truth](https://nyvoraai.github.io/blog/is-ai-in-hiring-fair-to-job-seekers.html): Is AI in hiring fair to job seekers? We uncover the truth about algorithmic bias, resume screening, and how to beat the AI hiring bots in 2026.
 - [Is AI Making Us Less Creative? (Honest Answer)](https://nyvoraai.github.io/blog/is-ai-making-us-less-creative.html): Is AI making us less creative? An honest, human-written look at what the evidence says, what we're actually losing, and why the answer is more complicated than you think.
 - [Is AI the Biggest Invention Since the Internet?](https://nyvoraai.github.io/blog/is-ai-the-biggest-invention-since-the-internet.html): Is AI the biggest invention since the internet? We compare the AI revolution to the dot-com boom, exploring its impact, risks, and future potential.
 - [Is Canva AI Good for Design Beginners?](https://nyvoraai.github.io/blog/is-canva-ai-good-for-design-beginners.html): Is Canva AI good for design beginners? An honest review of Magic Studio's features, pricing, and how easy it really is to learn.
