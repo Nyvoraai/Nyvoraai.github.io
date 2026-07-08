@@ -139,7 +139,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Why Do LLMs Hallucinate Facts? The Truth Behind AI Lies](https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html): Discover why LLMs hallucinate facts — from training limitations to probability patterns. Learn how AI hallucinations happen and how to reduce them in 2026.
 - [Why Was Fable 5 Banned? The Truth Behind the Myth](https://nyvoraai.github.io/ai-news/why-was-fable-5-banned.html): Was Fable 5 actually banned? We investigate the rumors, uncover the truth, and explore how AI hallucinations spread fake gaming and tech controversies.
 
-## Blog (95 articles)
+## Blog (96 articles)
 
 - [AI vs Machine Learning: Key Differences Explained (2026)](https://nyvoraai.github.io/blog/ai-vs-machine-learning-difference.html): Confused about AI vs machine learning? Learn the real differences, how they work together, and which one powers your favorite apps. Simple guide for beginners.
 - [Best AI App for Phone Users in 2026 (Tested & Ranked)](https://nyvoraai.github.io/blog/best-ai-app-for-phone-users.html): Discover the best AI app for phone users in 2026. We tested ChatGPT, Gemini, Claude & more on mobile. Find which AI app fits your needs with our honest comparison.
@@ -203,6 +203,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Is Synthesia AI Good for Making Videos? (2026)](https://nyvoraai.github.io/blog/is-synthesia-ai-good-for-making-videos.html): Is Synthesia AI good for making videos? An honest review of its avatars, pricing, and limits to help you decide if it fits your workflow.
 - [Perplexity AI vs Google for Research (2026)](https://nyvoraai.github.io/blog/how-to-use-perplexity-ai-vs-google-for-research.html): How to use Perplexity AI vs Google for research. See what each tool does best and exactly when to switch between them for faster, smarter results.
 - [Should Children Learn AI Skills in School? (2026 Guide)](https://nyvoraai.github.io/blog/should-children-learn-ai-skills-in-school.html): Should children learn AI skills in school? Explore the benefits, challenges, and future of AI education for kids in our comprehensive 2026 guide.
+- [Should Social Media Use AI to Filter Content?](https://nyvoraai.github.io/blog/should-social-media-use-ai-to-filter-content.html): Should social media use AI to filter content? We explore the pros, cons, and future of algorithmic moderation and digital free speech.
 - [Should You Disclose AI Writing? The 2026 Truth](https://nyvoraai.github.io/blog/should-you-tell-people-when-you-use-ai-to-write.html): Should you tell people when you use AI to write? Explore the ethics, transparency, and real-world rules of AI disclosure in content creation today.
 - [Should You Trust AI for Medical Advice? (2026)](https://nyvoraai.github.io/blog/should-you-trust-ai-for-medical-advice.html): Should you trust AI for medical advice? Discover the risks, benefits, and why human doctors remain essential in the age of AI healthcare.
 - [Step-by-Step Guide to Using AI for Social Media](https://nyvoraai.github.io/blog/step-by-step-guide-to-using-ai-for-social-media.html): A step-by-step guide to using AI for social media — from content ideas to captions, scheduling, and analytics. Practical tips for beginners and creators.
