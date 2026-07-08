@@ -139,7 +139,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Why Do LLMs Hallucinate Facts? The Truth Behind AI Lies](https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html): Discover why LLMs hallucinate facts — from training limitations to probability patterns. Learn how AI hallucinations happen and how to reduce them in 2026.
 - [Why Was Fable 5 Banned? The Truth Behind the Myth](https://nyvoraai.github.io/ai-news/why-was-fable-5-banned.html): Was Fable 5 actually banned? We investigate the rumors, uncover the truth, and explore how AI hallucinations spread fake gaming and tech controversies.
 
-## Blog (101 articles)
+## Blog (102 articles)
 
 - [AI vs Machine Learning: Key Differences Explained (2026)](https://nyvoraai.github.io/blog/ai-vs-machine-learning-difference.html): Confused about AI vs machine learning? Learn the real differences, how they work together, and which one powers your favorite apps. Simple guide for beginners.
 - [Are AI Chatbots Making People More Lonely? (2026)](https://nyvoraai.github.io/blog/are-ai-chatbots-making-people-more-lonely.html): Are AI chatbots making people more lonely? We explore the psychology of AI companions, the illusion of connection, and the impact on mental health.
@@ -242,6 +242,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Will AI Ever Replace Human Therapists? (2026)](https://nyvoraai.github.io/blog/will-ai-ever-replace-human-therapists.html): Will AI ever replace human therapists? We explore the rise of AI mental health apps, their benefits, limitations, and the future of digital therapy.
 - [Will AI Make Search Engines Obsolete? (2026)](https://nyvoraai.github.io/blog/will-ai-make-search-engines-obsolete.html): Will AI make search engines obsolete? Discover how AI search is changing the web, why Google isn't dying, and the future of discovery.
 - [Will AI Replace Content Writers in 2026? Full Analysis](https://nyvoraai.github.io/blog/will-ai-replace-content-writers-in-2026.html): Will AI replace content writers in 2026? An honest, data-backed look at which writing jobs are at risk and which are actually growing.
+- [Will AI Replace Programmers in the Future? (2026)](https://nyvoraai.github.io/blog/will-ai-replace-programmers-in-the-future.html): Will AI replace programmers in the future? We explore the reality of AI coding tools, the death of the junior dev, and the future of software engineering.
 
 ## Optional
 
