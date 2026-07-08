@@ -1,1212 +1,1060 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
-
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>How Many Parameters Does ChatGPT Have? (2026 Guide)</title>
-  <meta name="description" content="How many parameters does ChatGPT have? Discover GPT-3, GPT-4 & ChatGPT parameter counts, what they mean & why size matters. Updated 2026."/>
-  <meta name="keywords" content="how many parameters does ChatGPT have, ChatGPT parameters, GPT-4 parameters, GPT-3 parameters, AI model size, LLM parameters explained"/>
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <link rel="canonical" href="https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html"/>
-  <link rel="icon" type="image/svg+xml" href="../logo.svg"/>
-  <link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>How Many Parameters Does ChatGPT Have? (2026 Guide)</title>
+<meta name="description" content="Discover how many parameters ChatGPT has across GPT-3.5, GPT-4, and GPT-4o. Learn what parameters mean and how they affect AI performance."/>
+<meta name="keywords" content="how many parameters does ChatGPT have, ChatGPT parameters, GPT-4 parameter count, GPT-3.5 parameters, AI model size, LLM parameters 2026"/>
+<meta name="author" content="Varun Lalwani"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#EFF1EA"/>
+<!-- GEO / AEO -->
+<meta name="geo.region" content="US"/>
+<meta name="geo.placename" content="United States"/>
+<meta name="ICBM" content="37.09024, -95.712891"/>
+<!-- Favicons -->
+<link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
 <link rel="icon" type="image/png" href="https://nyvoraai.github.io/favicon-32x32.png"/>
 <link rel="apple-touch-icon" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
+<!-- RSS Feed (Backend) -->
+<link rel="alternate" type="application/rss+xml" title="NyvoraAI RSS Feed" href="https://nyvoraai.github.io/rss.xml"/>
+<link rel="canonical" href="https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How Many Parameters Does ChatGPT Have? (2026 Guide)"/>
+<meta property="og:description" content="Discover how many parameters ChatGPT has across GPT-3.5, GPT-4, and GPT-4o. Learn what parameters mean and how they affect AI performance."/>
+<meta property="og:url" content="https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/chatgpt-parameters-banner.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-06-30T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-06-30T00:00:00Z"/>
+<meta property="article:section" content="AI News"/>
+<meta property="article:tag" content="ChatGPT, GPT-4, Parameters, LLM Size, OpenAI, AI Architecture"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:creator" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="How Many Parameters Does ChatGPT Have? (2026 Guide)"/>
+<meta name="twitter:description" content="Ever wondered about the brain size of ChatGPT? We break down the exact parameter counts for GPT-3.5, GPT-4, and GPT-4o."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/chatgpt-parameters-banner.jpg"/>
+<!-- Schema: Organization -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":"https://nyvoraai.github.io/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai"]}</script>
+<!-- Schema: WebSite -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"NyvoraAI","url":"https://nyvoraai.github.io","publisher":{"@type":"Organization","name":"NyvoraAI"}}</script>
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.github.io/ai-news.html"},{"@type":"ListItem","position":3,"name":"How Many Parameters Does ChatGPT Have","item":"https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html"}]}</script>
+<!-- Schema: Article -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How Many Parameters Does ChatGPT Have? Complete 2026 Guide","description":"An honest, detailed breakdown of how many parameters ChatGPT has, including GPT-3.5, GPT-4, and GPT-4o, and what those numbers actually mean for AI performance.","image":"https://nyvoraai.github.io/assets/chatgpt-parameters-banner.jpg","datePublished":"2026-06-30","dateModified":"2026-06-30","inLanguage":"en-US","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html"},"articleSection":"AI News","keywords":"how many parameters does ChatGPT have, GPT-4 parameters, ChatGPT size","timeRequired":"PT22M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}</script>
+<!-- Schema: FAQPage (AEO) -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many parameters does ChatGPT have?","acceptedAnswer":{"@type":"Answer","text":"The exact parameter count depends on the version. GPT-3.5 has approximately 175 billion parameters. GPT-4 is widely rumored to be a Mixture of Experts (MoE) model with around 1.8 trillion total parameters (using 16 experts of roughly 111 billion each). GPT-4o, the multimodal flagship, uses a highly optimized MoE architecture, though OpenAI keeps the exact count secret."}},{"@type":"Question","name":"What is a parameter in an AI model?","acceptedAnswer":{"@type":"Answer","text":"A parameter is a numerical value (a weight or bias) inside a neural network that the model adjusts during training. Think of them like the synapses in a human brain or the individual dials on a massive soundboard. The more parameters a model has, the more nuanced patterns it can recognize, though architecture and data quality matter just as much as raw size."}},{"@type":"Question","name":"Is GPT-4 bigger than GPT-3.5?","acceptedAnswer":{"@type":"Answer","text":"Yes, significantly. While GPT-3.5 is a dense model with about 175 billion parameters, GPT-4 is believed to be a Mixture of Experts (MoE) model with roughly 1.8 trillion total parameters. However, because it's an MoE model, it only activates a fraction of those parameters for any given prompt, making it faster and more efficient than a dense model of the same total size."}},{"@type":"Question","name":"Does a higher parameter count mean a better AI?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. While more parameters generally allow a model to store more knowledge and handle complex reasoning, a poorly trained 1 trillion parameter model will perform worse than a perfectly trained 100 billion parameter model. In 2026, model architecture (like MoE), training data quality, and post-training alignment are often more important than raw parameter count."}},{"@type":"Question","name":"How does ChatGPT's size compare to open-source models?","acceptedAnswer":{"@type":"Answer","text":"ChatGPT's underlying models are massive and closed-source. For comparison, the largest openly available model, Llama 3.1 405B, has 405 billion parameters. While smaller than the rumored 1.8 trillion of GPT-4, open-source models are rapidly closing the gap in real-world performance through better training techniques and efficient architectures."}}]}</script>
 
-  <meta property="og:type" content="article"/>
-  <meta property="og:site_name" content="NyvoraAI"/>
-  <meta property="og:title" content="How Many Parameters Does ChatGPT Have? (2026 Guide)"/>
-  <meta property="og:description" content="How many parameters does ChatGPT have? Complete breakdown of GPT-3, GPT-4 & ChatGPT parameter counts with plain-English explanations. 2026 edition."/>
-  <meta property="og:url" content="https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html"/>
-  <meta property="og:image" content="https://nyvoraai.github.io/og-image.jpg"/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="article:published_time" content="2026-06-22T00:00:00+00:00"/>
-  <meta property="article:author" content="NyvoraAI Team"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:site" content="@nyvoraai_co"/>
-  <meta name="twitter:title" content="How Many Parameters Does ChatGPT Have? (2026 Guide)"/>
-  <meta name="twitter:description" content="Complete breakdown of ChatGPT parameters: GPT-3's 175B, GPT-4's undisclosed count & what parameters actually mean for AI performance."/>
-  <meta name="twitter:image" content="https://nyvoraai.github.io/og-image.jpg"/>
-  <meta name="author" content="NyvoraAI Team"/>
-  <meta name="publisher" content="NyvoraAI"/>
-  <meta name="category" content="Technology, Artificial Intelligence, AI Explainer"/>
-  <meta name="revisit-after" content="1 day"/>
-  <meta name="language" content="English"/>
-  <meta name="coverage" content="Worldwide"/>
-  <meta name="distribution" content="Global"/>
-  <meta name="rating" content="General"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#EFF1EA;--bg-deep:#E5E9DC;--paper:#FFFFFF;--paper-warm:#FBF8F1;
+  --ink:#1C2321;--ink-soft:#4B5650;--muted:#7C8579;--line:#DCE0D2;--line-soft:#E8EBE0;
+  --coral:#FF6B4A;--coral-dp:#B8431F;--coral-soft:#FFE1D6;
+  --teal:#146B5C;--teal-dp:#0E4F45;--teal-soft:#DCEEE8;
+  --gold:#E89B2D;--gold-soft:#FCEACB;
+  --purple:#8B5CF6;--purple-soft:#EDE9FE;
+  --green:#16A34A;--green-soft:#DCFCE7;
+  --blue:#2563EB;--blue-soft:#DBEAFE;
+  --radius:18px;--radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,-apple-system,sans-serif;
+  --font-body:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+  --shadow:0 1px 2px rgba(28,35,33,.04),0 8px 24px rgba(28,35,33,.06);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:18px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--teal-dp);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "@id": "https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html#article",
-        "headline": "How Many Parameters Does ChatGPT Have? (2026 Guide)",
-        "description": "How many parameters does ChatGPT have? Complete breakdown of GPT-3, GPT-4 & ChatGPT parameter counts.",
-        "datePublished": "2026-06-22T00:00:00+00:00",
-        "dateModified": "2026-06-22T00:00:00+00:00",
-        "author": {"@type": "Organization","name": "NyvoraAI Team","url": "https://nyvoraai.github.io/about.html"},
-        "publisher": {"@id": "https://nyvoraai.github.io/#organization"},
-        "inLanguage": "en-US",
-        "articleSection": "AI Explainer"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://nyvoraai.github.io/#organization",
-        "name": "NyvoraAI",
-        "url": "https://nyvoraai.github.io/",
-        "logo": {"@type": "ImageObject","url": "https://nyvoraai.github.io/logo.svg"}
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type":"Question","name":"How many parameters does ChatGPT have?","acceptedAnswer":{"@type":"Answer","text":"ChatGPT (free, GPT-3.5) has approximately 175 billion parameters. ChatGPT Plus (GPT-4) is estimated at 1.5–2 trillion parameters."}},
-          {"@type":"Question","name":"Why doesn't OpenAI disclose GPT-4's parameter count?","acceptedAnswer":{"@type":"Answer","text":"OpenAI focuses on demonstrated capabilities rather than raw numbers and doesn't want to give competitors a replication roadmap."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/"},
-          {"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.github.io/ai-news.html"},
-          {"@type":"ListItem","position":3,"name":"How Many Parameters Does ChatGPT Have?","item":"https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html"}
-        ]
-      }
-    ]
-  }
-  </script>
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;background:var(--bg)}
+.aura{position:absolute;border-radius:50%;filter:blur(85px);will-change:transform;animation:auraFloat ease-in-out infinite}
+.aura-1{width:560px;height:560px;background:radial-gradient(circle,var(--coral),transparent 68%);top:-140px;left:-120px;opacity:.22;animation-duration:17s}
+.aura-2{width:500px;height:500px;background:radial-gradient(circle,var(--teal),transparent 68%);bottom:-130px;right:-100px;opacity:.20;animation-duration:21s;animation-delay:-6s}
+.aura-3{width:420px;height:420px;background:radial-gradient(circle,var(--gold),transparent 68%);top:30%;left:58%;opacity:.16;animation-duration:14s;animation-delay:-3s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.12)}66%{transform:translate(-35px,30px) scale(.92)}}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.045'/></svg>")}
+.bubble-field{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fbubble{position:absolute;border:1.5px solid;opacity:0;border-radius:14px 14px 14px 3px;animation:bubbleDrift linear infinite}
+@keyframes bubbleDrift{0%{transform:translateY(10vh) rotate(-4deg) scale(.85)}10%{opacity:.24}50%{transform:translateY(-45vh) rotate(2deg) scale(1.04)}85%{opacity:.16}100%{transform:translateY(-100vh) rotate(5deg) scale(1.1);opacity:0}}
+@media(prefers-reduced-motion:reduce){.fbubble,.aura{animation:none;display:none}html{scroll-behavior:auto}}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="../style.css"/>
+#progress{position:fixed;top:64px;left:0;width:0;height:3px;z-index:300;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal));transition:width .1s;border-radius:0 3px 3px 0}
 
-  <style>
-    :root {
-      --cyan:   #2DD4E0;
-      --purple: #8B5CF6;
-      --amber:  #F59E0B;
-      --rose:   #F43F5E;
-      --green:  #22C55E;
-      --blue:   #60A5FA;
-      --navy:   #0F1C38;
-      --dark:   #1B2A4A;
-      --card:   rgba(255,255,255,.035);
-      --border: rgba(255,255,255,.08);
-      --muted:  #9FB0D6;
-      --light:  #C6D1EE;
-      --white:  #E7ECFA;
-    }
+nav.main-nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:21px;font-weight:700;letter-spacing:-.02em;color:var(--ink);display:flex;align-items:center;gap:9px}
+.nav-logo span{color:var(--teal)}
+.logo-img{height:30px;width:30px;border-radius:8px;object-fit:cover;display:block}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{color:var(--ink-soft);font-size:14.5px;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-social{display:flex;gap:6px}
+.nav-soc{color:var(--ink-soft);width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:8px;transition:background .2s,color .2s}
+.nav-soc:hover{background:var(--line-soft);color:var(--ink);text-decoration:none}
+.icon{width:17px;height:17px;flex-shrink:0;display:block}
+.nav-cta{background:var(--coral);color:#fff;padding:9px 18px;border-radius:9px;font-size:13.5px;font-weight:700;transition:opacity .2s,transform .15s;box-shadow:0 4px 14px rgba(255,107,74,.28)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);text-decoration:none}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--ink-soft);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:20px 24px;flex-direction:column;gap:16px;z-index:199}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--ink);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
 
-    /* ── Layout ── */
-    main {
-      padding-top: calc(68px + 40px);
-      position: relative;
-      z-index: 2;
-    }
-    .art-wrap {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 24px;
-      position: relative;
-      z-index: 2;
-    }
-    .mesh {
-      position: fixed;
-      top:0;left:0;right:0;bottom:0;
-      z-index:0;
-      pointer-events:none;
-    }
+.breadcrumb{max-width:860px;margin:26px auto 0;padding:0 24px;font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--muted)}.breadcrumb a:hover{color:var(--teal-dp)}.bc-sep{color:var(--line)}
 
-    /* ── FIX: Kill any sidebar / sticky TOC injected by main.js ── */
-    .art-toc-sidebar,
-    .toc-sidebar,
-    [class*="sidebar"],
-    [id*="sidebar"],
-    .sticky-toc {
-      display: none !important;
-    }
-    /* Neutralise inline position:sticky/fixed on .art-toc */
-    .art-toc {
-      position: static !important;
-      float: none !important;
-      width: auto !important;
-      left: auto !important;
-      top: auto !important;
-      transform: none !important;
-      display: block !important;
-    }
-    .art-toc[style] {
-      position: static !important;
-      top: auto !important;
-      left: auto !important;
-      width: auto !important;
-    }
+.article-hdr{max-width:860px;margin:22px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:5px 13px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-ai{background:var(--teal-soft);color:var(--teal-dp);border:1px solid rgba(20,107,92,.18)}
+.badge-read{background:var(--gold-soft);color:#8A5A12;border:1px solid rgba(232,155,45,.25)}
+.badge-date{background:var(--coral-soft);color:var(--coral-dp);border:1px solid rgba(255,107,74,.22)}
+.badge-hot{background:linear-gradient(135deg,var(--coral),var(--purple));color:#fff;border:none}
+.badge-open{background:var(--green-soft);color:var(--green);border:1px solid rgba(22,163,74,.2)}
+.article-title{font-size:clamp(30px,5.2vw,48px);font-weight:700;line-height:1.18;color:var(--ink);margin-bottom:18px;letter-spacing:-.025em;font-family:var(--font-display)}
+.title-underline{background:linear-gradient(120deg,transparent 0%,var(--gold-soft) 0%);background-size:100% 38%;background-repeat:no-repeat;background-position:0 88%;padding:0 2px}
+.article-intro{font-size:19.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:24px}
+.article-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);padding-bottom:24px;border-bottom:1px solid var(--line)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{position:relative;overflow:hidden;width:36px;height:36px;border-radius:50%;flex-shrink:0;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;font-family:var(--font-display)}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--ink-soft)}.meta-sep{color:var(--line)}
 
-    /* ── Breadcrumb ── */
-    .art-crumb {
-      font-size:.85rem; color:var(--muted);
-      margin:0 0 18px;
-      display:flex; gap:8px; flex-wrap:wrap;
-      padding-top:20px;
-      position:static !important;
-    }
-    .art-crumb a { color:var(--muted); text-decoration:none; border-bottom:1px dotted rgba(159,176,214,.5); transition:color .2s; }
-    .art-crumb a:hover { color:var(--cyan); }
+.blog-banner-wrap{max-width:860px;margin:30px auto;padding:0 24px}
+.blog-banner{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow);display:block;object-fit:cover;max-height:450px}
+.banner-fallback{width:100%;border-radius:var(--radius);border:1px solid var(--line);min-height:300px;background:linear-gradient(135deg,var(--blue-soft) 0%,var(--paper) 45%,var(--gold-soft) 100%);display:none;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.banner-fallback::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(37,99,235,.05),transparent 60%,rgba(232,155,45,.06));pointer-events:none}
+.bf-inner{position:relative;z-index:1;text-align:center;padding:44px 24px}
+.bf-logo-big{font-family:var(--font-display);font-size:56px;font-weight:700;background:linear-gradient(135deg,var(--blue),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px;line-height:1}
+.bf-text{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.bf-sub{font-size:13px;color:var(--muted);font-family:var(--font-mono);margin-bottom:16px}
+.bf-tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.bf-tag{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 12px;border-radius:20px;border:1px solid}
+.bf-tag-blue{background:var(--blue-soft);color:var(--blue);border-color:rgba(37,99,235,.2)}
+.bf-tag-teal{background:var(--teal-soft);color:var(--teal-dp);border-color:rgba(20,107,92,.2)}
+.bf-tag-gold{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.2)}
+.bf-tag-green{background:var(--green-soft);color:var(--green);border-color:rgba(22,163,74,.2)}
 
-    /* ── Eyebrow ── */
-    .art-eyebrow {
-      display:inline-block; font-size:.8rem; font-weight:700;
-      letter-spacing:.06em; text-transform:uppercase;
-      padding:6px 16px; border-radius:999px; margin-bottom:18px;
-      background:linear-gradient(135deg,rgba(45,212,224,.15),rgba(139,92,246,.15));
-      border:1px solid rgba(45,212,224,.4); color:var(--cyan);
-      animation:eyebrowGlow 3s ease-in-out infinite;
-    }
-    @keyframes eyebrowGlow {
-      0%,100%{box-shadow:0 0 8px rgba(45,212,224,.2);}
-      50%{box-shadow:0 0 20px rgba(45,212,224,.5);}
-    }
+.toc-box{max-width:860px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow)}
+.toc-title{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--ink-soft);font-size:14.5px;transition:color .2s;display:flex;gap:8px}
+.toc a::before{content:counter(tocnum);font-family:var(--font-mono);color:var(--coral);font-weight:700;font-size:12.5px;min-width:16px}
+.toc a:hover{color:var(--coral);text-decoration:none}
 
-    /* ── H1 ── */
-    .art-h1 {
-      font-family:'Syne',sans-serif; font-weight:800;
-      font-size:clamp(2rem,5vw,3.1rem); line-height:1.08;
-      letter-spacing:-1.5px; margin-bottom:20px;
-      background:linear-gradient(135deg,#fff 0%,var(--cyan) 40%,var(--purple) 80%,var(--amber) 100%);
-      -webkit-background-clip:text; background-clip:text; color:transparent;
-      background-size:300% 100%; animation:titleSlide 8s ease-in-out infinite;
-    }
-    @keyframes titleSlide{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
+.layout{max-width:860px;margin:0 auto;padding:36px 24px 80px}
 
-    /* ── Meta ── */
-    .art-meta {
-      display:flex; flex-wrap:wrap; gap:10px; align-items:center;
-      color:var(--muted); font-size:.9rem; margin-bottom:32px;
-    }
-    .art-meta .dot { width:4px;height:4px;border-radius:50%;background:var(--muted); }
-    .art-meta .badge {
-      font-size:.72rem; font-weight:700; padding:3px 10px; border-radius:999px;
-      background:linear-gradient(135deg,var(--cyan),var(--purple)); color:#fff;
-    }
+.prose h2{font-size:27px;font-weight:700;color:var(--ink);margin:54px 0 18px;letter-spacing:-.02em;scroll-margin-top:90px;display:flex;align-items:baseline;gap:10px}
+.prose h2 .h2-mark{font-family:var(--font-mono);font-size:14px;color:var(--coral);font-weight:700}
+.prose h3{font-size:18.5px;font-weight:700;color:var(--ink);margin:28px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--ink)}
+.prose strong{color:var(--ink);font-weight:700}
+.prose ul,.prose ol{margin:0 0 22px 22px}
+.prose li{margin-bottom:9px;color:var(--ink)}
+.prose a,.faq-body a{color:var(--teal-dp);border-bottom:1px solid rgba(14,79,69,.25);transition:border-color .2s,color .2s}
+.prose a:hover,.faq-body a:hover{color:var(--coral);border-color:var(--coral);text-decoration:none}
 
-    /* ── Progress bar ── */
-    #read-prog {
-      position:fixed; top:0;left:0; height:3px; width:0%; z-index:9999;
-      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose));
-      background-size:200% 100%; animation:progAnim 3s linear infinite; transition:width .1s linear;
-    }
-    @keyframes progAnim{0%{background-position:0%;}100%{background-position:200%;}}
+.key-takeaways{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow)}
+.kt-title{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.key-takeaways ul{margin:0;list-style:none}
+.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15.5px;color:var(--ink-soft)}
+.key-takeaways li:last-child{margin-bottom:0}
+.key-takeaways li::before{content:'✨';color:var(--gold);flex-shrink:0}
 
-    /* ── Inline TOC (the article's own table of contents box) ── */
-    .art-toc {
-      background:var(--card); border:1px solid var(--border);
-      border-radius:18px; padding:22px 26px; margin-bottom:38px;
-      overflow:hidden;
-    }
-    .art-toc-title {
-      font-family:'Syne',sans-serif; font-size:1rem; color:#fff;
-      margin:0 0 14px; display:flex; align-items:center; gap:8px;
-    }
-    .art-toc ol { margin:0; padding-left:20px; color:var(--light); }
-    .art-toc li { margin-bottom:5px; }
-    .art-toc a { color:var(--light); text-decoration:none; transition:color .2s; }
-    .art-toc a:hover { color:var(--cyan); }
+.stat-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0}
+.stat-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center;transition:transform .3s,border-color .3s;box-shadow:var(--shadow)}
+.stat-card:hover{transform:translateY(-4px);border-color:var(--teal)}
+.stat-num{font-family:var(--font-display);font-size:34px;font-weight:700;color:var(--coral)}
+.stat-label{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.4}
+.stat-src{font-size:11px;color:var(--muted);font-family:var(--font-mono);margin-top:4px}
 
-    /* ── Quick answer ── */
-    .art-quick {
-      background:linear-gradient(135deg,rgba(45,212,224,.1),rgba(139,92,246,.1));
-      border-radius:20px; padding:26px 28px; margin:32px 0;
-      position:relative; overflow:hidden; border:1px solid rgba(45,212,224,.25);
-    }
-    .art-quick::before {
-      content:""; position:absolute; top:0;left:0;right:0; height:3px;
-      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose),var(--cyan));
-      background-size:300% 100%; animation:rainbowSlide 5s linear infinite;
-    }
-    @keyframes rainbowSlide{0%{background-position:0%;}100%{background-position:300%;}}
-    .quick-label {
-      display:inline-flex; align-items:center; gap:8px; font-size:.78rem;
-      font-weight:800; text-transform:uppercase; letter-spacing:.08em;
-      color:var(--cyan); margin-bottom:10px;
-    }
-    .pulse-dot {
-      width:9px;height:9px;border-radius:50%;background:var(--cyan);
-      animation:pulseAnim 1.6s ease-out infinite;
-    }
-    @keyframes pulseAnim{0%{box-shadow:0 0 0 0 rgba(45,212,224,.6);}70%{box-shadow:0 0 0 12px rgba(45,212,224,0);}100%{box-shadow:0 0 0 0 rgba(45,212,224,0);}}
-    .art-quick p{color:var(--white);margin:0;line-height:1.75;}
-    .art-quick strong{color:#fff;}
+/* Chat UI */
+.chat-ui{background:var(--bg-deep);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:36px 0;box-shadow:var(--shadow)}
+.chat-header{display:flex;align-items:center;gap:10px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chat-header-icon{width:36px;height:36px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:16px}
+.chat-header-text{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--ink)}
+.chat-header-sub{font-size:12px;color:var(--muted);font-family:var(--font-mono)}
+.chat-msg{display:flex;gap:12px;margin-bottom:18px;align-items:flex-start}
+.chat-msg.user{flex-direction:row-reverse}
+.chat-avatar{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;color:#fff}
+.chat-avatar.ai{background:var(--teal)}
+.chat-avatar.human{background:var(--coral)}
+.chat-bubble{max-width:85%;padding:14px 18px;border-radius:16px;font-size:14.5px;line-height:1.6;position:relative}
+.chat-msg.ai .chat-bubble{background:var(--paper);color:var(--ink);border-bottom-left-radius:4px;border:1px solid var(--line)}
+.chat-msg.user .chat-bubble{background:var(--teal);color:#fff;border-bottom-right-radius:4px}
+.chat-label{font-size:11px;font-weight:700;font-family:var(--font-mono);color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
+.chat-msg.user .chat-label{text-align:right}
 
-    /* ── Body prose ── */
-    .art-body{color:var(--light);font-size:1.06rem;line-height:1.88;}
-    .art-body h2 {
-      font-family:'Syne',sans-serif; font-weight:800;
-      font-size:clamp(1.45rem,3vw,1.9rem); margin:52px 0 18px;
-      letter-spacing:-.5px; position:relative; padding-left:16px;
-    }
-    .art-body h2::before {
-      content:""; position:absolute; left:0;top:50%;transform:translateY(-50%);
-      width:4px;height:70%;border-radius:4px;
-      background:linear-gradient(180deg,var(--cyan),var(--purple));
-    }
-    .art-body h2 .h2-txt{color:#fff;}
-    .art-body h3{font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:1.18rem;margin:30px 0 10px;}
-    .art-body p{margin:0 0 20px;}
-    .art-body a{color:var(--cyan);text-decoration:underline;text-decoration-color:rgba(45,212,224,.4);transition:text-decoration-color .2s;}
-    .art-body a:hover{text-decoration-color:var(--cyan);}
-    .art-body strong{color:#fff;}
+/* Scale Visualizer */
+.scale-viz{background:var(--paper-warm);border:2px solid var(--line);border-radius:var(--radius);padding:32px;margin:40px 0;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.scale-viz::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--blue),var(--purple),var(--coral))}
+.scale-title{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.scale-sub{font-size:14px;color:var(--ink-soft);margin-bottom:24px}
+.scale-bar-wrap{margin-bottom:18px}
+.scale-label{display:flex;justify-content:space-between;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px;font-family:var(--font-display)}
+.scale-label span:last-child{font-family:var(--font-mono);color:var(--muted);font-size:12px;font-weight:700}
+.scale-track{height:28px;background:var(--bg-deep);border-radius:8px;overflow:hidden;border:1px solid var(--line-soft)}
+.scale-fill{height:100%;border-radius:8px;display:flex;align-items:center;padding-left:12px;color:#fff;font-size:11px;font-weight:700;font-family:var(--font-mono);transition:width 1.5s cubic-bezier(.4,0,.2,1);width:0}
+.sf-gpt35{background:linear-gradient(90deg,var(--blue),var(--teal))}
+.sf-gpt4{background:linear-gradient(90deg,var(--purple),var(--coral))}
+.sf-deepseek{background:linear-gradient(90deg,var(--gold),var(--coral))}
+.sf-llama{background:linear-gradient(90deg,var(--green),var(--teal))}
 
-    /* ── Stat row ── */
-    .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px;margin:28px 0;}
-    .stat-card{border-radius:16px;padding:18px 16px;text-align:center;border:1px solid rgba(255,255,255,.1);transition:transform .25s;}
-    .stat-card:hover{transform:translateY(-4px);}
-    .stat-card.s1{background:linear-gradient(135deg,rgba(45,212,224,.15),rgba(45,212,224,.05));border-color:rgba(45,212,224,.3);}
-    .stat-card.s2{background:linear-gradient(135deg,rgba(245,158,11,.15),rgba(245,158,11,.05));border-color:rgba(245,158,11,.3);}
-    .stat-card.s3{background:linear-gradient(135deg,rgba(139,92,246,.15),rgba(139,92,246,.05));border-color:rgba(139,92,246,.3);}
-    .stat-card.s4{background:linear-gradient(135deg,rgba(34,197,94,.15),rgba(34,197,94,.05));border-color:rgba(34,197,94,.3);}
-    .stat-card.s5{background:linear-gradient(135deg,rgba(244,63,94,.15),rgba(244,63,94,.05));border-color:rgba(244,63,94,.3);}
-    .stat-num{font-family:'Syne',sans-serif;font-weight:800;font-size:1.8rem;line-height:1;}
-    .stat-card.s1 .stat-num{color:var(--cyan);}
-    .stat-card.s2 .stat-num{color:var(--amber);}
-    .stat-card.s3 .stat-num{color:var(--purple);}
-    .stat-card.s4 .stat-num{color:var(--green);}
-    .stat-card.s5 .stat-num{color:var(--rose);}
-    .stat-lbl{font-size:.75rem;color:var(--muted);margin-top:6px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;}
+/* Risk/Comparison Cards */
+.risk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:32px 0}
+.risk-card{background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);padding:24px;transition:all .3s;position:relative;overflow:hidden}
+.risk-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+.risk-card.rc-dense::before{background:linear-gradient(90deg,var(--blue),var(--teal))}
+.risk-card.rc-moe::before{background:linear-gradient(90deg,var(--coral),var(--purple))}
+.risk-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--teal)}
+.rc-badge{font-family:var(--font-mono);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 10px;border-radius:6px;display:inline-block;margin-bottom:10px}
+.rc-b-dense{background:var(--blue-soft);color:var(--blue);border:1px solid rgba(37,99,235,.25)}
+.rc-b-moe{background:var(--coral-soft);color:var(--coral-dp);border:1px solid rgba(255,107,74,.25)}
+.rc-name{font-family:var(--font-display);font-size:19px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.rc-desc{font-size:14px;color:var(--ink-soft);line-height:1.6;margin-bottom:12px}
+.rc-stats{display:flex;gap:10px;flex-wrap:wrap}
+.rc-stat{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 10px;border-radius:20px;border:1px solid var(--line);color:var(--muted)}
 
-    /* ── SVG diagram ── */
-    .art-diagram{width:100%;height:auto;border-radius:18px;display:block;margin:28px 0;border:1px solid var(--border);}
+.callout{background:var(--teal-soft);border:1px solid rgba(20,107,92,.2);border-left:4px solid var(--teal);border-radius:0 var(--radius) var(--radius) 0;padding:20px 24px;margin:28px 0}
+.callout-title{font-family:var(--font-display);font-weight:700;font-size:13px;color:var(--teal-dp);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
+.callout p{font-size:15px;color:var(--ink-soft);margin:0;line-height:1.7}
+.callout-gold{background:var(--gold-soft);border-left-color:var(--gold)}
+.callout-gold .callout-title{color:#8A5A12}
+.callout-purple{background:var(--purple-soft);border-left-color:var(--purple)}
+.callout-purple .callout-title{color:#6D28D9}
+.callout-coral{background:var(--coral-soft);border-left-color:var(--coral)}
+.callout-coral .callout-title{color:var(--coral-dp)}
 
-    /* ── Pull quote ── */
-    .art-pull{border-left:3px solid var(--cyan);border-radius:0 16px 16px 0;background:rgba(45,212,224,.07);padding:18px 22px;margin:26px 0;color:var(--white);font-style:italic;font-size:1.05rem;line-height:1.7;position:relative;}
-    .art-pull::before{content:'"';font-size:3rem;color:var(--cyan);opacity:.4;position:absolute;top:-6px;left:12px;font-style:normal;line-height:1;}
+/* Quiz */
+.quiz-box{background:linear-gradient(135deg,var(--teal-soft),var(--gold-soft));border:2px solid var(--line);border-radius:var(--radius);padding:32px;margin:40px 0;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.quiz-box::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal))}
+.quiz-title{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.quiz-sub{font-size:14px;color:var(--ink-soft);margin-bottom:24px}
+.quiz-q{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:16px}
+.quiz-opts{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.quiz-opt{background:var(--paper);border:2px solid var(--line);border-radius:12px;padding:14px 18px;cursor:pointer;font-size:15px;color:var(--ink);transition:all .2s;font-family:var(--font-body);text-align:left;width:100%}
+.quiz-opt:hover{border-color:var(--teal);transform:translateX(4px)}
+.quiz-opt.correct{border-color:var(--green);background:var(--green-soft);color:var(--green)}
+.quiz-opt.wrong{border-color:var(--coral);background:var(--coral-soft);color:var(--coral-dp)}
+.quiz-feedback{font-size:14px;color:var(--ink-soft);margin-top:12px;padding:12px;background:var(--paper);border-radius:10px;display:none;line-height:1.6}
+.quiz-feedback.show{display:block}
+.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:20px}
+.quiz-btn{background:var(--coral);color:#fff;padding:10px 22px;border-radius:10px;border:none;cursor:pointer;font-size:14px;font-weight:700;transition:all .2s;font-family:var(--font-display)}
+.quiz-btn:hover{opacity:.9;transform:translateY(-1px)}
+.quiz-btn:disabled{opacity:.5;cursor:not-allowed}
+.quiz-progress{font-size:13px;font-weight:700;color:var(--muted);font-family:var(--font-mono)}
+.quiz-result{text-align:center;padding:20px 0}
+.quiz-score{font-family:var(--font-display);font-size:48px;font-weight:700;color:var(--teal)}
 
-    /* ── Concept / feature cards ── */
-    .concept-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:24px 0;}
-    .concept-card{border-radius:16px;padding:20px;border:1px solid var(--border);transition:transform .25s,border-color .25s;position:relative;overflow:hidden;}
-    .concept-card:hover{transform:translateY(-4px);}
-    .concept-card.cc1{background:linear-gradient(135deg,rgba(96,165,250,.12),rgba(96,165,250,.03));border-color:rgba(96,165,250,.3);}
-    .concept-card.cc2{background:linear-gradient(135deg,rgba(245,158,11,.12),rgba(245,158,11,.03));border-color:rgba(245,158,11,.3);}
-    .concept-card.cc3{background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(139,92,246,.03));border-color:rgba(139,92,246,.3);}
-    .concept-card.cc4{background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(34,197,94,.03));border-color:rgba(34,197,94,.3);}
-    .concept-card.cc5{background:linear-gradient(135deg,rgba(244,63,94,.12),rgba(244,63,94,.03));border-color:rgba(244,63,94,.3);}
-    .concept-card.cc6{background:linear-gradient(135deg,rgba(45,212,224,.12),rgba(45,212,224,.03));border-color:rgba(45,212,224,.3);}
-    .concept-icon{font-size:1.8rem;margin-bottom:10px;}
-    .concept-card h3{font-family:'Syne',sans-serif;font-size:1rem;margin:0 0 8px;}
-    .cc1 h3{color:var(--blue);}.cc2 h3{color:var(--amber);}.cc3 h3{color:var(--purple);}
-    .cc4 h3{color:var(--green);}.cc5 h3{color:var(--rose);}.cc6 h3{color:var(--cyan);}
-    .concept-card p{color:var(--light);font-size:.9rem;line-height:1.6;margin:0;}
+.faq{margin:16px 0}
+details{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--coral)}
+summary{padding:18px 22px;cursor:pointer;font-weight:600;font-size:16px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--coral);font-size:22px;font-weight:300;flex-shrink:0}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 22px 18px;color:var(--ink-soft);font-size:15px;line-height:1.7}
 
-    /* ── Phase steps ── */
-    .phase-list{list-style:none;margin:22px 0;padding:0;display:grid;gap:14px;}
-    .phase-item{display:flex;gap:16px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;transition:border-color .25s,transform .25s;position:relative;overflow:hidden;}
-    .phase-item::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px;}
-    .phase-item:nth-child(1)::before{background:var(--blue);}
-    .phase-item:nth-child(2)::before{background:var(--amber);}
-    .phase-item:nth-child(3)::before{background:var(--purple);}
-    .phase-item:nth-child(4)::before{background:var(--cyan);}
-    .phase-item:hover{border-color:rgba(45,212,224,.35);transform:translateX(5px);}
-    .phase-num{flex-shrink:0;width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:'Syne',sans-serif;font-size:1rem;color:#fff;}
-    .phase-item:nth-child(1) .phase-num{background:var(--blue);}
-    .phase-item:nth-child(2) .phase-num{background:var(--amber);color:var(--navy);}
-    .phase-item:nth-child(3) .phase-num{background:var(--purple);}
-    .phase-item:nth-child(4) .phase-num{background:var(--cyan);color:var(--navy);}
-    .phase-body{color:var(--light);line-height:1.65;}
-    .phase-body strong{color:#fff;}
+.author-box{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin:48px 0 0}
+.author-box .meta-avatar{width:48px;height:48px;font-size:17px;flex-shrink:0}
+.author-box h3{font-size:15px;font-family:var(--font-display);margin-bottom:4px;color:var(--ink)}
+.author-box p{font-size:14px;color:var(--muted);margin:0;line-height:1.6}
 
-    /* ── GPT-4 estimate cards ── */
-    .estimate-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:24px 0;}
-    .estimate-card{border-radius:16px;padding:20px;border:1px solid var(--border);background:var(--card);transition:transform .25s,border-color .25s;}
-    .estimate-card:hover{transform:translateY(-3px);}
-    .estimate-icon{font-size:1.5rem;margin-bottom:8px;}
-    .estimate-card h3{font-family:'Syne',sans-serif;font-size:.95rem;margin:0 0 8px;color:#fff;}
-    .estimate-card p{color:var(--light);font-size:.88rem;line-height:1.55;margin:0;}
+.share-section{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:32px 0 0;text-align:center}
+.share-title{font-size:15.5px;font-weight:700;color:var(--ink);margin-bottom:16px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--paper);color:var(--ink-soft);font-family:var(--font-body)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--ink)}
 
-    /* ════════════════════════════════════
-       COMPARISON TABLE  ← KEY FIX
-    ════════════════════════════════════ */
-    .param-table-wrap {
-      margin: 28px 0;
-      border-radius: 18px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      background: var(--card);
-    }
-    .param-table-title {
-      background: linear-gradient(135deg,rgba(45,212,224,.12),rgba(139,92,246,.12));
-      padding: 16px 22px;
-      font-family: 'Syne',sans-serif;
-      font-weight: 800;
-      font-size: 1rem;
-      color: #fff;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .param-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: .93rem;
-    }
-    .param-table thead tr {
-      background: rgba(255,255,255,.04);
-      border-bottom: 1px solid var(--border);
-    }
-    .param-table th {
-      padding: 12px 18px;
-      text-align: left;
-      font-family: 'Syne',sans-serif;
-      font-weight: 700;
-      font-size: .78rem;
-      text-transform: uppercase;
-      letter-spacing: .06em;
-      color: var(--muted);
-    }
-    .param-table td {
-      padding: 13px 18px;
-      color: var(--light);
-      border-bottom: 1px solid rgba(255,255,255,.04);
-      vertical-align: middle;
-    }
-    .param-table tbody tr:last-child td {
-      border-bottom: none;
-    }
-    .param-table tbody tr:hover td {
-      background: rgba(45,212,224,.04);
-    }
-    /* Highlighted top row (GPT-4) */
-    .param-table tbody tr.top-row td {
-      background: rgba(45,212,224,.07);
-      border-bottom: 1px solid rgba(45,212,224,.15);
-    }
-    .param-table tbody tr.top-row:hover td {
-      background: rgba(45,212,224,.11);
-    }
-    .param-table td:first-child {
-      font-weight: 600;
-      color: #fff;
-    }
-    /* Bar cell */
-    .bar-cell { min-width: 120px; }
-    .param-bar-bg {
-      background: rgba(255,255,255,.06);
-      border-radius: 999px;
-      height: 8px;
-      overflow: hidden;
-    }
-    .param-bar-fill {
-      height: 100%;
-      border-radius: 999px;
-      transition: width .6s ease;
-    }
-    .bar-cyan   { background: linear-gradient(90deg,var(--cyan),var(--blue)); }
-    .bar-purple { background: linear-gradient(90deg,var(--purple),var(--rose)); }
-    .bar-amber  { background: linear-gradient(90deg,var(--amber),var(--rose)); }
-    .bar-green  { background: linear-gradient(90deg,var(--green),var(--cyan)); }
-    .bar-blue   { background: linear-gradient(90deg,var(--blue),var(--purple)); }
-    .bar-muted  { background: rgba(159,176,214,.4); }
-    /* Tag badge */
-    .model-tag {
-      display: inline-block;
-      font-size: .68rem;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 999px;
-      margin-left: 6px;
-      vertical-align: middle;
-    }
-    .tag-cyan   { background: rgba(45,212,224,.15); color: var(--cyan); }
-    .tag-purple { background: rgba(139,92,246,.15); color: var(--purple); }
-    .tag-amber  { background: rgba(245,158,11,.15); color: var(--amber); }
-    .tag-green  { background: rgba(34,197,94,.15); color: var(--green); }
-    .table-note {
-      padding: 10px 18px;
-      font-size: .78rem;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-      background: rgba(255,255,255,.02);
-    }
+.newsletter{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:44px;margin:56px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal))}
+.newsletter h2{font-size:25px;font-weight:700;color:var(--ink);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--muted);margin-bottom:24px;font-size:15.5px}
+.nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 16px;color:var(--ink);font-size:14px;outline:none;transition:border-color .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--muted)}.nl-input:focus{border-color:var(--coral)}
+.nl-btn{background:var(--coral);color:#fff;padding:13px 22px;border-radius:10px;border:none;cursor:pointer;font-size:14px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s;box-shadow:0 4px 16px rgba(255,107,74,.28);font-family:var(--font-display)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px)}
+.nl-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+.nl-social{display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;padding:9px 16px;border-radius:10px;border:1px solid var(--line);color:var(--ink-soft);transition:all .2s}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--ink)}
 
-    /* ── Timeline ── */
-    .timeline-widget{margin:28px 0;}
-    .tl-row{display:flex;gap:12px;align-items:flex-start;margin-bottom:18px;}
-    .tl-dot{flex-shrink:0;width:14px;height:14px;border-radius:50%;margin-top:4px;position:relative;}
-    .tl-dot::after{content:"";position:absolute;left:50%;top:100%;transform:translateX(-50%);width:2px;height:calc(100% + 14px);background:var(--border);}
-    .tl-row:last-child .tl-dot::after{display:none;}
-    .tl-dot.d1{background:var(--blue);}.tl-dot.d2{background:var(--amber);}
-    .tl-dot.d3{background:var(--purple);}.tl-dot.d4{background:var(--cyan);}
-    .tl-content strong{color:#fff;display:block;margin-bottom:3px;font-size:.98rem;}
-    .tl-content span{color:var(--muted);font-size:.9rem;}
+.related{margin:48px 0 0}
+.related-title{font-size:19px;font-weight:700;color:var(--ink);margin-bottom:20px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rel-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px;transition:border-color .2s,transform .2s;display:block}
+.rel-card:hover{border-color:var(--coral);transform:translateY(-3px);text-decoration:none;box-shadow:var(--shadow)}
+.rel-tag{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--coral);margin-bottom:8px;font-family:var(--font-mono)}
+.rel-title{font-size:14px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:8px;font-family:var(--font-display)}
+.rel-read{font-size:12px;color:var(--muted)}
 
-    /* ── Myth / fact grid ── */
-    .myth-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0;}
-    .myth-card{border-radius:14px;padding:18px 20px;}
-    .myth-card.myth{background:rgba(244,63,94,.08);border:1px solid rgba(244,63,94,.28);}
-    .myth-card.fact{background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.25);}
-    .myth-tag{font-size:.75rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;margin-bottom:9px;display:flex;align-items:center;gap:6px;}
-    .myth-card.myth .myth-tag{color:var(--rose);}
-    .myth-card.fact .myth-tag{color:var(--green);}
-    .myth-card p{margin:0;font-size:.92rem;color:var(--light);line-height:1.6;}
+footer{background:var(--paper);border-top:1px solid var(--line);padding:60px 24px 32px;position:relative;z-index:1;overflow:hidden}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal),var(--purple),var(--blue),var(--coral));background-size:300% 100%;animation:ftStripe 5s linear infinite}
+@keyframes ftStripe{0%{background-position:0%}100%{background-position:300%}}
+.ft-blob{position:absolute;border-radius:50%;pointer-events:none;animation:ftBlob ease-in-out infinite;filter:blur(55px)}
+@keyframes ftBlob{0%,100%{transform:scale(1) translate(0,0);opacity:.1}50%{transform:scale(1.25) translate(10px,-8px);opacity:.18}}
+.ft-dots{display:flex;gap:7px;margin-bottom:14px}
+.ft-dot{width:8px;height:8px;border-radius:50%;animation:ftDotPulse 2.2s ease-in-out infinite}
+@keyframes ftDotPulse{0%,100%{transform:scale(1);opacity:.5}50%{transform:scale(1.6);opacity:1}}
+.footer-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;position:relative;z-index:1}
+.footer-logo-wrap{font-size:21px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:9px;color:var(--ink);font-family:var(--font-display)}
+.footer-logo-wrap span{color:var(--teal)}
+.footer-brand p{color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:16px}
+.footer-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.chip{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 10px;border-radius:20px;border:1px solid}
+.chip-coral{background:var(--coral-soft);color:var(--coral-dp);border-color:rgba(255,107,74,.3)}
+.chip-teal{background:var(--teal-soft);color:var(--teal-dp);border-color:rgba(20,107,92,.2)}
+.chip-gold{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.3)}
+.chip-purple{background:var(--purple-soft);color:#6D28D9;border-color:rgba(139,92,246,.25)}
+.chip-blue{background:var(--blue-soft);color:var(--blue);border-color:rgba(37,99,235,.2)}
+.footer-social{display:flex;gap:10px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:7px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--ink-soft);transition:all .3s;position:relative;overflow:hidden;background:transparent}
+.fs-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--coral-soft),var(--teal-soft));transform:translateY(100%);transition:transform .3s;z-index:0;border-radius:inherit}
+.fs-btn:hover{color:var(--coral-dp);border-color:var(--coral);transform:translateY(-3px);text-decoration:none}
+.fs-btn:hover::before{transform:translateY(0)}
+.fs-btn svg,.fs-btn span{position:relative;z-index:1}
+.footer-col h4{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);margin-bottom:16px;font-family:var(--font-mono)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:var(--muted);font-size:14px;transition:color .2s,padding-left .2s;display:inline-flex;align-items:center;gap:5px}
+.footer-col a::before{content:'›';color:var(--coral);opacity:0;transform:translateX(-6px);transition:all .2s;font-size:16px}
+.footer-col a:hover{color:var(--coral);padding-left:8px;text-decoration:none}
+.footer-col a:hover::before{opacity:1;transform:translateX(0)}
+.footer-bottom{max-width:1160px;margin:44px auto 0;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);flex-wrap:wrap;gap:10px;position:relative;z-index:1}
+.footer-bottom-links{display:flex;gap:20px}
+.footer-bottom-links a{color:var(--muted);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--ink);text-decoration:none}
 
-    /* ── Glossary ── */
-    .glossary-item{background:var(--card);border:1px solid var(--border);border-radius:13px;margin-bottom:9px;overflow:hidden;transition:border-color .2s;}
-    .glossary-item[open]{border-color:rgba(45,212,224,.4);}
-    .glossary-item summary{padding:14px 18px;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none;font-weight:600;color:var(--white);}
-    .glossary-item summary::-webkit-details-marker{display:none;}
-    .glossary-item summary::after{content:'+';color:var(--cyan);font-size:20px;font-weight:300;margin-left:auto;}
-    .glossary-item[open] summary::after{content:'−';}
-    .glossary-body{padding:0 18px 14px;color:var(--muted);font-size:.92rem;line-height:1.65;}
-    .gtag{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:.05em;}
-    .gt-c{background:rgba(45,212,224,.15);color:var(--cyan);}
-    .gt-y{background:rgba(245,158,11,.15);color:var(--amber);}
-    .gt-p{background:rgba(139,92,246,.15);color:var(--purple);}
-    .gt-r{background:rgba(244,63,94,.15);color:var(--rose);}
-    .gt-g{background:rgba(34,197,94,.15);color:var(--green);}
+#back-top{position:fixed;bottom:28px;right:28px;background:var(--coral);color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:var(--shadow);z-index:200;font-weight:700}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.08) translateY(-2px);background:var(--coral-dp)}
 
-    /* ── Quiz ── */
-    .quiz-box{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:26px 28px;margin:32px 0;position:relative;overflow:hidden;}
-    .quiz-box::after{content:"";position:absolute;inset:0;border-radius:20px;pointer-events:none;background:linear-gradient(135deg,rgba(139,92,246,.07),rgba(45,212,224,.07));}
-    .quiz-label{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--purple);margin-bottom:14px;display:flex;align-items:center;gap:7px;}
-    .quiz-q{font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;color:#fff;margin-bottom:14px;}
-    .quiz-opts{display:flex;flex-direction:column;gap:9px;}
-    .quiz-opt{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:10px;padding:12px 16px;color:var(--light);cursor:pointer;font-size:.95rem;transition:all .2s;text-align:left;font-family:'Inter',sans-serif;}
-    .quiz-opt:hover{border-color:var(--purple);color:#fff;background:rgba(139,92,246,.1);}
-    .quiz-opt.correct{border-color:var(--green)!important;background:rgba(34,197,94,.12)!important;color:#fff!important;}
-    .quiz-opt.wrong{border-color:var(--rose)!important;background:rgba(244,63,94,.12)!important;color:#fff!important;}
-    .quiz-result{display:none;margin-top:14px;padding:12px 16px;border-radius:10px;font-size:.95rem;font-weight:600;}
-    .quiz-result.show{display:block;}
-    .quiz-result.ok{background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.3);color:var(--green);}
-    .quiz-result.no{background:rgba(244,63,94,.12);border:1px solid rgba(244,63,94,.28);color:var(--rose);}
-    .quiz-reset{margin-top:12px;background:var(--purple);border:none;color:#fff;padding:9px 20px;border-radius:8px;cursor:pointer;font-family:'Inter',sans-serif;font-size:.88rem;font-weight:700;display:none;transition:.2s;}
-    .quiz-reset.show{display:inline-block;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
-    /* ── FAQ ── */
-    .faq-item{background:var(--card);border:1px solid var(--border);border-radius:16px;margin-bottom:10px;overflow:hidden;transition:border-color .2s;}
-    .faq-item[open]{border-color:rgba(45,212,224,.35);}
-    .faq-item summary{padding:18px 22px;cursor:pointer;font-weight:700;font-size:.98rem;color:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:'Syne',sans-serif;}
-    .faq-item summary::-webkit-details-marker{display:none;}
-    .faq-item summary::after{content:'+';color:var(--cyan);font-size:22px;font-weight:300;flex-shrink:0;}
-    .faq-item[open] summary::after{content:'−';}
-    .faq-item p{padding:0 22px 18px;color:var(--muted);font-size:.95rem;line-height:1.72;margin:0;}
-
-    /* ── Reaction bar ── */
-    .art-react{display:flex;align-items:center;gap:12px;margin:46px 0;padding:18px 22px;border:1px solid var(--border);border-radius:16px;background:var(--card);flex-wrap:wrap;}
-    .art-react span{color:var(--muted);font-size:.9rem;}
-    .react-btn{cursor:pointer;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);color:var(--white);border-radius:999px;padding:9px 18px;font-size:.9rem;font-family:'Inter',sans-serif;transition:.2s;}
-    .react-btn:hover{background:var(--cyan);color:var(--navy);border-color:var(--cyan);}
-    .react-btn.active{background:var(--cyan);color:var(--navy);border-color:var(--cyan);}
-    .react-count{font-weight:700;font-size:.85rem;}
-
-    /* ── Related articles ── */
-    .art-related{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:20px 0 44px;}
-    .art-related a{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;color:var(--white);text-decoration:none;transition:.25s;}
-    .art-related a:hover{border-color:var(--cyan);transform:translateY(-3px);}
-    .art-related .rtag{font-size:.75rem;color:var(--cyan);font-weight:700;text-transform:uppercase;letter-spacing:.05em;}
-    .art-related .rttl{font-family:'Syne',sans-serif;font-weight:700;margin-top:7px;line-height:1.35;}
-
-    /* ── Prev/Next nav ── */
-    .art-nav{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0 44px;}
-    .art-nav a{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px 20px;color:var(--white);text-decoration:none;transition:.25s;}
-    .art-nav a:hover{border-color:var(--cyan);transform:translateY(-2px);}
-    .art-nav .nav-dir{font-size:.75rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
-    .art-nav .nav-title{font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;line-height:1.35;}
-    .art-nav .nav-next{text-align:right;}
-
-    /* ── Side popup ── */
-    #side-popup{position:fixed;bottom:24px;right:24px;z-index:9990;width:min(320px,calc(100vw - 40px));background:linear-gradient(135deg,#1B2A4A,#0F1C38);border:1px solid rgba(45,212,224,.35);border-radius:20px;padding:22px 22px 20px;box-shadow:0 20px 60px rgba(0,0,0,.6);transform:translateY(120%);opacity:0;transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .4s ease;}
-    #side-popup.show{transform:translateY(0);opacity:1;}
-    #side-popup::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;border-radius:20px 20px 0 0;background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber));background-size:200% 100%;animation:rainbowSlide 3s linear infinite;}
-    .popup-close{position:absolute;top:10px;right:14px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:1.2rem;line-height:1;padding:4px;transition:color .2s;}
-    .popup-close:hover{color:#fff;}
-    .popup-icon{font-size:1.6rem;margin-bottom:8px;}
-    .popup-title{font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:#fff;margin-bottom:6px;}
-    .popup-sub{font-size:.85rem;color:var(--muted);margin-bottom:14px;line-height:1.5;}
-    .popup-form{display:flex;gap:8px;flex-wrap:wrap;}
-    .popup-input{flex:1;min-width:0;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:10px;padding:10px 14px;color:#fff;font-family:'Inter',sans-serif;font-size:.88rem;outline:none;transition:border-color .2s;}
-    .popup-input::placeholder{color:var(--muted);}
-    .popup-input:focus{border-color:var(--cyan);}
-    .popup-btn{background:linear-gradient(135deg,var(--cyan),var(--purple));border:none;color:#fff;padding:10px 16px;border-radius:10px;font-family:'Inter',sans-serif;font-size:.88rem;font-weight:700;cursor:pointer;white-space:nowrap;transition:opacity .2s,transform .15s;}
-    .popup-btn:hover{opacity:.9;transform:translateY(-1px);}
-    .popup-success{display:none;text-align:center;padding:8px 0;}
-    .popup-success.show{display:block;}
-    .popup-success span{font-size:1.5rem;display:block;margin-bottom:6px;}
-    .popup-success p{color:var(--green);font-weight:600;font-size:.92rem;margin:0;}
-    .popup-note{font-size:.75rem;color:var(--muted);margin-top:9px;}
-
-    /* ── Newsletter section ── */
-    .nl-box{background:linear-gradient(135deg,rgba(45,212,224,.08),rgba(139,92,246,.08));border:1px solid rgba(45,212,224,.2);border-radius:22px;padding:36px;text-align:center;position:relative;overflow:hidden;margin-bottom:60px;}
-    .nl-box::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber));background-size:200% 100%;animation:rainbowSlide 4s linear infinite;}
-    .nl-box h2{font-family:'Syne',sans-serif;font-weight:800;color:#fff;font-size:1.6rem;margin:12px 0 8px;}
-    .nl-box p{color:var(--muted);margin-bottom:20px;}
-    .nl-form{display:flex;gap:10px;max-width:460px;margin:0 auto;flex-wrap:wrap;}
-    .nl-input{flex:1;min-width:0;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:12px;padding:12px 18px;color:#fff;font-family:'Inter',sans-serif;font-size:.95rem;outline:none;transition:border-color .2s;}
-    .nl-input::placeholder{color:var(--muted);}
-    .nl-input:focus{border-color:var(--cyan);}
-    .nl-btn{background:linear-gradient(135deg,var(--cyan),var(--purple));border:none;color:#fff;padding:12px 24px;border-radius:12px;font-family:'Inter',sans-serif;font-size:.95rem;font-weight:700;cursor:pointer;transition:.2s;white-space:nowrap;}
-    .nl-btn:hover{opacity:.9;transform:translateY(-2px);}
-    .nl-note{font-size:.8rem;color:var(--muted);margin-top:10px;}
-
-    /* ── Footer ── */
-    footer{position:relative;overflow:hidden;}
-    footer::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber),var(--rose),var(--green),var(--cyan));background-size:300% 100%;animation:rainbowSlide 7s linear infinite;}
-    footer .f-logo{background:linear-gradient(90deg,#fff,var(--cyan),var(--purple),var(--amber),#fff);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rainbowSlide 6s linear infinite;font-family:'Syne',sans-serif;font-weight:800;font-size:1.45rem;}
-    footer .f-social-link{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;border:1px solid var(--border);background:var(--card);transition:all .25s;color:var(--muted);}
-    footer .f-social-link:hover{border-color:var(--cyan);background:rgba(45,212,224,.12);transform:translateY(-3px);box-shadow:0 8px 20px rgba(45,212,224,.25);}
-    .f-social-link svg{width:18px;height:18px;}
-    .f-bottom-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:28px;border-top:1px solid var(--border);margin-top:36px;font-size:.85rem;color:var(--muted);}
-    .f-bottom-bar a{color:var(--muted);text-decoration:none;transition:color .2s;}
-    .f-bottom-bar a:hover{color:var(--cyan);}
-    .f-made{display:flex;align-items:center;gap:6px;}
-    .f-heart{animation:heartBeat 1.4s ease infinite;display:inline-block;}
-    @keyframes heartBeat{0%,100%{transform:scale(1);}50%{transform:scale(1.25);}}
-    .f-links{display:flex;gap:18px;}
-    .f-col h4{position:relative;display:inline-block;}
-    .f-col h4::after{content:"";position:absolute;bottom:-4px;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--cyan),var(--purple));border-radius:2px;}
-
-    /* ── Responsive ── */
-    @media(max-width:640px){
-      .myth-grid{grid-template-columns:1fr;}
-      .art-nav{grid-template-columns:1fr;}
-      .stat-row{grid-template-columns:1fr 1fr;}
-      .param-table th:nth-child(3),.param-table td:nth-child(3){display:none;}
-      #side-popup{bottom:16px;right:16px;}
-    }
-  </style>
+@media(max-width:900px){
+  .risk-grid,.related-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-social,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+  .stat-strip{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .related-grid,.stat-strip{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+</style>
 </head>
 <body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <div id="read-prog" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.15" fill="currentColor"/></symbol>
+<symbol id="icon-facebook" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 8.6h1.4V6h-1.9c-1.9 0-2.9 1.15-2.9 3v1.5H8.7V13h1.9v6.3h2.4V13h1.7l.3-2.5h-2V9.4c0-.5.2-.8.9-.8z" fill="currentColor"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5.2 4.8l14 14.4M19.2 4.8L5.2 19.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+<symbol id="icon-youtube" viewBox="0 0 24 24"><rect x="2.3" y="6" width="19.4" height="12" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.3 9.4l5.2 2.6-5.2 2.6z" fill="currentColor"/></symbol>
+</defs>
+</svg>
 
-  <!-- Side popup -->
-  <div id="side-popup" role="complementary" aria-label="Newsletter signup">
-    <button class="popup-close" id="popupClose" aria-label="Close">✕</button>
-    <div class="popup-icon">🎯</div>
-    <div class="popup-title">Want AI insights like this?</div>
-    <div class="popup-sub">Join 5,000+ readers getting weekly AI explainers. Free forever.</div>
-    <form class="popup-form" id="popupForm" action="https://formspree.io/f/xwvjgdpw" method="POST">
-      <input class="popup-input" type="email" name="email" placeholder="Your email" required autocomplete="email"/>
-      <button class="popup-btn" type="submit">Join Free</button>
-    </form>
-    <div class="popup-success" id="popupSuccess"><span>🎉</span><p>Welcome aboard! Check your inbox.</p></div>
-    <p class="popup-note">No spam · Unsubscribe anytime · 100% free</p>
-  </div>
+<div class="bg-canvas">
+  <div class="aura aura-1"></div><div class="aura aura-2"></div><div class="aura aura-3"></div>
+</div>
+<div class="grain"></div>
+<div class="bubble-field" id="bubbleField"></div>
+<div id="progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-  <!-- Mesh -->
-  <div class="mesh" aria-hidden="true">
-    <div class="mesh-orb m1"></div>
-    <div class="mesh-orb m2"></div>
-    <div class="mesh-orb m3"></div>
-  </div>
-
-  <!-- Nav -->
-  <nav role="navigation" aria-label="Main navigation">
-    <a href="../index.html" class="logo" aria-label="NyvoraAI Home" style="display:flex;align-items:center;gap:10px;text-decoration:none">
-      <svg class="logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" style="width:36px;height:36px;flex-shrink:0">
-        <defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1B2A4A"/><stop offset="100%" stop-color="#26365E"/></linearGradient></defs>
-        <rect width="120" height="120" rx="28" fill="url(#lg1)"/>
-        <path d="M30 90 L30 30 L90 90 L90 30" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="90" cy="30" r="7" fill="#2DD4E0"/>
-      </svg>
-      <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:-0.5px;color:#fff">Nyvora<span style="color:#2DD4E0">AI</span></span>
+<nav class="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI logo" class="logo-img" onerror="this.remove()"/>
+      Nyvora<span>AI</span>
     </a>
     <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../blog.html">Blog</a></li>
-      <li><a href="../ai-news.html" class="active">AI News</a></li>
-      <li><a href="../about.html">About</a></li>
-      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html" class="active">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
     </ul>
-    <a href="../contact.html" class="nav-btn">Write for Us</a>
-    <button class="hamburger" id="ham" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </nav>
-  <div class="mob-menu" id="mob" role="navigation" aria-label="Mobile menu">
-    <a href="../index.html">Home</a>
-    <a href="../blog.html">Blog</a>
-    <a href="../ai-news.html">AI News</a>
-    <a href="../about.html">About</a>
-    <a href="../contact.html">Contact</a>
-  </div>
-
-  <!-- MAIN -->
-  <main id="main-content">
-    <div class="art-wrap">
-
-      <!-- Breadcrumb -->
-      <nav class="art-crumb" aria-label="Breadcrumb">
-        <a href="../index.html">Home</a> /
-        <a href="../ai-news.html">AI News</a> /
-        <span>How Many Parameters Does ChatGPT Have?</span>
-      </nav>
-
-      <span class="art-eyebrow">AI Explainer · Updated 2026</span>
-      <h1 class="art-h1">How Many Parameters Does ChatGPT Have?</h1>
-
-      <div class="art-meta">
-        <span>NyvoraAI Team</span>
-        <span class="dot"></span>
-        <time datetime="2026-06-22">June 22, 2026</time>
-        <span class="dot"></span>
-        <span>15 min read</span>
-        <span class="badge">Updated 2026</span>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nav-soc" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nav-soc" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"/></svg></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nav-soc" aria-label="X"><svg class="icon"><use href="#icon-x"/></svg></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nav-soc" aria-label="YouTube"><svg class="icon"><use href="#icon-youtube"/></svg></a>
       </div>
-
-      <!-- Inline TOC — static, in-flow -->
-      <div style="position:static;float:none;">
-        <nav class="art-toc" aria-label="Table of contents">
-          <div class="art-toc-title"><span>📋</span> What's Inside</div>
-          <ol>
-            <li><a href="#quick-answer">Quick Answer: ChatGPT Parameters</a></li>
-            <li><a href="#what-are-parameters">What are AI parameters?</a></li>
-            <li><a href="#gpt3-params">GPT-3: 175 billion parameters</a></li>
-            <li><a href="#gpt4-params">GPT-4: The undisclosed giant</a></li>
-            <li><a href="#chatgpt-versions">ChatGPT versions compared</a></li>
-            <li><a href="#why-params-matter">Why parameter count matters</a></li>
-            <li><a href="#bigger-better">Does bigger always mean better?</a></li>
-            <li><a href="#comparison">How ChatGPT compares to rivals</a></li>
-            <li><a href="#future">The future of AI model size</a></li>
-            <li><a href="#myths">Common myths debunked</a></li>
-            <li><a href="#glossary">Glossary</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ol>
-        </nav>
-      </div>
-
-      <article class="art-body">
-
-        <p>If you've ever wondered <strong>how many parameters does ChatGPT have</strong>, you're not alone. It's one of the most common questions people ask when they first encounter this remarkable AI. The answer, however, isn't as straightforward as you might think — and it reveals something fascinating about how modern AI actually works.</p>
-
-        <p>ChatGPT is built on OpenAI's GPT models, and the parameter count varies significantly depending on which version you're using. GPT-3, the foundation of the original ChatGPT, has <strong>175 billion parameters</strong>. GPT-4, the more advanced model powering ChatGPT Plus, has an undisclosed parameter count — but experts estimate it's somewhere between <strong>1.5 to 2 trillion parameters</strong>.</p>
-
-        <!-- Quick answer -->
-        <div class="art-quick" id="quick-answer">
-          <div class="quick-label"><span class="pulse-dot"></span> Quick Answer</div>
-          <p><strong>How many parameters does ChatGPT have?</strong> It depends on the version. ChatGPT (free) uses GPT-3.5 with approximately <strong>175 billion parameters</strong>. ChatGPT Plus uses GPT-4, which OpenAI hasn't officially disclosed, but estimates range from <strong>1.5 to 2 trillion parameters</strong>. The parameter count represents the model's internal "knowledge weights" — the numerical settings learned during training to understand and generate human-like text.</p>
-        </div>
-
-        <!-- Stat row -->
-        <div class="stat-row">
-          <div class="stat-card s1"><div class="stat-num">175B</div><div class="stat-lbl">GPT-3 parameters</div></div>
-          <div class="stat-card s2"><div class="stat-num">1.5T+</div><div class="stat-lbl">GPT-4 estimated</div></div>
-          <div class="stat-card s3"><div class="stat-num">10×</div><div class="stat-lbl">GPT-4 vs GPT-3 size</div></div>
-          <div class="stat-card s4"><div class="stat-num">???</div><div class="stat-lbl">Exact GPT-4 count</div></div>
-          <div class="stat-card s5"><div class="stat-num">2020</div><div class="stat-lbl">GPT-3 release year</div></div>
-        </div>
-
-        <!-- Section 1 -->
-        <h2 id="what-are-parameters"><span class="h2-txt">What Are Parameters in AI Models, Anyway?</span></h2>
-
-        <p>Before we dive deeper into ChatGPT's specific numbers, let's make sure we're all on the same page about what "parameters" actually mean. If you've ever heard someone throw around terms like "175 billion parameters" and felt a bit lost, you're definitely not alone.</p>
-
-        <p>Think of parameters as the AI model's internal knowledge settings — the billions (or trillions) of numerical dials and switches that get fine-tuned during training. When an AI model learns from data, it's not memorising facts like a student cramming for an exam. Instead, it's adjusting these parameters to recognise patterns in language.</p>
-
-        <div class="art-pull">
-          Parameters are to AI models what neural connections are to human brains — the internal structure that stores learned knowledge and determines how the model processes information.
-        </div>
-
-        <p>Here's a simple analogy: imagine you're learning to recognise cats. At first, you might focus on obvious features like pointy ears and whiskers. As you see more cats — big cats, small cats, fluffy cats, hairless cats — you develop a more nuanced understanding. Your brain adjusts its internal "parameters" to recognise cats in all their variety. AI models do something similar, except they have billions of these adjustments happening simultaneously across massive datasets.</p>
-
-        <!-- Section 2 -->
-        <h2 id="gpt3-params"><span class="h2-txt">GPT-3: The 175 Billion Parameter Breakthrough</span></h2>
-
-        <p>When OpenAI released GPT-3 in 2020, it was a watershed moment for AI. With <strong>175 billion parameters</strong>, it was nearly 10 times larger than any previous language model. GPT-2, released just a year earlier, had "only" 1.5 billion parameters.</p>
-
-        <!-- GPT-3 architecture diagram -->
-        <svg class="art-diagram" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GPT-3 architecture showing 175 billion parameters across 96 transformer layers">
-          <title>GPT-3 Architecture: 175 Billion Parameters</title>
-          <defs>
-            <linearGradient id="g3bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0F1C38"/><stop offset="100%" stop-color="#1B2A4A"/></linearGradient>
-            <linearGradient id="g3grd" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2DD4E0"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
-          </defs>
-          <rect x="1" y="1" width="798" height="198" rx="22" fill="url(#g3bg)" stroke="#2A3B5E" stroke-width="1.5"/>
-          <text x="400" y="28" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="14" fill="#fff" text-anchor="middle">GPT-3 Architecture: 175 Billion Parameters</text>
-          <!-- centre big stat -->
-          <rect x="290" y="44" width="220" height="116" rx="18" fill="rgba(45,212,224,.1)" stroke="rgba(45,212,224,.35)" stroke-width="1.5"/>
-          <text x="400" y="88" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="36" fill="#2DD4E0" text-anchor="middle">175B</text>
-          <text x="400" y="110" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="12" fill="#fff" text-anchor="middle">Total Parameters</text>
-          <text x="400" y="128" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#9FB0D6" text-anchor="middle">GPT-3 (2020)</text>
-          <text x="400" y="143" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#9FB0D6" text-anchor="middle">Foundation of ChatGPT &amp; ChatGPT 3.5</text>
-          <!-- left stat -->
-          <rect x="30" y="60" width="130" height="80" rx="14" fill="rgba(96,165,250,.12)" stroke="rgba(96,165,250,.3)" stroke-width="1.2"/>
-          <text x="95" y="95" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="24" fill="#60A5FA" text-anchor="middle">96</text>
-          <text x="95" y="114" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="10" fill="#60A5FA" text-anchor="middle">Transformer Layers</text>
-          <text x="95" y="128" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#9FB0D6" text-anchor="middle">Stacked attention</text>
-          <!-- right stat -->
-          <rect x="640" y="60" width="130" height="80" rx="14" fill="rgba(139,92,246,.12)" stroke="rgba(139,92,246,.3)" stroke-width="1.2"/>
-          <text x="705" y="91" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="20" fill="#8B5CF6" text-anchor="middle">12,288</text>
-          <text x="705" y="109" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="10" fill="#8B5CF6" text-anchor="middle">Hidden Dimensions</text>
-          <text x="705" y="123" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#9FB0D6" text-anchor="middle">Per token vector size</text>
-          <!-- right-right stat -->
-          <rect x="640" y="148" width="130" height="40" rx="10" fill="rgba(34,197,94,.1)" stroke="rgba(34,197,94,.25)" stroke-width="1.2"/>
-          <text x="705" y="173" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="11" fill="#22C55E" text-anchor="middle">96 Attention Heads</text>
-          <!-- arrows -->
-          <line x1="160" y1="100" x2="288" y2="100" stroke="#3A4D74" stroke-width="1.5" marker-end="url(#tarr)"/>
-          <line x1="512" y1="100" x2="638" y2="100" stroke="#3A4D74" stroke-width="1.5" marker-end="url(#tarr)"/>
-          <defs>
-            <marker id="tarr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-              <path d="M0,0 L8,4 L0,8 L2,4 Z" fill="#3A4D74"/>
-            </marker>
-          </defs>
-          <text x="400" y="185" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#9FB0D6" text-anchor="middle">175 billion parameters enable sophisticated language understanding and generation across all topics</text>
-        </svg>
-
-        <p>GPT-3's 175 billion parameters are distributed across 96 transformer layers, with each layer containing multiple "attention heads" that process different aspects of language simultaneously. This architecture enabled capabilities that genuinely surprised AI researchers — including few-shot learning, where the model could perform new tasks with just a handful of examples.</p>
-
-        <!-- Section 3 -->
-        <h2 id="gpt4-params"><span class="h2-txt">GPT-4: The Undisclosed Giant</span></h2>
-
-        <p>Here's where things get interesting. When OpenAI released GPT-4 in March 2023, they deliberately didn't disclose the exact parameter count. So <strong>how many parameters does GPT-4 actually have?</strong> Researchers and analysts have made educated estimates:</p>
-
-        <div class="estimate-grid">
-          <div class="estimate-card">
-            <div class="estimate-icon">📊</div>
-            <h3>Conservative Estimate</h3>
-            <p>Most experts believe GPT-4 has at least <strong>1.5 trillion parameters</strong> — roughly 10 times larger than GPT-3.</p>
-          </div>
-          <div class="estimate-card">
-            <div class="estimate-icon">🔬</div>
-            <h3>Upper Estimates</h3>
-            <p>Some analyses suggest GPT-4 could have up to <strong>2 trillion parameters</strong>, using a mixture-of-experts architecture.</p>
-          </div>
-          <div class="estimate-card">
-            <div class="estimate-icon">🎯</div>
-            <h3>Why the Secrecy?</h3>
-            <p>OpenAI doesn't want to give competitors a replication roadmap, and shifted focus to demonstrated capabilities over raw numbers.</p>
-          </div>
-          <div class="estimate-card">
-            <div class="estimate-icon">⚡</div>
-            <h3>Efficiency Gains</h3>
-            <p>GPT-4 isn't just bigger — it's more efficient. Better training techniques squeeze more capability from every parameter.</p>
-          </div>
-        </div>
-
-        <p>The most credible analysis from SemiAnalysis estimates GPT-4 has approximately <strong>1.76 trillion parameters</strong> split across 8 expert sub-models. Only about 220 billion parameters are active at any given time, making it faster and more efficient than a dense model of the same total size.</p>
-
-        <!-- Section 4 -->
-        <h2 id="chatgpt-versions"><span class="h2-txt">ChatGPT Versions: Which Parameters Are You Using?</span></h2>
-
-        <ul class="phase-list">
-          <li class="phase-item">
-            <div class="phase-num">1</div>
-            <div class="phase-body"><strong>ChatGPT (Free):</strong> Uses GPT-3.5 with approximately <strong>175 billion parameters</strong>. Fast, capable, handles most everyday tasks well.</div>
-          </li>
-          <li class="phase-item">
-            <div class="phase-num">2</div>
-            <div class="phase-body"><strong>ChatGPT Plus ($20/month):</strong> Uses GPT-4 with an estimated <strong>1.5–2 trillion parameters</strong>. Significantly better reasoning, creativity, and accuracy.</div>
-          </li>
-          <li class="phase-item">
-            <div class="phase-num">3</div>
-            <div class="phase-body"><strong>ChatGPT Team/Enterprise:</strong> Also uses GPT-4 with additional features like longer context windows and data privacy guarantees.</div>
-          </li>
-          <li class="phase-item">
-            <div class="phase-num">4</div>
-            <div class="phase-body"><strong>ChatGPT with Browsing/Plugins:</strong> Same underlying parameters, but can access external tools and real-time information beyond the training cutoff.</div>
-          </li>
-        </ul>
-
-        <!-- Quiz -->
-        <div class="quiz-box">
-          <div class="quiz-label">🎯 Quick Knowledge Check</div>
-          <div class="quiz-q">Which ChatGPT version has more parameters?</div>
-          <div class="quiz-opts" id="quizOpts">
-            <button class="quiz-opt" onclick="checkQuiz(this,false)">ChatGPT Free (GPT-3.5)</button>
-            <button class="quiz-opt" onclick="checkQuiz(this,true)">ChatGPT Plus (GPT-4)</button>
-            <button class="quiz-opt" onclick="checkQuiz(this,false)">They have the same number</button>
-            <button class="quiz-opt" onclick="checkQuiz(this,false)">Neither — parameters don't matter</button>
-          </div>
-          <div class="quiz-result" id="quizResult"></div>
-          <button class="quiz-reset" id="quizReset" onclick="resetQuiz()">Try Again ↺</button>
-        </div>
-
-        <!-- Section 5 -->
-        <h2 id="why-params-matter"><span class="h2-txt">Why Does Parameter Count Actually Matter?</span></h2>
-
-        <div class="concept-grid">
-          <div class="concept-card cc1"><div class="concept-icon">🧠</div><h3>Better Pattern Recognition</h3><p>More parameters let the model capture subtler patterns in language, leading to more nuanced understanding.</p></div>
-          <div class="concept-card cc2"><div class="concept-icon">📚</div><h3>More Knowledge Capacity</h3><p>Larger models can effectively absorb more information from training data, improving factual accuracy.</p></div>
-          <div class="concept-card cc3"><div class="concept-icon">🎨</div><h3>Enhanced Creativity</h3><p>More parameters enable more sophisticated creative tasks — writing, coding, solving novel problems.</p></div>
-          <div class="concept-card cc4"><div class="concept-icon">🔗</div><h3>Better Reasoning</h3><p>Complex multi-step reasoning benefits from larger models that maintain context and logical consistency.</p></div>
-        </div>
-
-        <p>However — parameter count is just one factor. The quality of training data, architecture efficiency, and fine-tuning all matter enormously. A poorly trained 1T model can easily be outperformed by a well-trained 100B one.</p>
-
-        <!-- Section 6 -->
-        <h2 id="bigger-better"><span class="h2-txt">Does Bigger Always Mean Better?</span></h2>
-
-        <p>While more parameters generally improve performance, we're reaching a point of diminishing returns. The next breakthroughs will come from better training methods, not just bigger models.</p>
-
-        <ul class="phase-list">
-          <li class="phase-item">
-            <div class="phase-num">1</div>
-            <div class="phase-body"><strong>Diminishing returns:</strong> Each doubling of parameters produces smaller improvements than the previous doubling.</div>
-          </li>
-          <li class="phase-item">
-            <div class="phase-num">2</div>
-            <div class="phase-body"><strong>Training data quality matters more:</strong> A 100B parameter model trained on high-quality data can outperform a 500B model trained on noisy scrapes.</div>
-          </li>
-          <li class="phase-item">
-            <div class="phase-num">3</div>
-            <div class="phase-body"><strong>Architecture efficiency:</strong> Mixture-of-experts models have trillions of total parameters but only activate a fraction at inference time.</div>
-          </li>
-          <li class="phase-item">
-            <div class="phase-num">4</div>
-            <div class="phase-body"><strong>Specialised models:</strong> A smaller model fine-tuned for a specific task can outperform a massive general-purpose model on that task.</div>
-          </li>
-        </ul>
-
-        <!-- Section 7 — COMPARISON TABLE (the key fix) -->
-        <h2 id="comparison"><span class="h2-txt">How ChatGPT Compares to Rivals</span></h2>
-
-        <p>Here's how the major AI models stack up by estimated parameter count as of 2026:</p>
-
-        <div class="param-table-wrap">
-          <div class="param-table-title">📊 AI Model Parameter Comparison (2026)</div>
-          <table class="param-table" aria-label="AI model parameter comparison 2026">
-            <thead>
-              <tr>
-                <th>Model</th>
-                <th>Est. Parameters</th>
-                <th class="bar-cell">Relative Scale</th>
-                <th>Company</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="top-row">
-                <td>GPT-4 <span class="model-tag tag-cyan">ChatGPT Plus</span></td>
-                <td>~1.76 T</td>
-                <td class="bar-cell"><div class="param-bar-bg"><div class="param-bar-fill bar-cyan" style="width:100%"></div></div></td>
-                <td>OpenAI</td>
-              </tr>
-              <tr>
-                <td>Claude 3 Opus</td>
-                <td>~1.5 T+</td>
-                <td class="bar-cell"><div class="param-bar-bg"><div class="param-bar-fill bar-purple" style="width:85%"></div></div></td>
-                <td>Anthropic</td>
-              </tr>
-              <tr>
-                <td>Gemini Ultra</td>
-                <td>~1.2 T+</td>
-                <td class="bar-cell"><div class="param-bar-bg"><div class="param-bar-fill bar-amber" style="width:68%"></div></div></td>
-                <td>Google</td>
-              </tr>
-              <tr>
-                <td>GPT-3.5 <span class="model-tag tag-green">ChatGPT Free</span></td>
-                <td>175 B</td>
-                <td class="bar-cell"><div class="param-bar-bg"><div class="param-bar-fill bar-green" style="width:10%"></div></div></td>
-                <td>OpenAI</td>
-              </tr>
-              <tr>
-                <td>Mistral Large</td>
-                <td>~120 B</td>
-                <td class="bar-cell"><div class="param-bar-bg"><div class="param-bar-fill bar-blue" style="width:7%"></div></div></td>
-                <td>Mistral AI</td>
-              </tr>
-              <tr>
-                <td>Command R+</td>
-                <td>~100 B</td>
-                <td class="bar-cell"><div class="param-bar-bg"><div class="param-bar-fill bar-muted" style="width:6%"></div></div></td>
-                <td>Cohere</td>
-              </tr>
-              <tr>
-                <td>Llama 3 70B</td>
-                <td>70 B</td>
-                <td class="bar-cell"><div class="param-bar-bg"><div class="param-bar-fill bar-muted" style="width:4%"></div></div></td>
-                <td>Meta</td>
-              </tr>
-              <tr>
-                <td>Mixtral 8×7B</td>
-                <td>47 B <em style="font-size:.8em;color:var(--muted)">(active)</em></td>
-                <td class="bar-cell"><div class="param-bar-bg"><div class="param-bar-fill bar-muted" style="width:3%"></div></div></td>
-                <td>Mistral AI</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="table-note">⚠️ Most figures are estimates — OpenAI, Anthropic, and Google do not officially disclose exact parameter counts. T = Trillion, B = Billion.</div>
-        </div>
-
-        <!-- Section 8 -->
-        <h2 id="future"><span class="h2-txt">The Future: Where Do We Go From Here?</span></h2>
-
-        <div class="timeline-widget">
-          <div class="tl-row"><div class="tl-dot d1"></div><div class="tl-content"><strong>2024–2025: Efficiency Focus</strong><span>Models are getting smarter without necessarily getting bigger. Better training and higher-quality data are the priorities.</span></div></div>
-          <div class="tl-row"><div class="tl-dot d2"></div><div class="tl-content"><strong>2025–2026: Specialised Giants</strong><span>More mixture-of-experts models with trillions of total parameters but only hundreds of billions active at once.</span></div></div>
-          <div class="tl-row"><div class="tl-dot d3"></div><div class="tl-content"><strong>2026–2027: Multimodal Integration</strong><span>Future models will seamlessly integrate vision, audio, and other modalities, requiring new architectural approaches.</span></div></div>
-          <div class="tl-row"><div class="tl-dot d4"></div><div class="tl-content"><strong>Beyond 2027: New Paradigms</strong><span>Researchers are exploring alternatives to the Transformer architecture. The next breakthrough might not be about parameters at all.</span></div></div>
-        </div>
-
-        <!-- Section 9 -->
-        <h2 id="myths"><span class="h2-txt">Common Myths About AI Parameters, Debunked</span></h2>
-
-        <div class="myth-grid">
-          <div class="myth-card myth"><div class="myth-tag">✗ Myth</div><p>More parameters always means a smarter AI.</p></div>
-          <div class="myth-card fact"><div class="myth-tag">✓ Fact</div><p>Parameter count is just one factor. Training data quality, architecture efficiency, and fine-tuning matter just as much. A smaller, well-trained model can outperform a larger, poorly-trained one.</p></div>
-          <div class="myth-card myth"><div class="myth-tag">✗ Myth</div><p>ChatGPT's parameters keep growing with every update.</p></div>
-          <div class="myth-card fact"><div class="myth-tag">✓ Fact</div><p>Each version has a fixed parameter count. Updates improve training and fine-tuning, not the underlying count. New versions require complete retraining.</p></div>
-          <div class="myth-card myth"><div class="myth-tag">✗ Myth</div><p>Parameters are the same as memory.</p></div>
-          <div class="myth-card fact"><div class="myth-tag">✓ Fact</div><p>Parameters are learned weights that determine how the model processes input — not a memory bank. ChatGPT doesn't "remember" your conversations; each interaction starts fresh.</p></div>
-          <div class="myth-card myth"><div class="myth-tag">✗ Myth</div><p>We can calculate exact AI capabilities from parameter count.</p></div>
-          <div class="myth-card fact"><div class="myth-tag">✓ Fact</div><p>There's no simple formula. Two models with identical parameter counts can have vastly different capabilities depending on training quality, data diversity, and architecture.</p></div>
-        </div>
-
-        <!-- Section 10 -->
-        <h2 id="glossary"><span class="h2-txt">Glossary: Key Terms Explained</span></h2>
-
-        <details class="glossary-item">
-          <summary><span>Parameter <span class="gtag gt-c">Core Concept</span></span></summary>
-          <div class="glossary-body">A numerical weight inside an AI model that gets adjusted during training. Parameters are the model's learned knowledge — the internal settings that determine how it processes input and generates output. GPT-3 has 175 billion parameters; GPT-4 likely has 1.5–2 trillion.</div>
-        </details>
-        <details class="glossary-item">
-          <summary><span>Transformer Architecture <span class="gtag gt-p">Architecture</span></span></summary>
-          <div class="glossary-body">The neural network architecture that powers modern LLMs like ChatGPT. Introduced in 2017, Transformers use "self-attention" mechanisms to process text more efficiently than previous architectures, enabling the massive scale of models like GPT-4.</div>
-        </details>
-        <details class="glossary-item">
-          <summary><span>Mixture of Experts (MoE) <span class="gtag gt-p">Architecture</span></span></summary>
-          <div class="glossary-body">An architectural approach where a model has multiple "expert" sub-networks and only activates the most relevant ones for each task. GPT-4 likely uses MoE, giving it trillions of total parameters while only using ~220 billion at a time.</div>
-        </details>
-        <details class="glossary-item">
-          <summary><span>Scaling Laws <span class="gtag gt-y">Research</span></span></summary>
-          <div class="glossary-body">Mathematical relationships that predict how model performance improves as you increase parameters, training data, and compute. Scaling laws guided AI development from 2018–2023, but we're now seeing diminishing returns from pure scaling.</div>
-        </details>
-        <details class="glossary-item">
-          <summary><span>Fine-Tuning <span class="gtag gt-g">Training</span></span></summary>
-          <div class="glossary-body">The process of training a pre-trained model on a smaller, specialised dataset to improve performance on specific tasks. GPT-3.5 is GPT-3 fine-tuned for conversational AI; ChatGPT is GPT-3.5 further fine-tuned with RLHF.</div>
-        </details>
-        <details class="glossary-item">
-          <summary><span>Active Parameters <span class="gtag gt-p">Architecture</span></span></summary>
-          <div class="glossary-body">In mixture-of-experts models, the subset of total parameters actually used for a given inference. GPT-4 may have 1.76 trillion total parameters but only activates ~220 billion per query, making it faster and more efficient.</div>
-        </details>
-
-        <!-- FAQ -->
-        <h2 id="faq"><span class="h2-txt">Frequently Asked Questions</span></h2>
-
-        <details class="faq-item" open>
-          <summary>How many parameters does ChatGPT have?</summary>
-          <p>ChatGPT's parameter count depends on the version. The free version uses GPT-3.5 with approximately <strong>175 billion parameters</strong>. ChatGPT Plus uses GPT-4, which OpenAI hasn't officially disclosed, but estimates range from <strong>1.5 to 2 trillion parameters</strong>.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Does ChatGPT have more parameters than Google's Gemini?</summary>
-          <p>GPT-4 and Gemini Ultra are both estimated at 1–2 trillion parameters, putting them in the same tier. Neither OpenAI nor Google discloses exact counts, so precise comparisons are difficult. What matters more is real-world performance.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Why doesn't OpenAI disclose GPT-4's exact parameter count?</summary>
-          <p>OpenAI shifted strategy after GPT-3, focusing on demonstrated capabilities rather than raw numbers. They also want to protect competitive advantages and avoid giving rivals a replication roadmap. GPT-4's mixture-of-experts architecture also makes simple parameter counts less meaningful.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Can I run ChatGPT's parameters on my own computer?</summary>
-          <p>No — not the full models. GPT-3's 175 billion parameters require massive GPU clusters to run. GPT-4's estimated 1.5+ trillion parameters are far beyond consumer hardware. However, smaller open-source models like Llama 3 70B can run on high-end consumer GPUs.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Will future ChatGPT versions have even more parameters?</summary>
-          <p>Probably, but not necessarily. The industry is shifting focus from pure parameter scaling to efficiency, specialised capabilities, and better training techniques. GPT-5 might achieve better performance through architectural improvements without massive scaling.</p>
-        </details>
-        <details class="faq-item">
-          <summary>How do parameters relate to ChatGPT's knowledge cutoff?</summary>
-          <p>Parameters don't determine the knowledge cutoff — the training data does. ChatGPT's parameters are the learned patterns from that data, but they don't "store" facts with timestamps. The knowledge cutoff is when training data collection ended, regardless of parameter count.</p>
-        </details>
-
-        <!-- Reaction bar -->
-        <div class="art-react">
-          <span>Was this breakdown helpful?</span>
-          <button class="react-btn" onclick="react(this,'👍')" aria-label="Helpful">👍 <span class="react-count" id="rc1">32</span></button>
-          <button class="react-btn" onclick="react(this,'🔥')" aria-label="Great">🔥 <span class="react-count" id="rc2">15</span></button>
-          <button class="react-btn" onclick="react(this,'🤔')" aria-label="Needs more">🤔 Needs more</button>
-        </div>
-
-        <!-- Related -->
-        <div class="art-related">
-          <a href="how-do-large-language-models-learn-from-data.html"><span class="rtag">AI Training</span><div class="rttl">How Do LLMs Learn From Data? →</div></a>
-          <a href="gpt-vs-claude-differences.html"><span class="rtag">Model Comparison</span><div class="rttl">GPT vs Claude: Key Differences →</div></a>
-          <a href="which-llm-is-best-for-beginners-2026.html"><span class="rtag">Beginner Guide</span><div class="rttl">Which LLM Is Best for Beginners? →</div></a>
-          <a href="why-are-llms-getting-cheaper-2026.html"><span class="rtag">AI Trends</span><div class="rttl">Why Are LLMs Getting Cheaper? →</div></a>
-        </div>
-
-        <!-- Prev / Next -->
-        <nav class="art-nav" aria-label="Article navigation">
-          <a href="which-llm-is-best-for-beginners-2026.html">
-            <div class="nav-dir">← Previous</div>
-            <div class="nav-title">Which LLM Is Best for Beginners? (2026)</div>
-          </a>
-          <a href="why-are-llms-getting-cheaper-2026.html" class="nav-next">
-            <div class="nav-dir">Next →</div>
-            <div class="nav-title">Why Are LLMs Getting Cheaper in 2026?</div>
-          </a>
-        </nav>
-
-      </article>
-
-      <!-- Newsletter -->
-      <section aria-labelledby="nl-heading" style="margin:0 0 60px">
-        <div class="nl-box">
-          <div style="font-size:1.8rem">💌</div>
-          <h2 id="nl-heading">Stay Ahead of AI. Get It Free.</h2>
-          <p>Top AI stories and plain-English explainers every week. No spam, no noise — just signal.</p>
-          <form class="nl-form" id="nlForm" action="https://formspree.io/f/xwvjgdpw" method="POST">
-            <input class="nl-input" type="email" name="email" placeholder="Your email address" required autocomplete="email" aria-label="Email address"/>
-            <button class="nl-btn" type="submit">Subscribe Free</button>
-          </form>
-          <div id="nlSuccess" style="display:none;color:#22C55E;font-weight:700;margin-top:12px;">🎉 You're subscribed! Check your inbox.</div>
-          <p class="nl-note">No spam · Unsubscribe anytime · 100% free</p>
-        </div>
-      </section>
-
-    </div><!-- /art-wrap -->
-  </main>
-
-  <!-- Footer -->
-  <footer role="contentinfo">
-    <div class="wrap">
-      <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding:52px 0 0;flex-wrap:wrap" class="footer-grid">
-        <div>
-          <div class="f-logo" style="margin-bottom:14px;">NyvoraAI</div>
-          <p style="color:#9FB0D6;font-size:.9rem;line-height:1.7;max-width:280px;">Your trusted source for original AI news, plain-English explainers, and practical insights on artificial intelligence. Built for the AI generation.</p>
-          <div style="display:flex;gap:10px;margin-top:18px;">
-            <a class="f-social-link" href="https://x.com/nyvoraai_co" aria-label="X" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </a>
-            <a class="f-social-link" href="https://www.instagram.com/nyvora_ai/" aria-label="Instagram" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
-            </a>
-            <a class="f-social-link" href="https://www.facebook.com/profile.php?id=61591060353276" aria-label="Facebook" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.95v-7.04H7.9V12h2.6V9.8c0-2.57 1.53-3.99 3.87-3.99 1.12 0 2.3.2 2.3.2v2.53h-1.3c-1.28 0-1.68.8-1.68 1.62V12h2.86l-.46 2.91h-2.4v7.04A10 10 0 0 0 22 12z"/></svg>
-            </a>
-            <a class="f-social-link" href="https://www.youtube.com/@Nyvora_ai" aria-label="YouTube" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8.5s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C15.7 5.4 12 5.4 12 5.4s-3.7 0-6.1.2c-.4 0-1.3.1-2.1.9-.6.6-.8 2-.8 2S2.8 10.1 2.8 11.8v1.4c0 1.7.2 3.3.2 3.3s.2 1.4.8 2c.8.8 1.9.8 2.3.9 1.7.2 7.1.2 7.1.2s3.7 0 6.1-.2c.4 0 1.3-.1 2.1-.9.6-.6.8-2 .8-2s.2-1.7.2-3.3v-1.4c0-1.7-.2-3.3-.2-3.3z"/><path d="M10 14.5v-5l4.5 2.5z" fill="currentColor" stroke="none"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="f-col">
-          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:18px;font-size:.95rem;">Topics</h4>
-          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">AI News</a></li>
-            <li><a href="../blog.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Blog</a></li>
-            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Machine Learning</a></li>
-            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Generative AI</a></li>
-            <li><a href="../ai-news.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">AI Explainers</a></li>
-          </ul>
-        </div>
-        <div class="f-col">
-          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:18px;font-size:.95rem;">Company</h4>
-          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-            <li><a href="../about.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">About Us</a></li>
-            <li><a href="../contact.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Contact</a></li>
-            <li><a href="../contact.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Write for Us</a></li>
-          </ul>
-        </div>
-        <div class="f-col">
-          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:18px;font-size:.95rem;">Contact</h4>
-          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-            <li><a href="mailto:nyvora.ai@outlook.com" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">nyvora.ai@outlook.com</a></li>
-            <li><a href="../contact.html" style="color:#9FB0D6;text-decoration:none;font-size:.9rem;">Send a message</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="f-bottom-bar">
-        <span>© 2026 NyvoraAI. All rights reserved.</span>
-        <div class="f-made">Made with <span class="f-heart">❤️</span> for the AI generation</div>
-        <div class="f-links">
-          <a href="../about.html">About</a>
-          <a href="../contact.html">Contact</a>
-          <a href="../ai-news.html">AI News</a>
-        </div>
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" aria-expanded="false" tabindex="0">
+        <span></span><span></span><span></span>
       </div>
     </div>
-  </footer>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+</div>
 
-  <script src="../main.js" defer></script>
-  <script>
-    /* Reading progress */
-    const prog = document.getElementById('read-prog');
-    window.addEventListener('scroll', () => {
-      const h = document.documentElement.scrollHeight - window.innerHeight;
-      const p = h > 0 ? (window.scrollY / h) * 100 : 0;
-      prog.style.width = p + '%';
-      prog.setAttribute('aria-valuenow', Math.round(p));
-    }, { passive: true });
+<div class="page-wrap">
 
-    /* Kill any sticky/fixed TOC or sidebar injected by main.js */
-    (function() {
-      const toc = document.querySelector('.art-toc');
-      if (!toc) return;
-      const obs = new MutationObserver(() => {
-        const s = toc.style;
-        if (s.position && s.position !== 'static') { toc.style.cssText = ''; }
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a><span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a><span class="bc-sep">/</span>
+  <span aria-current="page">How Many Parameters Does ChatGPT Have</span>
+</nav>
+
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge badge-hot">🧠 AI Architecture</span>
+    <span class="badge badge-ai">📊 Model Sizes</span>
+    <span class="badge badge-read">⏱ 22 min read</span>
+    <span class="badge badge-date">📅 June 2026</span>
+  </div>
+  <h1 class="article-title">How Many <span class="title-underline">Parameters Does ChatGPT</span> Have?</h1>
+  <p class="article-intro">It’s the question that pops up in almost every conversation about artificial intelligence: just how big is the brain inside ChatGPT? We hear terms like "175 billion" and "1.8 trillion" thrown around on tech Twitter, but what do those numbers actually mean, and why is OpenAI so secretive about them? Let’s crack open the hood and find out.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">V<img src="https://nyvoraai.github.io/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+      <div><div class="meta-name">Varun Lalwani</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-06-30">June 30, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Reviewed <time datetime="2026-06">June 2026</time></span>
+  </div>
+</header>
+
+<div class="blog-banner-wrap reveal">
+  <img
+    src="https://nyvoraai.github.io/assets/chatgpt-parameters-banner.jpg"
+    alt="How many parameters does ChatGPT have - chart comparing GPT-3.5, GPT-4, and Llama model sizes"
+    class="blog-banner"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+  />
+  <div class="banner-fallback">
+    <div class="bf-inner">
+      <div class="bf-logo-big">🧠 ChatGPT</div>
+      <div class="bf-text">Inside the AI's Massive Brain</div>
+      <div class="bf-sub">Parameter Counts Explained · NyvoraAI · 2026</div>
+      <div class="bf-tags">
+        <span class="bf-tag bf-tag-blue">GPT-3.5</span>
+        <span class="bf-tag bf-tag-green">GPT-4</span>
+        <span class="bf-tag bf-tag-teal">GPT-4o</span>
+        <span class="bf-tag bf-tag-gold">Mixture of Experts</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">📌 Quick Navigation</div>
+    <ol>
+      <li><a href="#quick-answer">Quick answer</a></li>
+      <li><a href="#what-is">What is a parameter?</a></li>
+      <li><a href="#the-numbers">The exact parameter counts</a></li>
+      <li><a href="#chat-ui">Ask ChatGPT about itself</a></li>
+      <li><a href="#dense-vs-moe">Dense vs. Mixture of Experts</a></li>
+      <li><a href="#scale-viz">Visualizing the scale</a></li>
+      <li><a href="#competitors">ChatGPT vs. the competition</a></li>
+      <li><a href="#does-it-matter">Does size actually matter?</a></li>
+      <li><a href="#quiz">Knowledge Quiz</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">If you’ve spent more than five minutes reading about AI, you’ve probably heard the word "parameters." It’s the favorite buzzword of tech journalists and AI hype-men alike. We throw around numbers like 175 billion and 1.8 trillion like they’re loose change, but for most people, these numbers are completely meaningless. Is a trillion parameters a lot? Is it twice as smart as 500 billion? Does it even matter?</p>
+
+  <p class="reveal">The truth is, the parameter count of an AI model is a lot like the horsepower of a car. It gives you a rough idea of the engine's potential, but it doesn't tell you anything about the car's handling, its fuel efficiency, or whether it actually feels good to drive. Still, if you want to understand the raw mechanical scale of the technology powering ChatGPT, you have to start with the numbers.</p>
+
+  <p class="reveal">OpenAI is notoriously secretive about the exact architecture of its flagship models. They don't publish technical papers for GPT-4 the way they did for GPT-3. But thanks to a combination of leaked hints, industry whistleblowers, and some very educated guessing by the research community, we have a pretty clear picture of what's going on under the hood. Let's break it all down.</p>
+
+  <div class="key-takeaways quick-answer reveal" id="quick-answer">
+    <div class="kt-title">✨ Quick Answer — ChatGPT's Parameter Count</div>
+    <ul>
+      <li><strong>GPT-3.5:</strong> Confirmed at <strong>175 billion parameters</strong>. This is the model that originally launched ChatGPT to the public in late 2022.</li>
+      <li><strong>GPT-4:</strong> Widely rumored to be a <strong>Mixture of Experts (MoE)</strong> architecture with roughly <strong>1.8 trillion total parameters</strong> (likely 16 experts of ~111B each).</li>
+      <li><strong>GPT-4o:</strong> The current multimodal flagship. Exact numbers are hidden, but it uses a highly optimized, efficient MoE architecture designed to be faster and cheaper than the original GPT-4.</li>
+      <li><strong>The Big Secret:</strong> OpenAI doesn't release these numbers officially because they want you to focus on how the model <em>performs</em>, not how it's built. In 2026, architecture and data quality matter far more than raw size.</li>
+    </ul>
+  </div>
+
+  <div class="stat-strip reveal">
+    <div class="stat-card">
+      <div class="stat-num">175B</div>
+      <div class="stat-label">Parameters in GPT-3.5 (The original ChatGPT brain)</div>
+      <div class="stat-src">OpenAI GPT-3 Paper, 2020</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">~1.8T</div>
+      <div class="stat-label">Estimated total parameters in GPT-4 (MoE Architecture)</div>
+      <div class="stat-src">Industry Leaks & Rumors, 2023</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">405B</div>
+      <div class="stat-label">Parameters in Llama 3.1 (The largest open-source rival)</div>
+      <div class="stat-src">Meta AI, 2024</div>
+    </div>
+  </div>
+
+  <h2 id="what-is"><span class="h2-mark">01</span> What Exactly Is a "Parameter" Anyway?</h2>
+
+  <p class="reveal">Before we get into the trillions, let's ground this in reality. If you're still wrapping your head around the basics, our guide on <a href="https://nyvoraai.github.io/ai-news/what-is-an-llm-in-simple-words.html">what an LLM is in simple words</a> is a great starting point. But here is the short version.</p>
+
+  <p class="reveal">Imagine a massive soundboard in a recording studio. You know, the kind with thousands of little dials and sliders. Every single one of those dials controls a tiny aspect of the sound coming out of the speakers. If you tweak the bass dial, the music gets deeper. If you tweak the treble, it gets sharper.</p>
+
+  <p class="reveal">A neural network is basically a digital soundboard with billions of dials. Each "dial" is a parameter—specifically, a numerical weight or bias. When an AI model is "training," it is literally just adjusting these billions of dials, fractions of a millimeter at a time, until the output it produces matches the correct answer. To understand how these billions of connections actually form and adjust, you need to look at <a href="https://nyvoraai.github.io/ai-news/how-do-large-language-models-learn-from-data.html">how large language models learn from data</a>.</p>
+
+  <p class="reveal">When we say GPT-3.5 has 175 billion parameters, we mean it has 175 billion of these internal dials. The more dials you have, the more nuanced and complex the patterns the model can capture. A model with 8 billion parameters is like a small pedalboard—it can do a few basic effects really well. A model with 1.8 trillion parameters is like the soundboard at Abbey Road Studios—it can replicate almost any sound in the world with terrifying accuracy.</p>
+
+  <h2 id="the-numbers"><span class="h2-mark">02</span> The Exact Parameter Counts: GPT-3.5, GPT-4, and GPT-4o</h2>
+
+  <p class="reveal">Let's get specific. Here is the breakdown of the models that power the ChatGPT interface you use today.</p>
+
+  <h3>GPT-3.5: The 175 Billion Parameter Classic</h3>
+  <p class="reveal">This is the model that broke the internet. When ChatGPT launched in November 2022, it was powered by a fine-tuned version of GPT-3.5. We know for an absolute fact that this model has <strong>175 billion parameters</strong>. Why? Because it's a direct descendant of GPT-3, and OpenAI published a massive research paper detailing every single architectural choice of GPT-3 back in 2020. It's a "dense" model, meaning every single parameter is activated every time you send a prompt.</p>
+
+  <h3>GPT-4: The 1.8 Trillion Parameter Behemoth</h3>
+  <p class="reveal">When GPT-4 launched in March 2023, OpenAI went completely silent on the technical specs. No paper. No parameter count. But a few months later, a bombshell report from The Information, citing leaked documents and whispers from inside OpenAI, revealed that GPT-4 is a <strong>Mixture of Experts (MoE)</strong> model with roughly <strong>1.8 trillion total parameters</strong>.</p>
+  
+  <p class="reveal">The rumor goes that it uses 16 separate "expert" sub-models, each containing about 111 billion parameters. For any given prompt, the model's "router" only activates 2 of those 16 experts. So, while the total brain size is 1.8 trillion, the "active" compute for any single response is only around 220 billion—surprisingly close to GPT-3.5! This is why GPT-4 is so smart but doesn't take forever to generate text.</p>
+
+  <h3>GPT-4o: The Multimodal Optimization</h3>
+  <p class="reveal">GPT-4o (the "o" stands for "omni") is the current flagship model that handles text, voice, and vision natively. OpenAI hasn't revealed its parameter count, but industry consensus is that it uses a highly optimized, newer MoE architecture. It's designed to be drastically faster and cheaper to run than the original GPT-4, likely by using smaller, more efficient experts and advanced quantization techniques.</p>
+
+  <div class="chat-ui reveal">
+    <div class="chat-header">
+      <div class="chat-header-icon">💬</div>
+      <div>
+        <div class="chat-header-text">The Ultimate Irony</div>
+        <div class="chat-header-sub">Asking ChatGPT about its own brain</div>
+      </div>
+    </div>
+
+    <div class="chat-msg user">
+      <div class="chat-avatar human">U</div>
+      <div>
+        <div class="chat-label">User</div>
+        <div class="chat-bubble">How many parameters do you have?</div>
+      </div>
+    </div>
+
+    <div class="chat-msg ai">
+      <div class="chat-avatar ai">AI</div>
+      <div>
+        <div class="chat-label">ChatGPT (GPT-4o)</div>
+        <div class="chat-bubble">I don't have access to my own exact technical specifications, including my precise parameter count. OpenAI hasn't publicly disclosed the exact architecture details for my current version. I can tell you that I'm a large language model trained to be helpful, harmless, and honest, but the specific number of parameters is a proprietary detail!</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="reveal">Notice how the AI itself doesn't know? The model doesn't have self-awareness of its own code. It just predicts the next word based on its training data—which includes articles about its own rumored parameter counts!</p>
+
+  <h2 id="dense-vs-moe"><span class="h2-mark">03</span> Dense vs. Mixture of Experts: Why the Architecture Matters</h2>
+
+  <p class="reveal">If you just look at raw parameter counts, you might assume GPT-4 (1.8T) is ten times larger and more expensive to run than GPT-3.5 (175B). But that's not how modern AI works anymore. We've entered the era of the <strong>Mixture of Experts (MoE)</strong>.</p>
+
+  <div class="risk-grid reveal">
+    <div class="risk-card rc-dense">
+      <div class="rc-badge rc-b-dense">The Old School</div>
+      <div class="rc-name">Dense Models</div>
+      <div class="rc-desc">In a dense model (like GPT-3.5 or Llama 3 405B), every single parameter is activated for every single token generated. If you have 175 billion parameters, you use 175 billion parameters to say "Hello." It's simple, but incredibly computationally expensive.</div>
+      <div class="rc-stats">
+        <span class="rc-stat">💸 High Compute</span>
+        <span class="rc-stat">🐢 Slower Inference</span>
+        <span class="rc-stat">🧠 100% Active</span>
+      </div>
+    </div>
+    <div class="risk-card rc-moe">
+      <div class="rc-badge rc-b-moe">The Modern Era</div>
+      <div class="rc-name">Mixture of Experts (MoE)</div>
+      <div class="rc-desc">In an MoE model (like GPT-4 or DeepSeek-V3), the network is divided into specialized "expert" sub-networks. A routing mechanism decides which experts to use for a specific prompt. You might have 1.8 trillion total parameters, but only activate 200 billion at a time. You get the knowledge of a massive model with the speed of a smaller one.</div>
+      <div class="rc-stats">
+        <span class="rc-stat">💰 Efficient Compute</span>
+        <span class="rc-stat">🚀 Fast Inference</span>
+        <span class="rc-stat">🧠 ~15% Active</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="reveal">This efficiency boom is exactly <a href="https://nyvoraai.github.io/ai-news/why-are-llms-getting-cheaper-2026.html">why LLMs are getting cheaper in 2026</a>, despite the models getting smarter. We aren't just building bigger brains; we're building smarter brains that know which parts of themselves to turn on and off.</p>
+
+  <h2 id="scale-viz"><span class="h2-mark">04</span> Visualizing the Scale: ChatGPT vs. The World</h2>
+
+  <p class="reveal">Numbers this big are impossible for the human brain to comprehend. "1.8 trillion" might as well be "infinity." To put this into perspective, let's look at how ChatGPT's underlying models compare to the rest of the AI landscape.</p>
+
+  <div class="scale-viz reveal">
+    <div class="scale-title">📊 The Parameter Scale (Logarithmic View)</div>
+    <div class="scale-sub">Comparing the total parameter counts of major AI models in 2026.</div>
+
+    <div class="scale-bar-wrap">
+      <div class="scale-label"><span>Mistral 7B (Open Source)</span><span>7 Billion</span></div>
+      <div class="scale-track"><div class="scale-fill sf-llama" data-width="2">7B</div></div>
+    </div>
+
+    <div class="scale-bar-wrap">
+      <div class="scale-label"><span>GPT-3.5 (Original ChatGPT)</span><span>175 Billion</span></div>
+      <div class="scale-track"><div class="scale-fill sf-gpt35" data-width="25">175B</div></div>
+    </div>
+
+    <div class="scale-bar-wrap">
+      <div class="scale-label"><span>Llama 3.1 405B (Meta Open Source)</span><span>405 Billion</span></div>
+      <div class="scale-track"><div class="scale-fill sf-llama" data-width="45">405B</div></div>
+    </div>
+
+    <div class="scale-bar-wrap">
+      <div class="scale-label"><span>DeepSeek-V3 (Open Source MoE)</span><span>671 Billion</span></div>
+      <div class="scale-track"><div class="scale-fill sf-deepseek" data-width="65">671B</div></div>
+    </div>
+
+    <div class="scale-bar-wrap">
+      <div class="scale-label"><span>GPT-4 (Rumored MoE)</span><span>~1.8 Trillion</span></div>
+      <div class="scale-track"><div class="scale-fill sf-gpt4" data-width="100">1.8T</div></div>
+    </div>
+  </div>
+
+  <p class="reveal">Look at that top bar. GPT-4's rumored 1.8 trillion parameters absolutely dwarfs even the largest open-source models. But here is the plot twist: despite being five times smaller in total parameters, models like DeepSeek-V3 and Llama 3.1 405B often match or even beat GPT-4 on specific benchmarks. How? Better data, better architecture, and better training techniques.</p>
+
+  <h2 id="competitors"><span class="h2-mark">05</span> ChatGPT vs. The Competition: Size Isn't Everything</h2>
+
+  <p class="reveal">If you're trying to decide between the top AI models, parameter count is just one tiny piece of the puzzle. Let's look at how ChatGPT stacks up against its biggest rivals.</p>
+
+  <h3>ChatGPT vs. Claude</h3>
+  <p class="reveal">Anthropic's Claude 3.5 Sonnet is widely considered ChatGPT's biggest rival for coding and complex reasoning. If you're trying to decide between the two giants, our breakdown of the <a href="https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html">GPT vs Claude differences</a> will help you choose. Rumors suggest Claude 3.5 is a dense or MoE model in the 100B–200B active parameter range. It's significantly "smaller" than GPT-4, yet it frequently beats GPT-4 on graduate-level reasoning tests. Proof that architecture beats raw size.</p>
+
+  <h3>ChatGPT vs. DeepSeek</h3>
+  <p class="reveal">DeepSeek has taken the AI world by storm by releasing incredibly powerful open-source models that cost a fraction of the price to train. For a deep dive into this rivalry, read our full analysis on <a href="https://nyvoraai.github.io/ai-news/how-does-deepseek-compare-to-chatgpt.html">how does DeepSeek compare to ChatGPT</a>. DeepSeek-V3 has 671 billion total parameters (MoE), but it was trained for under $6 million—a massive slap in the face to OpenAI's $100 million+ training bills.</p>
+
+  <h3>ChatGPT vs. Open Source (Llama)</h3>
+  <p class="reveal">Meta's Llama 3.1 405B is the largest openly available model. But if you want to peek under the hood and run it yourself, you need to understand <a href="https://nyvoraai.github.io/ai-news/what-does-open-source-llm-mean.html">what does open source LLM mean</a>. While 405 billion is massive for an open model, it's still less than a quarter of GPT-4's rumored size. Yet, for 90% of everyday tasks, the average user cannot tell the difference in output quality.</p>
+
+  <div class="callout callout-gold reveal">
+    <div class="callout-title">💡 The Foundation Model Reality</div>
+    <p>All of these massive models—GPT-4, Claude, Llama, DeepSeek—start as base models trained on trillions of tokens of text. These massive starting points are known as foundation models. To understand the architecture better and how they are adapted for chat, see <a href="https://nyvoraai.github.io/ai-news/what-is-a-foundation-model-in-ai.html">what is a foundation model in AI</a>.</p>
+  </div>
+
+  <h2 id="does-it-matter"><span class="h2-mark">06</span> Does Parameter Count Actually Matter in 2026?</h2>
+
+  <p class="reveal">Here is the honest truth that a lot of tech influencers won't tell you: in 2024, parameter count mattered a lot. The biggest model was almost always the smartest model. But in 2026? Not so much.</p>
+
+  <p class="reveal">We have hit the point of <strong>diminishing returns</strong>. Going from 8 billion to 70 billion parameters yields a massive leap in intelligence. Going from 400 billion to 1.8 trillion yields a noticeable bump, but it costs exponentially more money, requires vastly more energy, and introduces massive engineering headaches.</p>
+
+  <p class="reveal">Today, three things matter far more than raw parameter count:</p>
+  <ol>
+    <li><strong>Data Quality:</strong> A 70B model trained on perfectly curated, high-quality textbooks will outperform a 1 trillion parameter model trained on random internet garbage.</li>
+    <li><strong>Post-Training (RLHF):</strong> How the model is fine-tuned to follow instructions, refuse harmful prompts, and format its answers beautifully makes a bigger difference to the end-user than the base size.</li>
+    <li><strong>Inference Optimization:</strong> Techniques like quantization (compressing the model's weights) allow a 70B model to run on a consumer laptop, making it vastly more useful than a 1T model that requires a supercomputer.</li>
+  </ol>
+
+  <p class="reveal">If you're just starting out and don't want to get bogged down in parameter counts and architecture debates, check out <a href="https://nyvoraai.github.io/ai-news/which-llm-is-best-for-beginners-2026.html">which LLM is best for beginners in 2026</a>. The best model for you is simply the one that gives you the right answer fastest, regardless of how many billions of dials are turning inside it.</p>
+
+  <h2 id="quiz"><span class="h2-mark">07</span> Test Your Knowledge: The Parameter Quiz</h2>
+  
+  <p class="reveal">Think you've got a handle on AI model sizes? Let's see if you were paying attention. Take this quick 3-question quiz!</p>
+
+  <div class="quiz-box reveal" id="quizBox">
+    <div class="quiz-title">🧠 The AI Architecture Quiz</div>
+    <div class="quiz-sub">3 questions to test your knowledge on ChatGPT's brain.</div>
+    
+    <div id="quizContent">
+      <!-- Questions injected via JS -->
+    </div>
+    
+    <div class="quiz-nav">
+      <div class="quiz-progress" id="quizProgress">Question 1 of 3</div>
+      <button class="quiz-btn" id="quizNext" onclick="nextQuestion()" disabled>Next →</button>
+    </div>
+  </div>
+
+  <h2 id="conclusion"><span class="h2-mark">08</span> Conclusion: Beyond the Numbers</h2>
+
+  <p class="reveal">So, how many parameters does ChatGPT have? The short answer is: it depends on which version you're using, but it ranges from 175 billion for the classic GPT-3.5 to a rumored 1.8 trillion for the behemoth GPT-4.</p>
+
+  <p class="reveal">But the long answer—the one that actually matters—is that the number of parameters is just a vanity metric. It's the horsepower of the AI world. Sure, it's fun to know that OpenAI built a 1.8 trillion parameter monster, but what actually impacts your daily life is how well it writes your emails, how accurately it debugs your code, and how cheaply it can run at scale.</p>
+
+  <p class="reveal">As we move deeper into 2026, the AI industry is shifting its obsession from "who has the biggest model" to "who has the most efficient model." The future isn't about building a 10 trillion parameter GPT-5. The future is about building a 200 billion parameter model that is so perfectly trained, so beautifully optimized, and so incredibly fast that it makes the trillion-parameter giants look like clunky relics of the past.</p>
+
+  <p class="reveal">The brain inside ChatGPT is massive, yes. But it's the elegance of its design, not just its size, that makes it a marvel of modern engineering.</p>
+
+  <h2 id="faq"><span class="h2-mark">09</span> Frequently Asked Questions</h2>
+  <div class="faq reveal">
+    <details open>
+      <summary>How many parameters does ChatGPT have?</summary>
+      <div class="faq-body">The exact parameter count depends on the version. GPT-3.5 has approximately 175 billion parameters. GPT-4 is widely rumored to be a Mixture of Experts (MoE) model with around 1.8 trillion total parameters (using 16 experts of roughly 111 billion each). GPT-4o, the multimodal flagship, uses a highly optimized MoE architecture, though OpenAI keeps the exact count secret.</div>
+    </details>
+    <details>
+      <summary>What is a parameter in an AI model?</summary>
+      <div class="faq-body">A parameter is a numerical value (a weight or bias) inside a neural network that the model adjusts during training. Think of them like the synapses in a human brain or the individual dials on a massive soundboard. The more parameters a model has, the more nuanced patterns it can recognize, though architecture and data quality matter just as much as raw size.</div>
+    </details>
+    <details>
+      <summary>Is GPT-4 bigger than GPT-3.5?</summary>
+      <div class="faq-body">Yes, significantly. While GPT-3.5 is a dense model with about 175 billion parameters, GPT-4 is believed to be a Mixture of Experts (MoE) model with roughly 1.8 trillion total parameters. However, because it's an MoE model, it only activates a fraction of those parameters for any given prompt, making it faster and more efficient than a dense model of the same total size.</div>
+    </details>
+    <details>
+      <summary>Does a higher parameter count mean a better AI?</summary>
+      <div class="faq-body">Not necessarily. While more parameters generally allow a model to store more knowledge and handle complex reasoning, a poorly trained 1 trillion parameter model will perform worse than a perfectly trained 100 billion parameter model. In 2026, model architecture (like MoE), training data quality, and post-training alignment are often more important than raw parameter count.</div>
+    </details>
+    <details>
+      <summary>How does ChatGPT's size compare to open-source models?</summary>
+      <div class="faq-body">ChatGPT's underlying models are massive and closed-source. For comparison, the largest openly available model, Llama 3.1 405B, has 405 billion parameters. While smaller than the rumored 1.8 trillion of GPT-4, open-source models are rapidly closing the gap in real-world performance through better training techniques and efficient architectures.</div>
+    </details>
+  </div>
+
+  <div class="author-box reveal">
+    <div class="meta-avatar">V<img src="https://nyvoraai.github.io/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by Varun Lalwani</h3>
+      <p>Varun covers large language models, AI architecture, and the practical side of building with accessible AI tools. Published June 2026. Questions? <a href="https://nyvoraai.github.io/contact.html">Contact our team</a> or <a href="https://nyvoraai.github.io/about.html">learn about our mission</a>.</p>
+    </div>
+  </div>
+
+  <div class="share-section reveal">
+    <div class="share-title">Know someone obsessed with AI model sizes? Share this guide 👇</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=How+Many+Parameters+Does+ChatGPT+Have%3F+The+2026+Guide+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-x"/></svg> Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Share on Facebook</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html" target="_blank" rel="noopener" class="share-btn">💼 Share on LinkedIn</a>
+      <button class="share-btn" onclick="copyLink()">🔗 Copy Link</button>
+    </div>
+  </div>
+
+  <div class="newsletter reveal">
+    <h2>Decode the AI Hype</h2>
+    <p>No fluff, just facts. Weekly insights on LLMs, architecture, and what actually matters in AI. Join 10,000+ smart readers.</p>
+    <form action="https://formspree.io/f/xwvjgdpw" method="POST" class="nl-form" id="nlForm">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
+      <input type="hidden" name="_subject" value="Newsletter Signup - ChatGPT Parameters 2026"/>
+      <button type="submit" class="nl-btn">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · Privacy-focused</p>
+    <div class="nl-social">
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-instagram"/></svg> Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-facebook"/></svg> Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-x"/></svg> X</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</a>
+    </div>
+  </div>
+
+  <div class="related reveal">
+    <div class="related-title">Continue Your AI Journey</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/ai-news/how-does-deepseek-compare-to-chatgpt.html" class="rel-card">
+        <div class="rel-tag">Comparison</div>
+        <div class="rel-title">How Does DeepSeek Compare to ChatGPT?</div>
+        <div class="rel-read">18 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html" class="rel-card">
+        <div class="rel-tag">Rivalry</div>
+        <div class="rel-title">GPT vs Claude — Key Differences</div>
+        <div class="rel-read">16 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/what-is-a-foundation-model-in-ai.html" class="rel-card">
+        <div class="rel-tag">Architecture</div>
+        <div class="rel-title">What Is a Foundation Model in AI?</div>
+        <div class="rel-read">20 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/what-does-open-source-llm-mean.html" class="rel-card">
+        <div class="rel-tag">Open Source</div>
+        <div class="rel-title">What Does Open Source LLM Mean?</div>
+        <div class="rel-read">15 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/why-are-llms-getting-cheaper-2026.html" class="rel-card">
+        <div class="rel-tag">Trends</div>
+        <div class="rel-title">Why Are LLMs Getting Cheaper?</div>
+        <div class="rel-read">17 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news.html" class="rel-card">
+        <div class="rel-tag">All News</div>
+        <div class="rel-title">Browse All AI News & Guides</div>
+        <div class="rel-read">Explore →</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<footer>
+  <div class="ft-blob" style="width:220px;height:220px;background:var(--coral-soft);top:8%;left:1%;animation-duration:9s"></div>
+  <div class="ft-blob" style="width:180px;height:180px;background:var(--blue-soft);bottom:18%;left:20%;animation-duration:11s;animation-delay:-3s"></div>
+  <div class="ft-blob" style="width:200px;height:200px;background:var(--gold-soft);top:25%;right:3%;animation-duration:8s;animation-delay:-1s"></div>
+  <div class="ft-blob" style="width:160px;height:160px;background:var(--purple-soft);bottom:22%;right:16%;animation-duration:10s;animation-delay:-5s"></div>
+  <div class="ft-blob" style="width:140px;height:140px;background:var(--teal-soft);top:55%;left:42%;animation-duration:12s;animation-delay:-2s"></div>
+  <div class="ft-blob" style="width:190px;height:190px;background:var(--green-soft);top:15%;right:25%;animation-duration:10s;animation-delay:-4s"></div>
+
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="ft-dots">
+        <div class="ft-dot" style="background:var(--coral);animation-delay:0s"></div>
+        <div class="ft-dot" style="background:var(--gold);animation-delay:.2s"></div>
+        <div class="ft-dot" style="background:var(--teal);animation-delay:.4s"></div>
+        <div class="ft-dot" style="background:var(--purple);animation-delay:.6s"></div>
+        <div class="ft-dot" style="background:var(--blue);animation-delay:.8s"></div>
+      </div>
+      <div class="footer-logo-wrap">
+        <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI logo icon" class="logo-img" onerror="this.remove()"/>
+        Nyvora<span>AI</span>
+      </div>
+      <p>Your trusted source for AI news, LLM guides, and practical intelligence. We make complex AI research accessible and genuinely useful for everyone.</p>
+      <div class="footer-chips">
+        <span class="chip chip-coral">🧠 Model Sizes</span>
+        <span class="chip chip-teal">📊 LLM News</span>
+        <span class="chip chip-gold">⚡ Weekly Updates</span>
+        <span class="chip chip-blue">🌍 Global Coverage</span>
+        <span class="chip chip-purple">🔬 Research</span>
+      </div>
+      <div class="footer-social" style="margin-top:18px">
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-instagram"/></svg><span>Instagram</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-facebook"/></svg><span>Facebook</span></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-x"/></svg><span>X</span></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-youtube"/></svg><span>YouTube</span></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>AI Guides</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news/how-many-parameters-does-chatgpt-have.html">ChatGPT Parameters</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/how-does-deepseek-compare-to-chatgpt.html">DeepSeek vs ChatGPT</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/what-is-a-foundation-model-in-ai.html">Foundation Models</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/what-does-open-source-llm-mean.html">Open Source LLMs</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">All AI News</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+// Background Bubbles
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const wrap=document.getElementById('bubbleField');
+  const colors=['#FF6B4A','#146B5C','#E89B2D','#8B5CF6','#2563EB'];
+  const n=window.innerWidth<700?8:14;
+  for(let i=0;i<n;i++){
+    const b=document.createElement('div');b.className='fbubble';
+    const s=26+Math.random()*60,l=Math.random()*100,d=13+Math.random()*13,dl=-Math.random()*d;
+    b.style.cssText='width:'+s+'px;height:'+(s*.7)+'px;left:'+l+'%;bottom:-10%;border-color:'+colors[i%colors.length]+';animation-duration:'+d+'s;animation-delay:'+dl+'s';
+    wrap.appendChild(b);
+  }
+})();
+
+// Scroll Progress & Back to Top
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const p=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  const bar=document.getElementById('progress');
+  bar.style.width=p+'%';bar.setAttribute('aria-valuenow',Math.round(p));
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+},{passive:true});
+
+// Reveal on Scroll & Animate Scale Bars
+const io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(!e.isIntersecting)return;
+    e.target.classList.add('visible');
+    
+    // Animate scale bars when visible
+    if(e.target.classList.contains('scale-viz')){
+      const fills=e.target.querySelectorAll('.scale-fill');
+      fills.forEach(function(f){
+        setTimeout(function(){
+          f.style.width=f.getAttribute('data-width')+'%';
+        },200);
       });
-      obs.observe(toc, { attributes: true, attributeFilter: ['style', 'class'] });
-
-      // Also hide any sidebar element main.js may inject
-      const hideSidebar = () => {
-        document.querySelectorAll('.toc-sidebar, .art-toc-sidebar, [class*="sidebar-toc"], [id*="sidebar-toc"]').forEach(el => {
-          el.style.display = 'none';
-        });
-      };
-      hideSidebar();
-      setTimeout(hideSidebar, 500);
-      setTimeout(hideSidebar, 1500);
-    })();
-
-    /* Side popup */
-    const popup = document.getElementById('side-popup');
-    const popupClose = document.getElementById('popupClose');
-    const popupForm = document.getElementById('popupForm');
-    const popupSuccess = document.getElementById('popupSuccess');
-    let shown = false;
-    window.addEventListener('scroll', () => {
-      if (!shown && window.scrollY > 600) { shown = true; setTimeout(() => popup.classList.add('show'), 400); }
-    }, { passive: true });
-    popupClose.addEventListener('click', () => { popup.style.transform = 'translateY(120%)'; popup.style.opacity = '0'; });
-    popupForm.addEventListener('submit', async e => {
-      e.preventDefault();
-      try { await fetch(popupForm.action, { method:'POST', body: new FormData(popupForm), headers:{'Accept':'application/json'} }); } catch(_){}
-      popupForm.style.display = 'none';
-      popupSuccess.classList.add('show');
-      setTimeout(() => { popup.style.transform = 'translateY(120%)'; popup.style.opacity = '0'; }, 3000);
-    });
-
-    /* Newsletter */
-    const nlForm = document.getElementById('nlForm');
-    const nlSuccess = document.getElementById('nlSuccess');
-    nlForm.addEventListener('submit', async e => {
-      e.preventDefault();
-      try { await fetch(nlForm.action, { method:'POST', body: new FormData(nlForm), headers:{'Accept':'application/json'} }); } catch(_){}
-      nlForm.style.display = 'none';
-      nlSuccess.style.display = 'block';
-    });
-
-    /* Quiz */
-    function checkQuiz(btn, correct) {
-      document.querySelectorAll('.quiz-opt').forEach(o => o.disabled = true);
-      const res = document.getElementById('quizResult');
-      const rst = document.getElementById('quizReset');
-      if (correct) {
-        btn.classList.add('correct');
-        res.textContent = '✅ Correct! ChatGPT Plus (GPT-4) has an estimated 1.5–2 trillion parameters, roughly 10× more than the free GPT-3.5.';
-        res.className = 'quiz-result show ok';
-      } else {
-        btn.classList.add('wrong');
-        document.querySelectorAll('.quiz-opt').forEach(o => { if (o.getAttribute('onclick').includes('true')) o.classList.add('correct'); });
-        res.textContent = '❌ Not quite. ChatGPT Plus (GPT-4) is estimated at 1.5–2 trillion parameters vs ~175 billion for GPT-3.5.';
-        res.className = 'quiz-result show no';
-      }
-      rst.classList.add('show');
     }
-    function resetQuiz() {
-      document.querySelectorAll('.quiz-opt').forEach(o => { o.disabled = false; o.className = 'quiz-opt'; });
-      document.getElementById('quizResult').className = 'quiz-result';
-      document.getElementById('quizReset').classList.remove('show');
-    }
+    
+    io.unobserve(e.target);
+  });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(r){io.observe(r);});
 
-    /* Reactions */
-    function react(btn, emoji) {
-      document.querySelectorAll('.react-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      if (emoji === '👍') { const r = document.getElementById('rc1'); r.textContent = parseInt(r.textContent) + 1; }
-      else if (emoji === '🔥') { const r = document.getElementById('rc2'); r.textContent = parseInt(r.textContent) + 1; }
-    }
-  </script>
+// Menu Toggle
+function toggleMenu(){
+  const nav=document.getElementById('mobileNav'),ham=document.getElementById('ham');
+  const open=nav.classList.toggle('open');
+  ham.setAttribute('aria-expanded',open?'true':'false');
+}
+
+// Copy Link
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(function(){
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;const o=btn.textContent;
+    btn.textContent='✅ Copied!';setTimeout(function(){btn.textContent=o;},2000);
+  });
+}
+
+// Newsletter Form
+document.getElementById('nlForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const btn=this.querySelector('.nl-btn');btn.textContent='Sending...';btn.disabled=true;
+  fetch(this.action,{method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}})
+    .then(function(r){btn.textContent=r.ok?'✅ Subscribed!':'Try again';if(!r.ok)btn.disabled=false;})
+    .catch(function(){btn.textContent='Try again';btn.disabled=false;});
+});
+
+// Interactive Quiz Logic
+const quizData = [
+  {
+    q: "Approximately how many parameters does the original GPT-3.5 model have?",
+    opts: ["17.5 Billion", "175 Billion", "1.75 Trillion", "405 Billion"],
+    correct: 1,
+    explain: "GPT-3.5 has 175 billion parameters. It's a 'dense' model, meaning all 175 billion are activated for every single response."
+  },
+  {
+    q: "What architecture is GPT-4 rumored to use to achieve its massive 1.8 trillion parameter count?",
+    opts: ["Dense Transformer", "Mixture of Experts (MoE)", "Recurrent Neural Network", "Convolutional Network"],
+    correct: 1,
+    explain: "GPT-4 is widely believed to be a Mixture of Experts (MoE) model. It has 16 'expert' sub-models, but only activates 2 of them for any given prompt, making it incredibly efficient despite its massive total size."
+  },
+  {
+    q: "In 2026, what matters more for an AI model's performance than raw parameter count?",
+    opts: ["The color of the user interface", "Training data quality and architecture", "The number of social media followers", "The year the company was founded"],
+    correct: 1,
+    explain: "Data quality, post-training alignment (RLHF), and efficient architecture (like MoE) matter far more than raw parameter count. A perfectly trained smaller model will often beat a poorly trained massive one."
+  }
+];
+
+let currentQ = 0;
+let score = 0;
+let answered = false;
+
+function renderQuestion() {
+  const content = document.getElementById('quizContent');
+  const data = quizData[currentQ];
+  answered = false;
+  document.getElementById('quizNext').disabled = true;
+  document.getElementById('quizProgress').textContent = `Question ${currentQ + 1} of ${quizData.length}`;
+  
+  let html = `<div class="quiz-q">${data.q}</div><div class="quiz-opts">`;
+  data.opts.forEach((opt, i) => {
+    html += `<button class="quiz-opt" onclick="checkAnswer(${i})">${opt}</button>`;
+  });
+  html += `</div><div class="quiz-feedback" id="quizFeedback"></div>`;
+  content.innerHTML = html;
+}
+
+function checkAnswer(selected) {
+  if (answered) return;
+  answered = true;
+  const data = quizData[currentQ];
+  const opts = document.querySelectorAll('.quiz-opt');
+  
+  opts[data.correct].classList.add('correct');
+  if (selected !== data.correct) {
+    opts[selected].classList.add('wrong');
+  } else {
+    score++;
+  }
+  
+  const feedback = document.getElementById('quizFeedback');
+  feedback.textContent = data.explain;
+  feedback.classList.add('show');
+  
+  document.getElementById('quizNext').disabled = false;
+  if (currentQ === quizData.length - 1) {
+    document.getElementById('quizNext').textContent = 'See Results 🏆';
+  }
+}
+
+function nextQuestion() {
+  currentQ++;
+  if (currentQ >= quizData.length) {
+    showResults();
+  } else {
+    renderQuestion();
+  }
+}
+
+function showResults() {
+  const content = document.getElementById('quizContent');
+  let msg = "Keep reading to learn more about AI architecture!";
+  if (score === 2) msg = "Great job! You know your way around a neural network.";
+  if (score === 3) msg = "Perfect score! You're ready to debate AI engineers on Twitter.";
+  
+  content.innerHTML = `
+    <div class="quiz-result">
+      <div class="quiz-score">${score}/${quizData.length}</div>
+      <h3 style="margin:10px 0;font-family:var(--font-display);color:var(--ink);">${score === 3 ? '🏆 AI Architect!' : score === 2 ? '🌟 Great Job!' : '📚 Keep Learning!'}</h3>
+      <p style="color:var(--ink-soft);font-size:15px;">${msg}</p>
+      <button class="quiz-btn" onclick="resetQuiz()" style="margin-top:20px;">Retry Quiz</button>
+    </div>
+  `;
+  document.getElementById('quizNext').style.display = 'none';
+  document.getElementById('quizProgress').textContent = 'Completed';
+}
+
+function resetQuiz() {
+  currentQ = 0;
+  score = 0;
+  document.getElementById('quizNext').style.display = 'block';
+  document.getElementById('quizNext').textContent = 'Next →';
+  renderQuestion();
+}
+
+// Initialize Quiz
+renderQuestion();
+</script>
 </body>
 </html>
