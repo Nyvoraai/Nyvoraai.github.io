@@ -103,6 +103,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: var(--muted, #94a3b8); font-size: 14px;
       margin: 6px 0 0; line-height: 1.6; width: 100%;
     }
+    /* ── SEARCH BAR ── */
+    .search-wrap{max-width:1200px;margin:0 auto;padding:0 0 28px}
+    .search-box{display:flex;align-items:center;gap:0;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+    .search-box:focus-within{border-color:rgba(139,92,246,.5);box-shadow:0 0 0 3px rgba(139,92,246,.12)}
+    .search-icon{padding:0 14px;color:#94a3b8;font-size:17px;flex-shrink:0;display:flex;align-items:center}
+    .search-input{flex:1;background:transparent;border:none;outline:none;padding:14px 6px;font-size:14.5px;color:#e2e8f0;font-family:'Inter',sans-serif}
+    .search-input::placeholder{color:#4b5563}
+    .search-clear{padding:0 16px;color:#4b5563;cursor:pointer;font-size:18px;transition:color .2s;background:transparent;border:none;line-height:1;display:none}
+    .search-clear.visible{display:block}
+    .search-clear:hover{color:#e2e8f0}
+    .search-count{font-size:12px;color:var(--muted,#94a3b8);padding:0 16px 0 0;white-space:nowrap;font-family:'Inter',sans-serif}
+    .no-results{display:none;grid-column:1/-1;text-align:center;padding:56px 24px;color:#94a3b8;font-size:15px}
+    .no-results svg{margin:0 auto 16px;display:block;opacity:.35}
     @media (prefers-reduced-motion: reduce) {
       .acard-thumb svg * { animation: none !important; transition: none !important; }
     }
@@ -156,6 +169,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="wrap">
       <h2 id="news-heading" class="sr-only">Latest AI News Articles</h2>
 
+      <!-- ── SEARCH BAR ── -->
+      <div class="search-wrap">
+        <div class="search-box">
+          <span class="search-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </span>
+          <input class="search-input" id="searchInput" type="search" placeholder="Search articles — try 'LLM', 'safety', 'robots'…" autocomplete="off" aria-label="Search AI news articles"/>
+          <span class="search-count" id="searchCount">137 articles</span>
+          <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+        </div>
+      </div>
+
       <div class="filter-bar" role="group" aria-label="Filter articles by category">
         <button class="pill active" data-cat="all">All</button>
         <button class="pill" data-cat="llm">LLMs</button>
@@ -166,7 +191,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <button class="pill" data-cat="robotics">Robotics</button>
       </div>
 
-      <div class="article-grid">
+      <div class="article-grid" id="newsGrid">
 
         <!-- ═══════════════ FEATURED NEWS CARDS ═══════════════ -->
 
@@ -2001,38 +2026,63 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="main.js" defer></script>
 <script>
 (function(){
+  var searchInput = document.getElementById('searchInput');
+  var searchClear = document.getElementById('searchClear');
+  var searchCount = document.getElementById('searchCount');
+  var allCards = Array.from(document.querySelectorAll('.article-grid .acard'));
   var pills = document.querySelectorAll('.pill');
+  var activeFilter = 'all';
+
+  function cardText(card){
+    var t = card.querySelector('.acard-title');
+    var d = card.querySelector('.acard-desc');
+    return ((t?t.textContent:'') + ' ' + (d?d.textContent:'')).toLowerCase();
+  }
+
+  function applyFiltersAndSearch(){
+    var q = searchInput.value.trim().toLowerCase();
+    searchClear.classList.toggle('visible', q.length > 0);
+    var visible = 0;
+    allCards.forEach(function(card){
+      var catMatch = activeFilter === 'all' || card.getAttribute('data-cat') === activeFilter;
+      var searchMatch = !q || cardText(card).indexOf(q) !== -1;
+      var show = catMatch && searchMatch;
+      card.style.display = show ? '' : 'none';
+      if(show) visible++;
+    });
+    if(searchCount) searchCount.textContent = visible + ' article' + (visible !== 1 ? 's' : '');
+    var noResultsEl = document.getElementById('noResults');
+    if(noResultsEl) noResultsEl.style.display = visible === 0 ? 'block' : 'none';
+    document.querySelectorAll('.sec-divider').forEach(function(div){
+      var hasVisible = false;
+      var next = div.nextElementSibling;
+      while(next && !next.classList.contains('sec-divider')){
+        if(next.classList && next.classList.contains('acard') && next.style.display !== 'none') hasVisible = true;
+        next = next.nextElementSibling;
+      }
+      div.style.display = hasVisible ? '' : 'none';
+    });
+  }
+
+  if(searchInput){
+    searchInput.addEventListener('input', applyFiltersAndSearch);
+  }
+  if(searchClear){
+    searchClear.addEventListener('click', function(){
+      searchInput.value = '';
+      applyFiltersAndSearch();
+    });
+  }
   pills.forEach(function(btn){
     btn.addEventListener('click', function(){
       pills.forEach(function(p){ p.classList.remove('active'); });
       btn.classList.add('active');
-      var cat = btn.getAttribute('data-cat');
-      document.querySelectorAll('.article-grid .acard').forEach(function(card){
-        card.style.display = (cat === 'all' || card.getAttribute('data-cat') === cat) ? '' : 'none';
-      });
-      document.querySelectorAll('.sec-divider').forEach(function(div){
-        var id = div.id;
-        var show = false;
-        if(cat === 'all') show = true;
-        if(cat === 'safety' && id === 'ai-safety') show = false;
-        if(cat === 'research' && id === 'ai-research') show = true;
-        if(cat === 'tools' && id === 'ai-tools-guides') show = true;
-        if(cat === 'safety') show = false;
-        if(cat === 'all') show = true;
-        div.style.display = show ? '' : 'none';
-      });
-      // Simpler divider logic
-      document.querySelectorAll('.sec-divider').forEach(function(div){
-        var hasVisible = false;
-        var next = div.nextElementSibling;
-        while(next && !next.classList.contains('sec-divider')){
-          if(next.style.display !== 'none') hasVisible = true;
-          next = next.nextElementSibling;
-        }
-        div.style.display = hasVisible ? '' : 'none';
-      });
+      activeFilter = btn.getAttribute('data-cat');
+      applyFiltersAndSearch();
     });
   });
+
+  applyFiltersAndSearch();
 })();
 </script>
 </body>
