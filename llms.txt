@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (124 articles)
+## AI News (125 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -34,6 +34,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Can AI Write Business Proposals? The 2026 Guide](https://nyvoraai.github.io/ai-news/can-ai-write-business-proposals.html): Discover if AI can write business proposals. Learn top tools, prompt strategies, and how to close more deals with AI automation in 2026.
 - [Can LLMs Understand Images? Multimodal AI Explained | 2026](https://nyvoraai.github.io/ai-news/can-llms-understand-images.html): Can LLMs understand images? Discover how multimodal AI models process visual information, their capabilities, limitations, and real-world applications in 2026.
 - [Can Robots Learn From Humans Watching Them?](https://nyvoraai.github.io/ai-news/can-robots-learn-from-humans-watching.html): Yes — robots can learn by watching humans. Discover how imitation learning works, which robots use it, and what it means for the future of AI in 2026.
+- [Claude Opus 4.8: What It Is & How It's Different](https://nyvoraai.github.io/ai-news/what-is-claude-opus-4-8.html): Claude Opus 4.8 explained: what's new, how it differs from Opus 4.7, benchmarks, pricing, and whether it's the right model for you in 2026.
 - [Gemini vs ChatGPT: Key Differences Explained | 2026 Guide](https://nyvoraai.github.io/ai-news/how-is-gemini-different-from-chatgpt.html): How is Gemini different from ChatGPT? Compare features, pricing, capabilities & performance. Find which AI assistant fits your needs in 2026.
 - [GPT vs Claude: Key Differences Explained (2026)](https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html): What is the difference between GPT and Claude? Compare accuracy, coding, tone & pricing. Find the best AI for your needs in 2026.
 - [How Are AI and Robotics Connected? 2026 Guide](https://nyvoraai.github.io/ai-news/how-are-ai-and-robotics-connected.html): Discover how AI and robotics are connected. Learn how artificial intelligence powers modern robots, from autonomous vehicles to humanoid assistants.
