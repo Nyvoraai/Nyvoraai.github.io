@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPRM8T38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>What Is a Mixture of Experts LLM? 2026 Guide</title>
+<meta name="description" content="Learn what a Mixture of Experts LLM is, how gating and sparse routing work, and why models like Mixtral use MoE for speed and scale."/>
+<meta name="keywords" content="mixture of experts LLM, MoE LLM, sparse expert models, Mixtral architecture, gating network, what is MoE in AI"/>
+<meta name="author" content="Varun Lalwani"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#EFF1EA"/>
+<!-- GEO / AEO -->
+<meta name="geo.region" content="US"/>
+<meta name="geo.placename" content="United States"/>
+<meta name="ICBM" content="37.09024, -95.712891"/>
+<!-- Favicons -->
+<link rel="icon" href="https://nyvoraai.github.io/favicon.ico"/>
+<link rel="icon" type="image/png" href="https://nyvoraai.github.io/favicon-32x32.png"/>
+<link rel="apple-touch-icon" href="https://nyvoraai.github.io/apple-touch-icon.png"/>
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="NyvoraAI RSS Feed" href="https://nyvoraai.github.io/rss.xml"/>
+<link rel="canonical" href="https://nyvoraai.github.io/ai-news/what-is-a-mixture-of-experts-llm.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="What Is a Mixture of Experts LLM? 2026 Guide"/>
+<meta property="og:description" content="Learn what a Mixture of Experts LLM is, how gating and sparse routing work, and why models like Mixtral use MoE for speed and scale."/>
+<meta property="og:url" content="https://nyvoraai.github.io/ai-news/what-is-a-mixture-of-experts-llm.html"/>
+<meta property="og:site_name" content="NyvoraAI"/>
+<meta property="og:image" content="https://nyvoraai.github.io/assets/mixture-of-experts-llm-banner.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="article:published_time" content="2026-07-18T00:00:00Z"/>
+<meta property="article:modified_time" content="2026-07-18T00:00:00Z"/>
+<meta property="article:section" content="AI News"/>
+<meta property="article:tag" content="Mixture of Experts, MoE, LLM Architecture, Mixtral, Sparse Models, Machine Learning"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nyvoraai_co"/>
+<meta name="twitter:creator" content="@nyvoraai_co"/>
+<meta name="twitter:title" content="What Is a Mixture of Experts LLM? 2026 Guide"/>
+<meta name="twitter:description" content="A plain-English guide to Mixture of Experts (MoE) LLMs: how routing works, why it's efficient, and which models use it."/>
+<meta name="twitter:image" content="https://nyvoraai.github.io/assets/mixture-of-experts-llm-banner.jpg"/>
+<!-- Schema: Organization -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":"https://nyvoraai.github.io/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai"]}</script>
+<!-- Schema: WebSite -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"NyvoraAI","url":"https://nyvoraai.github.io","publisher":{"@type":"Organization","name":"NyvoraAI"}}</script>
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.github.io/index.html"},{"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.github.io/ai-news.html"},{"@type":"ListItem","position":3,"name":"What Is a Mixture of Experts LLM","item":"https://nyvoraai.github.io/ai-news/what-is-a-mixture-of-experts-llm.html"}]}</script>
+<!-- Schema: Article -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What Is a Mixture of Experts LLM? 2026 Guide","description":"A comprehensive, beginner-friendly guide to understanding what a Mixture of Experts (MoE) LLM is, how gating networks and sparse routing work, and which models use this architecture.","image":"https://nyvoraai.github.io/assets/mixture-of-experts-llm-banner.jpg","datePublished":"2026-07-18","dateModified":"2026-07-18","inLanguage":"en-US","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.github.io/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":{"@type":"ImageObject","url":"https://nyvoraai.github.io/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.github.io/ai-news/what-is-a-mixture-of-experts-llm.html"},"articleSection":"AI News","keywords":"mixture of experts LLM, MoE LLM, sparse expert models, Mixtral, gating network","timeRequired":"PT12M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}</script>
+<!-- Schema: FAQPage (AEO) -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a Mixture of Experts LLM?","acceptedAnswer":{"@type":"Answer","text":"A Mixture of Experts (MoE) LLM is a model built from many smaller 'expert' sub-networks instead of one giant dense network. For every token, a small router network picks only a handful of experts to activate, so the model can have a huge total parameter count while only using a fraction of it per prediction."}},{"@type":"Question","name":"How is a Mixture of Experts model different from a dense model?","acceptedAnswer":{"@type":"Answer","text":"A dense model activates every single parameter for every token it processes. A Mixture of Experts model only activates a small subset of its experts per token, chosen by a router. This means an MoE model can have far more total parameters than a dense model while costing roughly the same to run at inference time."}},{"@type":"Question","name":"Which AI models use Mixture of Experts?","acceptedAnswer":{"@type":"Answer","text":"Mistral's Mixtral 8x7B and 8x22B are well-known open-weight Mixture of Experts models. DeepSeek-V2 and V3, xAI's Grok models, and Google's Switch Transformer research also use MoE architectures. Several closed-source frontier labs are widely believed to use MoE internally as well, though not all confirm architecture details publicly."}},{"@type":"Question","name":"What is the main advantage of Mixture of Experts?","acceptedAnswer":{"@type":"Answer","text":"The main advantage is efficiency at scale. MoE lets a model hold a very large number of total parameters, which increases capacity and knowledge, while only using a small, fixed number of those parameters for any single token, which keeps inference cost and latency much lower than a dense model of equivalent size."}},{"@type":"Question","name":"What are the downsides of Mixture of Experts models?","acceptedAnswer":{"@type":"Answer","text":"MoE models are harder to train and fine-tune, need significantly more VRAM to hold all the experts even though only some are active, and can suffer from load balancing problems where a few experts get overused while others are rarely picked, which wastes capacity."}}]}</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#EFF1EA;--bg-deep:#E5E9DC;--paper:#FFFFFF;--paper-warm:#FBF8F1;
+  --ink:#1C2321;--ink-soft:#4B5650;--muted:#7C8579;--line:#DCE0D2;--line-soft:#E8EBE0;
+  --coral:#FF6B4A;--coral-dp:#B8431F;--coral-soft:#FFE1D6;
+  --teal:#146B5C;--teal-dp:#0E4F45;--teal-soft:#DCEEE8;
+  --gold:#E89B2D;--gold-soft:#FCEACB;
+  --purple:#8B5CF6;--purple-soft:#EDE9FE;
+  --green:#16A34A;--green-soft:#DCFCE7;
+  --blue:#2563EB;--blue-soft:#DBEAFE;
+  --radius:18px;--radius-sm:10px;
+  --font-display:'Space Grotesk',system-ui,-apple-system,sans-serif;
+  --font-body:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+  --shadow:0 1px 2px rgba(28,35,33,.04),0 8px 24px rgba(28,35,33,.06);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:18px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--teal-dp);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{font-family:var(--font-display)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+.bg-canvas{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;background:var(--bg)}
+.aura{position:absolute;border-radius:50%;filter:blur(85px);will-change:transform;animation:auraFloat ease-in-out infinite}
+.aura-1{width:560px;height:560px;background:radial-gradient(circle,var(--coral),transparent 68%);top:-140px;left:-120px;opacity:.22;animation-duration:17s}
+.aura-2{width:500px;height:500px;background:radial-gradient(circle,var(--teal),transparent 68%);bottom:-130px;right:-100px;opacity:.20;animation-duration:21s;animation-delay:-6s}
+.aura-3{width:420px;height:420px;background:radial-gradient(circle,var(--gold),transparent 68%);top:30%;left:58%;opacity:.16;animation-duration:14s;animation-delay:-3s}
+@keyframes auraFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.12)}66%{transform:translate(-35px,30px) scale(.92)}}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.045'/></svg>")}
+.bubble-field{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fbubble{position:absolute;border:1.5px solid;opacity:0;border-radius:14px 14px 14px 3px;animation:bubbleDrift linear infinite}
+@keyframes bubbleDrift{0%{transform:translateY(10vh) rotate(-4deg) scale(.85)}10%{opacity:.24}50%{transform:translateY(-45vh) rotate(2deg) scale(1.04)}85%{opacity:.16}100%{transform:translateY(-100vh) rotate(5deg) scale(1.1);opacity:0}}
+@media(prefers-reduced-motion:reduce){.fbubble,.aura{animation:none;display:none}html{scroll-behavior:auto}}
+
+#progress{position:fixed;top:64px;left:0;width:0;height:3px;z-index:300;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal));transition:width .1s;border-radius:0 3px 3px 0}
+
+nav.main-nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px;position:relative;z-index:1}
+.nav-logo{font-family:var(--font-display);font-size:21px;font-weight:700;letter-spacing:-.02em;color:var(--ink);display:flex;align-items:center;gap:9px}
+.nav-logo span{color:var(--teal)}
+.logo-img{height:30px;width:30px;border-radius:8px;object-fit:cover;display:block}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{color:var(--ink-soft);font-size:14.5px;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-social{display:flex;gap:6px}
+.nav-soc{color:var(--ink-soft);width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:8px;transition:background .2s,color .2s}
+.nav-soc:hover{background:var(--line-soft);color:var(--ink);text-decoration:none}
+.icon{width:17px;height:17px;flex-shrink:0;display:block}
+.nav-cta{background:var(--coral);color:#fff;padding:9px 18px;border-radius:9px;font-size:13.5px;font-weight:700;transition:opacity .2s,transform .15s;box-shadow:0 4px 14px rgba(255,107,74,.28)}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px);text-decoration:none}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--ink-soft);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;position:fixed;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:20px 24px;flex-direction:column;gap:16px;z-index:199}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--ink);font-size:16px;font-weight:500}
+.page-wrap{position:relative;z-index:1}
+
+.breadcrumb{max-width:860px;margin:26px auto 0;padding:0 24px;font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--font-mono)}
+.breadcrumb a{color:var(--muted)}.breadcrumb a:hover{color:var(--teal-dp)}.bc-sep{color:var(--line)}
+
+.article-hdr{max-width:860px;margin:22px auto 0;padding:0 24px}
+.badge-row{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:5px 13px;border-radius:20px;text-transform:uppercase;font-family:var(--font-mono)}
+.badge-ai{background:var(--teal-soft);color:var(--teal-dp);border:1px solid rgba(20,107,92,.18)}
+.badge-read{background:var(--gold-soft);color:#8A5A12;border:1px solid rgba(232,155,45,.25)}
+.badge-date{background:var(--coral-soft);color:var(--coral-dp);border:1px solid rgba(255,107,74,.22)}
+.badge-hot{background:linear-gradient(135deg,var(--coral),var(--purple));color:#fff;border:none}
+.badge-open{background:var(--green-soft);color:var(--green);border:1px solid rgba(22,163,74,.2)}
+.article-title{font-size:clamp(30px,5.2vw,48px);font-weight:700;line-height:1.18;color:var(--ink);margin-bottom:18px;letter-spacing:-.025em;font-family:var(--font-display)}
+.title-underline{background:linear-gradient(120deg,transparent 0%,var(--gold-soft) 0%);background-size:100% 38%;background-repeat:no-repeat;background-position:0 88%;padding:0 2px}
+.article-intro{font-size:19.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:24px}
+.article-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);padding-bottom:24px;border-bottom:1px solid var(--line)}
+.meta-author{display:flex;align-items:center;gap:10px}
+.meta-avatar{position:relative;overflow:hidden;width:36px;height:36px;border-radius:50%;flex-shrink:0;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;font-family:var(--font-display)}
+.meta-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.meta-name{font-weight:600;color:var(--ink-soft)}.meta-sep{color:var(--line)}
+
+.blog-banner-wrap{max-width:860px;margin:30px auto;padding:0 24px}
+.blog-banner{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow);display:block;object-fit:cover;max-height:450px}
+.banner-fallback{width:100%;border-radius:var(--radius);border:1px solid var(--line);min-height:300px;background:linear-gradient(135deg,var(--blue-soft) 0%,var(--paper) 45%,var(--gold-soft) 100%);display:none;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.banner-fallback::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(37,99,235,.05),transparent 60%,rgba(232,155,45,.06));pointer-events:none}
+.bf-inner{position:relative;z-index:1;text-align:center;padding:44px 24px}
+.bf-logo-big{font-family:var(--font-display);font-size:56px;font-weight:700;background:linear-gradient(135deg,var(--blue),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px;line-height:1}
+.bf-text{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.bf-sub{font-size:13px;color:var(--muted);font-family:var(--font-mono);margin-bottom:16px}
+.bf-tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.bf-tag{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 12px;border-radius:20px;border:1px solid}
+.bf-tag-blue{background:var(--blue-soft);color:var(--blue);border-color:rgba(37,99,235,.2)}
+.bf-tag-teal{background:var(--teal-soft);color:var(--teal-dp);border-color:rgba(20,107,92,.2)}
+.bf-tag-gold{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.2)}
+.bf-tag-green{background:var(--green-soft);color:var(--green);border-color:rgba(22,163,74,.2)}
+
+.toc-box{max-width:860px;margin:0 auto 8px;padding:0 24px}
+.toc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow)}
+.toc-title{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-family:var(--font-mono)}
+.toc ol{margin-left:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;counter-reset:tocnum}
+.toc li{counter-increment:tocnum}
+.toc a{color:var(--ink-soft);font-size:14.5px;transition:color .2s;display:flex;gap:8px}
+.toc a::before{content:counter(tocnum);font-family:var(--font-mono);color:var(--coral);font-weight:700;font-size:12.5px;min-width:16px}
+.toc a:hover{color:var(--coral);text-decoration:none}
+
+.layout{max-width:860px;margin:0 auto;padding:36px 24px 80px}
+
+.prose h2{font-size:27px;font-weight:700;color:var(--ink);margin:54px 0 18px;letter-spacing:-.02em;scroll-margin-top:90px;display:flex;align-items:baseline;gap:10px}
+.prose h2 .h2-mark{font-family:var(--font-mono);font-size:14px;color:var(--coral);font-weight:700}
+.prose h3{font-size:18.5px;font-weight:700;color:var(--ink);margin:28px 0 10px;font-family:var(--font-display)}
+.prose p{margin-bottom:20px;color:var(--ink)}
+.prose strong{color:var(--ink);font-weight:700}
+.prose ul,.prose ol{margin:0 0 22px 22px}
+.prose li{margin-bottom:9px;color:var(--ink)}
+.prose a,.faq-body a{color:var(--teal-dp);border-bottom:1px solid rgba(14,79,69,.25);transition:border-color .2s,color .2s}
+.prose a:hover,.faq-body a:hover{color:var(--coral);border-color:var(--coral);text-decoration:none}
+
+.key-takeaways{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow)}
+.kt-title{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.key-takeaways ul{margin:0;list-style:none}
+.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15.5px;color:var(--ink-soft)}
+.key-takeaways li:last-child{margin-bottom:0}
+.key-takeaways li::before{content:'✨';color:var(--gold);flex-shrink:0}
+
+.stat-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0}
+.stat-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center;transition:transform .3s,border-color .3s;box-shadow:var(--shadow)}
+.stat-card:hover{transform:translateY(-4px);border-color:var(--teal)}
+.stat-num{font-family:var(--font-display);font-size:34px;font-weight:700;color:var(--coral)}
+.stat-label{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.4}
+.stat-src{font-size:11px;color:var(--muted);font-family:var(--font-mono);margin-top:4px}
+
+/* Animated Flow Diagram */
+.flow-diagram{background:var(--paper-warm);border:2px solid var(--line);border-radius:var(--radius);padding:32px 24px;margin:36px 0;position:relative;overflow:hidden}
+.flow-diagram::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--blue),var(--purple))}
+.flow-title{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--ink);margin-bottom:24px;text-align:center}
+.flow-steps{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.flow-node{background:var(--paper);border:2px solid var(--teal);border-radius:12px;padding:16px 18px;text-align:center;min-width:130px;transition:all .4s;box-shadow:var(--shadow)}
+.flow-node:hover{transform:translateY(-5px) scale(1.02);border-color:var(--coral)}
+.flow-node strong{display:block;font-family:var(--font-display);font-size:14px;color:var(--ink);margin-bottom:4px}
+.flow-node span{font-size:12px;color:var(--muted)}
+.flow-node.active{border-color:var(--coral);background:var(--coral-soft)}
+.flow-arrow{color:var(--coral);font-size:24px;font-weight:700;animation:pulseArrow 2s ease-in-out infinite}
+@keyframes pulseArrow{0%,100%{opacity:.4;transform:translateX(0)}50%{opacity:1;transform:translateX(5px)}}
+
+/* Risk/Comparison Cards */
+.risk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:32px 0}
+.risk-card{background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);padding:24px;transition:all .3s;position:relative;overflow:hidden}
+.risk-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+.risk-card.rc-full::before{background:linear-gradient(90deg,var(--coral),var(--gold))}
+.risk-card.rc-lora::before{background:linear-gradient(90deg,var(--teal),var(--blue))}
+.risk-card.rc-qlora::before{background:linear-gradient(90deg,var(--purple),var(--coral))}
+.risk-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--teal)}
+.rc-badge{font-family:var(--font-mono);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 10px;border-radius:6px;display:inline-block;margin-bottom:10px}
+.rc-b-full{background:var(--coral-soft);color:var(--coral-dp);border:1px solid rgba(255,107,74,.25)}
+.rc-b-lora{background:var(--teal-soft);color:var(--teal-dp);border:1px solid rgba(20,107,92,.2)}
+.rc-b-qlora{background:var(--purple-soft);color:#6D28D9;border:1px solid rgba(139,92,246,.22)}
+.rc-name{font-family:var(--font-display);font-size:19px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.rc-desc{font-size:14px;color:var(--ink-soft);line-height:1.6;margin-bottom:12px}
+.rc-stats{display:flex;gap:10px;flex-wrap:wrap}
+.rc-stat{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 10px;border-radius:20px;border:1px solid var(--line);color:var(--muted)}
+
+/* Chat UI */
+.chat-ui{background:var(--bg-deep);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:36px 0;box-shadow:var(--shadow)}
+.chat-header{display:flex;align-items:center;gap:10px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chat-header-icon{width:36px;height:36px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:16px}
+.chat-header-text{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--ink)}
+.chat-header-sub{font-size:12px;color:var(--muted);font-family:var(--font-mono)}
+.chat-msg{display:flex;gap:12px;margin-bottom:18px;align-items:flex-start}
+.chat-msg.user{flex-direction:row-reverse}
+.chat-avatar{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;color:#fff}
+.chat-avatar.ai{background:var(--teal)}
+.chat-avatar.human{background:var(--coral)}
+.chat-bubble{max-width:80%;padding:14px 18px;border-radius:16px;font-size:14.5px;line-height:1.6;position:relative}
+.chat-msg.ai .chat-bubble{background:var(--paper);color:var(--ink);border-bottom-left-radius:4px;border:1px solid var(--line)}
+.chat-msg.user .chat-bubble{background:var(--teal);color:#fff;border-bottom-right-radius:4px}
+.chat-label{font-size:11px;font-weight:700;font-family:var(--font-mono);color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
+.chat-msg.user .chat-label{text-align:right}
+
+/* Quiz */
+.quiz-box{background:linear-gradient(135deg,var(--teal-soft),var(--gold-soft));border:2px solid var(--line);border-radius:var(--radius);padding:32px;margin:40px 0;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.quiz-box::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal))}
+.quiz-title{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.quiz-sub{font-size:14px;color:var(--ink-soft);margin-bottom:24px}
+.quiz-q{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--ink);margin-bottom:16px}
+.quiz-opts{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.quiz-opt{background:var(--paper);border:2px solid var(--line);border-radius:12px;padding:14px 18px;cursor:pointer;font-size:15px;color:var(--ink);transition:all .2s;font-family:var(--font-body);text-align:left;width:100%}
+.quiz-opt:hover{border-color:var(--teal);transform:translateX(4px)}
+.quiz-opt.correct{border-color:var(--green);background:var(--green-soft);color:var(--green)}
+.quiz-opt.wrong{border-color:var(--coral);background:var(--coral-soft);color:var(--coral-dp)}
+.quiz-feedback{font-size:14px;color:var(--ink-soft);margin-top:12px;padding:12px;background:var(--paper);border-radius:10px;display:none;line-height:1.6}
+.quiz-feedback.show{display:block}
+.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:20px}
+.quiz-btn{background:var(--coral);color:#fff;padding:10px 22px;border-radius:10px;border:none;cursor:pointer;font-size:14px;font-weight:700;transition:all .2s;font-family:var(--font-display)}
+.quiz-btn:hover{opacity:.9;transform:translateY(-1px)}
+.quiz-btn:disabled{opacity:.5;cursor:not-allowed}
+.quiz-progress{font-size:13px;font-weight:700;color:var(--muted);font-family:var(--font-mono)}
+.quiz-result{text-align:center;padding:20px 0}
+.quiz-score{font-family:var(--font-display);font-size:48px;font-weight:700;color:var(--teal)}
+
+.callout{background:var(--teal-soft);border:1px solid rgba(20,107,92,.2);border-left:4px solid var(--teal);border-radius:0 var(--radius) var(--radius) 0;padding:20px 24px;margin:28px 0}
+.callout-title{font-family:var(--font-display);font-weight:700;font-size:13px;color:var(--teal-dp);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
+.callout p{font-size:15px;color:var(--ink-soft);margin:0;line-height:1.7}
+.callout-gold{background:var(--gold-soft);border-left-color:var(--gold)}
+.callout-gold .callout-title{color:#8A5A12}
+.callout-purple{background:var(--purple-soft);border-left-color:var(--purple)}
+.callout-purple .callout-title{color:#6D28D9}
+.callout-coral{background:var(--coral-soft);border-left-color:var(--coral)}
+.callout-coral .callout-title{color:var(--coral-dp)}
+
+.steps{margin:28px 0}
+.step{display:flex;gap:18px;margin-bottom:22px;align-items:flex-start}
+.step-num{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--coral),var(--gold));color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:14px;font-weight:700;flex-shrink:0;box-shadow:0 4px 12px rgba(255,107,74,.28)}
+.step-body{flex:1;padding-top:7px}
+.step-title{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.step-desc{font-size:14.5px;color:var(--ink-soft);line-height:1.65}
+
+.code-block{background:var(--ink);color:var(--paper);border-radius:var(--radius-sm);padding:20px;margin:24px 0;overflow-x:auto;font-family:var(--font-mono);font-size:13.5px;line-height:1.7;position:relative}
+.code-block::before{content:'Simplified Routing Logic';position:absolute;top:8px;right:12px;font-size:11px;color:var(--muted);font-family:var(--font-mono)}
+
+.faq{margin:16px 0}
+details{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+details[open]{border-color:var(--coral)}
+summary{padding:18px 22px;cursor:pointer;font-weight:600;font-size:16px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;font-family:var(--font-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--coral);font-size:22px;font-weight:300;flex-shrink:0}
+details[open] summary::after{content:'−'}
+.faq-body{padding:0 22px 18px;color:var(--ink-soft);font-size:15px;line-height:1.7}
+
+.author-box{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin:48px 0 0}
+.author-box .meta-avatar{width:48px;height:48px;font-size:17px;flex-shrink:0}
+.author-box h3{font-size:15px;font-family:var(--font-display);margin-bottom:4px;color:var(--ink)}
+.author-box p{font-size:14px;color:var(--muted);margin:0;line-height:1.6}
+
+.share-section{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:32px 0 0;text-align:center}
+.share-title{font-size:15.5px;font-weight:700;color:var(--ink);margin-bottom:16px;font-family:var(--font-display)}
+.share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.share-btn{display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;transition:all .2s;cursor:pointer;background:var(--paper);color:var(--ink-soft);font-family:var(--font-body)}
+.share-btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--ink)}
+
+.newsletter{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:44px;margin:56px 0 0;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal))}
+.newsletter h2{font-size:25px;font-weight:700;color:var(--ink);margin-bottom:8px;font-family:var(--font-display)}
+.newsletter p{color:var(--muted);margin-bottom:24px;font-size:15.5px}
+.nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 16px;color:var(--ink);font-size:14px;outline:none;transition:border-color .2s;font-family:var(--font-body)}
+.nl-input::placeholder{color:var(--muted)}.nl-input:focus{border-color:var(--coral)}
+.nl-btn{background:var(--coral);color:#fff;padding:13px 22px;border-radius:10px;border:none;cursor:pointer;font-size:14px;font-weight:700;white-space:nowrap;transition:opacity .2s,transform .15s;box-shadow:0 4px 16px rgba(255,107,74,.28);font-family:var(--font-display)}
+.nl-btn:hover{opacity:.9;transform:translateY(-1px)}
+.nl-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+.nl-social{display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.nl-soc{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;padding:9px 16px;border-radius:10px;border:1px solid var(--line);color:var(--ink-soft);transition:all .2s}
+.nl-soc:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--ink)}
+
+.related{margin:48px 0 0}
+.related-title{font-size:19px;font-weight:700;color:var(--ink);margin-bottom:20px;font-family:var(--font-display)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rel-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px;transition:border-color .2s,transform .2s;display:block}
+.rel-card:hover{border-color:var(--coral);transform:translateY(-3px);text-decoration:none;box-shadow:var(--shadow)}
+.rel-tag{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--coral);margin-bottom:8px;font-family:var(--font-mono)}
+.rel-title{font-size:14px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:8px;font-family:var(--font-display)}
+.rel-read{font-size:12px;color:var(--muted)}
+
+footer{background:var(--paper);border-top:1px solid var(--line);padding:60px 24px 32px;position:relative;z-index:1;overflow:hidden}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal),var(--purple),var(--blue),var(--coral));background-size:300% 100%;animation:ftStripe 5s linear infinite}
+@keyframes ftStripe{0%{background-position:0%}100%{background-position:300%}}
+.ft-blob{position:absolute;border-radius:50%;pointer-events:none;animation:ftBlob ease-in-out infinite;filter:blur(55px)}
+@keyframes ftBlob{0%,100%{transform:scale(1) translate(0,0);opacity:.1}50%{transform:scale(1.25) translate(10px,-8px);opacity:.18}}
+.ft-dots{display:flex;gap:7px;margin-bottom:14px}
+.ft-dot{width:8px;height:8px;border-radius:50%;animation:ftDotPulse 2.2s ease-in-out infinite}
+@keyframes ftDotPulse{0%,100%{transform:scale(1);opacity:.5}50%{transform:scale(1.6);opacity:1}}
+.footer-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;position:relative;z-index:1}
+.footer-logo-wrap{font-size:21px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:9px;color:var(--ink);font-family:var(--font-display)}
+.footer-logo-wrap span{color:var(--teal)}
+.footer-brand p{color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:16px}
+.footer-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.chip{font-size:11px;font-weight:700;font-family:var(--font-mono);padding:4px 10px;border-radius:20px;border:1px solid;transition:transform .25s}
+.chip:hover{transform:translateY(-2px) scale(1.04)}
+.chip-coral{background:var(--coral-soft);color:var(--coral-dp);border-color:rgba(255,107,74,.3)}
+.chip-teal{background:var(--teal-soft);color:var(--teal-dp);border-color:rgba(20,107,92,.2)}
+.chip-gold{background:var(--gold-soft);color:#8A5A12;border-color:rgba(232,155,45,.3)}
+.chip-purple{background:var(--purple-soft);color:#6D28D9;border-color:rgba(139,92,246,.25)}
+.chip-blue{background:var(--blue-soft);color:var(--blue);border-color:rgba(37,99,235,.2)}
+.footer-social{display:flex;gap:10px;flex-wrap:wrap}
+.fs-btn{display:flex;align-items:center;gap:7px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--ink-soft);transition:all .3s;position:relative;overflow:hidden;background:transparent}
+.fs-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--coral-soft),var(--teal-soft));transform:translateY(100%);transition:transform .3s;z-index:0;border-radius:inherit}
+.fs-btn:hover{color:var(--coral-dp);border-color:var(--coral);transform:translateY(-3px);text-decoration:none}
+.fs-btn:hover::before{transform:translateY(0)}
+.fs-btn svg,.fs-btn span{position:relative;z-index:1}
+.footer-col h4{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);margin-bottom:16px;font-family:var(--font-mono)}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:var(--muted);font-size:14px;transition:color .2s,padding-left .2s;display:inline-flex;align-items:center;gap:5px}
+.footer-col a::before{content:'›';color:var(--coral);opacity:0;transform:translateX(-6px);transition:all .2s;font-size:16px}
+.footer-col a:hover{color:var(--coral);padding-left:8px;text-decoration:none}
+.footer-col a:hover::before{opacity:1;transform:translateX(0)}
+.rss-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--gold);border:1px solid rgba(232,155,45,.3);background:var(--gold-soft);padding:6px 14px;border-radius:8px;margin-top:10px;transition:all .2s;font-family:var(--font-mono)}
+.rss-link:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--coral);color:var(--coral-dp)}
+.footer-bottom{max-width:1160px;margin:44px auto 0;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);flex-wrap:wrap;gap:10px;position:relative;z-index:1}
+.footer-bottom-links{display:flex;gap:20px}
+.footer-bottom-links a{color:var(--muted);transition:color .2s}
+.footer-bottom-links a:hover{color:var(--ink);text-decoration:none}
+
+#back-top{position:fixed;bottom:28px;right:28px;background:var(--coral);color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:var(--shadow);z-index:200;font-weight:700}
+#back-top.visible{opacity:1;pointer-events:all}
+#back-top:hover{transform:scale(1.08) translateY(-2px);background:var(--coral-dp)}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media(max-width:900px){
+  .risk-grid,.related-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links,.nav-social,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .toc ol{grid-template-columns:1fr}
+  .stat-strip{grid-template-columns:1fr 1fr}
+  .flow-steps{flex-direction:column}
+  .flow-arrow{transform:rotate(90deg)}
+}
+@media(max-width:600px){
+  .stat-strip{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .step{flex-direction:column;gap:10px}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRM8T38" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.15" fill="currentColor"/></symbol>
+<symbol id="icon-facebook" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 8.6h1.4V6h-1.9c-1.9 0-2.9 1.15-2.9 3v1.5H8.7V13h1.9v6.3h2.4V13h1.7l.3-2.5h-2V9.4c0-.5.2-.8.9-.8z" fill="currentColor"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5.2 4.8l14 14.4M19.2 4.8L5.2 19.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+<symbol id="icon-youtube" viewBox="0 0 24 24"><rect x="2.3" y="6" width="19.4" height="12" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.3 9.4l5.2 2.6-5.2 2.6z" fill="currentColor"/></symbol>
+<symbol id="icon-rss" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="5" cy="19" r="1.5" fill="currentColor"/></symbol>
+</defs>
+</svg>
+
+<div class="bg-canvas">
+  <div class="aura aura-1"></div><div class="aura aura-2"></div><div class="aura aura-3"></div>
+</div>
+<div class="grain"></div>
+<div class="bubble-field" id="bubbleField"></div>
+<div id="progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<nav class="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
+      <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI logo" class="logo-img" onerror="this.remove()"/>
+      Nyvora<span>AI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://nyvoraai.github.io/index.html">Home</a></li>
+      <li><a href="https://nyvoraai.github.io/blog.html">Blog</a></li>
+      <li><a href="https://nyvoraai.github.io/ai-news.html" class="active">AI News</a></li>
+      <li><a href="https://nyvoraai.github.io/about.html">About</a></li>
+      <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://nyvoraai.github.io/rss.xml" class="nav-soc" aria-label="RSS Feed"><svg class="icon"><use href="#icon-rss"/></svg></a>
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nav-soc" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nav-soc" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"/></svg></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nav-soc" aria-label="X"><svg class="icon"><use href="#icon-x"/></svg></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nav-soc" aria-label="YouTube"><svg class="icon"><use href="#icon-youtube"/></svg></a>
+      </div>
+      <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" aria-expanded="false" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+  <a href="https://nyvoraai.github.io/index.html">Home</a>
+  <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+  <a href="https://nyvoraai.github.io/about.html">About</a>
+  <a href="https://nyvoraai.github.io/contact.html">Contact</a>
+</div>
+
+<div class="page-wrap">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="https://nyvoraai.github.io/index.html">Home</a><span class="bc-sep">/</span>
+  <a href="https://nyvoraai.github.io/ai-news.html">AI News</a><span class="bc-sep">/</span>
+  <span aria-current="page">What Is a Mixture of Experts LLM</span>
+</nav>
+
+<header class="article-hdr reveal">
+  <div class="badge-row">
+    <span class="badge badge-hot">🧩 Model Architecture</span>
+    <span class="badge badge-ai">🧠 LLM Internals</span>
+    <span class="badge badge-read">⏱ 12 min read</span>
+    <span class="badge badge-date">📅 July 2026</span>
+  </div>
+  <h1 class="article-title">What Is a <span class="title-underline">Mixture of Experts LLM</span>?</h1>
+  <p class="article-intro">You've probably seen model names like "Mixtral 8x7B" and wondered what that "8x" actually means. It's not eight separate models glued together — it's a single model built on an architecture called Mixture of Experts (MoE). This guide breaks down, in plain English, what a Mixture of Experts LLM is, how the routing actually works under the hood, and why some of the fastest, most capable open models today are built this way.</p>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">V<img src="https://nyvoraai.github.io/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+      <div><div class="meta-name">Varun Lalwani</div></div>
+    </div>
+    <span class="meta-sep">·</span>
+    <span>Published <time datetime="2026-07-18">July 18, 2026</time></span>
+    <span class="meta-sep">·</span>
+    <span>Reviewed <time datetime="2026-07">July 2026</time></span>
+  </div>
+</header>
+
+<div class="blog-banner-wrap reveal">
+  <img
+    src="https://nyvoraai.github.io/assets/mixture-of-experts-llm-banner.jpg"
+    alt="Mixture of Experts LLM architecture diagram showing a router network sending tokens to specialized expert sub-networks"
+    class="blog-banner"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+  />
+  <div class="banner-fallback">
+    <div class="bf-inner">
+      <div class="bf-logo-big">🧩 MoE</div>
+      <div class="bf-text">Mixture of Experts, Explained Simply</div>
+      <div class="bf-sub">Complete Guide · NyvoraAI · 2026</div>
+      <div class="bf-tags">
+        <span class="bf-tag bf-tag-blue">Router Network</span>
+        <span class="bf-tag bf-tag-green">Sparse Activation</span>
+        <span class="bf-tag bf-tag-teal">Expert Layers</span>
+        <span class="bf-tag bf-tag-gold">Mixtral</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toc-box reveal">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">📌 Quick Navigation</div>
+    <ol>
+      <li><a href="#quick-answer">Quick answer</a></li>
+      <li><a href="#what-is-it">What is MoE?</a></li>
+      <li><a href="#how-it-works">How the routing works</a></li>
+      <li><a href="#types">Dense vs Sparse MoE vs Shared-Expert MoE</a></li>
+      <li><a href="#chat-ui">MoE vs Dense in practice</a></li>
+      <li><a href="#when-to-use">Why builders choose MoE</a></li>
+      <li><a href="#models">Which models use MoE</a></li>
+      <li><a href="#quiz">Knowledge Quiz</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main class="layout">
+<article class="prose">
+
+  <p class="reveal">Picture a hospital. When a patient walks in, they don't get examined by every single doctor on staff at once — that would be slow, expensive, and mostly pointless. Instead, a triage nurse looks at the symptoms and sends the patient to the one or two specialists who are actually relevant: a cardiologist for chest pain, a dermatologist for a rash. The hospital as a whole has enormous collective expertise, but only a small slice of it gets used for any single patient.</p>
+
+  <p class="reveal">That's essentially what a <strong>Mixture of Experts LLM</strong> does with every single word it processes. Instead of running a prompt through one giant, monolithic neural network, an MoE model is split into many smaller "expert" sub-networks, and a lightweight router decides which few experts should handle each token. The result is a model that can be enormous in total size while staying fast and comparatively cheap to run — which is exactly why MoE has become one of the defining architecture choices in modern LLM design.</p>
+
+  <div class="key-takeaways quick-answer reveal" id="quick-answer">
+    <div class="kt-title">✨ Quick Answer — What Is a Mixture of Experts LLM?</div>
+    <ul>
+      <li><strong>The Core Concept:</strong> A Mixture of Experts (MoE) LLM replaces one giant dense network with many smaller "expert" sub-networks, plus a router that picks a few experts per token.</li>
+      <li><strong>The Analogy:</strong> It works like a hospital's triage system — the router is the nurse sending each case to only the relevant specialists instead of the whole staff.</li>
+      <li><strong>The Big Win:</strong> MoE models can hold a huge number of total parameters for knowledge and capability, while only activating a small fraction of them for each prediction, keeping inference fast.</li>
+      <li><strong>Real Examples:</strong> Mistral's Mixtral 8x7B and 8x22B, DeepSeek-V2/V3, and xAI's Grok models are all built on Mixture of Experts architecture.</li>
+      <li><strong>The Trade-Off:</strong> MoE models are harder to train, need more total VRAM to store all the experts, and can suffer from uneven "load balancing" between experts if not carefully managed.</li>
+    </ul>
+  </div>
+
+  <div class="stat-strip reveal">
+    <div class="stat-card">
+      <div class="stat-num">~2</div>
+      <div class="stat-label">Experts typically activated per token in most production MoE models</div>
+      <div class="stat-src">Mixtral & DeepSeek Technical Reports</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">8x</div>
+      <div class="stat-label">Common expert count in early open-weight MoE releases like Mixtral 8x7B</div>
+      <div class="stat-src">Mistral AI, 2024–2026</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">↓Cost</div>
+      <div class="stat-label">Lower per-token compute vs a dense model with equivalent total parameters</div>
+      <div class="stat-src">NyvoraAI Analysis, 2026</div>
+    </div>
+  </div>
+
+  <h2 id="what-is-it"><span class="h2-mark">01</span> What Exactly Is a Mixture of Experts LLM?</h2>
+
+  <p class="reveal">In a standard "dense" transformer model, every layer processes every token using the exact same set of parameters. If the model has 70 billion parameters, all 70 billion get touched, every time, for every word. That's straightforward, but it's also wasteful — a huge portion of those parameters are irrelevant to any specific input.</p>
+
+  <p class="reveal">A Mixture of Experts LLM takes a different approach at specific points in the network, usually inside the feed-forward layers. Instead of one big feed-forward block, the model has several smaller feed-forward blocks sitting side by side — these are the "experts." A small neural network called the <strong>router</strong> (or gating network) looks at each incoming token and decides which one or two experts should actually process it. The other experts just sit idle for that token. If you're building foundational understanding here, it also helps to first get comfortable with <a href="https://nyvoraai.github.io/ai-news/what-is-an-llm-in-simple-words.html">what is an LLM in simple words</a>, since MoE is really just a variation on the transformer architecture that underlies every modern language model.</p>
+
+  <p class="reveal">This means the model's total parameter count can be huge — Mixtral 8x7B, for instance, has roughly 47 billion total parameters spread across its experts — but for any single token, only a fraction of those parameters (around 13 billion worth, in Mixtral's case) actually get used. You get the knowledge capacity of a much bigger model, at close to the inference cost of a much smaller one.</p>
+
+  <h2 id="how-it-works"><span class="h2-mark">02</span> How the Routing Actually Works</h2>
+
+  <p class="reveal">The magic of MoE isn't really magic — it's a fairly elegant piece of engineering. Here's what happens as a token moves through an MoE layer.</p>
+
+  <div class="flow-diagram reveal">
+    <div class="flow-title">🔀 The Mixture of Experts Routing Pipeline</div>
+    <div class="flow-steps">
+      <div class="flow-node">
+        <strong>1. Token In</strong>
+        <span>A single token's vector arrives at the MoE layer</span>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node active">
+        <strong>2. Router Scores</strong>
+        <span>Gating network scores every expert for this token</span>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node">
+        <strong>3. Top-K Selection</strong>
+        <span>Only the top 1-2 highest-scoring experts are chosen</span>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node">
+        <strong>4. Expert Processing</strong>
+        <span>Chosen experts process the token in parallel</span>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node">
+        <strong>5. Weighted Merge</strong>
+        <span>Outputs are combined by router confidence scores</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="reveal">Let's unpack that a bit further, because the details matter:</p>
+  <ol>
+    <li><strong>Scoring:</strong> The router is a tiny neural network layer that outputs a probability score for each available expert, based on the current token's representation.</li>
+    <li><strong>Top-K routing:</strong> Instead of using every expert, the system keeps only the top K scores — commonly the top 2 out of 8, though this varies by model. This is what makes the model "sparse."</li>
+    <li><strong>Parallel expert computation:</strong> The selected experts each process the token independently, exactly like a normal feed-forward layer would.</li>
+    <li><strong>Weighted combination:</strong> The final output is a weighted sum of the chosen experts' outputs, weighted by how confident the router was in picking them.</li>
+    <li><strong>Load-balancing loss:</strong> During training, an extra loss term nudges the router to spread tokens more evenly across experts, so a handful of experts don't end up doing all the work while others sit unused.</li>
+  </ol>
+
+  <div class="code-block reveal">
+router_scores = softmax(token_vector · router_weights)
+top_experts = top_k(router_scores, k=2)
+output = sum(score_i * expert_i(token_vector) for i in top_experts)
+  </div>
+
+  <p class="reveal">That load-balancing step is more important than it sounds. Without it, the router tends to develop favorites early in training and keeps sending tokens to the same one or two experts, which defeats the entire purpose of having many specialists in the first place. Well-trained MoE models actively encourage the router to distribute tokens fairly, so each expert gets enough signal to genuinely specialize. This connects to a broader theme worth understanding — <a href="https://nyvoraai.github.io/ai-news/how-do-large-language-models-learn-from-data.html">how do large language models learn from data</a> — because the training dynamics of an MoE model are meaningfully different from a dense one, even though the end goal is the same.</p>
+
+  <h2 id="types"><span class="h2-mark">03</span> Dense vs Sparse MoE vs Shared-Expert MoE</h2>
+
+  <p class="reveal">Not all Mixture of Experts designs are identical. As the architecture has matured, a few distinct variations have emerged, each with different trade-offs.</p>
+
+  <div class="risk-grid reveal">
+    <div class="risk-card rc-full">
+      <div class="rc-badge rc-b-full">The Baseline</div>
+      <div class="rc-name">Dense Model</div>
+      <div class="rc-desc">No routing at all. Every parameter is used for every token. Simple to train and predictable, but compute cost scales directly with total parameter count, which becomes expensive at frontier scale.</div>
+      <div class="rc-stats">
+        <span class="rc-stat">⚙️ Routing: None</span>
+        <span class="rc-stat">🧮 Params Used: 100%</span>
+        <span class="rc-stat">⚡ Scaling: Linear cost</span>
+      </div>
+    </div>
+    <div class="risk-card rc-lora">
+      <div class="rc-badge rc-b-lora">The Standard MoE</div>
+      <div class="rc-name">Sparse Mixture of Experts</div>
+      <div class="rc-desc">Many independent experts, with a router activating only the top-K per token. This is the classic MoE design used in Mixtral and the original Switch Transformer research from Google.</div>
+      <div class="rc-stats">
+        <span class="rc-stat">⚙️ Routing: Top-1 or Top-2</span>
+        <span class="rc-stat">🧮 Params Used: 10-25%</span>
+        <span class="rc-stat">⚡ Scaling: Sub-linear cost</span>
+      </div>
+    </div>
+    <div class="risk-card rc-qlora">
+      <div class="rc-badge rc-b-qlora">The Refinement</div>
+      <div class="rc-name">Shared-Expert MoE</div>
+      <div class="rc-desc">Used by models like DeepSeek-V2/V3, this design keeps one or more "always-on" shared experts for general knowledge, alongside routed specialist experts for niche patterns, improving stability.</div>
+      <div class="rc-stats">
+        <span class="rc-stat">⚙️ Routing: Shared + routed</span>
+        <span class="rc-stat">🧮 Params Used: Varies</span>
+        <span class="rc-stat">⚡ Scaling: Very efficient</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout callout-gold reveal">
+    <div class="callout-title">💡 The NyvoraAI Take</div>
+    <p>For most people evaluating models rather than building them, the label to look for is simply "MoE" versus "dense" in a model card. If you're choosing between models for a project, capability and price-per-token matter more than the exact routing scheme — but knowing an MoE model is under the hood explains why it might feel fast and capable at the same time.</p>
+  </div>
+
+  <h2 id="chat-ui"><span class="h2-mark">04</span> MoE vs. Dense: What It Feels Like in Practice</h2>
+
+  <p class="reveal">Architecture talk can feel abstract, so let's ground it in a real scenario: a startup trying to pick a model to power a customer-facing coding assistant, comparing a dense model against an MoE model of a similar "class."</p>
+
+  <div class="chat-ui reveal">
+    <div class="chat-header">
+      <div class="chat-header-icon">💬</div>
+      <div>
+        <div class="chat-header-text">Architecture Showdown</div>
+        <div class="chat-sub">Dense model vs Mixture of Experts model, same task</div>
+      </div>
+    </div>
+
+    <div class="chat-msg user">
+      <div class="chat-avatar human">U</div>
+      <div>
+        <div class="chat-label">The Task</div>
+        <div class="chat-bubble">"We need a model that can explain and fix bugs in Python, JavaScript, and SQL, and respond fast enough for a live coding assistant."</div>
+      </div>
+    </div>
+
+    <div class="chat-msg ai">
+      <div class="chat-avatar ai">D</div>
+      <div>
+        <div class="chat-label">Option A: Large Dense Model</div>
+        <div class="chat-bubble">
+          <strong>How it behaves:</strong> A 70B dense model activates all 70B parameters for every single token, whether the question is a one-line SQL fix or a complex multi-file refactor.<br/><br/>
+          <strong>The Trade-off:</strong> Consistently strong quality, but every response — even simple ones — costs the same in compute and tends to be slower and pricier per token.<br/><em>Verdict: Reliable, but compute cost never scales down with easy questions.</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-msg ai">
+      <div class="chat-avatar ai">M</div>
+      <div>
+        <div class="chat-label">Option B: Mixture of Experts Model</div>
+        <div class="chat-bubble">
+          <strong>How it behaves:</strong> A similarly capable MoE model might have 8 experts and only route each token to 2 of them. Different experts can specialize — some lean toward syntax-heavy patterns, others toward broader reasoning.<br/><br/>
+          <strong>The Trade-off:</strong> Responses come back noticeably faster and cheaper per token, since only a fraction of the total parameters fire for any given prompt, while overall quality stays competitive with much larger dense models.<br/><em>Verdict: Similar or better quality at meaningfully lower latency and cost.</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-msg ai">
+      <div class="chat-avatar ai">!</div>
+      <div>
+        <div class="chat-label">The Catch</div>
+        <div class="chat-bubble">
+          The MoE model still needs enough VRAM or memory to <em>hold</em> all 8 experts, even though it only <em>uses</em> 2 at a time. So while inference is cheap computationally, the hardware footprint for hosting the model isn't necessarily smaller — it's the compute per token that shrinks, not the storage requirement.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="reveal">This distinction — total size versus active size — is exactly why comparing raw parameter counts across models can be misleading. It's also worth understanding when you're weighing options like <a href="https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html">GPT vs Claude differences</a>, since publicly disclosed architecture details vary widely between labs, and "bigger number" doesn't automatically mean "slower or more expensive to run."</p>
+
+  <h2 id="when-to-use"><span class="h2-mark">05</span> Why Builders Choose Mixture of Experts</h2>
+
+  <p class="reveal">MoE isn't chosen just because it's trendy — it solves a very specific, very expensive problem: how do you keep scaling model capability without linearly scaling inference cost? Here's when the trade-off makes sense, and when it doesn't.</p>
+
+  <h3>✅ MoE Tends to Make Sense When:</h3>
+  <ul>
+    <li><strong>You Need Scale Without Runaway Cost:</strong> You want frontier-level capability but can't afford the inference bill of a dense model with an equivalent number of total parameters.</li>
+    <li><strong>Workloads Are Diverse:</strong> Your traffic spans many different domains (code, legal text, casual chat, math), letting different experts specialize naturally rather than forcing one network to be good at everything equally.</li>
+    <li><strong>You Have the Infrastructure to Support It:</strong> You have enough total memory to host all the experts, even if only a few fire per token, and the engineering resources to handle distributed serving.</li>
+  </ul>
+
+  <h3>❌ MoE Is Probably Not Worth It When:</h3>
+  <ul>
+    <li><strong>You're Working at Small Scale:</strong> For smaller models, the overhead of routing logic and load-balancing complexity often isn't worth it — a dense model is simpler to train, tune, and deploy.</li>
+    <li><strong>Your Hardware Is Memory-Constrained:</strong> If you can't fit all the experts in memory at once, you lose the main practical benefit, since you still need to store the full model even though you only compute with part of it.</li>
+    <li><strong>You Need Maximum Training Stability:</strong> Dense models are generally easier to train predictably. MoE introduces extra hyperparameters (number of experts, top-K value, load-balancing loss weight) that need careful tuning.</li>
+  </ul>
+
+  <h2 id="models"><span class="h2-mark">06</span> Which Models Actually Use Mixture of Experts?</h2>
+
+  <p class="reveal">MoE isn't a theoretical curiosity — it's already powering some of the most talked-about models on the market. If you're trying to decide which model fits your use case, it helps to know which ones use this architecture under the hood.</p>
+
+  <div class="steps reveal">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <div class="step-title">Mixtral 8x7B and 8x22B (Mistral AI)</div>
+        <div class="step-desc">The models that put open-weight MoE on the map. Mixtral 8x7B uses 8 experts with top-2 routing, delivering performance competitive with much larger dense models while staying fast enough to run on accessible hardware.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <div class="step-title">DeepSeek-V2 and V3</div>
+        <div class="step-desc">These models popularized the shared-expert-plus-routed-expert design, using a very large number of small, fine-grained experts alongside always-on shared experts, achieving strong performance at a notably efficient training and inference cost.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <div class="step-title">xAI's Grok Models</div>
+        <div class="step-desc">Grok has publicly confirmed use of a Mixture of Experts architecture to balance scale with response speed for its chat and reasoning products.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <div class="step-title">Google's Switch Transformer (Research Foundation)</div>
+        <div class="step-desc">This research paper is widely credited with popularizing simplified, trillion-parameter-scale sparse routing, laying the groundwork that later production MoE models built on.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-body">
+        <div class="step-title">Rumored Use in Closed-Source Frontier Models</div>
+        <div class="step-desc">Several proprietary frontier labs are widely believed by researchers to use MoE internally, though architecture details aren't always officially confirmed. If you're new to comparing options, our guide on <a href="https://nyvoraai.github.io/ai-news/which-llm-is-best-for-beginners-2026.html">which LLM is best for beginners 2026</a> is a good next stop, since the underlying architecture is only one factor in picking the right model for your needs.</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="reveal">One more practical thread worth pulling on: MoE is a big part of the story behind falling API prices industry-wide. Because sparse activation cuts the actual compute needed per response, providers can serve larger, more capable models at lower cost than a dense model of the same scale would require. If pricing trends interest you, this ties directly into <a href="https://nyvoraai.github.io/ai-news/why-are-llms-getting-cheaper-2026.html">why are LLMs getting cheaper in 2026</a> — MoE is one of several efficiency gains driving that curve downward.</p>
+
+  <h2 id="quiz"><span class="h2-mark">07</span> Test Your Knowledge: The MoE Quiz</h2>
+  
+  <p class="reveal">Think you've got a handle on Mixture of Experts models? Test yourself with this quick interactive quiz — no pressure, just click through the answers.</p>
+
+  <div class="quiz-box reveal" id="quizBox">
+    <div class="quiz-title">🧩 The Mixture of Experts Quiz</div>
+    <div class="quiz-sub">Answer 3 quick questions to test your understanding.</div>
+    
+    <div id="quizContent">
+      <!-- Questions injected via JS -->
+    </div>
+    
+    <div class="quiz-nav">
+      <div class="quiz-progress" id="quizProgress">Question 1 of 3</div>
+      <button class="quiz-btn" id="quizNext" onclick="nextQuestion()" disabled>Next →</button>
+    </div>
+  </div>
+
+  <h2 id="conclusion"><span class="h2-mark">08</span> Conclusion: Bigger Doesn't Have to Mean Slower</h2>
+
+  <p class="reveal">Mixture of Experts represents one of the more elegant solutions to a problem that's been looming over AI for years: how do you keep making models smarter without making them prohibitively expensive to run? By splitting a network into specialists and letting a router pick only the relevant few for each token, MoE lets a model carry enormous knowledge capacity while keeping the actual computation for any single response lean.</p>
+
+  <p class="reveal">You'll keep seeing this architecture show up — in open-weight releases, in research papers, and almost certainly inside several closed frontier models too. Understanding the basic idea of "many experts, one router, only a few active at a time" gives you a real edge when you're reading model cards, comparing benchmarks, or just trying to make sense of why some models feel faster than their size would suggest.</p>
+
+  <h2 id="faq"><span class="h2-mark">09</span> Frequently Asked Questions</h2>
+  <div class="faq reveal">
+    <details open>
+      <summary>What is a Mixture of Experts LLM?</summary>
+      <div class="faq-body">A Mixture of Experts (MoE) LLM is a model built from many smaller "expert" sub-networks instead of one giant dense network. For every token, a small router network picks only a handful of experts to activate, so the model can have a huge total parameter count while only using a fraction of it per prediction.</div>
+    </details>
+    <details>
+      <summary>How is a Mixture of Experts model different from a dense model?</summary>
+      <div class="faq-body">A dense model activates every single parameter for every token it processes. A Mixture of Experts model only activates a small subset of its experts per token, chosen by a router. This means an MoE model can have far more total parameters than a dense model while costing roughly the same to run at inference time.</div>
+    </details>
+    <details>
+      <summary>Which AI models use Mixture of Experts?</summary>
+      <div class="faq-body">Mistral's Mixtral 8x7B and 8x22B are well-known open-weight Mixture of Experts models. DeepSeek-V2 and V3, xAI's Grok models, and Google's Switch Transformer research also use MoE architectures. Several closed-source frontier labs are widely believed to use MoE internally as well, though not all confirm architecture details publicly.</div>
+    </details>
+    <details>
+      <summary>What is the main advantage of Mixture of Experts?</summary>
+      <div class="faq-body">The main advantage is efficiency at scale. MoE lets a model hold a very large number of total parameters, which increases capacity and knowledge, while only using a small, fixed number of those parameters for any single token, which keeps inference cost and latency much lower than a dense model of equivalent size.</div>
+    </details>
+    <details>
+      <summary>What are the downsides of Mixture of Experts models?</summary>
+      <div class="faq-body">MoE models are harder to train and fine-tune, need significantly more VRAM to hold all the experts even though only some are active, and can suffer from load balancing problems where a few experts get overused while others are rarely picked, which wastes capacity.</div>
+    </details>
+  </div>
+
+  <div class="author-box reveal">
+    <div class="meta-avatar">V<img src="https://nyvoraai.github.io/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+    <div>
+      <h3>Written by Varun Lalwani</h3>
+      <p>Varun covers large language models, open-source AI, and the practical side of building with accessible AI tools. Published July 2026. Questions? <a href="https://nyvoraai.github.io/contact.html">Contact our team</a> or <a href="https://nyvoraai.github.io/about.html">learn about our mission</a>. Stay updated via our <a href="https://nyvoraai.github.io/rss.xml">RSS feed</a>.</p>
+    </div>
+  </div>
+
+  <div class="share-section reveal">
+    <div class="share-title">Know someone trying to understand modern AI architecture? Share this guide 👇</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=What+Is+a+Mixture+of+Experts+LLM%3F+2026+Guide+%7C+@nyvoraai_co&url=https://nyvoraai.github.io/ai-news/what-is-a-mixture-of-experts-llm.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-x"/></svg> Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.github.io/ai-news/what-is-a-mixture-of-experts-llm.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Share on Facebook</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nyvoraai.github.io/ai-news/what-is-a-mixture-of-experts-llm.html" target="_blank" rel="noopener" class="share-btn">💼 Share on LinkedIn</a>
+      <button class="share-btn" onclick="copyLink()">🔗 Copy Link</button>
+    </div>
+  </div>
+
+  <div class="newsletter reveal">
+    <h2>Master AI Architecture</h2>
+    <p>Weekly deep dives into LLMs, model architecture, and open-source AI. Join 10,000+ builders and researchers.</p>
+    <form action="https://formspree.io/f/xwvjgdpw" method="POST" class="nl-form" id="nlForm">
+      <input class="nl-input" type="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
+      <input type="hidden" name="_subject" value="Newsletter Signup - Mixture of Experts Guide 2026"/>
+      <button type="submit" class="nl-btn">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam · Unsubscribe anytime · Privacy-focused</p>
+    <div class="nl-social">
+      <a href="https://nyvoraai.github.io/rss.xml" class="nl-soc"><svg class="icon"><use href="#icon-rss"/></svg> RSS Feed</a>
+      <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-instagram"/></svg> Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-facebook"/></svg> Facebook</a>
+      <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-x"/></svg> X</a>
+      <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nl-soc"><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</a>
+    </div>
+  </div>
+
+  <div class="related reveal">
+    <div class="related-title">Continue Your AI Journey</div>
+    <div class="related-grid">
+      <a href="https://nyvoraai.github.io/ai-news/what-is-an-llm-in-simple-words.html" class="rel-card">
+        <div class="rel-tag">Foundation</div>
+        <div class="rel-title">What Is an LLM in Simple Words?</div>
+        <div class="rel-read">15 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/how-do-large-language-models-learn-from-data.html" class="rel-card">
+        <div class="rel-tag">Training</div>
+        <div class="rel-title">How Do Large Language Models Learn From Data?</div>
+        <div class="rel-read">18 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/gpt-vs-claude-differences.html" class="rel-card">
+        <div class="rel-tag">Comparison</div>
+        <div class="rel-title">GPT vs Claude: Key Differences</div>
+        <div class="rel-read">16 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/which-llm-is-best-for-beginners-2026.html" class="rel-card">
+        <div class="rel-tag">Beginner Guide</div>
+        <div class="rel-title">Which LLM Is Best for Beginners in 2026?</div>
+        <div class="rel-read">14 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news/why-are-llms-getting-cheaper-2026.html" class="rel-card">
+        <div class="rel-tag">Industry Trend</div>
+        <div class="rel-title">Why Are LLMs Getting Cheaper in 2026?</div>
+        <div class="rel-read">13 min read →</div>
+      </a>
+      <a href="https://nyvoraai.github.io/ai-news.html" class="rel-card">
+        <div class="rel-tag">All News</div>
+        <div class="rel-title">Browse All AI News & Guides</div>
+        <div class="rel-read">Explore →</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+</main>
+
+<footer>
+  <div class="ft-blob" style="width:220px;height:220px;background:var(--coral-soft);top:8%;left:1%;animation-duration:9s"></div>
+  <div class="ft-blob" style="width:180px;height:180px;background:var(--blue-soft);bottom:18%;left:20%;animation-duration:11s;animation-delay:-3s"></div>
+  <div class="ft-blob" style="width:200px;height:200px;background:var(--gold-soft);top:25%;right:3%;animation-duration:8s;animation-delay:-1s"></div>
+  <div class="ft-blob" style="width:160px;height:160px;background:var(--purple-soft);bottom:22%;right:16%;animation-duration:10s;animation-delay:-5s"></div>
+  <div class="ft-blob" style="width:140px;height:140px;background:var(--teal-soft);top:55%;left:42%;animation-duration:12s;animation-delay:-2s"></div>
+  <div class="ft-blob" style="width:190px;height:190px;background:var(--green-soft);top:15%;right:25%;animation-duration:10s;animation-delay:-4s"></div>
+
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="ft-dots">
+        <div class="ft-dot" style="background:var(--coral);animation-delay:0s"></div>
+        <div class="ft-dot" style="background:var(--gold);animation-delay:.2s"></div>
+        <div class="ft-dot" style="background:var(--teal);animation-delay:.4s"></div>
+        <div class="ft-dot" style="background:var(--purple);animation-delay:.6s"></div>
+        <div class="ft-dot" style="background:var(--blue);animation-delay:.8s"></div>
+      </div>
+      <div class="footer-logo-wrap">
+        <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI logo icon" class="logo-img" onerror="this.remove()"/>
+        Nyvora<span>AI</span>
+      </div>
+      <p>Your trusted source for AI news, LLM guides, and practical intelligence. We make complex AI research accessible and genuinely useful for everyone.</p>
+      <div class="footer-chips">
+        <span class="chip chip-coral">🧩 MoE Architecture</span>
+        <span class="chip chip-teal">🧠 LLM News</span>
+        <span class="chip chip-gold">⚡ Weekly Updates</span>
+        <span class="chip chip-blue">🌍 Global Coverage</span>
+        <span class="chip chip-purple">🔬 Research</span>
+      </div>
+      <div class="footer-social" style="margin-top:18px">
+        <a href="https://nyvoraai.github.io/rss.xml" class="fs-btn"><svg class="icon"><use href="#icon-rss"/></svg><span>RSS</span></a>
+        <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-instagram"/></svg><span>Instagram</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-facebook"/></svg><span>Facebook</span></a>
+        <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-x"/></svg><span>X</span></a>
+        <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-youtube"/></svg><span>YouTube</span></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>LLM Guides</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/ai-news/what-is-a-mixture-of-experts-llm.html">What Is Mixture of Experts?</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/what-is-an-llm-in-simple-words.html">What Is an LLM?</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/how-do-large-language-models-learn-from-data.html">How LLMs Learn From Data</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news/which-llm-is-best-for-beginners-2026.html">Best LLM for Beginners</a></li>
+        <li><a href="https://nyvoraai.github.io/ai-news.html">All AI News</a></li>
+      </ul>
+      <a href="https://nyvoraai.github.io/rss.xml" class="rss-link"><svg class="icon"><use href="#icon-rss"/></svg> Subscribe RSS</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://nyvoraai.github.io/about.html">About Us</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Contact</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Write for Us</a></li>
+        <li><a href="https://nyvoraai.github.io/sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
+        <li><a href="https://nyvoraai.github.io/contact.html">Send a message</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 NyvoraAI. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://nyvoraai.github.io/blog.html">Blog</a>
+      <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
+      <a href="https://nyvoraai.github.io/about.html">About</a>
+      <a href="https://nyvoraai.github.io/rss.xml">RSS</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+// Background Bubbles
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const wrap=document.getElementById('bubbleField');
+  const colors=['#FF6B4A','#146B5C','#E89B2D','#8B5CF6','#2563EB'];
+  const n=window.innerWidth<700?8:14;
+  for(let i=0;i<n;i++){
+    const b=document.createElement('div');b.className='fbubble';
+    const s=26+Math.random()*60,l=Math.random()*100,d=13+Math.random()*13,dl=-Math.random()*d;
+    b.style.cssText='width:'+s+'px;height:'+(s*.7)+'px;left:'+l+'%;bottom:-10%;border-color:'+colors[i%colors.length]+';animation-duration:'+d+'s;animation-delay:'+dl+'s';
+    wrap.appendChild(b);
+  }
+})();
+
+// Scroll Progress & Back to Top
+window.addEventListener('scroll',function(){
+  const d=document.documentElement;
+  const p=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+  const bar=document.getElementById('progress');
+  bar.style.width=p+'%';bar.setAttribute('aria-valuenow',Math.round(p));
+  document.getElementById('back-top').classList.toggle('visible',d.scrollTop>400);
+},{passive:true});
+
+// Reveal on Scroll
+const io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(!e.isIntersecting)return;
+    e.target.classList.add('visible');
+    io.unobserve(e.target);
+  });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(r){io.observe(r);});
+
+// Menu Toggle
+function toggleMenu(){
+  const nav=document.getElementById('mobileNav'),ham=document.getElementById('ham');
+  const open=nav.classList.toggle('open');
+  ham.setAttribute('aria-expanded',open?'true':'false');
+}
+
+// Copy Link
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(function(){
+    const btn=document.querySelector('.share-btn[onclick="copyLink()"]');
+    if(!btn)return;const o=btn.textContent;
+    btn.textContent='✅ Copied!';setTimeout(function(){btn.textContent=o;},2000);
+  });
+}
+
+// Newsletter Form
+document.getElementById('nlForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const btn=this.querySelector('.nl-btn');btn.textContent='Sending...';btn.disabled=true;
+  fetch(this.action,{method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}})
+    .then(function(r){btn.textContent=r.ok?'✅ Subscribed!':'Try again';if(!r.ok)btn.disabled=false;})
+    .catch(function(){btn.textContent='Try again';btn.disabled=false;});
+});
+
+// Interactive Quiz Logic
+const quizData = [
+  {
+    q: "In a Mixture of Experts LLM, what does the router network actually do?",
+    opts: ["It writes the final answer directly", "It scores experts and picks which few should process each token", "It compresses the model to 4-bit precision", "It replaces the need for training data"],
+    correct: 1,
+    explain: "The router (gating network) scores every available expert for a given token and selects only the top-K highest-scoring ones to actually process it — everything else about the token's journey happens after that selection."
+  },
+  {
+    q: "Mixtral 8x7B has roughly 47 billion total parameters. Why doesn't it cost as much to run as a 47B dense model?",
+    opts: ["It uses a smaller vocabulary", "It only activates a small subset of experts per token, not all of them", "It skips the attention layers entirely", "It only works on short prompts"],
+    correct: 1,
+    explain: "Because of sparse routing, only about 13B parameters worth of experts are actually activated for any single token, even though 47B parameters exist in total across all experts — that gap is the whole point of MoE."
+  },
+  {
+    q: "What is a common downside of Mixture of Experts models?",
+    opts: ["They can only answer one question at a time", "They require more total memory to store all experts, even though few are active per token", "They cannot be used for coding tasks", "They always produce lower-quality answers than dense models"],
+    correct: 1,
+    explain: "Even though only a few experts fire per token, the full set of experts still needs to be loaded into memory, so MoE models don't necessarily reduce hardware/storage requirements — they mainly reduce compute per token."
+  }
+];
+
+let currentQ = 0;
+let score = 0;
+let answered = false;
+
+function renderQuestion() {
+  const content = document.getElementById('quizContent');
+  const data = quizData[currentQ];
+  answered = false;
+  document.getElementById('quizNext').disabled = true;
+  document.getElementById('quizProgress').textContent = `Question ${currentQ + 1} of ${quizData.length}`;
+  
+  let html = `<div class="quiz-q">${data.q}</div><div class="quiz-opts">`;
+  data.opts.forEach((opt, i) => {
+    html += `<button class="quiz-opt" onclick="checkAnswer(${i})">${opt}</button>`;
+  });
+  html += `</div><div class="quiz-feedback" id="quizFeedback"></div>`;
+  content.innerHTML = html;
+}
+
+function checkAnswer(selected) {
+  if (answered) return;
+  answered = true;
+  const data = quizData[currentQ];
+  const opts = document.querySelectorAll('.quiz-opt');
+  
+  opts[data.correct].classList.add('correct');
+  if (selected !== data.correct) {
+    opts[selected].classList.add('wrong');
+  } else {
+    score++;
+  }
+  
+  const feedback = document.getElementById('quizFeedback');
+  feedback.textContent = data.explain;
+  feedback.classList.add('show');
+  
+  document.getElementById('quizNext').disabled = false;
+  if (currentQ === quizData.length - 1) {
+    document.getElementById('quizNext').textContent = 'See Results 🏆';
+  }
+}
+
+function nextQuestion() {
+  currentQ++;
+  if (currentQ >= quizData.length) {
+    showResults();
+  } else {
+    renderQuestion();
+  }
+}
+
+function showResults() {
+  const content = document.getElementById('quizContent');
+  let msg = "Keep learning! Check out our guides to master these concepts.";
+  if (score === 2) msg = "Great job! You've got a solid grasp of MoE architecture.";
+  if (score === 3) msg = "Perfect score! You clearly understand how Mixture of Experts models work.";
+  
+  content.innerHTML = `
+    <div class="quiz-result">
+      <div class="quiz-score">${score}/${quizData.length}</div>
+      <h3 style="margin:10px 0;font-family:var(--font-display);color:var(--ink);">${score === 3 ? '🏆 MoE Master!' : score === 2 ? '🌟 Great Job!' : '📚 Keep Learning!'}</h3>
+      <p style="color:var(--ink-soft);font-size:15px;">${msg}</p>
+      <button class="quiz-btn" onclick="resetQuiz()" style="margin-top:20px;">Retry Quiz</button>
+    </div>
+  `;
+  document.getElementById('quizNext').style.display = 'none';
+  document.getElementById('quizProgress').textContent = 'Completed';
+}
+
+function resetQuiz() {
+  currentQ = 0;
+  score = 0;
+  document.getElementById('quizNext').style.display = 'block';
+  document.getElementById('quizNext').textContent = 'Next →';
+  renderQuestion();
+}
+
+// Initialize Quiz
+renderQuestion();
+</script>
+</body>
+</html>
