@@ -15,6 +15,13 @@
 <description>How much does it cost to train a large LLM? Real numbers on GPT-4, Gemini, and open-source models, plus what actually drives the price up.</description>
 </item>
 <item>
+<title>What Is a Mixture of Experts LLM? 2026 Guide</title>
+<link>https://nyvoraai.github.io/ai-news/what-is-a-mixture-of-experts-llm.html</link>
+<guid isPermaLink="true">https://nyvoraai.github.io/ai-news/what-is-a-mixture-of-experts-llm.html</guid>
+<pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+<description>Learn what a Mixture of Experts LLM is, how gating and sparse routing work, and why models like Mixtral use MoE for speed and scale.</description>
+</item>
+<item>
 <title>Claude Opus 4.8: What It Is &amp; How It&apos;s Different</title>
 <link>https://nyvoraai.github.io/ai-news/what-is-claude-opus-4-8.html</link>
 <guid isPermaLink="true">https://nyvoraai.github.io/ai-news/what-is-claude-opus-4-8.html</guid>

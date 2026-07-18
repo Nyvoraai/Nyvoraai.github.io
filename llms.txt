@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (126 articles)
+## AI News (127 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -92,6 +92,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [What Does Open Source LLM Mean? Simply Explained](https://nyvoraai.github.io/ai-news/what-does-open-source-llm-mean.html): What does open source LLM mean? We explain it simply — what open weights actually are, why they matter, and how anyone can use them for free in 2026.
 - [What Is a Foundation Model in AI? Explained 2026](https://nyvoraai.github.io/ai-news/what-is-a-foundation-model-in-ai.html): What is a foundation model in AI? We explain what they are, how they work, real examples like GPT and Llama, and why they matter — in plain English.
 - [What is a Humanoid Robot in Simple Terms? 2026 Guide](https://nyvoraai.github.io/ai-news/what-is-a-humanoid-robot-in-simple-terms.html): Discover what is a humanoid robot in simple terms. Learn about humanoid robots, how they work, and their real-world applications in 2026.
+- [What Is a Mixture of Experts LLM? 2026 Guide](https://nyvoraai.github.io/ai-news/what-is-a-mixture-of-experts-llm.html): Learn what a Mixture of Experts LLM is, how gating and sparse routing work, and why models like Mixtral use MoE for speed and scale.
 - [What Is a Neural Network? Explained Simply (2026)](https://nyvoraai.github.io/ai-news/what-is-a-neural-network-explained-simply.html): What is a neural network explained simply? Discover how artificial brains work, their layers, and how they power modern AI today.
 - [What Is AGI and Has It Been Achieved? 2026 Guide](https://nyvoraai.github.io/ai-news/what-is-agi-has-it-been-achieved.html): Discover what AGI is, whether it has been achieved in 2026, expert timeline predictions, and how it differs from today's narrow AI.
 - [What Is AI Alignment and Why Does It Matter?](https://nyvoraai.github.io/ai-news/what-is-ai-alignment.html): Discover what AI alignment is, why it's the biggest challenge in artificial intelligence, and how researchers are ensuring AI systems share human values and goals.
