@@ -376,6 +376,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-
 .stat-box:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--teal)}
 .stat-number{font-size:36px;font-weight:700;color:var(--coral);font-family:var(--font-display);line-height:1;margin-bottom:6px}
 .stat-label{font-size:13px;color:var(--muted);font-family:var(--font-mono)}
+.stat-source{font-size:11px;color:var(--muted);font-family:var(--font-mono);margin-top:6px;opacity:.8}
 
 /* ── COMPARISON TABLE ── */
 .tbl-wrap{overflow-x:auto;margin:24px 0;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow)}
@@ -396,9 +397,13 @@ nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-
 .quiz-option{display:flex;align-items:center;gap:12px;padding:14px 18px;background:var(--bg);border:2px solid var(--line);border-radius:10px;cursor:pointer;transition:all .2s}
 .quiz-option:hover{border-color:var(--teal);background:var(--paper)}
 .quiz-option input[type="radio"]{width:18px;height:18px;accent-color:var(--teal)}
+/* FIX: feedback boxes must be hidden until a "show" class is added by JS —
+   previously the .correct/.incorrect classes alone forced display:block,
+   so both messages appeared on page load before any answer was chosen. */
 .quiz-feedback{margin-top:16px;padding:14px;border-radius:10px;display:none;font-size:14px}
-.quiz-feedback.correct{display:block;background:var(--teal-soft);color:var(--teal-dp);border:1px solid var(--teal)}
-.quiz-feedback.incorrect{display:block;background:var(--danger-soft);color:var(--danger);border:1px solid var(--danger)}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct.show{background:var(--teal-soft);color:var(--teal-dp);border:1px solid var(--teal)}
+.quiz-feedback.incorrect.show{background:var(--danger-soft);color:var(--danger);border:1px solid var(--danger)}
 
 /* ── FAQ ── */
 .faq{margin:16px 0}
@@ -554,10 +559,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="bubble-field" id="bubbleField"></div>
 
 <!-- PROGRESS BAR -->
-<div id="progress"></div>
+<div id="progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
 <!-- NAV -->
-<nav>
+<nav role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
       <img src="https://nyvoraai.github.io/assets/logo.png" alt="" class="logo-img" onerror="this.remove()"/>
@@ -578,13 +583,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nav-soc" aria-label="YouTube"><svg class="icon"><use href="#icon-youtube"/></svg></a>
       </div>
       <a href="https://nyvoraai.github.io/contact.html" class="nav-cta">Write for Us</a>
-      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" tabindex="0">
+      <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" aria-expanded="false" tabindex="0">
         <span></span><span></span><span></span>
       </div>
     </div>
   </div>
 </nav>
-<div class="mobile-nav" id="mobileNav">
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
   <a href="https://nyvoraai.github.io/index.html">Home</a>
   <a href="https://nyvoraai.github.io/blog.html">Blog</a>
   <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
@@ -604,7 +609,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <span class="bc-sep">/</span>
   <a href="https://nyvoraai.github.io/ai-news.html">AI News</a>
   <span class="bc-sep">/</span>
-  <span>AI Watermarking</span>
+  <span aria-current="page">AI Watermarking</span>
 </nav>
 
 <!-- ARTICLE HEADER -->
@@ -625,7 +630,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span>Published <time datetime="2026-06-23">June 23, 2026</time></span>
     <span class="meta-sep">·</span>
     <span>Reviewed for accuracy <time datetime="2026-06">June 2026</time></span>
-    <span class="meta-sep">·</span>
   </div>
 </header>
 
@@ -742,7 +746,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 2 -->
   <h2 id="how-it-works"><span class="h2-mark">02</span>How Does AI Watermarking Work? The Technical Breakdown</h2>
-  <p class="reveal">The mechanics of AI watermarking vary depending on the content type, but the core principle remains the same: embed information in a way that's difficult to remove without degrading the content's quality.</p>
+  <p class="reveal">The mechanics of AI watermarking vary depending on the content type, but the core principle remains the same: embed information in a way that's difficult to remove without degrading the content's quality. Real-world deployments already exist — Google DeepMind's <a href="https://deepmind.google/technologies/synthid/" target="_blank" rel="noopener nofollow">SynthID</a> embeds imperceptible watermarks directly into AI-generated images, audio, text, and video at the point of creation.</p>
 
   <div class="diagram-wrap reveal">
     <div class="diagram-header">
@@ -782,7 +786,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h3>Image Watermarking: Pixels with Secrets</h3>
   <p class="reveal">AI-generated images can be watermarked by making imperceptible adjustments to pixel values, color channels, or frequency domains. These modifications are so subtle that even professional designers wouldn't notice them, but specialized software can extract the hidden signature.</p>
 
-  <p class="reveal">Some advanced techniques embed watermarks in the image's latent space—the mathematical representation the AI uses internally—making them incredibly resilient to editing, compression, and format conversion.</p>
+  <p class="reveal">Some advanced techniques embed watermarks in the image's latent space—the mathematical representation the AI uses internally—making them incredibly resilient to editing, compression, and format conversion. Industry-wide provenance standards like <a href="https://c2pa.org/" target="_blank" rel="noopener nofollow">C2PA (Coalition for Content Provenance and Authenticity)</a> and the <a href="https://contentauthenticity.org/" target="_blank" rel="noopener nofollow">Content Authenticity Initiative</a> build on this idea by attaching cryptographically signed metadata about an image's origin and edit history.</p>
 
   <h3>Audio and Video Watermarking</h3>
   <p class="reveal">For audio and video content, watermarks can be embedded in specific frequency ranges inaudible to humans, or in subtle timing variations. These techniques are similar to those used in copyright protection for music and films, but adapted specifically for AI-generated media.</p>
@@ -847,10 +851,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p class="reveal">Educational institutions are grappling with AI-generated essays and assignments. Watermarking helps educators identify AI-written work, maintaining the integrity of academic credentials while allowing legitimate AI assistance to be used transparently.</p>
 
   <h3>Regulatory Compliance</h3>
-  <p class="reveal">Governments worldwide are implementing AI regulations. The <a href="https://nyvoraai.github.io/ai-news/how-governments-regulate-ai-2026.html" target="_blank">how governments regulate AI in 2026</a> increasingly mandates transparency about AI-generated content, making watermarking not just best practice but legal requirement in many jurisdictions.</p>
+  <p class="reveal">Governments worldwide are implementing AI regulations. The <a href="https://nyvoraai.github.io/ai-news/how-governments-regulate-ai-2026.html" target="_blank">how governments regulate AI in 2026</a> increasingly mandates transparency about AI-generated content, making watermarking not just best practice but legal requirement in many jurisdictions. The <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener nofollow">EU's official AI Act framework</a> and the U.S. <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener nofollow">NIST AI Risk Management Framework</a> both address content provenance and labeling requirements.</p>
 
   <div class="bubble bubble-you reveal">
-    <div class="bubble-avatar">️</div>
+    <div class="bubble-avatar">🔒</div>
     <div class="bubble-card">
       <div class="bubble-label">Security Perspective</div>
       <p>Watermarking also plays a role in cybersecurity. Understanding <a href="https://nyvoraai.github.io/ai-news/how-ai-used-cybersecurity.html" target="_blank">how AI is used in cybersecurity</a> reveals that watermarks can help detect malicious AI-generated phishing emails, fake documents, and social engineering attacks.</p>
@@ -900,7 +904,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </table>
   </div>
 
-  <p class="reveal">To address some of these challenges, researchers are developing more robust techniques. The <a href="https://nyvoraai.github.io/ai-news/anthropic-ai-safety-guide.html" target="_blank">Anthropic AI safety guide</a> discusses how leading AI labs are working on watermarking that survives adversarial attacks while respecting user privacy.</p>
+  <p class="reveal">To address some of these challenges, researchers are developing more robust techniques. The <a href="https://nyvoraai.github.io/ai-news/anthropic-ai-safety-guide.html" target="_blank">Anthropic AI safety guide</a> discusses how leading AI labs are working on watermarking that survives adversarial attacks while respecting user privacy. Cross-industry groups like the <a href="https://partnershiponai.org/" target="_blank" rel="noopener nofollow">Partnership on AI</a> are also working toward shared standards for labeling synthetic media.</p>
 
   <!-- SECTION 6 -->
   <h2 id="detection"><span class="h2-mark">06</span>How to Detect AI Watermarks: Tools and Techniques</h2>
@@ -957,7 +961,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="quiz-box reveal" id="quiz">
     <div class="quiz-title">🧠 Test Your AI Watermarking Knowledge</div>
     <div class="quiz-question">What is the main advantage of invisible AI watermarks over visible watermarks?</div>
-    <div class="quiz-options">
+    <div class="quiz-options" role="radiogroup" aria-label="Quiz options">
       <label class="quiz-option">
         <input type="radio" name="q1" value="a" onchange="checkAnswer(this, 'a', 'b')">
         <span>They're easier to create</span>
@@ -971,8 +975,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span>They're visible to everyone</span>
       </label>
     </div>
-    <div class="quiz-feedback correct">✅ Correct! Invisible watermarks are embedded in the content's structure in ways that make them extremely difficult to remove without degrading the quality of the content itself.</div>
-    <div class="quiz-feedback incorrect">❌ Not quite. The key advantage of invisible watermarks is their resilience—they're much harder to remove without damaging the content compared to visible watermarks that can be easily cropped or edited out.</div>
+    <div class="quiz-feedback correct" role="alert">✅ Correct! Invisible watermarks are embedded in the content's structure in ways that make them extremely difficult to remove without degrading the quality of the content itself.</div>
+    <div class="quiz-feedback incorrect" role="alert">❌ Not quite. The key advantage of invisible watermarks is their resilience—they're much harder to remove without damaging the content compared to visible watermarks that can be easily cropped or edited out.</div>
   </div>
 
   <!-- FAQ -->
@@ -980,11 +984,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="faq reveal">
     <details open>
       <summary>What is AI watermarking?</summary>
-      <div class="faq-body">AI watermarking is a technique that embeds invisible digital markers or fingerprints into AI-generated content (text, images, audio, video) to identify its artificial origin. These watermarks help distinguish AI-created content from human-created content.</div>
+      <div class="faq-body">AI watermarking is a technique that embeds invisible digital markers or fingerprints into AI-generated content (text, images, audio, video) to identify its artificial origin. These watermarks help distinguish AI-created content from human-created content. Industry frameworks such as <a href="https://c2pa.org/" target="_blank" rel="noopener nofollow">C2PA</a> are working to standardize how this provenance information is attached and verified.</div>
     </details>
     <details>
       <summary>How does AI watermarking work?</summary>
-      <div class="faq-body">AI watermarking works by embedding subtle patterns or statistical signatures into content during generation. For text, this might involve specific word choices or sentence structures. For images, it could be imperceptible pixel modifications. These markers survive copying and editing but can be detected by specialized tools.</div>
+      <div class="faq-body">AI watermarking works by embedding subtle patterns or statistical signatures into content during generation. For text, this might involve specific word choices or sentence structures. For images, it could be imperceptible pixel modifications — as with Google DeepMind's <a href="https://deepmind.google/technologies/synthid/" target="_blank" rel="noopener nofollow">SynthID</a>. These markers survive copying and editing but can be detected by specialized tools.</div>
     </details>
     <details>
       <summary>Why is AI watermarking important?</summary>
@@ -996,8 +1000,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </details>
     <details>
       <summary>Are AI watermarks legally required?</summary>
-      <div class="faq-body">In some jurisdictions, yes. The EU AI Act and other emerging regulations are beginning to mandate transparency about AI-generated content, which often includes watermarking requirements for certain high-risk applications.</div>
+      <div class="faq-body">In some jurisdictions, yes. The <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener nofollow">EU AI Act</a> and other emerging regulations are beginning to mandate transparency about AI-generated content, which often includes watermarking requirements for certain high-risk applications. In the U.S., the <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener nofollow">NIST AI Risk Management Framework</a> provides voluntary guidance that many companies are adopting ahead of formal rules.</div>
     </details>
+  </div>
+
+  <!-- OFFICIAL RESOURCES -->
+  <div class="key-takeaways reveal" style="border-left-color:var(--teal)">
+    <div class="kt-title" style="color:var(--teal-dp)">🔗 Official Standards &amp; Resources</div>
+    <ul style="list-style:none">
+      <li style="display:flex;gap:10px"><span>🏛️</span><a href="https://c2pa.org/" target="_blank" rel="noopener nofollow">C2PA — Coalition for Content Provenance and Authenticity</a></li>
+      <li style="display:flex;gap:10px"><span>🏛️</span><a href="https://contentauthenticity.org/" target="_blank" rel="noopener nofollow">Content Authenticity Initiative</a></li>
+      <li style="display:flex;gap:10px"><span>🏛️</span><a href="https://deepmind.google/technologies/synthid/" target="_blank" rel="noopener nofollow">Google DeepMind — SynthID</a></li>
+      <li style="display:flex;gap:10px"><span>🏛️</span><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener nofollow">NIST AI Risk Management Framework</a></li>
+      <li style="display:flex;gap:10px"><span>🏛️</span><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener nofollow">European Commission — EU AI Act</a></li>
+      <li style="display:flex;gap:10px"><span>🏛️</span><a href="https://partnershiponai.org/" target="_blank" rel="noopener nofollow">Partnership on AI</a></li>
+    </ul>
   </div>
 
   <!-- AUTHOR BOX -->
@@ -1026,6 +1043,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Get weekly updates on AI watermarking, content authentication, and digital literacy. Join thousands of informed users.</p>
     <form action="https://formspree.io/f/xwvjgdpw" method="POST" class="nl-form">
       <input class="nl-input" type="email" name="email" placeholder="your@email.com" required/>
+      <input type="hidden" name="_subject" value="Newsletter Signup — AI Watermarking"/>
       <button type="submit" class="nl-btn">Subscribe Free</button>
     </form>
     <p class="nl-note">No spam · Unsubscribe anytime · Privacy-focused</p>
@@ -1145,7 +1163,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 window.addEventListener('scroll',function(){
   const doc = document.documentElement;
   const pct = doc.scrollTop/(doc.scrollHeight-doc.clientHeight)*100;
-  document.getElementById('progress').style.width=pct+'%';
+  const bar = document.getElementById('progress');
+  bar.style.width=pct+'%';
+  bar.setAttribute('aria-valuenow', Math.round(pct));
   document.getElementById('back-top').classList.toggle('visible',doc.scrollTop>400);
 });
 
@@ -1158,7 +1178,10 @@ reveals.forEach(r=>io.observe(r));
 
 // Mobile menu
 function toggleMenu(){
-  document.getElementById('mobileNav').classList.toggle('open');
+  const nav = document.getElementById('mobileNav');
+  const ham = document.getElementById('ham');
+  const isOpen = nav.classList.toggle('open');
+  ham.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 }
 
 // Copy link
@@ -1173,13 +1196,16 @@ function copyLink(){
 }
 
 // Quiz functionality
+// FIX: this now toggles a "show" class instead of relying on the
+// "correct"/"incorrect" classes alone (those classes stay on the elements
+// permanently for styling; visibility is controlled separately via "show").
 function checkAnswer(selected, value, correct){
   const feedback = selected.closest('.quiz-box').querySelectorAll('.quiz-feedback');
-  feedback.forEach(f => f.style.display = 'none');
+  feedback.forEach(f => f.classList.remove('show'));
   if(value === correct){
-    feedback[0].style.display = 'block';
+    selected.closest('.quiz-box').querySelector('.quiz-feedback.correct').classList.add('show');
   } else {
-    feedback[1].style.display = 'block';
+    selected.closest('.quiz-box').querySelector('.quiz-feedback.incorrect').classList.add('show');
   }
 }
 </script>
