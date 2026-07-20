@@ -700,7 +700,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <p class="reveal">Constitutional AI applies this exact logic to machine learning. Instead of showing the AI millions of examples of "good" and "bad" answers, researchers give the AI a list of explicit instructions—a constitution. These rules might include principles like "Do not promote illegal acts," "Choose the least harmful option," or "Do not discriminate."</p>
 
-  <p class="reveal">When the AI generates an answer, it is then prompted to critique its own response against these principles. If it violates a rule, it rewrites the answer. By giving AI a moral compass, it drastically reduces the <a href="https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html" target="_blank">AI risks for everyday users</a> like exposure to toxic, biased, or dangerous content.</p>
+  <p class="reveal">When the AI generates an answer, it is then prompted to critique its own response against these principles. If it violates a rule, it rewrites the answer. By giving AI a moral compass, it drastically reduces the <a href="https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html" target="_blank">AI risks for everyday users</a> like exposure to toxic, biased, or dangerous content. Anthropic first introduced the method in its 2022 paper, <a href="https://arxiv.org/abs/2212.08073" target="_blank" rel="noopener">"Constitutional AI: Harmlessness from AI Feedback,"</a> which lays out the original research in full.</p>
 
   <!-- SECTION 2 -->
   <h2 id="how-it-works"><span class="h2-mark">02</span>How Does Constitutional AI Work?</h2>
@@ -743,6 +743,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li><strong>Reinforcement Learning:</strong> These revised, "clean" responses are then used to train the final model, teaching it to naturally output safe answers without needing the critique step every time.</li>
   </ol>
 
+  <p class="reveal">For a deeper technical walkthrough, Anthropic's own explainer on <a href="https://www.anthropic.com/news/claude-new-constitution" target="_blank" rel="noopener">Claude's Constitution</a> describes the specific values and priorities baked into the current approach.</p>
+
   <!-- SECTION 3 -->
   <h2 id="vs-rlhf"><span class="h2-mark">03</span>Constitutional AI vs. Traditional RLHF</h2>
   <p class="reveal">To understand why CAI is such a big deal, you have to look at what it replaces. The previous gold standard for AI safety was RLHF (Reinforcement Learning from Human Feedback). In RLHF, humans had to read and rate tens of thousands of AI outputs to teach it what was good.</p>
@@ -781,7 +783,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </table>
   </div>
 
-  <p class="reveal">If you are curious about the broader engineering efforts behind <a href="https://nyvoraai.github.io/ai-news/how-ai-companies-make-models-safe.html" target="_blank">how AI companies make models safe</a>, Constitutional AI is quickly becoming one of their most powerful tools because it scales so much better than human feedback.</p>
+  <p class="reveal">If you are curious about the broader engineering efforts behind <a href="https://nyvoraai.github.io/ai-news/how-ai-companies-make-models-safe.html" target="_blank">how AI companies make models safe</a>, Constitutional AI is quickly becoming one of their most powerful tools because it scales so much better than human feedback. In practice, most modern systems still use human feedback alongside CAI rather than one replacing the other entirely — for more on that layered approach, see OpenAI's own overview of <a href="https://openai.com/index/instruction-following/" target="_blank" rel="noopener">how it aligns models with instructions and feedback</a>.</p>
 
   <!-- SECTION 4 -->
   <h2 id="real-world"><span class="h2-mark">04</span>Real-World Benefits of a Self-Correcting AI</h2>
@@ -806,7 +808,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2 id="regulation"><span class="h2-mark">05</span>Constitutional AI and Government Regulation</h2>
   <p class="reveal">As AI becomes integrated into critical infrastructure, governments are stepping in. The European Union recently passed sweeping legislation to govern AI development. Because Constitutional AI relies on explicit, written rules, it makes it much easier for companies to prove to regulators that their models comply with the law.</p>
 
-  <p class="reveal">This self-governance is becoming increasingly important as governments introduce strict regulations, which we break down in our guide to the <a href="https://nyvoraai.github.io/ai-news/eu-ai-act-simple-terms.html" target="_blank">EU AI Act in simple terms</a>. If an AI's "constitution" explicitly forbids violating user privacy or generating discriminatory outputs, the company can audit those rules to ensure legal compliance.</p>
+  <p class="reveal">This self-governance is becoming increasingly important as governments introduce strict regulations, which we break down in our guide to the <a href="https://nyvoraai.github.io/ai-news/eu-ai-act-simple-terms.html" target="_blank">EU AI Act in simple terms</a>. If an AI's "constitution" explicitly forbids violating user privacy or generating discriminatory outputs, the company can audit those rules to ensure legal compliance. The official text of the regulation itself, the <a href="https://artificialintelligenceact.eu/" target="_blank" rel="noopener">EU Artificial Intelligence Act</a>, is a useful primary source if you want to check specific provisions.</p>
 
   <div class="bubble bubble-you reveal">
     <div class="bubble-avatar">💡</div>
