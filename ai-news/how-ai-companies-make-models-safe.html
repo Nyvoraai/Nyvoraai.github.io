@@ -700,9 +700,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main class="layout">
 <article class="prose">
 
-  <p class="reveal">Building a large language model is relatively easy; building a <em>safe</em> one is incredibly hard. When models are trained on vast amounts of internet data, they inevitably learn toxic, biased, or dangerous patterns alongside useful knowledge.</p>
+  <p class="reveal">Training a large language model is, relatively speaking, the easy part. Making it <em>safe</em> is where things get genuinely difficult. Feed a model enough internet text and it will absorb the toxic, biased, and outright dangerous patterns right alongside everything useful. Nobody sets out to teach a model to do that. It happens anyway, by default, unless someone actively intervenes.</p>
 
-  <p class="reveal">While we previously explored the <a href="https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html" target="_blank">AI risks for everyday users</a>, understanding how companies mitigate these dangers is just as crucial. AI safety (or AI alignment) is the discipline of ensuring AI systems act in accordance with human intentions and values. Here is exactly how they do it.</p>
+  <p class="reveal">We've already covered the <a href="https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html" target="_blank">AI risks for everyday users</a> that result when this goes wrong. Here, we're looking at the other side: what companies actually do, step by step, to keep that from happening in the first place. AI safety, or alignment, is the umbrella term for that whole effort, and it's less a single fix than a stack of overlapping defenses.</p>
 
   <div class="key-takeaways quick-answer reveal">
     <div class="kt-title">🛡️ Key takeaways</div>
@@ -717,9 +717,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 1 -->
   <h2 id="safety-challenge"><span class="h2-mark">01</span>The AI Safety Challenge</h2>
-  <p class="reveal">Before an AI model can be considered safe, it must first be "aligned." Alignment means ensuring the model's goals match human values. A highly capable but unaligned AI is like a powerful car with no steering wheel—it might go fast, but it's likely to crash.</p>
+  <p class="reveal">Before a model can be called safe, it has to be "aligned" first, meaning its goals actually match what humans want. A highly capable but unaligned model is a bit like a powerful car with no steering wheel: impressive in a straight line, and a genuine liability the moment a turn shows up.</p>
 
-  <p class="reveal">The challenge is compounded by the fact that human values are complex, nuanced, and often contradictory. Teaching a machine to understand context, sarcasm, and ethical boundaries requires more than just raw computing power; it requires sophisticated behavioral engineering.</p>
+  <p class="reveal">What makes this hard is that human values aren't a clean spec sheet. They're contradictory, contextual, and change depending on who you ask. Teaching a machine to pick up on sarcasm, weigh competing ethical concerns, or know where a line sits requires more than raw compute. It takes deliberate, ongoing behavioral engineering, and it's exactly the kind of problem the U.S. National Institute of Standards and Technology tries to standardize through its <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener">AI Risk Management Framework</a>.</p>
 
   <!-- ANIMATED DIAGRAM: The Safety Pipeline -->
   <div class="diagram-wrap reveal">
@@ -759,7 +759,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 2 -->
   <h2 id="data-curation"><span class="h2-mark">02</span>Phase 1: Data Curation & Filtering</h2>
-  <p class="reveal">Safety begins long before the model starts "thinking." It starts with the data. AI companies scrape trillions of words from the internet, but they can't feed all of it directly into the model.</p>
+  <p class="reveal">Safety work starts long before a model does any "thinking." It starts with the data. Companies scrape trillions of words off the internet, but almost none of that goes in raw.</p>
 
   <ul class="reveal">
     <li><strong>Toxicity Filtering:</strong> Automated classifiers scan datasets to remove hate speech, harassment, and explicit content.</li>
@@ -777,7 +777,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 3 -->
   <h2 id="rlhf"><span class="h2-mark">03</span>Phase 2: RLHF (The Alignment Engine)</h2>
-  <p class="reveal">Reinforcement Learning from Human Feedback (RLHF) is the secret sauce of modern AI safety. It transforms a model that merely predicts the next word into one that tries to be helpful, honest, and harmless.</p>
+  <p class="reveal">Reinforcement Learning from Human Feedback, RLHF for short, is what actually turns a raw next-word predictor into something that tries to be helpful, honest, and not harmful. It's the part of the pipeline most people have heard of, even if the acronym is unfamiliar.</p>
 
   <div class="stat-grid reveal">
     <div class="stat-box">
@@ -803,7 +803,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 4 -->
   <h2 id="red-teaming"><span class="h2-mark">04</span>Phase 3: Red Teaming & Adversarial Testing</h2>
-  <p class="reveal">Once a model is aligned, companies hire "red teams"—groups of ethical hackers, domain experts, and sociologists whose sole job is to break the AI.</p>
+  <p class="reveal">Once a model has been through RLHF, the next move is to try to break it on purpose. Companies bring in "red teams," a mix of ethical hackers, subject-matter experts, and sometimes sociologists, whose entire job is finding the cracks before someone else does.</p>
+
+  <p class="reveal">This isn't an informal exercise, either. NIST has published a formal taxonomy of these attack types in its report on <a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf" target="_blank" rel="noopener">adversarial machine learning</a>, and the government-backed <a href="https://www.nist.gov/aisi" target="_blank" rel="noopener">U.S. AI Safety Institute</a> now coordinates some of this testing directly with major labs before new models ship.</p>
 
   <div class="risk-grid reveal">
     <div class="risk-card">
@@ -834,7 +836,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 5 -->
   <h2 id="guardrails"><span class="h2-mark">05</span>Phase 4: Guardrails & System Prompts</h2>
-  <p class="reveal">Even the best-trained models need a safety net. Guardrails are external systems that monitor the conversation in real-time.</p>
+  <p class="reveal">Even a well-trained model needs a safety net running underneath it in production. Guardrails are the external systems that watch a conversation as it happens, separate from whatever the model itself has learned.</p>
 
   <div class="diagram-wrap reveal">
     <div class="diagram-header">
@@ -870,15 +872,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 6 -->
   <h2 id="monitoring"><span class="h2-mark">06</span>Phase 5: Continuous Monitoring</h2>
-  <p class="reveal">Safety doesn't end at launch. AI models are deployed into the wild, and users find new ways to interact with them every day. Companies monitor anonymized usage logs to identify new "drift" or emerging jailbreak techniques.</p>
+  <p class="reveal">None of this stops at launch. Once a model is out in the world, people find new ways to poke at it every single day. Companies keep an eye on anonymized usage patterns specifically to catch new jailbreak techniques or behavioral drift before it becomes a widespread problem.</p>
   
-  <p class="reveal">When a new vulnerability is discovered, companies can often patch it without retraining the entire model. They do this by updating the system prompts or fine-tuning the reward model to penalize the new bad behavior.</p>
+  <p class="reveal">When something new turns up, teams can often patch it without retraining the whole model from scratch, usually by updating the system prompt or nudging the reward model to penalize the newly discovered bad behavior.</p>
 
   <!-- SECTION 7 -->
   <h2 id="limits"><span class="h2-mark">07</span>The Limits of Current Safety</h2>
-  <p class="reveal">Despite these rigorous processes, no AI model is 100% safe. It is an ongoing arms race between developers building guardrails and adversaries finding new ways to bypass them.</p>
+  <p class="reveal">For all this effort, no model is ever fully, permanently safe. It's an ongoing back-and-forth: developers build guardrails, someone finds a way around them, developers patch it, and the cycle continues. The UK's <a href="https://www.aisi.gov.uk/" target="_blank" rel="noopener">AI Security Institute</a> exists largely because governments have accepted that this is a standing arms race rather than a problem with a finish line.</p>
 
-  <p class="reveal">Furthermore, there is the problem of "over-alignment." In their effort to prevent harmful outputs, safety filters can sometimes become too aggressive, causing the AI to refuse benign prompts or give overly cautious, unhelpful answers. If you want to dive deeper into these concepts, check out our <a href="https://nyvoraai.github.io/blog.html" target="_blank">beginner-friendly AI guides</a> for more foundational knowledge.</p>
+  <p class="reveal">There's also a subtler failure mode worth knowing about: "over-alignment." In the effort to avoid harmful outputs, safety filters sometimes swing too far the other way, and the model starts refusing perfectly ordinary requests or hedges everything into uselessness. If you want the foundational concepts behind all of this, our <a href="https://nyvoraai.github.io/blog.html" target="_blank">beginner-friendly AI guides</a> are a good next stop.</p>
 
   <!-- INTERACTIVE QUIZ -->
   <div class="quiz-box reveal" id="quiz">
