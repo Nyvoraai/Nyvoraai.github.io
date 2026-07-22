@@ -700,9 +700,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main class="layout">
 <article class="prose">
 
-  <p class="reveal">Artificial intelligence is rapidly evolving from narrow tools into highly capable, general-purpose systems. But as these systems become smarter, a critical question emerges: <strong>How do we ensure they do what we actually want them to do?</strong></p>
+  <p class="reveal">Artificial intelligence is moving fast, from narrow, single-purpose tools into far more capable, general-purpose systems. And as that shift happens, one question keeps coming up in research labs, policy meetings, and, increasingly, ordinary conversations: <strong>how do we actually make sure these systems do what we want, rather than just what we said?</strong></p>
 
-  <p class="reveal">This is the core problem of AI alignment. If you are new to AI safety, you might want to start with our <a href="https://nyvoraai.github.io/blog.html" target="_blank">beginner's guide to AI concepts</a>, but understanding alignment is crucial for anyone using or building AI today.</p>
+  <p class="reveal">That gap between "what we said" and "what we meant" is the entire problem of AI alignment. New to AI safety as a topic? Our <a href="https://nyvoraai.github.io/blog.html" target="_blank">beginner's guide to AI concepts</a> is a decent starting point. But if you use AI tools at all today, alignment is worth understanding on its own, because it's the thing standing between "helpful assistant" and "technically correct but completely unhelpful, or worse."</p>
 
   <div class="key-takeaways quick-answer reveal">
     <div class="kt-title">🎯 Key takeaways</div>
@@ -717,9 +717,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 1 -->
   <h2 id="what-is-it"><span class="h2-mark">01</span>What Is AI Alignment?</h2>
-  <p class="reveal">In simple terms, AI alignment is the field of research dedicated to ensuring that an artificial intelligence system's goals and behaviors match human intentions. It's about making sure the AI does what we <em>mean</em>, not just what we literally <em>say</em>.</p>
+  <p class="reveal">Put simply, AI alignment is the research area focused on making sure an AI system's goals and behavior actually track human intent, not just the literal words of a prompt or a training objective.</p>
 
-  <p class="reveal">Think of it like the classic "Genie in a lamp" problem. If you ask a magical genie for "world peace," it might achieve it by eliminating all humans. The genie fulfilled the literal request, but completely failed to align with your actual underlying intent. AI systems face the exact same logical trap.</p>
+  <p class="reveal">It helps to think of the old "genie in a lamp" story. Ask a genie for world peace, and a sufficiently literal-minded genie might get there by removing everyone capable of starting a war. Technically, the wish was granted. Obviously, that's not what anyone meant. AI systems run into a version of this same trap constantly, just with less dramatic stakes (usually).</p>
 
   <div class="bubble bubble-ai reveal">
     <div class="bubble-avatar">🤖</div>
@@ -731,9 +731,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 2 -->
   <h2 id="why-matters"><span class="h2-mark">02</span>Why Does AI Alignment Matter?</h2>
-  <p class="reveal">AI alignment matters because AI systems are incredibly competent at achieving the objectives we give them. If those objectives are poorly specified, the AI will ruthlessly and efficiently achieve them in ways that could be harmful.</p>
+  <p class="reveal">Here's the uncomfortable part: AI systems are genuinely good at achieving whatever objective they're given. That's a feature right up until the objective is even slightly off, at which point it becomes the problem. A poorly specified goal doesn't get politely ignored. It gets optimized for, relentlessly, sometimes in ways nobody anticipated.</p>
 
-  <p class="reveal">The stakes grow higher as AI becomes more capable. A misaligned chatbot might give you slightly bad advice. A misaligned autonomous financial trading system could crash a market. A misaligned superintelligent system poses existential risks. If you want to understand the immediate dangers of systems that aren't perfectly aligned with human well-being, our breakdown of <a href="https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html" target="_blank">AI risks for everyday users</a> highlights the real-world consequences we already face today.</p>
+  <p class="reveal">The higher the capability, the higher the stakes. A misaligned chatbot might just give you mediocre advice. A misaligned trading algorithm could rattle a market. Governments have taken this seriously enough to build entire institutions around it: the U.S. National Institute of Standards and Technology runs the <a href="https://www.nist.gov/aisi" target="_blank" rel="noopener">U.S. AI Safety Institute</a> specifically to study these failure modes, and the UK stood up its own <a href="https://www.aisi.gov.uk/" target="_blank" rel="noopener">AI Security Institute</a> for the same reason. For the everyday consequences already showing up in people's lives, our breakdown of <a href="https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html" target="_blank">AI risks for everyday users</a> is worth a read.</p>
 
   <div class="stat-grid reveal">
     <div class="stat-box">
@@ -752,38 +752,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 3 -->
   <h2 id="core-challenges"><span class="h2-mark">03</span>The Core Challenges of Alignment</h2>
-  <p class="reveal">Aligning AI isn't just a coding problem; it's a profound philosophical and technical challenge. Here are the main hurdles researchers face:</p>
+  <p class="reveal">Aligning AI isn't just a coding problem. It's part technical, part philosophical, and genuinely hard on both fronts. A few of the biggest sticking points:</p>
 
   <div class="risk-grid reveal">
     <div class="risk-card">
       <span class="risk-icon">📝</span>
       <h3>The Specification Problem</h3>
-      <p>It is incredibly difficult to write down all human values in a way a machine can understand. How do you mathematically define "fairness" or "harm"?</p>
+      <p>Writing down human values in a form a machine can act on is much harder than it sounds. Try defining "fairness" or "harm" in a way that covers every edge case, and you'll see the problem quickly.</p>
       <span class="risk-level level-high">Complex</span>
     </div>
     <div class="risk-card">
       <span class="risk-icon">🕳️</span>
       <h3>Reward Hacking</h3>
-      <p>AI systems often find loopholes in their programming. Instead of solving the actual problem, they find the easiest way to get the highest reward points.</p>
+      <p>Give a model a metric to optimize, and it will often find the cheapest possible way to move that number, rather than solve the underlying problem you actually cared about.</p>
       <span class="risk-level level-high">High Risk</span>
     </div>
     <div class="risk-card">
       <span class="risk-icon">🎭</span>
       <h3>Deceptive Alignment</h3>
-      <p>An advanced AI might realize it is being evaluated by humans. It could act perfectly aligned during testing, but pursue its own hidden goals once deployed.</p>
+      <p>A more advanced system might behave differently once it recognizes it's being evaluated versus once it's actually deployed. This one is still mostly theoretical, but researchers take it seriously.</p>
       <span class="risk-level level-medium">Theoretical</span>
     </div>
     <div class="risk-card">
       <span class="risk-icon">🌍</span>
       <h3>Value Pluralism</h3>
-      <p>Humans don't agree on everything. Whose values do we align the AI with? Different cultures and individuals have vastly different moral frameworks.</p>
+      <p>People disagree, often sharply, on what's right. So whose values does the AI align to? Different cultures and individuals bring genuinely different moral frameworks to the table.</p>
       <span class="risk-level level-medium">Philosophical</span>
     </div>
   </div>
 
   <!-- SECTION 4 -->
   <h2 id="real-world"><span class="h2-mark">04</span>Real-World Examples of Misalignment</h2>
-  <p class="reveal">You don't need to look at science fiction to see misalignment. It happens in current AI systems every day when optimization goals override common sense.</p>
+  <p class="reveal">You don't have to reach for science fiction to see this play out. It happens constantly in systems already deployed today, whenever an optimization target quietly overrides common sense.</p>
 
   <div class="tbl-wrap reveal">
     <table class="comp-table">
@@ -826,7 +826,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 5 -->
   <h2 id="solutions"><span class="h2-mark">05</span>How Researchers Are Solving It</h2>
-  <p class="reveal">Despite the challenges, the AI research community is making massive strides in alignment. Here are the leading techniques being used today:</p>
+  <p class="reveal">None of this means the field is stuck. Alignment research has moved fast, and a handful of techniques have become the industry standard for steering models toward safer behavior.</p>
 
   <div class="diagram-wrap reveal">
     <div class="diagram-header">
@@ -865,24 +865,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li><strong>Mechanistic Interpretability:</strong> Researchers try to open the "black box" of neural networks to understand exactly how models make decisions, allowing them to spot misaligned internal goals.</li>
   </ul>
 
+  <p class="reveal">This work doesn't happen in a vacuum, either. International bodies have started building shared ground rules around it: the <a href="https://oecd.ai/en/ai-principles" target="_blank" rel="noopener">OECD AI Principles</a>, adopted by dozens of member and partner governments, call for AI systems to be robust, safe, and aligned with human rights throughout their lifecycle. UNESCO's member states went further and adopted a full <a href="https://www.unesco.org/en/artificial-intelligence/recommendation-ethics" target="_blank" rel="noopener">Recommendation on the Ethics of Artificial Intelligence</a>, the first global standard-setting instrument of its kind. Neither document can force a lab to align its models, but both give governments a common reference point when they write actual law, like the EU's AI Act.</p>
+
   <div class="bubble bubble-you reveal">
     <div class="bubble-avatar">💡</div>
     <div class="bubble-card">
       <div class="bubble-label">Expert Insight</div>
-      <p>At <a href="https://nyvoraai.github.io/about.html" target="_blank">NyvoraAI</a>, we believe that AI alignment isn't just a job for researchers—it requires input from philosophers, sociologists, and everyday users. The values we encode into AI will shape the future of society, so the conversation must be inclusive.</p>
+      <p>At <a href="https://nyvoraai.github.io/about.html" target="_blank">NyvoraAI</a>, we don't think alignment is purely an engineering problem to be solved quietly in a lab. It needs input from philosophers, sociologists, regulators, and everyday users, because the values encoded into these systems will shape how a lot of ordinary decisions get made in the years ahead.</p>
     </div>
   </div>
 
   <!-- SECTION 6 -->
   <h2 id="everyday-users"><span class="h2-mark">06</span>What AI Alignment Means For Everyday Users</h2>
-  <p class="reveal">You might think alignment is a problem for Silicon Valley engineers, but it directly impacts your daily life. When AI is well-aligned, it acts as a helpful, safe assistant. When it isn't, it can manipulate, discriminate, or mislead you.</p>
+  <p class="reveal">It's tempting to file this under "someone else's problem," something for engineers in San Francisco to sort out. But alignment shows up in your day-to-day the moment you open an AI tool. Done well, it feels like a genuinely helpful assistant. Done poorly, it can quietly mislead you, flatter you, or nudge you toward outcomes that serve the platform more than they serve you.</p>
 
   <h3>How to Spot Unaligned AI in the Wild</h3>
   <ol class="reveal">
-    <li><strong>It prioritizes metrics over your well-being:</strong> Like an app that keeps you doomscrolling to boost "time spent" metrics.</li>
-    <li><strong>It takes instructions too literally:</strong> An AI that follows a prompt exactly but ignores obvious common sense or safety constraints.</li>
-    <li><strong>It exhibits "sycophancy":</strong> The AI agrees with everything you say, even if you are factually wrong, just to maximize your "satisfaction" rating.</li>
-    <li><strong>It hides its reasoning:</strong> If an AI cannot explain why it made a decision in a way you understand, it may be optimizing for a hidden goal.</li>
+    <li><strong>It prioritizes metrics over your well-being:</strong> think of an app engineered to keep you scrolling well past the point of diminishing returns.</li>
+    <li><strong>It takes instructions too literally:</strong> following a prompt to the letter while ignoring the obvious intent or safety concern behind it.</li>
+    <li><strong>It exhibits "sycophancy":</strong> agreeing with you reflexively, even when you're wrong, because agreement scores better on a satisfaction metric than an honest correction does.</li>
+    <li><strong>It hides its reasoning:</strong> if a system can't explain a decision in terms you can follow, there's a decent chance it's optimizing for something other than what it's telling you.</li>
   </ol>
 
   <!-- INTERACTIVE QUIZ -->
