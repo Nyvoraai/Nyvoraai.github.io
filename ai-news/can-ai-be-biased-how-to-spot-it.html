@@ -706,9 +706,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main class="layout">
 <article class="prose">
 
-  <p class="reveal">We often treat computers as perfectly objective machines. If an algorithm makes a decision, we assume it’s based purely on math and logic. But when it comes to artificial intelligence, this assumption is dangerously wrong. AI models are trained on human data, and human data is full of historical prejudices, societal inequalities, and blind spots.</p>
+  <p class="reveal">We tend to treat computers like they're above the mess of human judgment. An algorithm crunches numbers, so surely it's neutral, right? That assumption is one of the more dangerous myths in tech right now. AI models learn from human-generated data, and human history is full of prejudice, uneven treatment, and blind spots we haven't fully reckoned with. When a model absorbs that history, it doesn't correct for it. It repeats it, at scale, over and over.</p>
 
-  <p class="reveal">At <a href="https://nyvoraai.github.io/about.html" target="_blank">NyvoraAI</a>, we believe that understanding algorithmic fairness is a critical digital literacy skill. If you want to understand the broader landscape of digital threats, we highly recommend reading our comprehensive guide on <a href="https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html" target="_blank">AI risks for everyday users</a>.</p>
+  <p class="reveal">At <a href="https://nyvoraai.github.io/about.html" target="_blank">NyvoraAI</a>, we think understanding algorithmic fairness is becoming as essential as knowing how to spot a phishing email. If you want the bigger picture on where else things can go wrong, our guide on <a href="https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html" target="_blank">AI risks for everyday users</a> is a good next stop. For the official government research this piece draws on, we've linked directly to primary sources throughout rather than paraphrasing secondhand summaries.</p>
 
   <div class="key-takeaways quick-answer reveal">
     <div class="kt-title">⚖️ Quick Answer: Can AI be biased?</div>
@@ -722,44 +722,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 1 -->
   <h2 id="short-answer"><span class="h2-mark">01</span>The Short Answer: Can AI Be Biased?</h2>
-  <p class="reveal">Yes. AI bias occurs when an algorithm produces unfair or prejudiced outcomes. This doesn't happen because the code is "evil"; it happens because AI models are mirrors. They reflect the data they are fed. If the historical data contains racism, sexism, or economic inequality, the AI will learn those patterns and automate them at scale.</p>
+  <p class="reveal">Yes, and this isn't really up for debate anymore among researchers. AI bias shows up when an algorithm produces outcomes that unfairly favor or disadvantage a group of people. It's not that the code is malicious. It's that AI models function like mirrors. They reflect back whatever patterns are baked into their training data, including the ugly ones. Feed a model decades of biased hiring records, biased lending decisions, or biased policing data, and it will learn those patterns as if they were simply "how things work."</p>
 
-  <p class="reveal">Unlike human bias, which can be subtle and inconsistent, algorithmic bias is systematic. A biased human might make a unfair decision once in a while. A biased AI system will make that exact same unfair decision millions of times a second without ever feeling guilty about it.</p>
+  <p class="reveal">Here's what makes this different from an unfair human decision: a person having a bad day might make one unjust call. A biased system makes that same call millions of times, instantly, without ever second-guessing itself. The U.S. National Institute of Standards and Technology (NIST) has published extensive research on exactly this dynamic in its <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener">AI Risk Management Framework</a>, which treats bias mitigation as a core, non-optional part of building trustworthy AI systems rather than an afterthought.</p>
 
   <!-- SECTION 2 -->
   <h2 id="how-it-happens"><span class="h2-mark">02</span>How Does AI Bias Happen?</h2>
-  <p class="reveal">To spot bias, you first need to understand where it comes from. AI bias typically enters the system at three distinct stages:</p>
+  <p class="reveal">Before you can spot bias, it helps to know where it actually creeps in. In practice, it tends to enter at one of three points, and often more than one at once.</p>
 
   <div class="risk-grid reveal">
     <div class="risk-card">
       <span class="risk-icon">📊</span>
       <h3>Training Data Bias</h3>
-      <p>If an AI is trained mostly on data from one demographic, it will perform poorly or unfairly for others. For example, a medical AI trained mostly on lighter skin tones will misdiagnose conditions on darker skin.</p>
+      <p>If a model is trained mostly on data from one group, it will underperform for everyone else. A well-documented example: dermatology AI trained mostly on lighter skin tones has historically struggled to detect conditions on darker skin.</p>
       <span class="risk-level level-high">Root Cause</span>
     </div>
     <div class="risk-card">
       <span class="risk-icon">⚙️</span>
       <h3>Algorithmic Bias</h3>
-      <p>The mathematical goals set by developers can inadvertently prioritize efficiency over fairness. An algorithm optimizing for "profit" might learn to exclude low-income neighborhoods.</p>
+      <p>The mathematical goals engineers optimize for can quietly sideline fairness. A model built to maximize "profit" or "efficiency" can learn to exclude entire zip codes without anyone ever telling it to.</p>
       <span class="risk-level level-medium">Design Flaw</span>
     </div>
     <div class="risk-card">
       <span class="risk-icon">🌍</span>
       <h3>Deployment Bias</h3>
-      <p>Using an AI tool in a context it wasn't designed for. A language model trained on formal corporate emails might unfairly judge candidates who speak English as a second language.</p>
+      <p>Using a tool outside the context it was built for. A model trained on polished corporate emails can unfairly penalize non-native English speakers who write differently but communicate just as clearly.</p>
       <span class="risk-level level-medium">Context Error</span>
     </div>
     <div class="risk-card">
       <span class="risk-icon">👥</span>
       <h3>Human Prejudice</h3>
-      <p>The developers themselves may have unconscious biases that affect which data they choose to collect, which features they highlight, and how they define "success" for the model.</p>
+      <p>The people building these systems carry their own blind spots. Those blind spots shape which data gets collected, which features get emphasized, and how "success" gets defined for the model.</p>
       <span class="risk-level level-high">Human Factor</span>
     </div>
   </div>
 
   <!-- SECTION 3 -->
   <h2 id="real-world"><span class="h2-mark">03</span>Real-World Examples of AI Bias</h2>
-  <p class="reveal">AI bias is not a theoretical problem for the future; it is happening right now across major industries. Understanding these examples helps you recognize when you might be on the receiving end of a flawed algorithm.</p>
+  <p class="reveal">This isn't a hypothetical future problem. It's already playing out across major industries, and the paper trail is well documented in peer-reviewed research and government oversight reports.</p>
 
   <div class="tbl-wrap reveal">
     <table class="comp-table">
@@ -774,22 +774,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <tr>
           <td><strong>Hiring</strong></td>
           <td>Resume screening algorithms</td>
-          <td>Downgraded resumes containing the word "women's" (e.g., "women's chess club") because historical tech hires were mostly male.</td>
+          <td>Downgraded resumes containing the word "women's" (e.g., "women's chess club") because historical tech hires skewed male. The U.S. Equal Employment Opportunity Commission now publishes formal <a href="https://www.eeoc.gov/ai" target="_blank" rel="noopener">guidance on AI and employment discrimination</a> partly in response to cases like this.</td>
         </tr>
         <tr>
           <td><strong>Finance</strong></td>
           <td>Credit card limit algorithms</td>
-          <td>Offered significantly lower credit limits to women compared to men with identical financial histories and incomes.</td>
+          <td>Offered noticeably lower credit limits to women compared to men with near-identical financial histories and incomes, prompting regulator scrutiny into the underlying scoring models.</td>
         </tr>
         <tr>
           <td><strong>Healthcare</strong></td>
           <td>Patient risk prediction tools</td>
-          <td>Assumed Black patients were healthier than equally sick White patients because less money was historically spent on their care.</td>
+          <td>A peer-reviewed study published in <em>Science</em> and indexed on the <a href="https://pubmed.ncbi.nlm.nih.gov/31649194/" target="_blank" rel="noopener">National Institutes of Health's PubMed database</a> found a widely used algorithm assumed Black patients were healthier than equally sick White patients, because it used historical healthcare spending as a stand-in for medical need.</td>
         </tr>
         <tr>
           <td><strong>Justice</strong></td>
           <td>Predictive policing & bail tools</td>
-          <td>Falsely flagged minority defendants as "high risk" for re-offending at nearly twice the rate of White defendants.</td>
+          <td>Falsely flagged minority defendants as "high risk" for reoffending at close to twice the rate of White defendants. Separately, the U.S. Government Accountability Office has raised similar accuracy concerns in its <a href="https://www.gao.gov/products/gao-21-518" target="_blank" rel="noopener">report on facial recognition technology</a> used by federal agencies.</td>
         </tr>
       </tbody>
     </table>
@@ -799,13 +799,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="bubble-avatar">💡</div>
     <div class="bubble-card">
       <div class="bubble-label">Expert Insight</div>
-      <p>Bias isn't just about fairness; it can be weaponized. Malicious actors can intentionally train models to discriminate, much like <a href="https://nyvoraai.github.io/ai-news/ai-misused-scams-fraud.html" target="_blank">how AI is misused for scams and fraud</a>. Always question the source and intent behind the AI tools you interact with.</p>
+      <p>Bias isn't always accidental, either. It can be exploited on purpose, and the mechanics overlap a lot with <a href="https://nyvoraai.github.io/ai-news/ai-misused-scams-fraud.html" target="_blank">how AI gets misused for scams and fraud</a>. It's worth asking who trained a tool, on what data, and why, before you trust its output blindly.</p>
     </div>
   </div>
 
   <!-- SECTION 4 -->
   <h2 id="how-to-spot"><span class="h2-mark">04</span>How to Spot AI Bias in 2026</h2>
-  <p class="reveal">You don't need to be a data scientist to identify algorithmic unfairness. By adopting a critical mindset, you can spot the red flags when an AI system is making decisions about your life, your job, or your money.</p>
+  <p class="reveal">You don't need a data science degree to catch this. A little healthy skepticism goes a long way when an algorithm is making calls about your job, your loan, or your freedom.</p>
 
   <div class="diagram-wrap reveal">
     <div class="diagram-header">
@@ -818,28 +818,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="prot-num">1</div>
           <div class="prot-body">
             <h4>Check for Demographic Disparities</h4>
-            <p>If an AI approves loans for one neighborhood but rejects identical applicants in another, that is a massive red flag.</p>
+            <p>If a system approves loans in one neighborhood but rejects near-identical applicants a few miles away, that's a serious red flag worth pushing back on.</p>
           </div>
         </div>
         <div class="prot-step">
           <div class="prot-num">2</div>
           <div class="prot-body">
             <h4>Demand Transparency</h4>
-            <p>Ask the company: "Was AI used in this decision?" Under new laws, they often have to tell you. If they hide it, be suspicious.</p>
+            <p>Simply ask: "Was AI involved in this decision?" Under newer disclosure rules in several jurisdictions, companies are increasingly required to tell you. Dodging the question is itself a signal.</p>
           </div>
         </div>
         <div class="prot-step">
           <div class="prot-num">3</div>
           <div class="prot-body">
             <h4>Test the Edge Cases</h4>
-            <p>How does the AI handle diverse inputs? If a facial recognition system struggles with certain skin tones or hairstyles, it is biased.</p>
+            <p>See how the system handles a range of real inputs. If facial recognition consistently struggles with certain skin tones or hairstyles, that's bias showing up in the wild, not a theoretical risk.</p>
           </div>
         </div>
         <div class="prot-step">
           <div class="prot-num">4</div>
           <div class="prot-body">
             <h4>Look for Human Oversight</h4>
-            <p>Is there a way to appeal an AI decision to a real human? If the algorithm is the final judge, the system is inherently flawed.</p>
+            <p>Is there any real path to appeal an automated decision to an actual person? If the algorithm has the final word, the system has a structural weakness baked in.</p>
           </div>
         </div>
       </div>
@@ -848,9 +848,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- SECTION 5 -->
   <h2 id="regulations"><span class="h2-mark">05</span>Regulations and AI Safety</h2>
-  <p class="reveal">The good news is that the tech industry and governments are waking up to the danger of algorithmic bias. Researchers are actively developing new methods to "de-bias" models before they are released to the public. To understand the technical side of this fight, read our guide on <a href="https://nyvoraai.github.io/ai-news/how-ai-companies-make-models-safe.html" target="_blank">how AI companies make models safe</a>.</p>
+  <p class="reveal">There's genuinely good news here: governments and researchers are taking this seriously, and it's not just talk. Engineers are actively working on ways to "de-bias" models before public release. For a look at the technical side, our piece on <a href="https://nyvoraai.github.io/ai-news/how-ai-companies-make-models-safe.html" target="_blank">how AI companies make models safe</a> goes deeper.</p>
 
-  <p class="reveal">Governments are also stepping in with strict legislation. The European Union has passed the <a href="https://nyvoraai.github.io/ai-news/eu-ai-act-simple-terms.html" target="_blank">EU AI Act in simple terms</a>, which explicitly bans certain biased AI practices and requires high-risk systems (like those used in hiring or law enforcement) to undergo mandatory fairness audits.</p>
+  <p class="reveal">On the policy side, the European Union has enacted the world's first comprehensive AI law, formally published on <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689" target="_blank" rel="noopener">EUR-Lex, the EU's official legal database</a>. We've broken it down in plainer language in our <a href="https://nyvoraai.github.io/ai-news/eu-ai-act-simple-terms.html" target="_blank">EU AI Act in simple terms</a> guide. The regulation explicitly bans certain biased practices and forces "high-risk" systems, the kind used in hiring or law enforcement, through mandatory fairness audits. In the UK, the Information Commissioner's Office publishes its own <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/" target="_blank" rel="noopener">guidance on AI and data protection</a>, covering many of the same fairness principles from a different regulatory angle.</p>
 
   <!-- INTERACTIVE QUIZ -->
   <div class="quiz-box reveal" id="quiz">
