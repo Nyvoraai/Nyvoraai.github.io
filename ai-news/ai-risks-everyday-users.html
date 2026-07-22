@@ -217,6 +217,8 @@ nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-
 .stat-box:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--teal)}
 .stat-number{font-size:36px;font-weight:700;color:var(--coral);font-family:var(--font-display);line-height:1;margin-bottom:6px}
 .stat-label{font-size:13px;color:var(--muted);font-family:var(--font-mono)}
+.stat-source{font-size:10.5px;color:var(--muted);margin-top:6px;font-family:var(--font-mono)}
+.stat-source a{color:var(--muted);text-decoration:underline}
 .tbl-wrap{overflow-x:auto;margin:24px 0;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow)}
 .comp-table{width:100%;border-collapse:collapse;font-size:15px;min-width:480px;background:var(--paper)}
 .comp-table thead tr{background:var(--bg-deep)}
@@ -226,6 +228,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-
 .comp-table tr:hover td{background:var(--paper-warm)}
 .check{color:var(--teal);font-weight:700}
 .cross{color:var(--danger);font-weight:700}
+.table-note{font-size:12.5px;color:var(--muted);margin-top:-10px}
 .quiz-box{background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);padding:28px;margin:32px 0}
 .quiz-title{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:20px;font-family:var(--font-display);display:flex;align-items:center;gap:10px}
 .quiz-question{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:16px}
@@ -244,6 +247,10 @@ summary::-webkit-details-marker{display:none}
 summary::after{content:'+';color:var(--teal);font-size:22px;font-weight:300;transition:transform .3s;flex-shrink:0}
 details[open] summary::after{content:'−'}
 .faq-body{padding:0 22px 18px;color:var(--ink-soft);font-size:15px;line-height:1.7}
+.sources-box{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 26px;margin:32px 0}
+.sources-box h3{font-family:var(--font-display);font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);margin-bottom:12px}
+.sources-box ul{margin:0 0 0 20px}
+.sources-box li{font-size:14.5px;margin-bottom:8px;color:var(--ink-soft)}
 .author-box{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin:48px 0 0}
 .author-box .meta-avatar{width:48px;height:48px;font-size:17px}
 .author-box h3{font-size:15px;font-family:var(--font-display);margin-bottom:4px;color:var(--ink)}
@@ -392,7 +399,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;back
     <span class="badge badge-date">📅 Updated June 2026</span>
   </div>
   <h1 class="article-title">What Are the <span class="title-underline">Risks of AI</span> for Everyday Users?</h1>
-  <p class="article-intro">AI promises convenience, but hidden dangers threaten your privacy, security, and future. Discover the real risks and learn how to protect yourself in our AI-driven world.</p>
+  <p class="article-intro">AI is genuinely useful, but it comes with real trade-offs most people never read about in the terms and conditions. Here's an honest look at where AI actually creates risk for regular people, and what's worth doing about it.</p>
   <div class="article-meta">
     <div class="meta-author">
       <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="" onerror="this.remove()"/></div>
@@ -452,23 +459,23 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;back
 <main class="layout">
 <article class="prose">
 
-  <p class="reveal">Artificial intelligence has transformed how we live, work, and communicate. From virtual assistants to recommendation algorithms, AI touches nearly every aspect of our daily lives. But beneath the convenience lies a complex web of risks that everyday users often overlook.</p>
-  <p class="reveal">According to recent studies, <a href="https://nyvoraai.github.io/about.html" target="_blank">over 77% of people</a> use AI-powered services without fully understanding the potential dangers. This guide exposes the real risks of AI for everyday users and provides actionable strategies to protect yourself.</p>
+  <p class="reveal">AI has quietly worked its way into daily life — the assistant on your phone, the algorithm deciding what you see next, the chatbot handling your customer service ticket. Most of it is genuinely convenient. But convenience isn't the same as safety, and a lot of people are using these tools without knowing what's actually happening behind the scenes.</p>
+  <p class="reveal">Public opinion research backs this up: <a href="https://www.pewresearch.org/science/2025/09/17/how-americans-view-ai-and-its-impact-on-people-and-society/" target="_blank" rel="noopener">Pew Research Center found</a> that half of U.S. adults say they're more concerned than excited about AI's growing role in daily life — up from 37% in 2021 — and <a href="https://www.pewresearch.org/short-reads/2023/08/28/growing-public-concern-about-the-role-of-artificial-intelligence-in-daily-life/" target="_blank" rel="noopener">53% say AI is doing more to hurt than help</a> people keep their personal information private. This guide walks through where those concerns actually come from and what you can do about them.</p>
 
   <div class="key-takeaways quick-answer reveal">
     <div class="kt-title">⚠️ Key takeaways</div>
     <ul>
-      <li>AI systems collect and analyze massive amounts of personal data, often without transparent consent</li>
-      <li>Algorithmic bias affects hiring, lending, healthcare, and criminal justice decisions</li>
-      <li>Deepfakes and AI-generated misinformation threaten democracy and personal reputations</li>
-      <li>Job displacement affects millions, requiring proactive skill adaptation</li>
-      <li>You can protect yourself with privacy tools, critical thinking, and informed usage</li>
+      <li>AI systems collect and analyze large amounts of personal data, often with vague or hard-to-find consent</li>
+      <li>Algorithmic bias has shown up in hiring, lending, healthcare, and criminal justice tools</li>
+      <li>Deepfakes and AI-generated scams are a fast-growing and now federally tracked fraud category</li>
+      <li>Automation is reshaping the job market — some roles are shrinking while new ones emerge</li>
+      <li>You can meaningfully lower your risk with a few privacy habits and a healthy amount of skepticism</li>
     </ul>
   </div>
 
   <h2 id="understanding-risks"><span class="h2-mark">01</span>Understanding AI Risks: The Hidden Dangers</h2>
-  <p class="reveal">When we talk about AI risks for everyday users, we're not discussing science fiction scenarios. The dangers are real, present, and affecting people right now. Understanding these risks is the first step toward protecting yourself and your loved ones.</p>
-  <p class="reveal">AI systems operate on complex algorithms that process enormous datasets. While this enables remarkable capabilities, it also creates vulnerabilities. From the <a href="https://nyvoraai.github.io/blog.html" target="_blank">moment you interact</a> with an AI tool, your data enters a system that may store, analyze, and share it in ways you never intended.</p>
+  <p class="reveal">Talking about AI risk isn't about doom-scrolling sci-fi scenarios. The risks that matter to everyday users are much more mundane: where your data goes, whether a decision about you was made fairly, and whether what you're looking at online is even real.</p>
+  <p class="reveal">AI systems run on enormous datasets, and that scale is exactly what makes them useful — and what creates exposure. The moment you type something into a chatbot, upload a photo, or let an app "personalize" your experience, that information typically gets stored, analyzed, and in many cases shared with third parties in ways the terms of service only vaguely describe. The U.S. <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener">National Institute of Standards and Technology (NIST)</a> has published a voluntary AI Risk Management Framework specifically because these harms — privacy, bias, security, overreliance — are well-documented enough to need a standard way of thinking about them.</p>
 
   <div class="diagram-wrap reveal">
     <div class="diagram-header"><span class="diagram-clip">🔄</span><div class="diagram-title">How AI risks affect everyday users — animated flow</div></div>
@@ -488,82 +495,83 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;back
   </div>
 
   <h2 id="privacy-threats"><span class="h2-mark">02</span>Privacy & Data Collection Threats</h2>
-  <p class="reveal">Privacy invasion represents the most immediate and widespread AI risk for everyday users. Every interaction with AI systems leaves a digital footprint that companies collect, analyze, and monetize.</p>
+  <p class="reveal">Privacy is probably the risk that touches the most people, the most often. Nearly every interaction with an AI tool leaves some kind of digital trail, and companies have real financial incentive to hang on to that trail.</p>
 
   <div class="stat-grid reveal">
-    <div class="stat-box"><div class="stat-number">89%</div><div class="stat-label">of AI apps collect personal data</div></div>
-    <div class="stat-box"><div class="stat-number">2.5B</div><div class="stat-label">data records exposed in 2025</div></div>
-    <div class="stat-box"><div class="stat-number">73%</div><div class="stat-label">users unaware of data sharing</div></div>
+    <div class="stat-box"><div class="stat-number">53%</div><div class="stat-label">of Americans say AI hurts privacy more than it helps</div><div class="stat-source">Source: <a href="https://www.pewresearch.org/short-reads/2023/08/28/growing-public-concern-about-the-role-of-artificial-intelligence-in-daily-life/" target="_blank" rel="noopener">Pew Research Center</a></div></div>
+    <div class="stat-box"><div class="stat-number">67%</div><div class="stat-label">say they understand little to nothing about how companies use their data</div><div class="stat-source">Source: <a href="https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/" target="_blank" rel="noopener">Pew Research Center</a></div></div>
+    <div class="stat-box"><div class="stat-number">50%</div><div class="stat-label">more concerned than excited about AI in daily life (up from 37% in 2021)</div><div class="stat-source">Source: <a href="https://www.pewresearch.org/science/2025/09/17/how-americans-view-ai-and-its-impact-on-people-and-society/" target="_blank" rel="noopener">Pew Research Center</a></div></div>
   </div>
 
   <h3>What Data Do AI Systems Collect?</h3>
-  <p class="reveal">AI tools gather far more information than most users realize:</p>
+  <p class="reveal">AI tools typically gather more than most people assume:</p>
   <ul class="reveal">
-    <li><strong>Personal identifiers:</strong> Name, email, phone number, location data</li>
-    <li><strong>Behavioral patterns:</strong> What you click, how long you read, when you're active</li>
-    <li><strong>Biometric data:</strong> Voice recordings, facial recognition, typing patterns</li>
-    <li><strong>Content analysis:</strong> Everything you write, search for, or upload</li>
+    <li><strong>Personal identifiers:</strong> name, email, phone number, location data</li>
+    <li><strong>Behavioral patterns:</strong> what you click, how long you linger, when you're active</li>
+    <li><strong>Biometric data:</strong> voice recordings, facial recognition, typing patterns</li>
+    <li><strong>Content you generate:</strong> everything you write, search for, or upload</li>
     <li><strong>Device information:</strong> IP address, browser type, operating system</li>
   </ul>
 
   <div class="bubble bubble-ai bubble-gold reveal">
     <div class="bubble-avatar">💡</div>
     <div class="bubble-card">
-      <div class="bubble-label">Privacy Expert Insight</div>
-      <p>Most users don't realize that "free" AI services often monetize through data collection. Your conversations, preferences, and behaviors become valuable commodities sold to advertisers and data brokers.</p>
+      <div class="bubble-label">Worth knowing</div>
+      <p>Free AI tools still cost something — usually your data. If a service isn't charging you money, look closely at how it makes money instead; that's often the real business model. The U.S. Federal Trade Commission's <a href="https://consumer.ftc.gov/" target="_blank" rel="noopener">Consumer Advice site</a> is a solid, free place to check current guidance on this.</p>
     </div>
   </div>
 
   <h2 id="bias-discrimination"><span class="h2-mark">03</span>Algorithmic Bias & Discrimination</h2>
-  <p class="reveal">AI systems learn from historical data, which often contains human biases. When these biased patterns become embedded in algorithms, they perpetuate and amplify discrimination at scale.</p>
+  <p class="reveal">AI systems learn from historical data, and historical data reflects historical human bias. When that gets baked into an algorithm, it doesn't disappear — it gets automated and applied at scale, often with a false sense of objectivity attached.</p>
 
   <div class="risk-grid reveal">
-    <div class="risk-card"><span class="risk-icon">💼</span><h3>Hiring Discrimination</h3><p>AI recruiting tools have shown bias against women and minorities, automatically filtering out qualified candidates based on historical hiring patterns.</p><span class="risk-level level-high">High Risk</span></div>
-    <div class="risk-card"><span class="risk-icon">💰</span><h3>Loan Denials</h3><p>AI lending algorithms disproportionately reject applications from certain neighborhoods and demographics, perpetuating economic inequality.</p><span class="risk-level level-high">High Risk</span></div>
-    <div class="risk-card"><span class="risk-icon">🏥</span><h3>Healthcare Disparities</h3><p>Medical AI systems trained on limited datasets provide less accurate diagnoses for underrepresented populations.</p><span class="risk-level level-medium">Medium Risk</span></div>
-    <div class="risk-card"><span class="risk-icon">⚖️</span><h3>Criminal Justice</h3><p>Predictive policing and sentencing algorithms show racial bias, affecting parole decisions and resource allocation.</p><span class="risk-level level-high">High Risk</span></div>
+    <div class="risk-card"><span class="risk-icon">💼</span><h3>Hiring Discrimination</h3><p>Automated resume screening and AI recruiting tools have been documented showing bias against women and other groups — most famously when Amazon scrapped an internal hiring algorithm after finding it penalized resumes that mentioned "women's."</p><span class="risk-level level-high">High Risk</span></div>
+    <div class="risk-card"><span class="risk-icon">💰</span><h3>Loan Denials</h3><p>Algorithmic lending tools have been shown, in research and regulatory reviews, to produce disparate outcomes across neighborhoods and demographic groups — echoing long-standing redlining patterns in a new, automated form.</p><span class="risk-level level-high">High Risk</span></div>
+    <div class="risk-card"><span class="risk-icon">🏥</span><h3>Healthcare Disparities</h3><p>Medical AI trained on unrepresentative datasets can perform less accurately for underrepresented patient groups, including some diagnostic tools shown to be less reliable for patients with darker skin tones.</p><span class="risk-level level-medium">Medium Risk</span></div>
+    <div class="risk-card"><span class="risk-icon">⚖️</span><h3>Criminal Justice</h3><p>Predictive policing and risk-assessment tools used in parole and sentencing decisions have faced sustained criticism from researchers and civil rights groups over racial disparities in their outputs.</p><span class="risk-level level-high">High Risk</span></div>
   </div>
 
-  <h3>Real-World Impact</h3>
-  <p class="reveal">A 2025 study found that AI-powered hiring tools rejected <strong>40% more female candidates</strong> for technical roles compared to male candidates with identical qualifications. In healthcare, diagnostic AI showed <strong>30% lower accuracy</strong> for patients with darker skin tones.</p>
+  <h3>Why This Matters for You</h3>
+  <p class="reveal">You don't need to be a data scientist to be affected by this — you just need to apply for a job, a loan, or an apartment somewhere that uses automated screening. The U.S. Equal Employment Opportunity Commission has issued <a href="https://www.eeoc.gov/laws/guidance/select-issues-assessing-adverse-impact-software-algorithms-and-artificial" target="_blank" rel="noopener">guidance on AI and hiring discrimination</a> precisely because this is an active enforcement area, not a hypothetical one. If an automated decision seems off, you're generally entitled to ask questions about it — don't assume the algorithm is automatically correct just because it's a computer making the call.</p>
 
   <h2 id="job-displacement"><span class="h2-mark">04</span>Job Displacement & Economic Impact</h2>
-  <p class="reveal">Automation through AI threatens millions of jobs worldwide. While AI creates new opportunities, the transition period creates significant economic uncertainty for everyday workers.</p>
+  <p class="reveal">Automation is genuinely reshaping the job market, but the picture is more nuanced than "robots are coming for your job." The <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/" target="_blank" rel="noopener">World Economic Forum's Future of Jobs Report 2025</a> — based on a survey of over 1,000 employers across 55 economies — projects that by 2030, roughly 92 million existing jobs will be displaced, while 170 million new roles will be created, for a net gain of about 78 million jobs globally. The same report notes 40% of employers expect to shrink their workforce specifically where AI can automate tasks.</p>
 
   <div class="tbl-wrap reveal">
     <table class="comp-table">
-      <thead><tr><th>Job Category</th><th>Automation Risk</th><th>Timeline</th><th>Impact Level</th></tr></thead>
+      <thead><tr><th>Job Category</th><th>General Automation Exposure</th><th>Outlook</th><th>Impact Level</th></tr></thead>
       <tbody>
-        <tr><td><strong>Customer Service</strong></td><td><span class="cross">85% automated</span></td><td>2026-2028</td><td>High</td></tr>
-        <tr><td><strong>Data Entry</strong></td><td><span class="cross">92% automated</span></td><td>2026-2027</td><td>Critical</td></tr>
-        <tr><td><strong>Content Writing</strong></td><td><span class="cross">45% automated</span></td><td>2026-2030</td><td>Medium</td></tr>
-        <tr><td><strong>Healthcare</strong></td><td><span class="check">15% augmented</span></td><td>2027-2035</td><td>Low</td></tr>
-        <tr><td><strong>Creative Arts</strong></td><td><span class="cross">35% automated</span></td><td>2026-2029</td><td>Medium</td></tr>
+        <tr><td><strong>Customer Service</strong></td><td><span class="cross">High</span></td><td>Ongoing through 2030</td><td>High</td></tr>
+        <tr><td><strong>Data Entry / Clerical</strong></td><td><span class="cross">High</span></td><td>Ongoing through 2030</td><td>Critical</td></tr>
+        <tr><td><strong>Content Writing</strong></td><td><span class="cross">Moderate</span></td><td>Task-level, not full-role</td><td>Medium</td></tr>
+        <tr><td><strong>Healthcare</strong></td><td><span class="check">Low — mostly augmentation</span></td><td>Growing demand overall</td><td>Low</td></tr>
+        <tr><td><strong>Creative Arts</strong></td><td><span class="cross">Moderate</span></td><td>Tool-assisted workflows</td><td>Medium</td></tr>
       </tbody>
     </table>
   </div>
+  <p class="table-note reveal">Categories reflect general exposure trends described in labor-market research rather than precise percentages, since real automation timelines vary a lot by employer, industry, and country.</p>
 
   <div class="bubble bubble-you reveal">
     <div class="bubble-avatar">💼</div>
     <div class="bubble-card">
-      <div class="bubble-label">Career Expert Advice</div>
-      <p>The key isn't avoiding AI—it's adapting. Workers who learn to use AI as a tool rather than compete against it will thrive. Focus on developing uniquely human skills: creativity, emotional intelligence, and complex problem-solving.</p>
+      <div class="bubble-label">Career Perspective</div>
+      <p>The realistic goal isn't to out-compete AI — it's to work alongside it. People who learn to use AI as a tool tend to fare better than people who ignore it or compete directly against it. Skills like judgment, relationship-building, and complex problem-solving are harder to automate than routine tasks.</p>
     </div>
   </div>
 
   <h2 id="deepfakes"><span class="h2-mark">05</span>Deepfakes & AI-Generated Misinformation</h2>
-  <p class="reveal">Deepfake technology has reached alarming sophistication. AI can now create convincing fake videos, audio recordings, and images that are nearly impossible to distinguish from reality.</p>
+  <p class="reveal">Deepfake technology has gotten good enough, fast enough, that "seeing is believing" no longer holds up as a safety rule. AI can now generate convincing fake video, audio, and images with tools that are cheap and widely available.</p>
   <h3>The Deepfake Threat Landscape</h3>
   <ul class="reveal">
-    <li><strong>Financial fraud:</strong> AI-generated voice clones trick employees into transferring millions</li>
-    <li><strong>Reputation damage:</strong> Fake videos destroy careers and relationships</li>
-    <li><strong>Political manipulation:</strong> Deepfakes influence elections and spread propaganda</li>
-    <li><strong>Personal harassment:</strong> Non-consensual deepfake pornography affects thousands</li>
+    <li><strong>Financial fraud:</strong> cloned voices and video calls have tricked employees into wiring large sums — including a widely reported case where a finance worker was persuaded to transfer <strong>$25.6 million</strong> after joining a video call where every other "person" was an AI-generated deepfake</li>
+    <li><strong>Reputation damage:</strong> fake videos and images can do real harm to careers and relationships</li>
+    <li><strong>Political manipulation:</strong> deepfakes have been used to spread political misinformation</li>
+    <li><strong>Personal harassment:</strong> non-consensual deepfake imagery is a growing and serious problem, and the FTC has moved to strengthen its rules against AI-enabled impersonation</li>
   </ul>
-  <p class="reveal">In 2025, deepfake-related fraud increased by <strong>3,000%</strong>, with losses exceeding $10 billion globally. The technology has become so accessible that anyone with a smartphone can create convincing fakes.</p>
+  <p class="reveal">The scale here is no longer a guess. In 2025, the FBI's Internet Crime Complaint Center (IC3) logged its <strong>first standalone AI-enabled fraud category</strong>, recording roughly <strong>$893 million</strong> in adjusted losses across more than 22,000 complaints. You can report suspected AI-related fraud directly at <a href="https://www.ic3.gov/" target="_blank" rel="noopener">IC3.gov</a> or <a href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener">ReportFraud.ftc.gov</a>.</p>
 
   <h2 id="security-risks"><span class="h2-mark">06</span>Security Vulnerabilities & Cyber Threats</h2>
-  <p class="reveal">AI systems themselves become targets for cyberattacks, and AI tools empower hackers with new capabilities.</p>
+  <p class="reveal">AI systems are targets in their own right, and AI tools also hand attackers new capabilities — better phishing emails, cloned voices, and faster reconnaissance on potential victims.</p>
 
   <div class="diagram-wrap reveal">
     <div class="diagram-header"><span class="diagram-clip">🔐</span><div class="diagram-title">AI security protection steps</div></div>
@@ -578,61 +586,74 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;back
   </div>
 
   <h2 id="over-dependence"><span class="h2-mark">07</span>Over-Dependence & Skill Erosion</h2>
-  <p class="reveal">As AI handles more tasks, humans risk losing critical thinking skills and becoming overly reliant on automated decisions.</p>
+  <p class="reveal">As AI takes on more of our thinking, there's a real risk of leaning on it so much that we lose practice at doing things ourselves — a concern researchers refer to broadly as cognitive offloading.</p>
   <h3>The Dependency Trap</h3>
-  <p class="reveal">Studies show that heavy AI users experience:</p>
+  <p class="reveal">People who rely heavily on AI tools without checking their output can run into a few common patterns:</p>
   <ul class="reveal">
-    <li><strong>Reduced critical thinking:</strong> Accepting AI outputs without verification</li>
-    <li><strong>Skill atrophy:</strong> Losing abilities in writing, calculation, and analysis</li>
-    <li><strong>Decision paralysis:</strong> Inability to make choices without AI guidance</li>
-    <li><strong>Memory decline:</strong> Relying on AI instead of retaining information</li>
+    <li><strong>Reduced critical thinking:</strong> accepting AI outputs without verification</li>
+    <li><strong>Skill atrophy:</strong> losing practiced fluency in writing, calculation, or analysis</li>
+    <li><strong>Decision paralysis:</strong> hesitating to decide anything without running it by an AI first</li>
+    <li><strong>Memory reliance:</strong> outsourcing recall to AI instead of retaining information yourself</li>
   </ul>
 
   <h2 id="protection-guide"><span class="h2-mark">08</span>Your Complete Protection Guide</h2>
-  <p class="reveal">You don't have to be a victim of AI risks. Follow these evidence-based strategies to protect yourself:</p>
+  <p class="reveal">None of this means you need to swear off AI. A few practical habits go a long way:</p>
 
   <div class="risk-grid reveal">
-    <div class="risk-card"><span class="risk-icon">🔒</span><h3>Privacy Protection</h3><p>Use VPNs, enable privacy modes, read terms carefully, and limit personal data shared with AI tools.</p><span class="risk-level level-low">Essential</span></div>
-    <div class="risk-card"><span class="risk-icon">🔍</span><h3>Verify Everything</h3><p>Cross-check AI information with multiple sources. Never trust AI outputs blindly.</p><span class="risk-level level-low">Essential</span></div>
-    <div class="risk-card"><span class="risk-icon">📰</span><h3>Stay Informed</h3><p>Follow AI news, understand new risks, and update your protection strategies regularly.</p><span class="risk-level level-low">Important</span></div>
-    <div class="risk-card"><span class="risk-icon">🎓</span><h3>Upskill Continuously</h3><p>Develop AI-complementary skills that machines can't replicate easily.</p><span class="risk-level level-low">Important</span></div>
+    <div class="risk-card"><span class="risk-icon">🔒</span><h3>Privacy Protection</h3><p>Read privacy policies where it matters, limit what personal data you share with AI tools, and check the FTC's <a href="https://consumer.ftc.gov/" target="_blank" rel="noopener">consumer privacy guidance</a> if something feels off.</p><span class="risk-level level-low">Essential</span></div>
+    <div class="risk-card"><span class="risk-icon">🔍</span><h3>Verify Everything</h3><p>Cross-check anything AI tells you against another source, especially for anything financial, medical, or legal. Don't trust AI outputs blindly.</p><span class="risk-level level-low">Essential</span></div>
+    <div class="risk-card"><span class="risk-icon">📰</span><h3>Stay Informed</h3><p>Follow reputable sources like <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener">NIST</a> and <a href="https://www.ftc.gov/" target="_blank" rel="noopener">the FTC</a> for how AI regulation and risks are evolving.</p><span class="risk-level level-low">Important</span></div>
+    <div class="risk-card"><span class="risk-icon">🎓</span><h3>Keep Building Skills</h3><p>Develop the judgment and relationship skills that make you harder to automate — and useful alongside AI, not replaced by it.</p><span class="risk-level level-low">Important</span></div>
   </div>
 
   <h3>Immediate Action Steps</h3>
   <ol class="reveal">
-    <li><strong>Audit your AI usage:</strong> List every AI tool you use and what data it accesses</li>
-    <li><strong>Strengthen passwords:</strong> Use unique, complex passwords for each AI service</li>
-    <li><strong>Enable 2FA:</strong> Add two-factor authentication everywhere possible</li>
-    <li><strong>Review privacy settings:</strong> Adjust settings to minimize data collection</li>
-    <li><strong>Learn detection skills:</strong> Study how to identify deepfakes and misinformation</li>
-    <li><strong>Diversify income:</strong> Develop skills less vulnerable to automation</li>
+    <li><strong>Audit your AI usage:</strong> list every AI tool you use and what data it can access</li>
+    <li><strong>Strengthen passwords:</strong> use unique, complex passwords for each AI service</li>
+    <li><strong>Enable 2FA:</strong> add two-factor authentication everywhere possible</li>
+    <li><strong>Review privacy settings:</strong> adjust settings to minimize unnecessary data collection</li>
+    <li><strong>Learn to spot fakes:</strong> get familiar with common signs of deepfakes and AI-generated scams</li>
+    <li><strong>Report suspicious activity:</strong> use <a href="https://www.ic3.gov/" target="_blank" rel="noopener">IC3.gov</a> or <a href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener">ReportFraud.ftc.gov</a> if you're targeted</li>
   </ol>
 
   <div class="quiz-box reveal" id="quiz">
     <div class="quiz-title">🧠 Test Your AI Safety Knowledge</div>
-    <div class="quiz-question">Which AI risk affects the most users daily?</div>
+    <div class="quiz-question">Which AI risk affects the most users on a day-to-day basis?</div>
     <div class="quiz-options">
       <label class="quiz-option"><input type="radio" name="q1" value="a" onchange="checkAnswer(this, 'a', 'b')"><span>Job displacement</span></label>
-      <label class="quiz-option"><input type="radio" name="q1" value="b" onchange="checkAnswer(this, 'b', 'b')"><span>Privacy violations and data collection</span></label>
+      <label class="quiz-option"><input type="radio" name="q1" value="b" onchange="checkAnswer(this, 'b', 'b')"><span>Privacy and data collection</span></label>
       <label class="quiz-option"><input type="radio" name="q1" value="c" onchange="checkAnswer(this, 'c', 'b')"><span>Deepfakes</span></label>
     </div>
-    <div class="quiz-feedback correct">✅ Correct! Privacy violations affect billions of users every day through data collection by AI services.</div>
-    <div class="quiz-feedback incorrect">❌ Not quite. While all are serious, privacy violations affect the most users daily.</div>
+    <div class="quiz-feedback correct">✅ Correct! Privacy and data collection touch nearly everyone who uses an AI-powered app or service, even if they never notice it happening.</div>
+    <div class="quiz-feedback incorrect">❌ Not quite. All of these matter, but privacy and data collection affects people the most broadly and the most often.</div>
   </div>
 
   <h2 id="faq"><span class="h2-mark">09</span>Frequently Asked Questions</h2>
   <div class="faq reveal">
-    <details open><summary>What are the main risks of AI for everyday users?</summary><div class="faq-body">The primary AI risks include privacy violations through data collection, algorithmic bias affecting decisions, job displacement from automation, deepfakes and misinformation, security vulnerabilities, and over-dependence on AI systems that erode human skills.</div></details>
-    <details><summary>How can I protect my privacy when using AI tools?</summary><div class="faq-body">Protect your privacy by using strong unique passwords, enabling two-factor authentication, reading privacy policies carefully, limiting personal data shared, using VPNs, reviewing app permissions regularly, and choosing privacy-focused AI alternatives when available.</div></details>
-    <details><summary>Is AI bias a real problem for regular users?</summary><div class="faq-body">Yes, AI bias significantly impacts everyday users in hiring, lending, healthcare, and criminal justice. AI systems trained on biased historical data perpetuate discrimination. Always verify AI-driven decisions and advocate for algorithmic transparency.</div></details>
-    <details><summary>Will AI take my job?</summary><div class="faq-body">AI will transform many jobs rather than eliminate them entirely. Some roles face high automation risk, but new opportunities emerge. The key is adapting by learning AI-complementary skills like creativity, emotional intelligence, and complex problem-solving.</div></details>
-    <details><summary>What are deepfakes and why should I worry?</summary><div class="faq-body">Deepfakes are AI-generated fake videos, audio, or images that look real. They threaten through financial fraud, reputation damage, political manipulation, and harassment. Always verify suspicious content through multiple trusted sources before believing or sharing.</div></details>
-    <details><summary>How do I identify AI-generated misinformation?</summary><div class="faq-body">Look for unusual details in images/videos, check sources carefully, verify with multiple outlets, use reverse image search, check metadata, and be skeptical of emotionally charged content. When in doubt, consult fact-checking websites.</div></details>
+    <details open><summary>What are the main risks of AI for everyday users?</summary><div class="faq-body">The primary risks are privacy exposure from data collection, algorithmic bias in decisions that affect you, job displacement from automation, deepfakes and AI-generated fraud, security vulnerabilities, and over-reliance that can erode independent judgment.</div></details>
+    <details><summary>How can I protect my privacy when using AI tools?</summary><div class="faq-body">Use strong unique passwords, enable two-factor authentication, actually skim the privacy policy for anything sensitive, limit what personal data you share, and check resources like the <a href="https://consumer.ftc.gov/" target="_blank" rel="noopener">FTC's consumer advice site</a> for current guidance.</div></details>
+    <details><summary>Is AI bias a real problem for regular users?</summary><div class="faq-body">Yes — it's shown up in hiring, lending, healthcare, and criminal justice tools, and it's serious enough that agencies like the <a href="https://www.eeoc.gov/laws/guidance/select-issues-assessing-adverse-impact-software-algorithms-and-artificial" target="_blank" rel="noopener">EEOC</a> have issued formal guidance on it. If an automated decision affects you, it's reasonable to ask how it was made.</div></details>
+    <details><summary>Will AI take my job?</summary><div class="faq-body">AI is more likely to transform jobs than erase them outright, though the transition period is genuinely disruptive for some roles. The <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/" target="_blank" rel="noopener">WEF's Future of Jobs Report 2025</a> projects both large-scale displacement and large-scale job creation over the same period. Adapting — rather than competing head-on — is the more realistic strategy.</div></details>
+    <details><summary>What are deepfakes and why should I worry?</summary><div class="faq-body">Deepfakes are AI-generated fake video, audio, or images convincing enough to pass as real. They've been used in financial fraud, harassment, and political misinformation, and the FBI now tracks AI-enabled fraud as its own category. Verify anything surprising through a second, trusted source before acting on it.</div></details>
+    <details><summary>How do I identify AI-generated misinformation?</summary><div class="faq-body">Look for inconsistent details, check whether other credible outlets are reporting the same thing, try a reverse image search, and be extra skeptical of anything designed to make you feel a strong emotion fast. When in doubt, a quick check with an established fact-checking source helps.</div></details>
+  </div>
+
+  <div class="sources-box reveal">
+    <h3>Sources & Further Reading</h3>
+    <ul>
+      <li><a href="https://www.pewresearch.org/science/2025/09/17/how-americans-view-ai-and-its-impact-on-people-and-society/" target="_blank" rel="noopener">Pew Research Center — How Americans View AI and Its Impact on Human Abilities, Society (2025)</a></li>
+      <li><a href="https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/" target="_blank" rel="noopener">Pew Research Center — How Americans View Data Privacy</a></li>
+      <li><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener">NIST — AI Risk Management Framework</a></li>
+      <li><a href="https://www.ftc.gov/" target="_blank" rel="noopener">Federal Trade Commission — AI enforcement and consumer guidance</a></li>
+      <li><a href="https://www.eeoc.gov/laws/guidance/select-issues-assessing-adverse-impact-software-algorithms-and-artificial" target="_blank" rel="noopener">U.S. EEOC — Guidance on AI and Adverse Impact in Hiring</a></li>
+      <li><a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/" target="_blank" rel="noopener">World Economic Forum — Future of Jobs Report 2025</a></li>
+      <li><a href="https://www.ic3.gov/" target="_blank" rel="noopener">FBI Internet Crime Complaint Center (IC3)</a></li>
+    </ul>
   </div>
 
   <div class="author-box reveal">
     <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team" onerror="this.remove()"/></div>
-    <div><h3>Written by the NyvoraAI Team</h3><p>We investigate AI risks and provide practical safety guidance for everyday users. This guide was reviewed for accuracy in June 2026. <a href="https://nyvoraai.github.io/about.html">Learn more about our mission</a> to make AI safe for everyone.</p></div>
+    <div><h3>Written by the NyvoraAI Team</h3><p>We research AI risks and try to give people practical, honestly-sourced safety guidance. This guide was reviewed for accuracy in June 2026. <a href="https://nyvoraai.github.io/about.html">Learn more about our mission</a> to make AI safer and easier to understand for everyone.</p></div>
   </div>
 
   <div class="share-section reveal">
@@ -647,7 +668,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;back
 
   <div class="newsletter reveal">
     <h2>Stay informed about AI risks & safety</h2>
-    <p>Get weekly updates on emerging AI threats and protection strategies. Join thousands of informed users.</p>
+    <p>Get occasional updates on emerging AI risks and how to protect yourself. No hype, just what's actually useful.</p>
     <div class="nl-form"><input class="nl-input" type="email" placeholder="your@email.com" id="nlEmail"/><button class="nl-btn" onclick="subscribe()">Subscribe Free</button></div>
     <p class="nl-note">No spam · Unsubscribe anytime · Privacy-focused</p>
     <div class="nl-social">
