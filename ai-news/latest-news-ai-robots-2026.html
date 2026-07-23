@@ -49,7 +49,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Schema: Organization -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":"https://nyvoraai.github.io/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai"]}
+{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":"https://nyvoraai.github.io/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai","https://bsky.app/profile/nyvoraai.bsky.social","https://in.pinterest.com/nyvoraai/","https://mastodon.social/@nyvora"]}
 </script>
 
 <!-- Schema: WebSite -->
@@ -186,13 +186,15 @@ nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-
 .prose a,.faq-body a{color:var(--teal-dp);border-bottom:1px solid rgba(14,79,69,.25);transition:border-color .2s,color .2s}
 .prose a:hover,.faq-body a:hover{color:var(--coral);border-color:var(--coral);text-decoration:none}
 
-/* KEY TAKEAWAYS */
-.key-takeaways{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow)}
-.kt-title{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
-.key-takeaways ul{margin:0;list-style:none}
-.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15.5px;color:var(--ink-soft)}
+/* KEY TAKEAWAYS - COLORFUL & ANIMATED */
+.key-takeaways{background:linear-gradient(135deg, var(--paper) 0%, var(--you-bg) 100%);border:2px solid var(--coral-soft);border-left:5px solid var(--coral);border-radius:0 var(--radius) var(--radius) 0;padding:26px 30px;margin:24px 0;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.key-takeaways::before{content:'';position:absolute;top:-50%;right:-50%;width:100%;height:100%;background:radial-gradient(circle,var(--gold-soft),transparent 70%);opacity:.4;animation:pulseGlow 4s ease-in-out infinite}
+@keyframes pulseGlow{0%,100%{transform:scale(1);opacity:.4}50%{transform:scale(1.1);opacity:.6}}
+.kt-title{font-family:var(--font-display);font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--coral-dp);margin-bottom:16px;display:flex;align-items:center;gap:8px;position:relative;z-index:1}
+.key-takeaways ul{margin:0;list-style:none;position:relative;z-index:1}
+.key-takeaways li{display:flex;gap:12px;margin-bottom:12px;font-size:16px;color:var(--ink);line-height:1.6}
 .key-takeaways li:last-child{margin-bottom:0}
-.key-takeaways li::before{content:'✨';color:var(--gold);flex-shrink:0;font-weight:700}
+.key-takeaways li::before{content:'✨';color:var(--gold);flex-shrink:0;font-weight:700;font-size:18px}
 
 /* ROBOT CARDS */
 .robot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:32px 0}
@@ -204,6 +206,16 @@ nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-
 .robot-company{font-size:13px;color:var(--muted);font-weight:600;margin-bottom:12px}
 .robot-desc{font-size:14.5px;color:var(--ink-soft);line-height:1.6;margin-bottom:16px}
 .robot-price{display:inline-flex;align-items:center;gap:6px;background:var(--teal-soft);color:var(--teal-dp);padding:6px 12px;border-radius:20px;font-size:13px;font-weight:700;font-family:var(--font-mono)}
+
+/* ANIMATED DIAGRAM */
+.animated-diagram{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:32px;margin:32px 0;text-align:center;position:relative;overflow:hidden}
+.diagram-flow{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;margin-top:20px}
+.diagram-node{background:var(--teal-soft);border:2px solid var(--teal);border-radius:12px;padding:16px 24px;font-family:var(--font-display);font-weight:700;color:var(--teal-dp);position:relative;animation:nodePulse 3s ease-in-out infinite}
+.diagram-node:nth-child(2){animation-delay:0.5s;background:var(--gold-soft);border-color:var(--gold);color:#8A5A12}
+.diagram-node:nth-child(3){animation-delay:1s;background:var(--coral-soft);border-color:var(--coral);color:var(--coral-dp)}
+.diagram-arrow{font-size:24px;color:var(--muted);animation:arrowSlide 1.5s ease-in-out infinite}
+@keyframes nodePulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(20,107,92,0.2)}50%{transform:scale(1.03);box-shadow:0 0 0 8px rgba(20,107,92,0)}}
+@keyframes arrowSlide{0%,100%{transform:translateX(0);opacity:0.5}50%{transform:translateX(5px);opacity:1}}
 
 /* TIMELINE */
 .timeline{position:relative;margin:40px 0;padding-left:0}
@@ -298,6 +310,17 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 .footer-bottom-links a{color:var(--muted);transition:color .2s}
 .footer-bottom-links a:hover{color:var(--ink);text-decoration:none}
 
+/* SIDE POPUP - ANIMATED */
+.side-popup{position:fixed;right:-320px;bottom:100px;width:280px;background:var(--paper);border:2px solid var(--gold);border-radius:var(--radius);padding:20px;box-shadow:0 10px 40px rgba(0,0,0,0.15);z-index:250;transition:right 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)}
+.side-popup.show{right:28px}
+.side-popup-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.side-popup-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--gold);display:flex;align-items:center;gap:6px}
+.side-popup-close{background:none;border:none;cursor:pointer;color:var(--muted);font-size:20px;line-height:1;transition:color .2s}
+.side-popup-close:hover{color:var(--coral)}
+.side-popup-content{font-size:14px;color:var(--ink-soft);line-height:1.5;margin-bottom:16px}
+.side-popup-btn{display:block;width:100%;text-align:center;background:var(--gold);color:#fff;padding:10px;border-radius:8px;font-weight:700;font-size:13px;transition:all .2s}
+.side-popup-btn:hover{background:var(--coral);transform:translateY(-2px);text-decoration:none}
+
 /* BACK TO TOP */
 #back-top{position:fixed;bottom:28px;right:28px;background:var(--coral);color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:var(--shadow);z-index:200}
 #back-top.visible{opacity:1;pointer-events:all}
@@ -316,12 +339,16 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   .hamburger{display:flex}
   .toc ol{grid-template-columns:1fr}
   .calc-grid{grid-template-columns:1fr}
+  .side-popup{width:260px;right:-280px}
+  .side-popup.show{right:16px}
 }
 @media(max-width:600px){
   .related-grid{grid-template-columns:1fr}
   .footer-inner{grid-template-columns:1fr}
   .nl-form{flex-direction:column}
   .footer-bottom{flex-direction:column;text-align:center}
+  .diagram-flow{flex-direction:column;gap:12px}
+  .diagram-arrow{transform:rotate(90deg)}
 }
 </style>
 </head>
@@ -336,6 +363,9 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 <symbol id="icon-facebook" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 8.6h1.4V6h-1.9c-1.9 0-2.9 1.15-2.9 3v1.5H8.7V13h1.9v6.3h2.4V13h1.7l.3-2.5h-2V9.4c0-.5.2-.8.9-.8z" fill="currentColor"/></symbol>
 <symbol id="icon-x" viewBox="0 0 24 24"><path d="M5.2 4.8l14 14.4M19.2 4.8L5.2 19.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
 <symbol id="icon-youtube" viewBox="0 0 24 24"><rect x="2.3" y="6" width="19.4" height="12" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.3 9.4l5.2 2.6-5.2 2.6z" fill="currentColor"/></symbol>
+<symbol id="icon-bluesky" viewBox="0 0 24 24"><path d="M12 10.8c-1.2-2.4-4.8-6.8-8.4-6.8C1.2 4 0 6.4 0 8.4c0 1.2.4 2.4 1.2 3.2 1.2 1.2 2.8 1.6 4 2-1.2.4-2.8 1.2-4 2.4C.4 16.8 0 18 0 19.2c0 2 1.2 4.4 3.6 4.4 3.6 0 7.2-4.4 8.4-6.8 1.2 2.4 4.8 6.8 8.4 6.8 2.4 0 3.6-2.4 3.6-4.4 0-1.2-.4-2.4-1.2-3.2-1.2-1.2-2.8-1.6-4-2 1.2-.4 2.8-1.2 4-2.4.8-.8 1.2-2 1.2-3.2 0-2-1.2-4.4-3.6-4.4-3.6 0-7.2 4.4-8.4 6.8z" fill="currentColor"/></symbol>
+<symbol id="icon-pinterest" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 6c-3.3 0-6 2.7-6 6 0 2.1 1.1 4 2.8 5.1.1-.8.2-2.1.4-2.6.2-.5 1.3-5.5 1.3-5.5s-.3-.7-.3-1.6c0-1.5.9-2.6 2-2.6.9 0 1.4.7 1.4 1.5 0 .9-.6 2.3-.9 3.5-.3 1.1.6 2 1.7 2 2 0 3.6-2.1 3.6-5.2 0-2.7-1.9-4.6-4.7-4.6-3.2 0-5.1 2.4-5.1 4.9 0 .9.4 1.9.8 2.4.1.1.1.2.1.3l-.3 1.2c0 .2-.1.2-.3.1-1.4-.6-2.2-2.6-2.2-4.2 0-3.4 2.5-6.6 7.2-6.6 3.8 0 6.7 2.7 6.7 6.3 0 3.8-2.4 6.8-5.7 6.8-1.1 0-2.2-.6-2.5-1.3 0 0-.5 2-.6 2.5-.2.8-.8 1.8-1.2 2.4.9.3 1.9.4 2.9.4 5.3 0 9.6-4.3 9.6-9.6S17.3 6 12 6z" fill="currentColor"/></symbol>
+<symbol id="icon-mastodon" viewBox="0 0 24 24"><path d="M21.5 12c0-5.5-3.5-7.5-3.5-7.5C16.5 3.5 14 3.1 12 3h0c-2 .1-4.5.5-6 1.5 0 0-3.5 2-3.5 7.5v4c0 4 2 5 4 5h1c1 0 1.5-.5 1.5-1.5v-3c0-1-.5-1.5-1.5-1.5H6c-.5 0-1-.5-1-1V9c0-2 1.5-3 3-3 1 0 2 .5 2 1.5V9c0 .5.5 1 1 1h2c.5 0 1-.5 1-1V7.5c0-1 1-1.5 2-1.5 1.5 0 3 1 3 3v5.5c0 .5-.5 1-1 1h-1.5c-1 0-1.5.5-1.5 1.5v3c0 1 .5 1.5 1.5 1.5h1c2 0 4-1 4-5v-4z" fill="currentColor"/></symbol>
 </defs>
 </svg>
 
@@ -355,7 +385,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 <nav role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
-      <img src="https://nyvoraai.github.io/assets/logo.png" alt="" class="logo-img" onerror="this.remove()"/>
+      <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI Logo" class="logo-img" onerror="this.remove()"/>
       Nyvora<span>AI</span>
     </a>
     <ul class="nav-links">
@@ -409,7 +439,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   <p class="article-intro">From Tesla's Optimus mass production to Boston Dynamics' electric Atlas, discover the groundbreaking AI robot developments reshaping industries and daily life in 2026.</p>
   <div class="article-meta">
     <div class="meta-author">
-      <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="" onerror="this.remove()"/></div>
+      <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team Avatar" onerror="this.remove()"/></div>
       <div><div class="meta-name">NyvoraAI Team</div></div>
     </div>
     <span class="meta-sep">·</span>
@@ -444,45 +474,58 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 <main class="layout">
 <article class="prose">
 
-  <p class="reveal">Remember when robots were confined to science fiction movies and factory assembly lines? Those days are officially over. In 2026, AI-powered robots are walking through warehouses, serving coffee in cafes, assisting surgeons in operating rooms, and yes, even folding laundry in homes across the globe. The question is no longer "if" robots will transform our world, but "how fast" and "in what ways."</p>
+  <p class="reveal">Let us be honest for a second: remember when robots were confined to the glossy, distant future of science fiction movies or clunky, caged arms on factory assembly lines? Those days are officially behind us. In 2026, AI-powered robots are walking through warehouses, serving coffee in bustling cafes, assisting surgeons in operating rooms, and yes, even folding laundry in homes across the globe. The question is no longer "if" robots will transform our world, but rather "how fast" and "in what deeply personal ways."</p>
 
-  <p class="reveal">The <strong>latest news in AI robots 2026</strong> reads like a technological thriller. We are witnessing the convergence of advanced machine learning, improved battery technology, and sophisticated sensor arrays creating robots that are not just tools, but collaborative partners. From Tesla's ambitious Optimus program finally hitting production lines to Boston Dynamics reinventing Atlas with full electric power, the robotics revolution is no longer coming—it is here.</p>
+  <p class="reveal">The <strong>latest news in AI robots 2026</strong> reads less like a dry technical manual and more like a technological thriller. We are witnessing the beautiful convergence of advanced machine learning, vastly improved battery density, and sophisticated sensor arrays. Together, these innovations are creating robots that are not just mere tools, but genuine collaborative partners. From <a href="https://www.tesla.com/optimus" target="_blank" rel="noopener">Tesla's</a> ambitious Optimus program finally hitting production lines to <a href="https://www.bostondynamics.com/" target="_blank" rel="noopener">Boston Dynamics</a> reinventing Atlas with full electric power, the robotics revolution is no longer coming—it is already here, and it is profoundly human-centric.</p>
 
   <div class="key-takeaways quick-answer reveal" id="quick-answer">
-    <div class="kt-title">✨ Quick Answer</div>
+    <div class="kt-title">✨ Quick Answer: The 2026 Robotics Snapshot</div>
     <ul>
-      <li><strong>Tesla Optimus Gen-3</strong> has entered mass production with a price tag of $20,000-$30,000, making humanoid robots commercially viable for the first time.</li>
-      <li><strong>Boston Dynamics' Atlas</strong> has gone fully electric, featuring advanced AI control systems and unprecedented agility for industrial applications.</li>
-      <li><strong>Amazon</strong> now operates over 750,000 robots in its fulfillment centers, with new models capable of complex picking and packing tasks.</li>
-      <li><strong>Figure 02</strong> and <strong>Sanctuary Phoenix</strong> are demonstrating general-purpose humanoid capabilities in real-world commercial settings.</li>
-      <li><strong>Cost Reduction:</strong> The average cost of collaborative robots (cobots) has dropped 40% since 2024, making automation accessible to small businesses.</li>
+      <li><strong>Tesla Optimus Gen-3</strong> has officially entered mass production with a price tag of $20,000–$30,000, making humanoid robots commercially viable for everyday businesses for the very first time.</li>
+      <li><strong>Boston Dynamics' Atlas</strong> has gone fully electric, shedding its hydraulic legacy for advanced AI control systems and unprecedented agility tailored for complex industrial applications.</li>
+      <li><strong>Amazon</strong> now operates over 750,000 robots in its fulfillment centers globally, with new models capable of intricate, multi-step picking and packing tasks.</li>
+      <li><strong>Figure 02</strong> and <strong>Sanctuary Phoenix</strong> are actively demonstrating general-purpose humanoid capabilities in real-world, unstructured commercial settings.</li>
+      <li><strong>Cost Reduction:</strong> The average cost of collaborative robots (cobots) has dropped by 40% since 2024, democratizing automation and making it accessible to small and medium-sized businesses.</li>
     </ul>
   </div>
 
   <h2 id="major-breakthroughs"><span class="h2-mark">01</span> Major Breakthroughs Reshaping 2026</h2>
   
-  <p class="reveal">The robotics landscape in 2026 is defined by several game-changing developments that have moved the industry from experimental prototypes to practical, deployable solutions.</p>
+  <p class="reveal">The robotics landscape in 2026 is defined by several game-changing developments that have decisively moved the industry from experimental, lab-bound prototypes to practical, deployable, and reliable solutions.</p>
 
   <h3>The Humanoid Revolution Goes Mainstream</h3>
-  <p class="reveal">For decades, humanoid robots were the stuff of research labs and tech demos. In 2026, they are entering the workforce in meaningful numbers. Tesla's Optimus Gen-3 represents the tipping point—finally achieving the reliability and cost-effectiveness needed for commercial deployment. These aren't just walking, talking gimmicks; they are performing real work in manufacturing, logistics, and even healthcare settings.</p>
+  <p class="reveal">For decades, humanoid robots were the exclusive playground of elite research labs and flashy tech demos. In 2026, they are entering the workforce in meaningful, measurable numbers. Tesla's Optimus Gen-3 represents the definitive tipping point—finally achieving the reliability, safety, and cost-effectiveness needed for widespread commercial deployment. These are not just walking, talking gimmicks designed for viral videos; they are performing real, valuable work in manufacturing, logistics, and even sensitive healthcare settings.</p>
 
-  <p class="reveal">But Tesla isn't alone. Companies like Figure AI, Sanctuary AI, and Chinese manufacturers like Unitree are all racing to capture market share in what analysts predict will be a $150 billion humanoid robot market by 2030. If you want to understand how these robots are being integrated into business operations, exploring <a href="https://nyvoraai.github.io/ai-news.html">AI News</a> will give you broader context on the automation trends driving this transformation.</p>
+  <p class="reveal">But Tesla is certainly not alone in this race. Companies like <a href="https://www.figure.ai/" target="_blank" rel="noopener">Figure AI</a>, <a href="https://www.sanctuary.ai/" target="_blank" rel="noopener">Sanctuary AI</a>, and innovative Chinese manufacturers like Unitree are all racing to capture market share in what leading analysts predict will be a $150 billion humanoid robot market by 2030. If you want to understand how these robots are being seamlessly integrated into modern business operations, exploring our broader <a href="https://nyvoraai.github.io/ai-news.html">AI News</a> coverage will give you essential context on the automation trends driving this global transformation.</p>
 
   <h3>AI Control Systems Reach New Sophistication</h3>
-  <p class="reveal">The brains behind these robots have evolved as dramatically as their bodies. Modern AI control systems can now process visual, auditory, and tactile information in real-time, allowing robots to adapt to unstructured environments. This is a massive leap from the rigid, pre-programmed movements of previous generations.</p>
+  <p class="reveal">The brains behind these machines have evolved just as dramatically as their physical bodies. Modern AI control systems can now process visual, auditory, and tactile information in real-time, allowing robots to adapt fluidly to unstructured, unpredictable environments. This is a massive, generational leap from the rigid, pre-programmed movements of previous robotic iterations.</p>
 
-  <p class="reveal">The integration of large language models (LLMs) with robotic control systems means robots can now understand natural language commands and even engage in basic conversation. A warehouse worker can simply say, "Pick up the red box on shelf three and bring it to packing station two," and the robot understands and executes—no coding required.</p>
+  <p class="reveal">The integration of large language models (LLMs) with robotic control systems means robots can now understand natural language commands and even engage in basic, contextual conversation. A warehouse worker can simply say, "Pick up the red box on shelf three and bring it to packing station two," and the robot understands, plans, and executes—no complex coding or specialized training required. As noted by researchers at <a href="https://www.technologyreview.com/" target="_blank" rel="noopener">MIT Technology Review</a>, this natural language interface is the key to unlocking true human-robot collaboration.</p>
+
+  <!-- ANIMATED DIAGRAM -->
+  <div class="animated-diagram reveal">
+    <h3 style="margin-top:0;font-size:18px;color:var(--ink);">How Modern AI Robot Control Works</h3>
+    <div class="diagram-flow">
+      <div class="diagram-node">🗣️ Natural Language Input</div>
+      <div class="diagram-arrow">➜</div>
+      <div class="diagram-node">🧠 LLM Processing & Planning</div>
+      <div class="diagram-arrow">➜</div>
+      <div class="diagram-node">🦾 Physical Execution</div>
+    </div>
+    <p style="font-size:14px;color:var(--muted);margin-top:20px;margin-bottom:0;">This seamless pipeline allows non-technical workers to deploy complex robotic tasks instantly.</p>
+  </div>
 
   <h2 id="top-robots"><span class="h2-mark">02</span> The Top AI Robots Making Headlines in 2026</h2>
   
-  <p class="reveal">Let us dive into the specific robots that are dominating the news cycle and reshaping industries.</p>
+  <p class="reveal">Let us dive into the specific robots that are dominating the news cycle, capturing imaginations, and actively reshaping industries right now.</p>
 
   <div class="robot-grid reveal">
     <div class="robot-card">
       <div class="robot-icon">🤖</div>
       <div class="robot-name">Tesla Optimus Gen-3</div>
       <div class="robot-company">Tesla Inc.</div>
-      <div class="robot-desc">The most anticipated humanoid robot has finally entered mass production. Gen-3 features improved dexterity, 8-hour battery life, and the ability to perform complex assembly tasks. Priced at $20,000-$30,000 for commercial use.</div>
+      <div class="robot-desc">The most anticipated humanoid robot has finally entered mass production. Gen-3 features vastly improved dexterity, an 8-hour battery life, and the ability to perform complex assembly tasks. Priced at $20,000–$30,000 for commercial use, it is a game-changer.</div>
       <div class="robot-price">$20,000 - $30,000</div>
     </div>
 
@@ -490,7 +533,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
       <div class="robot-icon">⚡</div>
       <div class="robot-name">Boston Dynamics Atlas (Electric)</div>
       <div class="robot-company">Boston Dynamics</div>
-      <div class="robot-desc">The legendary Atlas has gone fully electric, shedding its hydraulic systems for advanced electric actuators. Features unprecedented agility, parkour capabilities, and AI-powered autonomous navigation for industrial inspection and maintenance.</div>
+      <div class="robot-desc">The legendary Atlas has gone fully electric, shedding its hydraulic systems for advanced electric actuators. It features unprecedented agility, parkour capabilities, and AI-powered autonomous navigation for industrial inspection and maintenance.</div>
       <div class="robot-price">$150,000+</div>
     </div>
 
@@ -506,7 +549,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
       <div class="robot-icon">🏭</div>
       <div class="robot-name">Figure 02</div>
       <div class="robot-company">Figure AI</div>
-      <div class="robot-desc">A general-purpose humanoid designed for commercial and industrial applications. Features advanced hand dexterity, bipedal locomotion, and the ability to learn new tasks through demonstration. Deployed in BMW factories.</div>
+      <div class="robot-desc">A general-purpose humanoid designed for commercial and industrial applications. It features advanced hand dexterity, bipedal locomotion, and the ability to learn new tasks through simple human demonstration. Currently deployed in BMW factories.</div>
       <div class="robot-price">$50,000 - $100,000</div>
     </div>
 
@@ -514,7 +557,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
       <div class="robot-icon">🏥</div>
       <div class="robot-name">Sanctuary Phoenix</div>
       <div class="robot-company">Sanctuary AI</div>
-      <div class="robot-desc">A humanoid robot designed for retail, logistics, and manufacturing. Features human-like hands with 11 degrees of freedom and advanced AI for complex decision-making in unstructured environments.</div>
+      <div class="robot-desc">A humanoid robot designed for retail, logistics, and manufacturing. It features human-like hands with 11 degrees of freedom and advanced AI for complex, real-time decision-making in unstructured environments.</div>
       <div class="robot-price">$75,000+</div>
     </div>
 
@@ -558,55 +601,55 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h2 id="industries"><span class="h2-mark">03</span> Industries Being Transformed by AI Robots</h2>
   
-  <p class="reveal">The impact of AI robots extends far beyond manufacturing. Here is how different sectors are being revolutionized:</p>
+  <p class="reveal">The impact of AI robots extends far beyond traditional manufacturing. Here is a closer look at how different sectors are being revolutionized right before our eyes:</p>
 
   <div class="timeline reveal">
     <div class="timeline-item">
       <div class="timeline-date">Manufacturing & Logistics</div>
       <div class="timeline-title">The Automation Backbone</div>
-      <div class="timeline-desc">Warehouses and factories are seeing the most dramatic transformation. Robots like Amazon's Sparrow can now pick and pack items with 99.9% accuracy, working 24/7 without fatigue. The integration of AI allows these robots to adapt to new products and layouts without extensive reprogramming. For businesses looking to implement similar automation, understanding <a href="https://nyvoraai.github.io/ai-news/how-to-automate-repetitive-tasks-with-ai.html">how to automate repetitive tasks with AI</a> provides the foundational knowledge needed for successful deployment.</div>
+      <div class="timeline-desc">Warehouses and factories are seeing the most dramatic transformation. Robots like Amazon's Sparrow can now pick and pack items with 99.9% accuracy, working 24/7 without fatigue. The integration of AI allows these robots to adapt to new products and layouts without extensive reprogramming. For businesses looking to implement similar automation, understanding <a href="https://nyvoraai.github.io/ai-news/how-to-automate-repetitive-tasks-with-ai.html">how to automate repetitive tasks with AI</a> provides the foundational knowledge needed for successful, scalable deployment.</div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-date">Healthcare</div>
       <div class="timeline-title">Surgical Precision & Patient Care</div>
-      <div class="timeline-desc">Surgical robots have evolved from teleoperated systems to semi-autonomous assistants. AI-powered robots can now perform routine procedures with sub-millimeter precision, while robotic nurses handle patient monitoring, medication delivery, and even basic physical therapy. The da Vinci system's latest iteration features AI that can suggest optimal surgical approaches based on millions of previous procedures.</div>
+      <div class="timeline-desc">Surgical robots have evolved from teleoperated systems to semi-autonomous assistants. AI-powered robots can now perform routine procedures with sub-millimeter precision, while robotic nurses handle patient monitoring, medication delivery, and even basic physical therapy. The da Vinci system's latest iteration features AI that can suggest optimal surgical approaches based on millions of previous procedures, as detailed in recent <a href="https://spectrum.ieee.org/" target="_blank" rel="noopener">IEEE Spectrum</a> reports.</div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-date">Retail & Hospitality</div>
       <div class="timeline-title">The New Frontline Workers</div>
-      <div class="timeline-desc">From robot baristas in Tokyo to inventory-checking humanoids in Walmart, the service industry is embracing robotic workers. These robots handle repetitive tasks like restocking shelves, cleaning floors, and answering basic customer queries, freeing human workers to focus on complex customer interactions and creative problem-solving.</div>
+      <div class="timeline-desc">From robot baristas in Tokyo to inventory-checking humanoids in Walmart, the service industry is embracing robotic workers. These robots handle repetitive tasks like restocking shelves, cleaning floors, and answering basic customer queries, freeing human workers to focus on complex customer interactions, empathy, and creative problem-solving.</div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-date">Agriculture</div>
       <div class="timeline-title">Precision Farming at Scale</div>
-      <div class="timeline-desc">Agricultural robots are addressing labor shortages while increasing crop yields. Autonomous tractors, robotic harvesters, and AI-powered drones can now plant, monitor, and harvest crops with minimal human intervention. These systems use computer vision to identify ripe produce and apply pesticides only where needed, reducing chemical usage by up to 90%.</div>
+      <div class="timeline-desc">Agricultural robots are addressing chronic labor shortages while dramatically increasing crop yields. Autonomous tractors, robotic harvesters, and AI-powered drones can now plant, monitor, and harvest crops with minimal human intervention. These systems use computer vision to identify ripe produce and apply pesticides only where needed, reducing chemical usage by up to 90%.</div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-date">Construction</div>
       <div class="timeline-title">Building the Future</div>
-      <div class="timeline-desc">Construction robots are tackling the industry's chronic labor shortage and safety issues. Bricklaying robots, autonomous excavators, and 3D printing systems can work in dangerous environments and perform repetitive tasks with superhuman precision. Boston Dynamics' Spot is now a common sight on construction sites, performing daily inspections and progress monitoring.</div>
+      <div class="timeline-desc">Construction robots are tackling the industry's chronic labor shortage and severe safety issues. Bricklaying robots, autonomous excavators, and 3D printing systems can work in dangerous environments and perform repetitive tasks with superhuman precision. Boston Dynamics' Spot is now a common sight on construction sites, performing daily inspections and progress monitoring autonomously.</div>
     </div>
   </div>
 
   <h2 id="future"><span class="h2-mark">04</span> What is Next: The Road Ahead</h2>
   
-  <p class="reveal">As impressive as 2026's developments are, we are still in the early innings of the robotics revolution. Here is what experts predict for the near future:</p>
+  <p class="reveal">As impressive as 2026's developments are, we are still in the early innings of the robotics revolution. Here is what leading experts predict for the near future:</p>
 
   <h3>The $20,000 Humanoid Threshold</h3>
-  <p class="reveal">Tesla's pricing of Optimus at $20,000-$30,000 is significant because it crosses the psychological barrier where businesses start seriously considering robots as alternatives to human labor for certain tasks. As production scales and technology improves, analysts predict prices could drop to $10,000 by 2028, making humanoid robots as affordable as a compact car.</p>
+  <p class="reveal">Tesla's pricing of Optimus at $20,000–$30,000 is highly significant because it crosses the psychological barrier where businesses start seriously considering robots as viable alternatives to human labor for certain tasks. As production scales and supply chains mature, analysts predict prices could drop to $10,000 by 2028, making humanoid robots as affordable as a compact car.</p>
 
   <h3>General-Purpose AI</h3>
-  <p class="reveal">The next frontier is moving from task-specific robots to general-purpose systems that can learn new skills on the fly. Current research focuses on "foundation models" for robotics—AI systems trained on vast datasets that can adapt to new environments and tasks with minimal additional training, similar to how large language models revolutionized text generation.</p>
+  <p class="reveal">The next great frontier is moving from task-specific robots to general-purpose systems that can learn new skills on the fly. Current research focuses on "foundation models" for robotics—AI systems trained on vast, diverse datasets that can adapt to new environments and tasks with minimal additional training, similar to how large language models revolutionized text generation.</p>
 
   <h3>Human-Robot Collaboration</h3>
-  <p class="reveal">Rather than replacing humans, the most successful deployments are focusing on collaboration. Cobots (collaborative robots) are designed to work safely alongside humans, handling the dangerous, dirty, and dull tasks while humans focus on creativity, strategy, and complex decision-making. This symbiotic relationship is proving more sustainable and socially acceptable than full automation.</p>
+  <p class="reveal">Rather than replacing humans, the most successful deployments are focusing on deep collaboration. Cobots (collaborative robots) are designed to work safely alongside humans, handling the dangerous, dirty, and dull tasks while humans focus on creativity, strategy, and complex decision-making. This symbiotic relationship is proving far more sustainable and socially acceptable than full, blind automation.</p>
 
   <h3>Regulatory Frameworks</h3>
-  <p class="reveal">As robots become more prevalent, governments are scrambling to create regulatory frameworks. Issues like liability for robot-caused accidents, data privacy, job displacement, and ethical AI decision-making are becoming urgent policy questions. The EU's AI Act and similar legislation worldwide will shape how quickly and in what ways robots are deployed.</p>
+  <p class="reveal">As robots become more prevalent in daily life, governments are scrambling to create comprehensive regulatory frameworks. Issues like liability for robot-caused accidents, data privacy, job displacement, and ethical AI decision-making are becoming urgent policy questions. The EU's AI Act and similar legislation worldwide will shape how quickly and in what ways robots are deployed globally.</p>
 
   <!-- FAQ -->
   <h2 id="faq"><span class="h2-mark">05</span> Frequently Asked Questions</h2>
@@ -621,7 +664,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
     </details>
     <details>
       <summary>How much do AI robots cost in 2026?</summary>
-      <div class="faq-body">In 2026, AI robot costs vary significantly: Tesla Optimus is priced around $20,000-$30,000 for commercial use, Boston Dynamics Spot costs $74,500, Figure 02 ranges from $50,000-$100,000, while industrial collaborative robots (cobots) start at $25,000. Consumer-grade robots are becoming increasingly affordable.</div>
+      <div class="faq-body">In 2026, AI robot costs vary significantly: Tesla Optimus is priced around $20,000–$30,000 for commercial use, Boston Dynamics Spot costs $74,500, Figure 02 ranges from $50,000–$100,000, while industrial collaborative robots (cobots) start at $25,000. Consumer-grade robots are becoming increasingly affordable.</div>
     </details>
     <details>
       <summary>Will AI robots replace human workers?</summary>
@@ -639,7 +682,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <!-- AUTHOR BOX -->
   <div class="author-box reveal">
-    <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team" onerror="this.remove()"/></div>
+    <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team Avatar" onerror="this.remove()"/></div>
     <div>
       <h3>Written by the NyvoraAI Team</h3>
       <p>We track the latest developments in AI and robotics to keep you informed about the technologies shaping our future. This guide was updated in June 2026 with the latest industry insights. Have questions? <a href="https://nyvoraai.github.io/contact.html">Contact our team</a> or <a href="https://nyvoraai.github.io/about.html">learn more about our mission</a>.</p>
@@ -715,7 +758,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   <div class="footer-inner">
     <div class="footer-brand">
       <span class="footer-logo">
-        <img src="https://nyvoraai.github.io/assets/logo.png" alt="" class="logo-img" onerror="this.remove()"/>
+        <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI Logo" class="logo-img" onerror="this.remove()"/>
         Nyvora<span>AI</span>
       </span>
       <p>Your trusted source for AI news, tool reviews, and practical guides. Empowering creators to harness AI effectively.</p>
@@ -724,6 +767,9 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
         <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Facebook</a>
         <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-x"/></svg> X</a>
         <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</a>
+        <a href="https://bsky.app/profile/nyvoraai.bsky.social" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-bluesky"/></svg> Bluesky</a>
+        <a href="https://in.pinterest.com/nyvoraai/" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-pinterest"/></svg> Pinterest</a>
+        <a href="https://mastodon.social/@nyvora" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-mastodon"/></svg> Mastodon</a>
       </div>
     </div>
     <div class="footer-col">
@@ -764,6 +810,18 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 </footer>
 
 </div><!-- /page-wrap -->
+
+<!-- SIDE POPUP -->
+<div class="side-popup" id="sidePopup">
+  <div class="side-popup-header">
+    <div class="side-popup-title">💡 AI Tip of the Day</div>
+    <button class="side-popup-close" onclick="closePopup()" aria-label="Close popup">×</button>
+  </div>
+  <div class="side-popup-content">
+    Want to automate your workflow? Start small. Identify one repetitive task you do daily and explore AI tools to handle it.
+  </div>
+  <a href="https://nyvoraai.github.io/ai-news/how-to-automate-repetitive-tasks-with-ai.html" class="side-popup-btn">Learn How →</a>
+</div>
 
 <!-- BACK TO TOP -->
 <button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
@@ -847,6 +905,20 @@ document.getElementById('nlForm').addEventListener('submit',function(e){
       else{btn.textContent='Try again';btn.disabled=false;}
     }).catch(function(){btn.textContent='Try again';btn.disabled=false;});
 });
+
+// Side Popup Logic
+setTimeout(function(){
+  const popup = document.getElementById('sidePopup');
+  if(popup && !sessionStorage.getItem('popupClosed')){
+    popup.classList.add('show');
+  }
+}, 3000);
+
+function closePopup(){
+  const popup = document.getElementById('sidePopup');
+  popup.classList.remove('show');
+  sessionStorage.setItem('popupClosed', 'true');
+}
 </script>
 </body>
 </html>
