@@ -187,6 +187,9 @@ nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-
 .prose a,.faq-body a{color:var(--teal-dp);border-bottom:1px solid rgba(14,79,69,.25);transition:border-color .2s,color .2s}
 .prose a:hover,.faq-body a:hover{color:var(--coral);border-color:var(--coral);text-decoration:none}
 
+/* EXTERNAL LINK MARK */
+.ext-link::after{content:'↗';display:inline-block;margin-left:2px;font-size:.75em;transform:translateY(-1px)}
+
 /* KEY TAKEAWAYS */
 .key-takeaways{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow)}
 .kt-title{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
@@ -454,136 +457,136 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 <main class="layout">
 <article class="prose">
 
-  <p class="reveal">Remember Rosie the Robot from The Jetsons? She cooked, cleaned, did laundry, and even had time for witty banter. That was supposed to be our reality by 2026. So here we are, in the actual year 2026, and while we don't have Rosie, we do have something arguably more interesting: a whole ecosystem of specialized AI robots, each really good at one specific thing.</p>
+  <p class="reveal">Remember Rosie the Robot from The Jetsons? She cooked, cleaned, did laundry, and still had time for witty banter. That was supposed to be our reality by now. Well, here we are in the actual year 2026, and while nobody's shipped us Rosie, we've ended up with something arguably more interesting: a whole ecosystem of specialized robots, each genuinely good at one narrow thing.</p>
 
-  <p class="reveal">The question "<strong>can AI robots do household chores yet?</strong>" doesn't have a simple yes or no answer. It's more like: "Yes, but not the way you think, and not all of them, and definitely not all at once." Let me explain.</p>
+  <p class="reveal">So, "<strong>can AI robots do household chores yet?</strong>" doesn't have a clean yes-or-no answer. It's closer to: "Yes, but not the way you're picturing, and definitely not all at once." Let's get into it.</p>
 
-  <p class="reveal">In 2026, we're living in the age of the specialist robot. You can get a robot that vacuums your floors better than you ever could. You can get one that mops. Another that mows your lawn. One that cleans your windows. But if you're looking for a single humanoid robot that can walk into your messy kitchen, load the dishwasher, wipe the counters, take out the trash, and start dinner while folding laundry... well, we're not quite there yet. But we're closer than ever.</p>
+  <p class="reveal">We're living in the age of the specialist robot. You can buy something that vacuums your floors better than you ever could. Something else that mops. Another thing that mows your lawn or scrubs your windows. But a single humanoid that walks into your messy kitchen, loads the dishwasher, wipes the counters, takes out the trash, and starts dinner while folding laundry in the background? Not yet — though 2026 has brought that scenario noticeably closer than it was even a year ago.</p>
 
   <div class="key-takeaways quick-answer reveal" id="quick-answer">
     <div class="kt-title">✨ Quick Answer</div>
     <ul>
       <li><strong>Yes, but specialized:</strong> AI robots excel at specific tasks like vacuuming, mopping, lawn mowing, and window cleaning</li>
       <li><strong>No generalists yet:</strong> No single robot can do all household chores like The Jetsons' Rosie</li>
-      <li><strong>Best performers:</strong> Robot vacuums (Roomba, Roborock) are highly reliable; laundry folding and cooking robots exist but are expensive and limited</li>
+      <li><strong>Best performers:</strong> Robot vacuums (Roomba, Roborock) are highly reliable; laundry-folding and cooking robots exist as pilots and prototypes but remain expensive and limited</li>
       <li><strong>Cost range:</strong> $200-$1,500 for cleaning robots; $5,000-$20,000+ for advanced multi-purpose prototypes</li>
-      <li><strong>Coming soon:</strong> Tesla Optimus and Figure AI promise general-purpose household robots by 2028-2030</li>
+      <li><strong>Coming soon:</strong> Tesla Optimus, Figure, and LG's CLOiD are all racing toward general-purpose household robots by 2028-2030</li>
     </ul>
   </div>
 
   <h2 id="current-state"><span class="h2-mark">01</span> The Current State of Household Robots in 2026</h2>
   
-  <p class="reveal">If you walked into an average home in 2026, you'd probably find at least one robot already at work. The most common? A robot vacuum. According to recent market data, over 30% of households in developed countries now own some form of robotic cleaning device. That's up from just 12% in 2020.</p>
+  <p class="reveal">Walk into an average home in 2026 and there's a good chance a robot is already at work somewhere. Most likely: a robot vacuum. Ownership of robotic cleaning devices has grown substantially since the early 2020s, according to market research from firms like <a href="https://www.statista.com/outlook/cmo/household-appliances/small-appliances/vacuum-cleaners/worldwide" target="_blank" rel="noopener" class="ext-link">Statista's household appliance outlook</a> — though exact adoption figures vary by country and survey methodology, so treat any single percentage with a grain of salt.</p>
 
-  <p class="reveal">But here's what's changed: these aren't the dumb, bump-and-run robots of the past. Modern AI-powered household robots use computer vision, machine learning, and sophisticated mapping algorithms to navigate your home intelligently. They learn your floor plan, avoid obstacles (including pet waste—thank goodness), and can even be scheduled via smartphone apps.</p>
+  <p class="reveal">What's actually changed is the intelligence behind them. These aren't the dumb, bump-and-turn robots from a decade ago. Modern AI-powered household robots use computer vision, machine learning, and real mapping algorithms to navigate a home with some understanding of what's actually in it. They build a floor plan, learn to avoid obstacles (including, mercifully, pet waste), and take scheduling instructions from an app.</p>
 
-  <p class="reveal">The technology behind these robots is fascinating. They use <a href="https://nyvoraai.github.io/ai-news/what-is-embodied-ai-and-how-is-it-different.html">embodied AI</a>—artificial intelligence that exists in a physical body and interacts with the real world. This is different from chatbots or image generators because these robots have to deal with the messy, unpredictable nature of physical reality.</p>
+  <p class="reveal">The tech underneath all of this is <a href="https://nyvoraai.github.io/ai-news/what-is-embodied-ai-and-how-is-it-different.html">embodied AI</a> — artificial intelligence that lives in a physical body and has to deal with the real world instead of just text or pixels. That's a fundamentally harder problem than a chatbot or an image generator, because physical reality doesn't hold still and wait for you.</p>
 
   <h2 id="what-they-can-do"><span class="h2-mark">02</span> What AI Robots CAN Do Right Now</h2>
   
-  <p class="reveal">Let's get specific. Here's what you can actually buy today that will genuinely help with household chores:</p>
+  <p class="reveal">Let's get specific. Here's what you can genuinely buy today that will help with household chores — and where things get shakier:</p>
 
   <div class="chore-grid reveal">
     <div class="chore-card available">
       <div class="chore-icon">🧹</div>
       <div class="chore-title">Floor Vacuuming</div>
-      <p>Robot vacuums like Roomba, Roborock, and Eufy can autonomously vacuum entire homes, empty their own dustbins, and even mop. They navigate using LIDAR and cameras, avoiding obstacles and creating efficient cleaning paths.</p>
+      <p>Robot vacuums like <a href="https://www.irobot.com/" target="_blank" rel="noopener" class="ext-link">iRobot's Roomba</a>, <a href="https://us.roborock.com/" target="_blank" rel="noopener" class="ext-link">Roborock</a>, and <a href="https://www.eufy.com/" target="_blank" rel="noopener" class="ext-link">Eufy</a> can autonomously vacuum entire homes, empty their own dustbins, and even mop. They navigate using LIDAR and cameras, avoiding obstacles and mapping efficient cleaning paths.</p>
       <span class="chore-status">✅ Widely Available</span>
     </div>
     
     <div class="chore-card available">
       <div class="chore-icon">🪟</div>
       <div class="chore-title">Window Cleaning</div>
-      <p>Robotic window cleaners use suction and AI to clean windows automatically. They're particularly popular for high-rise apartments where manual cleaning is dangerous or difficult.</p>
+      <p>Robotic window cleaners like <a href="https://www.ecovacs.com/us/robotic-window-cleaner" target="_blank" rel="noopener" class="ext-link">Ecovacs' Winbot line</a> use suction and onboard sensors to clean windows automatically. They're especially popular in high-rise apartments, where manual cleaning is genuinely risky.</p>
       <span class="chore-status">✅ Available</span>
     </div>
     
     <div class="chore-card available">
       <div class="chore-icon">🌱</div>
       <div class="chore-title">Lawn Mowing</div>
-      <p>Robotic lawn mowers like Husqvarna Automower and Worx Landroid can maintain your lawn autonomously, navigating around obstacles and returning to charge themselves when needed.</p>
+      <p>Robotic lawn mowers like <a href="https://www.husqvarna.com/us/robotic-lawn-mowers/" target="_blank" rel="noopener" class="ext-link">Husqvarna's Automower</a> and <a href="https://www.worx.com/landroid" target="_blank" rel="noopener" class="ext-link">Worx Landroid</a> maintain your lawn autonomously, steer around obstacles, and return to their dock to recharge without help.</p>
       <span class="chore-status">✅ Available</span>
     </div>
     
     <div class="chore-card available">
       <div class="chore-icon">🏊</div>
       <div class="chore-title">Pool Cleaning</div>
-      <p>AI-powered pool cleaners like Dolphin and Polaris can scrub pool floors and walls, navigate complex pool shapes, and even optimize cleaning patterns based on pool usage.</p>
+      <p>Pool cleaners like <a href="https://www.maytronics.com/en/" target="_blank" rel="noopener" class="ext-link">Maytronics' Dolphin</a> and Polaris scrub pool floors and walls, handle irregular pool shapes, and adjust cleaning patterns based on how often the pool's used.</p>
       <span class="chore-status">✅ Available</span>
     </div>
     
     <div class="chore-card limited">
       <div class="chore-icon">👕</div>
       <div class="chore-title">Laundry Folding</div>
-      <p>Robots like FoldiMate and Laundroid can fold simple items like t-shirts and towels, but they're slow, expensive ($5,000-$15,000), and struggle with complex garments or wrinkles.</p>
+      <p>This category has had real churn. FoldiMate, once the best-known name here, shut down in 2021 without ever shipping a consumer product. In 2026, the notable entrant is <a href="https://www.techbuzz.ai/articles/weave-s-8k-laundry-robot-needs-human-help-to-fold-clothes" target="_blank" rel="noopener" class="ext-link">Weave's Isaac 0</a>, an ~$8,000 folding station that still relies on remote human operators for part of the job — a reminder of how far "autonomous" folding still has to go for a consumer product.</p>
       <span class="chore-status">⚠️ Limited/Expensive</span>
     </div>
     
     <div class="chore-card limited">
       <div class="chore-icon">🍳</div>
       <div class="chore-title">Basic Cooking</div>
-      <p>Robotic kitchen assistants like Moley Robotics can follow recipes and cook simple meals, but they require pre-prepped ingredients and cost $20,000+. Not yet practical for most homes.</p>
+      <p>Robotic kitchen assistants like <a href="https://moley.com/" target="_blank" rel="noopener" class="ext-link">Moley Robotics</a> can follow recipes and cook simple meals, but they require pre-prepped ingredients and run well into five figures. Not yet practical for the average kitchen.</p>
       <span class="chore-status">⚠️ Prototype Stage</span>
     </div>
     
     <div class="chore-card limited">
-      <div class="chore-icon">️</div>
-      <div class="chore-title">Dishwasher Loading</div>
-      <p>Experimental robots can load and unload dishwashers, but they're slow and require specific dishware arrangements. Research projects from universities show promise but aren't commercial yet.</p>
-      <span class="chore-status">⚠️ Experimental</span>
+      <div class="chore-icon">🍽️</div>
+      <div class="chore-title">Humanoid Multi-Task Demos</div>
+      <p>Humanoid robots are starting to show off genuinely impressive one-off skills — <a href="https://www.figure.ai/" target="_blank" rel="noopener" class="ext-link">Figure's</a> humanoid has demonstrated autonomous laundry folding, and LG's CLOiD was shown at CES 2026 attempting to load a washer and fold towels. These are still choreographed demos, not something you can buy and put to work in your kitchen today.</p>
+      <span class="chore-status">⚠️ Demo/Experimental</span>
     </div>
     
     <div class="chore-card future">
       <div class="chore-icon">🧽</div>
       <div class="chore-title">Bathroom Cleaning</div>
-      <p>Scrubbing toilets, cleaning showers, and wiping mirrors require complex manipulation and dealing with liquids. Some prototypes exist but nothing reliable or commercially available.</p>
-      <span class="chore-status">🔮 3-5 Years Away</span>
+      <p>Scrubbing toilets, cleaning showers, and wiping mirrors require complex manipulation and handling liquids on uneven surfaces. Some prototypes exist, but nothing reliable or commercially available yet.</p>
+      <span class="chore-status">🔮 Years Away</span>
     </div>
   </div>
 
   <h2 id="what-they-cant"><span class="h2-mark">03</span> What AI Robots Still CAN'T Do (But You Wish They Could)</h2>
   
-  <p class="reveal">Here's where reality disappoints. Despite the hype, there are still many household tasks that stump even the most advanced AI robots:</p>
+  <p class="reveal">Here's where reality disappoints. Despite the demos and the headlines, plenty of household tasks still stump even the most advanced robots:</p>
 
   <h3>The "Last Mile" Problem</h3>
-  <p class="reveal">Robots are great at repetitive, predictable tasks in controlled environments. But homes are chaotic. Toys on the floor, pet hair everywhere, clothes draped over chairs—this unpredictability is the enemy of robotics. A robot might vacuum your floor perfectly, but if there's a sock in the way, it might get stuck or push the sock around rather than picking it up.</p>
+  <p class="reveal">Robots are great at repetitive, predictable tasks in controlled environments. Homes are the opposite of that. Toys on the floor, pet hair everywhere, clothes draped over a chair — unpredictability is the enemy of robotics. A robot might vacuum your floor beautifully, but if there's a sock in its path, it may just get stuck or shove the sock around instead of picking it up.</p>
 
   <h3>Complex Manipulation</h3>
-  <p class="reveal">Human hands are incredibly sophisticated. We can fold a fitted sheet (okay, maybe not all of us), untangle headphones, or carefully place a fragile vase on a shelf. Robots struggle with these tasks because they require fine motor control, tactile feedback, and understanding of object properties that AI is still developing.</p>
+  <p class="reveal">Human hands are absurdly capable. We can fold a fitted sheet (some of us, anyway), untangle a knot of cables, or set a fragile vase down without a second thought. Robots struggle here because it takes fine motor control, tactile feedback, and an understanding of how objects behave — all things AI is still catching up on.</p>
 
-  <p class="reveal">This is where research into <a href="https://nyvoraai.github.io/ai-news/can-robots-learn-from-humans-watching.html">robots learning from humans</a> becomes crucial. By watching humans perform tasks, robots can learn the subtle techniques we take for granted.</p>
+  <p class="reveal">This is exactly why research into <a href="https://nyvoraai.github.io/ai-news/can-robots-learn-from-humans-watching.html">robots learning from humans</a> matters so much. Watching a person do a task, rather than being explicitly programmed for it, is how robots pick up the small techniques we take for granted.</p>
 
   <h3>Multi-Step Reasoning</h3>
-  <p class="reveal">Imagine telling a robot: "The house is a mess, please tidy up." A human understands this means: pick up clothes, put away dishes, organize clutter, maybe vacuum. A robot doesn't know where to start. Current AI lacks the common sense and contextual understanding to break down vague instructions into actionable steps.</p>
+  <p class="reveal">Tell a robot "the house is a mess, please tidy up" and a person instantly knows what that means: pick up clothes, put away dishes, deal with clutter, maybe vacuum. A robot doesn't automatically know where to start. Today's AI still lacks the everyday common sense to turn a vague instruction into a concrete plan of action — though large language models are starting to close that gap for simpler cases.</p>
 
   <h2 id="best-robots"><span class="h2-mark">04</span> Best AI Household Robots You Can Buy in 2026</h2>
   
-  <p class="reveal">If you're ready to bring some robot help into your home, here are the top performers across different categories:</p>
+  <p class="reveal">If you're ready to bring some robot help into your home, here are solid picks across categories. Prices and models shift often in this market, so treat these as a starting point rather than gospel — check current listings before buying.</p>
 
   <div class="tbl-wrap reveal">
     <table class="comp-table">
       <thead>
         <tr>
           <th>Category</th>
-          <th>Best Robot</th>
-          <th>Price</th>
-          <th>Rating</th>
+          <th>Example Model</th>
+          <th>Typical Price</th>
+          <th>Maturity</th>
           <th>Best For</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td><strong>Vacuum & Mop</strong></td><td>Roborock S8 Pro Ultra</td><td>$1,099</td><td>⭐⭐⭐⭐⭐</td><td>Complete floor cleaning</td></tr>
-        <tr><td><strong>Budget Vacuum</strong></td><td>Eufy RoboVac 11S</td><td>$229</td><td>⭐⭐⭐⭐</td><td>Affordable daily cleaning</td></tr>
-        <tr><td><strong>Lawn Care</strong></td><td>Husqvarna Automower 430XH</td><td>$2,499</td><td>⭐⭐⭐⭐⭐</td><td>Large lawns up to 0.8 acres</td></tr>
-        <tr><td><strong>Window Cleaning</strong></td><td>Ecovacs Winbot W2 Pro</td><td>$449</td><td>⭐⭐⭐⭐</td><td>High-rise apartments</td></tr>
-        <tr><td><strong>Pool Cleaning</strong></td><td>Dolphin Premier</td><td>$1,299</td><td>⭐⭐⭐⭐⭐</td><td>All pool types</td></tr>
-        <tr><td><strong>Laundry Folding</strong></td><td>FoldiMate</td><td>$1,999</td><td>⭐⭐⭐</td><td>Early adopters only</td></tr>
+        <tr><td><strong>Vacuum & Mop</strong></td><td>Roborock S8 Pro Ultra</td><td>~$1,100</td><td>⭐⭐⭐⭐⭐</td><td>Complete floor cleaning</td></tr>
+        <tr><td><strong>Budget Vacuum</strong></td><td>Eufy RoboVac line</td><td>~$200-300</td><td>⭐⭐⭐⭐</td><td>Affordable daily cleaning</td></tr>
+        <tr><td><strong>Lawn Care</strong></td><td>Husqvarna Automower 430XH</td><td>~$2,500</td><td>⭐⭐⭐⭐⭐</td><td>Large lawns up to 0.8 acres</td></tr>
+        <tr><td><strong>Window Cleaning</strong></td><td>Ecovacs Winbot W2 Pro</td><td>~$450</td><td>⭐⭐⭐⭐</td><td>High-rise apartments</td></tr>
+        <tr><td><strong>Pool Cleaning</strong></td><td>Dolphin Premier</td><td>~$1,300</td><td>⭐⭐⭐⭐⭐</td><td>All pool types</td></tr>
+        <tr><td><strong>Laundry Folding</strong></td><td>Weave Isaac 0</td><td>~$8,000</td><td>⭐⭐</td><td>Bay Area early adopters only</td></tr>
       </tbody>
     </table>
   </div>
 
   <h3>The Standout: Robot Vacuums</h3>
-  <p class="reveal">If you buy one household robot, make it a good robot vacuum. The technology has matured to the point where they're genuinely useful. Modern models can:</p>
+  <p class="reveal">If you buy exactly one household robot, make it a good vacuum. This is the category that's actually matured. Modern models can:</p>
   
   <ul class="reveal">
     <li>Map your entire home and clean room-by-room</li>
@@ -594,11 +597,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
     <li>Schedule cleanings when you're not home</li>
   </ul>
 
-  <p class="reveal">The time savings are real. Most users report saving 2-4 hours per week on floor cleaning. That's 100-200 hours per year—almost a full work week!</p>
+  <p class="reveal">The time savings are real, even if exact numbers vary by household — most owners report the vacuum genuinely takes floor cleaning off their weekly to-do list rather than just supplementing it.</p>
 
   <h2 id="pricing"><span class="h2-mark">05</span> Pricing: What You'll Actually Pay</h2>
   
-  <p class="reveal">Household robots range from "impulse buy" to "second mortgage." Here's what to expect:</p>
+  <p class="reveal">Household robots range from "impulse buy" to "small down payment." Here's roughly what to expect:</p>
 
   <div class="pricing-grid reveal">
     <div class="pricing-card">
@@ -639,10 +642,10 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
     
     <div class="pricing-card">
       <div class="pricing-name">Future Tech</div>
-      <div class="pricing-cost">$10,000-20,000+</div>
+      <div class="pricing-cost">$8,000-20,000+</div>
       <ul class="pricing-features">
+        <li>Early laundry-folding stations</li>
         <li>Humanoid prototypes</li>
-        <li>Laundry folding robots</li>
         <li>Cooking robots</li>
         <li>Multi-purpose assistants</li>
         <li>Early adopter territory</li>
@@ -652,23 +655,26 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h2 id="future"><span class="h2-mark">06</span> The Future: When Will We Get Rosie?</h2>
   
-  <p class="reveal">The dream of a general-purpose household robot—one that can do everything—is still alive. Several companies are working on it:</p>
+  <p class="reveal">The dream of a true general-purpose household robot is still alive, and 2026 has been a genuinely active year for it. A few companies worth watching:</p>
 
   <h3>Tesla Optimus</h3>
-  <p class="reveal">Elon Musk's ambitious project aims to create a humanoid robot that can perform any task a human can. <a href="https://nyvoraai.github.io/ai-news/what-is-the-tesla-optimus-robot.html">Tesla Optimus</a> is being trained to handle manufacturing tasks now, with household applications planned for later. Musk promises a price under $20,000, though most experts are skeptical of that timeline.</p>
+  <p class="reveal">Elon Musk's project aims for a humanoid that can perform a wide range of human tasks. <a href="https://nyvoraai.github.io/ai-news/what-is-the-tesla-optimus-robot.html">Tesla Optimus</a> is currently being trained on manufacturing tasks, with household applications planned for later. Musk has floated a price under $20,000, though that figure has been repeated — and pushed back — before, so it's worth treating as a target rather than a near-term reality.</p>
 
   <h3>Figure AI</h3>
-  <p class="reveal">Figure's humanoid robot is being developed specifically for both industrial and home use. They've partnered with OpenAI to give their robots advanced language understanding, meaning you could theoretically tell them what to do in natural language.</p>
+  <p class="reveal">Figure's humanoid robot is being developed for both industrial and home use, and the company has partnered with OpenAI to give it stronger natural-language understanding. In early 2026, <a href="https://tech.yahoo.com/ai/articles/wild-video-shows-humanoid-robot-144901195.html" target="_blank" rel="noopener" class="ext-link">Figure demonstrated its robot folding laundry fully autonomously</a> using an end-to-end neural network — a genuinely notable technical milestone, even if it was a controlled demo rather than a shipped product.</p>
+
+  <h3>LG CLOiD and the CES 2026 Crowd</h3>
+  <p class="reveal">At <a href="https://www.aol.com/articles/ces-2026-laundry-folding-robots-212327500.html" target="_blank" rel="noopener" class="ext-link">CES 2026</a>, LG showed off CLOiD, a humanoid butler concept that attempted to load a washer, fold a dish towel, and fetch milk from the fridge — slowly, and with a fair bit of hesitation on stage. It's a useful reality check: even the flashiest demos are still deliberate and far from fast.</p>
 
   <h3>Boston Dynamics</h3>
-  <p class="reveal">Known for their incredibly agile robots like Atlas, Boston Dynamics is now focusing on practical applications. <a href="https://nyvoraai.github.io/ai-news/what-is-boston-dynamics-doing-with-ai.html">What Boston Dynamics is doing with AI</a> includes developing robots that can navigate complex environments and perform manipulation tasks, though they're currently focused on industrial rather than home use.</p>
+  <p class="reveal">Known for the eerily agile Atlas robot, Boston Dynamics has been shifting toward practical applications. <a href="https://nyvoraai.github.io/ai-news/what-is-boston-dynamics-doing-with-ai.html">What Boston Dynamics is doing with AI</a> covers how their robots are learning to navigate complex environments and manipulate objects, though the near-term focus is still industrial rather than home use.</p>
 
   <h3>Realistic Timeline</h3>
   <ul class="reveal">
-    <li><strong>2026-2027:</strong> Better specialized robots (cleaning, lawn care, etc.)</li>
+    <li><strong>2026-2027:</strong> Better specialized robots (cleaning, lawn care, etc.) and more humanoid demos, but few shipped consumer products</li>
     <li><strong>2028-2030:</strong> First generation of general-purpose household robots (expensive, limited)</li>
-    <li><strong>2030-2035:</strong> More capable and affordable general-purpose robots</li>
-    <li><strong>2035+:</strong> Widespread adoption of household humanoid robots</li>
+    <li><strong>2030-2035:</strong> More capable and more affordable general-purpose robots</li>
+    <li><strong>2035+:</strong> Wider adoption of household humanoid robots, assuming the industry hits these targets — it has a track record of missing them</li>
   </ul>
 
   <h2>Are Household Robots Worth It?</h2>
@@ -677,50 +683,50 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h3>Yes, If:</h3>
   <ul class="reveal">
-    <li>You hate vacuuming and mopping (robot vacuums are game-changers)</li>
+    <li>You hate vacuuming and mopping (robot vacuums are genuinely a game-changer)</li>
     <li>You have a large lawn (robotic mowers pay for themselves in time saved)</li>
-    <li> You live in a high-rise (window cleaning robots are safer than ladders)</li>
-    <li>You have mobility issues (robots can maintain independence)</li>
-    <li>You're tech-savvy and love automation</li>
+    <li>You live in a high-rise (window-cleaning robots are safer than a ladder)</li>
+    <li>You have mobility issues (robots can help maintain independence)</li>
+    <li>You're tech-savvy and enjoy automation for its own sake</li>
   </ul>
 
   <h3>No, If:</h3>
   <ul class="reveal">
-    <li>You expect a robot to do everything (we're not there yet)</li>
-    <li>You're on a tight budget (good robots aren't cheap)</li>
+    <li>You expect a robot to handle everything (we're not there yet)</li>
+    <li>You're on a tight budget (the good ones aren't cheap)</li>
     <li>Your home is very cluttered (robots struggle with chaos)</li>
-    <li>You enjoy doing chores (some people find them meditative!)</li>
+    <li>You actually enjoy doing chores (some people genuinely find them meditative!)</li>
   </ul>
 
   <h2 id="faq"><span class="h2-mark">07</span> Frequently Asked Questions</h2>
   <div class="faq reveal">
     <details open>
       <summary>Can AI robots do household chores yet?</summary>
-      <div class="faq-body">Yes, but with limitations. In 2026, AI robots can handle specific tasks like vacuuming (Roomba), mopping, window cleaning, and lawn mowing autonomously. However, complex multi-step chores like cooking full meals, folding laundry, or deep cleaning bathrooms still require significant human oversight or don't exist yet. The technology is advancing rapidly but we're not at the 'Jetsons' level yet.</div>
+      <div class="faq-body">Yes, but with limitations. In 2026, AI robots can handle specific tasks like vacuuming, mopping, window cleaning, and lawn mowing autonomously. Complex multi-step chores like cooking full meals, folding laundry without human help, or deep-cleaning bathrooms still require significant human oversight or simply aren't commercially available yet. The technology is advancing fast, but we're not at "Jetsons" level.</div>
     </details>
     <details>
       <summary>What household chores can robots do in 2026?</summary>
-      <div class="faq-body">Current AI robots can: vacuum and mop floors autonomously, clean windows, mow lawns, clean pools, fold simple laundry items (limited), load/unload dishwashers (experimental), and organize items on flat surfaces. Advanced prototypes can cook simple meals and do basic tidying, but these are not yet widely available or affordable.</div>
+      <div class="faq-body">Current AI robots can vacuum and mop floors autonomously, clean windows, mow lawns, and clean pools. Laundry folding exists but usually needs human assistance (like Weave's Isaac 0), and dishwasher loading remains experimental. Advanced prototypes and demos can cook simple meals or fold laundry fully autonomously, but these aren't widely available or affordable products yet.</div>
     </details>
     <details>
       <summary>How much do household robots cost?</summary>
-      <div class="faq-body">Prices vary widely: Robot vacuums ($200-$1,500), robot mops ($300-$800), lawn mowing robots ($800-$3,000), window cleaners ($200-$500). Advanced multi-purpose humanoid robots like Tesla Optimus are targeting under $20,000 but aren't commercially available yet. Specialized cooking or laundry robots can cost $5,000-$15,000.</div>
+      <div class="faq-body">Prices vary widely: robot vacuums ($200-$1,500), robot mops ($300-$800), lawn-mowing robots ($800-$3,000), window cleaners ($200-$500). Advanced multi-purpose humanoid robots like Tesla Optimus are targeting under $20,000 but aren't commercially available yet. Specialized cooking or laundry-assist robots currently run $8,000-$20,000+.</div>
     </details>
     <details>
       <summary>Are robot cleaners worth it?</summary>
-      <div class="faq-body">For routine floor cleaning, yes. Robot vacuums and mops save 2-4 hours per week for most households and have become highly reliable. However, they still require maintenance (emptying bins, cleaning brushes) and can't replace deep cleaning. The convenience factor is high for busy households, but they complement rather than replace traditional cleaning.</div>
+      <div class="faq-body">For routine floor cleaning, yes. Robot vacuums and mops have become highly reliable and reclaim real time for most households. They still need maintenance (emptying bins, cleaning brushes) and can't replace a deep clean, but the convenience is high enough that they complement rather than replace traditional cleaning for most people.</div>
     </details>
     <details>
       <summary>Can robots fold laundry?</summary>
-      <div class="faq-body">Yes, but not well yet. Robots like FoldiMate can fold simple items like t-shirts and towels, but they're slow (several minutes per item), expensive ($2,000-$15,000), and struggle with complex garments, wrinkles, or delicates. The technology exists but isn't practical for most households yet. Expect major improvements by 2028-2030.</div>
+      <div class="faq-body">Getting there, but not cleanly solved yet. FoldiMate, once the highest-profile attempt, shut down in 2021 without shipping. The current frontier is products like Weave's Isaac 0 (around $8,000, still leaning on remote human operators) and research demos like Figure's humanoid folding laundry fully autonomously. Expect meaningful improvement by 2028-2030, but nothing cheap or fully hands-off is on shelves today.</div>
     </details>
     <details>
       <summary>Will robots replace human housekeepers?</summary>
-      <div class="faq-body">Partially, but not completely. Robots excel at repetitive, predictable tasks like vacuuming and lawn mowing. However, human housekeepers are still far better at complex tasks requiring judgment, adaptability, and fine motor skills. The future likely involves robots handling routine maintenance while humans focus on deep cleaning and complex organization tasks.</div>
+      <div class="faq-body">Partially, but not completely. Robots are strong at repetitive, predictable tasks like vacuuming and mowing. Human housekeepers remain far better at judgment calls, adaptability, and fine motor tasks. The likely near-term future is robots handling routine maintenance while people focus on deep cleaning and organization.</div>
     </details>
     <details>
       <summary>How do robot vacuums navigate?</summary>
-      <div class="faq-body">Modern robot vacuums use a combination of technologies: LIDAR (laser mapping) to create floor plans, cameras for obstacle avoidance, cliff sensors to prevent falls, and AI algorithms to plan efficient cleaning paths. They learn your home's layout over time and can be programmed to clean specific rooms on schedules. Some even use AI to identify and avoid specific obstacles like pet waste or charging cables.</div>
+      <div class="faq-body">Modern robot vacuums combine LIDAR (laser mapping) to build a floor plan, cameras for obstacle avoidance, cliff sensors to avoid falls, and AI algorithms to plan efficient cleaning paths. They learn a home's layout over time and can be scheduled to clean specific rooms. Many can now identify and steer around specific obstacles like pet waste or charging cables.</div>
     </details>
   </div>
 
@@ -729,7 +735,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
     <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team" onerror="this.remove()"/></div>
     <div>
       <h3>Written by the NyvoraAI Team</h3>
-      <p>We test and review AI robots so you don't have to waste money on gadgets that don't work. This guide was updated in June 2026 with the latest household robot capabilities. Curious about how these robots actually work? Learn <a href="https://nyvoraai.github.io/ai-news/how-do-self-driving-cars-use-ai.html">how do self-driving cars use AI</a>—the same technology powers many robot vacuums! Or <a href="https://nyvoraai.github.io/contact.html">contact us</a> with your robot questions.</p>
+      <p>We track AI robots so you don't have to gamble your money on gadgets that don't work. This guide was updated in June 2026 with the latest household robot capabilities. Curious how these robots actually work? Learn <a href="https://nyvoraai.github.io/ai-news/how-do-self-driving-cars-use-ai.html">how self-driving cars use AI</a> — a lot of the same navigation tech shows up in robot vacuums. Or <a href="https://nyvoraai.github.io/contact.html">contact us</a> with your robot questions.</p>
     </div>
   </div>
 
