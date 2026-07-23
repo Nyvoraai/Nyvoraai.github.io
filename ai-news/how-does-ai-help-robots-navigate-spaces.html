@@ -396,7 +396,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <p class="reveal">Imagine walking into a dark room for the first time. You don't have a map. You don't have GPS. Yet, within seconds, your brain constructs a mental map of the room. You know where the door is, you sense the proximity of the coffee table, and you can navigate around a sleeping dog without waking it up.</p>
 
-  <p class="reveal">For decades, robots were blind and clumsy. They could only repeat pre-programmed movements in strictly controlled environments. But today, robots are walking through crowded hospitals, delivering packages in busy warehouses, and vacuuming homes filled with scattered toys. The secret to this revolution isn't just better wheels or stronger motors—it's <strong>AI</strong>.</p>
+  <p class="reveal">For decades, robots were blind and clumsy. They could only repeat pre-programmed movements in strictly controlled environments. Today, robots are walking through crowded hospitals, delivering packages in busy warehouses, and vacuuming homes filled with scattered toys. The shift didn't come from better wheels or stronger motors. It came from AI.</p>
 
   <p class="reveal">If you are wondering <strong>how does AI help robots navigate spaces</strong>, the answer lies in a complex symphony of sensors, machine learning algorithms, and real-time decision-making. In this guide, we will pull back the curtain on the technology that allows machines to move intelligently through our world.</p>
 
@@ -441,7 +441,9 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   
   <p class="reveal">If you rely only on LiDAR, you might crash into a glass window because lasers pass right through it. If you rely only on cameras, you might be blinded by a sudden change in lighting. This is where <strong>Sensor Fusion</strong> comes in.</p>
 
-  <p class="reveal">AI algorithms take the noisy, imperfect data from all these different sensors and stitch them together into a single, coherent model of the world. It's like the human brain combining what you see, what you hear, and what you feel with your feet to understand your environment. The AI filters out the "noise" (like a shadow that looks like a hole) and confirms the "signal" (a solid wall).</p>
+  <p class="reveal">AI algorithms take the noisy, imperfect data from all these different sensors and stitch them together into a single, coherent model of the world. It's a bit like how your own brain combines what you see, what you hear, and what you feel through your feet to understand a room. The AI filters out the "noise" (a shadow that looks like a hole) and confirms the "signal" (an actual, solid wall).</p>
+
+  <p class="reveal">This isn't as simple as it sounds. Every sensor reports on a slightly different timescale, and a camera frame captured a few milliseconds before a LiDAR sweep can throw off the whole picture if the robot is moving quickly. Engineers solve this with tight time-synchronization and probabilistic models like Kalman filters, which weigh each sensor's input based on how much it can be trusted in that specific moment. A camera, for instance, becomes less trustworthy the second the lights flicker or the sun glares through a window, so the AI leans harder on LiDAR and the IMU until visual conditions stabilize again. This constant, second-by-second rebalancing is really what separates a robot that feels "smart" from one that keeps clipping doorframes.</p>
 
   <h2 id="slam"><span class="h2-mark">03</span> What is SLAM? (The Magic Acronym)</h2>
   
@@ -449,7 +451,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <p class="reveal">Imagine you are dropped into a maze blindfolded. You have to explore the maze to draw a map, but to draw the map, you need to know where you are. It's a paradox. SLAM solves this paradox mathematically. As the robot moves, it uses its sensors to estimate how far it has traveled (odometry) while simultaneously identifying landmarks (corners, doors, unique patterns). It constantly updates its internal map and its position on that map at the same time.</p>
 
-  <p class="reveal">Modern AI-enhanced SLAM (often called Deep SLAM) uses neural networks to recognize these landmarks much faster and more accurately than traditional mathematical methods, even in environments that look very similar (like long, identical hotel hallways).</p>
+  <p class="reveal">Modern AI-enhanced SLAM (often called Deep SLAM) uses neural networks to recognize these landmarks much faster and more accurately than traditional mathematical methods, even in environments that look very similar (like long, identical hotel hallways). You can see a real-world version of this playing out 140 million miles away: NASA's Perseverance rover uses a self-driving system called AutoNav to build 3D maps of Martian terrain and re-plan its route around rocks on the fly, all without waiting for instructions from Earth, according to <a href="https://www.jpl.nasa.gov/news/nasas-self-driving-perseverance-mars-rover-takes-the-wheel/" target="_blank" rel="noopener">NASA's Jet Propulsion Laboratory</a>. If SLAM can work on an alien planet with a communication delay of several minutes, it's not hard to see why it works so well in a hotel hallway.</p>
 
   <h2 id="semantic"><span class="h2-mark">04</span> Semantic Navigation: Beyond "Obstacle Avoidance"</h2>
   
@@ -476,7 +478,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   <p class="reveal">How is this technology being deployed today?</p>
 
   <h3>1. Logistics and Warehousing</h3>
-  <p class="reveal">In massive fulfillment centers, thousands of Autonomous Mobile Robots (AMRs) navigate dynamically. They don't just follow lines on the floor; they communicate with each other (Swarm AI) to optimize traffic flow and avoid bottlenecks. This physical automation is the backbone of modern <a href="https://nyvoraai.github.io/ai-news/what-is-robot-process-automation-rpa.html">what is robot process automation (RPA)</a>.</p>
+  <p class="reveal">In massive fulfillment centers, thousands of Autonomous Mobile Robots (AMRs) navigate dynamically. They don't just follow lines on the floor; they communicate with each other (Swarm AI) to optimize traffic flow and avoid bottlenecks. The field has grown fast enough that the <a href="https://www.nist.gov/el/intelligent-systems-division-73500/mobile-robotics-systems-research-and-standard-test-methods-3" target="_blank" rel="noopener">National Institute of Standards and Technology</a> now runs dedicated research into performance and safety test methods for these mobile robots, precisely because so many of them are now sharing floor space with human workers. This physical automation is the backbone of modern <a href="https://nyvoraai.github.io/ai-news/what-is-robot-process-automation-rpa.html">what is robot process automation (RPA)</a>.</p>
 
   <h3>2. Domestic Helpers</h3>
   <p class="reveal">Robot vacuums and mops are the most common navigation AI in our homes. They map our living rooms, remember where the "high traffic" areas are, and avoid "no-go zones" like pet bowls. But can they do more than just clean? We investigate the limits of domestic dexterity in <a href="https://nyvoraai.github.io/ai-news/can-ai-robots-do-household-chores-yet.html">can AI robots do household chores yet</a>.</p>
@@ -520,9 +522,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h2 id="future"><span class="h2-mark">08</span> The Future: Neural Maps and Swarm Intelligence</h2>
   
-  <p class="reveal">We are moving beyond simple 2D maps. The future of navigation involves <strong>Neural Radiance Fields (NeRFs)</strong> and <strong>3D Gaussian Splatting</strong>. These AI techniques allow robots to build photorealistic, 3D volumetric memories of a space. A robot won't just know "there is a wall there"; it will remember the exact texture of the wallpaper and the reflection of the light on the floor, allowing for hyper-precise localization even if the lighting changes.</p>
+  <p class="reveal">We are moving beyond simple 2D maps. The next wave of navigation involves <strong>Neural Radiance Fields (NeRFs)</strong> and <strong>3D Gaussian Splatting</strong>. These AI techniques let robots build photorealistic, 3D volumetric memories of a space. A robot won't just know "there is a wall there." It will remember the exact texture of the wallpaper and the reflection of the light on the floor, allowing for hyper-precise localization even if the lighting changes later.</p>
 
-  <p class="reveal">Furthermore, <strong>Swarm Intelligence</strong> will allow hundreds of robots to share their mapping data instantly. If one robot explores a new floor of a building, every other robot in the fleet instantly knows the layout. It is the ultimate collective intelligence.</p>
+  <p class="reveal">Then there's <strong>Swarm Intelligence</strong>, which lets hundreds of robots share their mapping data instantly. If one robot explores a new floor of a building, every other robot in the fleet knows the layout a moment later. It's collective memory, at machine speed.</p>
+
+  <p class="reveal">None of this means robot navigation is a solved problem. Reflective floors, fog, heavy rain, and rooms full of near-identical furniture can still confuse even well-tuned systems, and edge cases like a child suddenly darting out from behind a couch remain genuinely hard. Most navigation failures reported by manufacturers today trace back to these unusual, low-frequency situations rather than everyday hallways or living rooms, which is exactly why so much current research money is going toward predictive modeling and richer 3D scene understanding rather than better hardware alone.</p>
 
   <p class="reveal">If you are still trying to wrap your head around the hardware vs. software distinction in these machines, our guide on <a href="https://nyvoraai.github.io/ai-news/what-is-the-difference-between-ai-and-a-robot.html">what is the difference between AI and a robot</a> clears up the terminology.</p>
 
