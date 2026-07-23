@@ -49,7 +49,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Schema: Organization -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":"https://nyvoraai.github.io/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai"]}
+{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.github.io","logo":"https://nyvoraai.github.io/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai","https://bsky.app/profile/nyvoraai.bsky.social","https://in.pinterest.com/nyvoraai/","https://mastodon.social/@nyvora","https://www.linkedin.com/company/nyvoraai"]}
 </script>
 
 <!-- Schema: WebSite -->
@@ -186,13 +186,15 @@ nav{position:sticky;top:0;z-index:200;background:rgba(239,241,234,.92);backdrop-
 .prose a,.faq-body a{color:var(--teal-dp);border-bottom:1px solid rgba(14,79,69,.25);transition:border-color .2s,color .2s}
 .prose a:hover,.faq-body a:hover{color:var(--coral);border-color:var(--coral);text-decoration:none}
 
-/* KEY TAKEAWAYS */
-.key-takeaways{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow)}
-.kt-title{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
-.key-takeaways ul{margin:0;list-style:none}
-.key-takeaways li{display:flex;gap:10px;margin-bottom:9px;font-size:15.5px;color:var(--ink-soft)}
+/* KEY TAKEAWAYS - COLORFUL & ANIMATED */
+.key-takeaways{background:linear-gradient(135deg, var(--paper) 0%, var(--you-bg) 100%);border:2px solid var(--coral-soft);border-left:5px solid var(--coral);border-radius:0 var(--radius) var(--radius) 0;padding:26px 30px;margin:24px 0;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.key-takeaways::before{content:'';position:absolute;top:-50%;right:-50%;width:100%;height:100%;background:radial-gradient(circle,var(--gold-soft),transparent 70%);opacity:.4;animation:pulseGlow 4s ease-in-out infinite}
+@keyframes pulseGlow{0%,100%{transform:scale(1);opacity:.4}50%{transform:scale(1.1);opacity:.6}}
+.kt-title{font-family:var(--font-display);font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--coral-dp);margin-bottom:16px;display:flex;align-items:center;gap:8px;position:relative;z-index:1}
+.key-takeaways ul{margin:0;list-style:none;position:relative;z-index:1}
+.key-takeaways li{display:flex;gap:12px;margin-bottom:12px;font-size:16px;color:var(--ink);line-height:1.6}
 .key-takeaways li:last-child{margin-bottom:0}
-.key-takeaways li::before{content:'✨';color:var(--gold);flex-shrink:0;font-weight:700}
+.key-takeaways li::before{content:'✨';color:var(--gold);flex-shrink:0;font-weight:700;font-size:18px}
 
 /* COMPARISON TABLE */
 .comp-table{width:100%;border-collapse:collapse;margin:32px 0;background:var(--paper);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
@@ -296,6 +298,17 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 .footer-bottom-links a{color:var(--muted);transition:color .2s}
 .footer-bottom-links a:hover{color:var(--ink);text-decoration:none}
 
+/* SIDE POPUP - ANIMATED */
+.side-popup{position:fixed;right:-320px;bottom:100px;width:280px;background:var(--paper);border:2px solid var(--gold);border-radius:var(--radius);padding:20px;box-shadow:0 10px 40px rgba(0,0,0,0.15);z-index:250;transition:right 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)}
+.side-popup.show{right:28px}
+.side-popup-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.side-popup-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--gold);display:flex;align-items:center;gap:6px}
+.side-popup-close{background:none;border:none;cursor:pointer;color:var(--muted);font-size:20px;line-height:1;transition:color .2s}
+.side-popup-close:hover{color:var(--coral)}
+.side-popup-content{font-size:14px;color:var(--ink-soft);line-height:1.5;margin-bottom:16px}
+.side-popup-btn{display:block;width:100%;text-align:center;background:var(--gold);color:#fff;padding:10px;border-radius:8px;font-weight:700;font-size:13px;transition:all .2s}
+.side-popup-btn:hover{background:var(--coral);transform:translateY(-2px);text-decoration:none}
+
 /* BACK TO TOP */
 #back-top{position:fixed;bottom:28px;right:28px;background:var(--coral);color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;cursor:pointer;border:none;box-shadow:var(--shadow);z-index:200}
 #back-top.visible{opacity:1;pointer-events:all}
@@ -316,6 +329,8 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   .calc-grid{grid-template-columns:1fr}
   .comp-table{font-size:14px}
   .comp-table th,.comp-table td{padding:12px}
+  .side-popup{width:260px;right:-280px}
+  .side-popup.show{right:16px}
 }
 @media(max-width:600px){
   .related-grid{grid-template-columns:1fr}
@@ -336,6 +351,10 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 <symbol id="icon-facebook" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 8.6h1.4V6h-1.9c-1.9 0-2.9 1.15-2.9 3v1.5H8.7V13h1.9v6.3h2.4V13h1.7l.3-2.5h-2V9.4c0-.5.2-.8.9-.8z" fill="currentColor"/></symbol>
 <symbol id="icon-x" viewBox="0 0 24 24"><path d="M5.2 4.8l14 14.4M19.2 4.8L5.2 19.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
 <symbol id="icon-youtube" viewBox="0 0 24 24"><rect x="2.3" y="6" width="19.4" height="12" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.3 9.4l5.2 2.6-5.2 2.6z" fill="currentColor"/></symbol>
+<symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="2" y="9" width="4" height="12" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="4" cy="4" r="2" fill="currentColor"/></symbol>
+<symbol id="icon-bluesky" viewBox="0 0 24 24"><path d="M12 10.8c-1.2-2.4-4.8-6.8-8.4-6.8C1.2 4 0 6.4 0 8.4c0 1.2.4 2.4 1.2 3.2 1.2 1.2 2.8 1.6 4 2-1.2.4-2.8 1.2-4 2.4C.4 16.8 0 18 0 19.2c0 2 1.2 4.4 3.6 4.4 3.6 0 7.2-4.4 8.4-6.8 1.2 2.4 4.8 6.8 8.4 6.8 2.4 0 3.6-2.4 3.6-4.4 0-1.2-.4-2.4-1.2-3.2-1.2-1.2-2.8-1.6-4-2 1.2-.4 2.8-1.2 4-2.4.8-.8 1.2-2 1.2-3.2 0-2-1.2-4.4-3.6-4.4-3.6 0-7.2 4.4-8.4 6.8z" fill="currentColor"/></symbol>
+<symbol id="icon-pinterest" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 6c-3.3 0-6 2.7-6 6 0 2.1 1.1 4 2.8 5.1.1-.8.2-2.1.4-2.6.2-.5 1.3-5.5 1.3-5.5s-.3-.7-.3-1.6c0-1.5.9-2.6 2-2.6.9 0 1.4.7 1.4 1.5 0 .9-.6 2.3-.9 3.5-.3 1.1.6 2 1.7 2 2 0 3.6-2.1 3.6-5.2 0-2.7-1.9-4.6-4.7-4.6-3.2 0-5.1 2.4-5.1 4.9 0 .9.4 1.9.8 2.4.1.1.1.2.1.3l-.3 1.2c0 .2-.1.2-.3.1-1.4-.6-2.2-2.6-2.2-4.2 0-3.4 2.5-6.6 7.2-6.6 3.8 0 6.7 2.7 6.7 6.3 0 3.8-2.4 6.8-5.7 6.8-1.1 0-2.2-.6-2.5-1.3 0 0-.5 2-.6 2.5-.2.8-.8 1.8-1.2 2.4.9.3 1.9.4 2.9.4 5.3 0 9.6-4.3 9.6-9.6S17.3 6 12 6z" fill="currentColor"/></symbol>
+<symbol id="icon-mastodon" viewBox="0 0 24 24"><path d="M21.5 12c0-5.5-3.5-7.5-3.5-7.5C16.5 3.5 14 3.1 12 3h0c-2 .1-4.5.5-6 1.5 0 0-3.5 2-3.5 7.5v4c0 4 2 5 4 5h1c1 0 1.5-.5 1.5-1.5v-3c0-1-.5-1.5-1.5-1.5H6c-.5 0-1-.5-1-1V9c0-2 1.5-3 3-3 1 0 2 .5 2 1.5V9c0 .5.5 1 1 1h2c.5 0 1-.5 1-1V7.5c0-1 1-1.5 2-1.5 1.5 0 3 1 3 3v5.5c0 .5-.5 1-1 1h-1.5c-1 0-1.5.5-1.5 1.5v3c0 1 .5 1.5 1.5 1.5h1c2 0 4-1 4-5v-4z" fill="currentColor"/></symbol>
 </defs>
 </svg>
 
@@ -355,7 +374,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 <nav role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="https://nyvoraai.github.io/index.html" class="nav-logo">
-      <img src="https://nyvoraai.github.io/assets/logo.png" alt="" class="logo-img" onerror="this.remove()"/>
+      <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI Logo" class="logo-img" onerror="this.remove()"/>
       Nyvora<span>AI</span>
     </a>
     <ul class="nav-links">
@@ -409,7 +428,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   <p class="article-intro">AI is the brain, and robotics is the body. Discover how these two distinct fields merged to create the autonomous, thinking machines that are reshaping our world in 2026.</p>
   <div class="article-meta">
     <div class="meta-author">
-      <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="" onerror="this.remove()"/></div>
+      <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team Avatar" onerror="this.remove()"/></div>
       <div><div class="meta-name">NyvoraAI Team</div></div>
     </div>
     <span class="meta-sep">·</span>
@@ -445,16 +464,16 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 <main class="layout">
 <article class="prose">
 
-  <p class="reveal">When most people hear "Artificial Intelligence," they picture a chatbot on a screen. When they hear "Robotics," they picture a mechanical arm welding a car door in a factory. For decades, these two fields existed in completely separate universes. Software engineers built brains in the cloud, while mechanical engineers built bodies on the assembly line. But if you look at the cutting edge of technology today, that boundary has completely vanished. </p>
+  <p class="reveal">Let’s be honest for a second: when most of us hear "Artificial Intelligence," we picture a sleek chatbot on a screen. When we hear "Robotics," we picture a clunky mechanical arm welding a car door in a factory. For decades, these two fields existed in completely separate universes. Software engineers built brains in the cloud, while mechanical engineers built bodies on the assembly line. But if you look at the cutting edge of technology today, that boundary has completely vanished.</p>
 
   <p class="reveal">So, <strong>how are AI and robotics connected</strong>? The simplest way to understand it is this: AI provides the cognition, the decision-making, and the ability to learn. Robotics provides the physical form, the sensors to perceive the world, and the actuators to interact with it. Together, they create "Embodied AI"—machines that do not just process data, but actually exist and act in the physical world. Let us dive deep into how this symbiotic relationship works and why it is the most important technological shift of the 2020s.</p>
 
   <div class="key-takeaways quick-answer reveal" id="quick-answer">
-    <div class="kt-title">✨ Quick Answer</div>
+    <div class="kt-title">✨ Quick Answer: The Connection Explained</div>
     <ul>
       <li><strong>The Brain vs. The Body:</strong> AI is the software (the brain) that processes information and makes decisions. Robotics is the hardware (the body) that physically interacts with the environment.</li>
       <li><strong>Embodied AI:</strong> The intersection of the two fields is called Embodied AI. It refers to intelligent systems that have a physical presence and can learn from physical interactions.</li>
-      <li><strong>Can they exist separately?</strong> Yes. AI exists purely in software (like LLMs and predictive algorithms), while traditional robotics exists as pre-programmed, non-learning machines. But the magic happens when they combine.</li>
+      <li><strong>Can they exist separately?</strong> Yes. AI exists purely in software (like LLMs and predictive algorithms), while traditional robotics exists as pre-programmed, non-learning machines. But the real magic happens when they combine.</li>
       <li><strong>The Core Link:</strong> Technologies like Computer Vision, Reinforcement Learning, and Sensor Fusion are the bridges that allow a robot's physical sensors to feed data into an AI's neural networks.</li>
       <li><strong>The Result:</strong> Autonomous vehicles, surgical assistants, and humanoid robots that can navigate messy, unpredictable real-world environments.</li>
     </ul>
@@ -546,16 +565,16 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h2 id="real-world"><span class="h2-mark">04</span> Real-World Applications of the AI-Robotics Connection</h2>
   
-  <p class="reveal">When AI and robotics connect, the results are nothing short of revolutionary. Here is how this synergy is manifesting in the real world.</p>
+  <p class="reveal">When AI and robotics connect, the results are nothing short of revolutionary. Here is how this synergy is manifesting in the real world right now.</p>
 
   <h3>1. Autonomous Vehicles</h3>
   <p class="reveal">A self-driving car is the ultimate example of AI and robotics connected. The robotics side includes the steering, braking, and acceleration systems. The AI side processes terabytes of data per second from cameras and LiDAR, predicting the behavior of pedestrians, other cars, and traffic lights. It is a split-second decision-making engine housed in a two-ton metal body.</p>
 
   <h3>2. Smart Manufacturing & Cobots</h3>
-  <p class="reveal">Collaborative robots (Cobots) work side-by-side with humans. Unlike old caged robots, cobots use AI-driven force sensors and computer vision. If a human steps into their path, or if a hand gets too close, the AI instantly calculates the safest way to stop or reroute the arm to prevent injury. They can also look at a bin of random, shiny parts, identify the correct one, and pick it up, regardless of how it is lying.</p>
+  <p class="reveal">Collaborative robots (Cobots) work side-by-side with humans. Unlike old caged robots, cobots use AI-driven force sensors and computer vision. If a human steps into their path, or if a hand gets too close, the AI instantly calculates the safest way to stop or reroute the arm to prevent injury. Platforms like <a href="https://www.nvidia.com/en-us/autonomous-machines/" target="_blank" rel="noopener">NVIDIA Isaac</a> are pioneering these simulations, allowing robots to learn complex manipulation tasks before they ever touch the physical factory floor.</p>
 
   <h3>3. Healthcare & Surgical Assistants</h3>
-  <p class="reveal">Robotic surgical systems like the da Vinci are enhanced by AI that can overlay 3D maps of a patient's internal anatomy onto the surgeon's view, highlighting blood vessels to avoid. The robot provides the physical precision to make a micro-incision, while the AI provides the cognitive map to ensure it is done safely.</p>
+  <p class="reveal">Robotic surgical systems are being profoundly enhanced by AI that can overlay 3D maps of a patient's internal anatomy onto the surgeon's view, highlighting blood vessels to avoid. The robot provides the physical precision to make a micro-incision, while the AI provides the cognitive map to ensure it is done safely, as frequently documented in <a href="https://spectrum.ieee.org/" target="_blank" rel="noopener">IEEE Spectrum</a> robotics reports.</p>
 
   <h3>4. Space and Deep Sea Exploration</h3>
   <p class="reveal">When you send a rover to Mars, the communication delay means you cannot use a joystick to drive it. The robot must be entirely autonomous. It uses AI to analyze the terrain, identify dangerous sand traps, plan a safe route, and physically drive itself. The AI is the explorer; the rover is just the boots on the ground.</p>
@@ -636,7 +655,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <!-- AUTHOR BOX -->
   <div class="author-box reveal">
-    <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team" onerror="this.remove()"/></div>
+    <div class="meta-avatar">N<img src="https://nyvoraai.github.io/assets/author-avatar.jpg" alt="NyvoraAI Team Avatar" onerror="this.remove()"/></div>
     <div>
       <h3>Written by the NyvoraAI Team</h3>
       <p>We break down the complex intersection of software and hardware to help you understand the future of technology. This guide was updated in June 2026. Have questions? <a href="https://nyvoraai.github.io/contact.html">Contact our team</a> or <a href="https://nyvoraai.github.io/about.html">learn more about our mission</a>.</p>
@@ -712,7 +731,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   <div class="footer-inner">
     <div class="footer-brand">
       <span class="footer-logo">
-        <img src="https://nyvoraai.github.io/assets/logo.png" alt="" class="logo-img" onerror="this.remove()"/>
+        <img src="https://nyvoraai.github.io/assets/logo.png" alt="NyvoraAI Logo" class="logo-img" onerror="this.remove()"/>
         Nyvora<span>AI</span>
       </span>
       <p>Your trusted source for AI news, tool reviews, and practical guides. Empowering creators to harness AI effectively.</p>
@@ -721,6 +740,10 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
         <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Facebook</a>
         <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-x"/></svg> X</a>
         <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</a>
+        <a href="https://www.linkedin.com/company/nyvoraai" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-linkedin"/></svg> LinkedIn</a>
+        <a href="https://bsky.app/profile/nyvoraai.bsky.social" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-bluesky"/></svg> Bluesky</a>
+        <a href="https://in.pinterest.com/nyvoraai/" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-pinterest"/></svg> Pinterest</a>
+        <a href="https://mastodon.social/@nyvora" target="_blank" rel="noopener" class="fs-btn"><svg class="icon"><use href="#icon-mastodon"/></svg> Mastodon</a>
       </div>
     </div>
     <div class="footer-col">
@@ -761,6 +784,18 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 </footer>
 
 </div><!-- /page-wrap -->
+
+<!-- SIDE POPUP -->
+<div class="side-popup" id="sidePopup">
+  <div class="side-popup-header">
+    <div class="side-popup-title">💡 AI Tip of the Day</div>
+    <button class="side-popup-close" onclick="closePopup()" aria-label="Close popup">×</button>
+  </div>
+  <div class="side-popup-content">
+    Want to automate your workflow? Start small. Identify one repetitive task you do daily and explore AI tools to handle it.
+  </div>
+  <a href="https://nyvoraai.github.io/ai-news/how-to-automate-repetitive-tasks-with-ai.html" class="side-popup-btn">Learn How →</a>
+</div>
 
 <!-- BACK TO TOP -->
 <button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
@@ -855,6 +890,20 @@ document.getElementById('nlForm').addEventListener('submit',function(e){
       else{btn.textContent='Try again';btn.disabled=false;}
     }).catch(function(){btn.textContent='Try again';btn.disabled=false;});
 });
+
+// Side Popup Logic
+setTimeout(function(){
+  const popup = document.getElementById('sidePopup');
+  if(popup && !sessionStorage.getItem('popupClosed')){
+    popup.classList.add('show');
+  }
+}, 3000);
+
+function closePopup(){
+  const popup = document.getElementById('sidePopup');
+  popup.classList.remove('show');
+  sessionStorage.setItem('popupClosed', 'true');
+}
 </script>
 </body>
 </html>
