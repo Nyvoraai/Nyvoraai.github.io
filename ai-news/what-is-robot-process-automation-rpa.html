@@ -438,11 +438,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 <main class="layout">
 <article class="prose">
 
-  <p class="reveal">Every business has those repetitive tasks that eat up hours of employee time—data entry, copying information between systems, processing invoices, updating spreadsheets. These tasks are necessary but mind-numbing, error-prone, and frankly, a waste of human potential. What if there was a way to automate these processes without completely overhauling your existing systems?</p>
+  <p class="reveal">Almost every business has one of these: a task nobody enjoys but everyone has to do. Re-typing the same numbers into two systems. Copying a customer's details from an email into a spreadsheet. Chasing down an invoice, checking it against a purchase order, then keying it in by hand. None of it is hard, exactly — it's just slow, repetitive, and one distracted afternoon away from an error that someone else has to clean up later.</p>
 
-  <p class="reveal">That's exactly what Robot Process Automation (RPA) does. Despite the name, RPA has nothing to do with physical robots walking around your office. Instead, it uses software "bots" that mimic human actions on your computer—clicking buttons, typing data, copying and pasting, navigating between applications. These bots work 24/7, never make typos, and can handle thousands of transactions without getting tired or distracted.</p>
+  <p class="reveal">That's the gap Robot Process Automation (RPA) was built to close. The name is a bit misleading — there's no physical robot rolling around the office. RPA is software that watches how a person completes a task and then does the same thing itself: opening applications, clicking, typing, copying data from one screen and pasting it into another. Once it's set up, a bot can run that same process hundreds of times a day without a coffee break, a typo, or a Monday-morning slump.</p>
 
-  <p class="reveal">In this comprehensive guide, we'll explore <strong>what is robot process automation RPA</strong>, how it works, where it's being used, and how you can implement it in your business to boost productivity and reduce costs.</p>
+  <p class="reveal">Below, we'll walk through <strong>what robot process automation (RPA) actually is</strong>, how the bots work under the hood, where companies are getting the most value from them, and what it takes to get a program like this off the ground.</p>
 
   <div class="key-takeaways quick-answer reveal" id="quick-answer">
     <div class="kt-title">✨ Quick Answer</div>
@@ -457,33 +457,33 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h2 id="definition"><span class="h2-mark">01</span> Understanding RPA: Beyond the Name</h2>
   
-  <p class="reveal">The term "Robot Process Automation" can be misleading. When people hear "robot," they often think of physical machines like the ones you might see in manufacturing or the advanced humanoid robots being developed by companies. If you're curious about physical robots, you might want to check out <a href="https://nyvoraai.github.io/ai-news/how-does-figure-ai-robot-work.html">how does Figure AI robot work</a> to understand the difference between physical robotics and software automation.</p>
+  <p class="reveal">"Robot Process Automation" tends to conjure the wrong image. Say "robot" and most people picture a physical arm on a factory floor, or one of the humanoid machines that keep showing up in tech news. If that's the direction your curiosity runs, our piece on <a href="https://nyvoraai.github.io/ai-news/how-does-figure-ai-robot-work.html">how the Figure AI robot works</a> is a good place to see how physical robotics differs from the software we're covering here.</p>
 
-  <p class="reveal">RPA is entirely different. It's purely software-based. Think of it as a digital workforce—virtual employees that live on your servers or in the cloud, working tirelessly to complete tasks that would otherwise require human intervention.</p>
+  <p class="reveal">RPA has no moving parts at all — it lives entirely in software. A more useful mental model is a digital employee: it logs into your systems, follows the steps it was shown, and gets the work done whether it's 3pm on a Tuesday or 3am on a Sunday.</p>
 
   <h3>The Three Pillars of RPA</h3>
   
-  <p class="reveal">Modern RPA platforms are built on three core capabilities:</p>
+  <p class="reveal">Most RPA platforms, whatever their marketing calls them, are built around three core capabilities:</p>
 
   <ul class="reveal">
-    <li><strong>Process Recording:</strong> The ability to record human actions and convert them into automated workflows</li>
-    <li><strong>Orchestration:</strong> Centralized control to manage, schedule, and monitor multiple bots across the organization</li>
-    <li><strong>Integration:</strong> The capability to work with multiple applications, databases, and systems simultaneously</li>
+    <li><strong>Process Recording:</strong> capturing what a person does on screen and turning those actions into a repeatable workflow</li>
+    <li><strong>Orchestration:</strong> a central control layer for scheduling, monitoring, and managing bots across the company</li>
+    <li><strong>Integration:</strong> the ability to touch multiple applications, databases, and systems in a single workflow</li>
   </ul>
 
   <h3>Why "Robot"?</h3>
   
-  <p class="reveal">The term "robot" in RPA comes from the fact that these software bots work autonomously, following predefined rules and processes without human intervention. Like physical robots in a factory, they perform repetitive tasks with consistency and precision. However, unlike physical robots that interact with the physical world, RPA bots interact only with digital interfaces.</p>
+  <p class="reveal">The "robot" label comes from how these bots operate — autonomously, and according to rules someone defined ahead of time, the same way an assembly-line robot repeats its motion without needing instructions each time. The difference is that an RPA bot never touches anything physical; its entire world is screens, fields, and buttons.</p>
 
   <h2 id="how-it-works"><span class="h2-mark">02</span> How RPA Works: The Technical Deep Dive</h2>
   
-  <p class="reveal">To understand RPA, you need to understand how it differs from traditional automation and how it actually executes tasks.</p>
+  <p class="reveal">To really get a feel for RPA, it helps to see how it differs from the automation that came before it, and how a bot actually gets a task done.</p>
 
   <h3>UI-Level vs API-Level Automation</h3>
   
-  <p class="reveal">Traditional automation typically works at the API (Application Programming Interface) level. This means you need direct access to the underlying code or database of the applications you want to automate. This approach is powerful but has limitations: it requires technical expertise, it's expensive to implement, and it doesn't work with legacy systems that don't have APIs.</p>
+  <p class="reveal">Traditional automation usually plugs in at the API (Application Programming Interface) level — you need direct access to an application's underlying code or database. That approach is powerful, but it comes with strings attached: it takes real engineering time, it's expensive, and it simply doesn't work on legacy systems that were never built with an API in the first place.</p>
 
-  <p class="reveal">RPA takes a different approach. It works at the user interface (UI) level, just like a human would. The bot opens applications, clicks buttons, types into fields, and reads data from screens. This means RPA can work with virtually any application that a human can use, including:</p>
+  <p class="reveal">RPA sidesteps that problem by working at the interface level, the same way a person would. The bot opens the application, clicks the buttons, types into the fields, and reads what's on the screen. That means it can operate almost anywhere a human can, including:</p>
 
   <ul class="reveal">
     <li>Legacy systems from the 1990s</li>
@@ -495,32 +495,32 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h3>The Bot Development Process</h3>
   
-  <p class="reveal">Creating an RPA bot typically follows this workflow:</p>
+  <p class="reveal">Building an RPA bot generally follows a fairly predictable path:</p>
 
   <ol class="reveal">
-    <li><strong>Process Discovery:</strong> Identify repetitive, rule-based tasks that are good candidates for automation</li>
-    <li><strong>Process Mapping:</strong> Document every step of the current manual process in detail</li>
-    <li><strong>Bot Development:</strong> Use RPA development tools to create the automation logic</li>
-    <li><strong>Testing:</strong> Validate the bot works correctly in various scenarios</li>
-    <li><strong>Deployment:</strong> Release the bot into production and monitor its performance</li>
-    <li><strong>Maintenance:</strong> Update the bot as processes or systems change</li>
+    <li><strong>Process Discovery:</strong> pinpointing repetitive, rule-based tasks worth automating</li>
+    <li><strong>Process Mapping:</strong> documenting the existing manual process step by step</li>
+    <li><strong>Bot Development:</strong> building the automation logic in an RPA tool</li>
+    <li><strong>Testing:</strong> confirming the bot behaves correctly across different scenarios</li>
+    <li><strong>Deployment:</strong> putting the bot into production and watching how it performs</li>
+    <li><strong>Maintenance:</strong> adjusting the bot as processes or the underlying systems change</li>
   </ol>
 
   <h3>Types of RPA Bots</h3>
   
-  <p class="reveal">There are three main types of RPA bots, each serving different purposes:</p>
+  <p class="reveal">Not every bot works the same way. There are three broad categories, and which one fits depends on the task:</p>
 
-  <p class="reveal"><strong>Attended Bots:</strong> These work alongside human workers, triggered by the user when needed. Think of them as digital assistants that help employees complete tasks faster. For example, a customer service representative might trigger an attended bot to quickly pull up customer information from multiple systems while on a call.</p>
+  <p class="reveal"><strong>Attended Bots</strong> sit alongside a human worker and get triggered on demand — more digital assistant than autonomous agent. A support rep on a call might fire one off to pull a customer's history from three different systems in seconds instead of minutes.</p>
 
-  <p class="reveal"><strong>Unattended Bots:</strong> These run autonomously in the background, executing scheduled tasks without human intervention. They're perfect for batch processing, overnight data synchronization, or any task that doesn't require real-time human oversight.</p>
+  <p class="reveal"><strong>Unattended Bots</strong> run entirely on their own, on a schedule, with no one watching. They're a natural fit for overnight batch jobs, nightly data syncs, or anything that doesn't need a human in the loop.</p>
 
-  <p class="reveal"><strong>Hybrid Bots:</strong> These combine both attended and unattended capabilities, switching between modes as needed. They offer the flexibility to handle both interactive and automated workflows.</p>
+  <p class="reveal"><strong>Hybrid Bots</strong> split the difference, moving between attended and unattended modes depending on what the moment calls for.</p>
 
   <img src="https://nyvoraai.github.io/assets/rpa-bot-types.jpg" alt="What is robot process automation RPA - diagram showing attended, unattended, and hybrid bot types" style="width:100%;border-radius:var(--radius);margin:24px 0;border:1px solid var(--line);box-shadow:var(--shadow)"/>
 
   <h2 id="use-cases"><span class="h2-mark">03</span> Common RPA Use Cases Across Industries</h2>
   
-  <p class="reveal">RPA is being used across virtually every industry to automate repetitive tasks. Here are some of the most common and impactful use cases:</p>
+  <p class="reveal">RPA has quietly found its way into nearly every industry. A few of the use cases below tend to deliver the fastest, most visible payoff:</p>
 
   <div class="usecase-grid reveal">
     <div class="usecase-card">
@@ -568,13 +568,13 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h3>Specific Process Examples</h3>
   
-  <p class="reveal">Let's look at a few specific examples to make this more concrete:</p>
+  <p class="reveal">A few concrete examples make this easier to picture:</p>
 
-  <p class="reveal"><strong>Invoice Processing:</strong> An employee receives an invoice via email. An RPA bot automatically opens the email, extracts the invoice attachment, reads the data using OCR (Optical Character Recognition), validates it against purchase orders, checks for duplicates, and posts the invoice to the accounting system. What used to take 15-20 minutes now takes 2-3 minutes.</p>
+  <p class="reveal"><strong>Invoice Processing:</strong> an invoice lands in someone's inbox. An RPA bot opens the email, pulls the attachment, reads it with OCR (Optical Character Recognition), checks it against the purchase order, screens for duplicates, and posts it to the accounting system — turning a 15-20 minute chore into a 2-3 minute one.</p>
 
-  <p class="reveal"><strong>Employee Onboarding:</strong> When a new employee is hired, an RPA bot creates their user accounts across all systems (email, HR system, payroll, benefits portal), sends welcome emails, schedules orientation sessions, and ensures all paperwork is completed. This process that used to take HR days can now be completed in hours.</p>
+  <p class="reveal"><strong>Employee Onboarding:</strong> a new hire's paperwork used to keep HR busy for days. Now a bot can create accounts across email, the HR system, payroll, and benefits, send the welcome email, and schedule orientation — often within hours of the offer being signed.</p>
 
-  <p class="reveal"><strong>Data Migration:</strong> Moving data from an old system to a new one typically requires massive manual effort. RPA bots can extract data from the legacy system, transform it as needed, and load it into the new system, working 24/7 until the migration is complete.</p>
+  <p class="reveal"><strong>Data Migration:</strong> moving records from an aging system to a new one is exactly the kind of grinding, repetitive work bots are built for — pulling data out, reshaping it, and loading it into the new platform around the clock until the job is done.</p>
 
   <!-- INTERACTIVE CALCULATOR -->
   <div class="calc-box reveal" id="calculator">
@@ -607,11 +607,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h2 id="vs-ai"><span class="h2-mark">04</span> RPA vs AI vs Traditional Automation</h2>
   
-  <p class="reveal">One common question is how RPA relates to artificial intelligence and traditional automation. Understanding these distinctions is crucial for choosing the right technology for your needs.</p>
+  <p class="reveal">A question we hear a lot: where does RPA end and AI begin? Getting this distinction straight matters when you're deciding what to invest in.</p>
 
   <h3>RPA vs Traditional Automation</h3>
   
-  <p class="reveal">Traditional automation (like custom scripts or enterprise integration platforms) works at the API or database level. It's powerful but requires:</p>
+  <p class="reveal">Traditional automation — custom scripts, enterprise integration platforms — works at the API or database level. It's capable, but it asks for a lot in return:</p>
   <ul class="reveal">
     <li>Deep technical expertise</li>
     <li>Access to system APIs or databases</li>
@@ -620,7 +620,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
     <li>Significant changes to existing systems</li>
   </ul>
 
-  <p class="reveal">RPA, on the other hand:</p>
+  <p class="reveal">RPA asks for much less:</p>
   <ul class="reveal">
     <li>Works at the UI level (no API access needed)</li>
     <li>Can be implemented in weeks</li>
@@ -631,13 +631,13 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h3>RPA vs Artificial Intelligence</h3>
   
-  <p class="reveal">This is where many people get confused. RPA and AI are different technologies that can work together but serve different purposes.</p>
+  <p class="reveal">This is the part that trips people up most often. RPA and AI aren't competitors — they're different tools that happen to pair well together.</p>
 
-  <p class="reveal"><strong>RPA is rule-based:</strong> It follows predefined rules and processes. If X happens, do Y. It's deterministic and predictable. RPA bots don't "think" or "learn"—they execute exactly what they're programmed to do.</p>
+  <p class="reveal"><strong>RPA is rule-based.</strong> It does exactly what it's told: if X happens, do Y. Nothing more, nothing less. It doesn't learn and it doesn't improvise — it executes.</p>
 
-  <p class="reveal"><strong>AI is intelligent:</strong> Artificial intelligence can make decisions, learn from data, understand natural language, recognize patterns, and adapt to new situations. AI can handle unstructured data and make judgment calls.</p>
+  <p class="reveal"><strong>AI is closer to judgment.</strong> It can weigh options, learn from data, parse natural language, and adapt when the situation isn't quite what it expected. It's built for exactly the kind of ambiguity RPA can't handle.</p>
 
-  <p class="reveal">However, the line is blurring. Modern RPA platforms are increasingly incorporating AI capabilities, creating what's called "Intelligent Automation" or "Cognitive RPA." This combination allows bots to:</p>
+  <p class="reveal">In practice, the line between the two keeps getting blurrier. Vendors now bundle AI directly into their RPA platforms — a combination often marketed as "Intelligent Automation" or "Cognitive RPA" — which lets bots:</p>
 
   <ul class="reveal">
     <li>Read and understand unstructured documents (using OCR and NLP)</li>
@@ -646,11 +646,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
     <li>Recognize images and objects (using computer vision)</li>
   </ul>
 
-  <p class="reveal">If you're interested in learning more about AI and physical robots, check out <a href="https://nyvoraai.github.io/ai-news/what-is-boston-dynamics-doing-with-ai.html">what is Boston Dynamics doing with AI</a> to see how AI is being applied to advanced robotics.</p>
+  <p class="reveal">For a broader look at where AI meets physical robotics, our article on <a href="https://nyvoraai.github.io/ai-news/what-is-boston-dynamics-doing-with-ai.html">what Boston Dynamics is doing with AI</a> is worth a read.</p>
 
   <h3>When to Use RPA vs AI</h3>
   
-  <p class="reveal">Use RPA when:</p>
+  <p class="reveal">Reach for RPA when:</p>
   <ul class="reveal">
     <li>Tasks are repetitive and rule-based</li>
     <li>Processes are well-defined and predictable</li>
@@ -659,7 +659,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
     <li>Budget is limited</li>
   </ul>
 
-  <p class="reveal">Use AI when:</p>
+  <p class="reveal">Reach for AI when:</p>
   <ul class="reveal">
     <li>Tasks require decision-making or judgment</li>
     <li>Working with unstructured data (text, images, speech)</li>
@@ -668,7 +668,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
     <li>Pattern recognition is required</li>
   </ul>
 
-  <p class="reveal">Use both when:</p>
+  <p class="reveal">Use both together when:</p>
   <ul class="reveal">
     <li>You want to automate complex end-to-end processes</li>
     <li>Some steps are rule-based while others require intelligence</li>
@@ -677,11 +677,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h2 id="implementation"><span class="h2-mark">05</span> Implementation Guide: Getting Started with RPA</h2>
   
-  <p class="reveal">Implementing RPA successfully requires careful planning and execution. Here's a step-by-step guide to help you get started.</p>
+  <p class="reveal">Getting RPA right takes more planning than most teams expect going in. Here's a practical, step-by-step way to approach it.</p>
 
   <h3>Step 1: Process Identification and Assessment</h3>
   
-  <p class="reveal">Not all processes are good candidates for RPA. Start by identifying processes that are:</p>
+  <p class="reveal">Not every process is a good candidate. Look for ones that are:</p>
   <ul class="reveal">
     <li><strong>Repetitive:</strong> Performed frequently (daily, weekly)</li>
     <li><strong>Rule-based:</strong> Follow clear, documented rules</li>
@@ -691,7 +691,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
     <li><strong>Stable:</strong> Don't change frequently</li>
   </ul>
 
-  <p class="reveal">Avoid automating processes that:</p>
+  <p class="reveal">And steer clear of processes that:</p>
   <ul class="reveal">
     <li>Require complex decision-making or judgment</li>
     <li>Change frequently</li>
@@ -702,17 +702,17 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h3>Step 2: Choose the Right RPA Platform</h3>
   
-  <p class="reveal">Several leading RPA platforms are available, each with different strengths:</p>
+  <p class="reveal">A handful of vendors dominate the RPA space, each with a slightly different angle:</p>
 
   <ul class="reveal">
-    <li><strong>UiPath:</strong> Market leader with extensive features and strong community</li>
-    <li><strong>Automation Anywhere:</strong> Cloud-native platform with strong AI capabilities</li>
-    <li><strong>Blue Prism:</strong> Enterprise-focused with strong security features</li>
-    <li><strong>Microsoft Power Automate:</strong> Great for organizations already using Microsoft ecosystem</li>
-    <li><strong>WorkFusion:</strong> Strong in intelligent automation with built-in AI</li>
+    <li><strong><a href="https://www.uipath.com" target="_blank" rel="noopener nofollow">UiPath</a>:</strong> the market leader, with an extensive feature set and a large user community</li>
+    <li><strong><a href="https://www.automationanywhere.com" target="_blank" rel="noopener nofollow">Automation Anywhere</a>:</strong> a cloud-native platform with strong built-in AI capabilities</li>
+    <li><strong><a href="https://www.blueprism.com" target="_blank" rel="noopener nofollow">Blue Prism</a> (now part of SS&C):</strong> enterprise-focused, with a heavy emphasis on security</li>
+    <li><strong><a href="https://www.microsoft.com/en-us/power-platform/products/power-automate" target="_blank" rel="noopener nofollow">Microsoft Power Automate</a>:</strong> a natural fit if your organization already runs on Microsoft 365</li>
+    <li><strong><a href="https://www.workfusion.com" target="_blank" rel="noopener nofollow">WorkFusion</a>:</strong> leans heavily into intelligent automation with AI built in from the start</li>
   </ul>
 
-  <p class="reveal">Consider factors like:</p>
+  <p class="reveal">Whichever you're weighing, it's worth comparing them on:</p>
   <ul class="reveal">
     <li>Ease of use and learning curve</li>
     <li>Integration capabilities</li>
@@ -724,7 +724,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h3>Step 3: Start Small and Scale</h3>
   
-  <p class="reveal">Don't try to automate everything at once. Start with a pilot project—choose one or two simple, high-impact processes to automate. This approach allows you to:</p>
+  <p class="reveal">Resist the urge to automate everything at once. A pilot — one or two simple, high-impact processes — gives you room to:</p>
   <ul class="reveal">
     <li>Learn the platform and methodology</li>
     <li>Demonstrate quick wins</li>
@@ -735,7 +735,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h3>Step 4: Build a Center of Excellence</h3>
   
-  <p class="reveal">As your RPA program grows, establish a Center of Excellence (CoE) to:</p>
+  <p class="reveal">Once the program grows past a handful of bots, a Center of Excellence (CoE) earns its keep. It typically handles:</p>
   <ul class="reveal">
     <li>Define standards and best practices</li>
     <li>Manage bot development and deployment</li>
@@ -746,7 +746,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h3>Step 5: Change Management</h3>
   
-  <p class="reveal">RPA implementation is as much about people as it is about technology. Employees may worry about job security or resist change. Address these concerns by:</p>
+  <p class="reveal">RPA succeeds or stalls based on people, not just technology. It's common for employees to worry the bots are coming for their jobs. A few things help ease that:</p>
   <ul class="reveal">
     <li>Communicating clearly about RPA's purpose (augmenting, not replacing humans)</li>
     <li>Involving employees in process selection and design</li>
@@ -757,11 +757,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h2 id="future"><span class="h2-mark">06</span> The Future of RPA: Trends and Developments</h2>
   
-  <p class="reveal">RPA is evolving rapidly. Here are the key trends shaping its future:</p>
+  <p class="reveal">RPA hasn't stood still, and it's worth knowing where it's headed next.</p>
 
   <h3>Intelligent Automation</h3>
   
-  <p class="reveal">The biggest trend is the convergence of RPA with AI, creating Intelligent Automation. This combination allows bots to handle more complex tasks that previously required human judgment. We're seeing RPA platforms integrate:</p>
+  <p class="reveal">The biggest shift underway is RPA merging with AI into what's now called Intelligent Automation — bots that can handle tasks that once needed a human's judgment call. Vendors are folding in:</p>
   <ul class="reveal">
     <li>Machine learning for pattern recognition and prediction</li>
     <li>Natural Language Processing for understanding text and speech</li>
@@ -769,15 +769,15 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
     <li>Process mining for discovering automation opportunities</li>
   </ul>
 
-  <p class="reveal">If you're interested in how robots can learn from humans, check out <a href="https://nyvoraai.github.io/ai-news/can-robots-learn-from-humans-watching.html">can robots learn from humans watching</a> to understand how this learning paradigm is being applied to both physical and software robots.</p>
+  <p class="reveal">If you're curious how machines pick up skills by observation, <a href="https://nyvoraai.github.io/ai-news/can-robots-learn-from-humans-watching.html">can robots learn from humans watching</a> covers how that learning approach applies to both physical and software robots alike.</p>
 
   <h3>Hyperautomation</h3>
   
-  <p class="reveal">Gartner coined the term "hyperautomation" to describe the coordinated use of multiple automation technologies (RPA, AI, process mining, analytics) to automate as many business processes as possible. Organizations are moving beyond isolated RPA projects to enterprise-wide automation strategies.</p>
+  <p class="reveal">Analyst firm <a href="https://www.gartner.com/en/information-technology/glossary/hyperautomation" target="_blank" rel="noopener nofollow">Gartner coined the term "hyperautomation"</a> to describe stitching together multiple automation technologies — RPA, AI, process mining, analytics — to automate as much of a business as possible. Companies are moving away from one-off RPA projects and toward automation as an enterprise-wide strategy.</p>
 
   <h3>Cloud-Native RPA</h3>
   
-  <p class="reveal">Traditional RPA was often deployed on-premises, but the trend is shifting to cloud-native platforms. Cloud-based RPA offers:</p>
+  <p class="reveal">On-premises deployments used to be the default for RPA; that's shifting fast toward cloud-native platforms, which bring:</p>
   <ul class="reveal">
     <li>Faster deployment and scaling</li>
     <li>Lower infrastructure costs</li>
@@ -788,11 +788,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <h3>Democratization of Automation</h3>
   
-  <p class="reveal">RPA platforms are becoming more user-friendly, allowing business users (not just IT professionals) to create and manage automations. This "citizen developer" movement is accelerating RPA adoption by putting automation power in the hands of the people who understand the processes best.</p>
+  <p class="reveal">RPA tools are getting friendlier to non-technical users, which means the people who actually understand a process — not just IT — can build and manage the automation themselves. This "citizen developer" trend is one of the bigger reasons adoption keeps accelerating.</p>
 
   <h3>Integration with Emerging Technologies</h3>
   
-  <p class="reveal">RPA is being combined with other emerging technologies:</p>
+  <p class="reveal">RPA is increasingly being paired with other emerging technologies:</p>
   <ul class="reveal">
     <li><strong>Blockchain:</strong> For secure, transparent transaction processing</li>
     <li><strong>IoT:</strong> To automate responses to sensor data</li>
@@ -800,7 +800,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
     <li><strong>Quantum Computing:</strong> For complex optimization problems</li>
   </ul>
 
-  <p class="reveal">The intersection of RPA with advanced AI and robotics is creating new possibilities. To understand the broader context of how AI is being embodied in different forms, read about <a href="https://nyvoraai.github.io/ai-news/what-is-embodied-ai-and-how-is-it-different.html">what is embodied AI and how is it different</a> from traditional software automation.</p>
+  <p class="reveal">This overlap between RPA, advanced AI, and robotics is opening up possibilities that didn't exist a few years ago. For more context on how AI takes different physical and digital forms, see <a href="https://nyvoraai.github.io/ai-news/what-is-embodied-ai-and-how-is-it-different.html">what embodied AI is and how it's different</a> from the software automation covered here.</p>
 
   <!-- FAQ -->
   <h2 id="faq"><span class="h2-mark">07</span> Frequently Asked Questions</h2>
