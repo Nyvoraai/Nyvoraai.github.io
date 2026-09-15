@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (142 articles)
+## AI News (143 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -92,6 +92,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Latest Breakthrough in AI Research? 2026 Guide](https://nyvoraai.github.io/ai-news/latest-breakthrough-ai-research.html): Discover the latest breakthrough in AI research for 2026. Explore new AI models, safety advances, and what it means for the future of technology.
 - [Latest Humanoid Robot News 2026: Breakthroughs & Updates](https://nyvoraai.github.io/ai-news/latest-humanoid-robot-news-2026.html): Discover the latest humanoid robot news in 2026. From Tesla Optimus to Figure 01, explore breakthroughs, AI integration, and what's next for humanoid robotics.
 - [Latest News in AI Robots 2026: Complete Guide](https://nyvoraai.github.io/ai-news/latest-news-ai-robots-2026.html): Discover the latest news in AI robots 2026. Explore breakthrough humanoid robots, AI automation, and how robotics is transforming industries worldwide.
+- [Top AI Skills Companies Are Hiring For in 2026](https://nyvoraai.github.io/ai-news/ai-skills-companies-hiring-2026.html): Discover the top AI skills companies are hiring for in 2026, from MLOps and agentic workflows to AI ethics and robotics integration.
 - [What AI Research Happened This Week? Latest Updates](https://nyvoraai.github.io/ai-news/ai-research-this-week.html): Discover what AI research happened this week. Get the latest breakthroughs in machine learning, neural networks, and AI safety from top research labs.
 - [What AI Tools Are Free for Startups? 2026 Guide](https://nyvoraai.github.io/ai-news/what-ai-tools-are-free-for-startups.html): Discover the best free AI tools for startups in 2026. Boost productivity, marketing, and coding without spending a dime. Build your stack today!
 - [What AI Tools Do Content Creators Use Daily? (2026)](https://nyvoraai.github.io/ai-news/what-ai-tools-do-content-creators-use-daily.html): Discover what AI tools content creators use daily to write, edit, and design. Boost your workflow with the top 2026 creator tech stack.
