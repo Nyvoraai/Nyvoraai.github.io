@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (157 articles)
+## AI News (158 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -151,6 +151,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [What Is Sim to Real Learning in Robotics? 2026 Guide](https://nyvoraai.github.io/ai-news/sim-to-real-learning-robotics.html): Discover what sim to real learning in robotics is, how domain randomization works, and why it's the key to training safe, autonomous AI robots in 2026.
 - [What Is Teleoperation in AI Robotics? | 2026 Guide](https://nyvoraai.github.io/ai-news/what-is-teleoperation-ai-robotics-2026.html): Discover what teleoperation in AI robotics is, how it works, and why human-in-the-loop control is critical for robots in 2026. Complete guide.
 - [What is the Best AI Chatbot in 2026? Expert Guide](https://nyvoraai.github.io/ai-news/what-is-the-best-ai-chatbot-in-2026.html): Discover the best AI chatbot in 2026. Compare ChatGPT, Claude, Gemini & more. Expert reviews, features, pricing & recommendations.
+- [What Is the Best AI Tool for Resume Writing? 2026 Guide](https://nyvoraai.github.io/ai-news/best-ai-tool-resume-writing-2026.html): Discover what is the best AI tool for resume writing in 2026. Compare top AI resume builders, features, pricing, and tips to land your dream job.
 - [What Is the Context Window in an LLM? (2026 Guide)](https://nyvoraai.github.io/ai-news/what-is-context-window-in-llm.html): What is the context window in an LLM? Learn how context length works, compare GPT vs Claude vs Gemini windows & master token limits. Updated 2026.
 - [What Is the Context Window in an LLM? 2026 Guide](https://nyvoraai.github.io/ai-news/what-is-the-context-window-in-an-llm.html): Learn what the context window in an LLM is, how tokens work, why size matters, and how to handle long documents. Complete 2026 guide with examples.
 - [What Is the Cost of Running AI in a Business? (2026)](https://nyvoraai.github.io/ai-news/cost-of-running-ai-in-business-2026.html): Discover the true cost of running AI in a business in 2026. Breakdown of software, infrastructure, talent, and hidden expenses with ROI strategies.
