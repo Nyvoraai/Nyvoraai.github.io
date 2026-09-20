@@ -12,7 +12,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [About](https://nyvoraai.github.io/about.html): NyvoraAI is a daily AI news platform delivering original, fact-checked, jargon-free coverage of artificial intelligence. Learn who we are, what we stand for, and what we cover.
 - [Contact](https://nyvoraai.github.io/contact.html): Contact NyvoraAI for story pitches, writing opportunities, advertising partnerships, or general questions about AI news and insights. We reply within 1–2 business days.
 
-## AI News (169 articles)
+## AI News (170 articles)
 
 - [AI Risks for Everyday Users: Stay Safe in 2026](https://nyvoraai.github.io/ai-news/ai-risks-everyday-users.html): Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement & how to protect yourself. Expert guide.
 - [AI vs Deep Learning: What Is the Difference? (2026)](https://nyvoraai.github.io/ai-news/difference-between-ai-and-deep-learning.html): Discover the exact difference between AI and deep learning. Learn how neural networks, machine learning, and AI work together in 2026.
@@ -91,6 +91,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [How to Use AI for Customer Support Replies: 2026 Guide](https://nyvoraai.github.io/ai-news/ai-customer-support-replies-2026.html): Discover how to use AI for customer support replies in 2026. Learn to automate responses, boost satisfaction, and scale your helpdesk efficiently.
 - [How to Use AI for Email Writing: 2026 Expert Guide](https://nyvoraai.github.io/ai-news/how-to-use-ai-for-email-writing.html): Learn how to use AI for email writing to save time and boost replies. Master prompts, avoid spam filters, and use top AI tools for professional emails.
 - [How to Use AI for Keyword Research? 2026 Guide](https://nyvoraai.github.io/ai-news/how-to-use-ai-for-keyword-research.html): Learn how to use AI for keyword research. Discover tools, prompts, and strategies to find high-value keywords faster and boost your SEO rankings.
+- [How to Use AI for Resume Screening as a Recruiter](https://nyvoraai.github.io/ai-news/how-to-use-ai-for-resume-screening-2026.html): Discover how to use AI for resume screening as a recruiter in 2026. Learn to automate parsing, reduce bias, and hire top talent faster.
 - [How to Use AI to Grow a Small Business? 2026 Guide](https://nyvoraai.github.io/ai-news/how-to-use-ai-to-grow-small-business.html): Learn how to use AI to grow a small business in 2026. Discover practical AI tools, strategies, and step-by-step guides to scale your business efficiently.
 - [How to Use AI Tools for Meeting Notes: 2026 Guide](https://nyvoraai.github.io/ai-news/ai-tools-meeting-notes-2026.html): Discover how to use AI tools for meeting notes in 2026. Compare top AI note-takers, features, and tips to save hours and boost productivity.
 - [How to Use AI Tools for Social Media Posts? 2026 Guide](https://nyvoraai.github.io/ai-news/how-to-use-ai-tools-for-social-media-posts.html): Learn how to use AI tools for social media posts. Discover top tools, prompt formulas, and strategies to boost engagement and save time in 2026.
