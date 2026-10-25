@@ -190,7 +190,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [Why Do LLMs Hallucinate Facts? The Truth Behind AI Lies](https://nyvoraai.github.io/ai-news/why-do-llms-hallucinate-facts.html): Discover why LLMs hallucinate facts — from training limitations to probability patterns. Learn how AI hallucinations happen and how to reduce them in 2026.
 - [Why Was Fable 5 Banned? The Truth Behind the Myth](https://nyvoraai.github.io/ai-news/why-was-fable-5-banned.html): Was Fable 5 actually banned? We investigate the rumors, uncover the truth, and explore how AI hallucinations spread fake gaming and tech controversies.
 
-## Blog (106 articles)
+## Blog (107 articles)
 
 - [AI vs Machine Learning: Key Differences Explained (2026)](https://nyvoraai.github.io/blog/ai-vs-machine-learning-difference.html): Confused about AI vs machine learning? Learn the real differences, how they work together, and which one powers your favorite apps. Simple guide for beginners.
 - [Are AI Chatbots Making People More Lonely? (2026)](https://nyvoraai.github.io/blog/are-ai-chatbots-making-people-more-lonely.html): Are AI chatbots making people more lonely? We explore the psychology of AI companions, the illusion of connection, and the impact on mental health.
@@ -270,6 +270,7 @@ NyvoraAI publishes original articles only. Content is organized into two section
 - [What AI Tools Are Completely Free in 2026? (Tested)](https://nyvoraai.github.io/blog/what-ai-tools-are-completely-free-2026.html): Discover the best AI tools that are completely free in 2026. No hidden fees, no credit cards. Test ChatGPT, Gemini, Claude & more with our expert guide.
 - [What Can I Use AI for at Home? 20 Real Ideas (2026)](https://nyvoraai.github.io/blog/what-can-i-use-ai-for-at-home.html): What can I use AI for at home? Discover 20 practical, beginner-friendly ways to use AI tools at home to save time, money, and effort every day.
 - [What Happens Inside a Neural Network? (2026 Guide)](https://nyvoraai.github.io/blog/what-happens-inside-a-neural-network.html): Curious what really happens inside a neural network? This guide explains neurons, weights, and learning in plain, jargon-free English.
+- [What Is a System Prompt in an LLM? 2026 Guide](https://nyvoraai.github.io/blog/what-is-system-prompt-llm-2026.html): Discover what a system prompt in an LLM is, how it controls AI behavior, and learn expert tips to write effective system prompts in 2026.
 - [What Is a Transformer Model in AI? (2026 Guide)](https://nyvoraai.github.io/blog/what-is-a-transformer-model-in-ai.html): What is a transformer model in AI? This plain-English guide explains how transformers work, why they changed AI forever, and what powers ChatGPT and more.
 - [What Is AI & Why Is Everyone Talking About It? (2026)](https://nyvoraai.github.io/blog/what-is-ai-why-everyone-talking-about-it.html): Curious about the AI boom? Learn what AI is, why everyone is talking about it, and how it impacts your daily life. A simple, jargon-free guide for 2026.
 - [What Is AI Inference vs Training? (Simple Guide)](https://nyvoraai.github.io/blog/ai-inference-vs-training.html): Confused by AI jargon? Learn the key difference between AI training and inference. We explain how models learn versus how they actually work in real-time.
