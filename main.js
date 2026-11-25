@@ -1,3 +1,11 @@
+// Clean URL enforcement: rewrite any *.html in address bar to clean extensionless URL
+(function() {
+  if (window.location.pathname.endsWith('.html')) {
+    var cleanPath = window.location.pathname.replace(/\.html$/, '');
+    window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+  }
+})();
+
 // NyvoraAI — main.js v2.0
 // Enhanced: page loader, particles, scroll progress, back-to-top, nav scroll
 
