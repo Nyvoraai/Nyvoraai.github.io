@@ -1,8 +1,8 @@
 # NyvoraAI
 
-NyvoraAIis an independent, no-paywall AI news and education platform covering large language models, AI agents, tools, safety, and research. Built and maintained by [Varun Lalwani](https://nyvoraai.github.io).
+NyvoraAIis an independent, no-paywall AI news and education platform covering large language models, AI agents, tools, safety, and research. Built and maintained by [Varun Lalwani](https://nyvoraai.tech).
 
-🌐 **Live site:** [nyvoraai.github.io](https://nyvoraai.github.io)
+🌐 **Live site:** [nyvoraai.github.io](https://nyvoraai.tech)
 
 ---
 
