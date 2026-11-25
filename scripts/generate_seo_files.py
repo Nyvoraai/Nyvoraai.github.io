@@ -176,7 +176,7 @@ def build_sitemap_xml(main_pages, articles):
 
     def sort_key(e):
         rel = e[0].replace(BASE_URL + "/", "")
-        rel = "index.html" if rel == "" else rel
+        rel = "index" if rel in ["", "index.html"] else rel
         return (order.get(rel, 99), rel)
 
     entries.sort(key=sort_key)
