@@ -22,7 +22,7 @@
 <link rel="apple-touch-icon" href="https://nyvoraai.tech/apple-touch-icon.png"/>
 <!-- RSS Feed -->
 <link rel="alternate" type="application/rss+xml" title="NyvoraAI RSS Feed" href="https://nyvoraai.tech/rss.xml"/>
-<link rel="canonical" href="https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm.html"/>
+<link rel="canonical" href="https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
@@ -30,7 +30,7 @@
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="What Is a Mixture of Experts LLM? 2026 Guide"/>
 <meta property="og:description" content="Learn what a Mixture of Experts LLM is, how gating and sparse routing work, and why models like Mixtral use MoE for speed and scale."/>
-<meta property="og:url" content="https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm.html"/>
+<meta property="og:url" content="https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm"/>
 <meta property="og:site_name" content="NyvoraAI"/>
 <meta property="og:image" content="https://nyvoraai.tech/assets/mixture-of-experts-llm-banner.jpg"/>
 <meta property="og:image:width" content="1200"/>
@@ -52,9 +52,9 @@
 <!-- Schema: WebSite -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"NyvoraAI","url":"https://nyvoraai.tech","publisher":{"@type":"Organization","name":"NyvoraAI"}}</script>
 <!-- Schema: BreadcrumbList -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.tech/index.html"},{"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.tech/ai-news.html"},{"@type":"ListItem","position":3,"name":"What Is a Mixture of Experts LLM","item":"https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.tech/"},{"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.tech/ai-news"},{"@type":"ListItem","position":3,"name":"What Is a Mixture of Experts LLM","item":"https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm"}]}</script>
 <!-- Schema: Article -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What Is a Mixture of Experts LLM? 2026 Guide","description":"A comprehensive, beginner-friendly guide to understanding what a Mixture of Experts (MoE) LLM is, how gating networks and sparse routing work, and which models use this architecture.","image":"https://nyvoraai.tech/assets/mixture-of-experts-llm-banner.jpg","datePublished":"2026-07-18","dateModified":"2026-07-18","inLanguage":"en-US","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.tech/about.html"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.tech","logo":{"@type":"ImageObject","url":"https://nyvoraai.tech/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm.html"},"articleSection":"AI News","keywords":"mixture of experts LLM, MoE LLM, sparse expert models, Mixtral, gating network","timeRequired":"PT12M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What Is a Mixture of Experts LLM? 2026 Guide","description":"A comprehensive, beginner-friendly guide to understanding what a Mixture of Experts (MoE) LLM is, how gating networks and sparse routing work, and which models use this architecture.","image":"https://nyvoraai.tech/assets/mixture-of-experts-llm-banner.jpg","datePublished":"2026-07-18","dateModified":"2026-07-18","inLanguage":"en-US","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.tech/about"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.tech","logo":{"@type":"ImageObject","url":"https://nyvoraai.tech/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm"},"articleSection":"AI News","keywords":"mixture of experts LLM, MoE LLM, sparse expert models, Mixtral, gating network","timeRequired":"PT12M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}</script>
 <!-- Schema: FAQPage (AEO) -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a Mixture of Experts LLM?","acceptedAnswer":{"@type":"Answer","text":"A Mixture of Experts (MoE) LLM is a model built from many smaller 'expert' sub-networks instead of one giant dense network. For every token, a small router network picks only a handful of experts to activate, so the model can have a huge total parameter count while only using a fraction of it per prediction."}},{"@type":"Question","name":"How is a Mixture of Experts model different from a dense model?","acceptedAnswer":{"@type":"Answer","text":"A dense model activates every single parameter for every token it processes. A Mixture of Experts model only activates a small subset of its experts per token, chosen by a router. This means an MoE model can have far more total parameters than a dense model while costing roughly the same to run at inference time."}},{"@type":"Question","name":"Which AI models use Mixture of Experts?","acceptedAnswer":{"@type":"Answer","text":"Mistral's Mixtral 8x7B and 8x22B are well-known open-weight Mixture of Experts models. DeepSeek-V2 and V3, xAI's Grok models, and Google's Switch Transformer research also use MoE architectures. Several closed-source frontier labs are widely believed to use MoE internally as well, though not all confirm architecture details publicly."}},{"@type":"Question","name":"What is the main advantage of Mixture of Experts?","acceptedAnswer":{"@type":"Answer","text":"The main advantage is efficiency at scale. MoE lets a model hold a very large number of total parameters, which increases capacity and knowledge, while only using a small, fixed number of those parameters for any single token, which keeps inference cost and latency much lower than a dense model of equivalent size."}},{"@type":"Question","name":"What are the downsides of Mixture of Experts models?","acceptedAnswer":{"@type":"Answer","text":"MoE models are harder to train and fine-tune, need significantly more VRAM to hold all the experts even though only some are active, and can suffer from load balancing problems where a few experts get overused while others are rarely picked, which wastes capacity."}}]}</script>
 
@@ -408,16 +408,16 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
 <nav class="main-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="https://nyvoraai.tech/index.html" class="nav-logo">
+    <a href="https://nyvoraai.tech/" class="nav-logo">
       <img src="https://nyvoraai.tech/assets/logo.png" alt="NyvoraAI logo" class="logo-img" onerror="this.remove()"/>
       Nyvora<span>AI</span>
     </a>
     <ul class="nav-links">
-      <li><a href="https://nyvoraai.tech/index.html">Home</a></li>
-      <li><a href="https://nyvoraai.tech/blog.html">Blog</a></li>
-      <li><a href="https://nyvoraai.tech/ai-news.html" class="active">AI News</a></li>
-      <li><a href="https://nyvoraai.tech/about.html">About</a></li>
-      <li><a href="https://nyvoraai.tech/contact.html">Contact</a></li>
+      <li><a href="https://nyvoraai.tech/">Home</a></li>
+      <li><a href="https://nyvoraai.tech/blog">Blog</a></li>
+      <li><a href="https://nyvoraai.tech/ai-news" class="active">AI News</a></li>
+      <li><a href="https://nyvoraai.tech/about">About</a></li>
+      <li><a href="https://nyvoraai.tech/contact">Contact</a></li>
     </ul>
     <div class="nav-right">
       <div class="nav-social">
@@ -427,7 +427,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
         <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener" class="nav-soc" aria-label="X"><svg class="icon"><use href="#icon-x"/></svg></a>
         <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener" class="nav-soc" aria-label="YouTube"><svg class="icon"><use href="#icon-youtube"/></svg></a>
       </div>
-      <a href="https://nyvoraai.tech/contact.html" class="nav-cta">Write for Us</a>
+      <a href="https://nyvoraai.tech/contact" class="nav-cta">Write for Us</a>
       <div class="hamburger" id="ham" onclick="toggleMenu()" role="button" aria-label="Open menu" aria-expanded="false" tabindex="0">
         <span></span><span></span><span></span>
       </div>
@@ -435,18 +435,18 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
-  <a href="https://nyvoraai.tech/index.html">Home</a>
-  <a href="https://nyvoraai.tech/blog.html">Blog</a>
-  <a href="https://nyvoraai.tech/ai-news.html">AI News</a>
-  <a href="https://nyvoraai.tech/about.html">About</a>
-  <a href="https://nyvoraai.tech/contact.html">Contact</a>
+  <a href="https://nyvoraai.tech/">Home</a>
+  <a href="https://nyvoraai.tech/blog">Blog</a>
+  <a href="https://nyvoraai.tech/ai-news">AI News</a>
+  <a href="https://nyvoraai.tech/about">About</a>
+  <a href="https://nyvoraai.tech/contact">Contact</a>
 </div>
 
 <div class="page-wrap">
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <a href="https://nyvoraai.tech/index.html">Home</a><span class="bc-sep">/</span>
-  <a href="https://nyvoraai.tech/ai-news.html">AI News</a><span class="bc-sep">/</span>
+  <a href="https://nyvoraai.tech/">Home</a><span class="bc-sep">/</span>
+  <a href="https://nyvoraai.tech/ai-news">AI News</a><span class="bc-sep">/</span>
   <span aria-current="page">What Is a Mixture of Experts LLM</span>
 </nav>
 
@@ -551,7 +551,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
   <p class="reveal">In a standard "dense" transformer model, every layer processes every token using the exact same set of parameters. If the model has 70 billion parameters, all 70 billion get touched, every time, for every word. That's straightforward, but it's also wasteful — a huge portion of those parameters are irrelevant to any specific input.</p>
 
-  <p class="reveal">A Mixture of Experts LLM takes a different approach at specific points in the network, usually inside the feed-forward layers. Instead of one big feed-forward block, the model has several smaller feed-forward blocks sitting side by side — these are the "experts." A small neural network called the <strong>router</strong> (or gating network) looks at each incoming token and decides which one or two experts should actually process it. The other experts just sit idle for that token. If you're building foundational understanding here, it also helps to first get comfortable with <a href="https://nyvoraai.tech/ai-news/what-is-an-llm-in-simple-words.html">what is an LLM in simple words</a>, since MoE is really just a variation on the transformer architecture that underlies every modern language model.</p>
+  <p class="reveal">A Mixture of Experts LLM takes a different approach at specific points in the network, usually inside the feed-forward layers. Instead of one big feed-forward block, the model has several smaller feed-forward blocks sitting side by side — these are the "experts." A small neural network called the <strong>router</strong> (or gating network) looks at each incoming token and decides which one or two experts should actually process it. The other experts just sit idle for that token. If you're building foundational understanding here, it also helps to first get comfortable with <a href="https://nyvoraai.tech/ai-news/what-is-an-llm-in-simple-words">what is an LLM in simple words</a>, since MoE is really just a variation on the transformer architecture that underlies every modern language model.</p>
 
   <p class="reveal">This means the model's total parameter count can be huge — Mixtral 8x7B, for instance, has roughly 47 billion total parameters spread across its experts — but for any single token, only a fraction of those parameters (around 13 billion worth, in Mixtral's case) actually get used. You get the knowledge capacity of a much bigger model, at close to the inference cost of a much smaller one.</p>
 
@@ -604,7 +604,7 @@ top_experts = top_k(router_scores, k=2)
 output = sum(score_i * expert_i(token_vector) for i in top_experts)
   </div>
 
-  <p class="reveal">That load-balancing step is more important than it sounds. Without it, the router tends to develop favorites early in training and keeps sending tokens to the same one or two experts, which defeats the entire purpose of having many specialists in the first place. Well-trained MoE models actively encourage the router to distribute tokens fairly, so each expert gets enough signal to genuinely specialize. This connects to a broader theme worth understanding — <a href="https://nyvoraai.tech/ai-news/how-do-large-language-models-learn-from-data.html">how do large language models learn from data</a> — because the training dynamics of an MoE model are meaningfully different from a dense one, even though the end goal is the same.</p>
+  <p class="reveal">That load-balancing step is more important than it sounds. Without it, the router tends to develop favorites early in training and keeps sending tokens to the same one or two experts, which defeats the entire purpose of having many specialists in the first place. Well-trained MoE models actively encourage the router to distribute tokens fairly, so each expert gets enough signal to genuinely specialize. This connects to a broader theme worth understanding — <a href="https://nyvoraai.tech/ai-news/how-do-large-language-models-learn-from-data">how do large language models learn from data</a> — because the training dynamics of an MoE model are meaningfully different from a dense one, even though the end goal is the same.</p>
 
   <h2 id="types"><span class="h2-mark">03</span> Dense vs Sparse MoE vs Shared-Expert MoE</h2>
 
@@ -702,7 +702,7 @@ output = sum(score_i * expert_i(token_vector) for i in top_experts)
     </div>
   </div>
 
-  <p class="reveal">This distinction — total size versus active size — is exactly why comparing raw parameter counts across models can be misleading. It's also worth understanding when you're weighing options like <a href="https://nyvoraai.tech/ai-news/gpt-vs-claude-differences.html">GPT vs Claude differences</a>, since publicly disclosed architecture details vary widely between labs, and "bigger number" doesn't automatically mean "slower or more expensive to run."</p>
+  <p class="reveal">This distinction — total size versus active size — is exactly why comparing raw parameter counts across models can be misleading. It's also worth understanding when you're weighing options like <a href="https://nyvoraai.tech/ai-news/gpt-vs-claude-differences">GPT vs Claude differences</a>, since publicly disclosed architecture details vary widely between labs, and "bigger number" doesn't automatically mean "slower or more expensive to run."</p>
 
   <h2 id="when-to-use"><span class="h2-mark">05</span> Why Builders Choose Mixture of Experts</h2>
 
@@ -759,12 +759,12 @@ output = sum(score_i * expert_i(token_vector) for i in top_experts)
       <div class="step-num">5</div>
       <div class="step-body">
         <div class="step-title">Rumored Use in Closed-Source Frontier Models</div>
-        <div class="step-desc">Several proprietary frontier labs are widely believed by researchers to use MoE internally, though architecture details aren't always officially confirmed. If you're new to comparing options, our guide on <a href="https://nyvoraai.tech/ai-news/which-llm-is-best-for-beginners-2026.html">which LLM is best for beginners 2026</a> is a good next stop, since the underlying architecture is only one factor in picking the right model for your needs.</div>
+        <div class="step-desc">Several proprietary frontier labs are widely believed by researchers to use MoE internally, though architecture details aren't always officially confirmed. If you're new to comparing options, our guide on <a href="https://nyvoraai.tech/ai-news/which-llm-is-best-for-beginners-2026">which LLM is best for beginners 2026</a> is a good next stop, since the underlying architecture is only one factor in picking the right model for your needs.</div>
       </div>
     </div>
   </div>
 
-  <p class="reveal">One more practical thread worth pulling on: MoE is a big part of the story behind falling API prices industry-wide. Because sparse activation cuts the actual compute needed per response, providers can serve larger, more capable models at lower cost than a dense model of the same scale would require. If pricing trends interest you, this ties directly into <a href="https://nyvoraai.tech/ai-news/why-are-llms-getting-cheaper-2026.html">why are LLMs getting cheaper in 2026</a> — MoE is one of several efficiency gains driving that curve downward.</p>
+  <p class="reveal">One more practical thread worth pulling on: MoE is a big part of the story behind falling API prices industry-wide. Because sparse activation cuts the actual compute needed per response, providers can serve larger, more capable models at lower cost than a dense model of the same scale would require. If pricing trends interest you, this ties directly into <a href="https://nyvoraai.tech/ai-news/why-are-llms-getting-cheaper-2026">why are LLMs getting cheaper in 2026</a> — MoE is one of several efficiency gains driving that curve downward.</p>
 
   <h2 id="quiz"><span class="h2-mark">07</span> Test Your Knowledge: The MoE Quiz</h2>
   
@@ -818,16 +818,16 @@ output = sum(score_i * expert_i(token_vector) for i in top_experts)
     <div class="meta-avatar">V<img src="https://nyvoraai.tech/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
     <div>
       <h3>Written by Varun Lalwani</h3>
-      <p>Varun covers large language models, open-source AI, and the practical side of building with accessible AI tools. Published July 2026. Questions? <a href="https://nyvoraai.tech/contact.html">Contact our team</a> or <a href="https://nyvoraai.tech/about.html">learn about our mission</a>. Stay updated via our <a href="https://nyvoraai.tech/rss.xml">RSS feed</a>.</p>
+      <p>Varun covers large language models, open-source AI, and the practical side of building with accessible AI tools. Published July 2026. Questions? <a href="https://nyvoraai.tech/contact">Contact our team</a> or <a href="https://nyvoraai.tech/about">learn about our mission</a>. Stay updated via our <a href="https://nyvoraai.tech/rss.xml">RSS feed</a>.</p>
     </div>
   </div>
 
   <div class="share-section reveal">
     <div class="share-title">Know someone trying to understand modern AI architecture? Share this guide 👇</div>
     <div class="share-btns">
-      <a href="https://twitter.com/intent/tweet?text=What+Is+a+Mixture+of+Experts+LLM%3F+2026+Guide+%7C+@nyvoraai_co&url=https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-x"/></svg> Share on X</a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm.html" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Share on Facebook</a>
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm.html" target="_blank" rel="noopener" class="share-btn">💼 Share on LinkedIn</a>
+      <a href="https://twitter.com/intent/tweet?text=What+Is+a+Mixture+of+Experts+LLM%3F+2026+Guide+%7C+@nyvoraai_co&url=https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-x"/></svg> Share on X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm" target="_blank" rel="noopener" class="share-btn"><svg class="icon"><use href="#icon-facebook"/></svg> Share on Facebook</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm" target="_blank" rel="noopener" class="share-btn">💼 Share on LinkedIn</a>
       <button class="share-btn" onclick="copyLink()">🔗 Copy Link</button>
     </div>
   </div>
@@ -853,32 +853,32 @@ output = sum(score_i * expert_i(token_vector) for i in top_experts)
   <div class="related reveal">
     <div class="related-title">Continue Your AI Journey</div>
     <div class="related-grid">
-      <a href="https://nyvoraai.tech/ai-news/what-is-an-llm-in-simple-words.html" class="rel-card">
+      <a href="https://nyvoraai.tech/ai-news/what-is-an-llm-in-simple-words" class="rel-card">
         <div class="rel-tag">Foundation</div>
         <div class="rel-title">What Is an LLM in Simple Words?</div>
         <div class="rel-read">15 min read →</div>
       </a>
-      <a href="https://nyvoraai.tech/ai-news/how-do-large-language-models-learn-from-data.html" class="rel-card">
+      <a href="https://nyvoraai.tech/ai-news/how-do-large-language-models-learn-from-data" class="rel-card">
         <div class="rel-tag">Training</div>
         <div class="rel-title">How Do Large Language Models Learn From Data?</div>
         <div class="rel-read">18 min read →</div>
       </a>
-      <a href="https://nyvoraai.tech/ai-news/gpt-vs-claude-differences.html" class="rel-card">
+      <a href="https://nyvoraai.tech/ai-news/gpt-vs-claude-differences" class="rel-card">
         <div class="rel-tag">Comparison</div>
         <div class="rel-title">GPT vs Claude: Key Differences</div>
         <div class="rel-read">16 min read →</div>
       </a>
-      <a href="https://nyvoraai.tech/ai-news/which-llm-is-best-for-beginners-2026.html" class="rel-card">
+      <a href="https://nyvoraai.tech/ai-news/which-llm-is-best-for-beginners-2026" class="rel-card">
         <div class="rel-tag">Beginner Guide</div>
         <div class="rel-title">Which LLM Is Best for Beginners in 2026?</div>
         <div class="rel-read">14 min read →</div>
       </a>
-      <a href="https://nyvoraai.tech/ai-news/why-are-llms-getting-cheaper-2026.html" class="rel-card">
+      <a href="https://nyvoraai.tech/ai-news/why-are-llms-getting-cheaper-2026" class="rel-card">
         <div class="rel-tag">Industry Trend</div>
         <div class="rel-title">Why Are LLMs Getting Cheaper in 2026?</div>
         <div class="rel-read">13 min read →</div>
       </a>
-      <a href="https://nyvoraai.tech/ai-news.html" class="rel-card">
+      <a href="https://nyvoraai.tech/ai-news" class="rel-card">
         <div class="rel-tag">All News</div>
         <div class="rel-title">Browse All AI News & Guides</div>
         <div class="rel-read">Explore →</div>
@@ -929,37 +929,37 @@ output = sum(score_i * expert_i(token_vector) for i in top_experts)
     <div class="footer-col">
       <h4>LLM Guides</h4>
       <ul>
-        <li><a href="https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm.html">What Is Mixture of Experts?</a></li>
-        <li><a href="https://nyvoraai.tech/ai-news/what-is-an-llm-in-simple-words.html">What Is an LLM?</a></li>
-        <li><a href="https://nyvoraai.tech/ai-news/how-do-large-language-models-learn-from-data.html">How LLMs Learn From Data</a></li>
-        <li><a href="https://nyvoraai.tech/ai-news/which-llm-is-best-for-beginners-2026.html">Best LLM for Beginners</a></li>
-        <li><a href="https://nyvoraai.tech/ai-news.html">All AI News</a></li>
+        <li><a href="https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm">What Is Mixture of Experts?</a></li>
+        <li><a href="https://nyvoraai.tech/ai-news/what-is-an-llm-in-simple-words">What Is an LLM?</a></li>
+        <li><a href="https://nyvoraai.tech/ai-news/how-do-large-language-models-learn-from-data">How LLMs Learn From Data</a></li>
+        <li><a href="https://nyvoraai.tech/ai-news/which-llm-is-best-for-beginners-2026">Best LLM for Beginners</a></li>
+        <li><a href="https://nyvoraai.tech/ai-news">All AI News</a></li>
       </ul>
       <a href="https://nyvoraai.tech/rss.xml" class="rss-link"><svg class="icon"><use href="#icon-rss"/></svg> Subscribe RSS</a>
     </div>
     <div class="footer-col">
       <h4>Company</h4>
       <ul>
-        <li><a href="https://nyvoraai.tech/about.html">About Us</a></li>
-        <li><a href="https://nyvoraai.tech/contact.html">Contact</a></li>
-        <li><a href="https://nyvoraai.tech/contact.html">Write for Us</a></li>
-        <li><a href="https://nyvoraai.tech/sitemap.html">Sitemap</a></li>
+        <li><a href="https://nyvoraai.tech/about">About Us</a></li>
+        <li><a href="https://nyvoraai.tech/contact">Contact</a></li>
+        <li><a href="https://nyvoraai.tech/contact">Write for Us</a></li>
+        <li><a href="https://nyvoraai.tech/sitemap">Sitemap</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Get in Touch</h4>
       <ul>
         <li><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></li>
-        <li><a href="https://nyvoraai.tech/contact.html">Send a message</a></li>
+        <li><a href="https://nyvoraai.tech/contact">Send a message</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© 2026 NyvoraAI. All rights reserved.</span>
     <div class="footer-bottom-links">
-      <a href="https://nyvoraai.tech/blog.html">Blog</a>
-      <a href="https://nyvoraai.tech/ai-news.html">AI News</a>
-      <a href="https://nyvoraai.tech/about.html">About</a>
+      <a href="https://nyvoraai.tech/blog">Blog</a>
+      <a href="https://nyvoraai.tech/ai-news">AI News</a>
+      <a href="https://nyvoraai.tech/about">About</a>
       <a href="https://nyvoraai.tech/rss.xml">RSS</a>
     </div>
   </div>

@@ -86,12 +86,15 @@ if (revealEls.length) {
 }
 
 /* === ACTIVE NAV LINK === */
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const normalizePath = p => p.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+const currentNorm = normalizePath(window.location.pathname);
 document.querySelectorAll('.nav-links a, .mob-menu a').forEach(link => {
-  const href = link.getAttribute('href');
-  if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-    link.classList.add('active');
-  }
+  try {
+    const linkPath = normalizePath(new URL(link.href, window.location.origin).pathname);
+    if (linkPath === currentNorm) {
+      link.classList.add('active');
+    }
+  } catch (e) {}
 });
 
 /* === FILTER PILLS (blog/news pages) === */
