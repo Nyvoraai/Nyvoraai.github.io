@@ -52,7 +52,7 @@ Articles are organized into: LLMs, AI Safety, AI Research, AI Tools, Business, a
 - 🐦 X/Twitter: [@nyvoraai_co](https://twitter.com/nyvoraai_co)
 - 📸 Instagram: [@nyvora_ai](https://instagram.com/nyvora_ai)
 - ▶️ YouTube: [@Nyvora_ai](https://youtube.com/@Nyvora_ai)
-- 📧 Email: nyvora.ai@outlook.com
+- 📧 Email: partnership@nyvoraai.tech
 
 ## License
 

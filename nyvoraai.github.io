@@ -130,7 +130,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       ],
       "contactPoint": {
         "@type": "ContactPoint",
-        "email": "nyvora.ai@outlook.com",
+        "email": "partnership@nyvoraai.tech",
         "contactType": "editorial",
         "availableLanguage": "English"
       }
@@ -142,7 +142,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         { "@type": "Question", "name": "Is NyvoraAI free to read?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. All content on NyvoraAI is 100% free. No paywalls, no subscriptions, no registration required." } },
         { "@type": "Question", "name": "How often does NyvoraAI publish?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI publishes fresh, fact-checked AI articles every single day." } },
         { "@type": "Question", "name": "What topics does NyvoraAI cover?", "acceptedAnswer": { "@type": "Answer", "text": "LLMs, generative AI, AI safety, AI tools, AI research, AI startups, robotics, AI policy, and practical AI applications." } },
-        { "@type": "Question", "name": "Who runs NyvoraAI?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI is independently operated by the NyvoraAI editorial team. Not funded by any AI company. Contact: nyvora.ai@outlook.com" } }
+        { "@type": "Question", "name": "Who runs NyvoraAI?", "acceptedAnswer": { "@type": "Answer", "text": "NyvoraAI is independently operated by the NyvoraAI editorial team. Not funded by any AI company. Contact: partnership@nyvoraai.tech" } }
       ]
     },
     {
@@ -1588,7 +1588,7 @@ footer{
 
         <details class="faq-item">
           <summary>How do I contact NyvoraAI?</summary>
-          <div class="faq-body">Email us at <a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a>, use the <a href="https://nyvoraai.github.io/contact.html">contact form</a>, or find us on <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener noreferrer">X/Twitter</a>, <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener noreferrer">Instagram</a>, <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener noreferrer">Facebook</a>, and <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener noreferrer">YouTube</a>.</div>
+          <div class="faq-body">Email us at <a href="mailto:partnership@nyvoraai.tech">partnership@nyvoraai.tech</a>, use the <a href="https://nyvoraai.github.io/contact.html">contact form</a>, or find us on <a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener noreferrer">X/Twitter</a>, <a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener noreferrer">Instagram</a>, <a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener noreferrer">Facebook</a>, and <a href="https://www.youtube.com/@Nyvora_ai" target="_blank" rel="noopener noreferrer">YouTube</a>.</div>
         </details>
 
       </div>
@@ -1653,7 +1653,7 @@ footer{
           <svg viewBox="0 0 24 24" fill="rgba(255,255,255,.55)"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
         </a>
       </div>
-      <p class="f-email"><a href="mailto:nyvora.ai@outlook.com">nyvora.ai@outlook.com</a></p>
+      <p class="f-email"><a href="mailto:partnership@nyvoraai.tech">partnership@nyvoraai.tech</a></p>
     </div>
 
     <div class="f-col">
@@ -1681,7 +1681,7 @@ footer{
     <div class="f-col">
       <h4>Connect</h4>
       <ul>
-        <li><a href="mailto:nyvora.ai@outlook.com">Email Us</a></li>
+        <li><a href="mailto:partnership@nyvoraai.tech">Email Us</a></li>
         <li><a href="https://x.com/nyvoraai_co" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
         <li><a href="https://www.instagram.com/nyvora_ai/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
         <li><a href="https://www.facebook.com/profile.php?id=61591060353276" target="_blank" rel="noopener noreferrer">Facebook</a></li>
