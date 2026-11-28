@@ -6,14 +6,7 @@
 <description>Latest AI news, beginner guides, and explainers from NyvoraAI.</description>
 <language>en-us</language>
 <atom:link href="https://nyvoraai.tech/rss.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 26 Nov 2026 00:00:00 GMT</lastBuildDate>
-<item>
-<title>Redirecting...</title>
-<link>https://nyvoraai.tech/ai-news/ai-risks-everyday-users</link>
-<guid isPermaLink="true">https://nyvoraai.tech/ai-news/ai-risks-everyday-users</guid>
-<pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
-<description></description>
-</item>
+<lastBuildDate>Sat, 28 Nov 2026 00:00:00 GMT</lastBuildDate>
 <item>
 <title>What Is Agentic AI for Business Workflows? 2026 Guide</title>
 <link>https://nyvoraai.tech/ai-news/agentic-ai-business-workflows</link>
@@ -806,7 +799,7 @@
 <description>What is the difference between GPT and Claude? Compare accuracy, coding, tone &amp; pricing. Find the best AI for your needs in 2026.</description>
 </item>
 <item>
-<title>How Do AI Models Get Their Training Data? | NyvoraAI Guide</title>
+<title>How Do AI Models Get Their Training Data?</title>
 <link>https://nyvoraai.tech/ai-news/how-do-ai-models-get-their-training-data</link>
 <guid isPermaLink="true">https://nyvoraai.tech/ai-news/how-do-ai-models-get-their-training-data</guid>
 <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
@@ -1973,6 +1966,13 @@
 <guid isPermaLink="true">https://nyvoraai.tech/ai-news/what-is-the-scaling-law-in-ai</guid>
 <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
 <description>Discover what the scaling law in AI is, how data and compute drive intelligence, and why it&apos;s the secret behind modern AI breakthroughs.</description>
+</item>
+<item>
+<title>AI Risks for Everyday Users: Stay Safe in 2026</title>
+<link>https://nyvoraai.tech/ai-news/ai-risks-everyday-users</link>
+<guid isPermaLink="true">https://nyvoraai.tech/ai-news/ai-risks-everyday-users</guid>
+<pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+<description>Discover the real AI risks for everyday users in 2026. Learn about privacy threats, bias, job displacement &amp; how to protect yourself. Expert guide.</description>
 </item>
 <item>
 <title>How to Start Using AI If You&apos;re Not Technical (2026 Guide)</title>
