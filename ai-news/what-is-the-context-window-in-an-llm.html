@@ -33,7 +33,7 @@
 <meta property="og:description" content="Learn what the context window in an LLM is, how tokens work, why size matters, and how to handle long documents. Complete 2026 guide with examples."/>
 <meta property="og:url" content="https://nyvoraai.tech/ai-news/what-is-the-context-window-in-an-llm"/>
 <meta property="og:site_name" content="NyvoraAI"/>
-<meta property="og:image" content="https://nyvoraai.tech/assets/llm-context-window-banner.jpg"/>
+<meta property="og:image" content="https://nyvoraai.tech/assets/llm-context-window-banner.webp"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta property="og:locale" content="en_US"/>
@@ -47,7 +47,7 @@
 <meta name="twitter:creator" content="@nyvoraai_co"/>
 <meta name="twitter:title" content="What Is the Context Window in an LLM? 2026 Guide"/>
 <meta name="twitter:description" content="Why can't you paste an entire book into ChatGPT? Discover how context windows work, what tokens are, and how AI handles long conversations."/>
-<meta name="twitter:image" content="https://nyvoraai.tech/assets/llm-context-window-banner.jpg"/>
+<meta name="twitter:image" content="https://nyvoraai.tech/assets/llm-context-window-banner.webp"/>
 <!-- Schema: Organization -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.tech","logo":"https://nyvoraai.tech/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai"]}</script>
 <!-- Schema: WebSite -->
@@ -55,7 +55,7 @@
 <!-- Schema: BreadcrumbList -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.tech/"},{"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.tech/ai-news"},{"@type":"ListItem","position":3,"name":"What Is the Context Window in an LLM","item":"https://nyvoraai.tech/ai-news/what-is-the-context-window-in-an-llm"}]}</script>
 <!-- Schema: Article -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What Is the Context Window in an LLM? Complete 2026 Guide","description":"A comprehensive guide to understanding LLM context windows: what they are, how tokens work, why size matters, and how to work around their limits.","image":"https://nyvoraai.tech/assets/llm-context-window-banner.jpg","datePublished":"2026-06-30","dateModified":"2026-06-30","inLanguage":"en-US","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.tech/about"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.tech","logo":{"@type":"ImageObject","url":"https://nyvoraai.tech/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.tech/ai-news/what-is-the-context-window-in-an-llm"},"articleSection":"AI News","keywords":"what is the context window in an LLM, LLM context window, tokens","timeRequired":"PT24M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What Is the Context Window in an LLM? Complete 2026 Guide","description":"A comprehensive guide to understanding LLM context windows: what they are, how tokens work, why size matters, and how to work around their limits.","image":"https://nyvoraai.tech/assets/llm-context-window-banner.webp","datePublished":"2026-06-30","dateModified":"2026-06-30","inLanguage":"en-US","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.tech/about"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.tech","logo":{"@type":"ImageObject","url":"https://nyvoraai.tech/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.tech/ai-news/what-is-the-context-window-in-an-llm"},"articleSection":"AI News","keywords":"what is the context window in an LLM, LLM context window, tokens","timeRequired":"PT24M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}</script>
 <!-- Schema: FAQPage (AEO) -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the context window in an LLM?","acceptedAnswer":{"@type":"Answer","text":"The context window in an LLM is the maximum amount of text (measured in tokens) that the model can process in a single request. It includes both the input prompt and the model's output combined. Think of it as the AI's short-term memory—once the conversation exceeds this limit, older information gets dropped or the request fails."}},{"@type":"Question","name":"What is a token in AI and how does it relate to words?","acceptedAnswer":{"@type":"Answer","text":"A token is a chunk of text that an AI model processes as a single unit. In English, one token is roughly 4 characters or about 0.75 words. So 1,000 tokens equals approximately 750 English words. Tokens can be whole words, parts of words, or even punctuation marks. Different languages have different tokenization ratios—non-Latin scripts often require more tokens per word."}},{"@type":"Question","name":"Why do LLMs have context window limits?","acceptedAnswer":{"@type":"Answer","text":"LLMs have context window limits due to the quadratic computational complexity of the attention mechanism. As input length grows, the compute and memory required increases exponentially. Processing 100,000 tokens can require thousands of times more resources than 1,000 tokens. Context limits exist because of these hardware and cost constraints, not arbitrary software decisions."}},{"@type":"Question","name":"Which LLM has the largest context window in 2026?","acceptedAnswer":{"@type":"Answer","text":"As of 2026, Google's Gemini 1.5 Pro leads with a 1 million to 2 million token context window, equivalent to roughly 1,500 to 3,000 pages of text or dozens of hours of audio. Anthropic's Claude 3.5 offers 200K tokens, while OpenAI's GPT-4 Turbo supports 128K tokens. Most open-source models like Llama 3 support 8K to 128K tokens depending on the variant."}},{"@type":"Question","name":"Is a bigger context window always better?","acceptedAnswer":{"@type":"Answer","text":"No. Bigger context windows come with trade-offs: higher cost per request, slower response times, and the 'lost in the middle' problem where models pay less attention to information in the middle of long inputs. For most practical use cases, 32K-128K tokens is the sweet spot, and techniques like RAG often work better than simply using massive context windows."}},{"@type":"Question","name":"How do I work around context window limits?","acceptedAnswer":{"@type":"Answer","text":"Common strategies include: using RAG (Retrieval Augmented Generation) to pull only relevant information, chunking long documents into smaller pieces, summarizing previous conversation turns, using sliding windows that keep recent context while dropping older parts, and breaking complex tasks into multiple smaller requests that build on each other."}}]}</script>
 
@@ -446,7 +446,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   <p class="article-intro">You've probably tried pasting an entire PDF, a long email thread, or a full chapter of a novel into ChatGPT, only to get a cryptic error message telling you the input is "too long." That's your first real encounter with the context window—one of the most important (and least understood) constraints in modern AI. Here's everything you need to know about how it works, why it exists, and how to work around it.</p>
   <div class="article-meta">
     <div class="meta-author">
-      <div class="meta-avatar">V<img src="https://nyvoraai.tech/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+      <div class="meta-avatar">V<img src="https://nyvoraai.tech/assets/author-varun-lalwani.webp" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
       <div><div class="meta-name">Varun Lalwani</div></div>
     </div>
     <span class="meta-sep">·</span>
@@ -458,7 +458,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
 <div class="blog-banner-wrap reveal">
   <img
-    src="https://nyvoraai.tech/assets/llm-context-window-banner.jpg"
+    src="https://nyvoraai.tech/assets/llm-context-window-banner.webp"
     alt="What is the context window in an LLM - visual diagram showing tokens flowing into AI model memory"
     class="blog-banner"
     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
@@ -840,7 +840,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   </div>
 
   <div class="author-box reveal">
-    <div class="meta-avatar">V<img src="https://nyvoraai.tech/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+    <div class="meta-avatar">V<img src="https://nyvoraai.tech/assets/author-varun-lalwani.webp" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
     <div>
       <h3>Written by Varun Lalwani</h3>
       <p>Varun covers large language models, AI architecture, and practical prompt engineering. Published June 2026. Questions? <a href="https://nyvoraai.tech/contact">Contact our team</a> or <a href="https://nyvoraai.tech/about">learn about our mission</a>.</p>

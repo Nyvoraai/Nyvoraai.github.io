@@ -33,7 +33,7 @@
 <meta property="og:description" content="Learn what a Mixture of Experts LLM is, how gating and sparse routing work, and why models like Mixtral use MoE for speed and scale."/>
 <meta property="og:url" content="https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm"/>
 <meta property="og:site_name" content="NyvoraAI"/>
-<meta property="og:image" content="https://nyvoraai.tech/assets/mixture-of-experts-llm-banner.jpg"/>
+<meta property="og:image" content="https://nyvoraai.tech/assets/mixture-of-experts-llm-banner.webp"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta property="og:locale" content="en_US"/>
@@ -47,7 +47,7 @@
 <meta name="twitter:creator" content="@nyvoraai_co"/>
 <meta name="twitter:title" content="What Is a Mixture of Experts LLM? 2026 Guide"/>
 <meta name="twitter:description" content="A plain-English guide to Mixture of Experts (MoE) LLMs: how routing works, why it's efficient, and which models use it."/>
-<meta name="twitter:image" content="https://nyvoraai.tech/assets/mixture-of-experts-llm-banner.jpg"/>
+<meta name="twitter:image" content="https://nyvoraai.tech/assets/mixture-of-experts-llm-banner.webp"/>
 <!-- Schema: Organization -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.tech","logo":"https://nyvoraai.tech/assets/logo.png","sameAs":["https://www.instagram.com/nyvora_ai/","https://www.facebook.com/profile.php?id=61591060353276","https://x.com/nyvoraai_co","https://www.youtube.com/@Nyvora_ai"]}</script>
 <!-- Schema: WebSite -->
@@ -55,7 +55,7 @@
 <!-- Schema: BreadcrumbList -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nyvoraai.tech/"},{"@type":"ListItem","position":2,"name":"AI News","item":"https://nyvoraai.tech/ai-news"},{"@type":"ListItem","position":3,"name":"What Is a Mixture of Experts LLM","item":"https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm"}]}</script>
 <!-- Schema: Article -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What Is a Mixture of Experts LLM? 2026 Guide","description":"A comprehensive, beginner-friendly guide to understanding what a Mixture of Experts (MoE) LLM is, how gating networks and sparse routing work, and which models use this architecture.","image":"https://nyvoraai.tech/assets/mixture-of-experts-llm-banner.jpg","datePublished":"2026-07-18","dateModified":"2026-07-18","inLanguage":"en-US","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.tech/about"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.tech","logo":{"@type":"ImageObject","url":"https://nyvoraai.tech/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm"},"articleSection":"AI News","keywords":"mixture of experts LLM, MoE LLM, sparse expert models, Mixtral, gating network","timeRequired":"PT12M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What Is a Mixture of Experts LLM? 2026 Guide","description":"A comprehensive, beginner-friendly guide to understanding what a Mixture of Experts (MoE) LLM is, how gating networks and sparse routing work, and which models use this architecture.","image":"https://nyvoraai.tech/assets/mixture-of-experts-llm-banner.webp","datePublished":"2026-07-18","dateModified":"2026-07-18","inLanguage":"en-US","author":{"@type":"Person","name":"Varun Lalwani","url":"https://nyvoraai.tech/about"},"publisher":{"@type":"Organization","name":"NyvoraAI","url":"https://nyvoraai.tech","logo":{"@type":"ImageObject","url":"https://nyvoraai.tech/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://nyvoraai.tech/ai-news/what-is-a-mixture-of-experts-llm"},"articleSection":"AI News","keywords":"mixture of experts LLM, MoE LLM, sparse expert models, Mixtral, gating network","timeRequired":"PT12M","speakable":{"@type":"SpeakableSpecification","cssSelector":[".key-takeaways",".quick-answer"]}}</script>
 <!-- Schema: FAQPage (AEO) -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a Mixture of Experts LLM?","acceptedAnswer":{"@type":"Answer","text":"A Mixture of Experts (MoE) LLM is a model built from many smaller 'expert' sub-networks instead of one giant dense network. For every token, a small router network picks only a handful of experts to activate, so the model can have a huge total parameter count while only using a fraction of it per prediction."}},{"@type":"Question","name":"How is a Mixture of Experts model different from a dense model?","acceptedAnswer":{"@type":"Answer","text":"A dense model activates every single parameter for every token it processes. A Mixture of Experts model only activates a small subset of its experts per token, chosen by a router. This means an MoE model can have far more total parameters than a dense model while costing roughly the same to run at inference time."}},{"@type":"Question","name":"Which AI models use Mixture of Experts?","acceptedAnswer":{"@type":"Answer","text":"Mistral's Mixtral 8x7B and 8x22B are well-known open-weight Mixture of Experts models. DeepSeek-V2 and V3, xAI's Grok models, and Google's Switch Transformer research also use MoE architectures. Several closed-source frontier labs are widely believed to use MoE internally as well, though not all confirm architecture details publicly."}},{"@type":"Question","name":"What is the main advantage of Mixture of Experts?","acceptedAnswer":{"@type":"Answer","text":"The main advantage is efficiency at scale. MoE lets a model hold a very large number of total parameters, which increases capacity and knowledge, while only using a small, fixed number of those parameters for any single token, which keeps inference cost and latency much lower than a dense model of equivalent size."}},{"@type":"Question","name":"What are the downsides of Mixture of Experts models?","acceptedAnswer":{"@type":"Answer","text":"MoE models are harder to train and fine-tune, need significantly more VRAM to hold all the experts even though only some are active, and can suffer from load balancing problems where a few experts get overused while others are rarely picked, which wastes capacity."}}]}</script>
 
@@ -459,7 +459,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
   <p class="article-intro">You've probably seen model names like "Mixtral 8x7B" and wondered what that "8x" actually means. It's not eight separate models glued together — it's a single model built on an architecture called Mixture of Experts (MoE). This guide breaks down, in plain English, what a Mixture of Experts LLM is, how the routing actually works under the hood, and why some of the fastest, most capable open models today are built this way.</p>
   <div class="article-meta">
     <div class="meta-author">
-      <div class="meta-avatar">V<img src="https://nyvoraai.tech/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+      <div class="meta-avatar">V<img src="https://nyvoraai.tech/assets/author-varun-lalwani.webp" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
       <div><div class="meta-name">Varun Lalwani</div></div>
     </div>
     <span class="meta-sep">·</span>
@@ -471,7 +471,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;back
 
 <div class="blog-banner-wrap reveal">
   <img
-    src="https://nyvoraai.tech/assets/mixture-of-experts-llm-banner.jpg"
+    src="https://nyvoraai.tech/assets/mixture-of-experts-llm-banner.webp"
     alt="Mixture of Experts LLM architecture diagram showing a router network sending tokens to specialized expert sub-networks"
     class="blog-banner"
     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
@@ -813,7 +813,7 @@ output = sum(score_i * expert_i(token_vector) for i in top_experts)
   </div>
 
   <div class="author-box reveal">
-    <div class="meta-avatar">V<img src="https://nyvoraai.tech/assets/author-varun-lalwani.jpg" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
+    <div class="meta-avatar">V<img src="https://nyvoraai.tech/assets/author-varun-lalwani.webp" alt="Varun Lalwani author avatar" onerror="this.remove()"/></div>
     <div>
       <h3>Written by Varun Lalwani</h3>
       <p>Varun covers large language models, open-source AI, and the practical side of building with accessible AI tools. Published July 2026. Questions? <a href="https://nyvoraai.tech/contact">Contact our team</a> or <a href="https://nyvoraai.tech/about">learn about our mission</a>. Stay updated via our <a href="https://nyvoraai.tech/rss.xml">RSS feed</a>.</p>

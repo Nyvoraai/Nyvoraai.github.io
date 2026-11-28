@@ -78,11 +78,15 @@ def extract_page_data(rel_path):
     desc_m = re.search(r'name="description"\s+content="([^"]*)"', content)
     dp_m = re.search(r'"datePublished"\s*:\s*"([^"]+)"', content)
     dm_m = re.search(r'"dateModified"\s*:\s*"([^"]+)"', content)
+    img_m = re.search(r'<meta\s+property=["\']og:image["\']\s+content=["\']([^"\']+)["\']', content, re.I)
+    if not img_m:
+        img_m = re.search(r'"image"\s*:\s*"(https://nyvoraai\.tech/assets/[^"]+)"', content)
 
     title = title_m.group(1).strip() if title_m else ""
     desc = desc_m.group(1).strip() if desc_m else ""
     date_published = dp_m.group(1) if dp_m else None
     date_modified = dm_m.group(1) if dm_m else None
+    image_url = img_m.group(1).strip() if img_m else None
 
     # Safety net: brand-new article with no schema date yet -> use today.
     # (Articles should normally ship with real datePublished in their
@@ -98,6 +102,7 @@ def extract_page_data(rel_path):
         "desc": desc,
         "datePublished": date_published,
         "dateModified": date_modified,
+        "image": image_url,
     }
 
 
@@ -167,9 +172,9 @@ def build_sitemap_xml(main_pages, articles):
     entries = []
     for p in main_pages:
         priority = "1.0" if p["path"] == "index.html" else "0.9"
-        entries.append((url_for(p["path"]), TODAY, "weekly", priority))
+        entries.append((url_for(p["path"]), TODAY, "weekly", priority, p.get("image"), p.get("title")))
     for a in articles:
-        entries.append((url_for(a["path"]), a["dateModified"], "monthly", "0.7"))
+        entries.append((url_for(a["path"]), a["dateModified"], "monthly", "0.7", a.get("image"), a.get("title")))
 
     order = {re.sub(r"\.html$", "", p["path"]): i for i, p in enumerate(main_pages)}
     order[""] = order.get("index", 0)
@@ -182,16 +187,22 @@ def build_sitemap_xml(main_pages, articles):
     entries.sort(key=sort_key)
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
-             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for loc, lastmod, changefreq, priority in entries:
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">']
+    for loc, lastmod, changefreq, priority, img_url, img_title in entries:
         lines += [
             "<url>",
             f"<loc>{loc}</loc>",
             f"<lastmod>{lastmod}</lastmod>",
             f"<changefreq>{changefreq}</changefreq>",
             f"<priority>{priority}</priority>",
-            "</url>",
         ]
+        if img_url:
+            lines.append("<image:image>")
+            lines.append(f"<image:loc>{esc(img_url)}</image:loc>")
+            if img_title:
+                lines.append(f"<image:title>{esc(clean_title(img_title))}</image:title>")
+            lines.append("</image:image>")
+        lines.append("</url>")
     lines.append("</urlset>")
     return "\n".join(lines) + "\n", len(entries)
 
